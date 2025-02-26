@@ -1,0 +1,808 @@
+/** @jsxImportSource @emotion/react */
+
+
+import { Fragment, useCallback, useContext, useEffect, useState } from "react"
+import { ColorModeContext, EventLoopContext } from "$/utils/context"
+import { Event, getBackendURL, isTrue, refs } from "$/utils/state"
+import { MenuIcon as LucideMenuIcon, WifiOffIcon as LucideWifiOffIcon } from "lucide-react"
+import { keyframes } from "@emotion/react"
+import { toast, Toaster } from "sonner"
+import env from "$/env.json"
+import { Box as RadixThemesBox, Button as RadixThemesButton, DropdownMenu as RadixThemesDropdownMenu, Flex as RadixThemesFlex, Heading as RadixThemesHeading, Link as RadixThemesLink, Separator as RadixThemesSeparator, Strong as RadixThemesStrong, Table as RadixThemesTable, Text as RadixThemesText, Theme as RadixThemesTheme } from "@radix-ui/themes"
+import NextLink from "next/link"
+import { Drawer as VaulDrawer } from "vaul"
+import theme from "$/utils/theme.js"
+import { Bar as RechartsBar, CartesianGrid as RechartsCartesianGrid, ResponsiveContainer as RechartsResponsiveContainer, XAxis as RechartsXAxis, YAxis as RechartsYAxis } from "recharts"
+import dynamic from "next/dynamic"
+import NextHead from "next/head"
+
+const RechartsBarChart = dynamic(() => import('recharts').then((mod) => mod.BarChart), { ssr: false });
+
+
+export function Toaster_6e6ebf8d7ce589d59b7d382fb7576edf () {
+  
+  const { resolvedColorMode } = useContext(ColorModeContext)
+
+  refs['__toast'] = toast
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+  const toast_props = ({ ["description"] : ("Check if server is reachable at "+getBackendURL(env.EVENT).href), ["closeButton"] : true, ["duration"] : 120000, ["id"] : "websocket-error" });
+  const [userDismissed, setUserDismissed] = useState(false);
+  (useEffect(
+() => {
+    if ((connectErrors.length >= 2)) {
+        if (!userDismissed) {
+            toast.error(
+                `Cannot connect to server: ${((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : '')}.`,
+                {...toast_props, onDismiss: () => setUserDismissed(true)},
+            )
+        }
+    } else {
+        toast.dismiss("websocket-error");
+        setUserDismissed(false);  // after reconnection reset dismissed state
+    }
+}
+, [connectErrors]))
+
+
+
+
+  
+  return (
+    <Toaster closeButton={false} expand={true} position={"bottom-right"} richColors={true} theme={resolvedColorMode}/>
+  )
+}
+
+const pulse = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+`
+
+
+export function Dropdownmenu__item_dac86115f575bf5bb4e63dc75106d651 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_878b59ed445e335ab3312bf6ae65b075 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/financial_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <RadixThemesDropdownMenu.Item onClick={on_click_878b59ed445e335ab3312bf6ae65b075}>
+
+{"Aprender"}
+</RadixThemesDropdownMenu.Item>
+  )
+}
+
+export function Dropdownmenu__item_21c52e4bd8d99a75477658423d582352 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_7dc200586272c1bbcd7f51ea48788135 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <RadixThemesDropdownMenu.Item onClick={on_click_7dc200586272c1bbcd7f51ea48788135}>
+
+{"Soporte"}
+</RadixThemesDropdownMenu.Item>
+  )
+}
+
+export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    <Fragment>
+
+{isTrue((connectErrors.length > 0)) ? (
+  <Fragment>
+
+<LucideWifiOffIcon css={({ ["color"] : "crimson", ["zIndex"] : 9999, ["position"] : "fixed", ["bottom"] : "33px", ["right"] : "33px", ["animation"] : (pulse+" 1s infinite") })} size={32}/>
+</Fragment>
+) : (
+  <Fragment/>
+)}
+</Fragment>
+  )
+}
+
+export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    <div css={({ ["position"] : "fixed", ["width"] : "100vw", ["height"] : "0" })} title={("Connection Error: "+((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : ''))}>
+
+<Fragment_c179379f847dbcf00ba21f73b0ad1b3d/>
+</div>
+  )
+}
+
+export default function Component() {
+    
+
+
+
+
+  return (
+    <Fragment>
+
+<Fragment>
+
+<Div_0c4c0d922d990c245023c72baae2d5e1/>
+<Toaster_6e6ebf8d7ce589d59b7d382fb7576edf/>
+</Fragment>
+<RadixThemesBox css={({ ["backgroundColor"] : "black" })}>
+
+<RadixThemesBox css={({ ["background"] : "linear-gradient(45deg, var(--tomato-9), var(--plum-9))", ["padding"] : "0.5em", ["width"] : "100%" })}>
+
+<RadixThemesBox css={({ ["@media screen and (min-width: 0)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 30em)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 48em)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 62em)"] : ({ ["display"] : "block" }) })}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center", ["color"] : "white" })} direction={"row"} justify={"between"} gap={"3"}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center" })} direction={"row"} gap={"3"}>
+
+<RadixThemesBox css={({ ["backgroundColor"] : "black", ["padding"] : "5px", ["borderRadius"] : "50px" })}>
+
+<img css={({ ["width"] : "50px", ["height"] : "50px" })} src={"/orbesdmc.png"}/>
+</RadixThemesBox>
+<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
+
+<NextLink href={"/#"} passHref={true}>
+
+<RadixThemesHeading css={({ ["color"] : "white", ["&:hover"] : ({ ["color"] : "purple" }) })} size={"4"} weight={"bold"}>
+
+{"Maximiliano Gonzalez"}
+</RadixThemesHeading>
+</NextLink>
+</RadixThemesLink>
+</RadixThemesFlex>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} gap={"3"}>
+
+<RadixThemesLink asChild={true} css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
+
+<NextLink href={"/financial_page"} passHref={true}>
+
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["&:hover"] : ({ ["color"] : "purple" }) })} size={"4"} weight={"medium"}>
+
+{"Aprender"}
+</RadixThemesText>
+</NextLink>
+</RadixThemesLink>
+<RadixThemesLink asChild={true} css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
+
+<NextLink href={"/soporte_page"} passHref={true}>
+
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["&:hover"] : ({ ["color"] : "purple" }) })} size={"4"} weight={"medium"}>
+
+{"Soporte"}
+</RadixThemesText>
+</NextLink>
+</RadixThemesLink>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesBox>
+<RadixThemesBox css={({ ["@media screen and (min-width: 0)"] : ({ ["display"] : "block" }), ["@media screen and (min-width: 30em)"] : ({ ["display"] : "block" }), ["@media screen and (min-width: 48em)"] : ({ ["display"] : "block" }), ["@media screen and (min-width: 62em)"] : ({ ["display"] : "none" }) })}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center" })} direction={"row"} justify={"center"} gap={"3"}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center" })} direction={"row"} gap={"3"}>
+
+<RadixThemesBox css={({ ["backgroundColor"] : "transparent", ["padding"] : "5px", ["borderRadius"] : "50px" })}>
+
+<img css={({ ["width"] : "50px", ["height"] : "50px" })} src={"/orbesdmc.png"}/>
+</RadixThemesBox>
+<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
+
+<NextLink href={"/#"} passHref={true}>
+
+<RadixThemesHeading css={({ ["color"] : "white", ["&:hover"] : ({ ["color"] : "purple" }) })} size={"4"} weight={"bold"}>
+
+{"Maximiliano Gonzalez"}
+</RadixThemesHeading>
+</NextLink>
+</RadixThemesLink>
+</RadixThemesFlex>
+<RadixThemesDropdownMenu.Root>
+
+<RadixThemesDropdownMenu.Trigger>
+
+<LucideMenuIcon css={({ ["color"] : "var(--current-color)" })} size={30}/>
+</RadixThemesDropdownMenu.Trigger>
+<RadixThemesDropdownMenu.Content>
+
+<Dropdownmenu__item_dac86115f575bf5bb4e63dc75106d651/>
+<Dropdownmenu__item_21c52e4bd8d99a75477658423d582352/>
+</RadixThemesDropdownMenu.Content>
+</RadixThemesDropdownMenu.Root>
+</RadixThemesFlex>
+</RadixThemesBox>
+</RadixThemesBox>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
+
+<VaulDrawer.Root direction={"left"}>
+
+<VaulDrawer.Trigger asChild={true}>
+
+<RadixThemesButton css={({ ["width"] : "100%", ["height"] : "30px", ["padding"] : "10px", ["spacing"] : "5px", ["marginBottom"] : "10px", ["fontSize"] : "semibold", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "150px", ["backgroundColor"] : "#990033", ["border"] : "2px solid transparent", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["transition"] : "all 0.3s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#4338CA", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)" }) })} radius={"medium"} size={"3"} variant={"solid"}>
+
+{"Modulos Menu"}
+</RadixThemesButton>
+</VaulDrawer.Trigger>
+<VaulDrawer.Overlay css={({ ["position"] : "fixed", ["left"] : "0", ["right"] : "0", ["bottom"] : "0", ["top"] : "0", ["z_index"] : 50, ["background"] : "rgba(0, 0, 0, 0.5)", ["zIndex"] : "5" })}/>
+<VaulDrawer.Portal>
+
+<RadixThemesTheme css={{...theme.styles.global[':root'], ...theme.styles.global.body}}>
+
+<VaulDrawer.Content css={({ ["left"] : "0", ["right"] : "auto", ["bottom"] : "0", ["top"] : "auto", ["position"] : "fixed", ["z_index"] : 50, ["display"] : "flex", ["height"] : "100%", ["width"] : "20em", ["padding"] : "2em", ["backgroundColor"] : "#ff3333" })}>
+
+<RadixThemesFlex css={({ ["alignItems"] : "start" })} direction={"column"}>
+
+<VaulDrawer.Close asChild={true}>
+
+<RadixThemesBox>
+
+<RadixThemesButton css={({ ["width"] : "100%", ["height"] : "30px", ["padding"] : "10px", ["spacing"] : "5px", ["marginBottom"] : "10px", ["fontSize"] : "semibold", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "150px", ["backgroundColor"] : "#990033", ["border"] : "2px solid transparent", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["transition"] : "all 0.3s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#4338CA", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)" }) })} radius={"medium"} size={"3"} variant={"solid"}>
+
+{"Cerrar"}
+</RadixThemesButton>
+</RadixThemesBox>
+</VaulDrawer.Close>
+<RadixThemesLink asChild={true} css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
+
+<NextLink href={"/module_1"} passHref={true}>
+
+<RadixThemesButton css={({ ["width"] : "100%", ["height"] : "30px", ["padding"] : "10px", ["spacing"] : "5px", ["marginBottom"] : "10px", ["fontSize"] : "semibold", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "150px", ["backgroundColor"] : "#003366", ["border"] : "2px solid transparent", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["transition"] : "all 0.3s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)" }) })} radius={"medium"} size={"4"} variant={"solid"}>
+
+{"Modulo 1"}
+</RadixThemesButton>
+</NextLink>
+</RadixThemesLink>
+<RadixThemesLink asChild={true} css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
+
+<NextLink href={"/module_2"} passHref={true}>
+
+<RadixThemesButton css={({ ["width"] : "100%", ["height"] : "30px", ["padding"] : "10px", ["spacing"] : "5px", ["marginBottom"] : "10px", ["fontSize"] : "semibold", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "150px", ["backgroundColor"] : "#003366", ["border"] : "2px solid transparent", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["transition"] : "all 0.3s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)" }) })} radius={"medium"} size={"4"} variant={"solid"}>
+
+{"Modulo 2"}
+</RadixThemesButton>
+</NextLink>
+</RadixThemesLink>
+<RadixThemesLink asChild={true} css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
+
+<NextLink href={"/module_3"} passHref={true}>
+
+<RadixThemesButton css={({ ["width"] : "100%", ["height"] : "30px", ["padding"] : "10px", ["spacing"] : "5px", ["marginBottom"] : "10px", ["fontSize"] : "semibold", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "150px", ["backgroundColor"] : "#003366", ["border"] : "2px solid transparent", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["transition"] : "all 0.3s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)" }) })} radius={"medium"} size={"4"} variant={"solid"}>
+
+{"Modulo 3"}
+</RadixThemesButton>
+</NextLink>
+</RadixThemesLink>
+</RadixThemesFlex>
+</VaulDrawer.Content>
+</RadixThemesTheme>
+</VaulDrawer.Portal>
+</VaulDrawer.Root>
+</RadixThemesFlex>
+<RadixThemesFlex css={({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center" })}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["maxWidth"] : "600px", ["width"] : "100%", ["marginTop"] : "0.1em", ["marginBottom"] : "0.1em", ["alignItems"] : "center" })} direction={"column"} gap={"3"}>
+
+<RadixThemesBox>
+
+<RadixThemesHeading css={({ ["fontSize"] : "50px", ["fontWeight"] : "bold", ["color"] : "white", ["textAlign"] : "center", ["marginBottom"] : "20px", ["padding"] : "10px", ["letterSpacing"] : "1px" })}>
+
+{"M\u00f3dulo 1: Fundamentos de Finanzas Personales y Mercado Financiero"}
+</RadixThemesHeading>
+<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+
+{"1. \u00bfQu\u00e9 son las finanzas?"}
+</RadixThemesHeading>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "white", ["textAlign"] : "justify", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["marginBottom"] : "1em" })}>
+
+{"Las finanzas corresponden a un \u00e1rea de la econom\u00eda que estudia la obtenci\u00f3n y administraci\u00f3n de dinero y de capital, es decir, los recursos financieros.\nEstudia tanto la obtenci\u00f3n de recursos (financiaci\u00f3n), como la inversi\u00f3n y el ahorro de los mismos."}
+</RadixThemesText>
+<RadixThemesSeparator css={({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" })} size={"4"}/>
+<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+
+{"2. Conceptos Contables"}
+</RadixThemesHeading>
+<ol css={({ ["direction"] : "column", ["listStyleType"] : "disc", ["color"] : "white", ["marginBottom"] : "1em", ["marginLeft"] : "1.5rem" })}>
+
+<li>
+
+{"Cuentas patrimoniales"}
+</li>
+<li>
+
+{"Activo, pasivo y patrimonio neto"}
+</li>
+<li>
+
+{"Cuentas de resultados"}
+</li>
+<li>
+
+{"Ingresos, gastos y resultado"}
+</li>
+</ol>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+
+{"Cuentas patrimoniales"}
+</RadixThemesHeading>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["marginBottom"] : "1em" })} direction={"column"} gap={"3"}>
+
+<Fragment>
+
+<RadixThemesTable.Root css={({ ["backgroundColor"] : "#e6004c", ["color"] : "#333333", ["border"] : "1px solid #ffffff", ["width"] : "100%", ["padding"] : "5px", ["fontSize"] : "10px" })} size={"2"} variant={"surface"}>
+
+<RadixThemesTable.Header>
+
+<RadixThemesTable.Row css={({ ["backgroundColor"] : "orange" })}>
+
+<RadixThemesTable.ColumnHeaderCell>
+
+{"Activo"}
+</RadixThemesTable.ColumnHeaderCell>
+<RadixThemesTable.ColumnHeaderCell>
+
+{"Pasivo"}
+</RadixThemesTable.ColumnHeaderCell>
+<RadixThemesTable.ColumnHeaderCell>
+
+{"Patrimonio Neto"}
+</RadixThemesTable.ColumnHeaderCell>
+<RadixThemesTable.ColumnHeaderCell>
+
+{"Ingresos"}
+</RadixThemesTable.ColumnHeaderCell>
+<RadixThemesTable.ColumnHeaderCell>
+
+{"Gastos"}
+</RadixThemesTable.ColumnHeaderCell>
+<RadixThemesTable.ColumnHeaderCell>
+
+{"Resultado"}
+</RadixThemesTable.ColumnHeaderCell>
+</RadixThemesTable.Row>
+</RadixThemesTable.Header>
+<RadixThemesTable.Body>
+
+<RadixThemesTable.Row css={({ ["color"] : "darkgray" })}>
+
+<RadixThemesTable.RowHeaderCell>
+
+{"Bienes o derechos de una persona."}
+</RadixThemesTable.RowHeaderCell>
+<RadixThemesTable.Cell>
+
+{"Obligaciones o deudas."}
+</RadixThemesTable.Cell>
+<RadixThemesTable.Cell>
+
+{"Diferencia entre activo y pasivo."}
+</RadixThemesTable.Cell>
+<RadixThemesTable.Cell>
+
+{"Ganancias que se suman al presupuesto."}
+</RadixThemesTable.Cell>
+<RadixThemesTable.Cell>
+
+{"Utilizaci\u00f3n o consumo de bienes o servicios."}
+</RadixThemesTable.Cell>
+<RadixThemesTable.Cell>
+
+{"Diferencia entre ingresos y gastos."}
+</RadixThemesTable.Cell>
+</RadixThemesTable.Row>
+<RadixThemesTable.Row css={({ ["color"] : "white" })}>
+
+<RadixThemesTable.RowHeaderCell>
+
+{"Ej: acciones, inmuebles, bonos."}
+</RadixThemesTable.RowHeaderCell>
+<RadixThemesTable.Cell>
+
+{"Ej: saldos de tarjetas, hipotecas, deudas."}
+</RadixThemesTable.Cell>
+<RadixThemesTable.Cell>
+
+{"Ej: empresa con activos de 210,000\u20ac y sin deudas."}
+</RadixThemesTable.Cell>
+<RadixThemesTable.Cell>
+
+{"Ej: salario, comisiones, honorarios, inversiones."}
+</RadixThemesTable.Cell>
+<RadixThemesTable.Cell>
+
+{"Ej: alquileres, seguros, impuestos, pr\u00e9stamos."}
+</RadixThemesTable.Cell>
+<RadixThemesTable.Cell>
+
+{"Ej: resultado financiero del balance."}
+</RadixThemesTable.Cell>
+</RadixThemesTable.Row>
+</RadixThemesTable.Body>
+</RadixThemesTable.Root>
+</Fragment>
+</RadixThemesFlex>
+<RadixThemesSeparator css={({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" })} size={"4"}/>
+<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+
+{"3. El ahorro"}
+</RadixThemesHeading>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "white", ["textAlign"] : "justify", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["marginBottom"] : "1em" })}>
+
+{"Este h\u00e1bito no solo te ayudar\u00e1 a construir un fondo de emergencia, sino que tambi\u00e9n te permitir\u00e1invertir en oportunidades futuras. Con el tiempo, ese 10% acumulado puede brindarte estabilidad financiera y mayor libertad para tomar decisiones sin presiones econ\u00f3micas."}
+</RadixThemesText>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "white", ["textAlign"] : "justify", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["marginBottom"] : "1em" })}>
+
+<RadixThemesStrong>
+
+{"Por ejemplo"}
+</RadixThemesStrong>
+{", si cobr\u00e1s $100.000 por mes, destinar el 10% significar\u00eda ahorrar $10.000 de entrada. Si configur\u00e1s una transferencia autom\u00e1tica el mismo d\u00eda que te depositan el sueldo, te asegur\u00e1s de no gastarlo sin darte cuenta. Tambi\u00e9n pod\u00e9s usar una app que redondee cada compra al peso superior y mande la diferencia a una cuenta de ahorros. A la larga, estos peque\u00f1os aportes suman m\u00e1s de lo que imagin\u00e1s, y casi sin esfuerzo."}
+</RadixThemesText>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["marginBottom"] : "1em" })} direction={"column"} gap={"3"}>
+
+<RechartsResponsiveContainer height={300} minHeight={10} minWidth={10} width={"100%"}>
+
+<RechartsBarChart data={[({ ["name"] : "Mes 1", ["uv"] : 10000 }), ({ ["name"] : "Mes 2", ["uv"] : 20000 }), ({ ["name"] : "Mes 3", ["uv"] : 30000 }), ({ ["name"] : "Mes 4", ["uv"] : 40000 }), ({ ["name"] : "Mes 5", ["uv"] : 50000 }), ({ ["name"] : "Mes 6", ["uv"] : 60000 }), ({ ["name"] : "Mes 7", ["uv"] : 70000 }), ({ ["name"] : "Mes 8", ["uv"] : 80000 }), ({ ["name"] : "Mes 9", ["uv"] : 90000 }), ({ ["name"] : "Mes 10", ["uv"] : 100000 }), ({ ["name"] : "Mes 11", ["uv"] : 110000 }), ({ ["name"] : "Mes 12", ["uv"] : 120000 })]} height={"100%"} width={"100%"}>
+
+<RechartsBar animationBegin={150} animationDuration={1800} animationEasing={"ease"} dataKey={"uv"} fill={"var(--pink-11)"} isAnimationActive={true} stroke={"var(--pink-12)"}/>
+<RechartsXAxis dataKey={"name"} stroke={"var(--mauve-1)"}/>
+<RechartsYAxis stroke={"var(--yellow-1)"}/>
+<RechartsCartesianGrid stroke={"var(--yellow-1)"} strokeDasharray={"3 3"}/>
+</RechartsBarChart>
+</RechartsResponsiveContainer>
+</RadixThemesFlex>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+
+{"An\u00e1lisis del Gr\u00e1fico"}
+</RadixThemesHeading>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "white", ["textAlign"] : "justify", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1" })}>
+
+{"El gr\u00e1fico muestra c\u00f3mo un ahorro constante del 10% del ingreso mensual ($10.000) se acumula a lo largo del a\u00f1o. Al final del per\u00edodo, el ahorro total alcanza los $120.000, demostrando el impacto positivo de la constancia en el ahorro."}
+</RadixThemesText>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+
+{"Conclusi\u00f3n"}
+</RadixThemesHeading>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "white", ["textAlign"] : "justify", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["marginBottom"] : "1em" })}>
+
+{"Adoptar este h\u00e1bito no solo permite construir un fondo de emergencia, sino que tambi\u00e9n abre oportunidades de inversi\u00f3n y estabilidad financiera a largo plazo"}
+</RadixThemesText>
+<RadixThemesSeparator css={({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" })} size={"4"}/>
+<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+
+{"4. Identificacion de Gastos"}
+</RadixThemesHeading>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "white", ["textAlign"] : "justify", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["marginBottom"] : "1em" })}>
+
+{"Para una correcta administraci\u00f3n financiera, es clave identificar y clasificar los diferentestipos de gastos. Esto permite entender mejor el flujo de dinero y tomar decisiones m\u00e1s inteligentes sobre el presupuesto."}
+</RadixThemesText>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+
+{"Gastos Fijos y Supervivencia"}
+</RadixThemesHeading>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "white", ["textAlign"] : "justify", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["marginBottom"] : "1em" })}>
+
+{"Son aquellos necesarios para mantener un nivel de vida estable y no suelen cambiar mes a mes. Deben ser prioridad en cualquier planificaci\u00f3n financiera."}
+</RadixThemesText>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["marginBottom"] : "1em" })} direction={"row"} gap={"3"}>
+
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+
+{"Ejemplos: "}
+</RadixThemesHeading>
+<ol css={({ ["direction"] : "column", ["listStyleType"] : "disc", ["color"] : "white", ["marginLeft"] : "1.5rem" })}>
+
+<li>
+
+{"Alquiler o hipoteca"}
+</li>
+<li>
+
+{"Servicios basicos (Agua, luz, gas, internet)"}
+</li>
+<li>
+
+{"Alimentacion"}
+</li>
+<li>
+
+{"Transporte esencial"}
+</li>
+</ol>
+</RadixThemesFlex>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+
+{"Gastos Variables"}
+</RadixThemesHeading>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "white", ["textAlign"] : "justify", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["marginBottom"] : "1em" })}>
+
+{"Son gastos que pueden fluctuar dependiendo del mes y del estilo de vida. Se pueden ajustar seg\u00fan las necesidades y prioridades."}
+</RadixThemesText>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["marginBottom"] : "1em" })} direction={"row"} gap={"3"}>
+
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+
+{"Ejemplos: "}
+</RadixThemesHeading>
+<ol css={({ ["direction"] : "column", ["listStyleType"] : "disc", ["color"] : "white", ["marginLeft"] : "1.5rem" })}>
+
+<li>
+
+{"Combustible"}
+</li>
+<li>
+
+{"Mantenimiento de vehiculo"}
+</li>
+<li>
+
+{"Compras no escenciales"}
+</li>
+<li>
+
+{"Viajes"}
+</li>
+</ol>
+</RadixThemesFlex>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+
+{"Gastos Extraordinarios"}
+</RadixThemesHeading>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "white", ["textAlign"] : "justify", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["marginBottom"] : "1em" })}>
+
+{"Son aquellos imprevistos que pueden generar un impacto en la econom\u00eda personal. Para estos, es recomendable contar con un "}
+<RadixThemesStrong>
+
+{"fondo de emergencia"}
+</RadixThemesStrong>
+{" que permita cubrirlos, sin afectar el presupuesto mensual."}
+</RadixThemesText>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["marginBottom"] : "1em" })} direction={"row"} gap={"3"}>
+
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+
+{"Ejemplos: "}
+</RadixThemesHeading>
+<ol css={({ ["direction"] : "column", ["listStyleType"] : "disc", ["color"] : "white", ["marginLeft"] : "1.5rem" })}>
+
+<li>
+
+{"Reparaciones del Hogar o Vehiculo"}
+</li>
+<li>
+
+{"Emergencias Medicas"}
+</li>
+<li>
+
+{"Reemplazo de Electrodomesticos"}
+</li>
+<li>
+
+{"Multas o Deudas Inesperadas"}
+</li>
+</ol>
+</RadixThemesFlex>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "white", ["textAlign"] : "justify", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["marginBottom"] : "1em" })}>
+
+<RadixThemesStrong>
+
+{"importante:"}
+</RadixThemesStrong>
+{" Llevar un registro detallado de los gastos ayuda a identificar patrones y encontrar oportunidades de ahorro. Aplicaciones de finanzas personales o simples hojas de c\u00e1lculo pueden ser herramientas \u00fatiles para este prop\u00f3sito."}
+</RadixThemesText>
+<RadixThemesSeparator css={({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" })} size={"4"}/>
+<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+
+{"Conceptos Financieros Clave"}
+</RadixThemesHeading>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "white", ["textAlign"] : "justify", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1" })}>
+
+{"Para comprender mejor la gesti\u00f3n financiera y la toma de decisiones econ\u00f3micas, es fundamental conocer estos conceptos clave:"}
+</RadixThemesText>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["marginBottom"] : "1em" })} direction={"column"} gap={"3"}>
+
+<Fragment>
+
+<RadixThemesTable.Root css={({ ["backgroundColor"] : "#e6004c", ["color"] : "#333333", ["border"] : "1px solid #ffffff", ["width"] : "100%", ["padding"] : "5px", ["fontSize"] : "10px" })} size={"2"} variant={"surface"}>
+
+<RadixThemesTable.Header>
+
+<RadixThemesTable.Row css={({ ["backgroundColor"] : "orange" })}>
+
+<RadixThemesTable.ColumnHeaderCell>
+
+{"Concepto"}
+</RadixThemesTable.ColumnHeaderCell>
+<RadixThemesTable.ColumnHeaderCell>
+
+{"Definicion"}
+</RadixThemesTable.ColumnHeaderCell>
+<RadixThemesTable.ColumnHeaderCell>
+
+{"Ejemplo"}
+</RadixThemesTable.ColumnHeaderCell>
+<RadixThemesTable.ColumnHeaderCell>
+
+{"Tipos/Factores claves"}
+</RadixThemesTable.ColumnHeaderCell>
+</RadixThemesTable.Row>
+</RadixThemesTable.Header>
+<RadixThemesTable.Body>
+
+<RadixThemesTable.Row css={({ ["color"] : "white" })}>
+
+<RadixThemesTable.RowHeaderCell>
+
+<RadixThemesStrong>
+
+{"Rentabilidad"}
+</RadixThemesStrong>
+</RadixThemesTable.RowHeaderCell>
+<RadixThemesTable.Cell>
+
+{"Relacion entre los recursos utilizados y el beneficio (o perdida) obtenido."}
+</RadixThemesTable.Cell>
+<RadixThemesTable.Cell>
+
+{"Inviertes $10.000 y obtenes $12.000 \u2192 Rentabilidad del 20%"}
+</RadixThemesTable.Cell>
+<RadixThemesTable.Cell>
+
+<RadixThemesStrong>
+
+{"-Economia"}
+</RadixThemesStrong>
+{" (Beneficio/Activos)"}
+<RadixThemesStrong>
+
+{"-Financiera"}
+</RadixThemesStrong>
+{"(Beneficio/Capital invertido)"}
+</RadixThemesTable.Cell>
+</RadixThemesTable.Row>
+<RadixThemesTable.Row css={({ ["color"] : "darkgray" })}>
+
+<RadixThemesTable.RowHeaderCell>
+
+<RadixThemesStrong>
+
+{"Tasa de Interes"}
+</RadixThemesStrong>
+</RadixThemesTable.RowHeaderCell>
+<RadixThemesTable.Cell>
+
+{"Precio del dinero; lo que se paga por un prestamo o se gana en una inversion"}
+</RadixThemesTable.Cell>
+<RadixThemesTable.Cell>
+
+{"Prestamo de $100.000 con 10% anual \u2192 Pagas $10.000 en intereses. "}
+</RadixThemesTable.Cell>
+<RadixThemesTable.Cell>
+
+<RadixThemesStrong>
+
+{"-Fija"}
+</RadixThemesStrong>
+{" (No cambia)"}
+<RadixThemesStrong>
+
+{"-Variable"}
+</RadixThemesStrong>
+{"(Depende de la economia)"}
+<RadixThemesStrong>
+
+{"-Nominal vs Efectiva"}
+</RadixThemesStrong>
+</RadixThemesTable.Cell>
+</RadixThemesTable.Row>
+<RadixThemesTable.Row css={({ ["color"] : "white" })}>
+
+<RadixThemesTable.RowHeaderCell>
+
+<RadixThemesStrong>
+
+{"Inflacion"}
+</RadixThemesStrong>
+</RadixThemesTable.RowHeaderCell>
+<RadixThemesTable.Cell>
+
+{"Aumento sostenido de los precios, reduciendo el poder adquisitivo del dinero."}
+</RadixThemesTable.Cell>
+<RadixThemesTable.Cell>
+
+{"Producto cuesta $1.000 hoy \u2192 Con 50% de inflaci\u00f3n, costar\u00e1 $1.500 el pr\u00f3ximo mes."}
+</RadixThemesTable.Cell>
+<RadixThemesTable.Cell>
+
+<RadixThemesStrong>
+
+{"- Demanda excesiva - Costos de produccion - Politica monetaria"}
+</RadixThemesStrong>
+</RadixThemesTable.Cell>
+</RadixThemesTable.Row>
+</RadixThemesTable.Body>
+</RadixThemesTable.Root>
+</Fragment>
+</RadixThemesFlex>
+<RadixThemesSeparator css={({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" })} size={"4"}/>
+<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+
+{"Conclusi\u00f3n del M\u00f3dulo 1:"}
+</RadixThemesHeading>
+<ol css={({ ["direction"] : "column", ["listStyleType"] : "disc", ["color"] : "white", ["marginLeft"] : "1.5rem" })}>
+
+<li>
+
+<RadixThemesStrong>
+
+{"Resumen:"}
+</RadixThemesStrong>
+{"Hemos explorado qu\u00e9 son las finanzas, los conceptos contables b\u00e1sicos, la importancia del ahorro, la identificaci\u00f3n de gastos y conceptos financieros clave."}
+</li>
+<li>
+
+<RadixThemesStrong>
+
+{"Aplicaci\u00f3n Pr\u00e1ctica:"}
+</RadixThemesStrong>
+{"Te invitamos a revisar tus propios gastos y a empezar a llevar un registro detallado. Calcul\u00e1 tu rentabilidad personal y pens\u00e1 en estrategias para optimizar tu presupuesto."}
+</li>
+<li>
+
+<RadixThemesStrong>
+
+{"Pr\u00f3ximos Pasos:"}
+</RadixThemesStrong>
+{"En el pr\u00f3ximo m\u00f3dulo veremos intrumentos de inversion, tipos de analisis de mercado y trading."}
+</li>
+</ol>
+</RadixThemesBox>
+</RadixThemesFlex>
+</RadixThemesFlex>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center" })} direction={"column"} gap={"3"}>
+
+<img css={({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "black" })} src={"/orbesdmc.png?refresh=1"}/>
+<RadixThemesText as={"p"} css={({ ["color"] : "white" })}>
+
+{"since 1999 copyright registered."}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesBox>
+<NextHead>
+
+<title>
+
+{"Modulo 1"}
+</title>
+<meta content={"favicon.ico"} property={"og:image"}/>
+</NextHead>
+</Fragment>
+  )
+}
