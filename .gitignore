@@ -1,0 +1,13 @@
+.states
+*.db
+*.py[cod]
+.web
+__pycache__/
+assets/external/
+venv/
+env/
+py_loco/
+.vscode/
+.idea/
+requirements.txt
+rxconfig.py
