@@ -158,13 +158,14 @@ def module_1() -> rx.Component:
                 #conclusion
                 rx.heading("Conclusión del Módulo 1:", **styles.TEXT_STYLE["subtitle"]),
                 rx.list.ordered(
-                        rx.list.item(rx.text.strong("Resumen:"),"Hemos explorado qué son las finanzas,"
+                        rx.list.item(rx.text.strong("Resumen:")," Hemos explorado qué son las finanzas,"
                                      " los conceptos contables básicos, la importancia del ahorro, "
                                      "la identificación de gastos y conceptos financieros clave."),
-                        rx.list.item(rx.text.strong("Aplicación Práctica:"),"Te invitamos a revisar tus propios gastos "
+                        rx.list.item(rx.text.strong("Aplicación Práctica:")," Te invitamos a revisar tus propios gastos "
                                      "y a empezar a llevar un registro detallado. Calculá tu rentabilidad personal y "
                                      "pensá en estrategias para optimizar tu presupuesto."),
-                        rx.list.item(rx.text.strong("Próximos Pasos:"),"En el próximo módulo veremos intrumentos de inversion, tipos de analisis de mercado y trading."),
+                        rx.list.item(rx.text.strong("Próximos Pasos:")," En el próximo módulo veremos los perfiles de inversores, intrumentos de inversion"
+                                     " y sus caracteristicas."),
                         list_style_type="disc",
                         color="white"
                     ),

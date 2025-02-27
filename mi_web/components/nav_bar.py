@@ -84,7 +84,7 @@ def navbar_dropdown() -> rx.Component:
                 align_items="center",
             ),
         ),
-        background="linear-gradient(45deg, var(--tomato-9), var(--plum-9))",
+        background=" linear-gradient(45deg, var(--tomato-9), var(--plum-9))",
         padding="0.5em",
         width="100%",
     )

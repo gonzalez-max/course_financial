@@ -1,4 +1,6 @@
 import reflex as rx
+import mi_web.styles.styles as styles
+
 def table1_module1() -> rx.Component:
     return rx.table.root(
                         rx.table.header(
@@ -20,7 +22,7 @@ def table1_module1() -> rx.Component:
                                 rx.table.cell("Ganancias que se suman al presupuesto."),
                                 rx.table.cell("Utilización o consumo de bienes o servicios."),
                                 rx.table.cell("Diferencia entre ingresos y gastos."),
-                                color="darkgray"
+                                color="white"
                             ),
                             rx.table.row(
                                 rx.table.row_header_cell("Ej: acciones, inmuebles, bonos."),
@@ -37,8 +39,5 @@ def table1_module1() -> rx.Component:
                         font_size="10px",
                         variant="surface",
                         size="2",
-                        style={
-                               "background_color": "#e6004c",
-                                "color": "#333333",
-                                "border": "1px solid #ffffff",}
+                        **styles.TABLES_STYLES
                     ),

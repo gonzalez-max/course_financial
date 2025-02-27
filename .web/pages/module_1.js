@@ -12,7 +12,7 @@ import { Box as RadixThemesBox, Button as RadixThemesButton, DropdownMenu as Rad
 import NextLink from "next/link"
 import { Drawer as VaulDrawer } from "vaul"
 import theme from "$/utils/theme.js"
-import { Bar as RechartsBar, CartesianGrid as RechartsCartesianGrid, ResponsiveContainer as RechartsResponsiveContainer, XAxis as RechartsXAxis, YAxis as RechartsYAxis } from "recharts"
+import { Bar as RechartsBar, CartesianGrid as RechartsCartesianGrid, Legend as RechartsLegend, ResponsiveContainer as RechartsResponsiveContainer, Tooltip as RechartsTooltip, XAxis as RechartsXAxis, YAxis as RechartsYAxis } from "recharts"
 import dynamic from "next/dynamic"
 import NextHead from "next/head"
 
@@ -52,6 +52,41 @@ export function Toaster_6e6ebf8d7ce589d59b7d382fb7576edf () {
   )
 }
 
+export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    <div css={({ ["position"] : "fixed", ["width"] : "100vw", ["height"] : "0" })} title={("Connection Error: "+((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : ''))}>
+
+<Fragment_c179379f847dbcf00ba21f73b0ad1b3d/>
+</div>
+  )
+}
+
+export function Dropdownmenu__item_21c52e4bd8d99a75477658423d582352 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_7dc200586272c1bbcd7f51ea48788135 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <RadixThemesDropdownMenu.Item onClick={on_click_7dc200586272c1bbcd7f51ea48788135}>
+
+{"Soporte"}
+</RadixThemesDropdownMenu.Item>
+  )
+}
+
 const pulse = keyframes`
     0% {
         opacity: 0;
@@ -80,24 +115,6 @@ export function Dropdownmenu__item_dac86115f575bf5bb4e63dc75106d651 () {
   )
 }
 
-export function Dropdownmenu__item_21c52e4bd8d99a75477658423d582352 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_7dc200586272c1bbcd7f51ea48788135 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <RadixThemesDropdownMenu.Item onClick={on_click_7dc200586272c1bbcd7f51ea48788135}>
-
-{"Soporte"}
-</RadixThemesDropdownMenu.Item>
-  )
-}
-
 export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -122,23 +139,6 @@ export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
   )
 }
 
-export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    <div css={({ ["position"] : "fixed", ["width"] : "100vw", ["height"] : "0" })} title={("Connection Error: "+((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : ''))}>
-
-<Fragment_c179379f847dbcf00ba21f73b0ad1b3d/>
-</div>
-  )
-}
-
 export default function Component() {
     
 
@@ -155,7 +155,7 @@ export default function Component() {
 </Fragment>
 <RadixThemesBox css={({ ["backgroundColor"] : "black" })}>
 
-<RadixThemesBox css={({ ["background"] : "linear-gradient(45deg, var(--tomato-9), var(--plum-9))", ["padding"] : "0.5em", ["width"] : "100%" })}>
+<RadixThemesBox css={({ ["background"] : " linear-gradient(45deg, var(--tomato-9), var(--plum-9))", ["padding"] : "0.5em", ["width"] : "100%" })}>
 
 <RadixThemesBox css={({ ["@media screen and (min-width: 0)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 30em)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 48em)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 62em)"] : ({ ["display"] : "block" }) })}>
 
@@ -315,7 +315,7 @@ export default function Component() {
 
 {"M\u00f3dulo 1: Fundamentos de Finanzas Personales y Mercado Financiero"}
 </RadixThemesHeading>
-<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "#FFC75F", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
 
 {"1. \u00bfQu\u00e9 son las finanzas?"}
 </RadixThemesHeading>
@@ -324,7 +324,7 @@ export default function Component() {
 {"Las finanzas corresponden a un \u00e1rea de la econom\u00eda que estudia la obtenci\u00f3n y administraci\u00f3n de dinero y de capital, es decir, los recursos financieros.\nEstudia tanto la obtenci\u00f3n de recursos (financiaci\u00f3n), como la inversi\u00f3n y el ahorro de los mismos."}
 </RadixThemesText>
 <RadixThemesSeparator css={({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" })} size={"4"}/>
-<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "#FFC75F", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
 
 {"2. Conceptos Contables"}
 </RadixThemesHeading>
@@ -347,7 +347,7 @@ export default function Component() {
 {"Ingresos, gastos y resultado"}
 </li>
 </ol>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
 
 {"Cuentas patrimoniales"}
 </RadixThemesHeading>
@@ -355,7 +355,7 @@ export default function Component() {
 
 <Fragment>
 
-<RadixThemesTable.Root css={({ ["backgroundColor"] : "#e6004c", ["color"] : "#333333", ["border"] : "1px solid #ffffff", ["width"] : "100%", ["padding"] : "5px", ["fontSize"] : "10px" })} size={"2"} variant={"surface"}>
+<RadixThemesTable.Root css={({ ["width"] : "100%", ["padding"] : "5px", ["fontSize"] : "10px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid #ffffff" })} size={"2"} variant={"surface"}>
 
 <RadixThemesTable.Header>
 
@@ -389,7 +389,7 @@ export default function Component() {
 </RadixThemesTable.Header>
 <RadixThemesTable.Body>
 
-<RadixThemesTable.Row css={({ ["color"] : "darkgray" })}>
+<RadixThemesTable.Row css={({ ["color"] : "white" })}>
 
 <RadixThemesTable.RowHeaderCell>
 
@@ -448,7 +448,7 @@ export default function Component() {
 </Fragment>
 </RadixThemesFlex>
 <RadixThemesSeparator css={({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" })} size={"4"}/>
-<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "#FFC75F", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
 
 {"3. El ahorro"}
 </RadixThemesHeading>
@@ -468,16 +468,18 @@ export default function Component() {
 
 <RechartsResponsiveContainer height={300} minHeight={10} minWidth={10} width={"100%"}>
 
-<RechartsBarChart data={[({ ["name"] : "Mes 1", ["uv"] : 10000 }), ({ ["name"] : "Mes 2", ["uv"] : 20000 }), ({ ["name"] : "Mes 3", ["uv"] : 30000 }), ({ ["name"] : "Mes 4", ["uv"] : 40000 }), ({ ["name"] : "Mes 5", ["uv"] : 50000 }), ({ ["name"] : "Mes 6", ["uv"] : 60000 }), ({ ["name"] : "Mes 7", ["uv"] : 70000 }), ({ ["name"] : "Mes 8", ["uv"] : 80000 }), ({ ["name"] : "Mes 9", ["uv"] : 90000 }), ({ ["name"] : "Mes 10", ["uv"] : 100000 }), ({ ["name"] : "Mes 11", ["uv"] : 110000 }), ({ ["name"] : "Mes 12", ["uv"] : 120000 })]} height={"100%"} width={"100%"}>
+<RechartsBarChart data={[({ ["name"] : "Mes 1", ["Ahorro $"] : 10000 }), ({ ["name"] : "Mes 2", ["Ahorro $"] : 20000 }), ({ ["name"] : "Mes 3", ["Ahorro $"] : 30000 }), ({ ["name"] : "Mes 4", ["Ahorro $"] : 40000 }), ({ ["name"] : "Mes 5", ["Ahorro $"] : 50000 }), ({ ["name"] : "Mes 6", ["Ahorro $"] : 60000 }), ({ ["name"] : "Mes 7", ["Ahorro $"] : 70000 }), ({ ["name"] : "Mes 8", ["Ahorro $"] : 80000 }), ({ ["name"] : "Mes 9", ["Ahorro $"] : 90000 }), ({ ["name"] : "Mes 10", ["Ahorro $"] : 100000 }), ({ ["name"] : "Mes 11", ["Ahorro $"] : 110000 }), ({ ["name"] : "Mes 12", ["Ahorro $"] : 120000 })]} height={"100%"} width={"100%"}>
 
-<RechartsBar animationBegin={150} animationDuration={1800} animationEasing={"ease"} dataKey={"uv"} fill={"var(--pink-11)"} isAnimationActive={true} stroke={"var(--pink-12)"}/>
+<RechartsBar animationBegin={150} animationDuration={1800} animationEasing={"ease"} dataKey={"Ahorro $"} fill={"var(--blue-11)"} isAnimationActive={true} name={"Ahorro Mensual"} stroke={"var(--pink-10)"}/>
 <RechartsXAxis dataKey={"name"} stroke={"var(--mauve-1)"}/>
-<RechartsYAxis stroke={"var(--yellow-1)"}/>
+<RechartsYAxis name={"Ahorro ($)"} stroke={"var(--yellow-1)"}/>
 <RechartsCartesianGrid stroke={"var(--yellow-1)"} strokeDasharray={"3 3"}/>
+<RechartsTooltip contentStyle={({ ["background"] : "var(--gray-1)", ["borderColor"] : "var(--gray-4)", ["borderRadius"] : "8px" })} cursor={({ ["strokeWidth"] : 1, ["fill"] : "var(--gray-3)" })} itemStyle={({ ["color"] : "var(--gray-12)" })} labelStyle={({ ["color"] : "var(--gray-11)" })}/>
+<RechartsLegend layout={"horizontal"} verticalAlign={"top"} wrapperStyle={({ ["wrapper_style"] : ({ ["paddingBottom"] : "10px" }) })}/>
 </RechartsBarChart>
 </RechartsResponsiveContainer>
 </RadixThemesFlex>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
 
 {"An\u00e1lisis del Gr\u00e1fico"}
 </RadixThemesHeading>
@@ -485,7 +487,7 @@ export default function Component() {
 
 {"El gr\u00e1fico muestra c\u00f3mo un ahorro constante del 10% del ingreso mensual ($10.000) se acumula a lo largo del a\u00f1o. Al final del per\u00edodo, el ahorro total alcanza los $120.000, demostrando el impacto positivo de la constancia en el ahorro."}
 </RadixThemesText>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
 
 {"Conclusi\u00f3n"}
 </RadixThemesHeading>
@@ -494,7 +496,7 @@ export default function Component() {
 {"Adoptar este h\u00e1bito no solo permite construir un fondo de emergencia, sino que tambi\u00e9n abre oportunidades de inversi\u00f3n y estabilidad financiera a largo plazo"}
 </RadixThemesText>
 <RadixThemesSeparator css={({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" })} size={"4"}/>
-<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "#FFC75F", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
 
 {"4. Identificacion de Gastos"}
 </RadixThemesHeading>
@@ -502,7 +504,7 @@ export default function Component() {
 
 {"Para una correcta administraci\u00f3n financiera, es clave identificar y clasificar los diferentestipos de gastos. Esto permite entender mejor el flujo de dinero y tomar decisiones m\u00e1s inteligentes sobre el presupuesto."}
 </RadixThemesText>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
 
 {"Gastos Fijos y Supervivencia"}
 </RadixThemesHeading>
@@ -512,7 +514,7 @@ export default function Component() {
 </RadixThemesText>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["marginBottom"] : "1em" })} direction={"row"} gap={"3"}>
 
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
 
 {"Ejemplos: "}
 </RadixThemesHeading>
@@ -536,7 +538,7 @@ export default function Component() {
 </li>
 </ol>
 </RadixThemesFlex>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
 
 {"Gastos Variables"}
 </RadixThemesHeading>
@@ -546,7 +548,7 @@ export default function Component() {
 </RadixThemesText>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["marginBottom"] : "1em" })} direction={"row"} gap={"3"}>
 
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
 
 {"Ejemplos: "}
 </RadixThemesHeading>
@@ -570,7 +572,7 @@ export default function Component() {
 </li>
 </ol>
 </RadixThemesFlex>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
 
 {"Gastos Extraordinarios"}
 </RadixThemesHeading>
@@ -585,7 +587,7 @@ export default function Component() {
 </RadixThemesText>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["marginBottom"] : "1em" })} direction={"row"} gap={"3"}>
 
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
 
 {"Ejemplos: "}
 </RadixThemesHeading>
@@ -618,7 +620,7 @@ export default function Component() {
 {" Llevar un registro detallado de los gastos ayuda a identificar patrones y encontrar oportunidades de ahorro. Aplicaciones de finanzas personales o simples hojas de c\u00e1lculo pueden ser herramientas \u00fatiles para este prop\u00f3sito."}
 </RadixThemesText>
 <RadixThemesSeparator css={({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" })} size={"4"}/>
-<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "#FFC75F", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
 
 {"Conceptos Financieros Clave"}
 </RadixThemesHeading>
@@ -630,7 +632,7 @@ export default function Component() {
 
 <Fragment>
 
-<RadixThemesTable.Root css={({ ["backgroundColor"] : "#e6004c", ["color"] : "#333333", ["border"] : "1px solid #ffffff", ["width"] : "100%", ["padding"] : "5px", ["fontSize"] : "10px" })} size={"2"} variant={"surface"}>
+<RadixThemesTable.Root css={({ ["width"] : "100%", ["padding"] : "5px", ["fontSize"] : "10px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid #ffffff" })} size={"2"} variant={"surface"}>
 
 <RadixThemesTable.Header>
 
@@ -687,7 +689,7 @@ export default function Component() {
 {"(Beneficio/Capital invertido)"}
 </RadixThemesTable.Cell>
 </RadixThemesTable.Row>
-<RadixThemesTable.Row css={({ ["color"] : "darkgray" })}>
+<RadixThemesTable.Row css={({ ["color"] : "white" })}>
 
 <RadixThemesTable.RowHeaderCell>
 
@@ -752,7 +754,7 @@ export default function Component() {
 </Fragment>
 </RadixThemesFlex>
 <RadixThemesSeparator css={({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" })} size={"4"}/>
-<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "darkgray", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "#FFC75F", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
 
 {"Conclusi\u00f3n del M\u00f3dulo 1:"}
 </RadixThemesHeading>
@@ -764,7 +766,7 @@ export default function Component() {
 
 {"Resumen:"}
 </RadixThemesStrong>
-{"Hemos explorado qu\u00e9 son las finanzas, los conceptos contables b\u00e1sicos, la importancia del ahorro, la identificaci\u00f3n de gastos y conceptos financieros clave."}
+{" Hemos explorado qu\u00e9 son las finanzas, los conceptos contables b\u00e1sicos, la importancia del ahorro, la identificaci\u00f3n de gastos y conceptos financieros clave."}
 </li>
 <li>
 
@@ -772,7 +774,7 @@ export default function Component() {
 
 {"Aplicaci\u00f3n Pr\u00e1ctica:"}
 </RadixThemesStrong>
-{"Te invitamos a revisar tus propios gastos y a empezar a llevar un registro detallado. Calcul\u00e1 tu rentabilidad personal y pens\u00e1 en estrategias para optimizar tu presupuesto."}
+{" Te invitamos a revisar tus propios gastos y a empezar a llevar un registro detallado. Calcul\u00e1 tu rentabilidad personal y pens\u00e1 en estrategias para optimizar tu presupuesto."}
 </li>
 <li>
 
@@ -780,7 +782,7 @@ export default function Component() {
 
 {"Pr\u00f3ximos Pasos:"}
 </RadixThemesStrong>
-{"En el pr\u00f3ximo m\u00f3dulo veremos intrumentos de inversion, tipos de analisis de mercado y trading."}
+{" En el pr\u00f3ximo m\u00f3dulo veremos los perfiles de inversores, intrumentos de inversion y sus caracteristicas."}
 </li>
 </ol>
 </RadixThemesBox>

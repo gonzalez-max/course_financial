@@ -1,4 +1,6 @@
 import reflex as rx
+import mi_web.styles.styles as styles
+
 def table2_module1() -> rx.Component:
     return rx.table.root(
                         rx.table.header(
@@ -23,7 +25,7 @@ def table2_module1() -> rx.Component:
                                 rx.table.cell("Precio del dinero; lo que se paga por un prestamo o se gana en una inversion"),
                                 rx.table.cell("Prestamo de $100.000 con 10% anual → Pagas $10.000 en intereses. "),
                                 rx.table.cell(rx.text.strong("-Fija")," (No cambia)",rx.text.strong("-Variable"),"(Depende de la economia)",rx.text.strong("-Nominal vs Efectiva")),
-                                color="darkgray",
+                                color="white",
                             ),
                             rx.table.row(
                                 rx.table.row_header_cell(rx.text.strong("Inflacion")),
@@ -38,8 +40,5 @@ def table2_module1() -> rx.Component:
                         font_size="10px",
                         variant="surface",
                         size="2",
-                        style={
-                               "background_color": "#e6004c",
-                                "color": "#333333",
-                                "border": "1px solid #ffffff",}
+                        **styles.TABLES_STYLES
                     ),

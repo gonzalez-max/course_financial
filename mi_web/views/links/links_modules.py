@@ -5,10 +5,10 @@ import mi_web.styles.styles as styles
 def links_modules() -> rx.Component:
     return rx.link(
         rx.center(rx.vstack(
-            rx.button("Modulo numero 1: Fundamentos de Finanzas personales y Mercado Financiero ", 
+            rx.button("Modulo numero 1: Fundamentos de Finanzas personales y Mercado Financiero. ", 
                     on_click=lambda: rx.redirect("/module_1"), is_external=False,**styles.BUTTON_STYLE,
             ),
-            rx.button("Modulo numero 2: ", 
+            rx.button("Modulo numero 2: Introduccion al Trading. ", 
                     on_click=lambda: rx.redirect("/module_2"), is_external=False,**styles.BUTTON_STYLE,
             ),
             rx.button(" Modulo numero 3: ", 

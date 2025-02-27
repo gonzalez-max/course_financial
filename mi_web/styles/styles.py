@@ -107,7 +107,12 @@ DRAWER_CONTENT_STYLE = {
     },
 }
 
-
+TABLES_STYLES={
+    "background_color": "#99003d",
+    "color": "#333333",
+    "border": "1px solid #ffffff",}
+                    
+    
 
 
 
@@ -169,7 +174,7 @@ TEXT_STYLE = {
     "subtitle": {  # Para subtítulos o encabezados secundarios
         "font_size": "25px",
         "font_weight": "semibold",
-        "color": "darkgray",
+        "color": "#FFC75F",
         "text_align": "left",
         "margin_bottom": "8px",
     },
@@ -177,7 +182,7 @@ TEXT_STYLE = {
     "subseccion": {  # Para subtítulos o encabezados secundarios
         "font_size": "18px",
         "font_weight": "semibold",
-        "color": "darkgray",
+        "color": "#b37400",
         "text_align": "left",
         "margin_bottom": "8px",
     },
