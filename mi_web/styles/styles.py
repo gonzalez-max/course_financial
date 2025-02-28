@@ -11,6 +11,9 @@ class Size(Enum):
     DEFAULT="1em"
     BIG="4em"
     ULTRA="6em"
+    IMAGE_width="600px"
+    IMAGE_height="400px"
+    
 
 
 #estilos de botones

@@ -1,5 +1,5 @@
 import reflex as rx
-from mi_web.components.link_button import link_button
+from mi_web.components.general.link_button import link_button
 from mi_web.styles.styles import Size as Size
 import mi_web.styles.styles as styles
 

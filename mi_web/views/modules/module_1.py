@@ -1,9 +1,9 @@
 import reflex as rx 
-from mi_web.components.nav_bar import navbar_dropdown
-from mi_web.components.footer import footer
+from mi_web.components.general.nav_bar import navbar_dropdown
+from mi_web.components.general.footer import footer
 from mi_web.styles.styles import Size as Size
 import mi_web.styles.styles as styles
-from mi_web.components.drawer import drawer
+from mi_web.components.general.drawer import drawer
 from mi_web.components.module1_components.saving_bar import saving_bar
 from mi_web.components.module1_components.table1_module1 import table1_module1
 from mi_web.components.module1_components.table2_module1 import table2_module1

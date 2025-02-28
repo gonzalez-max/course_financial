@@ -1,8 +1,8 @@
 import reflex as rx 
-from mi_web.components.nav_bar import navbar_dropdown
+from mi_web.components.general.nav_bar import navbar_dropdown
 from mi_web.views.header.header import header
 from mi_web.views.links.links import links
-from mi_web.components.footer import footer
+from mi_web.components.general.footer import footer
 from mi_web.styles.styles import Size as Size
 import mi_web.styles.styles as styles
 from mi_web.financial_page import financial_page
@@ -34,7 +34,7 @@ def index() -> rx.Component:
 
 # debemos registrar cada nueva pagina
 app = rx.App()
-app.add_page(index, route="/home", title="Pagina Principal")
+app.add_page(index, route="/", title="Pagina Principal")
 app.add_page(financial_page, route="/financial_page", title="Curso Finanza y Trading")
 app.add_page(soporte_page, route="/soporte_page", title="Soporte")
 app.add_page(links_modules)

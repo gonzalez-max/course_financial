@@ -1,9 +1,9 @@
 import reflex as rx 
-from mi_web.components.nav_bar import navbar_dropdown
-from mi_web.components.footer import footer
+from mi_web.components.general.nav_bar import navbar_dropdown
+from mi_web.components.general.footer import footer
 from mi_web.styles.styles import Size as Size
 import mi_web.styles.styles as styles
-from mi_web.components.drawer import drawer
+from mi_web.components.general.drawer import drawer
 from mi_web.components.module2_components.module2_table1 import module2_table1
 from mi_web.components.module2_components.module2_table2 import module2_table2
 
@@ -49,9 +49,9 @@ def module_2() -> rx.Component:
       
       rx.text(rx.text.strong("Responde estas preguntas y descubre tu perfil:"), **styles.TEXT_STYLE["body"]),
       
-      rx.text("✅ ¿Cómo reaccionarías si tu inversión pierde valor en el corto plazo?",**styles.TEXT_STYLE["body"]),
-      rx.text("✅ ¿Prefieres estabilidad o estás dispuesto a asumir riesgos por mayor rentabilidad?",**styles.TEXT_STYLE["body"]),
-      rx.text("✅ ¿Cuánto tiempo estás dispuesto a mantener una inversión?",**styles.TEXT_STYLE["body"],
+      rx.text("✔ ¿Cómo reaccionarías si tu inversión pierde valor en el corto plazo?",**styles.TEXT_STYLE["body"]),
+      rx.text("✔ ¿Prefieres estabilidad o estás dispuesto a asumir riesgos por mayor rentabilidad?",**styles.TEXT_STYLE["body"]),
+      rx.text("✔ ¿Cuánto tiempo estás dispuesto a mantener una inversión?",**styles.TEXT_STYLE["body"],
                margin_bottom=Size.DEFAULT.value),
       
       rx.text("Este análisis será clave antes de adentrarte en el mundo del trading, ya que te permitirá tomar decisiones "
