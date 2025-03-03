@@ -4,11 +4,14 @@ from mi_web.components.general.footer import footer
 from mi_web.styles.styles import Size as Size
 import mi_web.styles.styles as styles
 from mi_web.components.general.drawer import drawer
-from mi_web.components.module3_components.imagenes.image_tipes_trading import image_tipes_trading
-from mi_web.components.module3_components.imagenes.image_f_versus_t import image_f_versus_t
-from mi_web.components.module3_components.imagenes.image_velas_japonesas import image_velas_japonesas
-from mi_web.components.module3_components.imagenes.image_fuerza_velas import image_fueza_velas
-from mi_web.components.module3_components.module3_table1 import module3_table1
+from mi_web.components.modules_components.module3_components.imagenes.image_tipes_trading import image_tipes_trading
+from mi_web.components.modules_components.module3_components.imagenes.image_f_versus_t import image_f_versus_t
+from mi_web.components.modules_components.module3_components.imagenes.image_velas_japonesas import image_velas_japonesas
+from mi_web.components.modules_components.module3_components.imagenes.image_fuerza_velas import image_fueza_velas
+from mi_web.components.modules_components.module3_components.module3_table1 import module3_table1
+from mi_web.views.links.next_button import next_button
+from mi_web.views.links.back_button import back_button
+
 
 def module_3() -> rx.Component:
     return rx.box(
@@ -252,7 +255,10 @@ def module_3() -> rx.Component:
       align_items="center",
     ),
   ),
-    footer(),
-    background_color="black"
+        next_button("/module_3"),
+        back_button("/module_2"),
+    
+        footer(),
+        background_color="black"
     ),  
   

@@ -8,9 +8,9 @@ import mi_web.styles.styles as styles
 from mi_web.financial_page import financial_page
 from mi_web.soporte_page import soporte_page
 from mi_web.views.links.links_modules import links_modules
-from mi_web.views.modules.module_1 import module_1
-from mi_web.views.modules.module_2 import module_2
-from mi_web.views.modules.module_3 import module_3
+from mi_web.views.modules_views.module_1 import module_1
+from mi_web.views.modules_views.module_2 import module_2
+from mi_web.views.modules_views.module_3 import module_3
 
 
 class State(rx.State):

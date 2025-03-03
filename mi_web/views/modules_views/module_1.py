@@ -4,10 +4,11 @@ from mi_web.components.general.footer import footer
 from mi_web.styles.styles import Size as Size
 import mi_web.styles.styles as styles
 from mi_web.components.general.drawer import drawer
-from mi_web.components.module1_components.saving_bar import saving_bar
-from mi_web.components.module1_components.table1_module1 import table1_module1
-from mi_web.components.module1_components.table2_module1 import table2_module1
-
+from mi_web.components.modules_components.module1_components.saving_bar import saving_bar
+from mi_web.components.modules_components.module1_components.table1_module1 import table1_module1
+from mi_web.components.modules_components.module1_components.table2_module1 import table2_module1
+from mi_web.views.links.next_button import next_button
+from mi_web.views.links.back_button import back_button
 
 def module_1() -> rx.Component:
     return rx.box(
@@ -177,6 +178,7 @@ def module_1() -> rx.Component:
                 align_items="center",
             )
         ),
+        next_button("/module_2"),
         footer(),
         background_color="black"
     )
