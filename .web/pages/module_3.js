@@ -8,31 +8,13 @@ import { MenuIcon as LucideMenuIcon, WifiOffIcon as LucideWifiOffIcon } from "lu
 import { keyframes } from "@emotion/react"
 import { toast, Toaster } from "sonner"
 import env from "$/env.json"
-import { Box as RadixThemesBox, Button as RadixThemesButton, DropdownMenu as RadixThemesDropdownMenu, Flex as RadixThemesFlex, Heading as RadixThemesHeading, Link as RadixThemesLink, Separator as RadixThemesSeparator, Strong as RadixThemesStrong, Text as RadixThemesText, Theme as RadixThemesTheme } from "@radix-ui/themes"
+import { Box as RadixThemesBox, Button as RadixThemesButton, DropdownMenu as RadixThemesDropdownMenu, Flex as RadixThemesFlex, Heading as RadixThemesHeading, Link as RadixThemesLink, Separator as RadixThemesSeparator, Strong as RadixThemesStrong, Table as RadixThemesTable, Text as RadixThemesText, Theme as RadixThemesTheme } from "@radix-ui/themes"
 import NextLink from "next/link"
 import { Drawer as VaulDrawer } from "vaul"
 import theme from "$/utils/theme.js"
 import NextHead from "next/head"
 
 
-
-export function Dropdownmenu__item_dac86115f575bf5bb4e63dc75106d651 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_878b59ed445e335ab3312bf6ae65b075 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/financial_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <RadixThemesDropdownMenu.Item onClick={on_click_878b59ed445e335ab3312bf6ae65b075}>
-
-{"Aprender"}
-</RadixThemesDropdownMenu.Item>
-  )
-}
 
 export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
   
@@ -50,40 +32,6 @@ export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
 </div>
   )
 }
-
-export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    <Fragment>
-
-{isTrue((connectErrors.length > 0)) ? (
-  <Fragment>
-
-<LucideWifiOffIcon css={({ ["color"] : "crimson", ["zIndex"] : 9999, ["position"] : "fixed", ["bottom"] : "33px", ["right"] : "33px", ["animation"] : (pulse+" 1s infinite") })} size={32}/>
-</Fragment>
-) : (
-  <Fragment/>
-)}
-</Fragment>
-  )
-}
-
-const pulse = keyframes`
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-`
-
 
 export function Toaster_6e6ebf8d7ce589d59b7d382fb7576edf () {
   
@@ -118,6 +66,16 @@ export function Toaster_6e6ebf8d7ce589d59b7d382fb7576edf () {
   )
 }
 
+const pulse = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+`
+
+
 export function Dropdownmenu__item_21c52e4bd8d99a75477658423d582352 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -133,6 +91,48 @@ export function Dropdownmenu__item_21c52e4bd8d99a75477658423d582352 () {
 
 {"Soporte"}
 </RadixThemesDropdownMenu.Item>
+  )
+}
+
+export function Dropdownmenu__item_dac86115f575bf5bb4e63dc75106d651 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_878b59ed445e335ab3312bf6ae65b075 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/financial_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <RadixThemesDropdownMenu.Item onClick={on_click_878b59ed445e335ab3312bf6ae65b075}>
+
+{"Aprender"}
+</RadixThemesDropdownMenu.Item>
+  )
+}
+
+export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    <Fragment>
+
+{isTrue((connectErrors.length > 0)) ? (
+  <Fragment>
+
+<LucideWifiOffIcon css={({ ["color"] : "crimson", ["zIndex"] : 9999, ["position"] : "fixed", ["bottom"] : "33px", ["right"] : "33px", ["animation"] : (pulse+" 1s infinite") })} size={32}/>
+</Fragment>
+) : (
+  <Fragment/>
+)}
+</Fragment>
   )
 }
 
@@ -556,8 +556,332 @@ export default function Component() {
 </RadixThemesHeading>
 <RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "white", ["textAlign"] : "justify", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1" })}>
 
-{"Las velas japonesas son una de las herramientas m\u00e1s utilizadas en el an\u00e1lisis t\u00e9cnico. Representan la evoluci\u00f3n del precio en un per\u00edodo determinado y ayudan a interpretar el sentimiento del mercado."}
+<RadixThemesStrong>
+
+{"Las velas japonesas"}
+</RadixThemesStrong>
+{" son una de las herramientas m\u00e1s utilizadas en el an\u00e1lisis t\u00e9cnico. Representan la evoluci\u00f3n del precio en un per\u00edodo determinado y ayudan a interpretar el sentimiento del mercado."}
 </RadixThemesText>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+
+{"Estructura de una vela japonesa"}
+</RadixThemesHeading>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "white", ["textAlign"] : "justify", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["marginBottom"] : "1em" })}>
+
+{"Cada vela est\u00e1 compuesta por:"}
+</RadixThemesText>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "white", ["textAlign"] : "justify", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["marginBottom"] : "1em" })}>
+
+<RadixThemesStrong>
+
+{"1. Cuerpo:"}
+</RadixThemesStrong>
+{" Diferencia entre el precio de apertura y cierre."}
+</RadixThemesText>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "white", ["textAlign"] : "justify", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["marginBottom"] : "1em" })}>
+
+<RadixThemesStrong>
+
+{"2. Mecha o sombra:"}
+</RadixThemesStrong>
+{" Representa los precios m\u00e1ximo y m\u00ednimo alcanzados."}
+</RadixThemesText>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "white", ["textAlign"] : "justify", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["marginBottom"] : "1em" })}>
+
+<RadixThemesStrong>
+
+{"3. Color:"}
+</RadixThemesStrong>
+</RadixThemesText>
+<ol css={({ ["direction"] : "column", ["listStyleType"] : "disc", ["color"] : "white", ["marginBottom"] : "1em", ["marginLeft"] : "1.5rem" })}>
+
+<li css={({ ["marginBottom"] : "1em" })}>
+
+<RadixThemesStrong>
+
+{"\ud83d\udfe2 Verde:"}
+</RadixThemesStrong>
+{" Indica que el precio cerr\u00f3 por encima del precio de apertura (alcista)."}
+</li>
+<li css={({ ["marginBottom"] : "1em" })}>
+
+<RadixThemesStrong>
+
+{"\ud83d\udd34 Roja:"}
+</RadixThemesStrong>
+{" Indica que el precio cerr\u00f3 por debajo del precio de apertura (bajista)."}
+</li>
+</ol>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["marginBottom"] : "1em" })} direction={"row"} gap={"3"}>
+
+<RadixThemesBox css={({ ["alignItems"] : "center", ["justifyContent"] : "center" })}>
+
+<img css={({ ["height"] : "300px", ["width"] : "100%", ["maxWidth"] : "600px", ["borderRadius"] : "20px" })} src={"/velas-japonesas.jpg?refresh=1"}/>
+</RadixThemesBox>
+</RadixThemesFlex>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+
+{"Tipos de velas m\u00e1s comunes"}
+</RadixThemesHeading>
+<ol css={({ ["direction"] : "column", ["listStyleType"] : "disc", ["color"] : "white", ["marginBottom"] : "1em", ["marginLeft"] : "1.5rem" })}>
+
+<li css={({ ["marginBottom"] : "1em" })}>
+
+<RadixThemesStrong>
+
+{" Vela alcista:"}
+</RadixThemesStrong>
+{" Cuerpo verde, con o sin sombras. Indica fuerza compradora."}
+</li>
+<li css={({ ["marginBottom"] : "1em" })}>
+
+<RadixThemesStrong>
+
+{" Vela bajista:"}
+</RadixThemesStrong>
+{" Cuerpo rojo, con o sin sombras. Indica presi\u00f3n vendedora."}
+</li>
+<li css={({ ["marginBottom"] : "1em" })}>
+
+<RadixThemesStrong>
+
+{" Doji:"}
+</RadixThemesStrong>
+{"Representa indecisi\u00f3n en el mercado porque el precio de apertura y cierre son muy similares, con sombras en ambos lados o sin sombras. Cuerpo casi inexistente, reflejando indecisi\u00f3n en el mercado."}
+</li>
+<li css={({ ["marginBottom"] : "1em" })}>
+
+<RadixThemesStrong>
+
+{" Gravestone Doji:"}
+</RadixThemesStrong>
+{" : Tiene una sombra superior larga y casi sin cuerpo ni sombra inferior. Esto significa que los compradores intentaron subir el precio, pero los vendedores tomaron el control y lo devolvieron al nivel de apertura."}
+</li>
+<li css={({ ["marginBottom"] : "1em" })}>
+
+<RadixThemesStrong>
+
+{" Martillo y martillo (Hammer) invertido:"}
+</RadixThemesStrong>
+{" Posible cambio de tendencia si aparecen en zonas clave."}
+</li>
+<li css={({ ["marginBottom"] : "1em" })}>
+
+<RadixThemesStrong>
+
+{" Estrella fugaz (shooting star) y hombre colgado:"}
+</RadixThemesStrong>
+{" Herramientas como medias m\u00f3viles, RSI y MACD que ayudan en la toma de decisiones."}
+</li>
+</ol>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["marginBottom"] : "1em" })} direction={"row"} gap={"3"}>
+
+<RadixThemesBox css={({ ["alignItems"] : "center", ["justifyContent"] : "center" })}>
+
+<img css={({ ["height"] : "300px", ["width"] : "100%", ["maxWidth"] : "600px", ["borderRadius"] : "20px" })} src={"/fuerza_velas.png?refresh=1"}/>
+</RadixThemesBox>
+</RadixThemesFlex>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+
+{"\u00a1\u00a1importante!!"}
+</RadixThemesHeading>
+<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "white", ["textAlign"] : "justify", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["marginBottom"] : "1em" })}>
+
+{"Las Velas Japonesas ayudan a entender la accion del precio en cualquier mercado, si bien, son escencialespara identificar patrones y tendencias."}
+<RadixThemesStrong>
+
+{" deben combinarse con otros indicadores para confirmar se\u00f1ales."}
+</RadixThemesStrong>
+</RadixThemesText>
+<RadixThemesSeparator css={({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" })} size={"4"}/>
+<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "#FFC75F", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+
+{"Tips a tener en cuenta"}
+</RadixThemesHeading>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["marginBottom"] : "1em" })} direction={"row"} gap={"3"}>
+
+<Fragment>
+
+<RadixThemesTable.Root css={({ ["width"] : "100%", ["padding"] : "5px", ["fontSize"] : "10px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid #ffffff" })} size={"2"} variant={"surface"}>
+
+<RadixThemesTable.Header>
+
+<RadixThemesTable.Row css={({ ["backgroundColor"] : "orange" })}>
+
+<RadixThemesTable.ColumnHeaderCell>
+
+{"Tip"}
+</RadixThemesTable.ColumnHeaderCell>
+<RadixThemesTable.ColumnHeaderCell>
+
+{"Descripci\u00f3n"}
+</RadixThemesTable.ColumnHeaderCell>
+</RadixThemesTable.Row>
+</RadixThemesTable.Header>
+<RadixThemesTable.Body>
+
+<RadixThemesTable.Row css={({ ["color"] : "white" })}>
+
+<RadixThemesTable.RowHeaderCell>
+
+<RadixThemesStrong>
+
+{"\u26ab Estudiar:"}
+</RadixThemesStrong>
+</RadixThemesTable.RowHeaderCell>
+<RadixThemesTable.Cell>
+
+{"\u2705 Es muy importante conocer a profundidad los distintos conceptos y an\u00e1lisis del mercado."}
+</RadixThemesTable.Cell>
+</RadixThemesTable.Row>
+<RadixThemesTable.Row css={({ ["color"] : "white" })}>
+
+<RadixThemesTable.RowHeaderCell>
+
+<RadixThemesStrong>
+
+{"\u26ab Tener un plan:"}
+</RadixThemesStrong>
+</RadixThemesTable.RowHeaderCell>
+<RadixThemesTable.Cell>
+
+{"\u2705 Hay que tomar seriamente las inversiones, armando un plan que contemple distintos escenarios."}
+</RadixThemesTable.Cell>
+</RadixThemesTable.Row>
+<RadixThemesTable.Row css={({ ["color"] : "white" })}>
+
+<RadixThemesTable.RowHeaderCell>
+
+<RadixThemesStrong>
+
+{"\u26ab Gestionar el riesgo:"}
+</RadixThemesStrong>
+</RadixThemesTable.RowHeaderCell>
+<RadixThemesTable.Cell>
+
+{"\u2705 Es fundamental conocer los potenciales riesgos para evaluar correctamente el tama\u00f1o de la posici\u00f3n."}
+</RadixThemesTable.Cell>
+</RadixThemesTable.Row>
+<RadixThemesTable.Row css={({ ["color"] : "white" })}>
+
+<RadixThemesTable.RowHeaderCell>
+
+<RadixThemesStrong>
+
+{"\u26ab Invertir con ahorros:"}
+</RadixThemesStrong>
+</RadixThemesTable.RowHeaderCell>
+<RadixThemesTable.Cell>
+
+{"\u2705 Tomar deuda para invertir suele ser una mala idea y aumenta el riesgo financiero."}
+</RadixThemesTable.Cell>
+</RadixThemesTable.Row>
+<RadixThemesTable.Row css={({ ["color"] : "white" })}>
+
+<RadixThemesTable.RowHeaderCell>
+
+<RadixThemesStrong>
+
+{"\u26ab No sobre operar:"}
+</RadixThemesStrong>
+</RadixThemesTable.RowHeaderCell>
+<RadixThemesTable.Cell>
+
+{"\u2705 Depende del tipo de inversi\u00f3n"}
+</RadixThemesTable.Cell>
+</RadixThemesTable.Row>
+<RadixThemesTable.Row css={({ ["color"] : "white" })}>
+
+<RadixThemesTable.RowHeaderCell>
+
+<RadixThemesStrong>
+
+{"\u26ab No operar para comprar algo:"}
+</RadixThemesStrong>
+</RadixThemesTable.RowHeaderCell>
+<RadixThemesTable.Cell>
+
+{"\u2705 Operar con el objetivo de conseguir dinero r\u00e1pido para un gasto espec\u00edfico suele llevar a malas decisiones."}
+</RadixThemesTable.Cell>
+</RadixThemesTable.Row>
+<RadixThemesTable.Row css={({ ["color"] : "white" })}>
+
+<RadixThemesTable.RowHeaderCell>
+
+<RadixThemesStrong>
+
+{"\u26ab No seguir an\u00e1lisis de otros:"}
+</RadixThemesStrong>
+</RadixThemesTable.RowHeaderCell>
+<RadixThemesTable.Cell>
+
+{"\u2705 Cada persona tiene un perfil distinto, por lo que debemos invertir seg\u00fan nuestro propio conocimiento y experiencia."}
+</RadixThemesTable.Cell>
+</RadixThemesTable.Row>
+<RadixThemesTable.Row css={({ ["color"] : "white" })}>
+
+<RadixThemesTable.RowHeaderCell>
+
+<RadixThemesStrong>
+
+{"\u26ab Controlar emociones:"}
+</RadixThemesStrong>
+</RadixThemesTable.RowHeaderCell>
+<RadixThemesTable.Cell>
+
+{"\u2705 Depende del tipo de inversi\u00f3n"}
+</RadixThemesTable.Cell>
+</RadixThemesTable.Row>
+<RadixThemesTable.Row css={({ ["color"] : "white" })}>
+
+<RadixThemesTable.RowHeaderCell>
+
+<RadixThemesStrong>
+
+{"\u26ab Calcular riesgo/beneficio:"}
+</RadixThemesStrong>
+</RadixThemesTable.RowHeaderCell>
+<RadixThemesTable.Cell>
+
+{"\u2705 Siempre evaluar el potencial riesgo y beneficio antes de ejecutar una operaci\u00f3n."}
+</RadixThemesTable.Cell>
+</RadixThemesTable.Row>
+</RadixThemesTable.Body>
+</RadixThemesTable.Root>
+</Fragment>
+</RadixThemesFlex>
+<RadixThemesSeparator css={({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" })} size={"4"}/>
+<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "#FFC75F", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+
+{"Conclusi\u00f3n del M\u00f3dulo 3"}
+</RadixThemesHeading>
+<ol css={({ ["direction"] : "column", ["listStyleType"] : "disc", ["color"] : "white", ["marginBottom"] : "1em", ["marginLeft"] : "1.5rem" })}>
+
+<li css={({ ["marginBottom"] : "1em" })}>
+
+<RadixThemesStrong>
+
+{" Resumen:"}
+</RadixThemesStrong>
+{" En este m\u00f3dulo aprendimos qu\u00e9 es el trading, sus principales caracter\u00edsticas y enfoques. Diferenciamos entre an\u00e1lisis fundamental y an\u00e1lisis t\u00e9cnico, profundizando en este \u00faltimo. Tambi\u00e9n exploramos las velas japonesas y c\u00f3mo nos ayudan a interpretar el mercado."}
+</li>
+<li css={({ ["marginBottom"] : "1em" })}>
+
+<RadixThemesStrong>
+
+{" Aplicaci\u00f3n Pr\u00e1ctica:"}
+</RadixThemesStrong>
+{" Reflexion\u00e1 sobre qu\u00e9 tipo de trading se adapta mejor a tu estilo y objetivos. Analiz\u00e1 gr\u00e1ficos con velas japonesas y empez\u00e1 a identificar patrones b\u00e1sicos para mejorar tu lectura del mercado."}
+</li>
+<li css={({ ["marginBottom"] : "1em" })}>
+
+<RadixThemesStrong>
+
+{" Pr\u00f3ximos Pasos:"}
+</RadixThemesStrong>
+{" En el siguiente m\u00f3dulo, profundizaremos en el an\u00e1lisis t\u00e9cnico, explorando patrones gr\u00e1ficos y estrategias clave para identificar oportunidades de compra y venta con mayor precisi\u00f3n."}
+</li>
+</ol>
 </RadixThemesBox>
 </RadixThemesFlex>
 </RadixThemesFlex>

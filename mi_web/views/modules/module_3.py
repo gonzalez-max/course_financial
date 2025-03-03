@@ -6,7 +6,9 @@ import mi_web.styles.styles as styles
 from mi_web.components.general.drawer import drawer
 from mi_web.components.module3_components.imagenes.image_tipes_trading import image_tipes_trading
 from mi_web.components.module3_components.imagenes.image_f_versus_t import image_f_versus_t
-
+from mi_web.components.module3_components.imagenes.image_velas_japonesas import image_velas_japonesas
+from mi_web.components.module3_components.imagenes.image_fuerza_velas import image_fueza_velas
+from mi_web.components.module3_components.module3_table1 import module3_table1
 
 def module_3() -> rx.Component:
     return rx.box(
@@ -133,10 +135,98 @@ def module_3() -> rx.Component:
             
             #seccion 3 velas doji
             rx.heading("3. Introducción a las Velas Japonesas", **styles.TEXT_STYLE["subtitle"]),
-            rx.text("Las velas japonesas son una de las herramientas más utilizadas en el análisis técnico. Representan la evolución "
+            rx.text(rx.text.strong("Las velas japonesas")," son una de las herramientas más utilizadas en el análisis técnico. Representan la evolución "
                     "del precio en un período determinado y ayudan a interpretar el sentimiento del mercado.", 
                     **styles.TEXT_STYLE["body"]),
             
+            #estructura de las velas
+            rx.heading("Estructura de una vela japonesa", **styles.TEXT_STYLE["subseccion"]),
+            rx.text("Cada vela está compuesta por:",**styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
+            rx.text(rx.text.strong("1. Cuerpo:")," Diferencia entre el precio de apertura y cierre.", **styles.TEXT_STYLE["body"], 
+                    margin_bottom=Size.DEFAULT.value),
+            rx.text(rx.text.strong("2. Mecha o sombra:")," Representa los precios máximo y mínimo alcanzados.", **styles.TEXT_STYLE["body"], 
+                    margin_bottom=Size.DEFAULT.value),
+            rx.text(rx.text.strong("3. Color:"), **styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),            
+            # lista de colores
+            rx.list.ordered(
+                rx.list.item(rx.text.strong("🟢 Verde:")," Indica que el precio cerró por encima del precio de apertura (alcista)."
+                             ,margin_bottom=Size.DEFAULT.value),
+                rx.list.item(rx.text.strong("🔴 Roja:")," Indica que el precio cerró por debajo del precio de apertura (bajista)."
+                             ,margin_bottom=Size.DEFAULT.value),
+                list_style_type="disc",
+                color="white",
+                margin_bottom=Size.DEFAULT.value,
+              ),
+
+            #velas japonesas imagen
+            rx.hstack(
+            image_velas_japonesas(),
+            margin_bottom=Size.DEFAULT.value,
+            ),
+
+            #tipos de velas japonesas
+            rx.heading("Tipos de velas más comunes", **styles.TEXT_STYLE["subseccion"]),
+            #lista de tipos de velas
+            rx.list.ordered(
+                rx.list.item(rx.text.strong(" Vela alcista:")," Cuerpo verde, con o sin sombras."
+                             " Indica fuerza compradora.", margin_bottom=Size.DEFAULT.value),
+                rx.list.item(rx.text.strong(" Vela bajista:")," Cuerpo rojo, con o sin sombras."
+                             " Indica presión vendedora.",margin_bottom=Size.DEFAULT.value),
+                rx.list.item(rx.text.strong(" Doji:"),"Representa indecisión en el mercado porque "
+                             "el precio de apertura y cierre son muy similares, con sombras en ambos lados o sin sombras. "
+                             "Cuerpo casi inexistente, reflejando indecisión en el mercado.",margin_bottom=Size.DEFAULT.value),
+                rx.list.item(rx.text.strong(" Gravestone Doji:")," : Tiene una sombra superior larga y"
+                             " casi sin cuerpo ni sombra inferior. Esto significa que los compradores "
+                             "intentaron subir el precio, pero los vendedores tomaron el control y lo "
+                             "devolvieron al nivel de apertura.",margin_bottom=Size.DEFAULT.value),
+                rx.list.item(rx.text.strong(" Martillo y martillo (Hammer) invertido:")," Posible cambio de tendencia "
+                             "si aparecen en zonas clave.",margin_bottom=Size.DEFAULT.value),
+                rx.list.item(rx.text.strong(" Estrella fugaz (shooting star) y hombre colgado:")," Herramientas como medias móviles, "
+                             "RSI y MACD que ayudan en la toma de decisiones.",margin_bottom=Size.DEFAULT.value),
+                list_style_type="disc",
+                color="white",
+                margin_bottom=Size.DEFAULT.value,
+              ),
+            #imagen de tipos de velas
+            rx.hstack(
+            image_fueza_velas(),
+            margin_bottom=Size.DEFAULT.value,
+            ),
+            #aviso importante
+            rx.heading("¡¡importante!!",**styles.TEXT_STYLE["subseccion"]),
+            rx.text("Las Velas Japonesas ayudan a entender la accion del precio en cualquier mercado, si bien, son escenciales"
+                    "para identificar patrones y tendencias.",rx.text.strong(" deben combinarse con otros indicadores para confirmar señales."),
+                    **styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
+
+            rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value,margin_bottom=Size.DEFAULT.value),
+            
+            #seccion adicional tips a tener en cuenta
+            rx.heading("Tips a tener en cuenta", **styles.TEXT_STYLE["subtitle"]),
+            rx.hstack(
+            module3_table1(),
+            margin_bottom=Size.DEFAULT.value),
+            
+            rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value,margin_bottom=Size.DEFAULT.value),
+            
+            #resumen y conclusion
+            rx.heading("Conclusión del Módulo 3", **styles.TEXT_STYLE["subtitle"]),
+            
+            #lista de resumen u conlcusion
+            rx.list.ordered(
+              rx.list.item(rx.text.strong(" Resumen:")," En este módulo aprendimos qué es el trading, sus principales "
+                           "características y enfoques. Diferenciamos entre análisis fundamental y análisis técnico, "
+                           "profundizando en este último. También exploramos las velas japonesas y cómo nos ayudan a "
+                           "interpretar el mercado.", margin_bottom=Size.DEFAULT.value),
+              rx.list.item(rx.text.strong(" Aplicación Práctica:")," Reflexioná sobre qué tipo de trading se adapta "
+                           "mejor a tu estilo y objetivos. Analizá gráficos con velas japonesas y empezá a identificar "
+                           "patrones básicos para mejorar tu lectura del mercado.",margin_bottom=Size.DEFAULT.value),
+              rx.list.item(rx.text.strong(" Próximos Pasos:")," En el siguiente módulo, profundizaremos en el análisis "
+                           "técnico, explorando patrones gráficos y estrategias clave para identificar oportunidades "
+                           "de compra y venta con mayor precisión.",margin_bottom=Size.DEFAULT.value),
+              list_style_type="disc",
+              color="white",
+              margin_bottom=Size.DEFAULT.value,
+              ),
       
       
       
@@ -149,13 +239,11 @@ def module_3() -> rx.Component:
       
       
       
-      
-      
-      
-      
-      
-      
-      
+     
+     
+     
+     
+     
       #_______________________________________________________________________________________________#
         ),
       max_width="600px",
