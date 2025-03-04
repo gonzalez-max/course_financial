@@ -2,12 +2,13 @@ import reflex as rx
 from mi_web.styles.styles import Size as Size
 import mi_web.styles.styles as styles
 
-def image_fueza_velas() -> rx.Component:
+def intro_image() -> rx.Component:
     return rx.box(
         rx.image(
-            height="300px",
-            src=("/fuerza_velas.png?refresh=1"),
+            height="400px",
+            src=("/intro_image.jpg?refresh=1"),
             width="100%",
+            max_width=Size.IMAGE_width,
             **styles.IMAGE_STYLES
         ),
         align_items="center",

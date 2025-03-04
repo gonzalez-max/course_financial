@@ -8,8 +8,7 @@ def image_velas_japonesas() -> rx.Component:
             height="300px",
             src=("/velas-japonesas.jpg?refresh=1"),
             width="100%",
-            max_width=Size.IMAGE_width,
-            border_radius="20px"
+            **styles.IMAGE_STYLES
         ),
         align_items="center",
         justify_content="center"

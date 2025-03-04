@@ -12,7 +12,7 @@ def next_button(next_url: str) -> rx.Component:
             _hover={"background_color": "#cc0000"},
             transition="all 0.3s ease-in-out",
             box_shadow= "0px 4px 10px rgba(79, 70, 229, 0.3)",
-            border_color= "#6366F1",# Cambio de color al pasar el mouse
+            border= "#6366F1",# Cambio de color al pasar el mouse
         ),
         position="fixed",
         bottom="20px",  # Siempre al final de la pantalla

@@ -48,7 +48,7 @@ BUTTON_STYLE = {
 }
 
 
-#drawer styles
+#__________________drawer styles________________________#
 DRAWER_BUTTON_STYLE = {
     "size": "3",
     "variant": "solid",
@@ -110,12 +110,23 @@ DRAWER_CONTENT_STYLE = {
     },
 }
 
+
+#_____________________TABLAS STYLES____________________________________#
 TABLES_STYLES={
     "background_color": "#99003d",
     "color": "#333333",
     "border": "1px solid #ffffff",}
                     
-    
+
+#________________IMAGEN STYLES_________________________________________#
+IMAGE_STYLES={
+    "IMAGE_width":"600px",
+    "IMAGE_height":"400px",
+    "background_color": "#99003d",
+    "color": "#333333",
+    "border": "1px solid gray", #color de bordes normales
+    "border_radius": "20px", #forma de los bordes
+    "box_shadow":"0px 0px 10px gray"} #efecto a los bordes
 
 
 
@@ -163,7 +174,7 @@ font_style = {
     "font_size": "16px",
 }
 
-# Diccionario de estilos para textos en Reflex
+#__________________Diccionario de estilos para textos en Reflex_________________#
 TEXT_STYLE = {
     "title": {  # Para títulos principales
         "font_size": "50px",
@@ -171,6 +182,7 @@ TEXT_STYLE = {
         "color": "white",
         "text_align": "center",
         "margin_bottom": "20px",
+        "margin_top": "0px",
         "padding" : "10px",
         "letter_spacing" : "1px",
     },

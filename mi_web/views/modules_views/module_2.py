@@ -8,7 +8,7 @@ from mi_web.components.modules_components.module2_components.module2_table1 impo
 from mi_web.components.modules_components.module2_components.module2_table2 import module2_table2
 from mi_web.views.links.next_button import next_button
 from mi_web.views.links.back_button import back_button
-
+from mi_web.components.modules_components.module2_components.imagenes.fci_image import fci_image
 
 def module_2() -> rx.Component:
   return rx.box(
@@ -158,6 +158,12 @@ def module_2() -> rx.Component:
       rx.text("Los Fondos Comunes de Inversión (FCI) son herramientas que permiten invertir "
               "sin necesidad de conocimientos avanzados. Funcionan agrupando dinero de muchas personas "
               "y gestionándolo en distintos activos según el tipo de fondo.", **styles.TEXT_STYLE["body"],margin_bottom=Size.DEFAULT.value),
+      #imagen fci 
+      rx.hstack(
+      fci_image(),
+      margin_bottom=Size.DEFAULT.value,
+      ),
+      
       #tipos de fci
       rx.heading("Tipos de FCI según sus características:", **styles.TEXT_STYLE["subseccion"]),
       
