@@ -9,6 +9,8 @@ from mi_web.components.modules_components.module2_components.module2_table2 impo
 from mi_web.views.links.next_button import next_button
 from mi_web.views.links.back_button import back_button
 from mi_web.components.modules_components.module2_components.imagenes.fci_image import fci_image
+from mi_web.components.modules_components.module2_components.imagenes.image_tipo_inversor  import image_tipo_inversor
+
 
 def module_2() -> rx.Component:
   return rx.box(
@@ -27,6 +29,11 @@ def module_2() -> rx.Component:
               "tolerancia al riesgo diferente, lo que influye en las decisiones que toma a la hora de invertir.",
               **styles.TEXT_STYLE["body"],
               margin_bottom=Size.DEFAULT.value),
+      
+      #imagen tipo de inversor
+      rx.hstack(
+      image_tipo_inversor(),
+      margin_bottom=Size.DEFAULT.value),
       
       rx.heading("¿Qué es un perfil de inversor?",**styles.TEXT_STYLE["subseccion"]),
       rx.text("Un perfil de inversor es una clasificación que nos ayuda a entender cómo reaccionamos"

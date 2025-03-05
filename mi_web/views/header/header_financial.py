@@ -12,6 +12,7 @@ def header_financial() -> rx.Component:
             rx.heading("Bienvenidos al curso de Trading",**styles.TEXT_STYLE["title"]),
         intro_image(),
         align_items="center",
+        margin_top="0"
         )),
     rx.vstack(
             rx.heading("Introduccion y Objetivos del curso.",**styles.TEXT_STYLE["subtitle"]),
@@ -24,5 +25,4 @@ def header_financial() -> rx.Component:
             width="100%",
             border_radius="10px",
             align="center",
-            flex_direction=["row", "column"]
             )),

@@ -182,7 +182,7 @@ TEXT_STYLE = {
         "color": "white",
         "text_align": "center",
         "margin_bottom": "20px",
-        "margin_top": "0px",
+        "margin_top": "50px",
         "padding" : "10px",
         "letter_spacing" : "1px",
     },

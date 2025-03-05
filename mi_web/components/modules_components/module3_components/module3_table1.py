@@ -31,36 +31,24 @@ def module3_table1() -> rx.Component:
                             ),
                             rx.table.row(
                                 rx.table.row_header_cell(rx.text.strong("⚫ Invertir con ahorros:")),
-                                rx.table.cell("✅ Tomar deuda para invertir suele ser una mala idea y aumenta el riesgo financiero."),
-                                color="white",
-                            ),
-                            
-                            rx.table.row(
-                                rx.table.row_header_cell(rx.text.strong("⚫ No sobre operar:")),
-                                rx.table.cell("✅ Depende del tipo de inversión"),
+                                rx.table.cell("❌ Tomar deuda para invertir suele ser una mala idea y aumenta el riesgo financiero."),
                                 color="white",
                             ),
                             
                             rx.table.row(
                                 rx.table.row_header_cell(rx.text.strong("⚫ No operar para comprar algo:")),
-                                rx.table.cell("✅ Operar con el objetivo de conseguir dinero rápido para un gasto específico suele "
-                                              "llevar a malas decisiones."),
+                                rx.table.cell("❌ No es recomendable operar para conseguir dinero rápido para un gasto específico "
+                                              "suele llevar a tomar malas decisiones."),
                                 color="white",
                             ),
                             
                             rx.table.row(
                                 rx.table.row_header_cell(rx.text.strong("⚫ No seguir análisis de otros:")),
-                                rx.table.cell("✅ Cada persona tiene un perfil distinto, por lo que debemos invertir según nuestro "
+                                rx.table.cell("❌ Cada persona tiene un perfil distinto, por lo que debemos invertir según nuestro "
                                               "propio conocimiento y experiencia."),
                                 color="white",
                             ),
-                            
-                            rx.table.row(
-                                rx.table.row_header_cell(rx.text.strong("⚫ Controlar emociones:")),
-                                rx.table.cell("✅ Depende del tipo de inversión"),
-                                color="white",
-                            ),
-                            
+                                                        
                             rx.table.row(
                                 rx.table.row_header_cell(rx.text.strong("⚫ Calcular riesgo/beneficio:")),
                                 rx.table.cell("✅ Siempre evaluar el potencial riesgo y beneficio antes de ejecutar una operación."),

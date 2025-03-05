@@ -19,6 +19,7 @@ def financial_page() -> rx.Component:
                 width="100%",
                 margin_y=Size.ULTRA.value,
                 align_items="center",
+                margin_top="0em"
             )
         ),
         footer(),

@@ -8,9 +8,14 @@ from mi_web.components.modules_components.module3_components.imagenes.image_tipe
 from mi_web.components.modules_components.module3_components.imagenes.image_f_versus_t import image_f_versus_t
 from mi_web.components.modules_components.module3_components.imagenes.image_velas_japonesas import image_velas_japonesas
 from mi_web.components.modules_components.module3_components.imagenes.image_fuerza_velas import image_fueza_velas
+from mi_web.components.modules_components.module3_components.imagenes.image_gestion_riesgo import image_gestion_riesgo
+from mi_web.components.modules_components.module3_components.imagenes.image_psicologia_trading import image_psicologia_trading
 from mi_web.components.modules_components.module3_components.module3_table1 import module3_table1
 from mi_web.views.links.next_button import next_button
 from mi_web.views.links.back_button import back_button
+
+
+
 
 
 def module_3() -> rx.Component:
@@ -138,8 +143,8 @@ def module_3() -> rx.Component:
             
             #seccion 3 velas doji
             rx.heading("3. Introducción a las Velas Japonesas", **styles.TEXT_STYLE["subtitle"]),
-            rx.text(rx.text.strong("Las velas japonesas")," son una de las herramientas más utilizadas en el análisis técnico. Representan la evolución "
-                    "del precio en un período determinado y ayudan a interpretar el sentimiento del mercado.", 
+            rx.text(rx.text.strong("Las velas japonesas")," son una de las herramientas más utilizadas en el análisis técnico. Representan "
+                    "la evolución del precio en un período determinado y ayudan a interpretar el sentimiento del mercado.", 
                     **styles.TEXT_STYLE["body"]),
             
             #estructura de las velas
@@ -196,11 +201,110 @@ def module_3() -> rx.Component:
             margin_bottom=Size.DEFAULT.value,
             ),
             #aviso importante
-            rx.heading("¡¡importante!!",**styles.TEXT_STYLE["subseccion"]),
-            rx.text("Las Velas Japonesas ayudan a entender la accion del precio en cualquier mercado, si bien, son escenciales"
-                    "para identificar patrones y tendencias.",rx.text.strong(" deben combinarse con otros indicadores para confirmar señales."),
-                    **styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
+            rx.heading("⚠️¡¡importante!!⚠️",**styles.TEXT_STYLE["subseccion"]),
+            rx.text("Las Velas Japonesas ayudan a entender la accion del precio en cualquier mercado, si bien, "
+                    "son escenciales para identificar patrones y tendencias.",
+                    rx.text.strong(" deben combinarse con otros indicadores para confirmar señales."),**styles.TEXT_STYLE["body"]),
+            
+            rx.text("En las próximas secciones exploraremos cómo usarlas de forma práctica y segura.",**styles.TEXT_STYLE["body"],
+                    margin_bottom=Size.DEFAULT.value),
+            
+            rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value,margin_bottom=Size.DEFAULT.value),
+            
+            #seccion 4 Gestion del riesgo 
+            rx.heading("4. Gestión del Riesgo " , **styles.TEXT_STYLE["subtitle"]),
+            rx.text(rx.text.strong("El manejo del riesgo")," en el mercado es esencial y debe considerarse un negocio, no una apuesta. Muchos operadores caen "
+                    "en la trampa de intentar ",rx.text.strong("PREDECIR")," el mercado, lo que puede llevar a pérdidas significativas. ",
+                    **styles.TEXT_STYLE["body"],margin_bottom=Size.DEFAULT.value),
+            
+            #imagen gestion del riesgo
+            rx.hstack(
+            image_gestion_riesgo(),
+            margin_bottom=Size.DEFAULT.value,),
+            
+            rx.text("Es fundamental centrarse en el ",rx.text.strong("análisis técnico"), " y ",
+                    rx.text.strong("desarrollar una mentalidad empresarial"),". El tamaño de las órdenes "
+                    "debe determinarse cuidadosamente para preservar el capital y evitar que el dinero pase de manos "
+                    "inexpertas a operadores más experimentados. Aprender a gestionar el capital y controlar el "
+                    "riesgo es clave para el éxito en el trading.",**styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
+            
+            # Medidas simples para el manejo del riesgo
+            rx.heading("Medidas Simples para el Manejo del Riesgo",**styles.TEXT_STYLE["subseccion"]),
+            rx.text("Para gestionar adecuadamente el riesgo en el mercado, sigue estas medidas:", **styles.TEXT_STYLE["body"]),
+            
+            #lista de medidas 
+            rx.list.ordered(
+                rx.list.item("1. Define cuánto capital estás dispuesto a arriesgar en cada operación.", 
+                             margin_bottom=Size.DEFAULT.value),
+                rx.list.item("2. Establece un límite de pérdida personal, como un máximo del 10% de tu capital total.",
+                             margin_bottom=Size.DEFAULT.value),
+                rx.list.item("3. Si acumulas más de 10 pérdidas consecutivas, DETENTE y reevalúa tu estrategia.",
+                             margin_bottom=Size.DEFAULT.value),
+                rx.list.item("4. Si las pérdidas potenciales de tus operaciones abiertas representan un 10% o más de tu capital, EVITA abrir"
+                             " nuevas operaciones.",margin_bottom=Size.DEFAULT.value),
+                list_style_type="disc",
+                color="white",
+                margin_bottom=Size.DEFAULT.value,
+              ),
+            
+            #Errores Comunes en el Manejo del Riesgo
+            rx.heading("Errores Comunes en el Manejo del Riesgo", **styles.TEXT_STYLE["subseccion"]),
+            rx.text(rx.text.strong("Uno de los errores más frecuentes")," es aumentar el tamaño de una nueva orden después de una pérdida previa,"
+                    " lo que puede llevar a pérdidas masivas. Para evitarlo, sigue una estrategia que limite el riesgo de tu capital en cada "
+                    "operación. Mantén la objetividad y evita que las emociones influyan en tus decisiones. Siempre usa un ",
+                    rx.text.strong("stop-loss"),"y arriesga solo una pequeña parte de tu capital en cada operación.", 
+                    **styles.TEXT_STYLE["body"],margin_bottom=Size.DEFAULT.value),
+            
+            #herramientas de gestion del riesgo
+            rx.heading("Herramientas de gestión de riesgo", **styles.TEXT_STYLE["subseccion"]),
+            rx.text(rx.text.strong("Stop-Loss:")," Es una orden que cierra tu operación automáticamente para limitar pérdidas. "
+                    "Ejemplo: Compras a $100, stop-loss en $95, pierdes $5 si se ejecuta. Es útil para principiantes, pero cuidado: en "
+                    "mercados manipulados, noticias falsas pueden barrer los stop-loss y sacarte antes de que el precio suba. Algunos traders "
+                    "lo evitan y salen manualmente ", **styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
+            
+            rx.text(rx.text.strong("Relación Riesgo/Beneficio:")," Imaginá que compras algo porque creés que subirá de precio. Decidís arriesgar "
+                    "$50 si las cosas van mal, pero solo entrás si podés ganar al menos $100. Eso es una relación riesgo/beneficio de 1 a 2. La "
+                    "idea es buscar operaciones donde valga la pena el riesgo.",**styles.TEXT_STYLE["body"],margin_bottom=Size.DEFAULT.value),
+            
+            rx.text(rx.text.strong("Tamaño de posición:")," Tenés $50.000 y querés arriesgar $500 por operación. Si una acción cuesta $100 y "
+                    "pensás perder $5 por acción si baja, comprás 100 acciones ($10.000). Así, tu riesgo queda controlado aunque salgas "
+                    "manualmente.",**styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
+            
+            rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value,margin_bottom=Size.DEFAULT.value),
 
+            #seccion 5 psicologia
+            rx.heading("5. Psicología Del Trading",**styles.TEXT_STYLE["subtitle"]),
+            rx.text("El éxito en el trading no solo depende del análisis técnico, sino también de ",rx.text.strong("la mentalidad del inversor."),
+                    " La flexibilidad mental es crucial, y asumir la responsabilidad de cada decisión es el primer paso hacia "
+                    "una mentalidad ganadora. Evita culpar a factores externos y céntrate en mejorar tus propias estrategias.",
+                    **styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
+            
+            #imagen psicologia del trading
+            rx.heading(
+            image_psicologia_trading(),
+            margin_bottom=Size.DEFAULT.value),
+            
+            rx.heading("El Proceso Neurológico", **styles.TEXT_STYLE["subseccion"]),
+            rx.text("Es importante desarrollar creencias realistas sobre el mercado:", 
+                    **styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
+            
+                #mini lista
+            rx.list.ordered(
+                rx.list.item("El mercado ",rx.text.strong("es incierto")," y no puede predecirse con certeza.", 
+                             margin_bottom=Size.DEFAULT.value),
+                rx.list.item("Una estrategia basada en ",rx.text.strong("análisis técnico y gestión de capital"),
+                             "aumenta las probabilidades de éxito.",margin_bottom=Size.DEFAULT.value),
+                list_style_type="disc",
+                color="white",
+                margin_bottom=Size.DEFAULT.value,
+              ),
+            
+            rx.heading("Mentalidad del Inversor", **styles.TEXT_STYLE["subseccion"]),
+            rx.text("Adaptar tu mentalidad es clave para operar con éxito. La disciplina y la paciencia son esenciales "
+                    "para que, a largo plazo, las operaciones ganadoras superen a las perdedoras. Cambiar creencias erróneas "
+                    "y desarrollar confianza en tu sistema de trading marcará la diferencia entre el éxito y el fracaso.",
+                    **styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
+            
             rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value,margin_bottom=Size.DEFAULT.value),
             
             #seccion adicional tips a tener en cuenta
