@@ -14,6 +14,9 @@ def links_modules() -> rx.Component:
             rx.button(" Modulo numero 3: Introduccion al Trading", 
                     on_click=lambda: rx.redirect("/module_3"), is_external=False,**styles.BUTTON_STYLE,
             ),
+            rx.button(" Modulo numero 4:", 
+                    on_click=lambda: rx.redirect("/module_4"), is_external=False,**styles.BUTTON_STYLE,
+            ),
         max_width=styles.MAX_WIDTH,
         )),
     )

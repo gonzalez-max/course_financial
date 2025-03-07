@@ -260,7 +260,8 @@ def module_3() -> rx.Component:
             rx.text(rx.text.strong("Stop-Loss:")," Es una orden que cierra tu operación automáticamente para limitar pérdidas. "
                     "Ejemplo: Compras a $100, stop-loss en $95, pierdes $5 si se ejecuta. Es útil para principiantes, pero cuidado: en "
                     "mercados manipulados, noticias falsas pueden barrer los stop-loss y sacarte antes de que el precio suba. Algunos traders "
-                    "lo evitan y salen manualmente ", **styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
+                    "lo evitan.",rx.text.strong("Mas adelante durante el curso lo veremos mas a detalle."),**styles.TEXT_STYLE["body"], 
+                    margin_bottom=Size.DEFAULT.value),
             
             rx.text(rx.text.strong("Relación Riesgo/Beneficio:")," Imaginá que compras algo porque creés que subirá de precio. Decidís arriesgar "
                     "$50 si las cosas van mal, pero solo entrás si podés ganar al menos $100. Eso es una relación riesgo/beneficio de 1 a 2. La "
@@ -359,7 +360,7 @@ def module_3() -> rx.Component:
       align_items="center",
     ),
   ),
-        next_button("/module_3"),
+        next_button("/module_4"),
         back_button("/module_2"),
     
         footer(),
