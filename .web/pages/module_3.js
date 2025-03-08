@@ -12,19 +12,35 @@ import { Box as RadixThemesBox, Button as RadixThemesButton, DropdownMenu as Rad
 import NextLink from "next/link"
 import { Drawer as VaulDrawer } from "vaul"
 import theme from "$/utils/theme.js"
+import Zoom from "react-medium-image-zoom"
+import "react-medium-image-zoom/dist/styles.css"
 import NextHead from "next/head"
 
 
 
-const pulse = keyframes`
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-`
+export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
 
+
+
+
+
+  
+  return (
+    <Fragment>
+
+{isTrue((connectErrors.length > 0)) ? (
+  <Fragment>
+
+<LucideWifiOffIcon css={({ ["color"] : "crimson", ["zIndex"] : 9999, ["position"] : "fixed", ["bottom"] : "33px", ["right"] : "33px", ["animation"] : (pulse+" 1s infinite") })} size={32}/>
+</Fragment>
+) : (
+  <Fragment/>
+)}
+</Fragment>
+  )
+}
 
 export function Button_a341248439020d6913fc47798be684e9 () {
   
@@ -41,23 +57,6 @@ export function Button_a341248439020d6913fc47798be684e9 () {
 
 {"\u2190 Atr\u00e1s"}
 </RadixThemesButton>
-  )
-}
-
-export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    <div css={({ ["position"] : "fixed", ["width"] : "100vw", ["height"] : "0" })} title={("Connection Error: "+((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : ''))}>
-
-<Fragment_c179379f847dbcf00ba21f73b0ad1b3d/>
-</div>
   )
 }
 
@@ -112,24 +111,6 @@ export function Dropdownmenu__item_21c52e4bd8d99a75477658423d582352 () {
   )
 }
 
-export function Button_f46d7b6d1b8cc2ccedd67f51887d3b65 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_08b7789e3faf18ddcedc3d0f700af8da = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_4", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <RadixThemesButton css={({ ["backgroundColor"] : "#ff3333", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "8px", ["&:hover"] : ({ ["backgroundColor"] : "#cc0000" }), ["transition"] : "all 0.3s ease-in-out", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["border"] : "#6366F1" })} onClick={on_click_08b7789e3faf18ddcedc3d0f700af8da}>
-
-{"Siguiente \u2192"}
-</RadixThemesButton>
-  )
-}
-
 export function Dropdownmenu__item_dac86115f575bf5bb4e63dc75106d651 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -148,7 +129,7 @@ export function Dropdownmenu__item_dac86115f575bf5bb4e63dc75106d651 () {
   )
 }
 
-export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
+export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
@@ -158,17 +139,38 @@ export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
 
   
   return (
-    <Fragment>
+    <div css={({ ["position"] : "fixed", ["width"] : "100vw", ["height"] : "0" })} title={("Connection Error: "+((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : ''))}>
 
-{isTrue((connectErrors.length > 0)) ? (
-  <Fragment>
+<Fragment_c179379f847dbcf00ba21f73b0ad1b3d/>
+</div>
+  )
+}
 
-<LucideWifiOffIcon css={({ ["color"] : "crimson", ["zIndex"] : 9999, ["position"] : "fixed", ["bottom"] : "33px", ["right"] : "33px", ["animation"] : (pulse+" 1s infinite") })} size={32}/>
-</Fragment>
-) : (
-  <Fragment/>
-)}
-</Fragment>
+const pulse = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+`
+
+
+export function Button_f46d7b6d1b8cc2ccedd67f51887d3b65 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_08b7789e3faf18ddcedc3d0f700af8da = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_4", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <RadixThemesButton css={({ ["backgroundColor"] : "#ff3333", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "8px", ["&:hover"] : ({ ["backgroundColor"] : "#cc0000" }), ["transition"] : "all 0.3s ease-in-out", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["border"] : "#6366F1" })} onClick={on_click_08b7789e3faf18ddcedc3d0f700af8da}>
+
+{"Siguiente \u2192"}
+</RadixThemesButton>
   )
 }
 
@@ -430,10 +432,13 @@ export default function Component() {
 </ol>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["marginBottom"] : "1em" })} direction={"row"} gap={"3"}>
 
-<RadixThemesBox css={({ ["alignItems"] : "center", ["justifyContent"] : "center" })}>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<img css={({ ["height"] : "400px", ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray" })} src={"/tipos_trading.jpg?refresh=1"}/>
-</RadixThemesBox>
+<Zoom css={({ ["width"] : "600px", ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
+
+<img css={({ ["height"] : "350px", ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/tipos_trading.jpg?refresh=1"}/>
+</Zoom>
+</RadixThemesFlex>
 </RadixThemesFlex>
 <RadixThemesSeparator css={({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" })} size={"4"}/>
 <RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "#FFC75F", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
@@ -456,10 +461,13 @@ export default function Component() {
 </RadixThemesText>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["marginBottom"] : "1em" })} direction={"row"} gap={"3"}>
 
-<RadixThemesBox css={({ ["alignItems"] : "center", ["justifyContent"] : "center" })}>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<img css={({ ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray" })} src={"/fundamental_vs_tecnico.jpg?refresh=1"}/>
-</RadixThemesBox>
+<Zoom css={({ ["width"] : "600px", ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
+
+<img css={({ ["height"] : "350px", ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/fundamental_vs_tecnico.jpg?refresh=1"}/>
+</Zoom>
+</RadixThemesFlex>
 </RadixThemesFlex>
 <RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
 
@@ -650,10 +658,13 @@ export default function Component() {
 </ol>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["marginBottom"] : "1em" })} direction={"row"} gap={"3"}>
 
-<RadixThemesBox css={({ ["alignItems"] : "center", ["justifyContent"] : "center" })}>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<img css={({ ["height"] : "300px", ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray" })} src={"/velas-japonesas.jpg?refresh=1"}/>
-</RadixThemesBox>
+<Zoom css={({ ["width"] : "600px", ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
+
+<img css={({ ["height"] : "350px", ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/velas-japonesas.jpg?refresh=1"}/>
+</Zoom>
+</RadixThemesFlex>
 </RadixThemesFlex>
 <RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
 
@@ -712,10 +723,13 @@ export default function Component() {
 </ol>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["marginBottom"] : "1em" })} direction={"row"} gap={"3"}>
 
-<RadixThemesBox css={({ ["alignItems"] : "center", ["justifyContent"] : "center" })}>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<img css={({ ["height"] : "300px", ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray" })} src={"/fuerza_velas.png?refresh=1"}/>
-</RadixThemesBox>
+<Zoom css={({ ["width"] : "600px", ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
+
+<img css={({ ["height"] : "350px", ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/fuerza_velas.png?refresh=1"}/>
+</Zoom>
+</RadixThemesFlex>
 </RadixThemesFlex>
 <RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
 
@@ -753,10 +767,13 @@ export default function Component() {
 </RadixThemesText>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["marginBottom"] : "1em" })} direction={"row"} gap={"3"}>
 
-<RadixThemesBox css={({ ["alignItems"] : "center", ["justifyContent"] : "center" })}>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<img css={({ ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray" })} src={"/gestion_riesgo.jpg?refresh=1"}/>
-</RadixThemesBox>
+<Zoom css={({ ["width"] : "600px", ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
+
+<img css={({ ["height"] : "350px", ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/gestion_riesgo.jpg?refresh=1"}/>
+</Zoom>
+</RadixThemesFlex>
 </RadixThemesFlex>
 <RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "white", ["textAlign"] : "justify", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["marginBottom"] : "1em" })}>
 
@@ -864,10 +881,13 @@ export default function Component() {
 </RadixThemesText>
 <RadixThemesHeading css={({ ["marginBottom"] : "1em" })}>
 
-<RadixThemesBox css={({ ["alignItems"] : "center", ["justifyContent"] : "center" })}>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<img css={({ ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray" })} src={"/psicologia_trading.jpg?refresh=1"}/>
-</RadixThemesBox>
+<Zoom css={({ ["width"] : "600px", ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
+
+<img css={({ ["height"] : "350px", ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/psicologia_trading.jpg?refresh=1"}/>
+</Zoom>
+</RadixThemesFlex>
 </RadixThemesHeading>
 <RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
 
@@ -1064,7 +1084,7 @@ export default function Component() {
 
 {" Pr\u00f3ximos Pasos:"}
 </RadixThemesStrong>
-{" En el siguiente m\u00f3dulo, profundizaremos en el an\u00e1lisis t\u00e9cnico, explorando patrones gr\u00e1ficos y estrategias clave para identificar oportunidades de compra y venta con mayor precisi\u00f3n."}
+{" En el siguiente m\u00f3dulo, daremos los primeros pasos en el an\u00e1lisis t\u00e9cnico, explorando el Ciclo del Precio, identificando tendencias alcistas y bajistas, trazando l\u00edneas de soporte y resistencia, y reconociendo patrones gr\u00e1ficos que revelan el comportamiento del mercado."}
 </li>
 </ol>
 </RadixThemesBox>

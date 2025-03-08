@@ -4,6 +4,7 @@ from mi_web.components.general.footer import footer
 from mi_web.styles.styles import Size as Size
 import mi_web.styles.styles as styles
 from mi_web.components.general.drawer import drawer
+from mi_web.components.general.zoom_images import zoomed_image
 from mi_web.components.modules_components.module3_components.imagenes.image_tipes_trading import image_tipes_trading
 from mi_web.components.modules_components.module3_components.imagenes.image_f_versus_t import image_f_versus_t
 from mi_web.components.modules_components.module3_components.imagenes.image_velas_japonesas import image_velas_japonesas
@@ -66,7 +67,7 @@ def module_3() -> rx.Component:
               ),
             #imagen tipos de trading
             rx.hstack(
-            image_tipes_trading(),
+            zoomed_image("/tipos_trading.jpg?refresh=1"),
             margin_bottom=Size.DEFAULT.value,),
             
             rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value,margin_bottom=Size.DEFAULT.value),
@@ -79,7 +80,7 @@ def module_3() -> rx.Component:
                     "análisis técnico.", **styles.TEXT_STYLE["body"],margin_bottom=Size.DEFAULT.value),
             #imagen fundamental vs tecnico
             rx.hstack(
-            image_f_versus_t(),
+            zoomed_image("/fundamental_vs_tecnico.jpg?refresh=1"),
             margin_bottom=Size.DEFAULT.value),
             
             #subseccion analisis fundamental
@@ -168,7 +169,7 @@ def module_3() -> rx.Component:
 
             #velas japonesas imagen
             rx.hstack(
-            image_velas_japonesas(),
+            zoomed_image("/velas-japonesas.jpg?refresh=1"),
             margin_bottom=Size.DEFAULT.value,
             ),
 
@@ -197,7 +198,7 @@ def module_3() -> rx.Component:
               ),
             #imagen de tipos de velas
             rx.hstack(
-            image_fueza_velas(),
+            zoomed_image("/fuerza_velas.png?refresh=1"),
             margin_bottom=Size.DEFAULT.value,
             ),
             #aviso importante
@@ -219,7 +220,7 @@ def module_3() -> rx.Component:
             
             #imagen gestion del riesgo
             rx.hstack(
-            image_gestion_riesgo(),
+            zoomed_image("/gestion_riesgo.jpg?refresh=1"),
             margin_bottom=Size.DEFAULT.value,),
             
             rx.text("Es fundamental centrarse en el ",rx.text.strong("análisis técnico"), " y ",
@@ -282,7 +283,7 @@ def module_3() -> rx.Component:
             
             #imagen psicologia del trading
             rx.heading(
-            image_psicologia_trading(),
+            zoomed_image("/psicologia_trading.jpg?refresh=1"),
             margin_bottom=Size.DEFAULT.value),
             
             rx.heading("El Proceso Neurológico", **styles.TEXT_STYLE["subseccion"]),
@@ -328,9 +329,10 @@ def module_3() -> rx.Component:
               rx.list.item(rx.text.strong(" Aplicación Práctica:")," Reflexioná sobre qué tipo de trading se adapta "
                            "mejor a tu estilo y objetivos. Analizá gráficos con velas japonesas y empezá a identificar "
                            "patrones básicos para mejorar tu lectura del mercado.",margin_bottom=Size.DEFAULT.value),
-              rx.list.item(rx.text.strong(" Próximos Pasos:")," En el siguiente módulo, profundizaremos en el análisis "
-                           "técnico, explorando patrones gráficos y estrategias clave para identificar oportunidades "
-                           "de compra y venta con mayor precisión.",margin_bottom=Size.DEFAULT.value),
+              rx.list.item(rx.text.strong(" Próximos Pasos:")," En el siguiente módulo, daremos los primeros pasos en "
+                           "el análisis técnico, explorando el Ciclo del Precio, identificando tendencias alcistas y "
+                           "bajistas, trazando líneas de soporte y resistencia, y reconociendo patrones gráficos que "
+                           "revelan el comportamiento del mercado.",margin_bottom=Size.DEFAULT.value),
               list_style_type="disc",
               color="white",
               margin_bottom=Size.DEFAULT.value,

@@ -8,6 +8,7 @@ from mi_web.components.modules_components.module2_components.module2_table1 impo
 from mi_web.components.modules_components.module2_components.module2_table2 import module2_table2
 from mi_web.views.links.next_button import next_button
 from mi_web.views.links.back_button import back_button
+from mi_web.components.general.zoom_images import zoomed_image
 from mi_web.components.modules_components.module2_components.imagenes.fci_image import fci_image
 from mi_web.components.modules_components.module2_components.imagenes.image_tipo_inversor  import image_tipo_inversor
 
@@ -32,7 +33,7 @@ def module_2() -> rx.Component:
       
       #imagen tipo de inversor
       rx.hstack(
-      image_tipo_inversor(),
+      zoomed_image("/tipo_inversor.jpg?refresh=1"),
       margin_bottom=Size.DEFAULT.value),
       
       rx.heading("¿Qué es un perfil de inversor?",**styles.TEXT_STYLE["subseccion"]),
@@ -167,7 +168,7 @@ def module_2() -> rx.Component:
               "y gestionándolo en distintos activos según el tipo de fondo.", **styles.TEXT_STYLE["body"],margin_bottom=Size.DEFAULT.value),
       #imagen fci 
       rx.hstack(
-      fci_image(),
+      zoomed_image("/fci_image.jpg?refresh=1"),
       margin_bottom=Size.DEFAULT.value,
       ),
       

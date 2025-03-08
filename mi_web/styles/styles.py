@@ -9,6 +9,7 @@ class Size(Enum):
     SMALL="0.1em"
     MEDIUM="0.5em"
     DEFAULT="1em"
+    REGULAR="2em"
     BIG="4em"
     ULTRA="6em"
     IMAGE_width="600px"
@@ -126,9 +127,16 @@ IMAGE_STYLES={
     "color": "#333333",
     "border": "1px solid gray", #color de bordes normales
     "border_radius": "20px", #forma de los bordes
-    "box_shadow":"0px 0px 10px gray"} #efecto a los bordes
-
-
+    "box_shadow":"0px 0px 10px gray",#efecto a los bordes
+    "cursor": "pointer",  # Indica que la imagen es clickeable
+    "transition": "transform 0.2s ease-in-out",  # Suaviza el efecto
+    "_hover": {
+        "background_color": "#800080",  # Azul más oscuro en hover
+        "border_color": "#6366F1",  # Bordes visibles en hover
+        "box_shadow": "0px 4px 10px rgba(79, 70, 229, 0.3)",  # Sombra elegante
+        "transform": "scale(1.05)",
+    },
+}
 
 
 
