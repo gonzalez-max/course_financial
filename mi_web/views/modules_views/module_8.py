@@ -11,50 +11,14 @@ from mi_web.components.general.zoom_images import zoomed_image
 
 
 
-def module_6() -> rx.Component:
+def module_8() -> rx.Component:
     return rx.box(
         navbar_dropdown(),
         drawer(),
         rx.center( 
             rx.vstack(
                 rx.box(
-                        rx.heading("Módulo 6: ", **styles.TEXT_STYLE["title"]),
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+
                 #_____________________________________________________________________________________#   
                 ),
                 max_width="600px",
@@ -63,7 +27,7 @@ def module_6() -> rx.Component:
                 align_items="center",   
                 ),
         ),
-        back_button("/module_5"),
+        back_button("/module_4"),
         footer(),
         background_color="black"
     )

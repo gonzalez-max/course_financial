@@ -6,6 +6,8 @@ MODULOS = [
     {"nombre": "Modulo 1", "url": "/module_1"},
     {"nombre": "Modulo 2", "url": "/module_2"},
     {"nombre": "Modulo 3", "url": "/module_3"},
+    {"nombre": "Modulo 4", "url": "/module_4"},
+    {"nombre": "Modulo 5", "url": "/module_5"},
 ]
 
 def drawer() -> rx.Component:

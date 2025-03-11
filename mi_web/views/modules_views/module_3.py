@@ -169,8 +169,8 @@ def module_3() -> rx.Component:
 
             #velas japonesas imagen
             rx.hstack(
-            zoomed_image("/velas-japonesas.jpg?refresh=1"),
-            margin_bottom=Size.DEFAULT.value,
+                zoomed_image("/velas-japonesas.jpg?refresh=1"),
+                margin_bottom=Size.DEFAULT.value,
             ),
 
             #tipos de velas japonesas
@@ -198,8 +198,8 @@ def module_3() -> rx.Component:
               ),
             #imagen de tipos de velas
             rx.hstack(
-            zoomed_image("/fuerza_velas.png?refresh=1"),
-            margin_bottom=Size.DEFAULT.value,
+                zoomed_image("/fuerza_velas.png?refresh=1"),
+                margin_bottom=Size.DEFAULT.value,
             ),
             #aviso importante
             rx.heading("⚠️¡¡importante!!⚠️",**styles.TEXT_STYLE["subseccion"]),
@@ -220,8 +220,9 @@ def module_3() -> rx.Component:
             
             #imagen gestion del riesgo
             rx.hstack(
-            zoomed_image("/gestion_riesgo.jpg?refresh=1"),
-            margin_bottom=Size.DEFAULT.value,),
+                zoomed_image("/gestion_riesgo.jpg?refresh=1"),
+                margin_bottom=Size.DEFAULT.value,
+            ),
             
             rx.text("Es fundamental centrarse en el ",rx.text.strong("análisis técnico"), " y ",
                     rx.text.strong("desarrollar una mentalidad empresarial"),". El tamaño de las órdenes "
@@ -283,8 +284,9 @@ def module_3() -> rx.Component:
             
             #imagen psicologia del trading
             rx.heading(
-            zoomed_image("/psicologia_trading.jpg?refresh=1"),
-            margin_bottom=Size.DEFAULT.value),
+                zoomed_image("/psicologia_trading.jpg?refresh=1"),
+                margin_bottom=Size.DEFAULT.value,
+                ),
             
             rx.heading("El Proceso Neurológico", **styles.TEXT_STYLE["subseccion"]),
             rx.text("Es importante desarrollar creencias realistas sobre el mercado:", 
