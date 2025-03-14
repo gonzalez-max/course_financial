@@ -42,24 +42,6 @@ export function Dropdownmenu__item_21c52e4bd8d99a75477658423d582352 () {
   )
 }
 
-export function Dropdownmenu__item_dac86115f575bf5bb4e63dc75106d651 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_878b59ed445e335ab3312bf6ae65b075 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/financial_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <RadixThemesDropdownMenu.Item onClick={on_click_878b59ed445e335ab3312bf6ae65b075}>
-
-{"Aprender"}
-</RadixThemesDropdownMenu.Item>
-  )
-}
-
 export function Toaster_6e6ebf8d7ce589d59b7d382fb7576edf () {
   
   const { resolvedColorMode } = useContext(ColorModeContext)
@@ -90,6 +72,24 @@ export function Toaster_6e6ebf8d7ce589d59b7d382fb7576edf () {
   
   return (
     <Toaster closeButton={false} expand={true} position={"bottom-right"} richColors={true} theme={resolvedColorMode}/>
+  )
+}
+
+export function Dropdownmenu__item_dac86115f575bf5bb4e63dc75106d651 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_878b59ed445e335ab3312bf6ae65b075 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/financial_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <RadixThemesDropdownMenu.Item onClick={on_click_878b59ed445e335ab3312bf6ae65b075}>
+
+{"Aprender"}
+</RadixThemesDropdownMenu.Item>
   )
 }
 

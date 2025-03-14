@@ -7,7 +7,7 @@ from mi_web.components.general.drawer import drawer
 from mi_web.views.links.next_button import next_button
 from mi_web.views.links.back_button import back_button
 from mi_web.components.general.zoom_images import zoomed_image
-
+from mi_web.components.general.imagenes.image_despedida import image_despedida
 
 
 
@@ -33,16 +33,12 @@ def module_5() -> rx.Component:
                                 "abarcan un período más largo de tiempo son mucho más importantes.",
                                 **styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
                         
-                        #imagen ejemplo 1
-                        rx.hstack(
-                                zoomed_image("/importancia_lineas_1.png?refresh=1"),
-                                margin_bottom=Size.REGULAR.value),
-                        
-                        #imagen ejemplo 2
-                        rx.hstack(
+                        #imagenes de ejemplo
+                        rx.vstack(
+                                zoomed_image("/importancia_lineas_1.png?refresh=1"),        
                                 zoomed_image("/importancia_lineas_2.png?refresh=1"),
-                                margin_bottom=Size.DEFAULT.value),
-                        
+                                margin_bottom=Size.REGULAR.value
+                        ),
                         #explicacion
                         rx.heading("Explicación de los graficos",**styles.TEXT_STYLE["subseccion"]),
                         rx.text("Estos gráficos muestran cómo las líneas horizontales de soporte y resistencia funcionan en un escenario real: ",
@@ -113,6 +109,8 @@ def module_5() -> rx.Component:
                                 margin_bottom=Size.REGULAR.value,
                         ),
                         
+                        rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value,margin_bottom=Size.DEFAULT.value),
+                        
                         #seccion negociar rangos
                         rx.heading("5. Negociar Rangos",**styles.TEXT_STYLE["subtitle"]),
                         rx.text("Negociar rangos de acumulación y distribución significa esperar a que el precio rompa la lateralización"
@@ -177,7 +175,7 @@ def module_5() -> rx.Component:
                                 margin_bottom=Size.DEFAULT.value,
                                 ),
                         #subseccion ideas clave para terminar
-                        rx.heading("¡¡Importante!! ",**styles.TEXT_STYLE["subseccion"]),
+                        rx.heading("⚠️¡¡Importante!!⚠️",**styles.TEXT_STYLE["subseccion"]),
                         
                         rx.text("Esta es una lección sobre cómo el precio",rx.text.strong(" engaña"),
                                 " y por qué es esencial ser",rx.text.strong(" paciente y analítico")," en los rangos.",
@@ -193,30 +191,32 @@ def module_5() -> rx.Component:
                         rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value,margin_bottom=Size.DEFAULT.value),
                 
                         #resumen y conclusion
-                        rx.heading("Conclusión del Módulo 5",**styles.TEXT_STYLE["subtitle"]),
+                        rx.heading("Conclusión del Módulo 5: ",**styles.TEXT_STYLE["subtitle"]),
                         rx.list.ordered(
-                                rx.list.item(rx.text.strong("Resumen:"),"Exploramos el análisis técnico práctico, destacando las líneas "
+                                rx.list.item(rx.text.strong("Resumen:")," Exploramos el análisis técnico práctico, destacando las líneas "
                                              "horizontales de soporte y resistencia, las líneas de tendencia y su rol en identificar "
                                              "cambios del mercado, además de los rangos de acumulación y distribución, "
                                              "y la gestión de riesgos y ganancias.",
                                              margin_bottom=Size.DEFAULT.value),
-                                rx.list.item(rx.text.strong("Aplicación Práctica:"),"Practicá trazando líneas horizontales y de tendencia"
+                                rx.list.item(rx.text.strong("Aplicación Práctica:")," Practicá trazando líneas horizontales y de tendencia"
                                              " en gráficos reales. Analizá las pruebas de soporte y resistencia, identificá posibles rangos "
                                              "y observá los quiebres para anticipar movimientos. Evaluá el volumen y el contexto "
                                              "antes de tomar decisiones.",
                                               margin_bottom=Size.DEFAULT.value),
-                                rx.list.item(rx.text.strong("Próximos Pasos: :"),"",
+                                rx.list.item(rx.text.strong("Próximos Pasos: :"),"En el próximo módulo, veremos cómo identificar las "
+                                             "líneas de tendencia en gráficos reales, conoceremos al enemigo de las tendencias y "
+                                             "aprenderás cómo colocar un stop-loss para evitar pérdidas, además de cómo identificar "
+                                             "rupturas y falsas rupturas.",
                                               margin_bottom=Size.DEFAULT.value),
                                 list_style_type="disc",
                                 color="white",
                                 margin_bottom=Size.DEFAULT.value,
                                 ),
-                
-                
-                
-                
-                
-                
+                        rx.hstack(
+                                image_despedida(),
+                                align_items="center",
+                                justify="center"
+                        ),
                 
                 
                 #_____________________________________________________________________________________#   

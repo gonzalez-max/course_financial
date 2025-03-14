@@ -6,7 +6,7 @@ def image_velas_japonesas() -> rx.Component:
     return rx.box(
         rx.image(
             height="300px",
-            src=("/velas-japonesas.jpg?refresh=1"),
+            src=("/velas-japonesas.png?refresh=1"),
             width="100%",
             **styles.IMAGE_STYLES
         ),

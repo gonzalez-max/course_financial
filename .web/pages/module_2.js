@@ -28,21 +28,27 @@ const pulse = keyframes`
 `
 
 
-export function Dropdownmenu__item_21c52e4bd8d99a75477658423d582352 () {
+export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_7dc200586272c1bbcd7f51ea48788135 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
 
   
   return (
-    <RadixThemesDropdownMenu.Item onClick={on_click_7dc200586272c1bbcd7f51ea48788135}>
+    <Fragment>
 
-{"Soporte"}
-</RadixThemesDropdownMenu.Item>
+{isTrue((connectErrors.length > 0)) ? (
+  <Fragment>
+
+<LucideWifiOffIcon css={({ ["color"] : "crimson", ["zIndex"] : 9999, ["position"] : "fixed", ["bottom"] : "33px", ["right"] : "33px", ["animation"] : (pulse+" 1s infinite") })} size={32}/>
+</Fragment>
+) : (
+  <Fragment/>
+)}
+</Fragment>
   )
 }
 
@@ -60,6 +66,42 @@ export function Dropdownmenu__item_dac86115f575bf5bb4e63dc75106d651 () {
     <RadixThemesDropdownMenu.Item onClick={on_click_878b59ed445e335ab3312bf6ae65b075}>
 
 {"Aprender"}
+</RadixThemesDropdownMenu.Item>
+  )
+}
+
+export function Button_ea890557131a448bbece2c8dd1c660a0 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_7b069812767522a7e2790976d4ef2763 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_1", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <RadixThemesButton css={({ ["backgroundColor"] : "#2d5986", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "8px", ["&:hover"] : ({ ["backgroundColor"] : "#4080bf" }), ["transition"] : "all 0.3s ease-in-out", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["borderColor"] : "#6366F1" })} onClick={on_click_7b069812767522a7e2790976d4ef2763}>
+
+{"\u2190 Atr\u00e1s"}
+</RadixThemesButton>
+  )
+}
+
+export function Dropdownmenu__item_21c52e4bd8d99a75477658423d582352 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_7dc200586272c1bbcd7f51ea48788135 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <RadixThemesDropdownMenu.Item onClick={on_click_7dc200586272c1bbcd7f51ea48788135}>
+
+{"Soporte"}
 </RadixThemesDropdownMenu.Item>
   )
 }
@@ -129,48 +171,6 @@ export function Button_9d7249c50b4a2d3dc74bcc9afd423032 () {
 
 {"Siguiente \u2192"}
 </RadixThemesButton>
-  )
-}
-
-export function Button_ea890557131a448bbece2c8dd1c660a0 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_7b069812767522a7e2790976d4ef2763 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_1", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <RadixThemesButton css={({ ["backgroundColor"] : "#2d5986", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "8px", ["&:hover"] : ({ ["backgroundColor"] : "#4080bf" }), ["transition"] : "all 0.3s ease-in-out", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["borderColor"] : "#6366F1" })} onClick={on_click_7b069812767522a7e2790976d4ef2763}>
-
-{"\u2190 Atr\u00e1s"}
-</RadixThemesButton>
-  )
-}
-
-export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    <Fragment>
-
-{isTrue((connectErrors.length > 0)) ? (
-  <Fragment>
-
-<LucideWifiOffIcon css={({ ["color"] : "crimson", ["zIndex"] : 9999, ["position"] : "fixed", ["bottom"] : "33px", ["right"] : "33px", ["animation"] : (pulse+" 1s infinite") })} size={32}/>
-</Fragment>
-) : (
-  <Fragment/>
-)}
-</Fragment>
   )
 }
 
@@ -356,6 +356,16 @@ export default function Component() {
 </RadixThemesButton>
 </NextLink>
 </RadixThemesLink>
+<RadixThemesLink asChild={true} css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
+
+<NextLink href={"/module_6"} passHref={true}>
+
+<RadixThemesButton css={({ ["width"] : "100%", ["height"] : "30px", ["padding"] : "10px", ["spacing"] : "5px", ["marginBottom"] : "10px", ["fontSize"] : "semibold", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "150px", ["backgroundColor"] : "#003366", ["border"] : "2px solid transparent", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["transition"] : "all 0.3s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)" }) })} radius={"medium"} size={"4"} variant={"solid"}>
+
+{"Modulo 6"}
+</RadixThemesButton>
+</NextLink>
+</RadixThemesLink>
 </RadixThemesFlex>
 </VaulDrawer.Content>
 </RadixThemesTheme>
@@ -373,7 +383,7 @@ export default function Component() {
 
 {"M\u00f3dulo 2: Tipos de Inversores e Instrumentos de inversion"}
 </RadixThemesHeading>
-<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "#FFC75F", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "#FFC75F", ["textAlign"] : "left", ["marginBottom"] : "10px" })}>
 
 {"1. Tipos de Inversores y C\u00f3mo Identificar el Tuyo"}
 </RadixThemesHeading>
@@ -385,7 +395,7 @@ export default function Component() {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<Zoom css={({ ["width"] : "600px", ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
+<Zoom css={({ ["width"] : "100%", ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
 
 <img css={({ ["height"] : "350px", ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/tipo_inversor.jpg?refresh=1"}/>
 </Zoom>
@@ -523,7 +533,7 @@ export default function Component() {
 {"Este an\u00e1lisis ser\u00e1 clave antes de adentrarte en el mundo del trading, ya que te permitir\u00e1 tomar decisiones financieras con mayor seguridad."}
 </RadixThemesText>
 <RadixThemesSeparator css={({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" })} size={"4"}/>
-<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "#FFC75F", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "#FFC75F", ["textAlign"] : "left", ["marginBottom"] : "10px" })}>
 
 {"2. los Instumentos de inversion"}
 </RadixThemesHeading>
@@ -531,6 +541,16 @@ export default function Component() {
 
 {"La inversi\u00f3n es una de las mejores herramientas para hacer crecer el capital y alcanzar objetivos financieros a mediano y largo plazo. Existen distintos instrumentos de inversi\u00f3n, cada uno con sus propias caracter\u00edsticas, riesgos y niveles de rentabilidad."}
 </RadixThemesText>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["marginBottom"] : "1em" })} direction={"row"} gap={"3"}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
+
+<Zoom css={({ ["width"] : "100%", ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
+
+<img css={({ ["height"] : "350px", ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/instrumentos_inversion.jpg?refresh=1"}/>
+</Zoom>
+</RadixThemesFlex>
+</RadixThemesFlex>
 <RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
 
 {" \u00bfComo elijo el adecuado para mi perfil?"}
@@ -600,7 +620,7 @@ export default function Component() {
 </li>
 </ol>
 <RadixThemesSeparator css={({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" })} size={"4"}/>
-<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "#FFC75F", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "#FFC75F", ["textAlign"] : "left", ["marginBottom"] : "10px" })}>
 
 {"3. Diferencias entre Renta Fija y Renta Variable"}
 </RadixThemesHeading>
@@ -608,6 +628,16 @@ export default function Component() {
 
 {"Las inversiones pueden dividirse en renta fija y renta variable, dependiendo de la previsibilidad de sus rendimientos y el nivel de riesgo asociado."}
 </RadixThemesText>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["marginBottom"] : "1em" })} direction={"row"} gap={"3"}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
+
+<Zoom css={({ ["width"] : "100%", ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
+
+<img css={({ ["height"] : "350px", ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/diferencia_fija_variable.jpg?refresh=1"}/>
+</Zoom>
+</RadixThemesFlex>
+</RadixThemesFlex>
 <RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
 
 {"Renta fija"}
@@ -789,7 +819,7 @@ export default function Component() {
 </Fragment>
 </RadixThemesFlex>
 <RadixThemesSeparator css={({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" })} size={"4"}/>
-<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "#FFC75F", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "#FFC75F", ["textAlign"] : "left", ["marginBottom"] : "10px" })}>
 
 {"4. Fondos comunes de inversion."}
 </RadixThemesHeading>
@@ -801,7 +831,7 @@ export default function Component() {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<Zoom css={({ ["width"] : "600px", ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
+<Zoom css={({ ["width"] : "100%", ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
 
 <img css={({ ["height"] : "350px", ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/fci_image.jpg?refresh=1"}/>
 </Zoom>
@@ -901,7 +931,7 @@ export default function Component() {
 </li>
 </ol>
 <RadixThemesSeparator css={({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" })} size={"4"}/>
-<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "#FFC75F", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "semibold", ["color"] : "#FFC75F", ["textAlign"] : "left", ["marginBottom"] : "10px" })}>
 
 {"Conclusi\u00f3n del M\u00f3dulo 2: "}
 </RadixThemesHeading>
@@ -935,6 +965,10 @@ export default function Component() {
 </RadixThemesBox>
 </RadixThemesFlex>
 </RadixThemesFlex>
+<RadixThemesBox css={({ ["alignItems"] : "center", ["justifyContent"] : "center", ["position"] : "absolute", ["bottom"] : "80px", ["left"] : "20px" })}>
+
+<img css={({ ["height"] : "200px", ["width"] : "100%", ["maxWidth"] : "200px" })} src={"/despedida.gif?refresh=1"}/>
+</RadixThemesBox>
 <RadixThemesBox css={({ ["position"] : "fixed", ["bottom"] : "20px", ["right"] : "20px" })}>
 
 <Button_9d7249c50b4a2d3dc74bcc9afd423032/>

@@ -12,7 +12,7 @@ def zoomed_image(src: str, height: str = "350px") -> rx.Component:
                 width="100%",
                 **styles.IMAGE_STYLES,  # Aplicamos los estilos aquí
             ),
-            width="600px",  # Tamaño del contenedor de zoom
+            width="100%",  # Tamaño del contenedor de zoom
             zoom_scale=50,  # Escala de zoom (ajustable)
             cursor="zoom-in",  # Indicador visual
         ),

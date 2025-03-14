@@ -20,7 +20,7 @@ def links_modules() -> rx.Component:
             rx.button(" Modulo numero 5: Dominando Soportes, Resistencias y Rangos", 
                     on_click=lambda: rx.redirect("/module_5"), is_external=False,**styles.BUTTON_STYLE,
             ),
-            rx.button(" Modulo numero 6:", 
+            rx.button(" Modulo numero 6: Tendencias y como identificarlas", 
                     on_click=lambda: rx.redirect("/module_6"), is_external=False,**styles.BUTTON_STYLE,
             ),
         max_width=styles.MAX_WIDTH,

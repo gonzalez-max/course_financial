@@ -199,7 +199,7 @@ TEXT_STYLE = {
         "font_weight": "semibold",
         "color": "#FFC75F",
         "text_align": "left",
-        "margin_bottom": "8px",
+        "margin_bottom": "10px",
     },
     
     "subseccion": {  # Para subtítulos o encabezados secundarios
