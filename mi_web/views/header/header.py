@@ -2,7 +2,8 @@ import reflex as rx
 from mi_web.styles.styles import global_styles
 
 def header() -> rx.Component:
-    return rx.vstack(
+    return rx.box(
+        rx.vstack(
         rx.avatar(src="/mi-foto-cara.jpg",fallback="MG",size="8",name="Maxi Gonzalez"),
         rx.text("@Maxgonzalez_ok", color="white",size="3"),
         rx.heading("Bienvenidos a mi Proyecto Web",color="white",size="6"),
@@ -14,4 +15,6 @@ def header() -> rx.Component:
         align_items="center",
         top="80px"
 
-    )
+    ),
+
+),

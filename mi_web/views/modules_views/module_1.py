@@ -202,5 +202,5 @@ def module_1() -> rx.Component:
         image_despedida(),         
         next_button("/module_2"),
         footer(),
-        background_color="black"
+        **styles.global_styles
     )

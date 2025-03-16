@@ -34,7 +34,7 @@ def index() -> rx.Component:
       align_items="center",
     )),
     footer(),
-    background_color="black"
+    **styles.global_styles,
     )
 
 # debemos registrar cada nueva pagina

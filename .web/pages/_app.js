@@ -11,9 +11,9 @@ import theme from "$/utils/theme.js"
 import { EventLoopProvider, StateProvider, defaultColorMode } from "$/utils/context.js";
 import { ThemeProvider } from 'next-themes'
 import * as next_link from "next/link";
-import * as radix_ui_themes from "@radix-ui/themes";
-import * as emotion_react from "@emotion/react";
 import * as React from "react";
+import * as emotion_react from "@emotion/react";
+import * as radix_ui_themes from "@radix-ui/themes";
 import * as utils_context from "$/utils/context";
 import * as utils_state from "$/utils/state";
 
@@ -46,9 +46,9 @@ export default function MyApp({ Component, pageProps }) {
     // Make contexts and state objects available globally for dynamic eval'd components
     let windowImports = {
       "next/link": next_link,
-      "@radix-ui/themes": radix_ui_themes,
-      "@emotion/react": emotion_react,
       "react": React,
+      "@emotion/react": emotion_react,
+      "@radix-ui/themes": radix_ui_themes,
       "$/utils/context": utils_context,
       "$/utils/state": utils_state,
     };

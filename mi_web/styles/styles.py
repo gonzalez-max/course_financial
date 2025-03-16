@@ -138,11 +138,43 @@ IMAGE_STYLES={
     },
 }
 
+#________________________ NAV BAR STYLES_________________________________________________________#
+NAVBAR_STYLES={
+    "width":"100%",
+    "height":"50px",
+    "background_color":"rgba(255, 255, 255, 0.6)", #color trasparente
+    "padding": "1em",
+    "z_index": "1000",
+    "position": "fixed",
+    "box_shadow": "0 1px 3px rgba(0, 0, 0, 0.1)", 
+    "backdrop_filter": "blur(10px)",#Filtro desenfoque
+    "justify_content": "center",
+    "display": "flex",
+}
+
+NAVBAR_FONTS_STYLES={
+    "size":"3",
+    "color":"black", 
+    "weight":"regular",
+    "font_family": "Arial",
+    "_hover":
+        {"color": "gray"},
+    "margin": "0 auto",
+    "max_width": "1200px",
+    "transition": "color 0.3s ease",
+    "justify_content": "center",
+}
 
 
 
 
 
+
+
+
+
+
+#______________________________________________________________________________________________________________________#
 #estilos
 BASE_STYLE = {
     rx.button:{
@@ -158,27 +190,13 @@ BASE_STYLE = {
     }
 }
 
-button_title_style = dict(
-    font_size=Size.DEFAULT.value
-)
-
-button_body_style = dict(
-    font_size=Size.MEDIUM.value
-)
-
-title_style = dict(
-    size="md",
-    width="100%",
-    padding_top=Size.DEFAULT.value
-)
-#text styles
+ #global styles
 global_styles = {
-    "text_color_w": "white",
-    "background_color_b": "black",
+    "text_color" : "black",
+    "background_color" : "#80bfff",
 }
 
 font_style = {
-    "font_family": "Comic Sans MS",
     "font_size": "16px",
 }
 
@@ -200,6 +218,7 @@ TEXT_STYLE = {
         "color": "#FFC75F",
         "text_align": "left",
         "margin_bottom": "10px",
+        "font_family": "Helvetica"
     },
     
     "subseccion": {  # Para subtítulos o encabezados secundarios
@@ -213,10 +232,11 @@ TEXT_STYLE = {
     "body": {  # Para párrafos o contenido de texto
         "font_size": "16px",
         "font_weight": "regular",
-        "color": "white",
+        "color": "black",
         "text_align": "justify",
         "line_height": "1.5",
         "letter_spacing" : "0.1",
+        "font_family": "Helvetica"
     },
     "highlight": {  # Texto resaltado
         "font_size": "16px",
