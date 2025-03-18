@@ -18,7 +18,7 @@ def navbar_dropdown() -> rx.Component:
                         height="25px",
                         border_radius="50px",
                         background_color="transparent",
-                        padding="0px"
+                        padding="0px",
                     ),
                     rx.link(
                         rx.heading("Maximiliano Gonzalez", 

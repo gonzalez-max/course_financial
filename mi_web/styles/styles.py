@@ -3,15 +3,27 @@ from enum import Enum
 
 #constantes
 MAX_WIDTH="600px"
-
+#tamaños para paginas
+MAX_WIDTH_PAGES="1200px"
+MAX_HEIGHT_PAGES="44px"
 #sizes
 class Size(Enum):
+    NONE="0em"
+    MICRO="0.02em"
+    TINY="0.05em"
     SMALL="0.1em"
+    EXTRA_SMALL="0.25em"
     MEDIUM="0.5em"
+    SLIGHTLY_SMALL="0.75em"
     DEFAULT="1em"
+    MEDIUM_DEFAULT="1.5em"
     REGULAR="2em"
+    LARGE="3em"
     BIG="4em"
+    EXTRA_BIG="5em"
     ULTRA="6em"
+    HUGE="8em"
+    MASSIVE="10em"
     IMAGE_width="600px"
     IMAGE_height="400px"
     
@@ -141,7 +153,7 @@ IMAGE_STYLES={
 #________________________ NAV BAR STYLES_________________________________________________________#
 NAVBAR_STYLES={
     "width":"100%",
-    "height":"50px",
+    "height":"40px",
     "background_color":"rgba(255, 255, 255, 0.6)", #color trasparente
     "padding": "1em",
     "z_index": "1000",
@@ -150,6 +162,8 @@ NAVBAR_STYLES={
     "backdrop_filter": "blur(10px)",#Filtro desenfoque
     "justify_content": "center",
     "display": "flex",
+    "top":"0px",
+    "align_items":"center"
 }
 
 NAVBAR_FONTS_STYLES={
@@ -159,10 +173,9 @@ NAVBAR_FONTS_STYLES={
     "font_family": "Arial",
     "_hover":
         {"color": "gray"},
-    "margin": "0 auto",
-    "max_width": "1200px",
     "transition": "color 0.3s ease",
     "justify_content": "center",
+    "width":"100%"
 }
 
 
@@ -194,11 +207,43 @@ BASE_STYLE = {
 global_styles = {
     "text_color" : "black",
     "background_color" : "#80bfff",
+    "height":"100%",
+    "min_height": "100vh",
+    "justify_content": "space-between",
+    "display": "flex",
+    "flex_direction": "column",
+}
+#__________________________________________________________________________________
+#styles pagina principal
+main_page_styles={
+    "width":"100%",
+    "height":"100%",
+    "align_items": "center",
+    "justify_content":"center",
+    "margin_bottom":Size.DEFAULT.value
+}
+text_main_page={
+    "title":{
+    "font_style":"normal",
+    "color": "white",
+    "text_align": "center",
+    "padding":"10px",
+    "letter_spacing" : "1px",
+    "font_family":"Roboto, sans-serif",
+    },
+    
+    "body":{
+    "font_style":"normal",
+    "color": "white",
+    "padding" : "0px",
+    "letter_spacing" : "0.01px",
+    "font_family":"Roboto, sans-serif",
+    "font_size":"17px",
+    "max_width":"400px"
+    }
 }
 
-font_style = {
-    "font_size": "16px",
-}
+
 
 #__________________Diccionario de estilos para textos en Reflex_________________#
 TEXT_STYLE = {

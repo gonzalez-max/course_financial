@@ -5,7 +5,8 @@ def footer() -> rx.Component:
         rx.image(src="/orbesdmc.png?refresh=1",
                     width="50px",
                     height="50px",
-                    background_color="black",),
+                    background_color="transparent",),
         rx.text("since 1999 copyright registered.",color="white"),
         align_items="center",
+        width="100%",
         )

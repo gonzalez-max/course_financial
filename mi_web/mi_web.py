@@ -1,6 +1,6 @@
 import reflex as rx 
 from mi_web.components.general.nav_bar import navbar_dropdown
-from mi_web.views.header.header import header
+from mi_web.views.hero_section.hero_principal.hero_section import hero_section
 from mi_web.views.links.links import links
 from mi_web.components.general.footer import footer
 from mi_web.styles.styles import Size as Size
@@ -16,29 +16,45 @@ from mi_web.views.modules_views.module_5 import module_5
 from mi_web.views.modules_views.module_6 import module_6
 
 
-
-
 class State(rx.State):
     pass
 
 def index() -> rx.Component:
     return rx.box(
         navbar_dropdown(),
-        rx.center(
     rx.vstack(
-        header(),
+        hero_section(),
         links(),
-      max_width=styles.MAX_WIDTH,
-      width="100%",
-      margin_y=Size.BIG.value,
-      align_items="center",
-    )),
+    **styles.main_page_styles #estilo pagina principal
+    ),
     footer(),
-    **styles.global_styles,
+    **styles.global_styles, #estilos globales (background)
     )
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # debemos registrar cada nueva pagina
-app = rx.App()
+app = rx.App(stylesheets=[
+        "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,"
+        "100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,"
+        "400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,"
+        "600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100.."
+        "900""&display=swap",
+    ],)
 app.add_page(index, route="/", title="Pagina Principal")
 app.add_page(financial_page, route="/financial_page", title="Curso Finanza y Trading")
 app.add_page(soporte_page, route="/soporte_page", title="Soporte")

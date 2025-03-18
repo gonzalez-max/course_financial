@@ -1,7 +1,7 @@
 import reflex as rx
 from mi_web.components.general.nav_bar import navbar_dropdown
 from mi_web.components.general.footer import footer
-from mi_web.views.header.header_financial import header_financial
+from mi_web.views.hero_section.financial_hero_section.hero_section_financial import hero_section_financial
 from mi_web.views.links.links_modules import links_modules
 import mi_web.styles.styles as styles
 from mi_web.styles.styles import Size as Size
@@ -13,7 +13,7 @@ def financial_page() -> rx.Component:
         navbar_dropdown(),
         rx.center(
             rx.vstack(
-                header_financial(),
+                hero_section_financial(),
                 links_modules(),
                 max_width=styles.MAX_WIDTH,
                 width="100%",

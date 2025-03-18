@@ -48,6 +48,23 @@ export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
   )
 }
 
+export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    <div css={({ ["position"] : "fixed", ["width"] : "100vw", ["height"] : "0" })} title={("Connection Error: "+((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : ''))}>
+
+<Fragment_c179379f847dbcf00ba21f73b0ad1b3d/>
+</div>
+  )
+}
+
 export function Toaster_6e6ebf8d7ce589d59b7d382fb7576edf () {
   
   const { resolvedColorMode } = useContext(ColorModeContext)
@@ -81,23 +98,6 @@ export function Toaster_6e6ebf8d7ce589d59b7d382fb7576edf () {
   )
 }
 
-export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    <div css={({ ["position"] : "fixed", ["width"] : "100vw", ["height"] : "0" })} title={("Connection Error: "+((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : ''))}>
-
-<Fragment_c179379f847dbcf00ba21f73b0ad1b3d/>
-</div>
-  )
-}
-
 export default function Component() {
     
 
@@ -114,7 +114,7 @@ export default function Component() {
 </Fragment>
 <RadixThemesBox css={({ ["backgroundColor"] : "black" })}>
 
-<RadixThemesBox css={({ ["width"] : "100%", ["height"] : "50px", ["backgroundColor"] : "rgba(255, 255, 255, 0.6)", ["padding"] : "1em", ["zIndex"] : "1000", ["position"] : "fixed", ["boxShadow"] : "0 1px 3px rgba(0, 0, 0, 0.1)", ["backdropFilter"] : "blur(10px)", ["justifyContent"] : "center", ["display"] : "flex" })}>
+<RadixThemesBox css={({ ["width"] : "100%", ["height"] : "40px", ["backgroundColor"] : "rgba(255, 255, 255, 0.6)", ["padding"] : "1em", ["zIndex"] : "1000", ["position"] : "fixed", ["boxShadow"] : "0 1px 3px rgba(0, 0, 0, 0.1)", ["backdropFilter"] : "blur(10px)", ["justifyContent"] : "center", ["display"] : "flex", ["top"] : "0px", ["alignItems"] : "center" })}>
 
 <RadixThemesBox css={({ ["@media screen and (min-width: 0)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 30em)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 48em)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 62em)"] : ({ ["display"] : "block" }) })}>
 
@@ -127,7 +127,7 @@ export default function Component() {
 
 <NextLink href={"/#"} passHref={true}>
 
-<RadixThemesHeading css={({ ["color"] : "black", ["fontFamily"] : "Arial", ["--default-font-family"] : "Arial", ["&:hover"] : ({ ["color"] : "gray" }), ["margin"] : "0 auto", ["maxWidth"] : "1200px", ["transition"] : "color 0.3s ease", ["justifyContent"] : "center" })} size={"3"} weight={"regular"}>
+<RadixThemesHeading css={({ ["color"] : "black", ["fontFamily"] : "Arial", ["--default-font-family"] : "Arial", ["&:hover"] : ({ ["color"] : "gray" }), ["transition"] : "color 0.3s ease", ["justifyContent"] : "center", ["width"] : "100%" })} size={"3"} weight={"regular"}>
 
 {"Maximiliano Gonzalez"}
 </RadixThemesHeading>
@@ -140,7 +140,7 @@ export default function Component() {
 
 <NextLink href={"/financial_page"} passHref={true}>
 
-<RadixThemesText as={"p"} css={({ ["color"] : "black", ["fontFamily"] : "Arial", ["--default-font-family"] : "Arial", ["&:hover"] : ({ ["color"] : "gray" }), ["margin"] : "0 auto", ["maxWidth"] : "1200px", ["transition"] : "color 0.3s ease", ["justifyContent"] : "center" })} size={"3"} weight={"regular"}>
+<RadixThemesText as={"p"} css={({ ["color"] : "black", ["fontFamily"] : "Arial", ["--default-font-family"] : "Arial", ["&:hover"] : ({ ["color"] : "gray" }), ["transition"] : "color 0.3s ease", ["justifyContent"] : "center", ["width"] : "100%" })} size={"3"} weight={"regular"}>
 
 {"Proyecto"}
 </RadixThemesText>
@@ -150,7 +150,7 @@ export default function Component() {
 
 <NextLink href={"/soporte_page"} passHref={true}>
 
-<RadixThemesText as={"p"} css={({ ["color"] : "black", ["fontFamily"] : "Arial", ["--default-font-family"] : "Arial", ["&:hover"] : ({ ["color"] : "gray" }), ["margin"] : "0 auto", ["maxWidth"] : "1200px", ["transition"] : "color 0.3s ease", ["justifyContent"] : "center" })} size={"3"} weight={"regular"}>
+<RadixThemesText as={"p"} css={({ ["color"] : "black", ["fontFamily"] : "Arial", ["--default-font-family"] : "Arial", ["&:hover"] : ({ ["color"] : "gray" }), ["transition"] : "color 0.3s ease", ["justifyContent"] : "center", ["width"] : "100%" })} size={"3"} weight={"regular"}>
 
 {"Contacto"}
 </RadixThemesText>
@@ -170,7 +170,7 @@ export default function Component() {
 
 <NextLink href={"/#"} passHref={true}>
 
-<RadixThemesHeading css={({ ["color"] : "black", ["fontFamily"] : "Arial", ["--default-font-family"] : "Arial", ["&:hover"] : ({ ["color"] : "gray" }), ["margin"] : "0 auto", ["maxWidth"] : "1200px", ["transition"] : "color 0.3s ease", ["justifyContent"] : "center" })} size={"3"} weight={"regular"}>
+<RadixThemesHeading css={({ ["color"] : "black", ["fontFamily"] : "Arial", ["--default-font-family"] : "Arial", ["&:hover"] : ({ ["color"] : "gray" }), ["transition"] : "color 0.3s ease", ["justifyContent"] : "center", ["width"] : "100%" })} size={"3"} weight={"regular"}>
 
 {"Maximiliano Gonzalez"}
 </RadixThemesHeading>
@@ -208,9 +208,9 @@ export default function Component() {
 </RadixThemesText>
 </RadixThemesFlex>
 </RadixThemesFlex>
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center" })} direction={"column"} gap={"3"}>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center", ["width"] : "100%" })} direction={"column"} gap={"3"}>
 
-<img css={({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "black" })} src={"/orbesdmc.png?refresh=1"}/>
+<img css={({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent" })} src={"/orbesdmc.png?refresh=1"}/>
 <RadixThemesText as={"p"} css={({ ["color"] : "white" })}>
 
 {"since 1999 copyright registered."}

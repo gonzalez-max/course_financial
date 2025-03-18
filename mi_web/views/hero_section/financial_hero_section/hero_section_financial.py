@@ -1,11 +1,11 @@
 import reflex as rx
 import mi_web.styles.styles as styles
-from mi_web.views.header.header_images.intro_image import intro_image
+from mi_web.views.hero_section.financial_hero_section.hero_images.intro_image import intro_image
 
 
 
 
-def header_financial() -> rx.Component:
+def hero_section_financial() -> rx.Component:
     return rx.box(
         rx.center(
             rx.vstack(
