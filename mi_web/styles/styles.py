@@ -28,133 +28,23 @@ class Size(Enum):
     IMAGE_height="400px"
     
 
-
-#estilos de botones
-BUTTON_STYLE = {
-    "size": "3",
-    "variant": "solid",
-    "radius": "medium",
-    "width": "100%",  # Ajusta el ancho del botón
-    "height": "100px",  # Ajusta la altura del botón
-    "padding" : "10px", # Ajusta el padding interno
-    "spacing" : "5px",
-    "margin_bottom": "10px", #Espacio entre botones
-    "font_size": "semibold", #fuente semi negra 
-    "text_transform": "capitalize", #tipo de texto 
-    "letter_spacing" : "1px", #espacio sutil entre letras 
-    "color": "white", #color fuente
-    "white_space": "normal",  # Permite que el texto se divida en varias líneas
-    "text_align": "center",   # Asegura que el texto esté centrado dentro del botón
-    "max_width": "300px",     # Ajusta el ancho máximo del botón para evitar que sea demasiado ancho
-    "background_color": "#990033",  #color de fondo 
-    "border": "2px solid transparent",     #bordes 
-    "word_wrap": "break-word",  # Ajuste del texto dentro del botón
-    "display": "flex",  # Permitir centrado interno
-    "align_items": "center",  # Centrar verticalmente el contenido
-    "justify_content": "center",  # Centrar horizontalmente el contenido
-    "transition": "all 0.3s ease-in-out", #animacion
-    "_hover": {
-        "background_color": "#4338CA",  # Azul más oscuro en hover
-        "border_color": "#6366F1",  # Bordes visibles en hover
-        "box_shadow": "0px 4px 10px rgba(79, 70, 229, 0.3)",  # Sombra elegante
-    },
+#____________________________AVATAR_STYLES___________________________________________#
+AVATAR_STYLE={
+    "size":"9",
+    "justify":"center",
+    "border":"1px solid white",
+    "flex_wrap":"wrap",
+    "transition": "transform 0.3s ease-in-out",
+    "&:hover": {
+    "transform": "scale(1.10)"},
 }
 
-
-#__________________drawer styles________________________#
-DRAWER_BUTTON_STYLE = {
-    "size": "3",
-    "variant": "solid",
-    "radius": "medium",
-    "width": "100%",  # Ajusta el ancho del botón
-    "height": "30px",  # Ajusta la altura del botón
-    "padding" : "10px", # Ajusta el padding interno
-    "spacing" : "5px",
-    "margin_bottom": "10px", #Espacio entre botones
-    "font_size": "semibold", #fuente semi negra 
-    "text_transform": "capitalize", #tipo de texto 
-    "letter_spacing" : "1px", #espacio sutil entre letras 
-    "color": "white", #color fuente
-    "white_space": "normal",  # Permite que el texto se divida en varias líneas
-    "text_align": "center",   # Asegura que el texto esté centrado dentro del botón
-    "max_width": "150px",     # Ajusta el ancho máximo del botón para evitar que sea demasiado ancho
-    "background_color": "#990033",  #color de fondo 
-    "border": "2px solid transparent",     #bordes 
-    "word_wrap": "break-word",  # Ajuste del texto dentro del botón
-    "display": "flex",  # Permitir centrado interno
-    "align_items": "center",  # Centrar verticalmente el contenido
-    "justify_content": "center",  # Centrar horizontalmente el contenido
-    "transition": "all 0.3s ease-in-out", #animacion
-    "_hover": {
-        "background_color": "#4338CA",  # Azul más oscuro en hover
-        "border_color": "#6366F1",  # Bordes visibles en hover
-        "box_shadow": "0px 4px 10px rgba(79, 70, 229, 0.3)",  # Sombra elegante
-    },
-}
-
-#CONTENT DRAWER STYLES
-DRAWER_CONTENT_STYLE = {
-    "size": "4",
-    "variant": "solid",
-    "radius": "medium",
-    "width": "100%",  # Ajusta el ancho del botón
-    "height": "30px",  # Ajusta la altura del botón
-    "padding" : "10px", # Ajusta el padding interno
-    "spacing" : "5px",
-    "margin_bottom": "10px", #Espacio entre botones
-    "font_size": "semibold", #fuente semi negra 
-    "text_transform": "capitalize", #tipo de texto 
-    "letter_spacing" : "1px", #espacio sutil entre letras 
-    "color": "white", #color fuente
-    "white_space": "normal",  # Permite que el texto se divida en varias líneas
-    "text_align": "center",   # Asegura que el texto esté centrado dentro del botón
-    "max_width": "150px",     # Ajusta el ancho máximo del botón para evitar que sea demasiado ancho
-    "background_color": "#003366",  #color de fondo 
-    "border": "2px solid transparent",     #bordes 
-    "word_wrap": "break-word",  # Ajuste del texto dentro del botón
-    "display": "flex",  # Permitir centrado interno
-    "align_items": "center",  # Centrar verticalmente el contenido
-    "justify_content": "center",  # Centrar horizontalmente el contenido
-    "transition": "all 0.3s ease-in-out", #animacion
-    "_hover": {
-        "background_color": "#800080",  # Azul más oscuro en hover
-        "border_color": "#6366F1",  # Bordes visibles en hover
-        "box_shadow": "0px 4px 10px rgba(79, 70, 229, 0.3)",  # Sombra elegante
-    },
-}
-
-
-#_____________________TABLAS STYLES____________________________________#
-TABLES_STYLES={
-    "background_color": "#99003d",
-    "color": "#333333",
-    "border": "1px solid #ffffff",}
-                    
-
-#________________IMAGEN STYLES_________________________________________#
-IMAGE_STYLES={
-    "IMAGE_width":"600px",
-    "IMAGE_height":"400px",
-    "background_color": "#99003d",
-    "color": "#333333",
-    "border": "1px solid gray", #color de bordes normales
-    "border_radius": "20px", #forma de los bordes
-    "box_shadow":"0px 0px 10px gray",#efecto a los bordes
-    "cursor": "pointer",  # Indica que la imagen es clickeable
-    "transition": "transform 0.2s ease-in-out",  # Suaviza el efecto
-    "_hover": {
-        "background_color": "#800080",  # Azul más oscuro en hover
-        "border_color": "#6366F1",  # Bordes visibles en hover
-        "box_shadow": "0px 4px 10px rgba(79, 70, 229, 0.3)",  # Sombra elegante
-        "transform": "scale(1.05)",
-    },
-}
 
 #________________________ NAV BAR STYLES_________________________________________________________#
 NAVBAR_STYLES={
     "width":"100%",
     "height":"40px",
-    "background_color":"rgba(255, 255, 255, 0.6)", #color trasparente
+    "background_color":"rgba(255, 255, 255, 0.5)", #color trasparente
     "padding": "1em",
     "z_index": "1000",
     "position": "fixed",
@@ -177,11 +67,22 @@ NAVBAR_FONTS_STYLES={
     "justify_content": "center",
     "width":"100%"
 }
+#________________________________________Link_Button__styles_____________________________________________________________#
 
-
-
-
-
+LINK_BUTTON_STYLES={
+        "width":"50px",
+        "height":"50px",
+        "background_color":"transparent",  
+        "border_radius":"50%",
+        "display":"flex",
+        "align_items":"center",
+        "justify_content":"center",
+        "margin":"1px",
+        "cursor":"pointer",  
+        "_hover":{"background_color": "white",
+                "transition": "transform 0.2s ease-in-out",
+                "transform": "scale(1.07)"},
+}
 
 
 
@@ -206,98 +107,78 @@ BASE_STYLE = {
  #global styles
 global_styles = {
     "text_color" : "black",
-    "background_color" : "#80bfff",
+    "background_color" : "white",
     "height":"100%",
     "min_height": "100vh",
     "justify_content": "space-between",
     "display": "flex",
     "flex_direction": "column",
 }
-#__________________________________________________________________________________
-#styles pagina principal
+#_____________________________#styles pagina principal_____________________________________________________
+
 main_page_styles={
     "width":"100%",
     "height":"100%",
     "align_items": "center",
     "justify_content":"center",
-    "margin_bottom":Size.DEFAULT.value
+    "margin_bottom":Size.DEFAULT.value,
+    "background": "linear-gradient(to bottom, #0A0F49, #2A3C80, #5A6FA5, #8CA5CC, #BFD3EE)",
 }
 text_main_page={
     "title":{
     "font_style":"normal",
     "color": "white",
     "text_align": "center",
-    "padding":"10px",
+    "padding":"5px",
     "letter_spacing" : "1px",
-    "font_family":"Roboto, sans-serif",
+    "transition": "transform 0.3s ease-in-out",
+    "&:hover": {
+    "transform": "scale(1.05)"},
+    "cursor":"context-menu"
     },
     
     "body":{
     "font_style":"normal",
     "color": "white",
-    "padding" : "0px",
+    "padding" : "1px",
     "letter_spacing" : "0.01px",
-    "font_family":"Roboto, sans-serif",
+    "font_family":"Roboto",
     "font_size":"17px",
-    "max_width":"400px"
+    "max_width":"400px",
+    "_hover":{
+        "transition": "transform 0.5s ease-in-out",
+        "transform": "scale(1.08)",
+    }
     }
 }
 
+#fuentes de google
+"""
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
-
-#__________________Diccionario de estilos para textos en Reflex_________________#
-TEXT_STYLE = {
-    "title": {  # Para títulos principales
-        "font_size": "50px",
-        "font_weight": "bold",
-        "color": "white",
-        "text_align": "center",
-        "margin_bottom": "20px",
-        "margin_top": "50px",
-        "padding" : "10px",
-        "letter_spacing" : "1px",
-    },
-    "subtitle": {  # Para subtítulos o encabezados secundarios
-        "font_size": "25px",
-        "font_weight": "semibold",
-        "color": "#FFC75F",
-        "text_align": "left",
-        "margin_bottom": "10px",
-        "font_family": "Helvetica"
-    },
-    
-    "subseccion": {  # Para subtítulos o encabezados secundarios
-        "font_size": "18px",
-        "font_weight": "semibold",
-        "color": "#b37400",
-        "text_align": "left",
-        "margin_bottom": "8px",
-    },
-    
-    "body": {  # Para párrafos o contenido de texto
-        "font_size": "16px",
-        "font_weight": "regular",
-        "color": "black",
-        "text_align": "justify",
-        "line_height": "1.5",
-        "letter_spacing" : "0.1",
-        "font_family": "Helvetica"
-    },
-    "highlight": {  # Texto resaltado
-        "font_size": "16px",
-        "font_weight": "bold",
-        "color": "red",
-        "background_color": "yellow",
-        "padding": "2px 5px",
-        "border_radius": "5px",
-    },
-    "link": {  # Estilos para enlaces
-        "font_size": "16px",
-        "color": "blue",
-        "text_decoration": "underline",
-        "_hover": {
-            "color": "darkblue",
-            "text_decoration": "none",
-        },
-    },
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+
+.roboto-bold {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+.roboto-black {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.roboto-regular {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+"""

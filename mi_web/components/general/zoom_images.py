@@ -1,5 +1,6 @@
 import reflex as rx
 import mi_web.styles.styles as styles
+import mi_web.styles.course_styles as c_styles
 from reflex_image_zoom import image_zoom
 
 # Componente reutilizable para imágenes con zoom
@@ -10,7 +11,7 @@ def zoomed_image(src: str, height: str = "350px") -> rx.Component:
                 src=src,
                 height=height,
                 width="100%",
-                **styles.IMAGE_STYLES,  # Aplicamos los estilos aquí
+                **c_styles.IMAGE_STYLES,  # Aplicamos los estilos aquí
             ),
             width="100%",  # Tamaño del contenedor de zoom
             zoom_scale=50,  # Escala de zoom (ajustable)

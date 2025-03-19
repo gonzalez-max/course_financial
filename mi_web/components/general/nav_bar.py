@@ -13,7 +13,7 @@ def navbar_dropdown() -> rx.Component:
             rx.hstack(
                 rx.hstack(
                     rx.image(
-                        src="/orbesdmc.png",
+                        src="icons/orbesdmc-black.png",
                         width="25px",
                         height="25px",
                         border_radius="50px",
@@ -40,7 +40,7 @@ def navbar_dropdown() -> rx.Component:
             rx.hstack(
                 rx.hstack(
                     rx.image(
-                        src="/orbesdmc.png",
+                        src="icons/orbesdmc.png",
                         width="30px",
                         height="30px",
                         border_radius="50px",

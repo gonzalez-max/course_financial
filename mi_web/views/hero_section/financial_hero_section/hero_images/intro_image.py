@@ -1,6 +1,6 @@
 import reflex as rx
 from mi_web.styles.styles import Size as Size
-import mi_web.styles.styles as styles
+import mi_web.styles.course_styles as c_styles
 
 def intro_image() -> rx.Component:
     return rx.box(
@@ -9,7 +9,7 @@ def intro_image() -> rx.Component:
             src=("/intro_image.jpg?refresh=1"),
             width="100%",
             max_width=Size.IMAGE_width,
-            **styles.IMAGE_STYLES
+            **c_styles.IMAGE_STYLES
         ),
         align_items="center",
         justify_content="center"

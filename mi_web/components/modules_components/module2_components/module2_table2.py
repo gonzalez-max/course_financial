@@ -1,5 +1,7 @@
 import reflex as rx
 import mi_web.styles.styles as styles
+import mi_web.styles.course_styles as c_styles
+
 
 def module2_table2() -> rx.Component:
     return rx.table.root(
@@ -44,5 +46,5 @@ def module2_table2() -> rx.Component:
                         font_size="10px",
                         variant="surface",
                         size="2",
-                        **styles.TABLES_STYLES
+                        **c_styles.TABLES_STYLES
                     ),

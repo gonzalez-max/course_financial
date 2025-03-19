@@ -1,5 +1,5 @@
 import reflex as rx
-import mi_web.styles.styles as styles
+import mi_web.styles.course_styles as c_styles
 
 # Lista de módulos con sus enlaces
 MODULOS = [
@@ -17,7 +17,7 @@ def drawer() -> rx.Component:
         rx.box(
             rx.drawer.root(
                 rx.drawer.trigger(
-                    rx.button("Modulos Menu", **styles.DRAWER_BUTTON_STYLE)
+                    rx.button("Modulos Menu", **c_styles.DRAWER_BUTTON_STYLE)
                 ),
                 rx.drawer.overlay(z_index="5"),
                 rx.drawer.portal(
@@ -25,12 +25,12 @@ def drawer() -> rx.Component:
                         rx.flex(
                             rx.drawer.close(
                                 rx.box(
-                                    rx.button("Cerrar", **styles.DRAWER_BUTTON_STYLE)
+                                    rx.button("Cerrar", **c_styles.DRAWER_BUTTON_STYLE)
                                 )
                             ),
                             # Generar botones dinámicamente desde la lista de módulos
                             *[rx.link(
-                                rx.button(modulo["nombre"], **styles.DRAWER_CONTENT_STYLE),
+                                rx.button(modulo["nombre"], **c_styles.DRAWER_CONTENT_STYLE),
                                 href=modulo["url"]
                             ) for modulo in MODULOS],
                             align_items="start",

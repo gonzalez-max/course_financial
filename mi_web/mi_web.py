@@ -24,7 +24,7 @@ def index() -> rx.Component:
         navbar_dropdown(),
     rx.vstack(
         hero_section(),
-        links(),
+        #links(),
     **styles.main_page_styles #estilo pagina principal
     ),
     footer(),

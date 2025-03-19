@@ -1,34 +1,56 @@
 import reflex as rx
 import mi_web.styles.styles as styles
 from mi_web.styles.styles import Size as Size
+from mi_web.components.general.link_button import link_button
+from mi_web.components.general.download_button import download_button
 
 def hero_section() -> rx.Component:
     return rx.box(
-        rx.vstack(
-        rx.heading("Welcome, ",
-                   **styles.text_main_page["title"],
-                    font_size = "35px",
-                    font_weight = "300",
-                    margin_top=Size.REGULAR.value),
+            rx.vstack(
+                rx.heading("Bienvenido,",
+                        **styles.text_main_page["title"],
+                        margin_top=Size.MEDIUM_DEFAULT.value,
+                        font_size = "25px",
+                        font_family="Roboto",
+                        font_weight="300"),
         
-        rx.heading("I´m Maximiliano Gonzalez",
-                    **styles.text_main_page["title"],
-                    font_size = "50px",
-                    font_weight = "300",),
-        rx.hstack(
-            rx.avatar(src="/mi-foto-cara.jpg",
-                  fallback="MG",
-                  size="9",
-                  name="Maxi Gonzalez",
-                ),
-            rx.text("Soy Maxi González, Programador en HTML, CSS y Python (Django framework, Reflex), Asesor financiero y agente"
-                "productor, me encuentro creando un curso gratuito de trading donde encontraras lo mas importante para invertir"
-                "en la bolsa, cripto y como evitar estafas.",
-                **styles.text_main_page["body"],
-                align_items="center"),
-            ),
-            align_items="center",       
-            justify="center",  
+                rx.heading("Soy Maximiliano Gonzalez",
+                        **styles.text_main_page["title"],
+                        font_size = "50px",
+                        class_name="roboto-bold"), 
+        
+                rx.heading("Desarrollador Web Junior",
+                        **styles.text_main_page["title"],
+                        font_size = "30px",
+                        font_family="Roboto",
+                        font_weight="400",
+                        margin_bottom=Size.MEDIUM.value),
+                
+                rx.avatar(src="/mi-foto-cara.jpg",
+                            fallback="MG",
+                            name="Maxi Gonzalez",
+                            **styles.AVATAR_STYLE,
+                            margin_top=Size.MICRO.value,
+                        ),
+                rx.hstack(        
+                        link_button("https://www.linkedin.com/in/maxi-gonzalez-479691323","/icons/linkedin.svg"),
+                        link_button("https://github.com/gonzalez-max","/icons/github.svg"),
+                        download_button(),
+                        margin_top=Size.SMALL.value,
+                        align_items="center",
+                        justify_items="center",
+                        display="flex"
+                        ),
+                rx.text("Soy Maxi González, Programador en HTML, CSS y Python (Django framework, Reflex), Asesor financiero y agente"
+                        " productor, me encuentro creando un curso gratuito de trading donde encontraras lo mas importante para invertir"
+                        "en la bolsa, cripto y como evitar estafas.",
+                        **styles.text_main_page["body"],
+                        margin_bottom=Size.BIG.value),
+                align_items="center",
+                justify="center",
+                height="100vh",
+                margin_top="40px",
+
     ),
-        **styles.main_page_styles
+        **styles.main_page_styles,
 )

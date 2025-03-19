@@ -2,6 +2,7 @@ import reflex as rx
 from mi_web.components.general.nav_bar import navbar_dropdown
 from mi_web.components.general.footer import footer
 from mi_web.styles.styles import Size as Size
+import mi_web.styles.course_styles as c_styles
 import mi_web.styles.styles as styles
 from mi_web.components.general.drawer import drawer
 from mi_web.components.modules_components.module1_components.saving_bar import saving_bar
@@ -21,21 +22,21 @@ def module_1() -> rx.Component:
             rx.vstack(
                 rx.box(
                     #Encabezado del módulo
-                    rx.heading("Módulo 1: Fundamentos de Finanzas Personales y Mercado Financiero", **styles.TEXT_STYLE["title"]),
+                    rx.heading("Módulo 1: Fundamentos de Finanzas Personales y Mercado Financiero", **c_styles.TEXT_STYLE["title"]),
                     
                     #Sección 1: ¿Qué son las finanzas?
-                    rx.heading("1. ¿Qué son las finanzas?", **styles.TEXT_STYLE["subtitle"]),
+                    rx.heading("1. ¿Qué son las finanzas?", **c_styles.TEXT_STYLE["subtitle"]),
                     rx.text("Las finanzas corresponden a un área de la economía que estudia la obtención y administración de dinero "
                         "y de capital, es decir, los recursos financieros.\n"
                         "Estudia tanto la obtención de recursos (financiación), como la inversión y el ahorro de los mismos.",
-                        **styles.TEXT_STYLE["body"],
+                        **c_styles.TEXT_STYLE["body"],
                         margin_bottom=Size.DEFAULT.value, 
                     ),
                    
                     rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value,margin_bottom=Size.DEFAULT.value),
                     
                     #Sección 2: Conceptos Contables
-                    rx.heading("2. Conceptos Contables", **styles.TEXT_STYLE["subtitle"]),
+                    rx.heading("2. Conceptos Contables", **c_styles.TEXT_STYLE["subtitle"]),
 
                     #Lista de conceptos contables
                     rx.list.ordered(
@@ -49,7 +50,7 @@ def module_1() -> rx.Component:
                     ),
 
                     #Cuentas patrimoniales
-                    rx.heading("Cuentas patrimoniales", **styles.TEXT_STYLE["subseccion"]),
+                    rx.heading("Cuentas patrimoniales", **c_styles.TEXT_STYLE["subseccion"]),
 
                     #Tabla con explicaciones de los conceptos financieros
                     rx.vstack(
@@ -59,7 +60,7 @@ def module_1() -> rx.Component:
                     rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value,margin_bottom=Size.DEFAULT.value),
                 
                     # Seccion 3 El Ahorro
-                    rx.heading("3. El ahorro", **styles.TEXT_STYLE["subtitle"]),
+                    rx.heading("3. El ahorro", **c_styles.TEXT_STYLE["subtitle"]),
                     #imagen alcancia 
                     rx.hstack(
                         zoomed_image("/el_ahorro.jpg?refresh=1"),
@@ -69,13 +70,13 @@ def module_1() -> rx.Component:
                     rx.text("Este hábito no solo te ayudará a construir un fondo de emergencia, sino que también te permitirá"
                             "invertir en oportunidades futuras. Con el tiempo, ese 10% acumulado puede brindarte estabilidad financiera " 
                             "y mayor libertad para tomar decisiones sin presiones económicas."
-                            ,**styles.TEXT_STYLE["body"],margin_bottom=Size.DEFAULT.value),
+                            ,**c_styles.TEXT_STYLE["body"],margin_bottom=Size.DEFAULT.value),
                     rx.text(rx.text.strong("Por ejemplo"),", si cobrás $100.000 por mes, destinar el 10% significaría ahorrar $10.000 de entrada. "
                             "Si configurás una transferencia automática el mismo día que te depositan el sueldo, te asegurás de no "
                             "gastarlo sin darte cuenta. También podés usar una app que redondee cada compra al peso superior y mande la "
                             "diferencia a una cuenta de ahorros. A la larga, estos pequeños aportes suman más de lo que imaginás,"
                             " y casi sin esfuerzo."
-                            ,**styles.TEXT_STYLE["body"],margin_bottom=Size.DEFAULT.value),
+                            ,**c_styles.TEXT_STYLE["body"],margin_bottom=Size.DEFAULT.value),
                     
                     #ejemplo grafico de ahorro
                     rx.vstack(
@@ -83,20 +84,20 @@ def module_1() -> rx.Component:
                         margin_bottom=Size.DEFAULT.value
                     ),
                     #Analisis del grafico y conclusion
-                    rx.heading("Análisis del Gráfico",**styles.TEXT_STYLE["subseccion"]),
+                    rx.heading("Análisis del Gráfico",**c_styles.TEXT_STYLE["subseccion"]),
                     rx.text("El gráfico muestra cómo un ahorro constante del 10% del ingreso mensual"
                             " ($10.000) se acumula a lo largo del año. Al final del período, el ahorro "
                             "total alcanza los $120.000, demostrando el impacto positivo de la constancia en el ahorro.",
-                            **styles.TEXT_STYLE["body"]),
-                    rx.heading("Conclusión",**styles.TEXT_STYLE["subseccion"]),
+                            **c_styles.TEXT_STYLE["body"]),
+                    rx.heading("Conclusión",**c_styles.TEXT_STYLE["subseccion"]),
                     rx.text("Adoptar este hábito no solo permite construir un fondo de emergencia, sino que también"
-                            " abre oportunidades de inversión y estabilidad financiera a largo plazo",**styles.TEXT_STYLE["body"],
+                            " abre oportunidades de inversión y estabilidad financiera a largo plazo",**c_styles.TEXT_STYLE["body"],
                             margin_bottom=Size.DEFAULT.value),
                 
                     rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value,margin_bottom=Size.DEFAULT.value),
                 
                     #seccion 4 Identificacion de Gastos
-                    rx.heading("4. Identificacion de Gastos", **styles.TEXT_STYLE["subtitle"]),
+                    rx.heading("4. Identificacion de Gastos", **c_styles.TEXT_STYLE["subtitle"]),
                     
                     #imagen identificacion gastos
                     rx.hstack(
@@ -105,16 +106,16 @@ def module_1() -> rx.Component:
                     ),
                     rx.text("Para una correcta administración financiera, es clave identificar y clasificar los diferentes" 
                             "tipos de gastos. Esto permite entender mejor el flujo de dinero y tomar decisiones más "
-                            "inteligentes sobre el presupuesto.", **styles.TEXT_STYLE["body"],
+                            "inteligentes sobre el presupuesto.", **c_styles.TEXT_STYLE["body"],
                             margin_bottom=Size.DEFAULT.value),
                     #subseccion 
-                    rx.heading("1. Gastos Fijos y Supervivencia", **styles.TEXT_STYLE["subseccion"]),
+                    rx.heading("1. Gastos Fijos y Supervivencia", **c_styles.TEXT_STYLE["subseccion"]),
                     rx.text("Son aquellos necesarios para mantener un nivel de vida estable y no suelen cambiar mes a mes."
-                            " Deben ser prioridad en cualquier planificación financiera.", **styles.TEXT_STYLE["body"],
+                            " Deben ser prioridad en cualquier planificación financiera.", **c_styles.TEXT_STYLE["body"],
                             margin_bottom=Size.DEFAULT.value),
                     #ejemplo 
                     rx.hstack(
-                        rx.heading("Ejemplos: ", **styles.TEXT_STYLE["subseccion"]),
+                        rx.heading("Ejemplos: ", **c_styles.TEXT_STYLE["subseccion"]),
                         rx.list.ordered(
                             rx.list.item("Alquiler o hipoteca"),
                             rx.list.item("Servicios basicos (Agua, luz, gas, internet)"),
@@ -125,14 +126,14 @@ def module_1() -> rx.Component:
                         ),margin_bottom=Size.DEFAULT.value),
                     
                     #subseccion
-                    rx.heading("2. Gastos Variables", **styles.TEXT_STYLE["subseccion"]),
+                    rx.heading("2. Gastos Variables", **c_styles.TEXT_STYLE["subseccion"]),
                     rx.text("Son gastos que pueden fluctuar dependiendo del mes y del estilo de vida."
-                            " Se pueden ajustar según las necesidades y prioridades.", **styles.TEXT_STYLE["body"],
+                            " Se pueden ajustar según las necesidades y prioridades.", **c_styles.TEXT_STYLE["body"],
                             margin_bottom=Size.DEFAULT.value),
                     
                     #ejemplo
                     rx.hstack(
-                    rx.heading("Ejemplos: ", **styles.TEXT_STYLE["subseccion"]),
+                    rx.heading("Ejemplos: ", **c_styles.TEXT_STYLE["subseccion"]),
                     rx.list.ordered(
                         rx.list.item("Combustible"),
                         rx.list.item("Mantenimiento de vehiculo"),
@@ -142,13 +143,13 @@ def module_1() -> rx.Component:
                         color="white"
                     ),margin_bottom=Size.DEFAULT.value),
                     #subseccion
-                    rx.heading("3. Gastos Extraordinarios", **styles.TEXT_STYLE["subseccion"]),
+                    rx.heading("3. Gastos Extraordinarios", **c_styles.TEXT_STYLE["subseccion"]),
                     rx.text("Son aquellos imprevistos que pueden generar un impacto en la economía personal."
                             " Para estos, es recomendable contar con un ", rx.text.strong("fondo de emergencia")," que permita cubrirlos,"
-                            " sin afectar el presupuesto mensual.", **styles.TEXT_STYLE["body"],margin_bottom=Size.DEFAULT.value),
+                            " sin afectar el presupuesto mensual.", **c_styles.TEXT_STYLE["body"],margin_bottom=Size.DEFAULT.value),
                     #ejemplo
                     rx.hstack(
-                    rx.heading("Ejemplos: ", **styles.TEXT_STYLE["subseccion"]),
+                    rx.heading("Ejemplos: ", **c_styles.TEXT_STYLE["subseccion"]),
                     rx.list.ordered(
                         rx.list.item("Reparaciones del Hogar o Vehiculo"),
                         rx.list.item("Emergencias Medicas"),
@@ -159,15 +160,16 @@ def module_1() -> rx.Component:
                     ), margin_bottom=Size.DEFAULT.value),
                     rx.text(rx.text.strong("importante:")," Llevar un registro detallado de los gastos ayuda a "
                             "identificar patrones y encontrar oportunidades de ahorro. Aplicaciones de finanzas "
-                            "personales o simples hojas de cálculo pueden ser herramientas útiles para este propósito.", **styles.TEXT_STYLE["body"],
+                            "personales o simples hojas de cálculo pueden ser herramientas útiles para este propósito.", 
+                            **c_styles.TEXT_STYLE["body"],
                             margin_bottom=Size.DEFAULT.value),
                 
                     rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value,margin_bottom=Size.DEFAULT.value),
                 
                     #seccion 5 Conceptos Financieros Clave
-                    rx.heading("Conceptos Financieros Clave", **styles.TEXT_STYLE["subtitle"]),
+                    rx.heading("Conceptos Financieros Clave", **c_styles.TEXT_STYLE["subtitle"]),
                     rx.text("Para comprender mejor la gestión financiera y la toma de decisiones económicas,"
-                        " es fundamental conocer estos conceptos clave:", **styles.TEXT_STYLE["body"]),
+                        " es fundamental conocer estos conceptos clave:", **c_styles.TEXT_STYLE["body"]),
                     #tabla conceptos financieros
                     rx.vstack(
                         table2_module1(),
@@ -177,7 +179,7 @@ def module_1() -> rx.Component:
                     rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value,margin_bottom=Size.DEFAULT.value),
                 
                     #conclusion
-                    rx.heading("Conclusión del Módulo 1:", **styles.TEXT_STYLE["subtitle"]),
+                    rx.heading("Conclusión del Módulo 1:", **c_styles.TEXT_STYLE["subtitle"]),
                     rx.list.ordered(
                         rx.list.item(rx.text.strong("Resumen:")," Hemos explorado qué son las finanzas,"
                                      " los conceptos contables básicos, la importancia del ahorro, "
