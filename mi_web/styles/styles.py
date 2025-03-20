@@ -33,6 +33,10 @@ CARD_STYLES={
         "max_width":"600px",
         "as_child":True,
         "flex_wrap":"wrap",
+        "height":"100%",
+        #"background_color": "rgba(255, 255, 255, 0.3)", COLOR BLANCO 
+        "background_color": "rgba(155, 155, 155, 0.7)",
+        "padding":"20px",
         "_hover":{
                 "transition": "transform 0.5s ease-in-out",
                 "transform": "scale(1.08)",
@@ -44,7 +48,6 @@ CARD_STYLES={
 AVATAR_STYLE={
     "size":"9",
     "justify_content":"center",
-    "border":"1px solid white",
     "align_items":"center",
     "flex_wrap":"wrap",
     "transition": "transform 0.3s ease-in-out",
@@ -153,15 +156,16 @@ text_main_page={
     
     "body":{
     "font_style":"normal",
-    "color": "white",
+    "color": "#1D1D1F",
     "padding" : "1px",
     "letter_spacing" : "0.01px",
     "font_family":"Roboto",
     "font_size":"17px",
     "max_width":"400px",
+    "font_weight":"400",
     "_hover":{
         "transition": "transform 0.5s ease-in-out",
-        "transform": "scale(1.08)",
+        "transform": "scale(1.10)",
     }
     }
 }

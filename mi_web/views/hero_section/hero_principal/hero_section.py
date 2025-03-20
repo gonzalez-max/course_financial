@@ -64,10 +64,11 @@ def hero_section() -> rx.Component:
                     size="2",
                     justify_content="center",
                     text_align="center",
+                    #background_color="#9b9b9b",
                 ),
                 #______________flex styles____________________________#
                 **styles.CARD_STYLES
-            ),
+            ), 
             align_items="center",
             justify="center",
             height="100vh",
