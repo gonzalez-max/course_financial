@@ -27,16 +27,30 @@ class Size(Enum):
     IMAGE_width="600px"
     IMAGE_height="400px"
     
+#____________________________CARD_STYLES_____________________________________________#
+CARD_STYLES={
+        "spacing":"2",
+        "max_width":"600px",
+        "as_child":True,
+        "flex_wrap":"wrap",
+        "_hover":{
+                "transition": "transform 0.5s ease-in-out",
+                "transform": "scale(1.08)",
+                "box-shadow": "0px 4px 15px rgba(0, 0, 0, 0.3)",
+        }
+}
 
 #____________________________AVATAR_STYLES___________________________________________#
 AVATAR_STYLE={
     "size":"9",
-    "justify":"center",
+    "justify_content":"center",
     "border":"1px solid white",
+    "align_items":"center",
     "flex_wrap":"wrap",
     "transition": "transform 0.3s ease-in-out",
     "&:hover": {
-    "transform": "scale(1.10)"},
+    "transform": "scale(1.10)",
+    "box-shadow": "0px 4px 15px rgba(0, 0, 0, 0.3)"},
 }
 
 

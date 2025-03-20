@@ -10,7 +10,7 @@ def download_button() -> rx.Component:
         border_radius="5px",
         cursor="pointer",
         _hover={"background_color": "white",
-                "transition": "transform 0.5s ease-in-out",
+                "transition": "transform 0.2s ease-in-out",
                 "color":"black",
                 "transform": "scale(1.07)"}
     )
