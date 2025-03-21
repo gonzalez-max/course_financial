@@ -1,30 +1,56 @@
 import reflex as rx
 import mi_web.styles.styles as styles
 
+class LogoState(rx.State):
+    click_count: int = 0
+    logo_src: str = "icons/orbesdmc-black.png"
+
+    def increment_click(self):
+        self.click_count += 1
+        # Calcula el número de ciclos de 5 clics
+        cycle = (self.click_count // 5) % 2
+        # Alterna la imagen según el ciclo
+        if cycle == 1:
+            self.logo_src = "icons/orbesdmc.png"
+        else:
+            self.logo_src = "icons/orbesdmc-black.png"
+        
+#_______________________________________________________________________________________________________#
+
+
 def nav_bar(text: str, url: str) -> rx.Component:
     return rx.link(
-        rx.text(text, **styles.NAVBAR_FONTS_STYLES), href=url
+        rx.text(text, **styles.NAVBAR_FONTS_STYLES),
+        href=url,
+        style={"text_decoration": "none"},
     )
-
 
 def navbar_dropdown() -> rx.Component:
     return rx.box(
         rx.desktop_only(
             rx.hstack(
                 rx.hstack(
-                    rx.image(
-                        src="icons/orbesdmc-black.png",
-                        width="25px",
-                        height="25px",
-                        border_radius="50px",
-                        background_color="transparent",
-                        padding="0px",
+                    rx.tooltip(
+                        rx.image(
+                            src=LogoState.logo_src,  # Usamos el estado para la imagen
+                            width="25px",
+                            height="25px",
+                            border_radius="50px",
+                            background_color="transparent",
+                            padding="0px",
+                            on_click=LogoState.increment_click,# Vinculamos el evento on_click
+                            cursor="pointer",
+                            _hover={"transform": "scale(1.10)"},
+                        ),
+                        content="No me toques.",
                     ),
                     rx.link(
-                        rx.heading("Maximiliano Gonzalez", 
-                                **styles.NAVBAR_FONTS_STYLES),
-                    href="/#",
-                    style={"text_decoration": "none"}
+                        rx.heading(
+                            "Maximiliano Gonzalez",
+                            **styles.NAVBAR_FONTS_STYLES,
+                        ),
+                        href="/#",
+                        style={"text_decoration": "none"},
                     ),
                     align_items="center",
                 ),
@@ -40,18 +66,21 @@ def navbar_dropdown() -> rx.Component:
             rx.hstack(
                 rx.hstack(
                     rx.image(
-                        src="icons/orbesdmc.png",
+                        src=LogoState.logo_src,  # Usamos el mismo estado para la versión móvil
                         width="30px",
                         height="30px",
                         border_radius="50px",
                         background_color="transparent",
-                        padding="0px"
+                        padding="0px",
+                        on_click=LogoState.increment_click,  # Vinculamos el evento on_click
                     ),
                     rx.link(
-                        rx.heading("Maximiliano Gonzalez", 
-                        **styles.NAVBAR_FONTS_STYLES),
-                    href="/#",
-                    style={"text_decoration": "none"}
+                        rx.heading(
+                            "Maximiliano Gonzalez",
+                            **styles.NAVBAR_FONTS_STYLES,
+                        ),
+                        href="/#",
+                        style={"text_decoration": "none"},
                     ),
                     align_items="center",
                 ),
@@ -60,8 +89,8 @@ def navbar_dropdown() -> rx.Component:
                         rx.icon("menu", size=30)
                     ),
                     rx.menu.content(
-                        rx.menu.item("Proyecto"),
-                        rx.menu.item("Contacto"),
+                        rx.menu.item("Proyecto", on_click=rx.redirect("/financial_page")),
+                        rx.menu.item("Contacto", on_click=rx.redirect("/soporte_page")),
                     ),
                     justify="end",
                 ),

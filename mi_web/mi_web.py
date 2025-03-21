@@ -56,7 +56,7 @@ app = rx.App(stylesheets=[
         "900""&display=swap",
     ],)
 app.add_page(index, route="/", title="Pagina Principal")
-app.add_page(financial_page, route="/financial_page", title="Curso Finanza y Trading")
+app.add_page(financial_page, route="/financial_page", title="Curso Finanzas y Trading")
 app.add_page(soporte_page, route="/soporte_page", title="Soporte")
 app.add_page(links_modules)
 app.add_page(module_1, route="/module_1", title="Modulo 1")
@@ -65,7 +65,7 @@ app.add_page(module_3, route="/module_3", title="Modulo 3")
 app.add_page(module_4, route="/module_4", title="Modulo 4")
 app.add_page(module_5, route="/module_5", title="Modulo 5")
 app.add_page(module_6, route="/module_6", title="Modulo 6")
-app._compile() 
+#app._compile() 
 
 
 
