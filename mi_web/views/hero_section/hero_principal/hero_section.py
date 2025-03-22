@@ -59,7 +59,6 @@ def hero_section() -> rx.Component:
                         "Asesor financiero y agente productor, me encuentro creando un curso gratuito de trading "
                         "donde encontrarás lo más importante para invertir en la bolsa, cripto y cómo evitar estafas.",
                         **styles.text_main_page["body"],
-                        margin_bottom=Size.BIG.value,
                     ),
                     size="2",
                     justify_content="center",

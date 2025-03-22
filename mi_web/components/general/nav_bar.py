@@ -45,18 +45,23 @@ def navbar_dropdown() -> rx.Component:
                         content="No me toques.",
                     ),
                     rx.link(
-                        rx.heading(
+                        rx.tooltip(
+                            rx.heading(
                             "Maximiliano Gonzalez",
                             **styles.NAVBAR_FONTS_STYLES,
                         ),
                         href="/#",
                         style={"text_decoration": "none"},
+                    content="Inicio"
+                        ), #cierre del tooltip
                     ),
                     align_items="center",
                 ),
                 rx.hstack(
-                    nav_bar("Proyecto", "/financial_page"),
-                    nav_bar("Contacto", "/soporte_page"),
+                    rx.tooltip(nav_bar("Proyectos", "/financial_page"),
+                               content="Mis proyectos"),
+                    rx.tooltip(nav_bar("Contacto", "/soporte_page"),
+                               content="Contactáme"),
                     justify="end",
                 ),
                 align_items="center",
