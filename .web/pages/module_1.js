@@ -22,161 +22,23 @@ import NextHead from "next/head"
 const RechartsBarChart = dynamic(() => import('recharts').then((mod) => mod.BarChart), { ssr: false });
 
 
-export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
+export function Img_1dc145e38a4a77bada704003b0548d02 () {
   
+  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
+  const on_click_bd5dfb31d3782427c73d08de247645b4 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
 
   
   return (
-    <div css={({ ["position"] : "fixed", ["width"] : "100vw", ["height"] : "0" })} title={("Connection Error: "+((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : ''))}>
-
-<Fragment_c179379f847dbcf00ba21f73b0ad1b3d/>
-</div>
+    <img css={({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })} onClick={on_click_bd5dfb31d3782427c73d08de247645b4} src={reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src}/>
   )
 }
 
-export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    <Fragment>
-
-{isTrue((connectErrors.length > 0)) ? (
-  <Fragment>
-
-<LucideWifiOffIcon css={({ ["color"] : "crimson", ["zIndex"] : 9999, ["position"] : "fixed", ["bottom"] : "33px", ["right"] : "33px", ["animation"] : (pulse+" 1s infinite") })} size={32}/>
-</Fragment>
-) : (
-  <Fragment/>
-)}
-</Fragment>
-  )
-}
-
-const pulse = keyframes`
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-`
-
-
-export function Tooltip_5c913e4cde495fcd66b90837dd384683 () {
-  
-  const reflex___state____state__mi_web___components___general___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general___nav_bar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    <RadixThemesTooltip content={"No me toques."}>
-
-<img css={({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })} onClick={((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general___nav_bar____logo_state.increment_click", ({  }), ({  })))], args, ({  }))))} src={reflex___state____state__mi_web___components___general___nav_bar____logo_state.logo_src}/>
-</RadixThemesTooltip>
-  )
-}
-
-export function Dropdownmenu__item_b0a6762496b52f8de3428cdb0d180c40 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_7dc200586272c1bbcd7f51ea48788135 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <RadixThemesDropdownMenu.Item onClick={on_click_7dc200586272c1bbcd7f51ea48788135}>
-
-{"Contacto"}
-</RadixThemesDropdownMenu.Item>
-  )
-}
-
-export function Dropdownmenu__item_a4b79031cd0a0aaab6615a386df7fd1f () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_878b59ed445e335ab3312bf6ae65b075 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/financial_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <RadixThemesDropdownMenu.Item onClick={on_click_878b59ed445e335ab3312bf6ae65b075}>
-
-{"Proyecto"}
-</RadixThemesDropdownMenu.Item>
-  )
-}
-
-export function Img_51c0cd0ede7f49aed0ccd7b33d4249f5 () {
-  
-  const reflex___state____state__mi_web___components___general___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general___nav_bar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_4bd0b1eac19b0ca1ae0d63935666b691 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general___nav_bar____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <img css={({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" })} onClick={on_click_4bd0b1eac19b0ca1ae0d63935666b691} src={reflex___state____state__mi_web___components___general___nav_bar____logo_state.logo_src}/>
-  )
-}
-
-export function Toaster_6e6ebf8d7ce589d59b7d382fb7576edf () {
-  
-  const { resolvedColorMode } = useContext(ColorModeContext)
-
-  refs['__toast'] = toast
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-  const toast_props = ({ ["description"] : ("Check if server is reachable at "+getBackendURL(env.EVENT).href), ["closeButton"] : true, ["duration"] : 120000, ["id"] : "websocket-error" });
-  const [userDismissed, setUserDismissed] = useState(false);
-  (useEffect(
-() => {
-    if ((connectErrors.length >= 2)) {
-        if (!userDismissed) {
-            toast.error(
-                `Cannot connect to server: ${((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : '')}.`,
-                {...toast_props, onDismiss: () => setUserDismissed(true)},
-            )
-        }
-    } else {
-        toast.dismiss("websocket-error");
-        setUserDismissed(false);  // after reconnection reset dismissed state
-    }
-}
-, [connectErrors]))
-
-
-
-
-  
-  return (
-    <Toaster closeButton={false} expand={true} position={"bottom-right"} richColors={true} theme={resolvedColorMode}/>
-  )
-}
-
-export function Errorboundary_d30fcee74ef408714698cdbc8b0dc689 () {
+export function Errorboundary_752be662485cc6fd9507b836b561ef92 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
@@ -194,7 +56,7 @@ export function Errorboundary_d30fcee74ef408714698cdbc8b0dc689 () {
 <Div_0c4c0d922d990c245023c72baae2d5e1/>
 <Toaster_6e6ebf8d7ce589d59b7d382fb7576edf/>
 </Fragment>
-<RadixThemesBox css={({ ["textColor"] : "black", ["backgroundColor"] : "white", ["height"] : "100%", ["minHeight"] : "100vh", ["justifyContent"] : "space-between", ["display"] : "flex", ["flexDirection"] : "column" })}>
+<RadixThemesBox css={({ ["textColor"] : "black", ["width"] : "100%", ["justifyContent"] : "center", ["alignItems"] : "center", ["display"] : "flex", ["flexDirection"] : "column" })}>
 
 <RadixThemesBox css={({ ["width"] : "100%", ["height"] : "40px", ["backgroundColor"] : "rgba(255, 255, 255, 0.5)", ["padding"] : "1em", ["zIndex"] : "1000", ["position"] : "fixed", ["boxShadow"] : "0 1px 3px rgba(0, 0, 0, 0.1)", ["backdropFilter"] : "blur(10px)", ["justifyContent"] : "center", ["display"] : "flex", ["top"] : "0px", ["alignItems"] : "center" })}>
 
@@ -204,16 +66,19 @@ export function Errorboundary_d30fcee74ef408714698cdbc8b0dc689 () {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center" })} direction={"row"} gap={"3"}>
 
-<Tooltip_5c913e4cde495fcd66b90837dd384683/>
-<RadixThemesLink css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} href={"#"}>
+<Tooltip_f5e6a55bca12d52bfe1a36c42a21b26c/>
+<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
 
-<RadixThemesTooltip content={"Inicio"} css={({ ["textDecoration"] : "none", ["href"] : "/#" })}>
+<NextLink href={"/#"} passHref={true}>
+
+<RadixThemesTooltip content={"Inicio"}>
 
 <RadixThemesHeading css={({ ["color"] : "black", ["fontFamily"] : "Arial", ["--default-font-family"] : "Arial", ["&:hover"] : ({ ["color"] : "gray" }), ["transition"] : "color 0.3s ease", ["justifyContent"] : "center", ["width"] : "100%" })} size={"3"} weight={"regular"}>
 
 {"Maximiliano Gonzalez"}
 </RadixThemesHeading>
 </RadixThemesTooltip>
+</NextLink>
 </RadixThemesLink>
 </RadixThemesFlex>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} justify={"end"} gap={"3"}>
@@ -253,7 +118,7 @@ export function Errorboundary_d30fcee74ef408714698cdbc8b0dc689 () {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center" })} direction={"row"} gap={"3"}>
 
-<Img_51c0cd0ede7f49aed0ccd7b33d4249f5/>
+<Img_544b3e2872f3fdafb9f22edff3b2be1f/>
 <RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
 
 <NextLink href={"/#"} passHref={true}>
@@ -385,7 +250,7 @@ export function Errorboundary_d30fcee74ef408714698cdbc8b0dc689 () {
 
 <RadixThemesBox>
 
-<RadixThemesHeading css={({ ["fontSize"] : "50px", ["fontWeight"] : "bold", ["color"] : "white", ["textAlign"] : "center", ["marginBottom"] : "20px", ["marginTop"] : "50px", ["padding"] : "10px", ["letterSpacing"] : "1px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "clamp(28px, 5vw, 50px)", ["fontWeight"] : "bold", ["color"] : "white", ["textAlign"] : "center", ["padding"] : "10px", ["letterSpacing"] : "0.05em", ["maxWidth"] : "90%", ["margin"] : "auto", ["lineHeight"] : "1.2", ["wordWrap"] : "break-word" })}>
 
 {"M\u00f3dulo 1: Fundamentos de Finanzas Personales y Mercado Financiero"}
 </RadixThemesHeading>
@@ -393,7 +258,7 @@ export function Errorboundary_d30fcee74ef408714698cdbc8b0dc689 () {
 
 {"1. \u00bfQu\u00e9 son las finanzas?"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 {"Las finanzas corresponden a un \u00e1rea de la econom\u00eda que estudia la obtenci\u00f3n y administraci\u00f3n de dinero y de capital, es decir, los recursos financieros.\nEstudia tanto la obtenci\u00f3n de recursos (financiaci\u00f3n), como la inversi\u00f3n y el ahorro de los mismos."}
 </RadixThemesText>
@@ -421,7 +286,7 @@ export function Errorboundary_d30fcee74ef408714698cdbc8b0dc689 () {
 {"Ingresos, gastos y resultado"}
 </li>
 </ol>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left" })}>
 
 {"Cuentas patrimoniales"}
 </RadixThemesHeading>
@@ -530,17 +395,17 @@ export function Errorboundary_d30fcee74ef408714698cdbc8b0dc689 () {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<Zoom css={({ ["width"] : "100%", ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
+<Zoom css={({ ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
 
-<img css={({ ["height"] : "350px", ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/el_ahorro.jpg?refresh=1"}/>
+<img css={({ ["height"] : "auto", ["width"] : "500px", ["maxWidth"] : "100%", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/el_ahorro.jpg?refresh=1"}/>
 </Zoom>
 </RadixThemesFlex>
 </RadixThemesFlex>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 {"Este h\u00e1bito no solo te ayudar\u00e1 a construir un fondo de emergencia, sino que tambi\u00e9n te permitir\u00e1invertir en oportunidades futuras. Con el tiempo, ese 10% acumulado puede brindarte estabilidad financiera y mayor libertad para tomar decisiones sin presiones econ\u00f3micas."}
 </RadixThemesText>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 <RadixThemesStrong>
 
@@ -563,19 +428,19 @@ export function Errorboundary_d30fcee74ef408714698cdbc8b0dc689 () {
 </RechartsBarChart>
 </RechartsResponsiveContainer>
 </RadixThemesFlex>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left" })}>
 
 {"An\u00e1lisis del Gr\u00e1fico"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block" })}>
 
 {"El gr\u00e1fico muestra c\u00f3mo un ahorro constante del 10% del ingreso mensual ($10.000) se acumula a lo largo del a\u00f1o. Al final del per\u00edodo, el ahorro total alcanza los $120.000, demostrando el impacto positivo de la constancia en el ahorro."}
 </RadixThemesText>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left" })}>
 
 {"Conclusi\u00f3n"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 {"Adoptar este h\u00e1bito no solo permite construir un fondo de emergencia, sino que tambi\u00e9n abre oportunidades de inversi\u00f3n y estabilidad financiera a largo plazo"}
 </RadixThemesText>
@@ -588,27 +453,27 @@ export function Errorboundary_d30fcee74ef408714698cdbc8b0dc689 () {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<Zoom css={({ ["width"] : "100%", ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
+<Zoom css={({ ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
 
-<img css={({ ["height"] : "350px", ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/identificacion_gastos.jpg?refresh=1"}/>
+<img css={({ ["height"] : "auto", ["width"] : "500px", ["maxWidth"] : "100%", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/identificacion_gastos.jpg?refresh=1"}/>
 </Zoom>
 </RadixThemesFlex>
 </RadixThemesFlex>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 {"Para una correcta administraci\u00f3n financiera, es clave identificar y clasificar los diferentestipos de gastos. Esto permite entender mejor el flujo de dinero y tomar decisiones m\u00e1s inteligentes sobre el presupuesto."}
 </RadixThemesText>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left" })}>
 
 {"1. Gastos Fijos y Supervivencia"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 {"Son aquellos necesarios para mantener un nivel de vida estable y no suelen cambiar mes a mes. Deben ser prioridad en cualquier planificaci\u00f3n financiera."}
 </RadixThemesText>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["marginBottom"] : "1em" })} direction={"row"} gap={"3"}>
 
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left" })}>
 
 {"Ejemplos: "}
 </RadixThemesHeading>
@@ -632,17 +497,17 @@ export function Errorboundary_d30fcee74ef408714698cdbc8b0dc689 () {
 </li>
 </ol>
 </RadixThemesFlex>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left" })}>
 
 {"2. Gastos Variables"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 {"Son gastos que pueden fluctuar dependiendo del mes y del estilo de vida. Se pueden ajustar seg\u00fan las necesidades y prioridades."}
 </RadixThemesText>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["marginBottom"] : "1em" })} direction={"row"} gap={"3"}>
 
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left" })}>
 
 {"Ejemplos: "}
 </RadixThemesHeading>
@@ -666,11 +531,11 @@ export function Errorboundary_d30fcee74ef408714698cdbc8b0dc689 () {
 </li>
 </ol>
 </RadixThemesFlex>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left" })}>
 
 {"3. Gastos Extraordinarios"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 {"Son aquellos imprevistos que pueden generar un impacto en la econom\u00eda personal. Para estos, es recomendable contar con un "}
 <RadixThemesStrong>
@@ -681,7 +546,7 @@ export function Errorboundary_d30fcee74ef408714698cdbc8b0dc689 () {
 </RadixThemesText>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["marginBottom"] : "1em" })} direction={"row"} gap={"3"}>
 
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left" })}>
 
 {"Ejemplos: "}
 </RadixThemesHeading>
@@ -705,7 +570,7 @@ export function Errorboundary_d30fcee74ef408714698cdbc8b0dc689 () {
 </li>
 </ol>
 </RadixThemesFlex>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 <RadixThemesStrong>
 
@@ -718,7 +583,7 @@ export function Errorboundary_d30fcee74ef408714698cdbc8b0dc689 () {
 
 {"Conceptos Financieros Clave"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block" })}>
 
 {"Para comprender mejor la gesti\u00f3n financiera y la toma de decisiones econ\u00f3micas, es fundamental conocer estos conceptos clave:"}
 </RadixThemesText>
@@ -892,7 +757,7 @@ export function Errorboundary_d30fcee74ef408714698cdbc8b0dc689 () {
 </RadixThemesBox>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center", ["width"] : "100%", ["justifyContent"] : "center" })} direction={"column"} gap={"3"}>
 
-<Img_6507af2531a58768e5fa055fb09496d9/>
+<Img_1dc145e38a4a77bada704003b0548d02/>
 <RadixThemesText as={"p"} css={({ ["color"] : "white" })}>
 
 {"since 1999 copyright registered."}
@@ -911,19 +776,157 @@ export function Errorboundary_d30fcee74ef408714698cdbc8b0dc689 () {
   )
 }
 
-export function Img_6507af2531a58768e5fa055fb09496d9 () {
+export function Dropdownmenu__item_a4b79031cd0a0aaab6615a386df7fd1f () {
   
-  const reflex___state____state__mi_web___components___general___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general___footer____logo_state)
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_254027890be7d62cce645cc15dffcf3c = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general___footer____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+  const on_click_878b59ed445e335ab3312bf6ae65b075 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/financial_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
 
   
   return (
-    <img css={({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })} onClick={on_click_254027890be7d62cce645cc15dffcf3c} src={reflex___state____state__mi_web___components___general___footer____logo_state.logo_src}/>
+    <RadixThemesDropdownMenu.Item onClick={on_click_878b59ed445e335ab3312bf6ae65b075}>
+
+{"Proyecto"}
+</RadixThemesDropdownMenu.Item>
+  )
+}
+
+export function Img_544b3e2872f3fdafb9f22edff3b2be1f () {
+  
+  const reflex___state____state__mi_web___components___general_components___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_4601de63bb2da6dd2c92964a58538d0d = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___nav_bar____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <img css={({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" })} onClick={on_click_4601de63bb2da6dd2c92964a58538d0d} src={reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.logo_src}/>
+  )
+}
+
+export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    <div css={({ ["position"] : "fixed", ["width"] : "100vw", ["height"] : "0" })} title={("Connection Error: "+((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : ''))}>
+
+<Fragment_c179379f847dbcf00ba21f73b0ad1b3d/>
+</div>
+  )
+}
+
+export function Tooltip_f5e6a55bca12d52bfe1a36c42a21b26c () {
+  
+  const reflex___state____state__mi_web___components___general_components___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    <RadixThemesTooltip content={"No me toques."}>
+
+<img css={({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })} onClick={((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___nav_bar____logo_state.increment_click", ({  }), ({  })))], args, ({  }))))} src={reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.logo_src}/>
+</RadixThemesTooltip>
+  )
+}
+
+const pulse = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+`
+
+
+export function Toaster_6e6ebf8d7ce589d59b7d382fb7576edf () {
+  
+  const { resolvedColorMode } = useContext(ColorModeContext)
+
+  refs['__toast'] = toast
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+  const toast_props = ({ ["description"] : ("Check if server is reachable at "+getBackendURL(env.EVENT).href), ["closeButton"] : true, ["duration"] : 120000, ["id"] : "websocket-error" });
+  const [userDismissed, setUserDismissed] = useState(false);
+  (useEffect(
+() => {
+    if ((connectErrors.length >= 2)) {
+        if (!userDismissed) {
+            toast.error(
+                `Cannot connect to server: ${((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : '')}.`,
+                {...toast_props, onDismiss: () => setUserDismissed(true)},
+            )
+        }
+    } else {
+        toast.dismiss("websocket-error");
+        setUserDismissed(false);  // after reconnection reset dismissed state
+    }
+}
+, [connectErrors]))
+
+
+
+
+  
+  return (
+    <Toaster closeButton={false} expand={true} position={"bottom-right"} richColors={true} theme={resolvedColorMode}/>
+  )
+}
+
+export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    <Fragment>
+
+{isTrue((connectErrors.length > 0)) ? (
+  <Fragment>
+
+<LucideWifiOffIcon css={({ ["color"] : "crimson", ["zIndex"] : 9999, ["position"] : "fixed", ["bottom"] : "33px", ["right"] : "33px", ["animation"] : (pulse+" 1s infinite") })} size={32}/>
+</Fragment>
+) : (
+  <Fragment/>
+)}
+</Fragment>
+  )
+}
+
+export function Dropdownmenu__item_b0a6762496b52f8de3428cdb0d180c40 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_7dc200586272c1bbcd7f51ea48788135 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <RadixThemesDropdownMenu.Item onClick={on_click_7dc200586272c1bbcd7f51ea48788135}>
+
+{"Contacto"}
+</RadixThemesDropdownMenu.Item>
   )
 }
 
@@ -952,6 +955,6 @@ export default function Component() {
 
 
   return (
-    <Errorboundary_d30fcee74ef408714698cdbc8b0dc689/>
+    <Errorboundary_752be662485cc6fd9507b836b561ef92/>
   )
 }

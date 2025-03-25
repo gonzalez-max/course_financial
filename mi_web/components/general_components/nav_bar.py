@@ -50,11 +50,11 @@ def navbar_dropdown() -> rx.Component:
                             "Maximiliano Gonzalez",
                             **styles.NAVBAR_FONTS_STYLES,
                         ),
-                        href="/#",
-                        style={"text_decoration": "none"},
                     content="Inicio"
-                        ), #cierre del tooltip
-                    ),
+                    ), #cierre del tooltip
+                    href="/#",
+                    style={"text_decoration": "none"}
+                    ,),
                     align_items="center",
                 ),
                 rx.hstack(

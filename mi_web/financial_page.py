@@ -1,8 +1,7 @@
 import reflex as rx
-from mi_web.components.general.nav_bar import navbar_dropdown
-from mi_web.components.general.footer import footer
-from mi_web.views.hero_section.financial_hero_section.hero_section_financial import hero_section_financial
-from mi_web.views.links.links_modules import links_modules
+from mi_web.components.general_components.nav_bar import navbar_dropdown
+from mi_web.components.general_components.footer import footer
+from mi_web.views.hero_section.financial_hero_section.financial_hero import financial_hero
 import mi_web.styles.course_styles as c_styles
 import mi_web.styles.styles as styles
 from mi_web.styles.styles import Size as Size
@@ -14,19 +13,10 @@ def financial_page() -> rx.Component:
         navbar_dropdown(),
         rx.center(
             rx.vstack(
-                hero_section_financial(),
-                links_modules(),
+                financial_hero(),
             )
         ),
         footer(),
         **c_styles.COURSE_STYLES
         
     )
-
-# Crear la aplicación
-if __name__ == "__main__":
-    app = rx.App()
-    app.add_page(financial_page, route="/financial_page")
-    app.add_page(links_modules)
-
-    app._compile()

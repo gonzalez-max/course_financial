@@ -1,0 +1,144 @@
+import reflex as rx
+import mi_web.styles.course_styles as c_styles
+import mi_web.styles.styles as styles
+from mi_web.views.hero_section.financial_hero_section.hero_images.intro_image import intro_image
+from mi_web.styles.styles import Size as Size
+
+
+
+def financial_hero() -> rx.Component:
+    return rx.box(
+        rx.center(
+            rx.vstack(
+                rx.heading("Bienvenidos al curso de Trading",
+                       **c_styles.TEXT_STYLE["title"],
+                       margin_top=Size.MEDIUM_DEFAULT.value
+                ),
+
+                intro_image(),
+                rx.heading("Introduccion",
+                       **c_styles.TEXT_STYLE["subtitle"],
+                       margin_top=Size.MEDIUM.value
+                ),
+            
+                rx.text("Te damos la bienvenida al curso de Inversiones Trading y como evitar estafas"
+                        ", diseñado para brindarte un conocimiento sólido y práctico sobre el mundo "
+                        "financiero. A lo largo de este curso, aprenderás desde los conceptos más "
+                        "básicos hasta estrategias avanzadas de inversión, con un enfoque especial en "
+                        "cómo reconocer y evitar fraudes financieros.",
+                        **c_styles.TEXT_STYLE["body"]
+                ),
+                
+                rx.heading("¿Qué aprenderás en este curso?",
+                       **c_styles.TEXT_STYLE["subtitle"],
+                       margin_top=Size.MEDIUM.value
+                ),
+                rx.list.ordered(
+                    rx.list.item("Fundamentos de finanzas personales: administración del dinero, ahorro e inversión."
+                                , margin_bottom=Size.DEFAULT.value),
+                    rx.list.item("Principios básicos y avanzados de trading y análisis técnico."
+                                , margin_bottom=Size.DEFAULT.value),
+                    rx.list.item("Identificación de fraudes y estafas financieras más comunes."
+                                , margin_bottom=Size.DEFAULT.value),
+                    rx.list.item(" Herramientas y estrategias para proteger tu capital y tomar decisiones informadas."
+                                , margin_bottom=Size.DEFAULT.value),
+                        list_style_type="disc",
+                        **c_styles.TEXT_STYLE["body"],
+                        margin_bottom=Size.DEFAULT.value,
+                ),
+                
+                rx.heading("¿Por qué tomar este curso?",
+                       **c_styles.TEXT_STYLE["subtitle"],
+                       margin_top=Size.MEDIUM.value
+                ),
+                rx.text("En un mundo donde las oportunidades financieras crecen, también lo hacen los "
+                        "riesgos. Este curso te proporcionará conocimientos prácticos y casos reales "
+                        "para que puedas invertir con confianza y seguridad.",
+                        **c_styles.TEXT_STYLE["body"],
+                        margin_top=Size.MEDIUM.value
+                ),
+
+                rx.heading("Seis Puntos a tener en cuenta",
+                        **c_styles.TEXT_STYLE["subtitle"],
+                        margin_top=Size.MEDIUM.value
+                ),
+                
+                rx.box(        
+                       rx.vstack(
+                            rx.heading("1. Organiza tu tiempo",
+                                    **c_styles.TEXT_STYLE["subseccion"],
+                                    margin_top=Size.MEDIUM.value
+                            ),
+
+                            rx.text("El curso está diseñado para darte conocimientos desde lo básico "
+                                    "hasta lo avanzado, por lo que es importante que asignes tiempo cada "
+                                    "semana para aprender, practicar y repasar los contenidos.",
+                                    **c_styles.TEXT_STYLE["body"]
+                                    ),
+
+                            rx.heading("2. Ten una libreta de apuntes",
+                                    **c_styles.TEXT_STYLE["subseccion"],
+                                    margin_top=Size.MEDIUM.value),
+                            
+                            rx.text("Aunque sea un curso digital, es fundamental tomar notas de los "
+                                    "conceptos clave. Esto te ayudará a recordar información importante "
+                                    "y a estructurar mejor tu aprendizaje.",
+                                    **c_styles.TEXT_STYLE["body"]
+                                    ),
+
+                            rx.heading("3. Sé crítico con la información",
+                                    **c_styles.TEXT_STYLE["subseccion"],
+                                    margin_top=Size.MEDIUM.value),
+                            
+                            rx.text("En internet hay mucha información falsa sobre trading y finanzas. "
+                                    "Asegúrate de analizar la fuente de cada dato y aplicar un pensamiento "
+                                    "crítico antes de tomar decisiones financieras.",
+                                    **c_styles.TEXT_STYLE["body"]
+                                    ),
+                            
+                            rx.heading("4. Mantén una mentalidad realista y disciplinada",
+                                       **c_styles.TEXT_STYLE["subseccion"],
+                                        margin_top=Size.MEDIUM.value),
+                            
+                            rx.text("El trading y las finanzas no son un esquema para hacerse rico rápidamente."
+                                    " Aquí aprenderás cómo tomar decisiones informadas y minimizar riesgos, "
+                                    "pero necesitarás paciencia, disciplina y práctica constante.",
+                                    **c_styles.TEXT_STYLE["body"]
+                                    ),
+                            
+                            rx.heading("5. Preparáte para aprender de tus errores",
+                                       **c_styles.TEXT_STYLE["subseccion"],
+                                        margin_top=Size.MEDIUM.value),
+                            
+                            rx.text("En el mundo financiero, cometer errores es parte del proceso. No te frustres "
+                                    "si algo no sale bien al principio, lo importante es aprender y "
+                                    "mejorar con la experiencia.",
+                                    **c_styles.TEXT_STYLE["body"]
+                                    ),
+                            
+                            rx.heading("6. Disfruta el proceso y participa activamente",
+                                       **c_styles.TEXT_STYLE["subseccion"],
+                                        margin_top=Size.MEDIUM.value),
+                            
+                            rx.text("Haz preguntas, comparte ideas y aprovecha al máximo este curso. La educación"
+                                    " financiera es una de las herramientas más valiosas para mejorar tu calidad de vida.",
+                                    **c_styles.TEXT_STYLE["body"]
+                                   ),
+                    ),
+                ),
+                rx.heading("Muchos Exitos con tu aprendisaje.... comenzemos 🚀📈",
+                           **c_styles.TEXT_STYLE["title"],
+                            margin_top=Size.MEDIUM.value),
+                rx.link(
+                        rx.button("Comenzar con el Curso",
+                                on_click=lambda: rx.redirect("/choice_modules"), 
+                                is_external=False,
+                                **c_styles.BUTTON_STYLE
+                        ),
+                ),
+                width="100%",
+                border_radius="10px",
+                align_items="center",
+            ),
+        ),
+    ),

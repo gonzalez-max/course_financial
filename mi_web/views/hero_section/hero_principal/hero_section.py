@@ -1,8 +1,8 @@
 import reflex as rx
 import mi_web.styles.styles as styles
 from mi_web.styles.styles import Size as Size
-from mi_web.components.general.link_button import link_button
-from mi_web.components.general.download_button import download_button
+from mi_web.components.general_components.link_button import link_button
+from mi_web.components.general_components.download_button import download_button
 
 def hero_section() -> rx.Component:
     return rx.box(
@@ -10,7 +10,8 @@ def hero_section() -> rx.Component:
             rx.heading(
                 "Bienvenido,",
                 **styles.text_main_page["title"],
-                margin_top=Size.SMALL.value,
+                margin_top=Size.MEDIUM.value,
+                color="white",
                 font_size="25px",
                 font_family="Roboto",
                 font_weight="300",
@@ -20,10 +21,12 @@ def hero_section() -> rx.Component:
                 **styles.text_main_page["title"],
                 font_size="50px",
                 class_name="roboto-bold",
+                color="#ffff99"
             ),
             rx.heading(
                 "Desarrollador Web Junior",
                 **styles.text_main_page["title"],
+                color="white",
                 font_size="30px",
                 font_family="Roboto",
                 font_weight="400",
@@ -37,7 +40,7 @@ def hero_section() -> rx.Component:
                             fallback="MG",
                             name="Maxi Gonzalez",
                             **styles.AVATAR_STYLE,
-                            margin_top=Size.MICRO.value,
+                            #margin_top=Size.MICRO.value,
                         ),
                         align_items="center",
                     ),
@@ -70,7 +73,6 @@ def hero_section() -> rx.Component:
             ), 
             align_items="center",
             justify="center",
-            height="100vh",
             margin_top="40px",
         ),
         **styles.main_page_styles,

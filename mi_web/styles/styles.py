@@ -30,17 +30,15 @@ class Size(Enum):
 #____________________________CARD_STYLES_____________________________________________#
 CARD_STYLES={
         "spacing":"2",
-        "max_width":"600px",
+        "max_width": ["90%", "80%", "600px"],
         "as_child":True,
         "flex_wrap":"wrap",
-        "height":"100%",
-        #"background_color": "rgba(255, 255, 255, 0.3)", COLOR BLANCO 
+        "transition": "transform 0.5s ease-in-out",
         "background_color": "rgba(155, 155, 155, 0.7)",
         "padding":"20px",
         "height": "auto",
         "width": ["100%", "48%", "31%"],
         "_hover":{
-                "transition": "transform 0.5s ease-in-out",
                 "transform": "scale(1.08)",
                 "box-shadow": "0px 4px 15px rgba(0, 0, 0, 0.3)",
         }
@@ -126,10 +124,9 @@ BASE_STYLE = {
  #global styles
 global_styles = {
     "text_color" : "black",
-    "background_color" : "white",
-    "height":"100%",
-    "min_height": "100vh",
-    "justify_content": "space-between",
+    "width":"100%",
+    "justify_content": "center",
+    "align_items": "center",
     "display": "flex",
     "flex_direction": "column",
 }
@@ -137,16 +134,13 @@ global_styles = {
 
 main_page_styles={
     "width":"100%",
-    "height":"100%",
     "align_items": "center",
     "justify_content":"center",
-    "margin_bottom":Size.DEFAULT.value,
-    "background": "linear-gradient(to bottom, #0A0F49, #2A3C80, #5A6FA5, #8CA5CC, #BFD3EE)",
+    "margin_bottom":Size.DEFAULT.value
 }
 text_main_page={
     "title":{
     "font_style":"normal",
-    "color": "white",
     "text_align": "center",
     "padding":"5px",
     "letter_spacing" : "1px",
@@ -162,9 +156,10 @@ text_main_page={
     "padding" : "1px",
     "letter_spacing" : "0.01px",
     "font_family":"Roboto",
-    "font_size":"17px",
+    #"font_size":"17px",
     "max_width":"400px",
     "font_weight":"300",
+    "font_size": ["14px", "16px", "18px"]
     #"_hover":{
         #"transition": "transform 0.5s ease-in-out",
         #"transform": "scale(1.10)",

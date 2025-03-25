@@ -19,128 +19,23 @@ import NextHead from "next/head"
 
 
 
-export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
+export function Img_1dc145e38a4a77bada704003b0548d02 () {
   
+  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
+  const on_click_bd5dfb31d3782427c73d08de247645b4 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
 
   
   return (
-    <div css={({ ["position"] : "fixed", ["width"] : "100vw", ["height"] : "0" })} title={("Connection Error: "+((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : ''))}>
-
-<Fragment_c179379f847dbcf00ba21f73b0ad1b3d/>
-</div>
+    <img css={({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })} onClick={on_click_bd5dfb31d3782427c73d08de247645b4} src={reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src}/>
   )
 }
 
-export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    <Fragment>
-
-{isTrue((connectErrors.length > 0)) ? (
-  <Fragment>
-
-<LucideWifiOffIcon css={({ ["color"] : "crimson", ["zIndex"] : 9999, ["position"] : "fixed", ["bottom"] : "33px", ["right"] : "33px", ["animation"] : (pulse+" 1s infinite") })} size={32}/>
-</Fragment>
-) : (
-  <Fragment/>
-)}
-</Fragment>
-  )
-}
-
-const pulse = keyframes`
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-`
-
-
-export function Tooltip_5c913e4cde495fcd66b90837dd384683 () {
-  
-  const reflex___state____state__mi_web___components___general___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general___nav_bar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    <RadixThemesTooltip content={"No me toques."}>
-
-<img css={({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })} onClick={((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general___nav_bar____logo_state.increment_click", ({  }), ({  })))], args, ({  }))))} src={reflex___state____state__mi_web___components___general___nav_bar____logo_state.logo_src}/>
-</RadixThemesTooltip>
-  )
-}
-
-export function Dropdownmenu__item_b0a6762496b52f8de3428cdb0d180c40 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_7dc200586272c1bbcd7f51ea48788135 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <RadixThemesDropdownMenu.Item onClick={on_click_7dc200586272c1bbcd7f51ea48788135}>
-
-{"Contacto"}
-</RadixThemesDropdownMenu.Item>
-  )
-}
-
-export function Dropdownmenu__item_a4b79031cd0a0aaab6615a386df7fd1f () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_878b59ed445e335ab3312bf6ae65b075 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/financial_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <RadixThemesDropdownMenu.Item onClick={on_click_878b59ed445e335ab3312bf6ae65b075}>
-
-{"Proyecto"}
-</RadixThemesDropdownMenu.Item>
-  )
-}
-
-export function Img_51c0cd0ede7f49aed0ccd7b33d4249f5 () {
-  
-  const reflex___state____state__mi_web___components___general___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general___nav_bar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_4bd0b1eac19b0ca1ae0d63935666b691 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general___nav_bar____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <img css={({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" })} onClick={on_click_4bd0b1eac19b0ca1ae0d63935666b691} src={reflex___state____state__mi_web___components___general___nav_bar____logo_state.logo_src}/>
-  )
-}
-
-export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
+export function Errorboundary_751ef1fa447e66e869312094cd70892b () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
@@ -168,16 +63,19 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center" })} direction={"row"} gap={"3"}>
 
-<Tooltip_5c913e4cde495fcd66b90837dd384683/>
-<RadixThemesLink css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} href={"#"}>
+<Tooltip_f5e6a55bca12d52bfe1a36c42a21b26c/>
+<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
 
-<RadixThemesTooltip content={"Inicio"} css={({ ["textDecoration"] : "none", ["href"] : "/#" })}>
+<NextLink href={"/#"} passHref={true}>
+
+<RadixThemesTooltip content={"Inicio"}>
 
 <RadixThemesHeading css={({ ["color"] : "black", ["fontFamily"] : "Arial", ["--default-font-family"] : "Arial", ["&:hover"] : ({ ["color"] : "gray" }), ["transition"] : "color 0.3s ease", ["justifyContent"] : "center", ["width"] : "100%" })} size={"3"} weight={"regular"}>
 
 {"Maximiliano Gonzalez"}
 </RadixThemesHeading>
 </RadixThemesTooltip>
+</NextLink>
 </RadixThemesLink>
 </RadixThemesFlex>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} justify={"end"} gap={"3"}>
@@ -217,7 +115,7 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center" })} direction={"row"} gap={"3"}>
 
-<Img_51c0cd0ede7f49aed0ccd7b33d4249f5/>
+<Img_544b3e2872f3fdafb9f22edff3b2be1f/>
 <RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
 
 <NextLink href={"/#"} passHref={true}>
@@ -349,7 +247,7 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 
 <RadixThemesBox>
 
-<RadixThemesHeading css={({ ["fontSize"] : "50px", ["fontWeight"] : "bold", ["color"] : "white", ["textAlign"] : "center", ["marginBottom"] : "20px", ["marginTop"] : "50px", ["padding"] : "10px", ["letterSpacing"] : "1px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "clamp(28px, 5vw, 50px)", ["fontWeight"] : "bold", ["color"] : "white", ["textAlign"] : "center", ["padding"] : "10px", ["letterSpacing"] : "0.05em", ["maxWidth"] : "90%", ["margin"] : "auto", ["lineHeight"] : "1.2", ["wordWrap"] : "break-word" })}>
 
 {"M\u00f3dulo 3: Introducci\u00f3n al Trading"}
 </RadixThemesHeading>
@@ -361,13 +259,13 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<Zoom css={({ ["width"] : "100%", ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
+<Zoom css={({ ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
 
-<img css={({ ["height"] : "350px", ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/que_es_trader.jpg?refresh=1"}/>
+<img css={({ ["height"] : "auto", ["width"] : "500px", ["maxWidth"] : "100%", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/que_es_trader.jpg?refresh=1"}/>
 </Zoom>
 </RadixThemesFlex>
 </RadixThemesFlex>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 {"El "}
 <RadixThemesStrong>
@@ -376,7 +274,7 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 </RadixThemesStrong>
 {" es la compra y venta de activos financieros (acciones, divisas, criptomonedas, materias primas, etc.) con el objetivo de obtener ganancias a partir de los movimientos del mercado. A diferencia de la inversi\u00f3n tradicional, el trading se enfoca en el corto y mediano plazo."}
 </RadixThemesText>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left" })}>
 
 {"Caracter\u00edsticas del trading:"}
 </RadixThemesHeading>
@@ -399,7 +297,7 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 {"Tiene distintos niveles de riesgo y estrategias seg\u00fan el plazo."}
 </li>
 </ol>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left" })}>
 
 {"Tipos de trading m\u00e1s comunes:"}
 </RadixThemesHeading>
@@ -442,9 +340,9 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<Zoom css={({ ["width"] : "100%", ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
+<Zoom css={({ ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
 
-<img css={({ ["height"] : "350px", ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/tipos_trading.jpg?refresh=1"}/>
+<img css={({ ["height"] : "auto", ["width"] : "500px", ["maxWidth"] : "100%", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/tipos_trading.jpg?refresh=1"}/>
 </Zoom>
 </RadixThemesFlex>
 </RadixThemesFlex>
@@ -453,7 +351,7 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 
 {"2. Tipos de an\u00e1lisis en Trading"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 {"En el mundo del trading existen dos enfoques principales para analizar los mercados financieros: el "}
 <RadixThemesStrong>
@@ -471,17 +369,17 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<Zoom css={({ ["width"] : "100%", ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
+<Zoom css={({ ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
 
-<img css={({ ["height"] : "350px", ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/fundamental_vs_tecnico.jpg?refresh=1"}/>
+<img css={({ ["height"] : "auto", ["width"] : "500px", ["maxWidth"] : "100%", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/fundamental_vs_tecnico.jpg?refresh=1"}/>
 </Zoom>
 </RadixThemesFlex>
 </RadixThemesFlex>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left" })}>
 
 {"An\u00e1lisis Fundamental"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block" })}>
 
 {"El"}
 <RadixThemesStrong>
@@ -490,7 +388,7 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 </RadixThemesStrong>
 {" estudia el valor real de un activo basado en factores econ\u00f3micos, financieros y de mercado. Se usa principalmente en inversiones a largo plazo."}
 </RadixThemesText>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left" })}>
 
 {"Aspectos clave:"}
 </RadixThemesHeading>
@@ -509,7 +407,7 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 {" Noticias y eventos globales que afectan los mercados."}
 </li>
 </ol>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 <RadixThemesStrong>
 
@@ -517,7 +415,7 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 </RadixThemesStrong>
 {" Un inversor en acciones analiza los reportes de ganancias de una empresa para determinar si es una buena inversi\u00f3n."}
 </RadixThemesText>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 <RadixThemesStrong>
 
@@ -525,11 +423,11 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 </RadixThemesStrong>
 {" Requiere un conocimiento profundo de econom\u00eda y los efectos de las noticias pueden tardar en reflejarse en el precio."}
 </RadixThemesText>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left" })}>
 
 {"An\u00e1lisis T\u00e9cnico (Enfoque de este curso)"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block" })}>
 
 {"El "}
 <RadixThemesStrong>
@@ -538,7 +436,7 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 </RadixThemesStrong>
 {" Se basa en el estudio de los gr\u00e1ficos de precios y patrones de comportamiento del mercado. Su premisa es que \u201cel precio lo descuenta todo\u201d y que la historia tiende a repetirse."}
 </RadixThemesText>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left" })}>
 
 {"Aspectos clave:"}
 </RadixThemesHeading>
@@ -585,7 +483,7 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 {" Herramientas como medias m\u00f3viles, RSI y MACD que ayudan en la toma de decisiones."}
 </li>
 </ol>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 <RadixThemesStrong>
 
@@ -593,7 +491,7 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 </RadixThemesStrong>
 {" Un trader observa un patr\u00f3n de velas Doji en una resistencia fuerte y decide vender porque indica posible reversi\u00f3n de tendencia."}
 </RadixThemesText>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 <RadixThemesStrong>
 
@@ -606,7 +504,7 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 
 {"3. Introducci\u00f3n a las Velas Japonesas"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 <RadixThemesStrong>
 
@@ -618,21 +516,21 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<Zoom css={({ ["width"] : "100%", ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
+<Zoom css={({ ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
 
-<img css={({ ["height"] : "350px", ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/vela_verde_contra_roja.jpg?refresh=1"}/>
+<img css={({ ["height"] : "auto", ["width"] : "500px", ["maxWidth"] : "100%", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/vela_verde_contra_roja.jpg?refresh=1"}/>
 </Zoom>
 </RadixThemesFlex>
 </RadixThemesFlex>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left" })}>
 
 {"Estructura de una vela japonesa"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 {"Cada vela est\u00e1 compuesta por:"}
 </RadixThemesText>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 <RadixThemesStrong>
 
@@ -640,7 +538,7 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 </RadixThemesStrong>
 {" Diferencia entre el precio de apertura y cierre."}
 </RadixThemesText>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 <RadixThemesStrong>
 
@@ -648,7 +546,7 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 </RadixThemesStrong>
 {" Representa los precios m\u00e1ximo y m\u00ednimo alcanzados."}
 </RadixThemesText>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 <RadixThemesStrong>
 
@@ -678,13 +576,13 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<Zoom css={({ ["width"] : "100%", ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
+<Zoom css={({ ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
 
-<img css={({ ["height"] : "350px", ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/velas-japonesas.png?refresh=1"}/>
+<img css={({ ["height"] : "auto", ["width"] : "500px", ["maxWidth"] : "100%", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/velas-japonesas.png?refresh=1"}/>
 </Zoom>
 </RadixThemesFlex>
 </RadixThemesFlex>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left" })}>
 
 {"Tipos de velas m\u00e1s comunes"}
 </RadixThemesHeading>
@@ -743,17 +641,17 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<Zoom css={({ ["width"] : "100%", ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
+<Zoom css={({ ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
 
-<img css={({ ["height"] : "350px", ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/fuerza_velas.png?refresh=1"}/>
+<img css={({ ["height"] : "auto", ["width"] : "500px", ["maxWidth"] : "100%", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/fuerza_velas.png?refresh=1"}/>
 </Zoom>
 </RadixThemesFlex>
 </RadixThemesFlex>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left" })}>
 
 {"\u26a0\ufe0f\u00a1\u00a1importante!!\u26a0\ufe0f"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block" })}>
 
 {"Las Velas Japonesas ayudan a entender la accion del precio en cualquier mercado, si bien, son escenciales para identificar patrones y tendencias."}
 <RadixThemesStrong>
@@ -761,7 +659,7 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 {" deben combinarse con otros indicadores para confirmar se\u00f1ales."}
 </RadixThemesStrong>
 </RadixThemesText>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 {"En las pr\u00f3ximas secciones exploraremos c\u00f3mo usarlas de forma pr\u00e1ctica y segura."}
 </RadixThemesText>
@@ -770,7 +668,7 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 
 {"4. Gesti\u00f3n del Riesgo "}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 <RadixThemesStrong>
 
@@ -787,13 +685,13 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<Zoom css={({ ["width"] : "100%", ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
+<Zoom css={({ ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
 
-<img css={({ ["height"] : "350px", ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/gestion_riesgo.jpg?refresh=1"}/>
+<img css={({ ["height"] : "auto", ["width"] : "500px", ["maxWidth"] : "100%", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/gestion_riesgo.jpg?refresh=1"}/>
 </Zoom>
 </RadixThemesFlex>
 </RadixThemesFlex>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 {"Es fundamental centrarse en el "}
 <RadixThemesStrong>
@@ -807,11 +705,11 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 </RadixThemesStrong>
 {". El tama\u00f1o de las \u00f3rdenes debe determinarse cuidadosamente para preservar el capital y evitar que el dinero pase de manos inexpertas a operadores m\u00e1s experimentados. Aprender a gestionar el capital y controlar el riesgo es clave para el \u00e9xito en el trading."}
 </RadixThemesText>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left" })}>
 
 {"Medidas Simples para el Manejo del Riesgo"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block" })}>
 
 {"Para gestionar adecuadamente el riesgo en el mercado, sigue estas medidas:"}
 </RadixThemesText>
@@ -834,11 +732,11 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 {"4. Si las p\u00e9rdidas potenciales de tus operaciones abiertas representan un 10% o m\u00e1s de tu capital, EVITA abrir nuevas operaciones."}
 </li>
 </ol>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left" })}>
 
 {"Errores Comunes en el Manejo del Riesgo"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 <RadixThemesStrong>
 
@@ -851,11 +749,11 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 </RadixThemesStrong>
 {"y arriesga solo una peque\u00f1a parte de tu capital en cada operaci\u00f3n."}
 </RadixThemesText>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left" })}>
 
 {"Herramientas de gesti\u00f3n de riesgo"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 <RadixThemesStrong>
 
@@ -867,7 +765,7 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 {" Mas adelante durante el curso lo veremos mas a detalle."}
 </RadixThemesStrong>
 </RadixThemesText>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 <RadixThemesStrong>
 
@@ -875,7 +773,7 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 </RadixThemesStrong>
 {" Imagin\u00e1 que compras algo porque cre\u00e9s que subir\u00e1 de precio. Decid\u00eds arriesgar $50 si las cosas van mal, pero solo entr\u00e1s si pod\u00e9s ganar al menos $100. Eso es una relaci\u00f3n riesgo/beneficio de 1 a 2. La idea es buscar operaciones donde valga la pena el riesgo."}
 </RadixThemesText>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 <RadixThemesStrong>
 
@@ -888,7 +786,7 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 
 {"5. Psicolog\u00eda Del Trading"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 {"El \u00e9xito en el trading no solo depende del an\u00e1lisis t\u00e9cnico, sino tambi\u00e9n de "}
 <RadixThemesStrong>
@@ -901,17 +799,17 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<Zoom css={({ ["width"] : "100%", ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
+<Zoom css={({ ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
 
-<img css={({ ["height"] : "350px", ["width"] : "100%", ["IMAGEWidth"] : "600px", ["IMAGEHeight"] : "400px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/psicologia_trading.jpg?refresh=1"}/>
+<img css={({ ["height"] : "auto", ["width"] : "500px", ["maxWidth"] : "100%", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/psicologia_trading.jpg?refresh=1"}/>
 </Zoom>
 </RadixThemesFlex>
 </RadixThemesHeading>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left" })}>
 
 {"El Proceso Neurol\u00f3gico"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 {"Es importante desarrollar creencias realistas sobre el mercado:"}
 </RadixThemesText>
@@ -936,11 +834,11 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 {"aumenta las probabilidades de \u00e9xito."}
 </li>
 </ol>
-<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left", ["marginBottom"] : "8px" })}>
+<RadixThemesHeading css={({ ["fontSize"] : "18px", ["fontWeight"] : "semibold", ["color"] : "#b37400", ["textAlign"] : "left" })}>
 
 {"Mentalidad del Inversor"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["fontSize"] : "16px", ["fontWeight"] : "regular", ["color"] : "black", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["marginBottom"] : "1em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["alignText"] : "center", ["word-wrap"] : "break-word", ["lineHeight"] : "1.5", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "normal", ["fontSize"] : "clamp(14px, 1.2vw, 18px)", ["padding"] : "10px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 {"Adaptar tu mentalidad es clave para operar con \u00e9xito. La disciplina y la paciencia son esenciales para que, a largo plazo, las operaciones ganadoras superen a las perdedoras. Cambiar creencias err\u00f3neas y desarrollar confianza en tu sistema de trading marcar\u00e1 la diferencia entre el \u00e9xito y el fracaso."}
 </RadixThemesText>
@@ -1125,7 +1023,7 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 </RadixThemesBox>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center", ["width"] : "100%", ["justifyContent"] : "center" })} direction={"column"} gap={"3"}>
 
-<Img_6507af2531a58768e5fa055fb09496d9/>
+<Img_1dc145e38a4a77bada704003b0548d02/>
 <RadixThemesText as={"p"} css={({ ["color"] : "white" })}>
 
 {"since 1999 copyright registered."}
@@ -1143,6 +1041,103 @@ export function Errorboundary_909ba409921e0fe6c43d34445e7a3464 () {
 </ErrorBoundary>
   )
 }
+
+export function Dropdownmenu__item_a4b79031cd0a0aaab6615a386df7fd1f () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_878b59ed445e335ab3312bf6ae65b075 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/financial_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <RadixThemesDropdownMenu.Item onClick={on_click_878b59ed445e335ab3312bf6ae65b075}>
+
+{"Proyecto"}
+</RadixThemesDropdownMenu.Item>
+  )
+}
+
+export function Img_544b3e2872f3fdafb9f22edff3b2be1f () {
+  
+  const reflex___state____state__mi_web___components___general_components___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_4601de63bb2da6dd2c92964a58538d0d = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___nav_bar____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <img css={({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" })} onClick={on_click_4601de63bb2da6dd2c92964a58538d0d} src={reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.logo_src}/>
+  )
+}
+
+export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    <div css={({ ["position"] : "fixed", ["width"] : "100vw", ["height"] : "0" })} title={("Connection Error: "+((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : ''))}>
+
+<Fragment_c179379f847dbcf00ba21f73b0ad1b3d/>
+</div>
+  )
+}
+
+export function Button_a341248439020d6913fc47798be684e9 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_faf29b6728fc7b0a1decc8f1fa76ef77 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_2", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <RadixThemesButton css={({ ["backgroundColor"] : "#2d5986", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "8px", ["&:hover"] : ({ ["backgroundColor"] : "#4080bf" }), ["transition"] : "all 0.3s ease-in-out", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["borderColor"] : "#6366F1" })} onClick={on_click_faf29b6728fc7b0a1decc8f1fa76ef77}>
+
+{"\u2190 Atr\u00e1s"}
+</RadixThemesButton>
+  )
+}
+
+export function Tooltip_f5e6a55bca12d52bfe1a36c42a21b26c () {
+  
+  const reflex___state____state__mi_web___components___general_components___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    <RadixThemesTooltip content={"No me toques."}>
+
+<img css={({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })} onClick={((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___nav_bar____logo_state.increment_click", ({  }), ({  })))], args, ({  }))))} src={reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.logo_src}/>
+</RadixThemesTooltip>
+  )
+}
+
+const pulse = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+`
+
 
 export function Toaster_6e6ebf8d7ce589d59b7d382fb7576edf () {
   
@@ -1177,37 +1172,27 @@ export function Toaster_6e6ebf8d7ce589d59b7d382fb7576edf () {
   )
 }
 
-export function Button_a341248439020d6913fc47798be684e9 () {
+export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_faf29b6728fc7b0a1decc8f1fa76ef77 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_2", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
 
   
   return (
-    <RadixThemesButton css={({ ["backgroundColor"] : "#2d5986", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "8px", ["&:hover"] : ({ ["backgroundColor"] : "#4080bf" }), ["transition"] : "all 0.3s ease-in-out", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["borderColor"] : "#6366F1" })} onClick={on_click_faf29b6728fc7b0a1decc8f1fa76ef77}>
+    <Fragment>
 
-{"\u2190 Atr\u00e1s"}
-</RadixThemesButton>
-  )
-}
+{isTrue((connectErrors.length > 0)) ? (
+  <Fragment>
 
-export function Img_6507af2531a58768e5fa055fb09496d9 () {
-  
-  const reflex___state____state__mi_web___components___general___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general___footer____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_254027890be7d62cce645cc15dffcf3c = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general___footer____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <img css={({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })} onClick={on_click_254027890be7d62cce645cc15dffcf3c} src={reflex___state____state__mi_web___components___general___footer____logo_state.logo_src}/>
+<LucideWifiOffIcon css={({ ["color"] : "crimson", ["zIndex"] : 9999, ["position"] : "fixed", ["bottom"] : "33px", ["right"] : "33px", ["animation"] : (pulse+" 1s infinite") })} size={32}/>
+</Fragment>
+) : (
+  <Fragment/>
+)}
+</Fragment>
   )
 }
 
@@ -1229,6 +1214,24 @@ export function Button_f46d7b6d1b8cc2ccedd67f51887d3b65 () {
   )
 }
 
+export function Dropdownmenu__item_b0a6762496b52f8de3428cdb0d180c40 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_7dc200586272c1bbcd7f51ea48788135 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <RadixThemesDropdownMenu.Item onClick={on_click_7dc200586272c1bbcd7f51ea48788135}>
+
+{"Contacto"}
+</RadixThemesDropdownMenu.Item>
+  )
+}
+
 export default function Component() {
     
 
@@ -1236,6 +1239,6 @@ export default function Component() {
 
 
   return (
-    <Errorboundary_909ba409921e0fe6c43d34445e7a3464/>
+    <Errorboundary_751ef1fa447e66e869312094cd70892b/>
   )
 }

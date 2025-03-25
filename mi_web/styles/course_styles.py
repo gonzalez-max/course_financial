@@ -2,10 +2,9 @@
 
 COURSE_STYLES = {
     "text_color" : "black",
-    "background_color" : "#80bfff",
-    "height":"100%",
-    "min_height": "100vh",
-    "justify_content": "space-between",
+    "width":"100%",
+    "background" : "linear-gradient(180deg, #0F0F0F, #3A3A3A)",
+    "justify_content": "center",
     "display": "flex",
     "flex_direction": "column",
 }
@@ -115,8 +114,10 @@ TABLES_STYLES={
 
 #________________IMAGEN STYLES_________________________________________#
 IMAGE_STYLES={
-    "IMAGE_width":"600px",
-    "IMAGE_height":"400px",
+    "width":"500px",
+    "max_width":"100%",
+    #"height":"auto",  # Se ajusta automáticamente
+    "object_fit":"cover",  # Evita deformaciones
     "background_color": "#99003d",
     "color": "#333333",
     "border": "1px solid gray", #color de bordes normales
@@ -136,14 +137,16 @@ IMAGE_STYLES={
 #__________________Diccionario de estilos para textos en Reflex_________________#
 TEXT_STYLE = {
     "title": {  # Para títulos principales
-        "font_size": "50px",
+        "font_size": "clamp(28px, 5vw, 50px)",  # Se adapta dinámicamente al tamaño de pantalla
         "font_weight": "bold",
         "color": "white",
         "text_align": "center",
-        "margin_bottom": "20px",
-        "margin_top": "50px",
-        "padding" : "10px",
-        "letter_spacing" : "1px",
+        "padding": "10px",
+        "letter_spacing": "0.05em",  # Ajuste fino para mejor legibilidad
+        "max_width": "90%",  # Evita que el título sea demasiado ancho en pantallas pequeñas
+        "margin": "auto",  # Centra el título dentro de su contenedor
+        "line_height": "1.2",  # Mejora la legibilidad en varias líneas
+        "word_wrap": "break-word",
     },
     "subtitle": {  # Para subtítulos o encabezados secundarios
         "font_size": "25px",
@@ -159,18 +162,22 @@ TEXT_STYLE = {
         "font_weight": "semibold",
         "color": "#b37400",
         "text_align": "left",
-        "margin_bottom": "8px",
     },
     
     "body": {  # Para párrafos o contenido de texto
-        "font_size": "16px",
-        "font_weight": "regular",
-        "color": "black",
+        
+        "color": "white",
         "align_text":"center",
-        "word-wrap": "break-word",#
+        "word-wrap": "break-word",
         "line_height": "1.5",
-        "letter_spacing" : "0.1",
+        "letter_spacing" : "0.1em",
         "font_family": "Helvetica",
+        "max_width":"600px",
+        "font_weight":"normal",
+        "font_size": "clamp(14px, 1.2vw, 18px)",
+        "padding": "10px",
+        "display": "block",
+        
     },
     "highlight": {  # Texto resaltado
         "font_size": "16px",
