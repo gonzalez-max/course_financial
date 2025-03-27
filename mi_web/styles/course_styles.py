@@ -3,14 +3,16 @@
 COURSE_STYLES = {
     "text_color" : "black",
     "width":"100%",
-    "background" : "linear-gradient(180deg, #0F0F0F, #3A3A3A)",
-    "justify_content": "center",
+    "background" : "linear-gradient(180deg, rgba(0,67,113,1) 0%, rgba(222,117,179,1) 100%)",
     "display": "flex",
     "flex_direction": "column",
+    "min_height":"100vh",
+    "justify_content": "space-between",
+    
 }
 
 #estilos de botones
-BUTTON_STYLE = {
+BUTTON_STYLE = { 
     "size": "3",
     "variant": "solid",
     "radius": "medium",
@@ -18,6 +20,7 @@ BUTTON_STYLE = {
     "height": "100px",  # Ajusta la altura del botón
     "padding" : "10px", # Ajusta el padding interno
     "spacing" : "5px",
+    "border_radius":"20px",
     "margin_bottom": "10px", #Espacio entre botones
     "font_size": "semibold", #fuente semi negra 
     "text_transform": "capitalize", #tipo de texto 
@@ -38,7 +41,35 @@ BUTTON_STYLE = {
         "background_color": "#4338CA",  # Azul más oscuro en hover
         "border_color": "#6366F1",  # Bordes visibles en hover
         "box_shadow": "0px 4px 10px rgba(79, 70, 229, 0.3)",  # Sombra elegante
+        "transform": "scale(1.10)"
     },
+}
+#________________________ NAV BAR STYLES_________________________________________________________#
+COURSE_NAVBAR_STYLES={
+    "width":"100%",
+    "height":"40px",
+    "background_color":"rgba(255, 255, 255, 0.5)", #color trasparente
+    "padding": "1em",
+    "z_index": "1000",
+    "position": "fixed",
+    "box_shadow": "0 1px 3px rgba(0, 0, 0, 0.1)", 
+    "backdrop_filter": "blur(10px)",#Filtro desenfoque
+    "justify_content": "center",
+    "display": "flex",
+    "top":"0px",
+    "align_items":"center"
+}
+
+COURSE_NAVBAR_FONTS={
+    "size":"3",
+    "color":"black", 
+    "weight":"regular",
+    "font_family": "Arial",
+    "_hover":
+        {"color": "gray"},
+    "transition": "color 0.3s ease",
+    "justify_content": "center",
+    "width":"100%"
 }
 
 
@@ -114,21 +145,22 @@ TABLES_STYLES={
 
 #________________IMAGEN STYLES_________________________________________#
 IMAGE_STYLES={
-    "width":"500px",
+    "width":"700px",
     "max_width":"100%",
+    "max_height":"400px",
     #"height":"auto",  # Se ajusta automáticamente
     "object_fit":"cover",  # Evita deformaciones
     "background_color": "#99003d",
     "color": "#333333",
-    "border": "1px solid gray", #color de bordes normales
+    "border": "1px solid white", #color de bordes normales
     "border_radius": "20px", #forma de los bordes
-    "box_shadow":"0px 0px 10px gray",#efecto a los bordes
+    "box_shadow":"0px 0px 10px black",#efecto a los bordes
     "cursor": "pointer",  # Indica que la imagen es clickeable
     "transition": "transform 0.2s ease-in-out",  # Suaviza el efecto
     "_hover": {
         "background_color": "#800080",  # Azul más oscuro en hover
         "border_color": "#6366F1",  # Bordes visibles en hover
-        "box_shadow": "0px 4px 10px rgba(79, 70, 229, 0.3)",  # Sombra elegante
+        "box-shadow" : "0px 4px 10px rgba(0, 0, 0, 1)",
         "transform": "scale(1.05)",
     },
 }

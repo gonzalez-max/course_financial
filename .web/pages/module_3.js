@@ -19,6 +19,178 @@ import NextHead from "next/head"
 
 
 
+const pulse = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+`
+
+
+export function Button_a341248439020d6913fc47798be684e9 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_faf29b6728fc7b0a1decc8f1fa76ef77 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_2", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <RadixThemesButton css={({ ["backgroundColor"] : "#2d5986", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "8px", ["&:hover"] : ({ ["backgroundColor"] : "#4080bf" }), ["transition"] : "all 0.3s ease-in-out", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["borderColor"] : "#6366F1" })} onClick={on_click_faf29b6728fc7b0a1decc8f1fa76ef77}>
+
+{"\u2190 Atr\u00e1s"}
+</RadixThemesButton>
+  )
+}
+
+export function Toaster_6e6ebf8d7ce589d59b7d382fb7576edf () {
+  
+  const { resolvedColorMode } = useContext(ColorModeContext)
+
+  refs['__toast'] = toast
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+  const toast_props = ({ ["description"] : ("Check if server is reachable at "+getBackendURL(env.EVENT).href), ["closeButton"] : true, ["duration"] : 120000, ["id"] : "websocket-error" });
+  const [userDismissed, setUserDismissed] = useState(false);
+  (useEffect(
+() => {
+    if ((connectErrors.length >= 2)) {
+        if (!userDismissed) {
+            toast.error(
+                `Cannot connect to server: ${((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : '')}.`,
+                {...toast_props, onDismiss: () => setUserDismissed(true)},
+            )
+        }
+    } else {
+        toast.dismiss("websocket-error");
+        setUserDismissed(false);  // after reconnection reset dismissed state
+    }
+}
+, [connectErrors]))
+
+
+
+
+  
+  return (
+    <Toaster closeButton={false} expand={true} position={"bottom-right"} richColors={true} theme={resolvedColorMode}/>
+  )
+}
+
+export function Dropdownmenu__item_a4b79031cd0a0aaab6615a386df7fd1f () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_878b59ed445e335ab3312bf6ae65b075 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/financial_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <RadixThemesDropdownMenu.Item onClick={on_click_878b59ed445e335ab3312bf6ae65b075}>
+
+{"Proyecto"}
+</RadixThemesDropdownMenu.Item>
+  )
+}
+
+export function Button_f46d7b6d1b8cc2ccedd67f51887d3b65 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_08b7789e3faf18ddcedc3d0f700af8da = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_4", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <RadixThemesButton css={({ ["backgroundColor"] : "#ff3333", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "8px", ["&:hover"] : ({ ["backgroundColor"] : "#cc0000" }), ["transition"] : "all 0.3s ease-in-out", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["border"] : "#6366F1" })} onClick={on_click_08b7789e3faf18ddcedc3d0f700af8da}>
+
+{"Siguiente \u2192"}
+</RadixThemesButton>
+  )
+}
+
+export function Dropdownmenu__item_b0a6762496b52f8de3428cdb0d180c40 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_7dc200586272c1bbcd7f51ea48788135 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <RadixThemesDropdownMenu.Item onClick={on_click_7dc200586272c1bbcd7f51ea48788135}>
+
+{"Contacto"}
+</RadixThemesDropdownMenu.Item>
+  )
+}
+
+export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    <div css={({ ["position"] : "fixed", ["width"] : "100vw", ["height"] : "0" })} title={("Connection Error: "+((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : ''))}>
+
+<Fragment_c179379f847dbcf00ba21f73b0ad1b3d/>
+</div>
+  )
+}
+
+export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    <Fragment>
+
+{isTrue((connectErrors.length > 0)) ? (
+  <Fragment>
+
+<LucideWifiOffIcon css={({ ["color"] : "crimson", ["zIndex"] : 9999, ["position"] : "fixed", ["bottom"] : "33px", ["right"] : "33px", ["animation"] : (pulse+" 1s infinite") })} size={32}/>
+</Fragment>
+) : (
+  <Fragment/>
+)}
+</Fragment>
+  )
+}
+
+export function Img_544b3e2872f3fdafb9f22edff3b2be1f () {
+  
+  const reflex___state____state__mi_web___components___general_components___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_4601de63bb2da6dd2c92964a58538d0d = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___nav_bar____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <img css={({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" })} onClick={on_click_4601de63bb2da6dd2c92964a58538d0d} src={reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.logo_src}/>
+  )
+}
+
 export function Img_1dc145e38a4a77bada704003b0548d02 () {
   
   const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
@@ -35,7 +207,7 @@ export function Img_1dc145e38a4a77bada704003b0548d02 () {
   )
 }
 
-export function Errorboundary_751ef1fa447e66e869312094cd70892b () {
+export function Errorboundary_19cc4b6fecb7bee52a37f316e1e2e35a () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
@@ -261,7 +433,7 @@ export function Errorboundary_751ef1fa447e66e869312094cd70892b () {
 
 <Zoom css={({ ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
 
-<img css={({ ["height"] : "auto", ["width"] : "500px", ["maxWidth"] : "100%", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/que_es_trader.jpg?refresh=1"}/>
+<img css={({ ["height"] : "auto", ["width"] : "700px", ["maxWidth"] : "100%", ["maxHeight"] : "400px", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid white", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px black", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["box-shadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) })} src={"/que_es_trader.jpg?refresh=1"}/>
 </Zoom>
 </RadixThemesFlex>
 </RadixThemesFlex>
@@ -342,7 +514,7 @@ export function Errorboundary_751ef1fa447e66e869312094cd70892b () {
 
 <Zoom css={({ ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
 
-<img css={({ ["height"] : "auto", ["width"] : "500px", ["maxWidth"] : "100%", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/tipos_trading.jpg?refresh=1"}/>
+<img css={({ ["height"] : "auto", ["width"] : "700px", ["maxWidth"] : "100%", ["maxHeight"] : "400px", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid white", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px black", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["box-shadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) })} src={"/tipos_trading.jpg?refresh=1"}/>
 </Zoom>
 </RadixThemesFlex>
 </RadixThemesFlex>
@@ -371,7 +543,7 @@ export function Errorboundary_751ef1fa447e66e869312094cd70892b () {
 
 <Zoom css={({ ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
 
-<img css={({ ["height"] : "auto", ["width"] : "500px", ["maxWidth"] : "100%", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/fundamental_vs_tecnico.jpg?refresh=1"}/>
+<img css={({ ["height"] : "auto", ["width"] : "700px", ["maxWidth"] : "100%", ["maxHeight"] : "400px", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid white", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px black", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["box-shadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) })} src={"/fundamental_vs_tecnico.jpg?refresh=1"}/>
 </Zoom>
 </RadixThemesFlex>
 </RadixThemesFlex>
@@ -518,7 +690,7 @@ export function Errorboundary_751ef1fa447e66e869312094cd70892b () {
 
 <Zoom css={({ ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
 
-<img css={({ ["height"] : "auto", ["width"] : "500px", ["maxWidth"] : "100%", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/vela_verde_contra_roja.jpg?refresh=1"}/>
+<img css={({ ["height"] : "auto", ["width"] : "700px", ["maxWidth"] : "100%", ["maxHeight"] : "400px", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid white", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px black", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["box-shadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) })} src={"/vela_verde_contra_roja.jpg?refresh=1"}/>
 </Zoom>
 </RadixThemesFlex>
 </RadixThemesFlex>
@@ -578,7 +750,7 @@ export function Errorboundary_751ef1fa447e66e869312094cd70892b () {
 
 <Zoom css={({ ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
 
-<img css={({ ["height"] : "auto", ["width"] : "500px", ["maxWidth"] : "100%", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/velas-japonesas.png?refresh=1"}/>
+<img css={({ ["height"] : "auto", ["width"] : "700px", ["maxWidth"] : "100%", ["maxHeight"] : "400px", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid white", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px black", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["box-shadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) })} src={"/velas-japonesas.png?refresh=1"}/>
 </Zoom>
 </RadixThemesFlex>
 </RadixThemesFlex>
@@ -643,7 +815,7 @@ export function Errorboundary_751ef1fa447e66e869312094cd70892b () {
 
 <Zoom css={({ ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
 
-<img css={({ ["height"] : "auto", ["width"] : "500px", ["maxWidth"] : "100%", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/fuerza_velas.png?refresh=1"}/>
+<img css={({ ["height"] : "auto", ["width"] : "700px", ["maxWidth"] : "100%", ["maxHeight"] : "400px", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid white", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px black", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["box-shadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) })} src={"/fuerza_velas.png?refresh=1"}/>
 </Zoom>
 </RadixThemesFlex>
 </RadixThemesFlex>
@@ -687,7 +859,7 @@ export function Errorboundary_751ef1fa447e66e869312094cd70892b () {
 
 <Zoom css={({ ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
 
-<img css={({ ["height"] : "auto", ["width"] : "500px", ["maxWidth"] : "100%", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/gestion_riesgo.jpg?refresh=1"}/>
+<img css={({ ["height"] : "auto", ["width"] : "700px", ["maxWidth"] : "100%", ["maxHeight"] : "400px", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid white", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px black", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["box-shadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) })} src={"/gestion_riesgo.jpg?refresh=1"}/>
 </Zoom>
 </RadixThemesFlex>
 </RadixThemesFlex>
@@ -801,7 +973,7 @@ export function Errorboundary_751ef1fa447e66e869312094cd70892b () {
 
 <Zoom css={({ ["zoomScale"] : 50, ["cursor"] : "zoom-in" })}>
 
-<img css={({ ["height"] : "auto", ["width"] : "500px", ["maxWidth"] : "100%", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid gray", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px gray", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["transform"] : "scale(1.05)" }) })} src={"/psicologia_trading.jpg?refresh=1"}/>
+<img css={({ ["height"] : "auto", ["width"] : "700px", ["maxWidth"] : "100%", ["maxHeight"] : "400px", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid white", ["borderRadius"] : "20px", ["boxShadow"] : "0px 0px 10px black", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["box-shadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) })} src={"/psicologia_trading.jpg?refresh=1"}/>
 </Zoom>
 </RadixThemesFlex>
 </RadixThemesHeading>
@@ -1021,7 +1193,7 @@ export function Errorboundary_751ef1fa447e66e869312094cd70892b () {
 
 <Button_a341248439020d6913fc47798be684e9/>
 </RadixThemesBox>
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center", ["width"] : "100%", ["justifyContent"] : "center" })} direction={"column"} gap={"3"}>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center", ["width"] : "100%", ["justifyContent"] : "center", ["padding"] : "10px 0", ["backgroundColor"] : "black" })} direction={"column"} gap={"3"}>
 
 <Img_1dc145e38a4a77bada704003b0548d02/>
 <RadixThemesText as={"p"} css={({ ["color"] : "white" })}>
@@ -1039,75 +1211,6 @@ export function Errorboundary_751ef1fa447e66e869312094cd70892b () {
 <meta content={"favicon.ico"} property={"og:image"}/>
 </NextHead>
 </ErrorBoundary>
-  )
-}
-
-export function Dropdownmenu__item_a4b79031cd0a0aaab6615a386df7fd1f () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_878b59ed445e335ab3312bf6ae65b075 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/financial_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <RadixThemesDropdownMenu.Item onClick={on_click_878b59ed445e335ab3312bf6ae65b075}>
-
-{"Proyecto"}
-</RadixThemesDropdownMenu.Item>
-  )
-}
-
-export function Img_544b3e2872f3fdafb9f22edff3b2be1f () {
-  
-  const reflex___state____state__mi_web___components___general_components___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_4601de63bb2da6dd2c92964a58538d0d = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___nav_bar____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <img css={({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" })} onClick={on_click_4601de63bb2da6dd2c92964a58538d0d} src={reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.logo_src}/>
-  )
-}
-
-export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    <div css={({ ["position"] : "fixed", ["width"] : "100vw", ["height"] : "0" })} title={("Connection Error: "+((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : ''))}>
-
-<Fragment_c179379f847dbcf00ba21f73b0ad1b3d/>
-</div>
-  )
-}
-
-export function Button_a341248439020d6913fc47798be684e9 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_faf29b6728fc7b0a1decc8f1fa76ef77 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_2", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <RadixThemesButton css={({ ["backgroundColor"] : "#2d5986", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "8px", ["&:hover"] : ({ ["backgroundColor"] : "#4080bf" }), ["transition"] : "all 0.3s ease-in-out", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["borderColor"] : "#6366F1" })} onClick={on_click_faf29b6728fc7b0a1decc8f1fa76ef77}>
-
-{"\u2190 Atr\u00e1s"}
-</RadixThemesButton>
   )
 }
 
@@ -1129,109 +1232,6 @@ export function Tooltip_f5e6a55bca12d52bfe1a36c42a21b26c () {
   )
 }
 
-const pulse = keyframes`
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-`
-
-
-export function Toaster_6e6ebf8d7ce589d59b7d382fb7576edf () {
-  
-  const { resolvedColorMode } = useContext(ColorModeContext)
-
-  refs['__toast'] = toast
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-  const toast_props = ({ ["description"] : ("Check if server is reachable at "+getBackendURL(env.EVENT).href), ["closeButton"] : true, ["duration"] : 120000, ["id"] : "websocket-error" });
-  const [userDismissed, setUserDismissed] = useState(false);
-  (useEffect(
-() => {
-    if ((connectErrors.length >= 2)) {
-        if (!userDismissed) {
-            toast.error(
-                `Cannot connect to server: ${((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : '')}.`,
-                {...toast_props, onDismiss: () => setUserDismissed(true)},
-            )
-        }
-    } else {
-        toast.dismiss("websocket-error");
-        setUserDismissed(false);  // after reconnection reset dismissed state
-    }
-}
-, [connectErrors]))
-
-
-
-
-  
-  return (
-    <Toaster closeButton={false} expand={true} position={"bottom-right"} richColors={true} theme={resolvedColorMode}/>
-  )
-}
-
-export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    <Fragment>
-
-{isTrue((connectErrors.length > 0)) ? (
-  <Fragment>
-
-<LucideWifiOffIcon css={({ ["color"] : "crimson", ["zIndex"] : 9999, ["position"] : "fixed", ["bottom"] : "33px", ["right"] : "33px", ["animation"] : (pulse+" 1s infinite") })} size={32}/>
-</Fragment>
-) : (
-  <Fragment/>
-)}
-</Fragment>
-  )
-}
-
-export function Button_f46d7b6d1b8cc2ccedd67f51887d3b65 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_08b7789e3faf18ddcedc3d0f700af8da = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_4", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <RadixThemesButton css={({ ["backgroundColor"] : "#ff3333", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "8px", ["&:hover"] : ({ ["backgroundColor"] : "#cc0000" }), ["transition"] : "all 0.3s ease-in-out", ["boxShadow"] : "0px 4px 10px rgba(79, 70, 229, 0.3)", ["border"] : "#6366F1" })} onClick={on_click_08b7789e3faf18ddcedc3d0f700af8da}>
-
-{"Siguiente \u2192"}
-</RadixThemesButton>
-  )
-}
-
-export function Dropdownmenu__item_b0a6762496b52f8de3428cdb0d180c40 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_7dc200586272c1bbcd7f51ea48788135 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <RadixThemesDropdownMenu.Item onClick={on_click_7dc200586272c1bbcd7f51ea48788135}>
-
-{"Contacto"}
-</RadixThemesDropdownMenu.Item>
-  )
-}
-
 export default function Component() {
     
 
@@ -1239,6 +1239,6 @@ export default function Component() {
 
 
   return (
-    <Errorboundary_751ef1fa447e66e869312094cd70892b/>
+    <Errorboundary_19cc4b6fecb7bee52a37f316e1e2e35a/>
   )
 }

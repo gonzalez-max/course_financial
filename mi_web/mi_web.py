@@ -56,10 +56,11 @@ app = rx.App(stylesheets=[
         "600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100.."
         "900""&display=swap",
     ],)
+
 app.add_page(index, route="/", title="Pagina Principal")
 app.add_page(financial_page, route="/financial_page", title="Curso Finanzas y Trading")
 app.add_page(soporte_page, route="/soporte_page", title="Soporte")
-app.add_page(choice_modules, route="/choice_modules", title="Modulos")
+app.add_page(choice_modules, route="/choice_modules", title="Módulos")
 app.add_page(module_1, route="/module_1", title="Modulo 1")
 app.add_page(module_2, route="/module_2", title="Modulo 2")
 app.add_page(module_3, route="/module_3", title="Modulo 3")

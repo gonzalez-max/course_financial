@@ -8,8 +8,8 @@ from mi_web.components.general_components.drawer import drawer
 from mi_web.components.course_components.module1_components.saving_bar import saving_bar
 from mi_web.components.course_components.module1_components.table1_module1 import table1_module1
 from mi_web.components.course_components.module1_components.table2_module1 import table2_module1
-from mi_web.components.links.next_button import next_button
-from mi_web.components.links.back_button import back_button
+from mi_web.components.course_components.links_course.next_button import next_button
+from mi_web.components.course_components.links_course.back_button import back_button
 from mi_web.components.general_components.zoom_images import zoomed_image
 from mi_web.components.general_components.imagenes.image_despedida import image_despedida
 

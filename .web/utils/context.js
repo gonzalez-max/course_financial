@@ -1,7 +1,7 @@
 import { createContext, useContext, useMemo, useReducer, useState } from "react"
 import { applyDelta, Event, hydrateClientStorage, useEventLoop, refs } from "$/utils/state.js"
 
-export const initialState = {"reflex___state____state": {"is_hydrated": false, "router": {"session": {"client_token": "", "client_ip": "", "session_id": ""}, "headers": {"host": "", "origin": "", "upgrade": "", "connection": "", "cookie": "", "pragma": "", "cache_control": "", "user_agent": "", "sec_websocket_version": "", "sec_websocket_key": "", "sec_websocket_extensions": "", "accept_encoding": "", "accept_language": ""}, "page": {"host": "", "path": "", "raw_path": "", "full_path": "", "full_raw_path": "", "params": {}}}}, "reflex___state____state.mi_web___components___general_components___nav_bar____logo_state": {"click_count": 0, "logo_src": "icons/orbesdmc-black.png"}, "reflex___state____state.reflex___state____update_vars_internal_state": {}, "reflex___state____state.reflex___state____frontend_event_exception_state": {}, "reflex___state____state.mi_web___mi_web____state": {}, "reflex___state____state.reflex___state____on_load_internal_state": {}, "reflex___state____state.mi_web___components___general_components___footer____logo_state": {"click_count": 0, "logo_src": "icons/orbesdmc-black.png"}}
+export const initialState = {"reflex___state____state": {"is_hydrated": false, "router": {"session": {"client_token": "", "client_ip": "", "session_id": ""}, "headers": {"host": "", "origin": "", "upgrade": "", "connection": "", "cookie": "", "pragma": "", "cache_control": "", "user_agent": "", "sec_websocket_version": "", "sec_websocket_key": "", "sec_websocket_extensions": "", "accept_encoding": "", "accept_language": ""}, "page": {"host": "", "path": "", "raw_path": "", "full_path": "", "full_raw_path": "", "params": {}}}}, "reflex___state____state.mi_web___mi_web____state": {}, "reflex___state____state.mi_web___components___general_components___footer____logo_state": {"click_count": 0, "logo_src": "/icons/orbesdmc-black.png"}, "reflex___state____state.reflex___state____on_load_internal_state": {}, "reflex___state____state.mi_web___components___general_components___nav_bar____logo_state": {"click_count": 0, "logo_src": "icons/orbesdmc-black.png"}, "reflex___state____state.reflex___state____update_vars_internal_state": {}, "reflex___state____state.mi_web___components___course_components___links_course___course_navbar____logo_state": {"click_count": 0, "logo_src": "/icons/orbesdmc-black.png"}, "reflex___state____state.reflex___state____frontend_event_exception_state": {}}
 
 export const defaultColorMode = "system"
 export const ColorModeContext = createContext(null);
@@ -9,12 +9,13 @@ export const UploadFilesContext = createContext(null);
 export const DispatchContext = createContext(null);
 export const StateContexts = {
   reflex___state____state: createContext(null),
+  reflex___state____state__mi_web___mi_web____state: createContext(null),
+  reflex___state____state__mi_web___components___general_components___footer____logo_state: createContext(null),
+  reflex___state____state__reflex___state____on_load_internal_state: createContext(null),
   reflex___state____state__mi_web___components___general_components___nav_bar____logo_state: createContext(null),
   reflex___state____state__reflex___state____update_vars_internal_state: createContext(null),
+  reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state: createContext(null),
   reflex___state____state__reflex___state____frontend_event_exception_state: createContext(null),
-  reflex___state____state__mi_web___mi_web____state: createContext(null),
-  reflex___state____state__reflex___state____on_load_internal_state: createContext(null),
-  reflex___state____state__mi_web___components___general_components___footer____logo_state: createContext(null),
 }
 export const EventLoopContext = createContext(null);
 export const clientStorage = {"cookies": {}, "local_storage": {}, "session_storage": {}}
@@ -54,7 +55,7 @@ export const initialEvents = () => [
 
 export const isDevMode = true
 
-export const lastCompiledTimeStamp = "2025-03-25 20:56:13.693498"
+export const lastCompiledTimeStamp = "2025-03-26 20:58:39.254621"
 
 export function UploadFilesProvider({ children }) {
   const [filesById, setFilesById] = useState({})
@@ -86,41 +87,45 @@ export function EventLoopProvider({ children }) {
 
 export function StateProvider({ children }) {
   const [reflex___state____state, dispatch_reflex___state____state] = useReducer(applyDelta, initialState["reflex___state____state"])
+  const [reflex___state____state__mi_web___mi_web____state, dispatch_reflex___state____state__mi_web___mi_web____state] = useReducer(applyDelta, initialState["reflex___state____state.mi_web___mi_web____state"])
+  const [reflex___state____state__mi_web___components___general_components___footer____logo_state, dispatch_reflex___state____state__mi_web___components___general_components___footer____logo_state] = useReducer(applyDelta, initialState["reflex___state____state.mi_web___components___general_components___footer____logo_state"])
+  const [reflex___state____state__reflex___state____on_load_internal_state, dispatch_reflex___state____state__reflex___state____on_load_internal_state] = useReducer(applyDelta, initialState["reflex___state____state.reflex___state____on_load_internal_state"])
   const [reflex___state____state__mi_web___components___general_components___nav_bar____logo_state, dispatch_reflex___state____state__mi_web___components___general_components___nav_bar____logo_state] = useReducer(applyDelta, initialState["reflex___state____state.mi_web___components___general_components___nav_bar____logo_state"])
   const [reflex___state____state__reflex___state____update_vars_internal_state, dispatch_reflex___state____state__reflex___state____update_vars_internal_state] = useReducer(applyDelta, initialState["reflex___state____state.reflex___state____update_vars_internal_state"])
+  const [reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state, dispatch_reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state] = useReducer(applyDelta, initialState["reflex___state____state.mi_web___components___course_components___links_course___course_navbar____logo_state"])
   const [reflex___state____state__reflex___state____frontend_event_exception_state, dispatch_reflex___state____state__reflex___state____frontend_event_exception_state] = useReducer(applyDelta, initialState["reflex___state____state.reflex___state____frontend_event_exception_state"])
-  const [reflex___state____state__mi_web___mi_web____state, dispatch_reflex___state____state__mi_web___mi_web____state] = useReducer(applyDelta, initialState["reflex___state____state.mi_web___mi_web____state"])
-  const [reflex___state____state__reflex___state____on_load_internal_state, dispatch_reflex___state____state__reflex___state____on_load_internal_state] = useReducer(applyDelta, initialState["reflex___state____state.reflex___state____on_load_internal_state"])
-  const [reflex___state____state__mi_web___components___general_components___footer____logo_state, dispatch_reflex___state____state__mi_web___components___general_components___footer____logo_state] = useReducer(applyDelta, initialState["reflex___state____state.mi_web___components___general_components___footer____logo_state"])
   const dispatchers = useMemo(() => {
     return {
       "reflex___state____state": dispatch_reflex___state____state,
+      "reflex___state____state.mi_web___mi_web____state": dispatch_reflex___state____state__mi_web___mi_web____state,
+      "reflex___state____state.mi_web___components___general_components___footer____logo_state": dispatch_reflex___state____state__mi_web___components___general_components___footer____logo_state,
+      "reflex___state____state.reflex___state____on_load_internal_state": dispatch_reflex___state____state__reflex___state____on_load_internal_state,
       "reflex___state____state.mi_web___components___general_components___nav_bar____logo_state": dispatch_reflex___state____state__mi_web___components___general_components___nav_bar____logo_state,
       "reflex___state____state.reflex___state____update_vars_internal_state": dispatch_reflex___state____state__reflex___state____update_vars_internal_state,
+      "reflex___state____state.mi_web___components___course_components___links_course___course_navbar____logo_state": dispatch_reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state,
       "reflex___state____state.reflex___state____frontend_event_exception_state": dispatch_reflex___state____state__reflex___state____frontend_event_exception_state,
-      "reflex___state____state.mi_web___mi_web____state": dispatch_reflex___state____state__mi_web___mi_web____state,
-      "reflex___state____state.reflex___state____on_load_internal_state": dispatch_reflex___state____state__reflex___state____on_load_internal_state,
-      "reflex___state____state.mi_web___components___general_components___footer____logo_state": dispatch_reflex___state____state__mi_web___components___general_components___footer____logo_state,
     }
   }, [])
 
   return (
     <StateContexts.reflex___state____state.Provider value={ reflex___state____state }>
+    <StateContexts.reflex___state____state__mi_web___mi_web____state.Provider value={ reflex___state____state__mi_web___mi_web____state }>
+    <StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state.Provider value={ reflex___state____state__mi_web___components___general_components___footer____logo_state }>
+    <StateContexts.reflex___state____state__reflex___state____on_load_internal_state.Provider value={ reflex___state____state__reflex___state____on_load_internal_state }>
     <StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.Provider value={ reflex___state____state__mi_web___components___general_components___nav_bar____logo_state }>
     <StateContexts.reflex___state____state__reflex___state____update_vars_internal_state.Provider value={ reflex___state____state__reflex___state____update_vars_internal_state }>
+    <StateContexts.reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state.Provider value={ reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state }>
     <StateContexts.reflex___state____state__reflex___state____frontend_event_exception_state.Provider value={ reflex___state____state__reflex___state____frontend_event_exception_state }>
-    <StateContexts.reflex___state____state__mi_web___mi_web____state.Provider value={ reflex___state____state__mi_web___mi_web____state }>
-    <StateContexts.reflex___state____state__reflex___state____on_load_internal_state.Provider value={ reflex___state____state__reflex___state____on_load_internal_state }>
-    <StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state.Provider value={ reflex___state____state__mi_web___components___general_components___footer____logo_state }>
       <DispatchContext.Provider value={dispatchers}>
         {children}
       </DispatchContext.Provider>
-    </StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state.Provider>
-    </StateContexts.reflex___state____state__reflex___state____on_load_internal_state.Provider>
-    </StateContexts.reflex___state____state__mi_web___mi_web____state.Provider>
     </StateContexts.reflex___state____state__reflex___state____frontend_event_exception_state.Provider>
+    </StateContexts.reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state.Provider>
     </StateContexts.reflex___state____state__reflex___state____update_vars_internal_state.Provider>
     </StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.Provider>
+    </StateContexts.reflex___state____state__reflex___state____on_load_internal_state.Provider>
+    </StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state.Provider>
+    </StateContexts.reflex___state____state__mi_web___mi_web____state.Provider>
     </StateContexts.reflex___state____state.Provider>
   )
 }

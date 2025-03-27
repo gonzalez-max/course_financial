@@ -2,7 +2,7 @@ import reflex as rx
 
 class LogoState(rx.State):
     click_count: int = 0
-    logo_src: str = "icons/orbesdmc-black.png"
+    logo_src: str = "/icons/orbesdmc-black.png"
 
     def increment_click(self):
         self.click_count += 1
@@ -10,9 +10,9 @@ class LogoState(rx.State):
         cycle = (self.click_count // 5) % 2
         # Alterna la imagen según el ciclo
         if cycle == 1:
-            self.logo_src = "icons/orbesdmc.png"
+            self.logo_src = "/icons/orbesdmc.png"
         else:
-            self.logo_src = "icons/orbesdmc-black.png"
+            self.logo_src = "/icons/orbesdmc-black.png"
 
 
 
@@ -25,9 +25,15 @@ def footer() -> rx.Component:
                     background_color="transparent",
                     on_click=LogoState.increment_click,# Vinculamos el evento on_click
                     cursor="pointer",
-                     _hover={"transform": "scale(1.10)"}),
-        rx.text("since 1999 copyright registered.",color="white"),
+                     _hover={"transform": "scale(1.10)"}
+                ),
+        
+        rx.text("since 1999 copyright registered.",
+                color="white"),
+        
         align_items="center",
         width="100%",
         justify_content="center",
+        padding="10px 0",
+        background_color="black",
         )

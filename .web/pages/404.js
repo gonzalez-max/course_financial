@@ -47,6 +47,16 @@ export function Toaster_6e6ebf8d7ce589d59b7d382fb7576edf () {
   )
 }
 
+const pulse = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+`
+
+
 export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -70,16 +80,6 @@ export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
 </Fragment>
   )
 }
-
-const pulse = keyframes`
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-`
-
 
 export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
   
