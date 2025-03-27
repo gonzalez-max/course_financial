@@ -1,19 +1,19 @@
 import reflex as rx 
 from mi_web.components.general_components.nav_bar import navbar_dropdown
-from mi_web.views.hero_section.hero_principal.hero_section import hero_section
-from mi_web.views.hero_section.hero_principal.projects import projects
+from mi_web.views.web_principal_views.hero_principal.hero_section import hero_section
+from mi_web.views.web_principal_views.hero_principal.projects import projects
 from mi_web.components.general_components.footer import footer
 from mi_web.styles.styles import Size as Size
 import mi_web.styles.styles as styles
-from mi_web.financial_page import financial_page
-from mi_web.soporte_page import soporte_page
-from mi_web.views.links_modules_views.choice_modules import choice_modules
-from mi_web.views.modules_views.module_1 import module_1
-from mi_web.views.modules_views.module_2 import module_2
-from mi_web.views.modules_views.module_3 import module_3
-from mi_web.views.modules_views.module_4 import module_4
-from mi_web.views.modules_views.module_5 import module_5
-from mi_web.views.modules_views.module_6 import module_6
+from mi_web.views.course_views.financial_page import financial_page
+from mi_web.views.web_principal_views.soporte_page import soporte_page
+from mi_web.views.course_views.choice_modules import choice_modules
+from mi_web.views.course_views.modules_views.module_1 import module_1
+from mi_web.views.course_views.modules_views.module_2 import module_2
+from mi_web.views.course_views.modules_views.module_3 import module_3
+from mi_web.views.course_views.modules_views.module_4 import module_4
+from mi_web.views.course_views.modules_views.module_5 import module_5
+from mi_web.views.course_views.modules_views.module_6 import module_6
 
 
 class State(rx.State):

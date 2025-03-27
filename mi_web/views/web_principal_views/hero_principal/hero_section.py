@@ -10,10 +10,10 @@ def hero_section() -> rx.Component:
             rx.heading(
                 "Bienvenido,",
                 **styles.text_main_page["title"],
-                margin_top=Size.MEDIUM.value,
+                margin_top=Size.EXTRA_SMALL.value,
                 color="white",
                 font_size="25px",
-                font_family="Roboto",
+                font_family="roboto",
                 font_weight="300",
             ),
             rx.heading(

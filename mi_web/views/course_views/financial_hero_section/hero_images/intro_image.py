@@ -18,5 +18,4 @@ def intro_image() -> rx.Component:
             
         align_items="center",
         justify_content="center",
-        margin_top=Size.REGULAR.value,
     )

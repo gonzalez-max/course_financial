@@ -3,7 +3,7 @@
 COURSE_STYLES = {
     "text_color" : "black",
     "width":"100%",
-    "background" : "linear-gradient(180deg, rgba(0,67,113,1) 0%, rgba(222,117,179,1) 100%)",
+    "background" : "linear-gradient(180deg, rgba(2,4,45,1) 0%, rgba(254,138,206,1) 100%)",
     "display": "flex",
     "flex_direction": "column",
     "min_height":"100vh",
@@ -18,19 +18,19 @@ BUTTON_STYLE = {
     "radius": "medium",
     "width": "100%",  # Ajusta el ancho del botón
     "height": "100px",  # Ajusta la altura del botón
-    "padding" : "10px", # Ajusta el padding interno
+    "padding" : "30px", # Ajusta el padding interno
     "spacing" : "5px",
-    "border_radius":"20px",
+    "border_radius":"15px",
     "margin_bottom": "10px", #Espacio entre botones
-    "font_size": "semibold", #fuente semi negra 
+    "font_size": "500",
     "text_transform": "capitalize", #tipo de texto 
     "letter_spacing" : "1px", #espacio sutil entre letras 
     "color": "white", #color fuente
     "white_space": "normal",  # Permite que el texto se divida en varias líneas
     "text_align": "center",   # Asegura que el texto esté centrado dentro del botón
     "max_width": "400px",     # Ajusta el ancho máximo del botón para evitar que sea demasiado ancho
-    "background_color": "#990033",  #color de fondo 
-    "border": "2px solid transparent",     #bordes 
+    "background_color":"rgba(255, 255, 255, 0.1)",#color de fondo 
+    "border": "1.5px solid white",     #bordes 
     "word_wrap": "break-word",  # Ajuste del texto dentro del botón
     "display": "flex",  # Permitir centrado interno
     "align_items": "center",  # Centrar verticalmente el contenido
@@ -38,10 +38,11 @@ BUTTON_STYLE = {
     "transition": "all 0.3s ease-in-out", #animacion
     "cursor":"pointer",
     "_hover": {
-        "background_color": "#4338CA",  # Azul más oscuro en hover
-        "border_color": "#6366F1",  # Bordes visibles en hover
-        "box_shadow": "0px 4px 10px rgba(79, 70, 229, 0.3)",  # Sombra elegante
-        "transform": "scale(1.10)"
+        "background_color":"rgba(255, 255, 255, 0.3)",  # Azul más oscuro en hover
+        "border_color": "white",  # Bordes visibles en hover
+        "transform": "scale(1.10)",
+        "color":"white",
+        
     },
 }
 #________________________ NAV BAR STYLES_________________________________________________________#
@@ -66,7 +67,7 @@ COURSE_NAVBAR_FONTS={
     "weight":"regular",
     "font_family": "Arial",
     "_hover":
-        {"color": "gray"},
+        {"color": "white"},
     "transition": "color 0.3s ease",
     "justify_content": "center",
     "width":"100%"
@@ -170,23 +171,28 @@ IMAGE_STYLES={
 TEXT_STYLE = {
     "title": {  # Para títulos principales
         "font_size": "clamp(28px, 5vw, 50px)",  # Se adapta dinámicamente al tamaño de pantalla
-        "font_weight": "bold",
+        "font_weight": "600",
         "color": "white",
         "text_align": "center",
-        "padding": "10px",
-        "letter_spacing": "0.05em",  # Ajuste fino para mejor legibilidad
-        "max_width": "90%",  # Evita que el título sea demasiado ancho en pantallas pequeñas
+        "align_items":"center",
+        "padding": "17px",
+        "letter_spacing": "0.07em",  # Ajuste fino para mejor legibilidad
+        "max_width": "60%",  # Evita que el título sea demasiado ancho en pantallas pequeñas
         "margin": "auto",  # Centra el título dentro de su contenedor
         "line_height": "1.2",  # Mejora la legibilidad en varias líneas
-        "word_wrap": "break-word",
+        "font_family":"Roboto",
     },
     "subtitle": {  # Para subtítulos o encabezados secundarios
         "font_size": "25px",
-        "font_weight": "semibold",
+        "font_weight": "300",
         "color": "#FFC75F",
         "text_align": "left",
         "margin_bottom": "10px",
-        "font_family": "Helvetica"
+        "font_family": "Roboto",
+        "letter_spacing": "0.05em",  # Ajuste fino para mejor legibilidad
+        "max_width": "60%",  # Evita que el título sea demasiado ancho en pantallas pequeñas
+        "margin": "auto",  # Centra el título dentro de su contenedor
+        "line_height": "1.2", 
     },
     
     "subseccion": {  # Para subtítulos o encabezados secundarios

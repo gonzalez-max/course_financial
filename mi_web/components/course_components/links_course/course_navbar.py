@@ -47,19 +47,19 @@ def navbar_course() -> rx.Component:
                     rx.link(
                         rx.tooltip(
                             rx.heading(
-                            "Maximiliano Gonzalez",
+                            "Inicio",
                             **c_styles.COURSE_NAVBAR_FONTS
                         ),
-                    content="Inicio"
+                    content="Pagina Principal"
                     ), #cierre del tooltip
-                    href="/#",
+                    href="/financial_page",
                     style={"text_decoration": "none"}
                     ,),
                     align_items="center",
                 ),
                 rx.hstack(
-                    rx.tooltip(nav_bar("Proyectos", "/financial_page"),
-                               content="Mis proyectos"),
+                    rx.tooltip(nav_bar("Curso", "/choice_modules"),
+                               content="Curso"),
                     rx.tooltip(nav_bar("Contacto", "/soporte_page"),
                                content="Contactáme"),
                     justify="end",

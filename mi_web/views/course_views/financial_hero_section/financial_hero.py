@@ -1,7 +1,7 @@
 import reflex as rx
 import mi_web.styles.course_styles as c_styles
 import mi_web.styles.styles as styles
-from mi_web.views.hero_section.financial_hero_section.hero_images.intro_image import intro_image
+from mi_web.views.course_views.financial_hero_section.hero_images.intro_image  import intro_image
 from mi_web.styles.styles import Size as Size
 
 
@@ -10,15 +10,17 @@ def financial_hero() -> rx.Component:
     return rx.box(
         rx.center(
             rx.vstack(
-                rx.heading("Bienvenidos al curso de Trading",
-                       **c_styles.TEXT_STYLE["title"],
-                       margin_top=Size.MEDIUM_DEFAULT.value
+                
+                rx.heading("Curso de Finanzas, Trading y como evitar"
+                        " Estafas",
+                        **c_styles.TEXT_STYLE["title"],
+                        margin_top="35px"
                 ),
 
                 intro_image(),
                 rx.heading("Introduccion",
-                       **c_styles.TEXT_STYLE["subtitle"],
-                       margin_top=Size.MEDIUM.value
+                        **c_styles.TEXT_STYLE["subtitle"],
+                        margin_top=Size.MEDIUM.value
                 ),
             
                 rx.text("Te damos la bienvenida al curso de Inversiones Trading y como evitar estafas"
