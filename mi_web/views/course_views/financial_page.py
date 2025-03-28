@@ -1,7 +1,7 @@
 import reflex as rx
 from mi_web.components.course_components.links_course.course_navbar import navbar_course
 from mi_web.components.general_components.footer import footer
-from mi_web.views.course_views.financial_hero_section.financial_hero import financial_hero
+from mi_web.views.course_views.financial_body.financial_body import financial_body
 import mi_web.styles.course_styles as c_styles
 import mi_web.styles.styles as styles
 from mi_web.styles.styles import Size as Size
@@ -13,7 +13,7 @@ def financial_page() -> rx.Component:
         navbar_course(),
         rx.center(
             rx.vstack(
-                financial_hero(),
+                financial_body(),
             )
         ),
         footer(),

@@ -34,6 +34,8 @@ def footer() -> rx.Component:
         align_items="center",
         width="100%",
         justify_content="center",
-        padding="10px 0",
-        background_color="black",
+        background_color="rgba(255, 255, 255, 0.2)",
+        display= "flex",
+        flex_wrap= "wrap",
+        gap= "10px",
         )

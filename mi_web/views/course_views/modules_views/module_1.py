@@ -1,5 +1,5 @@
 import reflex as rx 
-from mi_web.components.general_components.nav_bar import navbar_dropdown
+from mi_web.components.course_components.links_course.course_navbar import navbar_course
 from mi_web.components.general_components.footer import footer
 from mi_web.styles.styles import Size as Size
 import mi_web.styles.course_styles as c_styles
@@ -16,13 +16,15 @@ from mi_web.components.general_components.imagenes.image_despedida import image_
 
 def module_1() -> rx.Component:
     return rx.box(
-        navbar_dropdown(),
+        navbar_course(),
         drawer(),
         rx.center( 
             rx.vstack(
                 rx.box(
                     #Encabezado del módulo
-                    rx.heading("Módulo 1: Fundamentos de Finanzas Personales y Mercado Financiero", **c_styles.TEXT_STYLE["title"]),
+                    rx.heading("Módulo 1: Fundamentos de Finanzas Personales y Mercado Financiero",
+                               **c_styles.TEXT_STYLE["title"],
+                               margin_top="35px"),
                     
                     #Sección 1: ¿Qué son las finanzas?
                     rx.heading("1. ¿Qué son las finanzas?", **c_styles.TEXT_STYLE["subtitle"]),
@@ -195,14 +197,10 @@ def module_1() -> rx.Component:
                     ),                
                 ),
                 #_____________________________________________________________________________________#
-                max_width="600px",
-                width="100%",
-                margin_y=Size.SMALL.value,
-                align_items="center",
             )
         ),
         image_despedida(),         
         next_button("/module_2"),
         footer(),
-        **styles.global_styles
+        **c_styles.COURSE_STYLES
     )

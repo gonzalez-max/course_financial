@@ -1,12 +1,12 @@
 import reflex as rx
 import mi_web.styles.course_styles as c_styles
 import mi_web.styles.styles as styles
-from mi_web.views.course_views.financial_hero_section.hero_images.intro_image  import intro_image
+from mi_web.views.course_views.financial_body.body_images.intro_image  import intro_image
 from mi_web.styles.styles import Size as Size
 
 
 
-def financial_hero() -> rx.Component:
+def financial_body() -> rx.Component:
     return rx.box(
         rx.center(
             rx.vstack(
@@ -128,11 +128,11 @@ def financial_hero() -> rx.Component:
                                    ),
                     ),
                 ),
-                rx.heading("Muchos Exitos con tu aprendisaje.... comenzemos 🚀📈",
+                rx.heading("Muchos Exitos con tu aprendisaje... comencemos 🚀📈",
                            **c_styles.TEXT_STYLE["title"],
                             margin_top=Size.MEDIUM.value),
                 rx.link(
-                        rx.button("Comenzar con el Curso",
+                        rx.button("Comenzar con el curso",
                                 on_click=lambda: rx.redirect("/choice_modules"), 
                                 is_external=False,
                                 **c_styles.BUTTON_STYLE

@@ -8,9 +8,34 @@ COURSE_STYLES = {
     "flex_direction": "column",
     "min_height":"100vh",
     "justify_content": "space-between",
+    "display": "flex",
+    "flex_wrap": "wrap",
+    "justify_content": "center", 
+    "gap": "10px" ,
+    "align_items":"center",
+    "max_width":"1200px"
     
 }
+#______________________CHOICE_MODULES_STYLE______________________________________________#
+STYLES_CHOICE_MODULES={
+   "text_color" : "black",
+    "width":"100%",
+    "background" : "linear-gradient(180deg, rgba(2,4,45,1) 0%, rgba(254,138,206,1) 100%)",
+    "display": "flex",
+    "flex_direction": "column",
+    "min_height":"100vh",
+    "justify_content": "space-between",
+    "display": "flex",
+    "flex_wrap": "wrap",
+    "justify_content": "center", 
+    "gap": "10px" ,
+    "align_items":"center",
+}
 
+
+
+
+#_____________________BUTTONS_STYLES________________________________________________________#
 #estilos de botones
 BUTTON_STYLE = { 
     "size": "3",
@@ -20,7 +45,7 @@ BUTTON_STYLE = {
     "height": "100px",  # Ajusta la altura del botón
     "padding" : "30px", # Ajusta el padding interno
     "spacing" : "5px",
-    "border_radius":"15px",
+    "border_radius":"50px",
     "margin_bottom": "10px", #Espacio entre botones
     "font_size": "500",
     "text_transform": "capitalize", #tipo de texto 
@@ -29,12 +54,49 @@ BUTTON_STYLE = {
     "white_space": "normal",  # Permite que el texto se divida en varias líneas
     "text_align": "center",   # Asegura que el texto esté centrado dentro del botón
     "max_width": "400px",     # Ajusta el ancho máximo del botón para evitar que sea demasiado ancho
+    "background_color":"rgba(0,0,0,0.9)",#color de fondo 
+    "border": "1.5px solid black",     #bordes 
+    "word_wrap": "break-word",  # Ajuste del texto dentro del botón
+    "display": "flex",  # Permitir centrado interno
+    "align_items": "center",  # Centrar verticalmente el contenido
+    "justify_content": "center",  # Centrar horizontalmente el contenido
+    "transition": "all 0.3s ease-in-out", #animacion
+    "cursor":"pointer",
+    "_hover": {
+        "background_color":"rgba(0,0,0,0.7)",  
+        "border_color": "black",  # Bordes visibles en hover
+        "transform": "scale(1.10)",
+        "color":"white",
+        
+    },
+}
+
+#botones de la seccion choice_modules o links modules
+BUTTON_COURSES_STYLES={ 
+    "size": "1",
+    "variant": "solid",
+    "radius": "medium",
+    "width": "100%", 
+    "min_heigth":"auto",# Ajusta el ancho del botón
+    "height": "100px",  # Ajusta la altura del botón
+    "padding" : "10px", # Ajusta el padding interno
+    "spacing" : "5px",
+    "border_radius":"15px",
+    "margin_bottom": "10px", #Espacio entre botones
+    "font_size": "1rem",
+    "text_transform": "capitalize", #tipo de texto 
+    "letter_spacing" : "1px", #espacio sutil entre letras 
+    "color": "white", #color fuente
+    "white_space": "normal",  # Permite que el texto se divida en varias líneas
+    "text_align": "center",   # Asegura que el texto esté centrado dentro del botón
+    "max_width": "100%",     # Ajusta el ancho máximo del botón para evitar que sea demasiado ancho
     "background_color":"rgba(255, 255, 255, 0.1)",#color de fondo 
     "border": "1.5px solid white",     #bordes 
     "word_wrap": "break-word",  # Ajuste del texto dentro del botón
     "display": "flex",  # Permitir centrado interno
     "align_items": "center",  # Centrar verticalmente el contenido
-    "justify_content": "center",  # Centrar horizontalmente el contenido
+    "justify_content": "center",# Centrar horizontalmente el contenido
+    "overflow":"hidden",
     "transition": "all 0.3s ease-in-out", #animacion
     "cursor":"pointer",
     "_hover": {
@@ -44,7 +106,27 @@ BUTTON_STYLE = {
         "color":"white",
         
     },
+     # Estilos responsivos (no se si funcionan)
+    "_media": {
+        "(max-width: 768px)": {  # Para tablets y móviles
+            "width": "100%",  # Usa todo el ancho disponible
+            "font_size": "1rem",  # Reduce un poco el tamaño de la fuente
+            "padding": "10px",
+            "size":"1",  # Menos padding en móviles
+        },
+        "(max-width: 430px)": {  # Para móviles pequeños
+            "font_size": "5px",
+            "padding": "8px",
+            "min_height": "60px",
+            "size":"2rem"
+        }
+    }
 }
+
+
+
+
+
 #________________________ NAV BAR STYLES_________________________________________________________#
 COURSE_NAVBAR_STYLES={
     "width":"100%",
