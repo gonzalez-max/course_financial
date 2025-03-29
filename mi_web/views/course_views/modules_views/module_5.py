@@ -1,5 +1,5 @@
 import reflex as rx
-from mi_web.components.general_components.nav_bar import navbar_dropdown
+from mi_web.components.course_components.links_course.course_navbar import navbar_course
 from mi_web.components.general_components.footer import footer
 from mi_web.styles.styles import Size as Size
 import mi_web.styles.styles as styles
@@ -16,13 +16,14 @@ from mi_web.styles.styles import Size as Size  # Ajusta la importación si c_sty
 
 def module_5() -> rx.Component:
     return rx.box(
-        navbar_dropdown(),
+        navbar_course(),
         rx.center( 
             rx.vstack(
                 rx.box(
                         
                         #encabezado del Módulo 5: Aplicación Práctica del Análisis Técnico
-                        rx.heading("Módulo 5: Dominando Soportes, Resistencias y Rangos", **c_styles.TEXT_STYLE["title"]),
+                        rx.heading("Módulo 5: Dominando Soportes, Resistencias y Rangos", **c_styles.TEXT_STYLE["title"],
+                                   margin_top="35px"),
                         
                         # seccion la importancia de las lineas horizontales
                         rx.heading("1. La importancia de las líneas horizontales", **c_styles.TEXT_STYLE["subtitle"]),
@@ -67,7 +68,7 @@ def module_5() -> rx.Component:
                         #seccion lineas de tendencia
                         rx.heading("2. Líneas de tendencia", **c_styles.TEXT_STYLE["subtitle"]),
                         
-                        rx.text(rx.text("Las líneas de tendencia dinámicas se forman cuando estas se rompen: el precio puede cambiar de tendencia "
+                        rx.text(rx.text.strong("Las líneas de tendencia dinámicas se forman cuando estas se rompen: el precio puede cambiar de tendencia "
                                 "o lateralizarse,")," y el quiebre del último mínimo o máximo marca un cambio sólido en la tendencia. ",
                                 rx.text.strong("Se recomienda que un máximo mayor o un mínimo menor recorra una distancia considerable para que la "
                                 "línea sea válida.")," La práctica intensa ayuda a desarrollar la habilidad para definir "
@@ -97,11 +98,11 @@ def module_5() -> rx.Component:
                         rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value, margin_bottom=Size.DEFAULT.value),
                         
                         #seccion rangos (acumulacion y distribucion)
-                        rx.heading("4. Rangos (acumulacion y disribucion)", **c_styles.TEXT_STYLE["subtitle"]),
+                        rx.heading("4. Rangos (acumulación y distribución)", **c_styles.TEXT_STYLE["subtitle"]),
 
                         rx.text("En la fase de rangos el mercado esta en una fase de",
-                                rx.text.strong(" acumulacion")," (cuando los inversores compran en silencio antes de una tendencia alcista) o ",
-                                rx.text.strong("distribucion")," (cuando los inversores venden discretamente antes de una tendencia bajista)"
+                                rx.text.strong(" acumulación")," (cuando los inversores compran en silencio antes de una tendencia alcista) o ",
+                                rx.text.strong("distribución")," (cuando los inversores venden discretamente antes de una tendencia bajista)"
                                 " los operadores pueden perder ganancias o enfrentar perdidas si intentan operar en esta fase.",
                                 **c_styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
                         
@@ -193,7 +194,8 @@ def module_5() -> rx.Component:
                         rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value, margin_bottom=Size.DEFAULT.value),
                 
                         #resumen y conclusion
-                        rx.heading("Conclusión del Módulo 5: ", **c_styles.TEXT_STYLE["subtitle"]),
+                        rx.heading("Conclusión del Módulo 5: ", **c_styles.TEXT_STYLE["subtitle"],
+                                   margin_bottom=Size.DEFAULT.value),
                         rx.list.ordered(
                                 rx.list.item(rx.text.strong("Resumen:")," Exploramos el análisis técnico práctico, destacando las líneas "
                                              "horizontales de soporte y resistencia, las líneas de tendencia y su rol en identificar "
@@ -214,22 +216,19 @@ def module_5() -> rx.Component:
                                 color="white",
                                 margin_bottom=Size.DEFAULT.value,
                                 ),
-                        rx.hstack(
-                                
-                                align_items="center",
-                                justify="center"
-                        ),
                 
                 #_____________________________________________________________________________________#   
                 ),
-                max_width="600px",
                 width="100%",
-                margin_y=Size.SMALL.value,
-                align_items="center",   
+                border_radius="10px",
+                align_items="center",
+                justify_content="center",
+                max_width="600px",
+                size="2"
                 ),
         ),
         next_button("/module_6"),
         back_button("/module_4"),
         footer(),
-        background_color="black"
+        **c_styles.COURSE_STYLES
     )

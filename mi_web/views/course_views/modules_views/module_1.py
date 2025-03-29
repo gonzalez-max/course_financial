@@ -188,7 +188,8 @@ def module_1() -> rx.Component:
                     rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value,margin_bottom=Size.DEFAULT.value),
                 
                     #conclusion
-                    rx.heading("Conclusión del Módulo 1:", **c_styles.TEXT_STYLE["subtitle"]),
+                    rx.heading("Conclusión del Módulo 1:", **c_styles.TEXT_STYLE["subtitle"],
+                               margin_bottom=Size.DEFAULT.value),
                     rx.list.ordered(
                         rx.list.item(rx.text.strong("Resumen:")," Hemos explorado qué son las finanzas,"
                                      " los conceptos contables básicos, la importancia del ahorro, "

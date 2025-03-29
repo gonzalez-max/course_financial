@@ -27,7 +27,8 @@ def module_3() -> rx.Component:
                                    margin_top="35px"),
             
                         #seccion 1: ¿que es el trading?
-                        rx.heading("1. ¿Qué es el trading? ", **c_styles.TEXT_STYLE["subtitle"]), 
+                        rx.heading("1. ¿Qué es el trading? ", **c_styles.TEXT_STYLE["subtitle"],
+                                   margin_bottom=Size.DEFAULT.value), 
                         
                         #imagen que es un trader
                         rx.hstack(
@@ -333,7 +334,8 @@ def module_3() -> rx.Component:
                         rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value, margin_bottom=Size.DEFAULT.value),
             
                         #seccion adicional tips a tener en cuenta
-                        rx.heading("Tips a tener en cuenta", **c_styles.TEXT_STYLE["subtitle"]),
+                        rx.heading("Tips a tener en cuenta", **c_styles.TEXT_STYLE["subtitle"],
+                                    margin_bottom=Size.DEFAULT.value),
                         rx.hstack(
                                 module3_table1(),
                                 margin_bottom=Size.DEFAULT.value
@@ -342,7 +344,8 @@ def module_3() -> rx.Component:
                         rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value, margin_bottom=Size.DEFAULT.value),
             
                         #resumen y conclusion
-                        rx.heading("Conclusión del Módulo 3: ", **c_styles.TEXT_STYLE["subtitle"]),
+                        rx.heading("Conclusión del Módulo 3: ", **c_styles.TEXT_STYLE["subtitle"],
+                                    margin_bottom=Size.DEFAULT.value),
             
                         #lista de resumen u conlcusion
                         rx.list.ordered(

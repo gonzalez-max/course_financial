@@ -21,7 +21,7 @@ STYLES_CHOICE_MODULES={
    "text_color" : "black",
     "width":"100%",
     "max_width":"100%",
-    "background" : "linear-gradient(180deg, rgba(2,4,45,1) 0%, rgba(254,138,206,1) 100%)",
+    "background" : "linear-gradient(180deg, rgba(2,4,45,1) 0%, rgba(136,75,111,1) 100%)",
     "display": "flex",
     "flex_direction": "column",
     "min_height":"100vh",
@@ -275,7 +275,7 @@ TEXT_STYLE = {
     "subtitle": {  # Para subtítulos o encabezados secundarios
         "font_size": "25px",
         "font_weight": "400",
-        "color": "#ffc246",
+        "color": "#ffa824",
         "text_align": "left",
         "font_family": "Roboto",
         "letter_spacing": "0.05em",  # Ajuste fino para mejor legibilidad
@@ -288,14 +288,13 @@ TEXT_STYLE = {
     "subseccion": {  # Para subtítulos o encabezados secundarios
         "font_size": "18px",
         "font_weight": "semibold",
-        "color": "#b67a00",
+        "color": "#8ad3ff",
         "text_align": "left",
     },
     
     "body": {  # Para párrafos o contenido de texto
         
         "color": "white",
-        #"text_align":"center",
         "word-wrap": "break-word",
         "line_height": "1.5",
         "letter_spacing" : "0.1em",
@@ -325,6 +324,33 @@ TEXT_STYLE = {
         },
     },
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 MOBILE_TABLET_STYLES = {

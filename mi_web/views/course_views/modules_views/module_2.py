@@ -230,7 +230,8 @@ def module_2() -> rx.Component:
                     rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value, margin_bottom=Size.DEFAULT.value),
       
                     #fin del modulo 2 conclusion y resumen
-                    rx.heading("Conclusión del Módulo 2: ", **c_styles.TEXT_STYLE["subtitle"]),
+                    rx.heading("Conclusión del Módulo 2: ", **c_styles.TEXT_STYLE["subtitle"],
+                               margin_bottom=Size.DEFAULT.value),
                     rx.list.ordered(
                       rx.list.item(rx.text.strong("Resumen:")," En este módulo exploramos los distintos instrumentos de inversión, "
                           "diferenciamos entre renta fija y renta variable, entendimos el funcionamiento de los Fondos Comunes"

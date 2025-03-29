@@ -1,5 +1,5 @@
 import reflex as rx
-from mi_web.components.general_components.nav_bar import navbar_dropdown
+from mi_web.components.course_components.links_course.course_navbar import navbar_course
 from mi_web.components.general_components.footer import footer
 from mi_web.styles.styles import Size as Size
 import mi_web.styles.styles as styles
@@ -19,12 +19,13 @@ from mi_web.styles.styles import Size as Size  # Ajusta la importación si c_sty
 
 def module_4() -> rx.Component:
     return rx.box(
-        navbar_dropdown(),
+        navbar_course(),
         rx.center( 
             rx.vstack(
                 rx.box(
                         #encabezado del modulo
-                        rx.heading("Módulo 4: Fundamentos del Análisis Técnico y Patrones", **c_styles.TEXT_STYLE["title"]),
+                        rx.heading("Módulo 4: Fundamentos del Análisis Técnico y Patrones", **c_styles.TEXT_STYLE["title"],
+                                   margin_top="35px"),
                     
                         #1. seccion el ciclo del precio
                         rx.heading("1. El Ciclo del Precio", **c_styles.TEXT_STYLE["subtitle"]),
@@ -74,7 +75,8 @@ def module_4() -> rx.Component:
                         rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value, margin_bottom=Size.DEFAULT.value),
                         
                         # seccion sentido comun en el analisis tecnico
-                        rx.heading("2. Sentido Común en el Análisis Técnico", **c_styles.TEXT_STYLE["subtitle"]),
+                        rx.heading("2. Sentido Común en el Análisis Técnico", **c_styles.TEXT_STYLE["subtitle"],
+                                    margin_bottom=Size.DEFAULT.value),
                         rx.text("Para realizar un análisis técnico preciso, se utilizan líneas de ", rx.text.strong("soporte y resistencia"),
                             ", las cuales son:", **c_styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
                     
@@ -101,7 +103,8 @@ def module_4() -> rx.Component:
                         rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value, margin_bottom=Size.DEFAULT.value),
                     
                         #seccion 3 el precio y su comportamiento
-                        rx.heading("3. El precio y su comportamiento", **c_styles.TEXT_STYLE["subtitle"]),
+                        rx.heading("3. El precio y su comportamiento", **c_styles.TEXT_STYLE["subtitle"],
+                                   margin_bottom=Size.DEFAULT.value),
                     
                         rx.heading(" Líneas de precio (Soporte y Resistencia)",
                                **c_styles.TEXT_STYLE["subseccion"]),
@@ -168,7 +171,8 @@ def module_4() -> rx.Component:
                         rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value, margin_bottom=Size.DEFAULT.value),
                         
                         #resumen y conclucion
-                        rx.heading("Conclusión del Módulo 4: ", **c_styles.TEXT_STYLE["subtitle"]),
+                        rx.heading("Conclusión del Módulo 4: ", **c_styles.TEXT_STYLE["subtitle"],
+                                    margin_bottom=Size.DEFAULT.value),
                         #lista de resumen u conlcusion
                         rx.list.ordered(
                                 rx.list.item(rx.text.strong(" Resumen:")," Aprendimos los fundamentos del análisis técnico: "
@@ -196,16 +200,18 @@ def module_4() -> rx.Component:
                 
                 #_____________________________________________________________________________________#   
                 ),
-                max_width="600px",
                 width="100%",
-                margin_y=Size.SMALL.value,
-                align_items="center",   
+                border_radius="10px",
+                align_items="center",
+                justify_content="center",
+                max_width="600px",
+                size="2"  
                 ),
         ),
         next_button("/module_5"),
         back_button("/module_3"),
         footer(),
-        background_color="black"
+        **c_styles.COURSE_STYLES
     )
 
 
