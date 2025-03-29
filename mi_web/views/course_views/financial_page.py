@@ -14,9 +14,13 @@ def financial_page() -> rx.Component:
         rx.center(
             rx.vstack(
                 financial_body(),
-            )
+            ),
+        max_width="600px",
+        width="100%",
+        border_radius="10px",
+        align_items="center",
         ),
         footer(),
-        **c_styles.COURSE_STYLES
+        **c_styles.STYLES_CHOICE_MODULES
         
     )

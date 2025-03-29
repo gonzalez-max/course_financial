@@ -141,6 +141,7 @@ def financial_body() -> rx.Component:
                 width="100%",
                 border_radius="10px",
                 align_items="center",
+                max_width="600px"
             ),
         ),
     ),

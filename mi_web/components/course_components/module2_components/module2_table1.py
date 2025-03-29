@@ -9,7 +9,7 @@ def module2_table1() -> rx.Component:
                                 rx.table.column_header_cell("Perfil"),
                                 rx.table.column_header_cell("Características"),
                                 rx.table.column_header_cell("Tipos de inversión recomendados"),
-                                background__color="orange"
+                                background__color="#2d5986"
                             ),
                         ),
                         rx.table.body(

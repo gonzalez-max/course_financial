@@ -3,33 +3,35 @@
 COURSE_STYLES = {
     "text_color" : "black",
     "width":"100%",
-    "background" : "linear-gradient(180deg, rgba(2,4,45,1) 0%, rgba(254,138,206,1) 100%)",
-    "display": "flex",
+    "background" : "linear-gradient(180deg, rgba(55,49,69,1) 0%, rgba(0,0,0,1) 100%)",
     "flex_direction": "column",
     "min_height":"100vh",
-    "justify_content": "space-between",
     "display": "flex",
     "flex_wrap": "wrap",
     "justify_content": "center", 
-    "gap": "10px" ,
+    "gap": "5px" ,
     "align_items":"center",
-    "max_width":"1200px"
+    "padding_x": "20px",
+    "margin": "0 auto",
+    "max_width" :"100%"
     
 }
 #______________________CHOICE_MODULES_STYLE______________________________________________#
 STYLES_CHOICE_MODULES={
    "text_color" : "black",
     "width":"100%",
+    "max_width":"100%",
     "background" : "linear-gradient(180deg, rgba(2,4,45,1) 0%, rgba(254,138,206,1) 100%)",
     "display": "flex",
     "flex_direction": "column",
     "min_height":"100vh",
-    "justify_content": "space-between",
-    "display": "flex",
+    #"justify_content": "space-between",
     "flex_wrap": "wrap",
     "justify_content": "center", 
     "gap": "10px" ,
     "align_items":"center",
+    "padding_x": "20px",
+    "margin": "0 auto"
 }
 
 
@@ -131,6 +133,7 @@ BUTTON_COURSES_STYLES={
 COURSE_NAVBAR_STYLES={
     "width":"100%",
     "height":"40px",
+    "max_width":"100%",
     "background_color":"rgba(255, 255, 255, 0.5)", #color trasparente
     "padding": "1em",
     "z_index": "1000",
@@ -221,15 +224,19 @@ DRAWER_CONTENT_STYLE = {
 
 #_____________________TABLAS STYLES____________________________________#
 TABLES_STYLES={
-    "background_color": "#99003d",
-    "color": "#333333",
-    "border": "1px solid #ffffff",}
-                    
+    "background_color": "#002961",
+    "overflow_x":"auto",
+    "box_sizing": "border-box",
+    "color": "#3d5c5c",
+    "border": "1px solid #ffffff",
+}
+
+                 
 
 #________________IMAGEN STYLES_________________________________________#
 IMAGE_STYLES={
-    "width":"700px",
-    "max_width":"100%",
+    "width":"100%",
+    "max_width":"600px",
     "max_height":"400px",
     #"height":"auto",  # Se ajusta automáticamente
     "object_fit":"cover",  # Evita deformaciones
@@ -237,9 +244,9 @@ IMAGE_STYLES={
     "color": "#333333",
     "border": "1px solid white", #color de bordes normales
     "border_radius": "20px", #forma de los bordes
-    "box_shadow":"0px 0px 10px black",#efecto a los bordes
     "cursor": "pointer",  # Indica que la imagen es clickeable
     "transition": "transform 0.2s ease-in-out",  # Suaviza el efecto
+    #"margin_top":"1em",
     "_hover": {
         "background_color": "#800080",  # Azul más oscuro en hover
         "border_color": "#6366F1",  # Bordes visibles en hover
@@ -259,20 +266,21 @@ TEXT_STYLE = {
         "align_items":"center",
         "padding": "17px",
         "letter_spacing": "0.07em",  # Ajuste fino para mejor legibilidad
-        "max_width": "60%",  # Evita que el título sea demasiado ancho en pantallas pequeñas
+        "width": "100%",
+        "max_width":"600px",
         "margin": "auto",  # Centra el título dentro de su contenedor
         "line_height": "1.2",  # Mejora la legibilidad en varias líneas
         "font_family":"Roboto",
     },
     "subtitle": {  # Para subtítulos o encabezados secundarios
         "font_size": "25px",
-        "font_weight": "300",
-        "color": "#FFC75F",
+        "font_weight": "400",
+        "color": "#ffc246",
         "text_align": "left",
-        "margin_bottom": "10px",
         "font_family": "Roboto",
         "letter_spacing": "0.05em",  # Ajuste fino para mejor legibilidad
-        "max_width": "60%",  # Evita que el título sea demasiado ancho en pantallas pequeñas
+        "max_width": "600px", # Evita que el título sea demasiado ancho en pantallas pequeñas
+        "width":"100%",
         "margin": "auto",  # Centra el título dentro de su contenedor
         "line_height": "1.2", 
     },
@@ -280,14 +288,14 @@ TEXT_STYLE = {
     "subseccion": {  # Para subtítulos o encabezados secundarios
         "font_size": "18px",
         "font_weight": "semibold",
-        "color": "#b37400",
+        "color": "#b67a00",
         "text_align": "left",
     },
     
     "body": {  # Para párrafos o contenido de texto
         
         "color": "white",
-        "align_text":"center",
+        #"text_align":"center",
         "word-wrap": "break-word",
         "line_height": "1.5",
         "letter_spacing" : "0.1em",
@@ -315,5 +323,50 @@ TEXT_STYLE = {
             "color": "darkblue",
             "text_decoration": "none",
         },
+    },
+}
+
+
+MOBILE_TABLET_STYLES = {
+    "body": {
+        "font_size": "clamp(12px, 4vw, 16px)",  # Se adapta mejor a pantallas pequeñas
+        "max_width": "95%",  # Usa casi todo el ancho disponible en móviles
+        "padding": "15px",  # Aumenta el padding para mejor lectura
+        "line_height": "1.7",  # Facilita la lectura en dispositivos pequeños
+    },
+    
+    "container": {
+        "display": "flex",
+        "flex_direction": "column",
+        "align_items": "center",
+        "justify_content": "center",
+        "padding": "10px",
+        "width": "100%",
+    },
+    
+    "header": {
+        "font_size": "clamp(16px, 5vw, 24px)",  # Ajusta títulos para pantallas pequeñas
+        "text_align": "center",
+        "padding": "10px 0",
+    },
+
+    "tables": {
+        "width": "100%",
+        "overflow_x": "auto",  # Permite hacer scroll horizontal en tablas grandes
+        "display": "block",
+        "white_space": "nowrap",
+    },
+    
+    "buttons": {
+        "width": "90%",  # Los botones ocupan más espacio en pantallas táctiles
+        "padding": "12px",
+        "font_size": "clamp(14px, 4vw, 18px)",
+        "border_radius": "8px",  # Bordes redondeados para mejor apariencia en móviles
+    },
+
+    "images": {
+        "max_width": "100%",
+        "height": "auto",
+        "border_radius": "10px",
     },
 }

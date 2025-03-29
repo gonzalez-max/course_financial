@@ -8,7 +8,7 @@ def module3_table1() -> rx.Component:
                             rx.table.row(
                                 rx.table.column_header_cell("Tip"),
                                 rx.table.column_header_cell("Descripción"),
-                                background__color="orange"
+                                background__color="#2d5986"
                             ),
                         ),
                         rx.table.body(

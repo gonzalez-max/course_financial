@@ -34,7 +34,7 @@ CARD_STYLES={
         "as_child":True,
         "flex_wrap":"wrap",
         "transition": "transform 0.5s ease-in-out",
-        "background_color": "rgba(155, 155, 155, 0.7)",
+        "background_color": "rgba(255, 255, 255, 0.5)",
         "padding":"20px",
         "height": "auto",
         "width": ["100%", "48%", "31%"],

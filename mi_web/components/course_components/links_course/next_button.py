@@ -5,14 +5,16 @@ def next_button(next_url: str) -> rx.Component:
         rx.button(
             "Siguiente →",
             on_click=lambda: rx.redirect(next_url),  # Redirige a la siguiente página
-            background_color="#ff3333",
-            color="white",
+            background_color="white",
+            color="black",
             padding="10px 20px",
-            border_radius="8px",
-            _hover={"background_color": "#cc0000"},
+            border_radius="50px",
             transition="all 0.3s ease-in-out",
-            box_shadow= "0px 4px 10px rgba(79, 70, 229, 0.3)",
-            border= "#6366F1",# Cambio de color al pasar el mouse
+            #border= "2px solid #e28cac",# Cambio de color al pasar el mouse
+            _hover={"background_color": "black",
+                    "color":"white",
+                    "box_shadow":"0px 4px 10px rgba(0, 0, 0, 1)",
+                    "transform": "scale(1.05)"},
         ),
         position="fixed",
         bottom="20px",  # Siempre al final de la pantalla

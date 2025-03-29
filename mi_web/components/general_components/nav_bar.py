@@ -54,7 +54,7 @@ def navbar_dropdown() -> rx.Component:
                     ), #cierre del tooltip
                     href="/#",
                     style={"text_decoration": "none"}
-                    ,),
+                    ),
                     align_items="center",
                 ),
                 rx.hstack(

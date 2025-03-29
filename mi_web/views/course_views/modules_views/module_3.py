@@ -1,15 +1,13 @@
 import reflex as rx 
-from mi_web.components.general_components.nav_bar import navbar_dropdown
+from mi_web.components.course_components.links_course.course_navbar import navbar_course
 from mi_web.components.general_components.footer import footer
 from mi_web.styles.styles import Size as Size
 import mi_web.styles.styles as styles
 import mi_web.styles.course_styles as c_styles
-from mi_web.components.general_components.drawer import drawer
 from mi_web.components.general_components.zoom_images import zoomed_image
 from mi_web.components.course_components.module3_components.module3_table1 import module3_table1
 from mi_web.components.course_components.links_course.next_button import next_button
 from mi_web.components.course_components.links_course.back_button import back_button
-from mi_web.components.general_components.imagenes.image_despedida import image_despedida
 
 
 
@@ -19,13 +17,14 @@ from mi_web.styles.styles import Size as Size  # Ajusta la importación si c_sty
 
 def module_3() -> rx.Component:
     return rx.box(
-      navbar_dropdown(),
-      drawer(),
+      navbar_course(),
       rx.center(
         rx.vstack(
                 rx.box(
                         #Encabezado del modulo
-                        rx.heading("Módulo 3: Introducción al Trading", **c_styles.TEXT_STYLE["title"]),
+                        rx.heading("Módulo 3: Introducción al Trading",
+                                   **c_styles.TEXT_STYLE["title"],
+                                   margin_top="35px"),
             
                         #seccion 1: ¿que es el trading?
                         rx.heading("1. ¿Qué es el trading? ", **c_styles.TEXT_STYLE["subtitle"]), 
@@ -122,7 +121,8 @@ def module_3() -> rx.Component:
                                 **c_styles.TEXT_STYLE["body"]),
             
                         #Aspectos clave     
-                        rx.heading("Aspectos clave:", **c_styles.TEXT_STYLE["subseccion"]),
+                        rx.heading("Aspectos clave:", **c_styles.TEXT_STYLE["subseccion"],
+                                   margin_button=Size.MEDIUM.value),
                         #lista de aspectos clave
                         rx.list.ordered(
                                 rx.list.item(rx.text.strong(" Acción del precio:")," Cómo se mueve el precio en el tiempo."
@@ -137,7 +137,7 @@ def module_3() -> rx.Component:
                                         "la toma de decisiones.", margin_bottom=Size.DEFAULT.value),
                                 list_style_type="disc",
                                 color="white",
-                                margin_bottom=Size.DEFAULT.value,
+                                margin_top=Size.SMALL.value,
                         ),
                         
                         
@@ -164,13 +164,17 @@ def module_3() -> rx.Component:
                         
                         
                         #estructura de las velas
-                        rx.heading("Estructura de una vela japonesa", **c_styles.TEXT_STYLE["subseccion"]),
-                        rx.text("Cada vela está compuesta por:", **c_styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
-                        rx.text(rx.text.strong("1. Cuerpo:")," Diferencia entre el precio de apertura y cierre.", **c_styles.TEXT_STYLE["body"], 
-                                 margin_bottom=Size.DEFAULT.value),
-                        rx.text(rx.text.strong("2. Mecha o sombra:")," Representa los precios máximo y mínimo alcanzados.", **c_styles.TEXT_STYLE["body"], 
-                                margin_bottom=Size.DEFAULT.value),
-                        rx.text(rx.text.strong("3. Color:"), **c_styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),            
+                        rx.heading("Estructura de una vela japonesa",**c_styles.TEXT_STYLE["subseccion"]),
+                        rx.text("Cada vela está compuesta por:", **c_styles.TEXT_STYLE["body"],
+                                ),
+                        rx.text(rx.text.strong("1. Cuerpo:")," Diferencia entre el precio de apertura y cierre.",
+                                **c_styles.TEXT_STYLE["body"], 
+                                 margin_bottom=Size.SMALL.value),
+                        rx.text(rx.text.strong("2. Mecha o sombra:")," Representa los precios máximo y mínimo alcanzados.",
+                                **c_styles.TEXT_STYLE["body"], 
+                                margin_bottom=Size.SMALL.value),
+                        rx.text(rx.text.strong("3. Color:"), **c_styles.TEXT_STYLE["body"],
+                                margin_bottom=Size.SMALL.value),            
                         
                         # lista de colores
                         rx.list.ordered(
@@ -358,22 +362,24 @@ def module_3() -> rx.Component:
                                 margin_bottom=Size.DEFAULT.value,
                         ),
                         rx.hstack(
-                                image_despedida(),
+                                
                                 align_items="center",
                                 justify="center"
                         ),
       
                 #_______________________________________________________________________________________________#
                 ),
-                max_width="600px",
                 width="100%",
-                margin_y=Size.SMALL.value,
+                border_radius="10px",
                 align_items="center",
+                justify_content="center",
+                max_width="600px",
+                size="2"
                 ),
         ),
         next_button("/module_4"),
         back_button("/module_2"),
     
         footer(),
-        background_color="black"
+        **c_styles.COURSE_STYLES
     )

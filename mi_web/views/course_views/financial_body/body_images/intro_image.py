@@ -18,4 +18,6 @@ def intro_image() -> rx.Component:
             
         align_items="center",
         justify_content="center",
+        max_width="600px",
+        width="100%",
     )

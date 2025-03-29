@@ -19,16 +19,16 @@ def saving_bar():
         # Eje X (meses)
         rx.recharts.x_axis(
             data_key="name",
-            stroke=rx.color("mauve", 1)
+            stroke=rx.color("mauve", 11)
         ),
         # Eje Y (valores)
         rx.recharts.y_axis(
-            stroke=rx.color("yellow", 1),
+            stroke=rx.color("mauve", 11),
             name="Ahorro ($)"
         ),
         # Grilla de fondo
         rx.recharts.cartesian_grid(
-            stroke=rx.color("yellow", 1),
+            stroke=rx.color("mauve", 7),
             stroke_dasharray="3 3"
         ),
         # Tooltip para interactividad
@@ -42,5 +42,6 @@ def saving_bar():
         # Configuración general
         data=data,
         width="100%",
+        max_width="600px",
         height=300,
     )

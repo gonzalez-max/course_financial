@@ -1,28 +1,26 @@
 import reflex as rx 
-from mi_web.components.general_components.nav_bar import navbar_dropdown
+from mi_web.components.course_components.links_course.course_navbar import navbar_course
 from mi_web.components.general_components.footer import footer
 from mi_web.styles.styles import Size as Size
 import mi_web.styles.styles as styles
 import mi_web.styles.course_styles as c_styles
-from mi_web.components.general_components.drawer import drawer
 from mi_web.components.course_components.module2_components.module2_table1 import module2_table1
 from mi_web.components.course_components.module2_components.module2_table2 import module2_table2
 from mi_web.components.course_components.links_course.next_button import next_button
 from mi_web.components.course_components.links_course.back_button import back_button
 from mi_web.components.general_components.zoom_images import zoomed_image
-from mi_web.components.general_components.imagenes.image_despedida import image_despedida
 
 
 def module_2() -> rx.Component:
     return rx.box(
-        navbar_dropdown(),
-        drawer(),
+        navbar_course(),
         rx.center( 
             rx.vstack(
                 rx.box(
                     #encabezado del modulo 2 tipos de inversores e intrumentos
                     rx.heading("Módulo 2: Tipos de Inversores e Instrumentos de inversion",
-                    **c_styles.TEXT_STYLE["title"]),
+                               **c_styles.TEXT_STYLE["title"],
+                               margin_top="35px"),
      
                     #seccion 1 tipos de inversores
                     rx.heading("1. Tipos de Inversores y Cómo Identificar el Tuyo", **c_styles.TEXT_STYLE["subtitle"]),
@@ -250,15 +248,16 @@ def module_2() -> rx.Component:
       
                 ),
                 #_____________________________________________________________________________________#
-                max_width="600px",
-                width="100%",
-                margin_y=Size.SMALL.value,
+                 width="100%",
+                border_radius="10px",
                 align_items="center",
+                justify_content="center",
+                max_width="600px",
+                size="2"
               )
             ),
-        image_despedida(),
         next_button("/module_3"),
         back_button("/module_1"),
         footer(),
-        background_color="black"
+        **c_styles.COURSE_STYLES
     )

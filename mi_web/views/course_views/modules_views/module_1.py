@@ -4,27 +4,26 @@ from mi_web.components.general_components.footer import footer
 from mi_web.styles.styles import Size as Size
 import mi_web.styles.course_styles as c_styles
 import mi_web.styles.styles as styles
-from mi_web.components.general_components.drawer import drawer
 from mi_web.components.course_components.module1_components.saving_bar import saving_bar
 from mi_web.components.course_components.module1_components.table1_module1 import table1_module1
+from mi_web.components.course_components.module1_components.table1_module1 import mobile_table1_module1
+from mi_web.components.course_components.module1_components.table2_module1 import mobile_table2_module1
 from mi_web.components.course_components.module1_components.table2_module1 import table2_module1
 from mi_web.components.course_components.links_course.next_button import next_button
 from mi_web.components.course_components.links_course.back_button import back_button
 from mi_web.components.general_components.zoom_images import zoomed_image
-from mi_web.components.general_components.imagenes.image_despedida import image_despedida
-
 
 def module_1() -> rx.Component:
     return rx.box(
         navbar_course(),
-        drawer(),
         rx.center( 
             rx.vstack(
                 rx.box(
                     #Encabezado del módulo
                     rx.heading("Módulo 1: Fundamentos de Finanzas Personales y Mercado Financiero",
-                               **c_styles.TEXT_STYLE["title"],
-                               margin_top="35px"),
+                            **c_styles.TEXT_STYLE["title"],
+                            margin_top="35px"
+                        ),
                     
                     #Sección 1: ¿Qué son las finanzas?
                     rx.heading("1. ¿Qué son las finanzas?", **c_styles.TEXT_STYLE["subtitle"]),
@@ -49,6 +48,7 @@ def module_1() -> rx.Component:
                         list_style_type="disc",
                         color="white",
                         margin_bottom=Size.DEFAULT.value,
+                        margin_top=Size.DEFAULT.value
                     ),
 
                     #Cuentas patrimoniales
@@ -57,16 +57,21 @@ def module_1() -> rx.Component:
                     #Tabla con explicaciones de los conceptos financieros
                     rx.vstack(
                         table1_module1(),
-                        margin_bottom=Size.DEFAULT.value),
+                        mobile_table1_module1(),
+                        margin_bottom=Size.DEFAULT.value,
+                        margin_top=Size.DEFAULT.value,
+                    ),
                 
                     rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value,margin_bottom=Size.DEFAULT.value),
                 
                     # Seccion 3 El Ahorro
-                    rx.heading("3. El ahorro", **c_styles.TEXT_STYLE["subtitle"]),
+                    rx.heading("3. El ahorro", **c_styles.TEXT_STYLE["subtitle"],
+                               margin_bottom=Size.DEFAULT.value),
                     #imagen alcancia 
                     rx.hstack(
                         zoomed_image("/el_ahorro.jpg?refresh=1"),
                         margin_bottom=Size.DEFAULT.value
+                       
                     ),
                 
                     rx.text("Este hábito no solo te ayudará a construir un fondo de emergencia, sino que también te permitirá"
@@ -99,7 +104,8 @@ def module_1() -> rx.Component:
                     rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value,margin_bottom=Size.DEFAULT.value),
                 
                     #seccion 4 Identificacion de Gastos
-                    rx.heading("4. Identificacion de Gastos", **c_styles.TEXT_STYLE["subtitle"]),
+                    rx.heading("4. Identificacion de Gastos", **c_styles.TEXT_STYLE["subtitle"],
+                               margin_bottom=Size.DEFAULT.value),
                     
                     #imagen identificacion gastos
                     rx.hstack(
@@ -173,9 +179,10 @@ def module_1() -> rx.Component:
                     rx.text("Para comprender mejor la gestión financiera y la toma de decisiones económicas,"
                         " es fundamental conocer estos conceptos clave:", **c_styles.TEXT_STYLE["body"]),
                     #tabla conceptos financieros
-                    rx.vstack(
+                    rx.box(
                         table2_module1(),
-                        margin_bottom=Size.DEFAULT.value
+                        mobile_table2_module1(),
+                        margin_bottom=Size.DEFAULT.value,
                         ),
                 
                     rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value,margin_bottom=Size.DEFAULT.value),
@@ -197,9 +204,14 @@ def module_1() -> rx.Component:
                     ),                
                 ),
                 #_____________________________________________________________________________________#
+                width="100%",
+                border_radius="10px",
+                align_items="center",
+                justify_content="center",
+                max_width="600px",
+                size="2"
             )
-        ),
-        image_despedida(),         
+        ),       
         next_button("/module_2"),
         footer(),
         **c_styles.COURSE_STYLES

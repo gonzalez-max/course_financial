@@ -10,7 +10,7 @@ def module2_table2() -> rx.Component:
                                 rx.table.column_header_cell("Caracteristica"),
                                 rx.table.column_header_cell("Renta Fija"),
                                 rx.table.column_header_cell("Renta Variable"),
-                                background__color="orange"
+                                background__color="#2d5986"
                             ),
                         ),
                         rx.table.body(

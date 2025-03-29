@@ -4,11 +4,10 @@ from mi_web.components.general_components.footer import footer
 from mi_web.styles.styles import Size as Size
 import mi_web.styles.styles as styles
 import mi_web.styles.course_styles as c_styles
-from mi_web.components.general_components.drawer import drawer
 from mi_web.components.course_components.links_course.next_button import next_button
 from mi_web.components.course_components.links_course.back_button import back_button
 from mi_web.components.general_components.zoom_images import zoomed_image
-from mi_web.components.general_components.imagenes.image_despedida import image_despedida
+
 
 
 import reflex as rx
@@ -17,7 +16,6 @@ from mi_web.styles.styles import Size as Size  # Ajusta la importación si c_sty
 def module_6() -> rx.Component:
     return rx.box(
         navbar_dropdown(),
-        drawer(),
         rx.center( 
             rx.vstack(
                 rx.box(
@@ -243,7 +241,6 @@ def module_6() -> rx.Component:
                                 margin_bottom=Size.DEFAULT.value,
                                 ),
                         rx.hstack(
-                                image_despedida(),
                                 align_items="center",
                                 justify="center"
                         ),
