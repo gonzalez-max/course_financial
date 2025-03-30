@@ -20,7 +20,7 @@ def module_1() -> rx.Component:
             rx.vstack(
                 rx.box(
                     #Encabezado del módulo
-                    rx.heading("Módulo 1: Fundamentos de Finanzas Personales y Mercado Financiero",
+                    rx.heading("Módulo 1: Fundamentos de Finanzas Personales y el Mercado",
                             **c_styles.TEXT_STYLE["title"],
                             margin_top="35px"
                         ),

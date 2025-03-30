@@ -143,7 +143,7 @@ COURSE_NAVBAR_STYLES={
     "justify_content": "center",
     "display": "flex",
     "top":"0px",
-    "align_items":"center"
+    "align_items":"center",
 }
 
 COURSE_NAVBAR_FONTS={
