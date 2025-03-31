@@ -17,24 +17,41 @@ import NextHead from "next/head"
 
 
 
-export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
+export function Button_4617ba278d522417b2b7277e1d77c755 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
+  const on_click_faf29b6728fc7b0a1decc8f1fa76ef77 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_2", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
 
   
   return (
-    <div css={({ ["position"] : "fixed", ["width"] : "100vw", ["height"] : "0" })} title={("Connection Error: "+((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : ''))}>
+    <RadixThemesButton css={({ ["backgroundColor"] : "black", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "white", ["color"] : "black", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) })} onClick={on_click_faf29b6728fc7b0a1decc8f1fa76ef77}>
 
-<Fragment_c179379f847dbcf00ba21f73b0ad1b3d/>
-</div>
+{"\u2190 Atr\u00e1s"}
+</RadixThemesButton>
   )
 }
 
-export function Errorboundary_acb3b72c9b8489a99a91f3373be9e026 () {
+export function Img_1dc145e38a4a77bada704003b0548d02 () {
+  
+  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_bd5dfb31d3782427c73d08de247645b4 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <img css={({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })} onClick={on_click_bd5dfb31d3782427c73d08de247645b4} src={reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src}/>
+  )
+}
+
+export function Errorboundary_400de004dbcdf317a99d8776dd0ad861 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
@@ -52,7 +69,7 @@ export function Errorboundary_acb3b72c9b8489a99a91f3373be9e026 () {
 <Div_0c4c0d922d990c245023c72baae2d5e1/>
 <Toaster_6e6ebf8d7ce589d59b7d382fb7576edf/>
 </Fragment>
-<RadixThemesBox css={({ ["textColor"] : "black", ["width"] : "100%", ["background"] : "linear-gradient(180deg, rgba(55,49,69,1) 0%, rgba(0,0,0,1) 100%)", ["flexDirection"] : "column", ["minHeight"] : "100vh", ["display"] : "flex", ["flexWrap"] : "wrap", ["justifyContent"] : "center", ["gap"] : "5px", ["alignItems"] : "center", ["paddingInlineStart"] : "20px", ["paddingInlineEnd"] : "20px", ["margin"] : "0 auto", ["maxWidth"] : "100%" })}>
+<RadixThemesBox css={({ ["textColor"] : "black", ["width"] : "100%", ["background"] : "linear-gradient(180deg, rgba(74,34,98,1) 0%, rgba(71,85,139,1) 52%, rgba(11,103,93,1) 100%)", ["flexDirection"] : "column", ["minHeight"] : "100vh", ["display"] : "flex", ["flexWrap"] : "wrap", ["justifyContent"] : "center", ["gap"] : "5px", ["alignItems"] : "center", ["paddingInlineStart"] : "20px", ["paddingInlineEnd"] : "20px", ["margin"] : "0 auto", ["maxWidth"] : "100%" })}>
 
 <RadixThemesBox css={({ ["width"] : "100%", ["height"] : "40px", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.5)", ["padding"] : "1em", ["zIndex"] : "1000", ["position"] : "fixed", ["boxShadow"] : "0 1px 3px rgba(0, 0, 0, 0.1)", ["backdropFilter"] : "blur(10px)", ["justifyContent"] : "center", ["display"] : "flex", ["top"] : "0px", ["alignItems"] : "center" })}>
 
@@ -94,13 +111,13 @@ export function Errorboundary_acb3b72c9b8489a99a91f3373be9e026 () {
 </NextLink>
 </RadixThemesLink>
 </RadixThemesHoverCard.Trigger>
-<RadixThemesHoverCard.Content css={({ ["padding"] : "2", ["borderRadius"] : "md", ["boxShadow"] : "md", ["background"] : "rgba(255, 255, 255, 0.6)", ["backdropFilter"] : "blur(10px)", ["transition"] : "transform 0.3s ease-out, opacity 0.3s ease-out", ["transform"] : "translateY(-10px)" })}>
+<RadixThemesHoverCard.Content css={({ ["padding"] : "2", ["borderRadius"] : "md", ["border"] : "1.5px solid darkgray", ["boxShadow"] : "md", ["background"] : "rgba(255, 255, 255, 0.5)", ["backdropFilter"] : "blur(10px)", ["transition"] : "transform 0.3s ease-out, opacity 0.3s ease-out", ["transform"] : "translateY(-10px)" })}>
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"2"}>
 
-<RadixThemesText as={"p"} css={({ ["color"] : "black" })} weight={"bold"}>
+<RadixThemesText as={"p"} css={({ ["color"] : "#ffa824", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica" })} weight={"bold"}>
 
-{"M\u00f3dulos del curso: "}
+{"M\u00f3dulos del curso "}
 </RadixThemesText>
 <RadixThemesLink asChild={true} css={({ ["color"] : "black", ["fontFamily"] : "Arial", ["--default-font-family"] : "Arial", ["&:hover"] : ({ ["color"] : "white" }), ["transition"] : "color 0.3s ease", ["justifyContent"] : "center", ["width"] : "100%" })} size={"3"} weight={"regular"}>
 
@@ -196,11 +213,11 @@ export function Errorboundary_acb3b72c9b8489a99a91f3373be9e026 () {
 <Img_0b82476f3ea7e22d4a7d54d5744b561b/>
 <RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
 
-<NextLink href={"/#"} passHref={true}>
+<NextLink href={"/financial_page"} passHref={true}>
 
 <RadixThemesHeading css={({ ["color"] : "black", ["fontFamily"] : "Arial", ["--default-font-family"] : "Arial", ["&:hover"] : ({ ["color"] : "white" }), ["transition"] : "color 0.3s ease", ["justifyContent"] : "center", ["width"] : "100%" })} size={"3"} weight={"regular"}>
 
-{"Maximiliano Gonzalez"}
+{"Inicio"}
 </RadixThemesHeading>
 </NextLink>
 </RadixThemesLink>
@@ -213,11 +230,8 @@ export function Errorboundary_acb3b72c9b8489a99a91f3373be9e026 () {
 </RadixThemesDropdownMenu.Trigger>
 <RadixThemesDropdownMenu.Content>
 
-<Dropdownmenu__item_a4b79031cd0a0aaab6615a386df7fd1f/>
-<Dropdownmenu__item_b0a6762496b52f8de3428cdb0d180c40/>
-<Dropdownmenu__item_805d39b1c52b513f75607c1af876ccf1/>
-<Dropdownmenu__item_3fd85d1c496f90f503c334d46bc5c7cb/>
-<Dropdownmenu__item_66413e06b9057c7cc3f9dbd728fbbfbf/>
+<Dropdownmenu__item_bab67f5e89dd620a8f08fe00942058f5/>
+<Dropdownmenu__item_f5601b3f02dbc23bf8da1fc3302d2108/>
 </RadixThemesDropdownMenu.Content>
 </RadixThemesDropdownMenu.Root>
 </RadixThemesFlex>
@@ -1018,19 +1032,39 @@ export function Errorboundary_acb3b72c9b8489a99a91f3373be9e026 () {
   )
 }
 
-export function Img_0b82476f3ea7e22d4a7d54d5744b561b () {
+export function Button_d6aadee990aeedfeb04bd56762bda79d () {
   
-  const reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state)
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_f2425d612b9e4477d8552ff062cbbc10 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___course_components___links_course___course_navbar____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+  const on_click_08b7789e3faf18ddcedc3d0f700af8da = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_4", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
 
   
   return (
-    <img css={({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" })} onClick={on_click_f2425d612b9e4477d8552ff062cbbc10} src={reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state.logo_src}/>
+    <RadixThemesButton css={({ ["backgroundColor"] : "white", ["color"] : "black", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "black", ["color"] : "white", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) })} onClick={on_click_08b7789e3faf18ddcedc3d0f700af8da}>
+
+{"Siguiente \u2192"}
+</RadixThemesButton>
+  )
+}
+
+export function Tooltip_6525ba879cedca0bf213d67734a8d425 () {
+  
+  const reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    <RadixThemesTooltip content={"No me toques."}>
+
+<img css={({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })} onClick={((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___course_components___links_course___course_navbar____logo_state.increment_click", ({  }), ({  })))], args, ({  }))))} src={reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state.logo_src}/>
+</RadixThemesTooltip>
   )
 }
 
@@ -1067,42 +1101,6 @@ export function Toaster_6e6ebf8d7ce589d59b7d382fb7576edf () {
   )
 }
 
-export function Dropdownmenu__item_a4b79031cd0a0aaab6615a386df7fd1f () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_878b59ed445e335ab3312bf6ae65b075 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/financial_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <RadixThemesDropdownMenu.Item onClick={on_click_878b59ed445e335ab3312bf6ae65b075}>
-
-{"Proyecto"}
-</RadixThemesDropdownMenu.Item>
-  )
-}
-
-export function Dropdownmenu__item_66413e06b9057c7cc3f9dbd728fbbfbf () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_35670cf8dbb228f4b5bd4e8ba107cf87 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/modulo_3", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <RadixThemesDropdownMenu.Item onClick={on_click_35670cf8dbb228f4b5bd4e8ba107cf87}>
-
-{"M\u00f3dulo 3"}
-</RadixThemesDropdownMenu.Item>
-  )
-}
-
 export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -1127,22 +1125,6 @@ export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
   )
 }
 
-export function Img_1dc145e38a4a77bada704003b0548d02 () {
-  
-  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_bd5dfb31d3782427c73d08de247645b4 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <img css={({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })} onClick={on_click_bd5dfb31d3782427c73d08de247645b4} src={reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src}/>
-  )
-}
-
 const pulse = keyframes`
     0% {
         opacity: 0;
@@ -1153,61 +1135,42 @@ const pulse = keyframes`
 `
 
 
-export function Dropdownmenu__item_805d39b1c52b513f75607c1af876ccf1 () {
+export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_436f10b0441df260272984ea23cf736e = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/modulo_1", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
 
   
   return (
-    <RadixThemesDropdownMenu.Item onClick={on_click_436f10b0441df260272984ea23cf736e}>
+    <div css={({ ["position"] : "fixed", ["width"] : "100vw", ["height"] : "0" })} title={("Connection Error: "+((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : ''))}>
 
-{"M\u00f3dulo 1"}
+<Fragment_c179379f847dbcf00ba21f73b0ad1b3d/>
+</div>
+  )
+}
+
+export function Dropdownmenu__item_bab67f5e89dd620a8f08fe00942058f5 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_e1787349f6d52d1b453713c488641ba5 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/choice_modules", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <RadixThemesDropdownMenu.Item onClick={on_click_e1787349f6d52d1b453713c488641ba5}>
+
+{"Curso"}
 </RadixThemesDropdownMenu.Item>
   )
 }
 
-export function Tooltip_6525ba879cedca0bf213d67734a8d425 () {
-  
-  const reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    <RadixThemesTooltip content={"No me toques."}>
-
-<img css={({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })} onClick={((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___course_components___links_course___course_navbar____logo_state.increment_click", ({  }), ({  })))], args, ({  }))))} src={reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state.logo_src}/>
-</RadixThemesTooltip>
-  )
-}
-
-export function Button_d6aadee990aeedfeb04bd56762bda79d () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_08b7789e3faf18ddcedc3d0f700af8da = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_4", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <RadixThemesButton css={({ ["backgroundColor"] : "white", ["color"] : "black", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "black", ["color"] : "white", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) })} onClick={on_click_08b7789e3faf18ddcedc3d0f700af8da}>
-
-{"Siguiente \u2192"}
-</RadixThemesButton>
-  )
-}
-
-export function Dropdownmenu__item_b0a6762496b52f8de3428cdb0d180c40 () {
+export function Dropdownmenu__item_f5601b3f02dbc23bf8da1fc3302d2108 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
@@ -1220,44 +1183,24 @@ export function Dropdownmenu__item_b0a6762496b52f8de3428cdb0d180c40 () {
   return (
     <RadixThemesDropdownMenu.Item onClick={on_click_7dc200586272c1bbcd7f51ea48788135}>
 
-{"Contacto"}
+{"Contactos"}
 </RadixThemesDropdownMenu.Item>
   )
 }
 
-export function Button_4617ba278d522417b2b7277e1d77c755 () {
+export function Img_0b82476f3ea7e22d4a7d54d5744b561b () {
   
+  const reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state)
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_faf29b6728fc7b0a1decc8f1fa76ef77 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_2", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+  const on_click_f2425d612b9e4477d8552ff062cbbc10 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___course_components___links_course___course_navbar____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
 
   
   return (
-    <RadixThemesButton css={({ ["backgroundColor"] : "black", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "white", ["color"] : "black", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) })} onClick={on_click_faf29b6728fc7b0a1decc8f1fa76ef77}>
-
-{"\u2190 Atr\u00e1s"}
-</RadixThemesButton>
-  )
-}
-
-export function Dropdownmenu__item_3fd85d1c496f90f503c334d46bc5c7cb () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_0656ab8ead391332d9733db252c373ec = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/modulo_2", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <RadixThemesDropdownMenu.Item onClick={on_click_0656ab8ead391332d9733db252c373ec}>
-
-{"M\u00f3dulo 2"}
-</RadixThemesDropdownMenu.Item>
+    <img css={({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" })} onClick={on_click_f2425d612b9e4477d8552ff062cbbc10} src={reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state.logo_src}/>
   )
 }
 
@@ -1268,6 +1211,6 @@ export default function Component() {
 
 
   return (
-    <Errorboundary_acb3b72c9b8489a99a91f3373be9e026/>
+    <Errorboundary_400de004dbcdf317a99d8776dd0ad861/>
   )
 }

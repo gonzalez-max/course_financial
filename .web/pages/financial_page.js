@@ -15,36 +15,37 @@ import NextHead from "next/head"
 
 
 
-export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
+export function Img_1dc145e38a4a77bada704003b0548d02 () {
   
+  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
+  const on_click_bd5dfb31d3782427c73d08de247645b4 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
 
   
   return (
-    <div css={({ ["position"] : "fixed", ["width"] : "100vw", ["height"] : "0" })} title={("Connection Error: "+((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : ''))}>
-
-<Fragment_c179379f847dbcf00ba21f73b0ad1b3d/>
-</div>
+    <img css={({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })} onClick={on_click_bd5dfb31d3782427c73d08de247645b4} src={reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src}/>
   )
 }
 
-export function Img_0b82476f3ea7e22d4a7d54d5744b561b () {
+export function Tooltip_6525ba879cedca0bf213d67734a8d425 () {
   
   const reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state)
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_f2425d612b9e4477d8552ff062cbbc10 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___course_components___links_course___course_navbar____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
 
   
   return (
-    <img css={({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" })} onClick={on_click_f2425d612b9e4477d8552ff062cbbc10} src={reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state.logo_src}/>
+    <RadixThemesTooltip content={"No me toques."}>
+
+<img css={({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })} onClick={((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___course_components___links_course___course_navbar____logo_state.increment_click", ({  }), ({  })))], args, ({  }))))} src={reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state.logo_src}/>
+</RadixThemesTooltip>
   )
 }
 
@@ -81,39 +82,25 @@ export function Toaster_6e6ebf8d7ce589d59b7d382fb7576edf () {
   )
 }
 
-export function Dropdownmenu__item_a4b79031cd0a0aaab6615a386df7fd1f () {
+export function Link_ea1200d04e81431798597a10ffe0ce8d () {
   
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_878b59ed445e335ab3312bf6ae65b075 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/financial_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
 
   
   return (
-    <RadixThemesDropdownMenu.Item onClick={on_click_878b59ed445e335ab3312bf6ae65b075}>
+    <RadixThemesLink asChild={true} css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} target={(false ? "_blank" : "")}>
 
-{"Proyecto"}
-</RadixThemesDropdownMenu.Item>
-  )
-}
+<NextLink href={"/choice_modules"} passHref={true}>
 
-export function Dropdownmenu__item_66413e06b9057c7cc3f9dbd728fbbfbf () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
+<RadixThemesTooltip content={"Click aqu\u00ed para empezar"}>
 
-
-  const on_click_35670cf8dbb228f4b5bd4e8ba107cf87 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/modulo_3", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <RadixThemesDropdownMenu.Item onClick={on_click_35670cf8dbb228f4b5bd4e8ba107cf87}>
-
-{"M\u00f3dulo 3"}
-</RadixThemesDropdownMenu.Item>
+<img css={({ ["width"] : "100%", ["maxWidth"] : "600px", ["maxHeight"] : "400px", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid white", ["borderRadius"] : "20px", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["box-shadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) })} src={"/intro_image.jpg?refresh=1"}/>
+</RadixThemesTooltip>
+</NextLink>
+</RadixThemesLink>
   )
 }
 
@@ -141,22 +128,6 @@ export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
   )
 }
 
-export function Img_1dc145e38a4a77bada704003b0548d02 () {
-  
-  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_bd5dfb31d3782427c73d08de247645b4 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <img css={({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })} onClick={on_click_bd5dfb31d3782427c73d08de247645b4} src={reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src}/>
-  )
-}
-
 const pulse = keyframes`
     0% {
         opacity: 0;
@@ -167,65 +138,7 @@ const pulse = keyframes`
 `
 
 
-export function Link_ea1200d04e81431798597a10ffe0ce8d () {
-  
-
-
-
-
-
-  
-  return (
-    <RadixThemesLink asChild={true} css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} target={(false ? "_blank" : "")}>
-
-<NextLink href={"/choice_modules"} passHref={true}>
-
-<RadixThemesTooltip content={"Click aqu\u00ed para empezar"}>
-
-<img css={({ ["width"] : "100%", ["maxWidth"] : "600px", ["maxHeight"] : "400px", ["objectFit"] : "cover", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["border"] : "1px solid white", ["borderRadius"] : "20px", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["box-shadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) })} src={"/intro_image.jpg?refresh=1"}/>
-</RadixThemesTooltip>
-</NextLink>
-</RadixThemesLink>
-  )
-}
-
-export function Dropdownmenu__item_805d39b1c52b513f75607c1af876ccf1 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_436f10b0441df260272984ea23cf736e = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/modulo_1", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <RadixThemesDropdownMenu.Item onClick={on_click_436f10b0441df260272984ea23cf736e}>
-
-{"M\u00f3dulo 1"}
-</RadixThemesDropdownMenu.Item>
-  )
-}
-
-export function Tooltip_6525ba879cedca0bf213d67734a8d425 () {
-  
-  const reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    <RadixThemesTooltip content={"No me toques."}>
-
-<img css={({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })} onClick={((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___course_components___links_course___course_navbar____logo_state.increment_click", ({  }), ({  })))], args, ({  }))))} src={reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state.logo_src}/>
-</RadixThemesTooltip>
-  )
-}
-
-export function Link_96d148ffc56b7021de36b60fe73df7bb () {
+export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
@@ -235,35 +148,14 @@ export function Link_96d148ffc56b7021de36b60fe73df7bb () {
 
   
   return (
-    <RadixThemesLink css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} href={"#"}>
+    <div css={({ ["position"] : "fixed", ["width"] : "100vw", ["height"] : "0" })} title={("Connection Error: "+((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : ''))}>
 
-<RadixThemesButton css={({ ["isExternal"] : false, ["width"] : "100%", ["height"] : "100px", ["padding"] : "30px", ["spacing"] : "5px", ["borderRadius"] : "50px", ["marginBottom"] : "10px", ["fontSize"] : "500", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "400px", ["backgroundColor"] : "rgba(0,0,0,0.9)", ["border"] : "1.5px solid black", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "rgba(0,0,0,0.7)", ["borderColor"] : "black", ["transform"] : "scale(1.10)", ["color"] : "white" }) })} onClick={((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/choice_modules", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  }))))} radius={"medium"} size={"3"} variant={"solid"}>
-
-{"Comenzar con el curso"}
-</RadixThemesButton>
-</RadixThemesLink>
+<Fragment_c179379f847dbcf00ba21f73b0ad1b3d/>
+</div>
   )
 }
 
-export function Dropdownmenu__item_b0a6762496b52f8de3428cdb0d180c40 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_7dc200586272c1bbcd7f51ea48788135 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <RadixThemesDropdownMenu.Item onClick={on_click_7dc200586272c1bbcd7f51ea48788135}>
-
-{"Contacto"}
-</RadixThemesDropdownMenu.Item>
-  )
-}
-
-export function Errorboundary_f5156318285d64e67d3797adc94a4d9d () {
+export function Errorboundary_03a1e6d72ad4b208723a1ec93a4d12e9 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
@@ -323,13 +215,13 @@ export function Errorboundary_f5156318285d64e67d3797adc94a4d9d () {
 </NextLink>
 </RadixThemesLink>
 </RadixThemesHoverCard.Trigger>
-<RadixThemesHoverCard.Content css={({ ["padding"] : "2", ["borderRadius"] : "md", ["boxShadow"] : "md", ["background"] : "rgba(255, 255, 255, 0.6)", ["backdropFilter"] : "blur(10px)", ["transition"] : "transform 0.3s ease-out, opacity 0.3s ease-out", ["transform"] : "translateY(-10px)" })}>
+<RadixThemesHoverCard.Content css={({ ["padding"] : "2", ["borderRadius"] : "md", ["border"] : "1.5px solid darkgray", ["boxShadow"] : "md", ["background"] : "rgba(255, 255, 255, 0.5)", ["backdropFilter"] : "blur(10px)", ["transition"] : "transform 0.3s ease-out, opacity 0.3s ease-out", ["transform"] : "translateY(-10px)" })}>
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"2"}>
 
-<RadixThemesText as={"p"} css={({ ["color"] : "black" })} weight={"bold"}>
+<RadixThemesText as={"p"} css={({ ["color"] : "#ffa824", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica" })} weight={"bold"}>
 
-{"M\u00f3dulos del curso: "}
+{"M\u00f3dulos del curso "}
 </RadixThemesText>
 <RadixThemesLink asChild={true} css={({ ["color"] : "black", ["fontFamily"] : "Arial", ["--default-font-family"] : "Arial", ["&:hover"] : ({ ["color"] : "white" }), ["transition"] : "color 0.3s ease", ["justifyContent"] : "center", ["width"] : "100%" })} size={"3"} weight={"regular"}>
 
@@ -425,11 +317,11 @@ export function Errorboundary_f5156318285d64e67d3797adc94a4d9d () {
 <Img_0b82476f3ea7e22d4a7d54d5744b561b/>
 <RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
 
-<NextLink href={"/#"} passHref={true}>
+<NextLink href={"/financial_page"} passHref={true}>
 
 <RadixThemesHeading css={({ ["color"] : "black", ["fontFamily"] : "Arial", ["--default-font-family"] : "Arial", ["&:hover"] : ({ ["color"] : "white" }), ["transition"] : "color 0.3s ease", ["justifyContent"] : "center", ["width"] : "100%" })} size={"3"} weight={"regular"}>
 
-{"Maximiliano Gonzalez"}
+{"Inicio"}
 </RadixThemesHeading>
 </NextLink>
 </RadixThemesLink>
@@ -442,11 +334,8 @@ export function Errorboundary_f5156318285d64e67d3797adc94a4d9d () {
 </RadixThemesDropdownMenu.Trigger>
 <RadixThemesDropdownMenu.Content>
 
-<Dropdownmenu__item_a4b79031cd0a0aaab6615a386df7fd1f/>
-<Dropdownmenu__item_b0a6762496b52f8de3428cdb0d180c40/>
-<Dropdownmenu__item_805d39b1c52b513f75607c1af876ccf1/>
-<Dropdownmenu__item_3fd85d1c496f90f503c334d46bc5c7cb/>
-<Dropdownmenu__item_66413e06b9057c7cc3f9dbd728fbbfbf/>
+<Dropdownmenu__item_bab67f5e89dd620a8f08fe00942058f5/>
+<Dropdownmenu__item_f5601b3f02dbc23bf8da1fc3302d2108/>
 </RadixThemesDropdownMenu.Content>
 </RadixThemesDropdownMenu.Root>
 </RadixThemesFlex>
@@ -601,21 +490,75 @@ export function Errorboundary_f5156318285d64e67d3797adc94a4d9d () {
   )
 }
 
-export function Dropdownmenu__item_3fd85d1c496f90f503c334d46bc5c7cb () {
+export function Link_96d148ffc56b7021de36b60fe73df7bb () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_0656ab8ead391332d9733db252c373ec = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/modulo_2", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
 
   
   return (
-    <RadixThemesDropdownMenu.Item onClick={on_click_0656ab8ead391332d9733db252c373ec}>
+    <RadixThemesLink css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} href={"#"}>
 
-{"M\u00f3dulo 2"}
+<RadixThemesButton css={({ ["isExternal"] : false, ["width"] : "100%", ["height"] : "100px", ["padding"] : "30px", ["spacing"] : "5px", ["borderRadius"] : "50px", ["marginBottom"] : "10px", ["fontSize"] : "500", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "400px", ["backgroundColor"] : "rgba(0,0,0,0.9)", ["border"] : "1.5px solid black", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "rgba(0,0,0,0.7)", ["borderColor"] : "black", ["transform"] : "scale(1.10)", ["color"] : "white" }) })} onClick={((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/choice_modules", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  }))))} radius={"medium"} size={"3"} variant={"solid"}>
+
+{"Comenzar con el curso"}
+</RadixThemesButton>
+</RadixThemesLink>
+  )
+}
+
+export function Dropdownmenu__item_bab67f5e89dd620a8f08fe00942058f5 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_e1787349f6d52d1b453713c488641ba5 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/choice_modules", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <RadixThemesDropdownMenu.Item onClick={on_click_e1787349f6d52d1b453713c488641ba5}>
+
+{"Curso"}
 </RadixThemesDropdownMenu.Item>
+  )
+}
+
+export function Dropdownmenu__item_f5601b3f02dbc23bf8da1fc3302d2108 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_7dc200586272c1bbcd7f51ea48788135 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <RadixThemesDropdownMenu.Item onClick={on_click_7dc200586272c1bbcd7f51ea48788135}>
+
+{"Contactos"}
+</RadixThemesDropdownMenu.Item>
+  )
+}
+
+export function Img_0b82476f3ea7e22d4a7d54d5744b561b () {
+  
+  const reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_f2425d612b9e4477d8552ff062cbbc10 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___course_components___links_course___course_navbar____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <img css={({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" })} onClick={on_click_f2425d612b9e4477d8552ff062cbbc10} src={reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state.logo_src}/>
   )
 }
 
@@ -626,6 +569,6 @@ export default function Component() {
 
 
   return (
-    <Errorboundary_f5156318285d64e67d3797adc94a4d9d/>
+    <Errorboundary_03a1e6d72ad4b208723a1ec93a4d12e9/>
   )
 }

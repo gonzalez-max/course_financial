@@ -3,7 +3,7 @@
 COURSE_STYLES = {
     "text_color" : "black",
     "width":"100%",
-    "background" : "linear-gradient(180deg, rgba(55,49,69,1) 0%, rgba(0,0,0,1) 100%)",
+    "background" : "linear-gradient(180deg, rgba(74,34,98,1) 0%, rgba(71,85,139,1) 52%, rgba(11,103,93,1) 100%)",
     "flex_direction": "column",
     "min_height":"100vh",
     "display": "flex",

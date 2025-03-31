@@ -15,6 +15,7 @@ def projects() -> rx.Component:
                 class_name="roboto-bold",
             ),
         ),
+                    id="mis-proyectos",
                     align_items="center",
                     justify="center",
                     margin_top="40px",

@@ -79,7 +79,7 @@ NAVBAR_FONTS_STYLES={
     "weight":"regular",
     "font_family": "Arial",
     "_hover":
-        {"color": "gray"},
+        {"color": "white"},
     "transition": "color 0.3s ease",
     "justify_content": "center",
     "width":"100%"

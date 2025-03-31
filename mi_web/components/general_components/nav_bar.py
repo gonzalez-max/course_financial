@@ -57,14 +57,34 @@ def navbar_dropdown() -> rx.Component:
                     ),
                     align_items="center",
                 ),
-                rx.hstack(
-                    rx.tooltip(nav_bar("Proyectos", "/financial_page"),
-                               content="Mis proyectos"),
+                    rx.hstack(
+                    rx.hover_card.root(
+                        rx.hover_card.trigger(
+                           nav_bar("Proyectos","#mis-proyectos"),
+                        ),
+                        rx.hover_card.content(
+                            rx.vstack(
+                                rx.tooltip(rx.link("Curso de Finanzas, Trading y como evitar Estafas.",
+                                        href="/financial_page", **styles.NAVBAR_FONTS_STYLES),
+                                spacing="2",
+                                content="curso de Finanzas",
+                                side="bottom"
+                                ),
+                            ),
+                            padding="2",
+                            border_radius="md",
+                            border="1.5px solid darkgray",
+                            box_shadow="md",
+                            background="rgba(255, 255, 255, 0.5)",
+                            backdrop_filter= "blur(10px)",
+                            transition="transform 0.3s ease-out, opacity 0.3s ease-out",
+                            transform="translateY(-10px)",
+                        ),
+                    ),
                     rx.tooltip(nav_bar("Contacto", "/soporte_page"),
                                content="Contactáme"),
                     justify="end",
                 ),
-                align_items="center",
             ),
         ),
         rx.mobile_and_tablet(

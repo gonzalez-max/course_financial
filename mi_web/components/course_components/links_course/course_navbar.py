@@ -61,7 +61,7 @@ def navbar_course() -> rx.Component:
                         ),
                         rx.hover_card.content(
                             rx.vstack(
-                                rx.text("Módulos del curso: ",color="black", weight="bold"),
+                                rx.text("Módulos del curso ",color="#ffa824", font_family="Helvetica",weight="bold"),
                                 
                                 rx.link(rx.text.strong("Módulo 1:")," Fundamentos de Finanzas Personales y el Mercado ",
                                         href="/module_1", **c_styles.COURSE_NAVBAR_FONTS),
@@ -79,8 +79,9 @@ def navbar_course() -> rx.Component:
                             ),
                             padding="2",
                             border_radius="md",
+                            border="1.5px solid darkgray",
                             box_shadow="md",
-                            background="rgba(255, 255, 255, 0.6)",
+                            background="rgba(255, 255, 255, 0.5)",
                             backdrop_filter= "blur(10px)",
                             transition="transform 0.3s ease-out, opacity 0.3s ease-out",
                             transform="translateY(-10px)",
@@ -107,10 +108,10 @@ def navbar_course() -> rx.Component:
                     ),
                     rx.link(
                         rx.heading(
-                            "Maximiliano Gonzalez",
+                            "Inicio",
                             **c_styles.COURSE_NAVBAR_FONTS,
                         ),
-                        href="/#",
+                        href="/financial_page",
                         style={"text_decoration": "none"},
                     ),
                     align_items="center",
@@ -120,12 +121,9 @@ def navbar_course() -> rx.Component:
                         rx.icon("menu", size=30)
                     ),
                     rx.menu.content(
-                        rx.menu.item("Proyecto", on_click=rx.redirect("/financial_page")),
-                        rx.menu.item("Contacto", on_click=rx.redirect("/soporte_page")),
-                        rx.menu.item("Módulo 1", on_click=rx.redirect("/modulo_1")),
-                        rx.menu.item("Módulo 2", on_click=rx.redirect("/modulo_2")),
-                        rx.menu.item("Módulo 3", on_click=rx.redirect("/modulo_3")),
-                    ),
+                        rx.menu.item("Curso", on_click=rx.redirect("/choice_modules")),
+                        rx.menu.item("Contactos", on_click=rx.redirect("/soporte_page")),
+                    ),  
                     justify="end",
                 ),
                 align_items="center",
