@@ -47,7 +47,7 @@ def navbar_course() -> rx.Component:
                                 "Inicio",
                                 **c_styles.COURSE_NAVBAR_FONTS
                             ),
-                            content="Pagina Principal"
+                            content="Pagina Principal",
                         ),
                         href="/financial_page",
                         style={"text_decoration": "none"},
@@ -61,7 +61,11 @@ def navbar_course() -> rx.Component:
                         ),
                         rx.hover_card.content(
                             rx.vstack(
-                                rx.text("Módulos del curso ",color="#ffa824", font_family="Helvetica",weight="bold"),
+                                rx.text("Módulos del curso ",
+                                        color="#ffd284", 
+                                        font_family="Helvetica",
+                                        weight="bold",
+                                        size="5"),
                                 
                                 rx.link(rx.text.strong("Módulo 1:")," Fundamentos de Finanzas Personales y el Mercado ",
                                         href="/module_1", **c_styles.COURSE_NAVBAR_FONTS),
@@ -78,13 +82,12 @@ def navbar_course() -> rx.Component:
                                 spacing="2",
                             ),
                             padding="2",
-                            border_radius="md",
-                            border="1.5px solid darkgray",
-                            box_shadow="md",
-                            background="rgba(255, 255, 255, 0.5)",
+                            border_radius="8px",
+                            border="1.5px solid transparent",
+                            box_shadow="0px 4px 14px rgba(0, 0, 0, 0.3)",
+                            transition= "transform 0.2s ease-in-out",
+                            background="rgba(250, 250, 250, 0.4)",
                             backdrop_filter= "blur(10px)",
-                            transition="transform 0.3s ease-out, opacity 0.3s ease-out",
-                            transform="translateY(-10px)",
                         ),
                     ),
                     rx.tooltip(nav_bar("Contacto", "/soporte_page"),

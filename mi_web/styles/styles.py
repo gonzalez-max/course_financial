@@ -33,7 +33,7 @@ CARD_STYLES={
         "max_width": ["90%", "80%", "600px"],
         "as_child":True,
         "flex_wrap":"wrap",
-        "transition": "transform 0.5s ease-in-out",
+        "transition": "transform 0.2s ease-in-out",
         "background_color": "rgba(255, 255, 255, 0.5)",
         "padding":"20px",
         "height": "auto",
@@ -50,7 +50,7 @@ AVATAR_STYLE={
     "justify_content":"center",
     "align_items":"center",
     "flex_wrap":"wrap",
-    "transition": "transform 0.3s ease-in-out",
+    "transition": "transform 0.2s ease-in-out",
     "&:hover": {
     "transform": "scale(1.10)",
     "box-shadow": "0px 4px 15px rgba(0, 0, 0, 0.3)"},
@@ -70,7 +70,7 @@ NAVBAR_STYLES={
     "justify_content": "center",
     "display": "flex",
     "top":"0px",
-    "align_items":"center"
+    "align_items":"center",
 }
 
 NAVBAR_FONTS_STYLES={
@@ -78,11 +78,12 @@ NAVBAR_FONTS_STYLES={
     "color":"black", 
     "weight":"regular",
     "font_family": "Arial",
-    "_hover":
-        {"color": "white"},
-    "transition": "color 0.3s ease",
+    "transition": "color 0.2s ease",
     "justify_content": "center",
-    "width":"100%"
+    "width":"100%",
+    "_hover":{
+        "color": "white",
+         },
 }
 #________________________________________Link_Button__styles_____________________________________________________________#
 
