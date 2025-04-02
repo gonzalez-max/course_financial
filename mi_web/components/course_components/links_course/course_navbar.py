@@ -79,7 +79,7 @@ def navbar_course() -> rx.Component:
                                         href="/module_5", **c_styles.COURSE_NAVBAR_FONTS),
                                 rx.link(rx.text.strong("Módulo 6:")," Tendencias y como identificarlas",
                                         href="/module_6", **c_styles.COURSE_NAVBAR_FONTS),
-                                rx.link(rx.text.strong("Módulo 7:")," Tendencias y como identificarlas",
+                                rx.link(rx.text.strong("Módulo 7:")," Indicadores y Entradas Exitosas",
                                         href="/module_7", **c_styles.COURSE_NAVBAR_FONTS),
                                 #rx.link(rx.text.strong("Módulo 8:")," Tendencias y como identificarlas",
                                         #href="/module_8", **c_styles.COURSE_NAVBAR_FONTS),

@@ -17,6 +17,30 @@ import NextHead from "next/head"
 
 
 
+export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    <Fragment>
+
+{isTrue((connectErrors.length > 0)) ? (
+  <Fragment>
+
+<LucideWifiOffIcon css={({ ["color"] : "crimson", ["zIndex"] : 9999, ["position"] : "fixed", ["bottom"] : "33px", ["right"] : "33px", ["animation"] : (pulse+" 1s infinite") })} size={32}/>
+</Fragment>
+) : (
+  <Fragment/>
+)}
+</Fragment>
+  )
+}
+
 export function Dropdownmenu__item_f5601b3f02dbc23bf8da1fc3302d2108 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -53,6 +77,16 @@ export function Button_a76cbeaf52add5ac1464884ced9e4730 () {
   )
 }
 
+const pulse = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+`
+
+
 export function Toaster_6e6ebf8d7ce589d59b7d382fb7576edf () {
   
   const { resolvedColorMode } = useContext(ColorModeContext)
@@ -86,22 +120,6 @@ export function Toaster_6e6ebf8d7ce589d59b7d382fb7576edf () {
   )
 }
 
-export function Img_1dc145e38a4a77bada704003b0548d02 () {
-  
-  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_bd5dfb31d3782427c73d08de247645b4 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <img css={({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })} onClick={on_click_bd5dfb31d3782427c73d08de247645b4} src={reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src}/>
-  )
-}
-
 export function Button_7326e534f87c33509c60bce09efe3948 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -117,6 +135,22 @@ export function Button_7326e534f87c33509c60bce09efe3948 () {
 
 {"Siguiente \u2192"}
 </RadixThemesButton>
+  )
+}
+
+export function Img_0b82476f3ea7e22d4a7d54d5744b561b () {
+  
+  const reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_f2425d612b9e4477d8552ff062cbbc10 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___course_components___links_course___course_navbar____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <img css={({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" })} onClick={on_click_f2425d612b9e4477d8552ff062cbbc10} src={reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state.logo_src}/>
   )
 }
 
@@ -138,7 +172,7 @@ export function Dropdownmenu__item_bab67f5e89dd620a8f08fe00942058f5 () {
   )
 }
 
-export function Errorboundary_4b3322d24594ffbc6ced25ae08ed85c2 () {
+export function Errorboundary_51f5bd2ca882e7fef27df6412f685b7a () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
@@ -280,7 +314,7 @@ export function Errorboundary_4b3322d24594ffbc6ced25ae08ed85c2 () {
 
 {"M\u00f3dulo 7:"}
 </RadixThemesStrong>
-{" Tendencias y como identificarlas"}
+{" Indicadores y Entradas Exitosas"}
 </NextLink>
 </RadixThemesLink>
 </RadixThemesFlex>
@@ -956,6 +990,22 @@ export function Errorboundary_4b3322d24594ffbc6ced25ae08ed85c2 () {
   )
 }
 
+export function Img_1dc145e38a4a77bada704003b0548d02 () {
+  
+  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_bd5dfb31d3782427c73d08de247645b4 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <img css={({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })} onClick={on_click_bd5dfb31d3782427c73d08de247645b4} src={reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src}/>
+  )
+}
+
 export function Tooltip_6525ba879cedca0bf213d67734a8d425 () {
   
   const reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state)
@@ -974,16 +1024,6 @@ export function Tooltip_6525ba879cedca0bf213d67734a8d425 () {
   )
 }
 
-const pulse = keyframes`
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-`
-
-
 export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -1001,46 +1041,6 @@ export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
   )
 }
 
-export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    <Fragment>
-
-{isTrue((connectErrors.length > 0)) ? (
-  <Fragment>
-
-<LucideWifiOffIcon css={({ ["color"] : "crimson", ["zIndex"] : 9999, ["position"] : "fixed", ["bottom"] : "33px", ["right"] : "33px", ["animation"] : (pulse+" 1s infinite") })} size={32}/>
-</Fragment>
-) : (
-  <Fragment/>
-)}
-</Fragment>
-  )
-}
-
-export function Img_0b82476f3ea7e22d4a7d54d5744b561b () {
-  
-  const reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_f2425d612b9e4477d8552ff062cbbc10 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___course_components___links_course___course_navbar____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <img css={({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" })} onClick={on_click_f2425d612b9e4477d8552ff062cbbc10} src={reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state.logo_src}/>
-  )
-}
-
 export default function Component() {
     
 
@@ -1048,6 +1048,6 @@ export default function Component() {
 
 
   return (
-    <Errorboundary_4b3322d24594ffbc6ced25ae08ed85c2/>
+    <Errorboundary_51f5bd2ca882e7fef27df6412f685b7a/>
   )
 }

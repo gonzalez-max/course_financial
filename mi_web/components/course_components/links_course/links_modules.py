@@ -25,7 +25,7 @@ def links_modules() -> rx.Component:
                         rx.button(" Módulo numero 6: Tendencias y como identificarlas.", 
                                 on_click=lambda: rx.redirect("/module_6"), is_external=False,**c_styles.BUTTON_COURSES_STYLES,
                         ),
-                        rx.button(" Módulo numero 7: ", 
+                        rx.button(" Módulo numero 7: Indicadores y Entradas Exitosas", 
                                 on_click=lambda: rx.redirect("/module_7"), is_external=False,**c_styles.BUTTON_COURSES_STYLES,
                         ),
                         #rx.button(" Módulo numero 6: Tendencias y como identificarlas.", 
