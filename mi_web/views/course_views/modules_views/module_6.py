@@ -237,7 +237,10 @@ def module_6() -> rx.Component:
                                              "detectando rupturas o falsas señales para planificar "
                                              "entradas y salidas."
                                              , margin_bottom=Size.DEFAULT.value),
-                                rx.list.item(rx.text.strong("Próximos Pasos:")," "
+                                rx.list.item(rx.text.strong("Próximos Pasos:")," En el siguiente curso aprenderás "
+                                             "sobre los indicadores en los gráficos de trading y cómo estos nos ayudan "
+                                             "a tomar mejores decisiones. Además, aprenderás cómo tener entradas y salidas "
+                                             "exitosas en tus operaciones para maximizar tus ganancias y evitar pérdidas."
                                               , margin_bottom=Size.DEFAULT.value),
                                 list_style_type="disc",
                                 color="white",

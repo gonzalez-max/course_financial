@@ -137,8 +137,8 @@ def module_7() -> rx.Component:
                             "si baja, el precio también.",
                             **c_styles.TEXT_STYLE["body"]),
                 
-                    rx.text("El Koncorde es mapa que te muestra qué están haciendo los 'grandes jugadores' y los "
-                            "'pequeños' en el mercado. las manos fuertes bancos, fondos de inversión, gente con mucho dinero "
+                    rx.text(rx.text.strong("El Koncorde es")," un mapa que te muestra qué están haciendo los 'grandes jugadores'"
+                            " y los 'pequeños' en el mercado. las manos fuertes bancos, fondos de inversión, gente con mucho dinero "
                             "y las manos débiles, somos nosotros, los traders pequeños. Este indicador te ayuda a ver si "
                             "estos dos grupos están comprando o vendiendo, y cómo se mueve la tendencia del precio.",
                             **c_styles.TEXT_STYLE["body"]),
@@ -187,11 +187,12 @@ def module_7() -> rx.Component:
                     
                     rx.heading("Entradas (Cuándo ingresar al mercado)",
                                **c_styles.TEXT_STYLE["subseccion"],
+                               margin_bottom=Size.DEFAULT.value
                                ),
                         
                         #cruce de medias moviles
                     rx.text.strong("- Cruce de Medias Móviles (Golden Cross)",
-                                   **c_styles.TEXT_STYLE["body"]),
+                                   ),
                     rx.text("Entrada alcista cuando la media móvil de 21 perdiodos cruza hacia arriba las media móvil"
                             " de 30 periodos, Es una señal fuerte de cambio de tendencia al alza."
                             "teniendo en cuenta una entrada de",rx.text.strong(" Corto Plazo."),
@@ -204,13 +205,12 @@ def module_7() -> rx.Component:
                     ),
                     #soporte de piso
                     rx.text.strong("- Soportes o Piso de un Canal Alcista",
-                                   **c_styles.TEXT_STYLE["body"],
-                                   ),
+                                   margin_top=Size.DEFAULT.value),
                     
                     rx.text("Si el precio toca repetidamente una zona de soporte clave y muestra rechazo con velas de reversión"
                             " o volumen creciente, es una señal de compra. Confirmar con RSI en sobreventa o divergencia alcista.",
                             **c_styles.TEXT_STYLE["body"],
-                            margin_bottom=Size.DEFAULT.value),
+                        ),
                     
                     #imagen ejemplo soportes de piso
                     rx.box(
@@ -220,7 +220,7 @@ def module_7() -> rx.Component:
                     
                     #ruptura de resistencia
                     rx.text.strong("- Ruptura de Soporte con Volumen",
-                                   **c_styles.TEXT_STYLE["body"]),
+                                   ),
                     rx.text("Si el precio rompe una resistencia fuerte con aumento de volumen, indica una posible continuación "
                             "alcista. Confirmar con cierre de vela por encima de la resistencia.",
                             **c_styles.TEXT_STYLE["body"]),
@@ -230,6 +230,8 @@ def module_7() -> rx.Component:
                             zoomed_image("/ruptura_resistencia_volumen.png?refresh=1"),
                             margin_bottom=Size.DEFAULT.value
                             ),
+                    
+                    rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value,margin_bottom=Size.DEFAULT.value),
                     #__________________________________________________________________________________________-#
                     #salidas
                     rx.heading("Salidas (Cuándo tomar ganancias o minimizar pérdidas)",
@@ -237,7 +239,7 @@ def module_7() -> rx.Component:
                     
                     #cruce de medias movile
                     rx.text.strong("- Cruce de Medias Móviles (Death Cross)",
-                                   **c_styles.TEXT_STYLE["body"]),
+                                   ),
                     rx.text("Salida bajista cuando la media móvil de 21 periodos cruza hacia abajo la media movil de"
                             "30 periodos. Señal de cambio de tendencia bajista.Es una señal fuerte de cambio de tendencia "
                             "bajista. teniendo en cuenta un grafico de",rx.text.strong(" Corto Plazo."),
@@ -251,7 +253,7 @@ def module_7() -> rx.Component:
                     
                     #resistencia o techo canal alcista
                     rx.text.strong("- Resistencias o Techo de un Canal Alcista",
-                                   **c_styles.TEXT_STYLE["body"]),
+                                   ),
                     rx.text("Si el precio toca una resistencia clave y no logra romperla, es momento de considerar una salida."
                         "Confirmar con velas de reversión, volumen decreciente o RSI en sobrecompra.",
                             **c_styles.TEXT_STYLE["body"]),
@@ -264,7 +266,7 @@ def module_7() -> rx.Component:
                     
                     #perdida de soporte con volumen
                     rx.text.strong("- Pérdida de Soporte con Volumen",
-                                   **c_styles.TEXT_STYLE["body"]),
+                                   ),
                     rx.text("Si el precio rompe un soporte importante con aumento de volumen, es una señal de venta.",
                                 "Puede indicar el inicio de una tendencia bajista fuerte.",
                             **c_styles.TEXT_STYLE["body"]),
@@ -299,50 +301,26 @@ def module_7() -> rx.Component:
                     
                     rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value,margin_bottom=Size.DEFAULT.value),
                     
-                    #conclusion
+                    #conclusion del modulo 7
                     rx.heading("Conclusión del Módulo 7:", 
                                **c_styles.TEXT_STYLE["subtitle"],
+                               margin_bottom=Size.DEFAULT.value
                                ),
+                    
                     rx.list.ordered(
-                        rx.list.item(rx.text.strong("Resumen:"),""),
-                        rx.list.item(rx.text.strong("Aplicación Práctica:"),"."),
+                        rx.list.item(rx.text.strong("Resumen:")," En este módulo aprendimos sobre los principales indicadores técnicos"
+                                     " y cómo utilizarlos para identificar oportunidades de entrada y salida en el mercado. Analizamos "
+                                     "herramientas como las medias móviles, el RSI y el indicador Konkorde, comprendiendo su función y la "
+                                     "importancia de combinarlas con otras estrategias para mejorar la toma de decisiones en trading."),
+                        rx.list.item(rx.text.strong("Aplicación Práctica:"),"Te invitamos a aplicar estos indicadores en un simulador de "
+                                     "trading o en tus análisis diarios. Practicá la identificación de tendencias, soportes y resistencias, "
+                                     "y experimentá con diferentes combinaciones de indicadores para evaluar su efectividad. Recordá siempre "
+                                     "confirmar las señales antes de operar y gestionar adecuadamente el riesgo. "),
                         rx.list.item(rx.text.strong("Próximos Pasos:"),""),
                         list_style_type="disc",
                         color="white",
                         margin_bottom=Size.DEFAULT.value
                     ),
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     
                     
                 #_____________________________________________________________________________________#   
