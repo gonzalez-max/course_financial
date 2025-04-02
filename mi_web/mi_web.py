@@ -14,6 +14,12 @@ from mi_web.views.course_views.modules_views.module_3 import module_3
 from mi_web.views.course_views.modules_views.module_4 import module_4
 from mi_web.views.course_views.modules_views.module_5 import module_5
 from mi_web.views.course_views.modules_views.module_6 import module_6
+from mi_web.views.course_views.modules_views.module_7 import module_7
+#from mi_web.views.course_views.modules_views.module_8 import module_8
+#from mi_web.views.course_views.modules_views.module_9 import module_9
+#from mi_web.views.course_views.modules_views.module_10 import module_10
+
+
 
 
 class State(rx.State):
@@ -67,6 +73,7 @@ app.add_page(module_3, route="/module_3", title="Modulo 3")
 app.add_page(module_4, route="/module_4", title="Modulo 4")
 app.add_page(module_5, route="/module_5", title="Modulo 5")
 app.add_page(module_6, route="/module_6", title="Modulo 6")
+app.add_page(module_7, route="/module_7", title="Modulo 7")
 
 
 

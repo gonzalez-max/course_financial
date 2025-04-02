@@ -65,10 +65,10 @@ BUTTON_STYLE = {
     "transition": "all 0.3s ease-in-out", #animacion
     "cursor":"pointer",
     "_hover": {
-        "background_color":"rgba(0,0,0,0.7)",  
+        "background_color":"white",  
         "border_color": "black",  # Bordes visibles en hover
         "transform": "scale(1.10)",
-        "color":"white",
+        "color":"black",
         
     },
 }

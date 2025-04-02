@@ -258,6 +258,7 @@ def module_6() -> rx.Component:
                 size="2" 
                 ),
         ),
+        next_button("/module_7"),
         back_button("/module_5"),
         footer(),
         **c_styles.COURSE_STYLES
