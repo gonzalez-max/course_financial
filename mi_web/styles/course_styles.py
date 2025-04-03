@@ -247,6 +247,12 @@ IMAGE_STYLES={
     "cursor": "pointer",  # Indica que la imagen es clickeable
     "transition": "transform 0.2s ease-in-out",  # Suaviza el efecto
     #"margin_top":"1em",
+    "align_items":"center",
+    "display":"flex",
+    "justify":"center",
+    "object_fit":"cover",  # Evita deformaciones
+    "display":"block",  # Asegura que el margin auto funcione
+    "margin":"auto",
     "_hover": {
         "background_color": "#800080",  # Azul más oscuro en hover
         "border_color": "#6366F1",  # Bordes visibles en hover

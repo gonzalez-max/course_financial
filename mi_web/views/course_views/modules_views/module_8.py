@@ -9,6 +9,7 @@ from mi_web.components.course_components.links_course.back_button import back_bu
 from mi_web.components.general_components.zoom_images import zoomed_image
 from mi_web.components.course_components.module7_components.module7_table import table1_module7
 from mi_web.components.course_components.module7_components.module7_table import mobile_table1_module7
+from mi_web.components.course_components.module8_components.modulo8_imagenes import gif_batman_pensando
 
 
 
@@ -27,13 +28,20 @@ def module_8() -> rx.Component:
                         
                         #seccion 1 que son las criptomonedas
                         rx.heading("¿Qué son las criptomonedas?",
-                                   **c_styles.TEXT_STYLE["subtitle"]),
+                                   **c_styles.TEXT_STYLE["subtitle"],
+                                   margin_bottom=Size.DEFAULT.value),
+                       
+                       #imagen batman pensando
+                       rx.vstack(
+                           gif_batman_pensando(),
+                       ),
                        
                         rx.text("Las criptomonedas son activos digitales "
                                 "diseñados para funcionar como un medio de "
                                 "intercambio, utilizando criptografía para garantizar "
                                 "transacciones seguras, controlar la creación de nuevas "
-                                "unidades y verificar la transferencia de activos."),
+                                "unidades y verificar la transferencia de activos.",
+                                **c_styles.TEXT_STYLE["body"]),
                         #imagen de criptos
                         
                         rx.text("A diferencia del dinero tradicional (como el dólar o el euro), "
@@ -41,20 +49,30 @@ def module_8() -> rx.Component:
                                 "sino que operan en una red descentralizada basada en tecnología "
                                 "blockchain. Esto significa que todas las transacciones quedan "
                                 "registradas en un libro contable público, transparente "
-                                "y difícil de alterar."),
+                                "y difícil de alterar.",
+                                **c_styles.TEXT_STYLE["body"],
+                                margin_bottom=Size.DEFAULT.value),
                         
                         #seccion 2 principales criptomonedas
                         rx.heading("Principales criptomonedas",
-                                   **c_styles.TEXT_STYLE["subtitle"]),
+                                   **c_styles.TEXT_STYLE["subtitle"],
+                                   margin_bottom=Size.DEFAULT.value),
                         
                         rx.text("Las principales criptomonedas del mercado se destacan por su adopción"
                                 ", tecnología y capitalización bursátil. A continuación, te presento "
-                                "algunas de las más relevantes:"),
+                                "algunas de las más relevantes:",
+                                **c_styles.TEXT_STYLE["body"],
+                                margin_bottom=Size.DEFAULT.value),
                         rx.box(
                             rx.vstack(
                                 #BTC
                                 rx.heading("1. Bitcoin (BTC) – La pionera",
                                            **c_styles.TEXT_STYLE["subseccion"]),
+                                #imagen btc
+                                rx.box(
+                                       zoomed_image("/BTC.png?refresh=1")
+                                    ),
+                                
                                 #lista origen bitcoin
                                 rx.list.ordered(
                                     rx.list.item("Creada en 2009 por Satoshi Nakamoto."),
@@ -68,6 +86,11 @@ def module_8() -> rx.Component:
                                 #ETH
                                 rx.heading("2. Ethereum (ETH) – La base de los contratos inteligentes",
                                            **c_styles.TEXT_STYLE["subseccion"]),
+                                
+                                rx.box(
+                                       zoomed_image("/ETH.jpg?refresh=1")
+                                    ),
+                                
                                 #lista origen eth
                                 rx.list.ordered(
                                     rx.list.item("Introducida en 2015 por Vitalik Buterin."),
@@ -82,6 +105,11 @@ def module_8() -> rx.Component:
                                 #BNB
                                 rx.heading("3. Binance Coin (BNB) – La moneda del ecosistema Binance",
                                            **c_styles.TEXT_STYLE["subseccion"]),
+                                
+                                rx.box(
+                                       zoomed_image("/BNB.png?refresh=1")
+                                    ),
+                                
                                 #lista origen BNB
                                 rx.list.ordered(
                                     rx.list.item("Nació en 2017 como el token nativo del exchange Binance."),
@@ -94,6 +122,11 @@ def module_8() -> rx.Component:
                                 #ADA
                                 rx.heading("4. Cardano (ADA) – Un enfoque científico",
                                            **c_styles.TEXT_STYLE["subseccion"]),
+                                
+                                rx.box(
+                                       zoomed_image("/ADA.png?refresh=1")
+                                    ),
+                                
                                 #lista origen ADA
                                 rx.list.ordered(
                                     rx.list.item("Desarrollada por Charles Hoskinson, cofundador de Ethereum."),
@@ -106,6 +139,11 @@ def module_8() -> rx.Component:
                                 #SOL
                                 rx.heading("5. Solana (SOL) – Rápida y escalable",
                                            **c_styles.TEXT_STYLE["subseccion"]),
+                                
+                                rx.box(
+                                       zoomed_image("/SOL.png?refresh=1")
+                                    ),
+                                
                                 #lista origen SOL
                                 rx.list.ordered(
                                     rx.list.item("Conocida por su velocidad y bajos costos de transacción."),
@@ -119,7 +157,9 @@ def module_8() -> rx.Component:
                                 #consejo
                                 rx.heading("¡¡Atencion!!"),
                                 rx.text("Antes de invertir en una criptomoneda, es importante analizar su "
-                                        "tecnología, propósito y adopción en el mercado"),
+                                        "tecnología, propósito y adopción en el mercado",
+                                        **c_styles.TEXT_STYLE["body"],
+                                        margin_bottom=Size.DEFAULT.value),
                             ),                        
                         ),#cierre del box
                         
@@ -127,52 +167,71 @@ def module_8() -> rx.Component:
                         rx.box(
                             rx.vstack(
                                 rx.heading("Blockchain: ¿Qué es y cómo funciona?",
-                                   **c_styles.TEXT_STYLE["subtitle"]),
+                                   **c_styles.TEXT_STYLE["subtitle"],
+                                   margin_bottom=Size.DEFAULT.value),
+                                
                                 rx.text("Un blockchain (cadena de bloques) es un registro digital descentralizado"
                                         " y seguro donde se almacenan transacciones de manera inmutable. En lugar "
                                         "de depender de una entidad central (como un banco), la información se "
-                                        "distribuye entre múltiples computadoras en una red."),
+                                        "distribuye entre múltiples computadoras en una red.",
+                                        **c_styles.TEXT_STYLE["body"]),
                                 
                                 rx.text("Este sistema es clave en el mundo de las criptomonedas, ya que permite "
-                                        "registrar y verificar transacciones sin necesidad de intermediarios."),
+                                        "registrar y verificar transacciones sin necesidad de intermediarios.",
+                                        **c_styles.TEXT_STYLE["body"],
+                                        margin_bottom=Size.DEFAULT.value),
                                 
                                 #subseccion como funciona un blockchain
                                 rx.heading("¿Cómo funciona un blockchain?",
-                                           **c_styles.TEXT_STYLE["subseccion"]),
+                                           **c_styles.TEXT_STYLE["subseccion"],
+                                           margin_bottom=Size.DEFAULT.value),
 
                                 #lista de como funcionan los blockchain
                                 rx.list.ordered(
                                     rx.list.item(rx.text.strong("Transacción:")," Un usuario envía información "
-                                                 "(por ejemplo, una transferencia de criptomonedas)."),
+                                                 "(por ejemplo, una transferencia de criptomonedas).",
+                                                 margin_bottom=Size.MEDIUM.value),
                                     rx.list.item(rx.text.strong("Verificación:")," La red de nodos (computadoras "
                                                  "conectadas al blockchain) valida la transacción mediante un "
-                                                 "consenso (como Proof of Work o Proof of Stake)"),
+                                                 "consenso (como Proof of Work o Proof of Stake)",
+                                                 margin_bottom=Size.MEDIUM.value),
                                     rx.list.item(rx.text.strong("Creación del bloque:")," Una vez verificada, "
-                                                 "la transacción se agrupa con otras y forma un nuevo bloque de datos."),
+                                                 "la transacción se agrupa con otras y forma un nuevo bloque de datos.",
+                                                 margin_bottom=Size.MEDIUM.value),
                                     rx.list.item(rx.text.strong("Encadenamiento:")," El nuevo bloque se enlaza al bloque "
-                                                 "anterior, creando una cadena de bloques con un historial inmutable."),
+                                                 "anterior, creando una cadena de bloques con un historial inmutable.",
+                                                 margin_bottom=Size.MEDIUM.value,),
                                     rx.list.item(rx.text.strong("Registro inalterable:")," Una vez añadido a la cadena, "
                                                  "el bloque no puede modificarse, lo que hace al blockchain seguro "
-                                                 "y transparente."),
+                                                 "y transparente.",
+                                                 margin_bottom=Size.MEDIUM.value,),
                                     #list_style_type="disc",
                                     color="white",
-                                    margin_bottom=Size.DEFAULT.value
+                                    margin_bottom=Size.DEFAULT.value,
                                 ),
                                 
                                 #conclusion de blockchain
                                 rx.heading("En conclusión...",
-                                           **c_styles.TEXT_STYLE["subseccion"]),
+                                           **c_styles.TEXT_STYLE["subseccion"],
+                                           margin_bottom=Size.DEFAULT.value),
+                                
                                 rx.text("Blockchain es una tecnología revolucionaria que garantiza seguridad"
                                         ", transparencia y descentralización, con aplicaciones en múltiples industrias "
-                                        "más allá de las criptomonedas."),
+                                        "más allá de las criptomonedas.",
+                                        **c_styles.TEXT_STYLE["body"],
+                                        margin_bottom=Size.DEFAULT.value),
                             ),
                         ),
                         
                         #seccion 4 como se consiguen criptomonedas
                         rx.heading("¿Cómo se consiguen criptomonedas?",
-                                    **c_styles.TEXT_STYLE["subtitle"]),
+                                    **c_styles.TEXT_STYLE["subtitle"],
+                                    margin_bottom=Size.DEFAULT.value),
+                                
                                 rx.text("Existen varias formas de obtener criptomonedas, desde la compra directa hasta la "
-                                    "minería o participación en plataformas que las ofrecen como recompensa."),
+                                    "minería o participación en plataformas que las ofrecen como recompensa.",
+                                    **c_styles.TEXT_STYLE["body"],
+                                    margin_bottom=Size.DEFAULT.value),
                                 
                         rx.box(
                             rx.vstack(
@@ -181,7 +240,8 @@ def module_8() -> rx.Component:
                                    **c_styles.TEXT_STYLE["subseccion"]),
                                 
                                 rx.text("La forma más común es comprar criptomonedas en exchanges (plataformas de "
-                                        "intercambio como Binance, Coinbase, Kraken o Bitso). Para hacerlo:"),   
+                                        "intercambio como Binance, Coinbase, Kraken o Bitso). Para hacerlo:",
+                                        **c_styles.TEXT_STYLE["body"]),   
                                 
                                 #lista de como comprar criptomonedas
                                 rx.list.ordered(
@@ -199,7 +259,9 @@ def module_8() -> rx.Component:
                                 
                                 rx.text("Algunas criptomonedas, como Bitcoin, se pueden obtener minando. "
                                         "Esto implica usar computadoras potentes para resolver problemas "
-                                        "matemáticos y validar transacciones en la red."),
+                                        "matemáticos y validar transacciones en la red.",
+                                        **c_styles.TEXT_STYLE["body"]),
+                                
                                 #mini lista mineria
                                 rx.list.ordered(
                                     rx.list.item(rx.text.strong(" Proof of Work (PoW):")," Se requiere hardware "
@@ -212,13 +274,15 @@ def module_8() -> rx.Component:
                                 ),
                                 
                                 rx.text("La minería puede ser costosa por el consumo de energía y la necesidad "
-                                        "de equipos avanzados."),
+                                        "de equipos avanzados.",
+                                        **c_styles.TEXT_STYLE["body"]),
                                 
                                 #staking y yield farming
                                 rx.heading("Staking y Yield Farming",
                                    **c_styles.TEXT_STYLE["subseccion"]),
                                 
-                                rx.text("Algunas criptomonedas permiten ganar recompensas bloqueando fondos en una red:"),
+                                rx.text("Algunas criptomonedas permiten ganar recompensas bloqueando fondos en una red:",
+                                        **c_styles.TEXT_STYLE["body"]),
                                 
                                 #mini lista staking
                                 rx.list.ordered(
@@ -236,15 +300,20 @@ def module_8() -> rx.Component:
                                    **c_styles.TEXT_STYLE["subseccion"]),
                                 
                                 rx.text("Si trabajas de manera freelance o tienes un negocio, puedes aceptar pagos en "
-                                        "criptomonedas a través de plataformas como BitPay o Lightning Network."),
+                                        "criptomonedas a través de plataformas como BitPay o Lightning Network.",
+                                        **c_styles.TEXT_STYLE["body"],
+                                        margin_bottom=Size.DEFAULT.value),
                             ),
                         ),
                         #seccion 5 carteras y exchanges
                         rx.heading("Carteras y exchanges: diferencias y tipos",
-                                   **c_styles.TEXT_STYLE["subtitle"]),
+                                   **c_styles.TEXT_STYLE["subtitle"],
+                                   margin_bottom=Size.DEFAULT.value),
+                        
                         rx.text("Cuando hablamos de criptomonedas, es fundamental conocer la diferencia entre carteras "
                                 "(wallets) y exchanges, ya que cumplen funciones distintas en la gestión y almacenamiento "
-                                "de tus activos digitales."),
+                                "de tus activos digitales.",
+                                **c_styles.TEXT_STYLE["body"]),
                         rx.box(
                             rx.vstack(
                                 #subseccion que es una cartera o wallet
@@ -252,7 +321,8 @@ def module_8() -> rx.Component:
                                            **c_styles.TEXT_STYLE["subseccion"]),
                                 rx.text("Una cartera de criptomonedas es una herramienta que permite almacenar, enviar y "
                                         "recibir criptomonedas. Funciona como un 'banco digital personal', donde solo vos "
-                                        "tenes el control total de tus fondos."),
+                                        "tenes el control total de tus fondos.",
+                                        **c_styles.TEXT_STYLE["body"]),
                                 
                                 #tipos de carteras
                                 rx.heading(rx.text.strong("Tipos de carteras o wallets")),
@@ -293,7 +363,8 @@ def module_8() -> rx.Component:
                                            **c_styles.TEXT_STYLE["subseccion"]),
                                 rx.text("Un exchange es una plataforma donde puedes comprar, vender e "
                                         "intercambiar criptomonedas. Funciona como una casa de cambio digital "
-                                        "y ofrece herramientas para trading."),
+                                        "y ofrece herramientas para trading.",
+                                        **c_styles.TEXT_STYLE["body"]),
 
                                 #tipos de exchanges
                                 rx.heading(rx.text.strong("Tipos de exchanges")),
@@ -328,28 +399,36 @@ def module_8() -> rx.Component:
                         
                         #tabla comparativa
                         rx.heading("Tabla comparativa",
-                                   **c_styles.TEXT_STYLE["subseccion"]),
+                                   **c_styles.TEXT_STYLE["subseccion"],
+                                   margin_bottom=Size.DEFAULT.value),
                         rx.box(
                             table1_module7(),
                             mobile_table1_module7(),
+                            margin_bottom=Size.DEFAULT.value
                         ),
                         #conclusion
                         rx.heading("Conclusión:",
-                                   **c_styles.TEXT_STYLE["subseccion"]),
+                                   **c_styles.TEXT_STYLE["subseccion"],
+                                   margin_bottom=Size.DEFAULT.value),
                         rx.text("Si querés operar y hacer trading, usá un exchange. "
                                 "Si querés almacenar criptos de manera segura, usá una wallet "
                                 "(preferiblemente una cartera fría). Lo ideal es no dejar tus "
                                 "criptos en un exchange por seguridad y transferirlas a una "
-                                "cartera personal"),
+                                "cartera personal",
+                                **c_styles.TEXT_STYLE["body"],
+                                margin_bottom=Size.DEFAULT.value),
                         
                         #seccion 6 riesgos y beneficios de las cripto
                         rx.heading("Riesgos y beneficios de las criptomonedas",
-                                   **c_styles.TEXT_STYLE["subtitle"]),
+                                   **c_styles.TEXT_STYLE["subtitle"],
+                                   margin_bottom=Size.DEFAULT.value),
                         rx.text("Las criptomonedas han revolucionado el mundo financiero, "
                                 "ofreciendo nuevas oportunidades de inversión y transacciones "
                                 "digitales. Sin embargo, también conllevan ciertos riesgos. "
                                 "A continuación, analizamos los principales beneficios y "
-                                "riesgos de este ecosistema."),
+                                "riesgos de este ecosistema.",
+                                **c_styles.TEXT_STYLE["body"],
+                                margin_bottom=Size.DEFAULT.value),
                         rx.box(
                             rx.vstack(
                                 #beneficios de las criptomonedas
@@ -360,29 +439,34 @@ def module_8() -> rx.Component:
                                 rx.text("Las criptomonedas operan sin intermediarios como "
                                         "bancos o gobiernos, lo que permite a los usuarios "
                                         "tener control total sobre sus fondos y realizar "
-                                        "transacciones sin restricciones geográficas."),
+                                        "transacciones sin restricciones geográficas.",
+                                        **c_styles.TEXT_STYLE["body"]),
                                 
                                 rx.text.strong("Seguridad y transparencia"),
                                 rx.text("Gracias a la tecnología blockchain, todas las "
                                         "transacciones quedan registradas de manera "
                                         "inmutable y transparente. Además, los sistemas "
-                                        "criptográficos brindan un alto nivel de seguridad."),
+                                        "criptográficos brindan un alto nivel de seguridad.",
+                                        **c_styles.TEXT_STYLE["body"]),
                                
                                 rx.text.strong("Bajas comisiones y rapidez en transacciones"),
                                 rx.text("Las transferencias de criptomonedas suelen tener costos "
                                         "menores en comparación con bancos tradicionales y pueden "
-                                        "realizarse de manera rápida, incluso a nivel internacional."),
+                                        "realizarse de manera rápida, incluso a nivel internacional.",
+                                        **c_styles.TEXT_STYLE["body"]),
                                 
                                 rx.text.strong("Oportunidades de inversión y rentabilidad"),
                                 rx.text("Las criptomonedas han demostrado ser una inversión rentable "
                                         "para muchos, con casos como Bitcoin y Ethereum alcanzando "
                                         "valores significativamente altos en el tiempo. Existen "
-                                        "oportunidades en trading, staking y DeFi."),
+                                        "oportunidades en trading, staking y DeFi.",
+                                        **c_styles.TEXT_STYLE["body"]),
                                 
                                 rx.text.strong("Privacidad y anonimato"),
                                 rx.text("Aunque las transacciones son públicas en la blockchain,"
                                         " los usuarios pueden operar sin revelar su identidad personal, "
-                                        "lo que protege su privacidad."),
+                                        "lo que protege su privacidad.",
+                                        **c_styles.TEXT_STYLE["body"]),
                                 
                                 #riesgos de las criptomonedas
                                 rx.heading("Beneficios de las criptomonedas",
@@ -391,34 +475,43 @@ def module_8() -> rx.Component:
                                 rx.text.strong("Alta volatilidad"),
                                 rx.text("Las criptomonedas pueden experimentar fluctuaciones de precio "
                                         "extremas en cortos períodos de tiempo, lo que las convierte "
-                                        "en inversiones de alto riesgo."),
+                                        "en inversiones de alto riesgo.",
+                                        **c_styles.TEXT_STYLE["body"]),
                                 
                                 rx.text.strong("Riesgo de pérdida total de fondos"),
                                 rx.text("Si un usuario pierde sus claves privadas, no podrá recuperar sus "
                                         "criptomonedas. A diferencia de los bancos, no hay forma de solicitar "
-                                        "un reembolso o recuperar los fondos."),
+                                        "un reembolso o recuperar los fondos.",
+                                        **c_styles.TEXT_STYLE["body"]),
                                 
                                 rx.text.strong("Hackeos y estafas"),
                                 rx.text("Los exchanges, wallets y plataformas DeFi han sido objetivos de hackeos."
-                                        " Además, hay muchas estafas como esquemas Ponzi y fraudes en proyectos cripto."),
+                                        " Además, hay muchas estafas como esquemas Ponzi y fraudes en proyectos cripto.",
+                                        **c_styles.TEXT_STYLE["body"]),
                                 
                                 rx.text.strong("Falta de regulación y respaldo legal"),
                                 rx.text("Las criptomonedas aún carecen de una regulación clara en muchos países. "
                                         "Esto implica riesgos legales y la posibilidad de que los "
-                                        "gobiernos impongan restricciones."),
+                                        "gobiernos impongan restricciones.",
+                                        **c_styles.TEXT_STYLE["body"]),
                                 
                                 rx.text.strong("Uso en actividades ilícitas"),
                                 rx.text("Debido a su anonimato, las criptomonedas han sido utilizadas en actividades ilegales,"
-                                        " lo que ha generado regulaciones más estrictas y restricciones en ciertos lugares"),
+                                        " lo que ha generado regulaciones más estrictas y restricciones en ciertos lugares",
+                                        **c_styles.TEXT_STYLE["body"],
+                                        margin_bottom=Size.DEFAULT.value,
+                                        ),
                             ),
                         ),
                         
                         rx.heading("En resumen...",
-                                   **c_styles.TEXT_STYLE["subseccion"]),
+                                   **c_styles.TEXT_STYLE["subseccion"],
+                                   margin_bottom=Size.DEFAULT.value),
                         rx.text("Las criptomonedas ofrecen múltiples beneficios como autonomía, seguridad y rentabilidad, "
                                 "pero también presentan riesgos importantes como volatilidad y falta de regulación. "
                                 "Si decides invertir o utilizarlas, es clave informarse, asegurar los fondos adecuadamente"
-                                " y diversificar los riesgos."),
+                                " y diversificar los riesgos.",
+                                **c_styles.TEXT_STYLE["body"]),
                         
                         #conclusion
                     rx.heading("Conclusión del Módulo 8:", **c_styles.TEXT_STYLE["subtitle"],
