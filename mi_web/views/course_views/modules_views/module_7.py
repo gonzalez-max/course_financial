@@ -316,7 +316,8 @@ def module_7() -> rx.Component:
                                      "trading o en tus análisis diarios. Practicá la identificación de tendencias, soportes y resistencias, "
                                      "y experimentá con diferentes combinaciones de indicadores para evaluar su efectividad. Recordá siempre "
                                      "confirmar las señales antes de operar y gestionar adecuadamente el riesgo. "),
-                        rx.list.item(rx.text.strong("Próximos Pasos:"),""),
+                        rx.list.item(rx.text.strong("Próximos Pasos:"),"En el siguiente módulo aprenderás sobre las criptomonedas: qué son, "
+                                     "cómo obtenerlas, cómo guardarlas y cuáles son sus riesgos y beneficios."),
                         list_style_type="disc",
                         color="white",
                         margin_bottom=Size.DEFAULT.value
