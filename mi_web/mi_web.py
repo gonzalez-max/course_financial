@@ -16,7 +16,7 @@ from mi_web.views.course_views.modules_views.module_5 import module_5
 from mi_web.views.course_views.modules_views.module_6 import module_6
 from mi_web.views.course_views.modules_views.module_7 import module_7
 from mi_web.views.course_views.modules_views.module_8 import module_8
-#from mi_web.views.course_views.modules_views.module_9 import module_9
+from mi_web.views.course_views.modules_views.module_9 import module_9
 #from mi_web.views.course_views.modules_views.module_10 import module_10
 
 
@@ -75,6 +75,7 @@ app.add_page(module_5, route="/module_5", title="Modulo 5")
 app.add_page(module_6, route="/module_6", title="Modulo 6")
 app.add_page(module_7, route="/module_7", title="Modulo 7")
 app.add_page(module_8, route="/module_8", title="Modulo 8")
+app.add_page(module_9, route="/module_9", title="Modulo 9")
 
 
 

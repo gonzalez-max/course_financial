@@ -238,17 +238,13 @@ IMAGE_STYLES={
     "width":"100%",
     "max_width":"600px",
     "max_height":"400px",
-    #"height":"auto",  # Se ajusta automáticamente
-    "object_fit":"cover",  # Evita deformaciones
     "background_color": "#99003d",
     "color": "#333333",
     "border": "1px solid white", #color de bordes normales
     "border_radius": "20px", #forma de los bordes
     "cursor": "pointer",  # Indica que la imagen es clickeable
     "transition": "transform 0.2s ease-in-out",  # Suaviza el efecto
-    #"margin_top":"1em",
     "align_items":"center",
-    "display":"flex",
     "justify":"center",
     "object_fit":"cover",  # Evita deformaciones
     "display":"block",  # Asegura que el margin auto funcione

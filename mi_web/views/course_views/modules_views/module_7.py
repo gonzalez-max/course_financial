@@ -235,7 +235,8 @@ def module_7() -> rx.Component:
                     #__________________________________________________________________________________________-#
                     #salidas
                     rx.heading("Salidas (Cuándo tomar ganancias o minimizar pérdidas)",
-                               **c_styles.TEXT_STYLE["subseccion"]),
+                               **c_styles.TEXT_STYLE["subseccion"],
+                               margin_button=Size.DEFAULT.value),
                     
                     #cruce de medias movile
                     rx.text.strong("- Cruce de Medias Móviles (Death Cross)",
@@ -311,13 +312,16 @@ def module_7() -> rx.Component:
                         rx.list.item(rx.text.strong("Resumen:")," En este módulo aprendimos sobre los principales indicadores técnicos"
                                      " y cómo utilizarlos para identificar oportunidades de entrada y salida en el mercado. Analizamos "
                                      "herramientas como las medias móviles, el RSI y el indicador Konkorde, comprendiendo su función y la "
-                                     "importancia de combinarlas con otras estrategias para mejorar la toma de decisiones en trading."),
+                                     "importancia de combinarlas con otras estrategias para mejorar la toma de decisiones en trading.",
+                                     margin_bottom=Size.DEFAULT.value),
                         rx.list.item(rx.text.strong("Aplicación Práctica:"),"Te invitamos a aplicar estos indicadores en un simulador de "
                                      "trading o en tus análisis diarios. Practicá la identificación de tendencias, soportes y resistencias, "
                                      "y experimentá con diferentes combinaciones de indicadores para evaluar su efectividad. Recordá siempre "
-                                     "confirmar las señales antes de operar y gestionar adecuadamente el riesgo. "),
+                                     "confirmar las señales antes de operar y gestionar adecuadamente el riesgo. ",
+                                     margin_bottom=Size.DEFAULT.value),
                         rx.list.item(rx.text.strong("Próximos Pasos:"),"En el siguiente módulo aprenderás sobre las criptomonedas: qué son, "
-                                     "cómo obtenerlas, cómo guardarlas y cuáles son sus riesgos y beneficios."),
+                                     "cómo obtenerlas, cómo guardarlas y cuáles son sus riesgos y beneficios.",
+                                     margin_bottom=Size.DEFAULT.value),
                         list_style_type="disc",
                         color="white",
                         margin_bottom=Size.DEFAULT.value

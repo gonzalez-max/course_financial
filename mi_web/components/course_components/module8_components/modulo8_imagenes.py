@@ -36,8 +36,10 @@ def image_BTC() -> rx.Component:
             width="100%",
             **c_styles.IMAGE_STYLES
         ),
-        align_items="center",
-        justify_content="center"
+        justify_content="center",  # Centra horizontalmente
+        align_items="center",  # Centra verticalmente
+        width="100%",  # Asegura que el contenedor ocupe toda la pantalla
+        height="100%",
     )
     
 def image_ETH() -> rx.Component:
@@ -80,6 +82,42 @@ def image_SOL() -> rx.Component:
         rx.image(
             height="350px",
             src=("/SOL.png?refresh=1"),
+            width="100%",
+            **c_styles.IMAGE_STYLES
+        ),
+        align_items="center",
+        justify_content="center"
+    )
+    
+def image_blockchain() -> rx.Component:
+    return rx.box(
+        rx.image(
+            height="350px",
+            src=("/blockchain.png?refresh=1"),
+            width="100%",
+            **c_styles.IMAGE_STYLES
+        ),
+        align_items="center",
+        justify_content="center"
+    )
+    
+def image_hot_cold_wallets() -> rx.Component:
+    return rx.box(
+        rx.image(
+            height="350px",
+            src=("/hot_cold_wallets.png?refresh=1"),
+            width="100%",
+            **c_styles.IMAGE_STYLES
+        ),
+        align_items="center",
+        justify_content="center"
+    )
+    
+def image_cripto_riesgo_beneficio() -> rx.Component:
+    return rx.box(
+        rx.image(
+            height="350px",
+            src=("/cripto_riesgo_beneficio.png?refresh=1"),
             width="100%",
             **c_styles.IMAGE_STYLES
         ),
