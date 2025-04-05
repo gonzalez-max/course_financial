@@ -220,22 +220,14 @@ def module_6() -> rx.Component:
                         rx.heading("Conclusión del Módulo 6: ", **c_styles.TEXT_STYLE["subtitle"],
                                    margin_bottom=Size.DEFAULT.value),
                         rx.list.ordered(
-                                rx.list.item(rx.text.strong("Resumen:")," Aprendimos a identificar"
-                                             " tendencias en el mercado, reconociendo la validez de "
-                                             "máximos y mínimos, y cómo la velocidad de las tendencias "
-                                             "(medida con líneas dinámicas) puede señalar posibles "
-                                             "agotamientos. Exploramos el triángulo invertido como un "
-                                             "enemigo de las tendencias, su relación con acumulación o "
-                                             "distribución, y cómo gestionar riesgos con stop-loss o salidas "
-                                             "manuales. También estudiamos cómo confirmar tendencias y evitar "
-                                             "falsas rupturas usando volumen, cierres de velas y retesteos."
+                                rx.list.item(rx.text.strong("Resumen:")," Aprendimos a detectar tendencias mediante máximos y mínimos"
+                                             ", interpretar su velocidad con líneas dinámicas, y reconocer señales de agotamiento. "
+                                             "También analizamos patrones como el triángulo invertido y cómo gestionar riesgos con "
+                                             "herramientas como el stop-loss."
                                              , margin_bottom=Size.DEFAULT.value),
-                                rx.list.item(rx.text.strong("Aplicación Práctica:")," Reflexioná sobre cómo "
-                                             "identificar tendencias y patrones como el triángulo invertido "
-                                             "en gráficos reales. Practicá trazando líneas de tendencia desde "
-                                             "las mechas de las velas, marcando soportes y resistencias, y "
-                                             "detectando rupturas o falsas señales para planificar "
-                                             "entradas y salidas."
+                                rx.list.item(rx.text.strong("Aplicación Práctica:")," Practicá trazando líneas de tendencia, marcando "
+                                             "soportes y resistencias, e identificando rupturas en gráficos reales. Usá el volumen y los "
+                                             "retesteos para confirmar señales y planificar tus entradas y salidas con mayor precisión."
                                              , margin_bottom=Size.DEFAULT.value),
                                 rx.list.item(rx.text.strong("Próximos Pasos:")," En el siguiente curso aprenderás "
                                              "sobre los indicadores en los gráficos de trading y cómo estos nos ayudan "

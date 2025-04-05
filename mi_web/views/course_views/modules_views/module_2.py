@@ -18,7 +18,7 @@ def module_2() -> rx.Component:
             rx.vstack(
                 rx.box(
                     #encabezado del modulo 2 tipos de inversores e intrumentos
-                    rx.heading("Módulo 2: Tipos de Inversores e Instrumentos de inversion",
+                    rx.heading("Módulo 2: Inversores y tipos de Instrumentos",
                                **c_styles.TEXT_STYLE["title"],
                                margin_top="35px"),
      

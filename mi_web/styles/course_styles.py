@@ -310,9 +310,10 @@ TEXT_STYLE = {
     },
     "highlight": {  # Texto resaltado
         "font_size": "16px",
-        "font_weight": "bold",
-        "color": "red",
-        "background_color": "yellow",
+        "font_weight": "semibold",
+        "font_family": "Helvetica",
+        "color": "white",
+        "background_color": "#c14d00",
         "padding": "2px 5px",
         "border_radius": "5px",
     },

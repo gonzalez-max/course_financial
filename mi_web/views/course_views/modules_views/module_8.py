@@ -555,18 +555,11 @@ def module_8() -> rx.Component:
                         rx.heading("Conclusión del Módulo 8:", **c_styles.TEXT_STYLE["subtitle"],
                                margin_bottom=Size.DEFAULT.value),
                         rx.list.ordered(
-                            rx.list.item(rx.text.strong("Resumen:")," En este módulo exploramos qué son las criptomonedas"
-                                     ", cómo funcionan y cuál es su impacto en el mundo financiero. Aprendimos sobre "
-                                     "la tecnología blockchain que las respalda, las principales criptomonedas del mercado, "
-                                     "las diferencias entre carteras y exchanges, y los riesgos y beneficios de operar con "
-                                     "estos activos digitales.",
+                            rx.list.item(rx.text.strong("Resumen:")," Aprendimos qué son las criptomonedas, cómo funciona la tecnología blockchain, "
+                                         "y conocimos las principales criptos, wallets, exchanges, y los riesgos y beneficios de operar con estos activos.",
                                      margin_bottom=Size.DEFAULT.value),
-                            rx.list.item(rx.text.strong("Aplicación Práctica:")," Te invitamos a seguir investigando sobre las "
-                                     "criptomonedas y su evolución. Podés abrir una cuenta en un exchange de prueba para "
-                                     "familiarizarte con su funcionamiento, explorar distintas wallets para aprender "
-                                     "cómo almacenar activos digitales de manera segura y analizar las tendencias del "
-                                     "mercado antes de invertir. Recordá siempre gestionar los riesgos y mantenerte "
-                                     "informado sobre la regulación y seguridad en el ecosistema cripto.",
+                            rx.list.item(rx.text.strong("Aplicación Práctica:")," Explorá exchanges de prueba, probá distintas wallets y analizá el "
+                                         "mercado antes de invertir. Mantenete informado sobre regulación y gestioná siempre los riesgos.",
                                      margin_bottom=Size.DEFAULT.value),
                             rx.list.item(rx.text.strong("Próximos Pasos:"),""),
                             list_style_type="disc",

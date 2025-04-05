@@ -120,9 +120,9 @@ def module_7() -> rx.Component:
                     
                     
                     #indicador konkorde
-                    rx.heading("3. Konkorde",
+                    rx.heading("3. Koncorde",
                                **c_styles.TEXT_STYLE["subseccion"]),
-                    rx.text("El Konkorde es un indicador que permite identificar la actividad de los grandes inversores "
+                    rx.text("El Koncorde es un indicador que permite identificar la actividad de los grandes inversores "
                             "(manos fuertes) y de los minoristas (manos débiles)",
                             **c_styles.TEXT_STYLE["body"]),
                     
@@ -309,15 +309,13 @@ def module_7() -> rx.Component:
                                ),
                     
                     rx.list.ordered(
-                        rx.list.item(rx.text.strong("Resumen:")," En este módulo aprendimos sobre los principales indicadores técnicos"
-                                     " y cómo utilizarlos para identificar oportunidades de entrada y salida en el mercado. Analizamos "
-                                     "herramientas como las medias móviles, el RSI y el indicador Konkorde, comprendiendo su función y la "
-                                     "importancia de combinarlas con otras estrategias para mejorar la toma de decisiones en trading.",
+                        rx.list.item(rx.text.strong("Resumen:")," Vimos los principales indicadores técnicos como medias móviles"
+                                     ", RSI y Koncorde, y cómo usarlos para detectar entradas y salidas del mercado. Aprendimos "
+                                     "su utilidad y la importancia de combinarlos con otras estrategias.",
                                      margin_bottom=Size.DEFAULT.value),
-                        rx.list.item(rx.text.strong("Aplicación Práctica:"),"Te invitamos a aplicar estos indicadores en un simulador de "
-                                     "trading o en tus análisis diarios. Practicá la identificación de tendencias, soportes y resistencias, "
-                                     "y experimentá con diferentes combinaciones de indicadores para evaluar su efectividad. Recordá siempre "
-                                     "confirmar las señales antes de operar y gestionar adecuadamente el riesgo. ",
+                        rx.list.item(rx.text.strong("Aplicación Práctica:")," Usá estos indicadores en simuladores o análisis diarios."
+                                     " Practicá detectar tendencias, soportes y resistencias, y probá combinaciones para evaluar su efectividad. "
+                                     "Siempre confirmá señales antes de operar y gestioná bien el riesgo.",
                                      margin_bottom=Size.DEFAULT.value),
                         rx.list.item(rx.text.strong("Próximos Pasos:"),"En el siguiente módulo aprenderás sobre las criptomonedas: qué son, "
                                      "cómo obtenerlas, cómo guardarlas y cuáles son sus riesgos y beneficios.",
