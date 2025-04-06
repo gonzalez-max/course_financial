@@ -148,11 +148,12 @@ def module_2() -> rx.Component:
                     #Renta variable
                     rx.heading("Renta Variable", **c_styles.TEXT_STYLE["subseccion"]),
                     rx.text("En estas inversiones, la rentabilidad no está garantizada y depende de factores del mercado,"
-                            " lo que las hace más volátiles pero con un potencial de ganancias mayor.", **c_styles.TEXT_STYLE["body"],
+                            " lo que las hace más volátiles pero con un potencial de ganancias mayor.", 
+                            **c_styles.TEXT_STYLE["body"],
                             margin_bottom=Size.DEFAULT.value),
                     #lista de instrmentos
                     rx.list.ordered(
-                      rx.list.item(rx.text.strong("Acciones:")," Representan una parte de una empresa. Su valor varía según la oferta"
+                      rx.list.item(rx.text.strong("Acciones/CEDEARS:")," Representan una parte de una empresa. Su valor varía según la oferta"
                           " y demanda en la bolsa, pudiendo generar ganancias por apreciación del precio o por dividendos"),
                       rx.list.item(rx.text.strong("Commodities:")," Materias primas como oro, petróleo o soja, cuyos precios fluctúan en "
                           "función de la oferta y demanda global."),
@@ -169,11 +170,57 @@ def module_2() -> rx.Component:
                     #cuadro comparativo renta fija vs renta variable
                     rx.vstack(module2_table2(),
                     margin_bottom=Size.DEFAULT.value),
-      
+
+                    #seccion 4 que son los cedears
+                    rx.heading("4. ¿Qué son los CEDEARs?",
+                               **c_styles.TEXT_STYLE["subtitle"]),
+                    rx.text("Si vivís en Argentina seguramente alguna vez hayas escuchado"
+                            "sobre los CEDEARS, ¿Que realmente son?.",
+                            **c_styles.TEXT_STYLE["body"]),
+                    
+                    rx.text("CEDEAR significa Certificado de Depósito Argentino. Son activos que representan acciones de"
+                            " empresas extranjeras (como Apple, Tesla o Coca-Cola), pero que se pueden comprar y vender "
+                            "en la Bolsa de Argentina (BYMA)",
+                            **c_styles.TEXT_STYLE["body"]),
+                    
+                    rx.heading("¿Qué te permite un CEDEAR?",
+                            **c_styles.TEXT_STYLE["subseccion"]),
+                    
+                    #lista 
+                    rx.text("⚪ Invertir en empresas de Estados Unidos u otros países sin necesidad de tener una "
+                            "cuenta en el exterior.",
+                            **c_styles.TEXT_STYLE["body"]),
+                    rx.text("⚪ Estar expuesto al tipo de cambio dólar CCL (Contado con Liquidación).",
+                            **c_styles.TEXT_STYLE["body"]),
+                    rx.text("⚪ Diversificar tu cartera con acciones globales.",
+                            **c_styles.TEXT_STYLE["body"]),
+
+                    rx.heading("¿Cuales son sus ventajas?",
+                               **c_styles.TEXT_STYLE["subseccion"]),
+                    #lista de ventajas
+                    rx.text("⚪ Podés invertir en empresas como Google, Microsoft, Amazon, etc.",
+                            **c_styles.TEXT_STYLE["body"]),
+                    rx.text("⚪ Se compran en pesos.",
+                            **c_styles.TEXT_STYLE["body"]),
+                    rx.text("⚪ Están protegidos por la suba del dólar (porque se ajustan al tipo de cambio).",
+                            **c_styles.TEXT_STYLE["body"]),
+                    rx.text("⚪ Ideal para proteger tus ahorros frente a la inflación o devaluación.",
+                            **c_styles.TEXT_STYLE["body"]),
+                    
+                    #lista de puntos a tener en cuenta
+                    rx.heading("Puntos a tener en cuenta",
+                               **c_styles.TEXT_STYLE["body"]),
+                    rx.text("⚪ No pagan dividendos en muchos casos, o lo hacen en muy baja proporción.",
+                            **c_styles.TEXT_STYLE["body"]),
+                    rx.text("⚪ Tienen menor liquidez que acciones locales.",
+                            **c_styles.TEXT_STYLE["body"]),
+                    rx.text("⚪ Tenés que ver la relación de conversión, ya que no siempre 1 CEDEAR = 1 acción.",
+                            **c_styles.TEXT_STYLE["body"]),
+                    
                     rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value, margin_bottom=Size.DEFAULT.value),
 
-                    #seccion 4 fondos comunes de inversion
-                    rx.heading("4. Fondos comunes de inversion.", **c_styles.TEXT_STYLE["subtitle"]),
+                    #seccion 5 fondos comunes de inversion
+                    rx.heading("5. Fondos comunes de inversion.", **c_styles.TEXT_STYLE["subtitle"]),
                     rx.text("Los Fondos Comunes de Inversión (FCI) son herramientas que permiten invertir "
                             "sin necesidad de conocimientos avanzados. Funcionan agrupando dinero de muchas personas "
                             "y gestionándolo en distintos activos según el tipo de fondo.", **c_styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),

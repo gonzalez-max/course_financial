@@ -269,6 +269,11 @@ def module_9() -> rx.Component:
                                         " no de una actividad económica real. Funciona así:",
                                         **c_styles.TEXT_STYLE["body"]),
                                
+                               rx.box(
+                                       zoomed_image("/esquema_ponzi.png?refresh=1"),
+                               ),
+                               
+                               
                                 #lista esquema estafa piramidal
                                 
                                     rx.text("⚪ A vos te prometen dinero si invertís y traés a más personas.",

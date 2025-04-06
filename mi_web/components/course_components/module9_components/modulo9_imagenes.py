@@ -127,3 +127,18 @@ def image_prueba_estafa3() -> rx.Component:
         width="100%",  # Asegura que el contenedor ocupe toda la pantalla
         height="100%",
     )
+#_____________________________________________________________________________#    
+
+def image_esquema_ponzi() -> rx.Component:
+    return rx.box(
+        rx.image(
+            height="350px",
+            src=("/esquema_ponzi.png?refresh=1"),
+            width="100%",
+            **c_styles.IMAGE_STYLES
+        ),
+        justify_content="center",  # Centra horizontalmente
+        align_items="center",  # Centra verticalmente
+        width="100%",  # Asegura que el contenedor ocupe toda la pantalla
+        height="100%",
+    )

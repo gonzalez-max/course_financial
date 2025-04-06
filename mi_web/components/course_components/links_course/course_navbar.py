@@ -85,7 +85,7 @@ def navbar_course() -> rx.Component:
                                         href="/module_8", **c_styles.COURSE_NAVBAR_FONTS),
                                 rx.link(rx.text.strong("Módulo 9:")," Las Estafas en el Trading y las Inversiones",
                                         href="/module_9", **c_styles.COURSE_NAVBAR_FONTS),
-                                rx.link(rx.text.strong("Módulo 10:")," Tendencias y como identificarlas",
+                                rx.link(rx.text.strong("Módulo 10:")," Plataformas de Trading y Final del Curso",
                                         href="/module_10", **c_styles.COURSE_NAVBAR_FONTS),
                                 spacing="2",
                             ),

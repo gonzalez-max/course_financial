@@ -34,7 +34,7 @@ def links_modules() -> rx.Component:
                         rx.button(" Módulo numero 9: Las Estafas en el Trading y las Inversiones", 
                                 on_click=lambda: rx.redirect("/module_9"), is_external=False,**c_styles.BUTTON_COURSES_STYLES,
                         ),
-                        rx.button(" Módulo numero 10: Tendencias y como identificarlas.", 
+                        rx.button(" Módulo numero 10: Plataformas de Trading y Final del Curso", 
                                 on_click=lambda: rx.redirect("/module_10"), is_external=False,**c_styles.BUTTON_COURSES_STYLES,
                         ),  
                 

@@ -271,7 +271,7 @@ TEXT_STYLE = {
         "width": "100%",
         "max_width":"600px",
         "margin": "auto",  # Centra el título dentro de su contenedor
-        "line_height": "1.2",  # Mejora la legibilidad en varias líneas
+        "line_height": "1.1",  # Mejora la legibilidad en varias líneas
         "font_family":"Roboto",
     },
     "subtitle": {  # Para subtítulos o encabezados secundarios
@@ -284,27 +284,29 @@ TEXT_STYLE = {
         "max_width": "600px", # Evita que el título sea demasiado ancho en pantallas pequeñas
         "width":"100%",
         "margin": "auto",  # Centra el título dentro de su contenedor
-        "line_height": "1.2", 
+        "line_height": "1.1", 
     },
     
     "subseccion": {  # Para subtítulos o encabezados secundarios
-        "font_size": "18px",
+        "font_size": "20px",
         "font_weight": "semibold",
         "color": "#8ad3ff",
         "text_align": "left",
+        "line_height": "1.3",
+        "letter_spacing": "0.03em"
     },
     
     "body": {  # Para párrafos o contenido de texto
         
         "color": "white",
         "word-wrap": "break-word",
-        "line_height": "1.5",
+        "line_height": "1.3",
         "letter_spacing" : "0.1em",
         "font_family": "Helvetica",
         "max_width":"600px",
         "font_weight":"normal",
         "font_size": "clamp(14px, 1.2vw, 18px)",
-        "padding": "10px",
+        "padding": "0px",
         "display": "block",
         
     },
