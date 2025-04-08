@@ -276,7 +276,7 @@ TEXT_STYLE = {
     },
     "subtitle": {  # Para subtítulos o encabezados secundarios
         "font_size": "25px",
-        "font_weight": "400",
+        "font_weight": "700",
         "color": "#ffa824",
         "text_align": "left",
         "font_family": "Roboto",
@@ -289,11 +289,13 @@ TEXT_STYLE = {
     
     "subseccion": {  # Para subtítulos o encabezados secundarios
         "font_size": "20px",
-        "font_weight": "semibold",
+        "font_weight": "500",
         "color": "#8ad3ff",
         "text_align": "left",
         "line_height": "1.3",
-        "letter_spacing": "0.03em"
+        "letter_spacing": "0.03em",
+        "font_family": "Roboto",
+        
     },
     
     "body": {  # Para párrafos o contenido de texto

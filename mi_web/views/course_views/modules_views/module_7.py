@@ -19,10 +19,11 @@ def module_7() -> rx.Component:
                     #titulo indicadores y entradas
                     rx.heading("Módulo 7: Indicadores y Entradas Exitosas",
                                **c_styles.TEXT_STYLE["title"],
-                               margin_top="35px"),
+                               margin_top="35px",
+                               margin_bottom=Size.MEDIUM.value),
                     
                     #seccion 1 indicadores tecnicos
-                    rx.heading("Los Indicadores Tecnicos ",
+                    rx.heading("1. Los Indicadores Tecnicos ",
                                **c_styles.TEXT_STYLE["subtitle"],
                                 margin_bottom=Size.MEDIUM.value),
                     
@@ -37,21 +38,26 @@ def module_7() -> rx.Component:
                             "mercado de manera más objetiva. No son predictores absolutos "
                             "del precio, pero permiten identificar tendencias, momentos de "
                             "entrada, salida, y la fuerza del mercado.",
-                            **c_styles.TEXT_STYLE["body"]),
+                            **c_styles.TEXT_STYLE["body"],
+                            margin_bottom=Size.MEDIUM.value),
+                    
                     rx.text(rx.text.strong("A continuación")," te muestro los Indicadores Tecnicos mas importantes"
                             " y los que yo te recomiendo utilizar:",
-                            **c_styles.TEXT_STYLE["body"]),
+                            **c_styles.TEXT_STYLE["body"],
+                            margin_bottom=Size.DEFAULT.value),
                     
                     #indicador medias moviles
                     rx.heading("1. Medias Móviles (MAs - Moving Averages)",
-                               **c_styles.TEXT_STYLE["subseccion"]),
+                               **c_styles.TEXT_STYLE["subseccion"],
+                               margin_bottom=Size.MEDIUM.value),
                     
                     rx.text("Las medias móviles son líneas en el precio para que veas la dirección "
                             "general del mercado. Imagina que promedian los precios de los últimos "
                             "días (puede ser 21, 30, 150, 200, depende de la temporalidad que elijas)"
                             " y te dibujan una curva en el gráfico. Si la línea sube, la tendencia "
                             "es alcista (el precio tiende a subir); si baja, es bajista (tiende a bajar).",
-                            **c_styles.TEXT_STYLE["body"]),
+                            **c_styles.TEXT_STYLE["body"],
+                            margin_bottom=Size.DEFAULT.value),
                     
                     #imagen ejemplo medias moviles
                     rx.box(
@@ -85,67 +91,83 @@ def module_7() -> rx.Component:
                             "Los traders las usan para encontrar momentos de compra o venta: por ejemplo, si una media corta "
                             "(como la de 21 días) cruza por encima de una larga (como la de 30 días), puede ser señal de compra. ",
                             rx.text.strong("Pero no es magia"),", solo te da una idea de la tendencia, y hay que combinarla con otros indicadores.",
-                            **c_styles.TEXT_STYLE["body"]), 
+                            **c_styles.TEXT_STYLE["body"],
+                            margin_bottom=Size.DEFAULT.value), 
                     
                     #indicador rsi
                     rx.heading("2. RSI (Índice de Fuerza Relativa)",
-                               **c_styles.TEXT_STYLE["subseccion"]),
+                               **c_styles.TEXT_STYLE["subseccion"],
+                               margin_bottom=Size.MEDIUM.value),
                     
                     rx.text("El RSI (Relative Strength Index) es un oscilador que mide la fuerza"
                             " y velocidad de los movimientos del precio en una escala de 0 a 100.",
-                        **c_styles.TEXT_STYLE["body"]),
+                        **c_styles.TEXT_STYLE["body"],
+                        margin_bottom=Size.DEFAULT.value),
+                     
                      #imagen de ejemplo
                     rx.box(
-                            zoomed_image("/rsi_ejemplo.png?refresh=1")),
+                            zoomed_image("/rsi_ejemplo.png?refresh=1"),
+                            margin_bottom=Size.DEFAULT.value),
                     
                     #contexto imagen
                     rx.text("En el gráfico, el Índice de Fuerza Relativa (RSI) se encuentra en 43.82, lo que indica que el activo"
                             " está en una zona neutral (entre 30 y 70).",
-                            **c_styles.TEXT_STYLE["body"]),
+                            **c_styles.TEXT_STYLE["body"],
+                            margin_bottom=Size.MEDIUM.value),
                     
                     rx.text("si el RSI de un grafico es",rx.text.strong(" Mayor que 70"), " significa que el"
                             "activo esta en sobrecompra, o sea, mucha gente ha comprado y el precio podría empezar a bajar."
                             "De lo contrario si el RSI ",rx.text.strong("es menor a 30 "),"significa que el activo"
                             "está sobrevendido lo que quiere decir que hay pocos compradores y el precio podria subir pronto.",
-                    **c_styles.TEXT_STYLE["body"]),
+                                **c_styles.TEXT_STYLE["body"],
+                                margin_bottom=Size.MEDIUM.value),
                     
                     rx.heading("¿Como se utilizan? ",
-                               **c_styles.TEXT_STYLE["subseccion"]),
+                               **c_styles.TEXT_STYLE["subseccion"],
+                               margin_bottom=Size.MEDIUM.value),
+                   
                     rx.text("Mirá el movimiento del precio en un periodo de tiempo (depende de tu estrategia), y compará cuánto "
                             "subió versus cuánto bajó. Pero no te preocupes por la fórmula exacta ahora, los gráficos de "
                             "trading lo hacen por vos. Solo fijáte en esos niveles, 70 y 30, y usálos como una señal para "
                             "decidir si entras o sales. No confies 100% en un solo indicador, siempre tené en cuenta"
                             "el contexto del mercado y demas factores.",
-                            **c_styles.TEXT_STYLE["body"]),
+                            **c_styles.TEXT_STYLE["body"],
+                            margin_bottom=Size.MEDIUM.value),
                     
                     
                     #indicador konkorde
                     rx.heading("3. Koncorde",
-                               **c_styles.TEXT_STYLE["subseccion"]),
+                               **c_styles.TEXT_STYLE["subseccion"],
+                               margin_bottom=Size.MEDIUM.value),
+                    
                     rx.text("El Koncorde es un indicador que permite identificar la actividad de los grandes inversores "
                             "(manos fuertes) y de los minoristas (manos débiles)",
-                            **c_styles.TEXT_STYLE["body"]),
+                            **c_styles.TEXT_STYLE["body"],
+                            margin_bottom=Size.DEFAULT.value),
                     
                         #imagen ejemplo konkorde
                     rx.box(
                             zoomed_image("/konkorde_ejemplo.png?refresh=1"),
-                            ),
+                            margin_bottom=Size.DEFAULT.value),
+                    
                     #contexto imagen konkorde
                     rx.text("En el gráfico del Koncorde de GGAL: en el 'máximo' de febrero, azul arriba y verde abajo "
                             "(grandes compran, pequeños venden), el precio sube. En el 'mínimo' de abril, azul y verde "
                             "abajo (todos venden), el precio cae. La montaña marrón y línea roja confirman la tendencia: "
                             "si baja, el precio también.",
-                            **c_styles.TEXT_STYLE["body"]),
+                            **c_styles.TEXT_STYLE["body"],
+                            margin_bottom=Size.DEFAULT.value),
                 
                     rx.text(rx.text.strong("El Koncorde es")," un mapa que te muestra qué están haciendo los 'grandes jugadores'"
                             " y los 'pequeños' en el mercado. las manos fuertes bancos, fondos de inversión, gente con mucho dinero "
                             "y las manos débiles, somos nosotros, los traders pequeños. Este indicador te ayuda a ver si "
                             "estos dos grupos están comprando o vendiendo, y cómo se mueve la tendencia del precio.",
-                            **c_styles.TEXT_STYLE["body"]),
+                            **c_styles.TEXT_STYLE["body"],
+                            margin_bottom=Size.MEDIUM.value),
                     
                     rx.heading("Colores y señales:",
                             **c_styles.TEXT_STYLE["subseccion"],
-                            margin_bottom=Size.DEFAULT.value),
+                            margin_bottom=Size.MEDIUM.value),
                     #lista de elementos konkorde
                     rx.list.ordered(
                         rx.list.item(rx.text.strong("🟢 Verde: "),"Acumulación de manos fuertes (institucionales/grandes"
@@ -161,74 +183,89 @@ def module_7() -> rx.Component:
                     ),           
                     
                     rx.heading(" ¿Como se utiliza? ",
-                               **c_styles.TEXT_STYLE["subseccion"]),
+                               **c_styles.TEXT_STYLE["subseccion"],
+                               margin_bottom=Size.MEDIUM.value),
+                    
                     rx.text(" si ves que el azul está arriba (manos fuertes comprando) y el verde está abajo "
                             "(manos débiles vendiendo), podrías pensar que los grandes están acumulando mientras "
                             "los pequeños se asustan y venden eso a veces significa que el precio podría subir pronto. "
                             "Pero ojo, no es una bola de cristal; es una herramienta que te da pistas, y siempre hay que "
                             "usarla con otras señales o un buen plan, porque el mercado no siempre sigue las reglas.",
-                            **c_styles.TEXT_STYLE["body"]),
+                            **c_styles.TEXT_STYLE["body"],
+                            margin_bottom=Size.MEDIUM.value),
                
                     #importante
                     rx.heading("⚠️¡¡importante!!⚠️",
-                               **c_styles.TEXT_STYLE["subseccion"]),
+                               **c_styles.TEXT_STYLE["subseccion"],
+                               margin_bottom=Size.MEDIUM.value),
+                    
                     rx.text("Es importante recordar que ningún indicador es 100% preciso y que su mayor efectividad se logra "
                             "combinándolos entre sí y con otras herramientas del análisis técnico, como líneas de soporte y "
                             "resistencia o patrones de velas japonesas.",
-                            **c_styles.TEXT_STYLE["body"]),
+                            **c_styles.TEXT_STYLE["body"],
+                            margin_bottom=Size.DEFAULT.value),
                     
                     rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value,margin_bottom=Size.DEFAULT.value),
                     
                     #seccion 2 tipos de entradas
                     rx.heading("Entradas Y Salidas Exitosas",
                                **c_styles.TEXT_STYLE["subtitle"],
-                                margin_bottom=Size.DEFAULT.value
+                                margin_bottom=Size.MEDIUM.value
                                 ),
                     
                     rx.heading("Entradas (Cuándo ingresar al mercado)",
                                **c_styles.TEXT_STYLE["subseccion"],
-                               margin_bottom=Size.DEFAULT.value
+                               margin_bottom=Size.MEDIUM.value
                                ),
                         
                         #cruce de medias moviles
-                    rx.text.strong("- Cruce de Medias Móviles (Golden Cross)",
-                                   ),
+                    rx.heading(rx.text.strong("- Cruce de Medias Móviles (Golden Cross)"),
+                               font_size="17px",
+                               margin_bottom=Size.MEDIUM.value),
+                   
                     rx.text("Entrada alcista cuando la media móvil de 21 perdiodos cruza hacia arriba las media móvil"
                             " de 30 periodos, Es una señal fuerte de cambio de tendencia al alza."
                             "teniendo en cuenta una entrada de",rx.text.strong(" Corto Plazo."),
-                            **c_styles.TEXT_STYLE["body"]),
+                            **c_styles.TEXT_STYLE["body"],
+                            margin_bottom=Size.MEDIUM.value),
                     
                     #imagen ejemplo cruce medias moviles
                     rx.box(
                             zoomed_image("/golden_cross_alcista.png?refresh=1"),
-                            margin_bottom=Size.DEFAULT.value
+                            margin_bottom=Size.REGULAR.value
                     ),
                     #soporte de piso
-                    rx.text.strong("- Soportes o Piso de un Canal Alcista",
-                                   margin_top=Size.DEFAULT.value),
+                    rx.heading(rx.text.strong("- Soportes o Piso de un Canal Alcista"),
+                                   font_size="17px",
+                                   margin_top=Size.MEDIUM.value),
                     
                     rx.text("Si el precio toca repetidamente una zona de soporte clave y muestra rechazo con velas de reversión"
                             " o volumen creciente, es una señal de compra. Confirmar con RSI en sobreventa o divergencia alcista.",
                             **c_styles.TEXT_STYLE["body"],
+                            margin_bottom=Size.MEDIUM.value
                         ),
                     
                     #imagen ejemplo soportes de piso
                     rx.box(
                             zoomed_image("/entrada_canal_alcista.png?refresh=1"),
-                            margin_bottom=Size.DEFAULT.value
+                            margin_bottom=Size.REGULAR.value
                             ),
                     
                     #ruptura de resistencia
-                    rx.text.strong("- Ruptura de Soporte con Volumen",
-                                   ),
+                    rx.heading(rx.text.strong("- Ruptura de Soporte con Volumen"),
+                                margin_bottom=Size.MEDIUM.value,
+                                font_size="17px"),
+                    
+                    
                     rx.text("Si el precio rompe una resistencia fuerte con aumento de volumen, indica una posible continuación "
                             "alcista. Confirmar con cierre de vela por encima de la resistencia.",
-                            **c_styles.TEXT_STYLE["body"]),
+                            **c_styles.TEXT_STYLE["body"],
+                            margin_bottom=Size.MEDIUM.value),
                     
                     #imagen ejemplo soporte de resistencia
                     rx.box(
                             zoomed_image("/ruptura_resistencia_volumen.png?refresh=1"),
-                            margin_bottom=Size.DEFAULT.value
+                            margin_bottom=Size.REGULAR.value
                             ),
                     
                     rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value,margin_bottom=Size.DEFAULT.value),
@@ -236,46 +273,55 @@ def module_7() -> rx.Component:
                     #salidas
                     rx.heading("Salidas (Cuándo tomar ganancias o minimizar pérdidas)",
                                **c_styles.TEXT_STYLE["subseccion"],
-                               margin_button=Size.DEFAULT.value),
+                               margin_bottom=Size.DEFAULT.value),
                     
                     #cruce de medias movile
-                    rx.text.strong("- Cruce de Medias Móviles (Death Cross)",
-                                   ),
+                    rx.heading(rx.text.strong("- Cruce de Medias Móviles (Death Cross)"),
+                               margin_bottom=Size.MEDIUM.value,
+                               font_size="17px"),
+                    
                     rx.text("Salida bajista cuando la media móvil de 21 periodos cruza hacia abajo la media movil de"
                             "30 periodos. Señal de cambio de tendencia bajista.Es una señal fuerte de cambio de tendencia "
                             "bajista. teniendo en cuenta un grafico de",rx.text.strong(" Corto Plazo."),
-                            **c_styles.TEXT_STYLE["body"]),
+                            **c_styles.TEXT_STYLE["body"],
+                            margin_bottom=Size.MEDIUM.value),
                     
                     #imagen ejemplo death cross
                     rx.box(
                             zoomed_image("/death_cross_bajista.png?refresh=1"),
-                            margin_bottom=Size.DEFAULT.value
+                            margin_bottom=Size.REGULAR.value
                     ),
                     
                     #resistencia o techo canal alcista
-                    rx.text.strong("- Resistencias o Techo de un Canal Alcista",
-                                   ),
+                    rx.heading(rx.text.strong("- Resistencias o Techo de un Canal Alcista"),
+                               margin_bottom=Size.MEDIUM.value,
+                               font_size="17px"),
+                    
                     rx.text("Si el precio toca una resistencia clave y no logra romperla, es momento de considerar una salida."
                         "Confirmar con velas de reversión, volumen decreciente o RSI en sobrecompra.",
-                            **c_styles.TEXT_STYLE["body"]),
+                            **c_styles.TEXT_STYLE["body"],
+                            margin_bottom=Size.MEDIUM.value),
                     
                         #ejemplo techo canal
                         rx.box(
                                 zoomed_image("/salida_canal_alcista.png?refresh=1"),
-                                margin_bottom=Size.DEFAULT.value
+                                margin_bottom=Size.REGULAR.value
                         ),
                     
                     #perdida de soporte con volumen
-                    rx.text.strong("- Pérdida de Soporte con Volumen",
-                                   ),
+                    rx.heading(rx.text.strong("- Pérdida de Soporte con Volumen"),
+                               margin_bottom=Size.MEDIUM.value,
+                               font_size="17px"),
+                    
                     rx.text("Si el precio rompe un soporte importante con aumento de volumen, es una señal de venta.",
                                 "Puede indicar el inicio de una tendencia bajista fuerte.",
-                            **c_styles.TEXT_STYLE["body"]),
+                            **c_styles.TEXT_STYLE["body"],
+                            margin_bottom=Size.MEDIUM.value),
                     
                     #ejemplo perdida soporte
                     rx.box(
                             zoomed_image("/ruptura_soporte_volumen.png?refresh=1"),
-                            margin_bottom=Size.DEFAULT.value
+                            margin_bottom=Size.REGULAR.value
                     ),
                     
                     rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value,margin_bottom=Size.DEFAULT.value),
@@ -283,6 +329,7 @@ def module_7() -> rx.Component:
                     rx.heading("Consideraciones Finales",
                                **c_styles.TEXT_STYLE["subtitle"],
                                margin_bottom=Size.MEDIUM.value),
+                    
                     #lista de consideraciones finales
                     rx.list.ordered(
                         rx.list.item(rx.text.strong("No operar basándose en una sola señal,")," sino confirmar con acción "

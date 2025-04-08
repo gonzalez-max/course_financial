@@ -24,25 +24,35 @@ def module_4() -> rx.Component:
             rx.vstack(
                 rx.box(
                         #encabezado del modulo
-                        rx.heading("Módulo 4: Fundamentos del Análisis Técnico y Patrones", **c_styles.TEXT_STYLE["title"],
-                                   margin_top="35px"),
+                        rx.heading("Módulo 4: Fundamentos del Análisis Técnico y Patrones",
+                                   **c_styles.TEXT_STYLE["title"],
+                                   margin_top="35px",
+                                   margin_bottom=Size.MEDIUM.value),
                     
                         #1. seccion el ciclo del precio
-                        rx.heading("1. El Ciclo del Precio", **c_styles.TEXT_STYLE["subtitle"]),
+                        rx.heading("1. El Ciclo del Precio",
+                                   **c_styles.TEXT_STYLE["subtitle"],
+                                   margin_bottom=Size.MEDIUM.value),
+                        
                         rx.text("El ciclo del precio tiene cuatro fases: acumulación, tendencia alcista, distribución y "
                                 "tendencia bajista. Para ganar en el trading, es clave aprovechar las tendencias "
                                 "(alcista y bajista) interpretando el comportamiento del precio en un gráfico. "
-                                , **c_styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
+                                , **c_styles.TEXT_STYLE["body"],
+                                margin_bottom=Size.DEFAULT.value),
                         
                         #imagen ciclo del precio
                         rx.hstack(
                                 zoomed_image("/ciclo_del_precio.png?refresh=1"),
-                                margin_bottom=Size.REGULAR.value),
+                                margin_bottom=Size.DEFAULT.value),
                         
                         # subseccion ¿como identificar las tendencias?
-                        rx.heading(" ¿Cómo Identificar las Tendencias?", **c_styles.TEXT_STYLE["subseccion"]),
+                        rx.heading(" ¿Cómo Identificar las Tendencias?",
+                                   **c_styles.TEXT_STYLE["subseccion"],
+                                   margin_bottom=Size.MEDIUM.value),
+                        
                         rx.text("En el análisis técnico existen dos tipos principales de formaciones:", rx.text.strong(" Tendencias y Rangos."),
-                             **c_styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
+                             **c_styles.TEXT_STYLE["body"],
+                             margin_bottom=Size.DEFAULT.value),
                     
                         #mini lista de como identificar tendencias
                         rx.list.ordered(
@@ -61,7 +71,7 @@ def module_4() -> rx.Component:
                         #imagen identificar tendencias
                         rx.hstack(
                                 zoomed_image("/identificar_tendencias.png?refresh=1"),
-                                margin_bottom=Size.REGULAR.value,
+                                margin_bottom=Size.DEFAULT.value,
                         ),
                         rx.text("Para identificar una tendencia ", rx.text.strong("alcista"),", observamos una sucesión de ",
                             rx.text.strong("máximos mayores y mínimos mayores."), **c_styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
@@ -75,10 +85,14 @@ def module_4() -> rx.Component:
                         rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value, margin_bottom=Size.DEFAULT.value),
                         
                         # seccion sentido comun en el analisis tecnico
-                        rx.heading("2. Sentido Común en el Análisis Técnico", **c_styles.TEXT_STYLE["subtitle"],
-                                    margin_bottom=Size.DEFAULT.value),
+                        rx.heading("2. Sentido Común en el Análisis Técnico",
+                                   **c_styles.TEXT_STYLE["subtitle"],
+                                    margin_bottom=Size.MEDIUM.value),
+                        
                         rx.text("Para realizar un análisis técnico preciso, se utilizan líneas de ", rx.text.strong("soporte y resistencia"),
-                            ", las cuales son:", **c_styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
+                            ", las cuales son:",
+                            **c_styles.TEXT_STYLE["body"],
+                            margin_bottom=Size.MEDIUM.value),
                     
                         #mini lista de soporte y resistencia
                         rx.list.ordered(
@@ -93,36 +107,47 @@ def module_4() -> rx.Component:
                         #imagen sentido comun
                         rx.hstack(
                                 zoomed_image("/sentido_comun.png?refresh=1"),
-                                margin_bottom=Size.REGULAR.value
+                                margin_bottom=Size.DEFAULT.value
                         ),
                         rx.text("A menudo,", rx.text.strong(" la simplicidad y efectividad")," del análisis técnico se ven opacadas por el "
                             "exceso de indicadores y herramientas adicionales. En este contexto,", rx.text.strong(" el sentido común"),
                             " juega un papel fundamental para interpretar correctamente las tendencias en los gráficos.",
-                            **c_styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
+                            **c_styles.TEXT_STYLE["body"],
+                            margin_bottom=Size.DEFAULT.value),
                     
                         rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value, margin_bottom=Size.DEFAULT.value),
                     
                         #seccion 3 el precio y su comportamiento
-                        rx.heading("3. El precio y su comportamiento", **c_styles.TEXT_STYLE["subtitle"],
-                                   margin_bottom=Size.DEFAULT.value),
+                        rx.heading("3. El precio y su comportamiento",
+                                   **c_styles.TEXT_STYLE["subtitle"],
+                                   margin_bottom=Size.MEDIUM.value),
                     
                         rx.heading(" Líneas de precio (Soporte y Resistencia)",
-                               **c_styles.TEXT_STYLE["subseccion"]),
+                               **c_styles.TEXT_STYLE["subseccion"],
+                               margin_bottom=Size.MEDIUM.value),
                         
                         rx.text("En el mercado, las líneas de soporte y resistencia son fundamentales. Existen tres tipos de estas "
                                 "líneas, y su interpretación depende de su relevancia y utilidad para tus operaciones",
-                                **c_styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
+                                **c_styles.TEXT_STYLE["body"],
+                                margin_bottom=Size.DEFAULT.value),
                
-                        rx.heading(" Líneas horizontales de soporte y resistencia", **c_styles.TEXT_STYLE["subseccion"]),
-                                rx.text("Los niveles horizontales de soporte y resistencia son esenciales en el análisis técnico. "
+                        rx.heading(" Líneas horizontales de soporte y resistencia",
+                                   **c_styles.TEXT_STYLE["subseccion"],
+                                   margin_bottom=Size.MEDIUM.value),
+                                
+                        rx.text("Los niveles horizontales de soporte y resistencia son esenciales en el análisis técnico. "
                                 "La resistencia señala los puntos donde el precio tiende a bajar, mientras que el soporte indica los"
                                 " puntos donde el precio tiende a subir.",
-                                **c_styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
+                                **c_styles.TEXT_STYLE["body"],
+                                margin_bottom=Size.DEFAULT.value),
                        
                         rx.text(rx.text.strong("Resistencia:")," Unión de dos o más puntos donde el mercado cambia a la baja.",
-                                **c_styles.TEXT_STYLE["body"]),
+                                **c_styles.TEXT_STYLE["body"],
+                                margin_bottom=Size.MEDIUM.value),
+                        
                         rx.text(rx.text.strong("Soporte:")," Unión de dos o más puntos donde el mercado cambia de dirección a la alza.",
-                                **c_styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
+                                **c_styles.TEXT_STYLE["body"],
+                                margin_bottom=Size.DEFAULT.value),
                         
                         #imagen soporte resistencia
                         rx.hstack( 
@@ -132,7 +157,9 @@ def module_4() -> rx.Component:
                         rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value, margin_bottom=Size.DEFAULT.value),
                         
                         #Seccion 4 como marcar los soportes y las resistencias
-                        rx.heading("4. trazando soportes y las resistencias", **c_styles.TEXT_STYLE["subtitle"]),
+                        rx.heading("4. trazando soportes y las resistencias",
+                                   **c_styles.TEXT_STYLE["subtitle"],
+                                   margin_bottom=Size.MEDIUM.value),
                         
                         rx.text("Identificar correctamente los niveles de soporte, resistencia y tendencias es "
                                 "esencial para anticipar movimientos del mercado y tomar decisiones más seguras. "
@@ -157,16 +184,20 @@ def module_4() -> rx.Component:
                         #imagen trazando soportes y resistencia
                         rx.heading(
                                zoomed_image("/trazando_soporte_resistencia.png?refresh=1"),
-                                margin_bottom=Size.REGULAR.value
+                                margin_bottom=Size.DEFAULT.value
                         ),
                         
                         
                         # tips para marcar lineas de tendencias
-                        rx.heading("Importante Recordar:", **c_styles.TEXT_STYLE["subseccion"]),
+                        rx.heading("Importante Recordar:",
+                                   **c_styles.TEXT_STYLE["subseccion"],
+                                   margin_bottom=Size.MEDIUM.value),
+                        
                         rx.text("Para graficar las líneas de tendencia, ", rx.text.strong("siempre se deben tomar desde las mechas de "
                                 "las velas.")," En una tendencia alcista, se debe graficar desde la parte inferior, y en "
                                 "una tendencia bajista, desde la parte superior de las velas.",
-                                **c_styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
+                                **c_styles.TEXT_STYLE["body"],
+                                margin_bottom=Size.DEFAULT.value),
                         
                         rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value, margin_bottom=Size.DEFAULT.value),
                         

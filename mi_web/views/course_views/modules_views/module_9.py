@@ -24,7 +24,8 @@ def module_9() -> rx.Component:
                         #titulo del modulo 9
                         rx.heading("Módulo 9: Las Estafas en el Trading y las Inversiones",
                                    **c_styles.TEXT_STYLE["title"],
-                                   margin_top="35px"),
+                                   margin_top="35px",
+                                   margin_bottom=Size.MEDIUM.value),
 
                         #seccion 1 el mercado es una estafa
                         rx.heading("1. ¿El mercado es una estafa?",
@@ -33,6 +34,7 @@ def module_9() -> rx.Component:
                         
                         rx.box(
                             gif_mercado_estafa(),
+                            margin_bottom=Size.DEFAULT.value,
                         ),
                         
                         rx.box(
@@ -85,7 +87,8 @@ def module_9() -> rx.Component:
 
                         #seccion 2 brokers
                         rx.heading("2. Brokers: ¿Son todos una estafa?",
-                                   **c_styles.TEXT_STYLE["subtitle"]),
+                                   **c_styles.TEXT_STYLE["subtitle"],
+                                   margin_bottom=Size.MEDIUM.value),
                         
                         rx.box(
                             rx.vstack(
@@ -148,7 +151,7 @@ def module_9() -> rx.Component:
                         #seccion 3 ejemplos de estadas reales
                         rx.heading("3. Ejemplos de Estafas reales en Las Inversiones",
                                    **c_styles.TEXT_STYLE["subtitle"],
-                                   margin_bottom=Size.DEFAULT.value),
+                                   margin_bottom=Size.MEDIUM.value),
                         
                         rx.box(
                             rx.vstack(
@@ -252,7 +255,8 @@ def module_9() -> rx.Component:
                         
                         #seccion 4
                         rx.heading("4. Esquemas piramidales y Ponzi",
-                                   **c_styles.TEXT_STYLE["subtitle"]),
+                                   **c_styles.TEXT_STYLE["subtitle"],
+                                   margin_bottom=Size.MEDIUM.value),
                         
                         rx.box(
                             rx.vstack(
@@ -355,7 +359,7 @@ def module_9() -> rx.Component:
                         #seccion 5 cursos de trading, mastermids y como ser millonario
                         rx.heading("5. Cursos de Trading, Masterminds y “Cómo ser millonario”",
                                    **c_styles.TEXT_STYLE["subtitle"],
-                                   margin_bottom=Size.DEFAULT.value),
+                                   margin_bottom=Size.MEDIUM.value),
                        
                         rx.box(
                             rx.vstack(
@@ -421,7 +425,9 @@ def module_9() -> rx.Component:
                                          "sea legal, regulado y transparente. Evitá promesas de dinero rápido y buscá siempre información "
                                          "confiable. La mejor defensa contra las estafas es tu educación financiera.",
                                      margin_bottom=Size.DEFAULT.value),
-                            rx.list.item(rx.text.strong("Próximos Pasos:"),""),
+                            rx.list.item(rx.text.strong("Próximos Pasos:")," En el próximo y último módulo vas a conocer en qué plataformas "
+                                         "podés invertir y empezar a generar ganancias con el trading. Aprenderás sobre los principales brokers,"
+                                         " exchanges y los distintos tipos de wallets."),
                             list_style_type="disc",
                             color="white",
                             margin_bottom=Size.DEFAULT.value

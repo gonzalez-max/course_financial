@@ -19,11 +19,11 @@ def saving_bar():
         # Eje X (meses)
         rx.recharts.x_axis(
             data_key="name",
-            stroke=rx.color("gray", 11)
+            stroke=rx.color("mauve", 1)
         ),
         # Eje Y (valores)
         rx.recharts.y_axis(
-            stroke=rx.color("gray", 11),
+            stroke=rx.color("mauve", 1),
             name="Ahorro ($)"
         ),
         # Grilla de fondo

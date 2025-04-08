@@ -24,7 +24,8 @@ def module_8() -> rx.Component:
                         #titulo del modulo 
                         rx.heading("Módulo 8: Hablemos de Criptomonedas",
                                    **c_styles.TEXT_STYLE["title"],
-                                   margin_top="35px"),
+                                   margin_top="35px",
+                                   margin_bottom=Size.MEDIUM.value),
                         
                         #seccion 1 que son las criptomonedas
                         rx.heading("1. ¿Qué son las criptomonedas?",
@@ -35,6 +36,7 @@ def module_8() -> rx.Component:
                        #imagen batman pensando
                        rx.box(
                            gif_batman_pensando(),
+                           margin_bottom=Size.DEFAULT.value
                        ),
                        
                         rx.text("Las criptomonedas son activos digitales "
@@ -59,7 +61,7 @@ def module_8() -> rx.Component:
                         #seccion 2 principales criptomonedas
                         rx.heading("2. Principales criptomonedas",
                                    **c_styles.TEXT_STYLE["subtitle"],
-                                   ),
+                                   margin_bottom=Size.MEDIUM.value),
                         
                         rx.text("Las principales criptomonedas del mercado se destacan por su adopción"
                                 ", tecnología y capitalización bursátil. A continuación, te presento "
@@ -243,7 +245,7 @@ def module_8() -> rx.Component:
                         #seccion 4 como se consiguen criptomonedas
                         rx.heading("4. ¿Cómo se consiguen criptomonedas?",
                                     **c_styles.TEXT_STYLE["subtitle"],
-                                    ),
+                                    margin_bottom=Size.MEDIUM.value),
                                 
                                 rx.text("Existen varias formas de obtener criptomonedas, desde la compra directa hasta la "
                                     "minería o participación en plataformas que las ofrecen como recompensa.",
@@ -329,12 +331,13 @@ def module_8() -> rx.Component:
                         #seccion 5 carteras y exchanges
                         rx.heading("5. Carteras y exchanges: diferencias y tipos",
                                    **c_styles.TEXT_STYLE["subtitle"],
-                                   ),
+                                   margin_bottom=Size.MEDIUM.value),
                         
                         rx.text("Cuando hablamos de criptomonedas, es fundamental conocer la diferencia entre carteras "
                                 "(wallets) y exchanges, ya que cumplen funciones distintas en la gestión y almacenamiento "
                                 "de tus activos digitales.",
-                                **c_styles.TEXT_STYLE["body"]),
+                                **c_styles.TEXT_STYLE["body"],
+                                margin_bottom=Size.MEDIUM.value),
                         rx.box(
                             rx.vstack(
                                 #subseccion que es una cartera o wallet
@@ -455,7 +458,7 @@ def module_8() -> rx.Component:
                         #imagen comparativa riesgo beneficio
                                 rx.box(
                                     zoomed_image("/cripto_riesgo_beneficio.png?refresh=1"),
-                                    #margin_bottom=Size.DEFAULT.value,
+                                    margin_bottom=Size.DEFAULT.value,
                                 ),
                         
                         rx.text("Las criptomonedas han revolucionado el mundo financiero, "
@@ -542,12 +545,14 @@ def module_8() -> rx.Component:
                         
                         rx.heading("En resumen...",
                                    **c_styles.TEXT_STYLE["subseccion"],
-                                   ),
+                                   margin_bottom=Size.MEDIUM.value),
+                        
                         rx.text("Las criptomonedas ofrecen múltiples beneficios como autonomía, seguridad y rentabilidad, "
                                 "pero también presentan riesgos importantes como volatilidad y falta de regulación. "
                                 "Si decides invertir o utilizarlas, es clave informarse, asegurar los fondos adecuadamente"
                                 " y diversificar los riesgos.",
-                                **c_styles.TEXT_STYLE["body"]),
+                                **c_styles.TEXT_STYLE["body"],
+                                margin_bottom=Size.DEFAULT.value),
                     
                         rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value,margin_bottom=Size.DEFAULT.value),
                         
@@ -561,7 +566,9 @@ def module_8() -> rx.Component:
                             rx.list.item(rx.text.strong("Aplicación Práctica:")," Explorá exchanges de prueba, probá distintas wallets y analizá el "
                                          "mercado antes de invertir. Mantenete informado sobre regulación y gestioná siempre los riesgos.",
                                      margin_bottom=Size.DEFAULT.value),
-                            rx.list.item(rx.text.strong("Próximos Pasos:"),""),
+                            rx.list.item(rx.text.strong("Próximos Pasos:"),"En el próximo módulo vas a aprender a detectar estafas y a comprender cómo "
+                                         "operan los estafadores para quitarte tu dinero. También vas a ver ejemplos reales de algunas estafas "
+                                         "que circulan por internet."),
                             list_style_type="disc",
                             color="white",
                             margin_bottom=Size.DEFAULT.value
