@@ -29,15 +29,17 @@ class Size(Enum):
     
 #____________________________CARD_STYLES_____________________________________________#
 CARD_STYLES={
+        "width" : "100%",
         "spacing":"2",
-        "max_width": ["90%", "80%", "600px"],
+        "max_width": "400px",
+        "object_fit":"cover",  # Evita deformaciones
+        #"display":"block",  # Asegura que el margin auto funcione
+        "margin":"auto",
         "as_child":True,
         "flex_wrap":"wrap",
         "transition": "transform 0.2s ease-in-out",
         "background_color": "rgba(255, 255, 255, 0.5)",
         "padding":"20px",
-        "height": "auto",
-        "width": ["100%", "48%", "31%"],
         "_hover":{
                 "transform": "scale(1.08)",
                 "box-shadow": "0px 4px 15px rgba(0, 0, 0, 0.3)",
@@ -50,10 +52,6 @@ AVATAR_STYLE={
     "justify_content":"center",
     "align_items":"center",
     "flex_wrap":"wrap",
-    "transition": "transform 0.2s ease-in-out",
-    "&:hover": {
-    "transform": "scale(1.10)",
-    "box-shadow": "0px 4px 15px rgba(0, 0, 0, 0.3)"},
 }
 
 
@@ -126,29 +124,33 @@ BASE_STYLE = {
 global_styles = {
     "text_color" : "black",
     "width":"100%",
-    "justify_content": "center",
-    "align_items": "center",
-    "display": "flex",
     "flex_direction": "column",
+    "display": "flex",
+    "flex_wrap": "wrap",
+    "justify_content": "center", 
+    "gap": "5px" ,
+    "align_items":"center",
+    "padding_x": "20px",
+    "margin": "0 auto",
+    "min_height":"100vh",
+
 }
 #_____________________________#styles pagina principal_____________________________________________________
 
-main_page_styles={
-    "width":"100%",
-    "align_items": "center",
-    "justify_content":"center",
-    "margin_bottom":Size.DEFAULT.value
-}
+
+
 text_main_page={
     "title":{
     "font_style":"normal",
     "text_align": "center",
+    "align_items":"center",
     "padding":"5px",
     "letter_spacing" : "1px",
-    #"transition": "transform 0.3s ease-in-out",
-    #"&:hover": {
-    #"transform": "scale(1.05)"},
-    #"cursor":"context-menu"
+    "text_wrap" :"normal",
+    "width":"100%",
+    "margin":"auto",
+    "display":"block",
+    
     },
     
     "body":{
@@ -157,7 +159,6 @@ text_main_page={
     "padding" : "1px",
     "letter_spacing" : "0.01px",
     "font_family":"Roboto",
-    #"font_size":"17px",
     "max_width":"400px",
     "font_weight":"300",
     "font_size": ["14px", "16px", "18px"]

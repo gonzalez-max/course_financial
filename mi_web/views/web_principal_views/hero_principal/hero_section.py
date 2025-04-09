@@ -10,7 +10,7 @@ def hero_section() -> rx.Component:
             rx.heading(
                 "Bienvenido,",
                 **styles.text_main_page["title"],
-                margin_top=Size.EXTRA_SMALL.value,
+                margin_top="40px",
                 color="white",
                 font_size="25px",
                 font_family="roboto",
@@ -21,7 +21,8 @@ def hero_section() -> rx.Component:
                 **styles.text_main_page["title"],
                 font_size="50px",
                 class_name="roboto-bold",
-                color="#ffff99"
+                color="#ffff99",
+                max_width="100%"
             ),
             rx.heading(
                 "Desarrollador Web Junior",
@@ -40,7 +41,6 @@ def hero_section() -> rx.Component:
                             fallback="MG",
                             name="Maxi Gonzalez",
                             **styles.AVATAR_STYLE,
-                            #margin_top=Size.MICRO.value,
                         ),
                         align_items="center",
                     ),
@@ -70,9 +70,11 @@ def hero_section() -> rx.Component:
                 #______________flex styles____________________________#
                 **styles.CARD_STYLES
             ), 
-            align_items="center",
-            justify="center",
-            margin_top="40px",
+                width="100%",
+                border_radius="10px",
+                align_items="center",
+                justify_content="center",
+                size="2"
         ),
-        **styles.main_page_styles,
+        **styles.global_styles
     )

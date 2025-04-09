@@ -2,9 +2,12 @@ import reflex as rx
 from mi_web.components.general_components.nav_bar import navbar_dropdown
 from mi_web.views.web_principal_views.hero_principal.hero_section import hero_section
 from mi_web.views.web_principal_views.hero_principal.projects import projects
+from mi_web.views.web_principal_views.hero_principal.skills import skills
+from mi_web.views.web_principal_views.hero_principal.education import education
 from mi_web.components.general_components.footer import footer
 from mi_web.styles.styles import Size as Size
 import mi_web.styles.styles as styles
+#____________________________CURSO IMPORTS_____________________________________________#
 from mi_web.views.course_views.financial_page import financial_page
 from mi_web.views.web_principal_views.soporte_page import soporte_page
 from mi_web.views.course_views.choice_modules import choice_modules
@@ -30,12 +33,19 @@ def index() -> rx.Component:
         navbar_dropdown(),
     rx.vstack(
         hero_section(),
+        skills(),
         projects(),
-        **styles.main_page_styles
-    ),
+        education(),
+        
+            width="100%",
+            border_radius="10px",
+            align_items="center",
+            justify_content="center",
+            size="2",   
+            max_width="800px"),
     footer(),
-    **styles.global_styles, #estilos globales (background)
-    background="linear-gradient(to bottom, #0A0F49, #2A3C80, #5A6FA5, #8CA5CC, #BFD3EE)"
+    **styles.global_styles,
+    background="linear-gradient(60deg, rgba(0,65,161,1) 0%, rgba(255,73,73,1) 100%)"
     )
 
 

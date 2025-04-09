@@ -273,6 +273,7 @@ TEXT_STYLE = {
         "margin": "auto",  # Centra el título dentro de su contenedor
         "line_height": "1.1",  # Mejora la legibilidad en varias líneas
         "font_family":"Roboto",
+        "text_wrap":"balance"
     },
     "subtitle": {  # Para subtítulos o encabezados secundarios
         "font_size": "25px",
