@@ -42,7 +42,8 @@ def index() -> rx.Component:
             align_items="center",
             justify_content="center",
             size="2",   
-            max_width="800px"),
+            max_width="800px",
+    ),
     footer(),
     **styles.global_styles,
     background="linear-gradient(60deg, rgba(0,65,161,1) 0%, rgba(255,73,73,1) 100%)"

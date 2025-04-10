@@ -10,15 +10,13 @@ def education() -> rx.Component:
             rx.heading(
                 "Formacion/Educacion",
                 **styles.text_main_page["title"],
-                color="white",
-                font_size="50px",
-                class_name="roboto-bold",
             ),
             width="100%",
             border_radius="10px",
             align_items="center",
             justify_content="center",
             size="2",
+            margin_bottom=Size.MASSIVE.value
         ),
 
     **styles.global_styles

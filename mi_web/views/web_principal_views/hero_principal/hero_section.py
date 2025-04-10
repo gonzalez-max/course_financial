@@ -9,29 +9,17 @@ def hero_section() -> rx.Component:
         rx.vstack(
             rx.heading(
                 "Bienvenido,",
-                **styles.text_main_page["title"],
+                **styles.text_main_page["subtitle"],
                 margin_top="40px",
-                color="white",
-                font_size="25px",
-                font_family="roboto",
-                font_weight="300",
             ),
             rx.heading(
                 "Soy Maximiliano Gonzalez",
                 **styles.text_main_page["title"],
-                font_size="50px",
-                class_name="roboto-bold",
                 color="#ffff99",
-                max_width="100%"
             ),
             rx.heading(
                 "Desarrollador Web Junior",
-                **styles.text_main_page["title"],
-                color="white",
-                font_size="30px",
-                font_family="Roboto",
-                font_weight="400",
-                margin_bottom=Size.MEDIUM.value,
+                **styles.text_main_page["subtitle"],
             ),
             rx.flex(
                 rx.card(
@@ -74,7 +62,8 @@ def hero_section() -> rx.Component:
                 border_radius="10px",
                 align_items="center",
                 justify_content="center",
-                size="2"
+                size="2",
+                margin_bottom=Size.MASSIVE.value
         ),
         **styles.global_styles
     )

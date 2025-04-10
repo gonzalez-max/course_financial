@@ -40,10 +40,24 @@ CARD_STYLES={
         "transition": "transform 0.2s ease-in-out",
         "background_color": "rgba(255, 255, 255, 0.5)",
         "padding":"20px",
+        "border_radius":"30px",
         "_hover":{
                 "transform": "scale(1.08)",
                 "box-shadow": "0px 4px 15px rgba(0, 0, 0, 0.3)",
         }
+}
+
+MINI_CARDS_STYLES={
+    
+    "size":"1",
+    "transition": "transform 0.2s ease-in-out",
+    "_hover":{
+                "transform": "scale(1.08)",
+                "box-shadow": "0px 4px 15px rgba(0, 0, 0, 0.3)",
+                "background": "rgba(255, 255, 255, 0.1)",
+                "border":"1px solid white"
+        }
+    
 }
 
 #____________________________AVATAR_STYLES___________________________________________#
@@ -132,14 +146,14 @@ global_styles = {
     "align_items":"center",
     "padding_x": "20px",
     "margin": "0 auto",
-    "min_height":"100vh",
+    #"min_height":"100vh",
 
 }
 #_____________________________#styles pagina principal_____________________________________________________
 
 
 
-text_main_page={
+text_main_page= {
     "title":{
     "font_style":"normal",
     "text_align": "center",
@@ -150,8 +164,36 @@ text_main_page={
     "width":"100%",
     "margin":"auto",
     "display":"block",
-    
+    "font_size":"50px",
+    "class_name":"roboto-bold",
+    "max_width":"100%",
+    "transition": "transform 0.5s ease-in-out",
+    "_hover":{
+        "transform": "scale(1.10)",
     },
+},
+    
+    "subtitle":{
+    "font_style":"normal",
+    "text_align": "center",
+    "align_items":"center",
+    "padding":"5px",
+    "letter_spacing" : "1px",
+    "text_wrap" :"normal",
+    "width":"100%",
+    "margin":"auto",
+    "display":"block",
+    "color":"white",
+    "font_size":"30px",
+    "font_family":"roboto",
+    "font_weight":"300",
+    "transition": "transform 0.5s ease-in-out",
+    "_hover":{
+        "transform": "scale(1.10)",
+    }
+    
+},
+    
     
     "body":{
     "font_style":"normal",

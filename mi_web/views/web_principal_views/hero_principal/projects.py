@@ -10,10 +10,8 @@ def projects() -> rx.Component:
             rx.heading(
                 " Proyectos",
                 **styles.text_main_page["title"],
-                color="white",
-                font_size="50px",
-                class_name="roboto-bold",
             ),
+        margin_bottom=Size.MASSIVE.value
         ),
                     id="mis-proyectos",
                     justify="center",
