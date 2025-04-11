@@ -15,7 +15,6 @@ def financial_page() -> rx.Component:
             rx.vstack(
                 financial_body(),
             ),
-        max_width="600px",
         width="100%",
         border_radius="10px",
         align_items="center",

@@ -29,7 +29,6 @@ def skills() -> rx.Component:
                 justify_content="center",
                 flex_wrap="wrap",
                 variant="surface"
-                #max_width="600px",
             )
                 ),
                 width="100%",
@@ -37,7 +36,7 @@ def skills() -> rx.Component:
                 align_items="center",
                 justify_content="center",
                 size="2",
-                max_width="600px",
+                #max_width="600px",
                 margin_bottom=Size.MASSIVE.value
         ),           
     **styles.global_styles

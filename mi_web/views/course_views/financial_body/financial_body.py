@@ -1,7 +1,7 @@
 import reflex as rx
 import mi_web.styles.course_styles as c_styles
 import mi_web.styles.styles as styles
-from mi_web.views.course_views.financial_body.body_images.intro_image  import intro_image
+from mi_web.views.course_views.financial_body.body_images.intro_image  import intro_gif
 from mi_web.styles.styles import Size as Size
 
 
@@ -10,17 +10,50 @@ def financial_body() -> rx.Component:
     return rx.box(
         rx.center(
             rx.vstack(
+                rx.box(
+                        rx.hstack(
+                                rx.vstack(
+                                        rx.heading("Curso de Finanzas, Trading y como evitar"
+                                                " Estafas",
+                                                font_style="normal",
+                                                text_align= "center",
+                                                align_items="center",
+                                                letter_spacing= "1px",
+                                                text_wrap="normal",
+                                                margin= "auto",
+                                                display="flex",
+                                                font_size="50px",
+                                                class_name="roboto-bold",
+                                                justify_content="center",
+                                                line_height= "1.1"
+                                        ),
+                                        rx.link(
+                                                rx.button("Comenzar con el curso",
+                                                        on_click=lambda: rx.redirect("/choice_modules"), 
+                                                        is_external=False,
+                                                        **c_styles.BUTTON_STYLE,
+                                                        margin_top=Size.DEFAULT.value
+                                                ),
+                                        ),
+                                        align_items="center"   
+                                ),
+                                
+                                intro_gif(),
+                                align_items="center",
+                                justify_content="right",             
+                        ),
                 
-                rx.heading("Curso de Finanzas, Trading y como evitar"
-                        " Estafas",
-                        **c_styles.TEXT_STYLE["title"],
-                        margin_top="35px"
+                max_width="100%",
+                width="100%",
+                padding="20px",
+                margin_top=Size.REGULAR.value,
+                margin_bottom=Size.BIG.value,
                 ),
-
-                intro_image(),
+                
+                
                 rx.heading("Introduccion",
                         **c_styles.TEXT_STYLE["subtitle"],
-                        margin_top=Size.MEDIUM.value
+                        margin_top=Size.MEDIUM.value,
                 ),
             
                 rx.text("Te damos la bienvenida al curso de Inversiones Trading y como evitar estafas"
@@ -37,16 +70,16 @@ def financial_body() -> rx.Component:
                 ),
                 rx.list.ordered(
                     rx.list.item("Fundamentos de finanzas personales: administración del dinero, ahorro e inversión."
-                                , margin_bottom=Size.DEFAULT.value),
+                                , margin_bottom=Size.MEDIUM.value),
                     rx.list.item("Principios básicos y avanzados de trading y análisis técnico."
-                                , margin_bottom=Size.DEFAULT.value),
+                                , margin_bottom=Size.MEDIUM.value),
                     rx.list.item("Identificación de fraudes y estafas financieras más comunes."
-                                , margin_bottom=Size.DEFAULT.value),
+                                , margin_bottom=Size.MEDIUM.value),
                     rx.list.item(" Herramientas y estrategias para proteger tu capital y tomar decisiones informadas."
-                                , margin_bottom=Size.DEFAULT.value),
+                                , margin_bottom=Size.MEDIUM.value),
                         list_style_type="disc",
                         **c_styles.TEXT_STYLE["body"],
-                        margin_bottom=Size.DEFAULT.value,
+                        margin_bottom=Size.MEDIUM.value,
                 ),
                 
                 rx.heading("¿Por qué tomar este curso?",
@@ -141,7 +174,7 @@ def financial_body() -> rx.Component:
                 width="100%",
                 border_radius="10px",
                 align_items="center",
-                max_width="600px"
+                #max_width="800px"
             ),
         ),
     ),

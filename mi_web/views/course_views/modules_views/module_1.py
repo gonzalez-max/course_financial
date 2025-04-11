@@ -5,6 +5,7 @@ from mi_web.styles.styles import Size as Size
 import mi_web.styles.course_styles as c_styles
 import mi_web.styles.styles as styles
 from mi_web.components.course_components.module1_components.saving_bar import saving_bar
+from mi_web.components.course_components.module1_components.imagenes.modulo1_imagenes  import gif_que_son_finanzas
 from mi_web.components.course_components.module1_components.table1_module1 import table1_module1
 from mi_web.components.course_components.module1_components.table1_module1 import mobile_table1_module1
 from mi_web.components.course_components.module1_components.table2_module1 import mobile_table2_module1
@@ -30,6 +31,12 @@ def module_1() -> rx.Component:
                     rx.heading("1. ¿Qué son las finanzas?",
                                **c_styles.TEXT_STYLE["subtitle"],
                                margin_bottom=Size.MEDIUM.value),
+                    #imagen que son las finanzas
+                    rx.box(
+                        gif_que_son_finanzas(),
+                        margin_bottom=Size.DEFAULT.value
+                    ),
+                    
                     
                     rx.text("Las finanzas corresponden a un área de la economía que estudia la obtención y administración de dinero "
                         "y de capital, es decir, los recursos financieros.\n"
@@ -45,10 +52,14 @@ def module_1() -> rx.Component:
 
                     #Lista de conceptos contables
                     rx.list.ordered(
-                        rx.list.item("Cuentas patrimoniales"),
-                        rx.list.item("Activo, pasivo y patrimonio neto"),
-                        rx.list.item("Cuentas de resultados"),
-                        rx.list.item("Ingresos, gastos y resultado"),
+                        rx.list.item("• Cuentas patrimoniales",
+                                     **c_styles.TEXT_STYLE["mini_body"]),
+                        rx.list.item("• Activo, pasivo y patrimonio neto",
+                                     **c_styles.TEXT_STYLE["mini_body"]),
+                        rx.list.item("• Cuentas de resultados",
+                                     **c_styles.TEXT_STYLE["mini_body"]),
+                        rx.list.item("• Ingresos, gastos y resultado",
+                                     **c_styles.TEXT_STYLE["mini_body"]),
                         list_style_type="disc",
                         color="white",
                         margin_bottom=Size.DEFAULT.value,
@@ -82,7 +93,7 @@ def module_1() -> rx.Component:
                             "invertir en oportunidades futuras. Con el tiempo, ese 10% acumulado puede brindarte estabilidad financiera " 
                             "y mayor libertad para tomar decisiones sin presiones económicas."
                             ,**c_styles.TEXT_STYLE["body"],margin_bottom=Size.DEFAULT.value),
-                    rx.text(rx.text.strong("Por ejemplo"),", si cobrás $100.000 por mes, destinar el 10% significaría ahorrar $10.000 de entrada. "
+                    rx.text(rx.text.strong("Por ejemplo",**c_styles.TEXT_STYLE["highlight"]),", si cobrás $100.000 por mes, destinar el 10% significaría ahorrar $10.000 de entrada. "
                             "Si configurás una transferencia automática el mismo día que te depositan el sueldo, te asegurás de no "
                             "gastarlo sin darte cuenta. También podés usar una app que redondee cada compra al peso superior y mande la "
                             "diferencia a una cuenta de ahorros. A la larga, estos pequeños aportes suman más de lo que imaginás,"
