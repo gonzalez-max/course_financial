@@ -26,7 +26,44 @@ class Size(Enum):
     MASSIVE="10em"
     IMAGE_width="600px"
     IMAGE_height="400px"
+#_____________________________PORTFOLIO IMAGES_______________________________________#
+PORTFOLIO_IMAGE_STYLES={
+    "width":"100%",
+    "max_width":"700px",
+    #"max_height":"400px",
+    "background_color": "#99003d",
+    "color": "#333333",
+    "border_radius": "20px", #forma de los bordes
+    "cursor": "pointer",  # Indica que la imagen es clickeable
+    "transition": "transform 0.2s ease-in-out",  # Suaviza el efecto
+    "align_items":"center",
+    "justify":"center",
+    "object_fit":"cover",  # Evita deformaciones
+    "display":"block",  # Asegura que el margin auto funcione
+    "margin":"auto",
+    "_hover": {
+        "background_color": "#800080",  # Azul más oscuro en hover
+        "border_color": "#6366F1",  # Bordes visibles en hover
+        "box-shadow" : "0px 4px 10px rgba(0, 0, 0, 1)",
+        "transform": "scale(1.05)",
+    },
+}
+
+corousel_button_style={
+    "background_color":"rgba(255, 255, 255, 0.2)",
+    "color":"white",
+    "padding":"10px 20px",
+    "border_radius":"80px",
+    "transition":"all 0.3s ease-in-out",
+    #border= "2px solid #e28cac",# Cambio de color al pasar el mouse
+    "_hover":{
+        "background_color": "rgba(255, 255, 255, 0.6)",
+        "color":"black",
+        "box_shadow":"0px 4px 10px rgba(0, 0, 0, 1)",
+        "transform": "scale(1.05)"
+    },
     
+}
 #____________________________CARD_STYLES_____________________________________________#
 CARD_STYLES={
         "width" : "100%",
@@ -50,6 +87,7 @@ CARD_STYLES={
 MINI_CARDS_STYLES={
     
     "size":"1",
+    "font_size":"20px",
     "transition": "transform 0.2s ease-in-out",
     "_hover":{
                 "transform": "scale(1.08)",
@@ -175,7 +213,6 @@ text_main_page= {
     
     "subtitle":{
     "font_style":"normal",
-    "text_align": "center",
     "align_items":"center",
     "padding":"5px",
     "letter_spacing" : "1px",
@@ -183,27 +220,22 @@ text_main_page= {
     "width":"100%",
     "margin":"auto",
     "display":"block",
-    "color":"white",
     "font_size":"30px",
     "font_family":"roboto",
-    "font_weight":"300",
-    "transition": "transform 0.5s ease-in-out",
-    "_hover":{
-        "transform": "scale(1.10)",
-    }
+    #"font_weight":"300",
+    
     
 },
     
     
     "body":{
     "font_style":"normal",
-    "color": "#1D1D1F",
     "padding" : "1px",
     "letter_spacing" : "0.01px",
     "font_family":"Roboto",
     "max_width":"400px",
     "font_weight":"300",
-    "font_size": ["14px", "16px", "18px"]
+    "font_size": "20px"
     #"_hover":{
         #"transition": "transform 0.5s ease-in-out",
         #"transform": "scale(1.10)",

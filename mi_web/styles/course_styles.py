@@ -304,10 +304,10 @@ TEXT_STYLE = {
         "word-wrap": "break-word",
         "line_height": "1.3",
         "letter_spacing" : "0.1em",
-        "font_family": "Helvetica",
+        "font_family": "Roboto",
         "max_width":"600px",
-        "font_weight":"100",
-        "font_size": "18px",
+        "font_weight":"400",
+        "font_size": "17px",
         "display": "block",
         
     },

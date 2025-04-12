@@ -18,3 +18,21 @@ def zoomed_image(src: str, height: str = "auto") -> rx.Component:
             cursor="zoom-in",  # Indicador visual
         ),
     )
+    
+
+#________________USE IN PORTFOLIO_____________________________________#
+def zoom_images(src: str, height: str = "auto") -> rx.Component:
+    return rx.vstack(
+        image_zoom(
+            rx.image(
+                src=src,
+                height=height,
+                #width="100%",
+                **styles.PORTFOLIO_IMAGE_STYLES,  # Aplicamos los estilos aquí
+            ),
+            #width="100%"
+            zoom_scale=50,  # Escala de zoom (ajustable)
+            cursor="zoom-in",  # Indicador visual
+        ),
+    )
+    

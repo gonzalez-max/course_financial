@@ -15,64 +15,6 @@ import NextHead from "next/head"
 
 
 
-export function Img_1dc145e38a4a77bada704003b0548d02 () {
-  
-  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_bd5dfb31d3782427c73d08de247645b4 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <img css={({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })} onClick={on_click_bd5dfb31d3782427c73d08de247645b4} src={reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src}/>
-  )
-}
-
-export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    <Fragment>
-
-{isTrue((connectErrors.length > 0)) ? (
-  <Fragment>
-
-<LucideWifiOffIcon css={({ ["color"] : "crimson", ["zIndex"] : 9999, ["position"] : "fixed", ["bottom"] : "33px", ["right"] : "33px", ["animation"] : (pulse+" 1s infinite") })} size={32}/>
-</Fragment>
-) : (
-  <Fragment/>
-)}
-</Fragment>
-  )
-}
-
-export function Dropdownmenu__item_f5601b3f02dbc23bf8da1fc3302d2108 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_7dc200586272c1bbcd7f51ea48788135 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <RadixThemesDropdownMenu.Item onClick={on_click_7dc200586272c1bbcd7f51ea48788135}>
-
-{"Contactos"}
-</RadixThemesDropdownMenu.Item>
-  )
-}
-
 export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -87,6 +29,69 @@ export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
 
 <Fragment_c179379f847dbcf00ba21f73b0ad1b3d/>
 </div>
+  )
+}
+
+const pulse = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+`
+
+
+export function Link_55fade139769c052b3409bedcf7654ac () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    <RadixThemesLink css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} href={"#"}>
+
+<RadixThemesButton css={({ ["isExternal"] : false, ["width"] : "100%", ["height"] : "100px", ["padding"] : "30px", ["spacing"] : "5px", ["borderRadius"] : "50px", ["fontSize"] : "20px", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "400px", ["backgroundColor"] : "rgba(0,0,0,0.9)", ["border"] : "1.5px solid black", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "white", ["borderColor"] : "black", ["transform"] : "scale(1.10)", ["color"] : "black" }) })} onClick={((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/choice_modules", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  }))))} radius={"medium"} size={"3"} variant={"solid"}>
+
+{"Comenzar con el curso"}
+</RadixThemesButton>
+</RadixThemesLink>
+  )
+}
+
+export function Toaster_6e6ebf8d7ce589d59b7d382fb7576edf () {
+  
+  const { resolvedColorMode } = useContext(ColorModeContext)
+
+  refs['__toast'] = toast
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+  const toast_props = ({ ["description"] : ("Check if server is reachable at "+getBackendURL(env.EVENT).href), ["closeButton"] : true, ["duration"] : 120000, ["id"] : "websocket-error" });
+  const [userDismissed, setUserDismissed] = useState(false);
+  (useEffect(
+() => {
+    if ((connectErrors.length >= 2)) {
+        if (!userDismissed) {
+            toast.error(
+                `Cannot connect to server: ${((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : '')}.`,
+                {...toast_props, onDismiss: () => setUserDismissed(true)},
+            )
+        }
+    } else {
+        toast.dismiss("websocket-error");
+        setUserDismissed(false);  // after reconnection reset dismissed state
+    }
+}
+, [connectErrors]))
+
+
+
+
+  
+  return (
+    <Toaster closeButton={false} expand={true} position={"bottom-right"} richColors={true} theme={resolvedColorMode}/>
   )
 }
 
@@ -108,7 +113,7 @@ export function Dropdownmenu__item_bab67f5e89dd620a8f08fe00942058f5 () {
   )
 }
 
-export function Errorboundary_5725cef38badd7bd14ec7a033b5d3526 () {
+export function Errorboundary_9a86baa9ff691cf2c01cb34fae49e661 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
@@ -378,7 +383,7 @@ export function Errorboundary_5725cef38badd7bd14ec7a033b5d3526 () {
 
 {"Introduccion"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["color"] : "white", ["word-wrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "100", ["fontSize"] : "18px", ["display"] : "block" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["word-wrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block" })}>
 
 {"Te damos la bienvenida al curso de Inversiones Trading y como evitar estafas, dise\u00f1ado para brindarte un conocimiento s\u00f3lido y pr\u00e1ctico sobre el mundo financiero. A lo largo de este curso, aprender\u00e1s desde los conceptos m\u00e1s b\u00e1sicos hasta estrategias avanzadas de inversi\u00f3n, con un enfoque especial en c\u00f3mo reconocer y evitar fraudes financieros."}
 </RadixThemesText>
@@ -386,7 +391,7 @@ export function Errorboundary_5725cef38badd7bd14ec7a033b5d3526 () {
 
 {"\u00bfQu\u00e9 aprender\u00e1s en este curso?"}
 </RadixThemesHeading>
-<ol css={({ ["direction"] : "column", ["listStyleType"] : "disc", ["color"] : "white", ["word-wrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "100", ["fontSize"] : "18px", ["display"] : "block", ["marginBottom"] : "0.5em", ["marginLeft"] : "1.5rem" })}>
+<ol css={({ ["direction"] : "column", ["listStyleType"] : "disc", ["color"] : "white", ["word-wrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block", ["marginBottom"] : "0.5em", ["marginLeft"] : "1.5rem" })}>
 
 <li css={({ ["marginBottom"] : "0.5em" })}>
 
@@ -409,7 +414,7 @@ export function Errorboundary_5725cef38badd7bd14ec7a033b5d3526 () {
 
 {"\u00bfPor qu\u00e9 tomar este curso?"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["color"] : "white", ["word-wrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "100", ["fontSize"] : "18px", ["display"] : "block", ["marginTop"] : "0.5em" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["word-wrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block", ["marginTop"] : "0.5em" })}>
 
 {"En un mundo donde las oportunidades financieras crecen, tambi\u00e9n lo hacen los riesgos. Este curso te proporcionar\u00e1 conocimientos pr\u00e1cticos y casos reales para que puedas invertir con confianza y seguridad."}
 </RadixThemesText>
@@ -425,7 +430,7 @@ export function Errorboundary_5725cef38badd7bd14ec7a033b5d3526 () {
 
 {"1. Organiza tu tiempo"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["color"] : "white", ["word-wrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "100", ["fontSize"] : "18px", ["display"] : "block" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["word-wrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block" })}>
 
 {"El curso est\u00e1 dise\u00f1ado para darte conocimientos desde lo b\u00e1sico hasta lo avanzado, por lo que es importante que asignes tiempo cada semana para aprender, practicar y repasar los contenidos."}
 </RadixThemesText>
@@ -433,7 +438,7 @@ export function Errorboundary_5725cef38badd7bd14ec7a033b5d3526 () {
 
 {"2. Ten una libreta de apuntes"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["color"] : "white", ["word-wrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "100", ["fontSize"] : "18px", ["display"] : "block" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["word-wrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block" })}>
 
 {"Aunque sea un curso digital, es fundamental tomar notas de los conceptos clave. Esto te ayudar\u00e1 a recordar informaci\u00f3n importante y a estructurar mejor tu aprendizaje."}
 </RadixThemesText>
@@ -441,7 +446,7 @@ export function Errorboundary_5725cef38badd7bd14ec7a033b5d3526 () {
 
 {"3. S\u00e9 cr\u00edtico con la informaci\u00f3n"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["color"] : "white", ["word-wrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "100", ["fontSize"] : "18px", ["display"] : "block" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["word-wrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block" })}>
 
 {"En internet hay mucha informaci\u00f3n falsa sobre trading y finanzas. Aseg\u00farate de analizar la fuente de cada dato y aplicar un pensamiento cr\u00edtico antes de tomar decisiones financieras."}
 </RadixThemesText>
@@ -449,7 +454,7 @@ export function Errorboundary_5725cef38badd7bd14ec7a033b5d3526 () {
 
 {"4. Mant\u00e9n una mentalidad realista y disciplinada"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["color"] : "white", ["word-wrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "100", ["fontSize"] : "18px", ["display"] : "block" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["word-wrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block" })}>
 
 {"El trading y las finanzas no son un esquema para hacerse rico r\u00e1pidamente. Aqu\u00ed aprender\u00e1s c\u00f3mo tomar decisiones informadas y minimizar riesgos, pero necesitar\u00e1s paciencia, disciplina y pr\u00e1ctica constante."}
 </RadixThemesText>
@@ -457,7 +462,7 @@ export function Errorboundary_5725cef38badd7bd14ec7a033b5d3526 () {
 
 {"5. Prepar\u00e1te para aprender de tus errores"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["color"] : "white", ["word-wrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "100", ["fontSize"] : "18px", ["display"] : "block" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["word-wrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block" })}>
 
 {"En el mundo financiero, cometer errores es parte del proceso. No te frustres si algo no sale bien al principio, lo importante es aprender y mejorar con la experiencia."}
 </RadixThemesText>
@@ -465,7 +470,7 @@ export function Errorboundary_5725cef38badd7bd14ec7a033b5d3526 () {
 
 {"6. Disfruta el proceso y participa activamente"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["color"] : "white", ["word-wrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["maxWidth"] : "600px", ["fontWeight"] : "100", ["fontSize"] : "18px", ["display"] : "block" })}>
+<RadixThemesText as={"p"} css={({ ["color"] : "white", ["word-wrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block" })}>
 
 {"Haz preguntas, comparte ideas y aprovecha al m\u00e1ximo este curso. La educaci\u00f3n financiera es una de las herramientas m\u00e1s valiosas para mejorar tu calidad de vida."}
 </RadixThemesText>
@@ -503,15 +508,47 @@ export function Errorboundary_5725cef38badd7bd14ec7a033b5d3526 () {
   )
 }
 
-const pulse = keyframes`
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-`
+export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
 
+
+
+
+
+  
+  return (
+    <Fragment>
+
+{isTrue((connectErrors.length > 0)) ? (
+  <Fragment>
+
+<LucideWifiOffIcon css={({ ["color"] : "crimson", ["zIndex"] : 9999, ["position"] : "fixed", ["bottom"] : "33px", ["right"] : "33px", ["animation"] : (pulse+" 1s infinite") })} size={32}/>
+</Fragment>
+) : (
+  <Fragment/>
+)}
+</Fragment>
+  )
+}
+
+export function Dropdownmenu__item_f5601b3f02dbc23bf8da1fc3302d2108 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_7dc200586272c1bbcd7f51ea48788135 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <RadixThemesDropdownMenu.Item onClick={on_click_7dc200586272c1bbcd7f51ea48788135}>
+
+{"Contactos"}
+</RadixThemesDropdownMenu.Item>
+  )
+}
 
 export function Link_a118e7929e9d00807480234a4c9d8ac0 () {
   
@@ -533,22 +570,6 @@ export function Link_a118e7929e9d00807480234a4c9d8ac0 () {
   )
 }
 
-export function Img_0b82476f3ea7e22d4a7d54d5744b561b () {
-  
-  const reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_f2425d612b9e4477d8552ff062cbbc10 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___course_components___links_course___course_navbar____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <img css={({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" })} onClick={on_click_f2425d612b9e4477d8552ff062cbbc10} src={reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state.logo_src}/>
-  )
-}
-
 export function Tooltip_6525ba879cedca0bf213d67734a8d425 () {
   
   const reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state)
@@ -567,56 +588,35 @@ export function Tooltip_6525ba879cedca0bf213d67734a8d425 () {
   )
 }
 
-export function Toaster_6e6ebf8d7ce589d59b7d382fb7576edf () {
+export function Img_1dc145e38a4a77bada704003b0548d02 () {
   
-  const { resolvedColorMode } = useContext(ColorModeContext)
-
-  refs['__toast'] = toast
+  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
   const [addEvents, connectErrors] = useContext(EventLoopContext);
-  const toast_props = ({ ["description"] : ("Check if server is reachable at "+getBackendURL(env.EVENT).href), ["closeButton"] : true, ["duration"] : 120000, ["id"] : "websocket-error" });
-  const [userDismissed, setUserDismissed] = useState(false);
-  (useEffect(
-() => {
-    if ((connectErrors.length >= 2)) {
-        if (!userDismissed) {
-            toast.error(
-                `Cannot connect to server: ${((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : '')}.`,
-                {...toast_props, onDismiss: () => setUserDismissed(true)},
-            )
-        }
-    } else {
-        toast.dismiss("websocket-error");
-        setUserDismissed(false);  // after reconnection reset dismissed state
-    }
-}
-, [connectErrors]))
 
+
+  const on_click_bd5dfb31d3782427c73d08de247645b4 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
 
   
   return (
-    <Toaster closeButton={false} expand={true} position={"bottom-right"} richColors={true} theme={resolvedColorMode}/>
+    <img css={({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })} onClick={on_click_bd5dfb31d3782427c73d08de247645b4} src={reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src}/>
   )
 }
 
-export function Link_55fade139769c052b3409bedcf7654ac () {
+export function Img_0b82476f3ea7e22d4a7d54d5744b561b () {
   
+  const reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state)
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
+  const on_click_f2425d612b9e4477d8552ff062cbbc10 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___course_components___links_course___course_navbar____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
 
   
   return (
-    <RadixThemesLink css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} href={"#"}>
-
-<RadixThemesButton css={({ ["isExternal"] : false, ["width"] : "100%", ["height"] : "100px", ["padding"] : "30px", ["spacing"] : "5px", ["borderRadius"] : "50px", ["fontSize"] : "20px", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "400px", ["backgroundColor"] : "rgba(0,0,0,0.9)", ["border"] : "1.5px solid black", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "white", ["borderColor"] : "black", ["transform"] : "scale(1.10)", ["color"] : "black" }) })} onClick={((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/choice_modules", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  }))))} radius={"medium"} size={"3"} variant={"solid"}>
-
-{"Comenzar con el curso"}
-</RadixThemesButton>
-</RadixThemesLink>
+    <img css={({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" })} onClick={on_click_f2425d612b9e4477d8552ff062cbbc10} src={reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state.logo_src}/>
   )
 }
 
@@ -627,6 +627,6 @@ export default function Component() {
 
 
   return (
-    <Errorboundary_5725cef38badd7bd14ec7a033b5d3526/>
+    <Errorboundary_9a86baa9ff691cf2c01cb34fae49e661/>
   )
 }

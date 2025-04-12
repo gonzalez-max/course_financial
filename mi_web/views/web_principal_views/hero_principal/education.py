@@ -10,6 +10,7 @@ def education() -> rx.Component:
             rx.heading(
                 "Formacion/Educacion",
                 **styles.text_main_page["title"],
+                color="#ffff99"
             ),
             width="100%",
             border_radius="10px",

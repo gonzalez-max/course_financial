@@ -12,7 +12,7 @@ def skills() -> rx.Component:
                 " Habilidades",
                 **styles.text_main_page["title"],
                 margin_bottom=Size.DEFAULT.value,
-                color="white"
+                color="#ffff99"
             ),
             rx.flex(
                 rx.card("Python", **styles.MINI_CARDS_STYLES),

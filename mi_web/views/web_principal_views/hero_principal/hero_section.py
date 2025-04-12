@@ -11,6 +11,11 @@ def hero_section() -> rx.Component:
                 "Bienvenido,",
                 **styles.text_main_page["subtitle"],
                 margin_top="40px",
+                text_align="center",
+                transition= "transform 0.5s ease-in-out",
+                _hover={
+                    "transform": "scale(1.10)",
+                },
             ),
             rx.heading(
                 "Soy Maximiliano Gonzalez",
@@ -20,6 +25,11 @@ def hero_section() -> rx.Component:
             rx.heading(
                 "Desarrollador Web Junior",
                 **styles.text_main_page["subtitle"],
+                text_align="center",
+                transition= "transform 0.5s ease-in-out",
+                _hover={
+                    "transform": "scale(1.10)",
+                },
             ),
             rx.flex(
                 rx.card(
@@ -50,6 +60,7 @@ def hero_section() -> rx.Component:
                         "Asesor financiero y agente productor, me encuentro creando un curso gratuito de trading "
                         "donde encontrarás lo más importante para invertir en la bolsa, cripto y cómo evitar estafas.",
                         **styles.text_main_page["body"],
+                        color="black"
                     ),
                     size="2",
                     justify_content="center",
