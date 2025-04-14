@@ -18,7 +18,7 @@ def skills() -> rx.Component:
                 rx.card("Python", **styles.MINI_CARDS_STYLES),
                 rx.card("HTML",**styles.MINI_CARDS_STYLES),
                 rx.card("CSS",**styles.MINI_CARDS_STYLES),
-                rx.card("Javascript (Basico)",**styles.MINI_CARDS_STYLES),
+                rx.card("Javascript (Básico)",**styles.MINI_CARDS_STYLES),
                 rx.card("Django (framework de backend)",**styles.MINI_CARDS_STYLES),
                 rx.card("Reflex (framework frontend y backend)",**styles.MINI_CARDS_STYLES),
                 rx.card("Git", **styles.MINI_CARDS_STYLES),
@@ -37,7 +37,7 @@ def skills() -> rx.Component:
                 justify_content="center",
                 size="2",
                 #max_width="600px",
-                margin_bottom=Size.MASSIVE.value
+                margin_bottom=Size.BIG.value
         ),           
     **styles.global_styles
     ),

@@ -13,7 +13,7 @@ def projects() -> rx.Component:
                 " Proyectos",
                 **styles.text_main_page["title"],
                 color="#ffff99",
-                margin_bottom=Size.DEFAULT.value
+                margin_bottom=Size.MEDIUM.value
             ),
         rx.box(
             rx.flex(
@@ -22,7 +22,8 @@ def projects() -> rx.Component:
                                    margin_bottom=Size.MEDIUM.value,
                                    **styles.text_main_page["subtitle"],
                                    color="white",
-                                   text_align="left",),
+                                   text_align="left",
+                                   ),
                         
                     rx.heading("Curso educativo enfocado en brindar "
                                 "herramientas financieras básicas, principios de inversión "
@@ -30,13 +31,13 @@ def projects() -> rx.Component:
                                 font_style ="normal",
                                 text_align = "left",
                                 align_items ="center",
-                                padding ="5px",
+                                padding ="10px",
                                 letter_spacing = "1px",
                                 text_wrap ="normal",
                                 width="100%",
                                 margin="auto",
                                 display="block",
-                                color="#ccccb3",
+                                color="white",
                                 font_size="20px",
                                 font_weight="300",
                                 ),
@@ -86,7 +87,7 @@ def projects() -> rx.Component:
                 ),
                 
             ),
-        )
+        ),
         
         
         
@@ -96,8 +97,10 @@ def projects() -> rx.Component:
         
         ),
     id="mis-proyectos",
-    justify="center",   
+    justify="center",
+    padding_top="60px",  # Opcional: compensar altura del navbar
+    padding_bottom="60px", 
     **styles.global_styles,
-    margin_bottom=Size.MASSIVE.value
+    margin_bottom=Size.BIG.value
     ),
     

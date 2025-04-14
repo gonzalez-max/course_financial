@@ -59,7 +59,7 @@ def hero_section() -> rx.Component:
                         "Soy Maxi González, Programador en HTML, CSS y Python (Django framework, Reflex), "
                         "Asesor financiero y agente productor, me encuentro creando un curso gratuito de trading "
                         "donde encontrarás lo más importante para invertir en la bolsa, cripto y cómo evitar estafas.",
-                        **styles.text_main_page["body"],
+                        **styles.text_main_page["card_body"],
                         color="black"
                     ),
                     size="2",

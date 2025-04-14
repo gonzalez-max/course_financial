@@ -214,7 +214,7 @@ text_main_page= {
     "subtitle":{
     "font_style":"normal",
     "align_items":"center",
-    "padding":"5px",
+    "padding":"10px",
     "letter_spacing" : "1px",
     "text_wrap" :"normal",
     "width":"100%",
@@ -226,21 +226,59 @@ text_main_page= {
     
     
 },
-    
-    
-    "body":{
+
+
+"subseccion":{
+    "color":"#FFFFFF",
     "font_style":"normal",
-    "padding" : "1px",
+    "align_items":"center",
+    "text_align": "left",
+    "padding":"10px",
+    "letter_spacing" : "1px",
+    "text_wrap" :"normal",
+    "width":"100%",
+    "margin":"auto",
+    "display":"block",
+    "font_size":"25px",
+    "font_family":"roboto",
+    "font_weight":"400",
+    
+    
+},
+
+
+"card_body":{
+    "font_style":"normal",
+    "padding" : "5px",
     "letter_spacing" : "0.01px",
     "font_family":"Roboto",
     "max_width":"400px",
     "font_weight":"300",
-    "font_size": "20px"
-    #"_hover":{
-        #"transition": "transform 0.5s ease-in-out",
-        #"transform": "scale(1.10)",
-    #}
+    "font_size": "20px",
+    "text_wrap" :"normal",
+    "text_align": "center",
+    "width":"100%",
+    "margin":"auto",
+    },
+
+
+    
+    
+"body":{
+    "font_style":"normal",
+    "padding" : "5px",
+    "letter_spacing" : "0.01px",
+    "font_family":"Roboto",
+    #"max_width":"400px",
+    "font_weight":"300",
+    "font_size": "20px",
+    "text_wrap" :"normal",
+    "text_align": "left",
+    "width":"100%",
+    #"margin":"auto",
     }
+
+
 }
 
 #fuentes de google
