@@ -81,6 +81,7 @@ CARD_STYLES={
         "_hover":{
                 "transform": "scale(1.08)",
                 "box-shadow": "0px 4px 15px rgba(0, 0, 0, 0.3)",
+                
         }
 }
 
@@ -97,6 +98,17 @@ MINI_CARDS_STYLES={
         }
     
 }
+
+TOOLTIP_STYLES={
+    
+    "bg":"rgba(255, 255, 255, 0.1)",
+    "border_radius":"6px",
+    "padding":"8px",
+    "font_size":"0.8em",
+    "position": "absolute",
+     
+}
+
 
 #____________________________AVATAR_STYLES___________________________________________#
 AVATAR_STYLE={

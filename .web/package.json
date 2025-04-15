@@ -8,8 +8,9 @@
   },
   "dependencies": {
     "@babel/standalone": "7.26.6",
-    "@emotion/react": "11.14.0",
+    "@emotion/react": "^11.11.1",
     "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-form": "^0.1.0",
     "@radix-ui/themes": "^3.0.0 && <3.1.5",
     "axios": "1.7.9",
     "json5": "2.2.3",
