@@ -9,13 +9,10 @@ def soporte_page() -> rx.Component:
     return rx.box(
         navbar_dropdown(),
     rx.vstack(
-        rx.heading("contacto web ",
-                   **styles.text_main_page["title"],
-                   margin_top="35px"),
-        
-            
-            
-            contact_form(),
+        rx.heading("Contacto web ",
+                   font_size="50px",
+                   margin_top=Size.REGULAR.value),
+        contact_form(),
             
             
             
@@ -71,97 +68,135 @@ def soporte_page() -> rx.Component:
 
 
 
-import reflex as rx        # Importamos Reflex, el framework para construir la interfaz web
-import httpx               # Importamos httpx para hacer peticiones HTTP (como a Formspree)
+import reflex as rx
+import httpx
 
-
-# Estado del formulario
 class ContactFormState(rx.State):
-    # Diccionario donde se guardan los datos del form
     form_data: dict = {}
-
-    # Flags (banderas) para saber si se envió correctamente o hubo error
     message_sent: bool = False
     sending_error: bool = False
-
-    # Mensaje de error personalizado
     error_message: str = ""
+    submitted_once: bool = False  # ← Se activa solo cuando el usuario intenta enviar
 
-    # Evento que se ejecuta al enviar el formulario
     @rx.event
     def handle_submit(self, form_data: dict):
-        # Reiniciamos los estados por si ya se envió antes
+        self.submitted_once = True  # ← Marca que el usuario interactuó
         self.message_sent = False
         self.sending_error = False
         self.error_message = ""
 
-        # Validamos que todos los campos estén completos
+        # Validación de campos vacíos
         if not form_data.get("name") or not form_data.get("email") or not form_data.get("subject") or not form_data.get("message"):
             self.error_message = "Todos los campos son obligatorios."
-            return  # Si falta alguno, se corta acá
+            return
 
-        # Validamos que el email tenga "@"
+        # Validación de formato de email
         if "@" not in form_data["email"]:
             self.error_message = "El correo electrónico no es válido."
             return
 
-        # Guardamos los datos localmente (por si querés mostrarlos luego)
         self.form_data = form_data
 
-        # Intentamos enviar los datos a la API de Formspree
         try:
             response = httpx.post(
-                "https://formspree.io/f/mpwpnkzq",  # ← Tu URL de Formspree
-                data={
-                    "name": form_data["name"],
-                    "email": form_data["email"],
-                    "subject": form_data["subject"],
-                    "message": form_data["message"],
-                },
-                headers={"Accept": "application/json"},  # Pedimos una respuesta en JSON
-                timeout=10.0,  # Tiempo máximo de espera
+                "https://formspree.io/f/mpwpnkzq",
+                data=form_data,
+                headers={"Accept": "application/json"},
+                timeout=10.0,
             )
 
-            # Si todo salió bien (status 200)
             if response.status_code == 200:
-                self.message_sent = True  # Indicamos que se envió con éxito
+                self.message_sent = True
+                self.error_message = ""
+                self.submitted_once = False  # ← Reiniciamos para ocultar errores antiguos
             else:
-                self.sending_error = True  # Si no fue 200, hubo error
+                self.sending_error = True
                 self.error_message = "Hubo un error al enviar el mensaje."
-        except Exception as e:
+        except Exception:
             self.sending_error = True
             self.error_message = "Error al conectar con el servidor."
 
-
-# Parte visual del formulario
 def contact_form():
-    return rx.vstack(  # Un layout vertical (como una columna)
-        rx.form(  # Formulario
-            rx.vstack(  # Dentro del form, también todo en columna
-                rx.input(placeholder="Nombre", name="name", is_required=True),  # Input de nombre
-                rx.input(placeholder="Correo electrónico", name="email", is_required=True),  # Input de email
-                rx.input(placeholder="Asunto", name="subject", is_required=True),  # Input de asunto
-                rx.text_area(placeholder="Mensaje", name="message", height="8em", is_required=True),  # Textarea para el mensaje
-                rx.button("Enviar", type="submit"),  # Botón para enviar el form
+    return rx.vstack(
+        rx.form(
+            rx.vstack(
+                rx.flex(
+                    rx.card(
+                        rx.input(placeholder="Nombre", name="name",color="white", is_required=True),
+                        rx.input(placeholder="Correo electrónico", name="email", is_required=True),
+                        rx.input(placeholder="Asunto", name="subject", is_required=True),
+                        rx.text_area(placeholder="Mensaje", name="message", height="8em", is_required=True),
+                        rx.button("Enviar", type="submit", **styles.form_button_style),
+                        width="500px",
+                        background_color="rgba(255, 255, 255, 0.3)",
+                        variant="surface"
+                    ),
+                ),
+            align_items="center",
+            justify_content="center",
+            max_width="500px",
+            width="100%",
+            margin_top=Size.BIG.value,
+            margin_bottom=Size.DEFAULT.value
             ),
-            on_submit=ContactFormState.handle_submit,  # Al enviar, llama a `handle_submit`
-            reset_on_submit=True,  # Limpia los campos después de enviar
+            on_submit=ContactFormState.handle_submit,
+            reset_on_submit=True,
         ),
 
-        # Si se envió bien, mostramos un mensaje de éxito en verde
-        rx.cond(
-            ContactFormState.message_sent,
-            rx.text("Mensaje enviado con Exito",
-                    color="green",
-                    background_color="rgba(255, 255, 255, 0.5)"),
-        ),
+        # Mensaje de éxito
+        rx.flex(
+            rx.card(
+                rx.cond(
+                    ContactFormState.message_sent,
+                    rx.text(
+                        "Mensaje enviado con éxito",
+                        position="top-right",
+                        style={
+                            "color": "black",
+                            "font_size":"15px",
+                            "font_weight":"400",
+                            "align_items":"center",
+                            "text_align":"center",
+                            "justify_content":"center",
+                            "max_width":"300px",
+                            
+                        },
+                    ),
+                ),
+            background_color="rgba(0, 184, 49, 0.6)"),
+            max_width="500px",
+            width="100%",
+            align_items="center",
+            justify_content="center",
+            margin_bottom=Size.REGULAR.value
+        ),    
 
-        # Si hay error, mostramos el mensaje en rojo
-        rx.cond(
-            ContactFormState.error_message != "",
-            rx.text(ContactFormState.error_message, color="red"),
-        )
+        # Mensaje de error solo si el usuario ya intentó enviar
+        rx.flex(
+            rx.card(
+                rx.cond(
+                    ContactFormState.submitted_once & (ContactFormState.error_message != ""),
+                    rx.text(
+                        ContactFormState.error_message,
+                        color="red",
+                        position="center",
+                        style={
+                            "color": "black",
+                            "font_size":"15px",
+                            "font_weight":"400",
+                            "align_items":"center",
+                            "text_align":"center",
+                            "justify_content":"center",
+                            "max_width":"300px",
+                            },
+                    ),
+                ),
+            ),
+            background_color="rgba(255, 30, 0, 0.6)",
+            max_width="500px",
+            width="100%",
+            align_items="center",
+            justify_content="center",
+            margin_bottom=Size.REGULAR.value
+        ),
     )
-
-
-

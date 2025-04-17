@@ -64,6 +64,28 @@ corousel_button_style={
     },
     
 }
+
+form_button_style={
+    "background_color":"black",
+    "color":"white",
+    "padding":"10px 20px",
+    "border_radius":"80px",
+    "transition":"all 0.3s ease-in-out",
+    "align_items":"center",
+    "justify_content":"center",
+    "cursor":"pointer",
+    "width":"100%",
+    "margin":"auto",
+    #border= "2px solid #e28cac",# Cambio de color al pasar el mouse
+    "_hover":{
+        "background_color": "rgba(255, 255, 255, 0.6)",
+        "color":"black",
+        "box_shadow":"0px 4px 10px rgba(0, 0, 0, 1)",
+        "transform": "scale(1.05)"
+    },
+    
+}
+
 #____________________________CARD_STYLES_____________________________________________#
 CARD_STYLES={
         "width" : "100%",
