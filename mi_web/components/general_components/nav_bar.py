@@ -3,7 +3,7 @@ import mi_web.styles.styles as styles
 
 class LogoState(rx.State):
     click_count: int = 0
-    logo_src: str = "icons/orbesdmc-black.png"
+    logo_src: str = "/icons/orbesdmc-black.png"
 
     def increment_click(self):
         self.click_count += 1
@@ -11,9 +11,9 @@ class LogoState(rx.State):
         cycle = (self.click_count // 5) % 2
         # Alterna la imagen según el ciclo
         if cycle == 1:
-            self.logo_src = "icons/orbesdmc.png"
+            self.logo_src = "/icons/orbesdmc.png"
         else:
-            self.logo_src = "icons/orbesdmc-black.png"
+            self.logo_src = "/icons/orbesdmc-black.png"
         
 #_______________________________________________________________________________________________________#
 

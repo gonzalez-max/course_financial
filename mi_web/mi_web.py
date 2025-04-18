@@ -4,6 +4,7 @@ from mi_web.views.web_principal_views.hero_principal.hero_section import hero_se
 from mi_web.views.web_principal_views.hero_principal.projects import projects
 from mi_web.views.web_principal_views.hero_principal.skills import skills
 from mi_web.views.web_principal_views.hero_principal.education import education
+from mi_web.views.web_principal_views.hero_principal.education import tiny_contact
 from mi_web.components.general_components.footer import footer
 from mi_web.styles.styles import Size as Size
 import mi_web.styles.styles as styles
@@ -36,6 +37,7 @@ def index() -> rx.Component:
         skills(),
         projects(),
         education(),
+        tiny_contact(),
         
             width="100%",
             border_radius="10px",

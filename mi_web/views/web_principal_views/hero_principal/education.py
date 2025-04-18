@@ -83,9 +83,24 @@ def education() -> rx.Component:
             padding_top="100px",  # Opcional: compensar altura del navbar
             padding_bottom="60px", 
             size="2",
-            margin_bottom=Size.MASSIVE.value
+            margin_bottom=Size.REGULAR.value
         ),
 
     **styles.global_styles
     ),
     
+def tiny_contact() -> rx.Component:
+    return rx.box(
+            rx.vstack(
+                rx.text("¿Te interesa trabajar conmigo?",
+                        **styles.text_main_page["title"],
+                        margin_top=Size.DEFAULT.value),
+                rx.button("Contactame",
+                        on_click=rx.redirect("/soporte_page"),
+                       **styles.CONTACT_BUTTON_STYLE
+                ),
+                align="center",
+                text_align="center",
+            ),
+            margin_bottom=Size.BIG.value
+        ), 

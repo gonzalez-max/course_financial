@@ -186,8 +186,36 @@ LINK_BUTTON_STYLES={
                 "transform": "scale(1.07)"},
 }
 
-
-
+#_____________________________________CONTACT BUTTON_____________________________________________________#
+CONTACT_BUTTON_STYLE={
+    "size": "3",
+    "variant": "solid",
+    "radius": "medium",
+    "width": "100%",  # Ajusta el ancho del botón
+    "height": "100px",  # Ajusta la altura del botón
+    "spacing" : "5px",
+    "border_radius":"20px",
+    "font_size": "30px",
+    "text_transform": "capitalize", #tipo de texto 
+    "letter_spacing" : "1px", #espacio sutil entre letras 
+    "color": "white", #color fuente
+    "white_space": "normal",  # Permite que el texto se divida en varias líneas
+    "text_align": "center",   # Asegura que el texto esté centrado dentro del botón
+    "max_width": "400px",     # Ajusta el ancho máximo del botón para evitar que sea demasiado ancho
+    "background_color":"rgba(255, 255, 255, 0.2)",#color de fondo 
+    "word_wrap": "break-word",  # Ajuste del texto dentro del botón
+    "display": "flex",  # Permitir centrado interno
+    "align_items": "center",  # Centrar verticalmente el contenido
+    "justify_content": "center",  # Centrar horizontalmente el contenido
+    "transition": "all 0.3s ease-in-out", #animacion
+    "cursor":"pointer",
+    "_hover": {
+        "background_color":"white", 
+        "transform": "scale(1.10)",
+        "color":"black",
+        
+    },
+}
 
 
 #______________________________________________________________________________________________________________________#

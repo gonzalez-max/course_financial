@@ -2,6 +2,7 @@ import reflex as rx
 import mi_web.styles.styles as styles
 from mi_web.styles.styles import Size as Size
 from mi_web.components.general_components.link_button import link_button
+from mi_web.components.general_components.link_button import link_email
 from mi_web.components.general_components.download_button import download_button
 
 def hero_section() -> rx.Component:
@@ -42,18 +43,42 @@ def hero_section() -> rx.Component:
                         ),
                         align_items="center",
                     ),
-                    rx.hstack(
-                        link_button(
-                            "https://www.linkedin.com/in/maxi-gonzalez-479691323",
-                            "/icons/linkedin.svg",
+                    rx.box(
+                        rx.hstack(
+                            rx.tooltip(
+                                link_button(
+                                "https://www.linkedin.com/in/maxi-gonzalez-479691323",
+                                "/icons/linkedin.svg"),
+                            content="Linkedin"
+                            ),
+                        
+                            rx.tooltip(
+                                link_button("https://github.com/gonzalez-max", "/icons/github.svg"),
+                                content="Github",
+                            ),
+                            rx.tooltip(
+                                
+                                    link_email("/icons/email.png"),
+                                    **styles.LINK_BUTTON_STYLES,
+                                    on_click=[
+                                        rx.set_clipboard("gonzalezmaxi997@gmail.com"),
+                                        rx.toast(
+                                            "✔️ Email Copiado",
+                                            duration=3000,
+                                            close_button=True
+                                        ),
+                                    ],
+        
+                                content="Copiar email",
+                            ),
+                            download_button(),
+                            align_items="center"
                         ),
-                        link_button("https://github.com/gonzalez-max", "/icons/github.svg"),
-                        download_button(),
-                        margin_top=Size.SMALL.value,
+                        margin_top=Size.MEDIUM.value,
                         align_items="center",
-                        justify_items="center",
                         display="flex",
-                        justify_content="center",
+                        spacing="2",
+                        width="100%"
                     ),
                     rx.text(
                         "Soy Maxi González, Programador en HTML, CSS y Python (Django framework, Reflex), "

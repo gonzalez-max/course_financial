@@ -16,24 +16,6 @@ import NextHead from "next/head"
 
 
 
-export function Dropdownmenu__item_b0a6762496b52f8de3428cdb0d180c40 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_7dc200586272c1bbcd7f51ea48788135 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <RadixThemesDropdownMenu.Item onClick={on_click_7dc200586272c1bbcd7f51ea48788135}>
-
-{"Contacto"}
-</RadixThemesDropdownMenu.Item>
-  )
-}
-
 export function Toaster_6e6ebf8d7ce589d59b7d382fb7576edf () {
   
   const { resolvedColorMode } = useContext(ColorModeContext)
@@ -101,30 +83,21 @@ export function Dropdownmenu__item_a4b79031cd0a0aaab6615a386df7fd1f () {
   )
 }
 
-export function Fragment_82ea4838d575b1e6845a84d53abe5f0a () {
+export function Dropdownmenu__item_b0a6762496b52f8de3428cdb0d180c40 () {
   
-  const reflex___state____state__mi_web___views___web_principal_views___soporte_page____contact_form_state = useContext(StateContexts.reflex___state____state__mi_web___views___web_principal_views___soporte_page____contact_form_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
+  const on_click_7dc200586272c1bbcd7f51ea48788135 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
 
   
   return (
-    <Fragment>
+    <RadixThemesDropdownMenu.Item onClick={on_click_7dc200586272c1bbcd7f51ea48788135}>
 
-{isTrue(reflex___state____state__mi_web___views___web_principal_views___soporte_page____contact_form_state.message_sent) ? (
-  <Fragment>
-
-<RadixThemesText as={"p"} css={({ ["color"] : "black", ["fontSize"] : "15px", ["fontWeight"] : "400", ["alignItems"] : "center", ["textAlign"] : "center", ["justifyContent"] : "center", ["maxWidth"] : "300px", ["position"] : "top-right" })}>
-
-{"Mensaje enviado con \u00e9xito"}
-</RadixThemesText>
-</Fragment>
-) : (
-  <Fragment/>
-)}
-</Fragment>
+{"Contacto"}
+</RadixThemesDropdownMenu.Item>
   )
 }
 
@@ -152,141 +125,7 @@ export function Fragment_c179379f847dbcf00ba21f73b0ad1b3d () {
   )
 }
 
-export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    <div css={({ ["position"] : "fixed", ["width"] : "100vw", ["height"] : "0" })} title={("Connection Error: "+((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : ''))}>
-
-<Fragment_c179379f847dbcf00ba21f73b0ad1b3d/>
-</div>
-  )
-}
-
-export function Root_2f1223816bff7ec3d439c5d17bf66c10 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-  
-    const handleSubmit_352cc4ca87de6a308aa6959801562746 = useCallback((ev) => {
-        const $form = ev.target
-        ev.preventDefault()
-        const form_data = {...Object.fromEntries(new FormData($form).entries()), ...({  })};
-
-        (((...args) => (addEvents([(Event("reflex___state____state.mi_web___views___web_principal_views___soporte_page____contact_form_state.handle_submit", ({ ["form_data"] : form_data }), ({  })))], args, ({  }))))());
-
-        if (true) {
-            $form.reset()
-        }
-    })
-    
-
-
-
-
-  
-  return (
-    <RadixFormRoot className={"Root "} css={({ ["width"] : "100%" })} onSubmit={handleSubmit_352cc4ca87de6a308aa6959801562746}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center", ["justifyContent"] : "center", ["maxWidth"] : "500px", ["width"] : "100%", ["marginTop"] : "4em", ["marginBottom"] : "1em" })} direction={"column"} gap={"3"}>
-
-<RadixThemesFlex>
-
-<RadixThemesCard css={({ ["width"] : "500px", ["backgroundColor"] : "rgba(255, 255, 255, 0.3)" })} variant={"surface"}>
-
-<RadixThemesTextField.Root css={({ ["color"] : "white", ["isRequired"] : true })} name={"name"} placeholder={"Nombre"}/>
-<RadixThemesTextField.Root css={({ ["isRequired"] : true })} name={"email"} placeholder={"Correo electr\u00f3nico"}/>
-<RadixThemesTextField.Root css={({ ["isRequired"] : true })} name={"subject"} placeholder={"Asunto"}/>
-<RadixThemesTextArea css={({ ["& textarea"] : null, ["height"] : "8em", ["isRequired"] : true })} name={"message"} placeholder={"Mensaje"}/>
-<RadixThemesButton css={({ ["backgroundColor"] : "black", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "80px", ["transition"] : "all 0.3s ease-in-out", ["alignItems"] : "center", ["justifyContent"] : "center", ["cursor"] : "pointer", ["width"] : "100%", ["margin"] : "auto", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.6)", ["color"] : "black", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) })} type={"submit"}>
-
-{"Enviar"}
-</RadixThemesButton>
-</RadixThemesCard>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixFormRoot>
-  )
-}
-
-export function Tooltip_f5e6a55bca12d52bfe1a36c42a21b26c () {
-  
-  const reflex___state____state__mi_web___components___general_components___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    <RadixThemesTooltip content={"No me toques."}>
-
-<img css={({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })} onClick={((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___nav_bar____logo_state.increment_click", ({  }), ({  })))], args, ({  }))))} src={reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.logo_src}/>
-</RadixThemesTooltip>
-  )
-}
-
-export function Img_544b3e2872f3fdafb9f22edff3b2be1f () {
-  
-  const reflex___state____state__mi_web___components___general_components___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_4601de63bb2da6dd2c92964a58538d0d = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___nav_bar____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <img css={({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" })} onClick={on_click_4601de63bb2da6dd2c92964a58538d0d} src={reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.logo_src}/>
-  )
-}
-
-export function Fragment_ecddb425cc99d822c84856accb789cbd () {
-  
-  const reflex___state____state__mi_web___views___web_principal_views___soporte_page____contact_form_state = useContext(StateContexts.reflex___state____state__mi_web___views___web_principal_views___soporte_page____contact_form_state)
-
-
-
-
-
-  
-  return (
-    <Fragment>
-
-{isTrue((reflex___state____state__mi_web___views___web_principal_views___soporte_page____contact_form_state.submitted_once && !((reflex___state____state__mi_web___views___web_principal_views___soporte_page____contact_form_state.error_message === "")))) ? (
-  <Fragment>
-
-<RadixThemesText as={"p"} css={({ ["color"] : "red", ["fontSize"] : "15px", ["fontWeight"] : "400", ["alignItems"] : "center", ["textAlign"] : "center", ["justifyContent"] : "center", ["maxWidth"] : "300px", ["position"] : "center" })}>
-
-{reflex___state____state__mi_web___views___web_principal_views___soporte_page____contact_form_state.error_message}
-</RadixThemesText>
-</Fragment>
-) : (
-  <Fragment/>
-)}
-</Fragment>
-  )
-}
-
-const pulse = keyframes`
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-`
-
-
-export function Errorboundary_78e2f9ff332e3be4c04b331560844fcf () {
+export function Errorboundary_a2a6369045f079145a34dd4b622b9aee () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
@@ -304,7 +143,7 @@ export function Errorboundary_78e2f9ff332e3be4c04b331560844fcf () {
 <Div_0c4c0d922d990c245023c72baae2d5e1/>
 <Toaster_6e6ebf8d7ce589d59b7d382fb7576edf/>
 </Fragment>
-<RadixThemesBox css={({ ["textColor"] : "black", ["width"] : "100%", ["flexDirection"] : "column", ["display"] : "flex", ["flexWrap"] : "wrap", ["justifyContent"] : "center", ["gap"] : "5px", ["alignItems"] : "center", ["paddingInlineStart"] : "20px", ["paddingInlineEnd"] : "20px", ["margin"] : "0 auto", ["background"] : "linear-gradient(180deg, rgba(183,86,243,1) 0%, rgba(116,139,232,1) 52%, rgba(21,204,184,1) 100%)" })}>
+<RadixThemesBox css={({ ["textColor"] : "black", ["width"] : "100%", ["flexDirection"] : "column", ["display"] : "flex", ["flexWrap"] : "wrap", ["justifyContent"] : "center", ["gap"] : "5px", ["alignItems"] : "center", ["paddingInlineStart"] : "20px", ["paddingInlineEnd"] : "20px", ["margin"] : "0 auto", ["background"] : "radial-gradient(circle,rgba(117, 55, 153, 1) 0%, rgba(80, 98, 163, 1) 51%, rgba(28, 115, 166, 1) 100%)" })}>
 
 <RadixThemesBox css={({ ["width"] : "100%", ["height"] : "40px", ["backgroundColor"] : "rgba(255, 255, 255, 0.5)", ["padding"] : "1em", ["zIndex"] : "1000", ["position"] : "fixed", ["boxShadow"] : "0 1px 3px rgba(0, 0, 0, 0.1)", ["backdropFilter"] : "blur(10px)", ["justifyContent"] : "center", ["display"] : "flex", ["top"] : "0px", ["alignItems"] : "center" })}>
 
@@ -413,25 +252,11 @@ export function Errorboundary_78e2f9ff332e3be4c04b331560844fcf () {
 
 <RadixThemesHeading css={({ ["fontSize"] : "50px", ["marginTop"] : "2em" })}>
 
-{"Contacto web "}
+{"\u00a1\u00a1 Contact\u00e1me !!"}
 </RadixThemesHeading>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
 <Root_2f1223816bff7ec3d439c5d17bf66c10/>
-<RadixThemesFlex css={({ ["maxWidth"] : "500px", ["width"] : "100%", ["alignItems"] : "center", ["justifyContent"] : "center", ["marginBottom"] : "2em" })}>
-
-<RadixThemesCard css={({ ["backgroundColor"] : "rgba(0, 184, 49, 0.6)" })}>
-
-<Fragment_82ea4838d575b1e6845a84d53abe5f0a/>
-</RadixThemesCard>
-</RadixThemesFlex>
-<RadixThemesFlex css={({ ["backgroundColor"] : "rgba(255, 30, 0, 0.6)", ["maxWidth"] : "500px", ["width"] : "100%", ["alignItems"] : "center", ["justifyContent"] : "center", ["marginBottom"] : "2em" })}>
-
-<RadixThemesCard>
-
-<Fragment_ecddb425cc99d822c84856accb789cbd/>
-</RadixThemesCard>
-</RadixThemesFlex>
 </RadixThemesFlex>
 </RadixThemesFlex>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center", ["width"] : "100%", ["justifyContent"] : "center", ["backgroundColor"] : "transparent", ["display"] : "flex", ["flexWrap"] : "wrap", ["gap"] : "10px" })} direction={"column"} gap={"3"}>
@@ -455,6 +280,113 @@ export function Errorboundary_78e2f9ff332e3be4c04b331560844fcf () {
   )
 }
 
+export function Div_0c4c0d922d990c245023c72baae2d5e1 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    <div css={({ ["position"] : "fixed", ["width"] : "100vw", ["height"] : "0" })} title={("Connection Error: "+((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : ''))}>
+
+<Fragment_c179379f847dbcf00ba21f73b0ad1b3d/>
+</div>
+  )
+}
+
+export function Root_2f1223816bff7ec3d439c5d17bf66c10 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+  
+    const handleSubmit_352cc4ca87de6a308aa6959801562746 = useCallback((ev) => {
+        const $form = ev.target
+        ev.preventDefault()
+        const form_data = {...Object.fromEntries(new FormData($form).entries()), ...({  })};
+
+        (((...args) => (addEvents([(Event("reflex___state____state.mi_web___views___web_principal_views___soporte_page____contact_form_state.handle_submit", ({ ["form_data"] : form_data }), ({  })))], args, ({  }))))());
+
+        if (true) {
+            $form.reset()
+        }
+    })
+    
+
+
+
+
+  
+  return (
+    <RadixFormRoot className={"Root "} css={({ ["width"] : "100%" })} onSubmit={handleSubmit_352cc4ca87de6a308aa6959801562746}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center", ["justifyContent"] : "center", ["maxWidth"] : "500px", ["width"] : "100%", ["marginTop"] : "4em", ["marginBottom"] : "1em" })} direction={"column"} gap={"3"}>
+
+<RadixThemesFlex>
+
+<RadixThemesCard css={({ ["width"] : "500px", ["backgroundColor"] : "rgba(255, 255, 255, 0.3)" })} variant={"surface"}>
+
+<RadixThemesTextField.Root css={({ ["color"] : "white", ["isRequired"] : true })} name={"name"} placeholder={"Nombre"}/>
+<RadixThemesTextField.Root css={({ ["isRequired"] : true })} name={"email"} placeholder={"Correo electr\u00f3nico"}/>
+<RadixThemesTextField.Root css={({ ["isRequired"] : true })} name={"subject"} placeholder={"Asunto"}/>
+<RadixThemesTextArea css={({ ["& textarea"] : null, ["height"] : "8em", ["isRequired"] : true })} name={"message"} placeholder={"Mensaje"}/>
+<RadixThemesButton css={({ ["backgroundColor"] : "black", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "80px", ["transition"] : "all 0.3s ease-in-out", ["alignItems"] : "center", ["justifyContent"] : "center", ["cursor"] : "pointer", ["width"] : "100%", ["margin"] : "auto", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.6)", ["color"] : "black", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) })} type={"submit"}>
+
+{"Enviar"}
+</RadixThemesButton>
+</RadixThemesCard>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixFormRoot>
+  )
+}
+
+export function Tooltip_f5e6a55bca12d52bfe1a36c42a21b26c () {
+  
+  const reflex___state____state__mi_web___components___general_components___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    <RadixThemesTooltip content={"No me toques."}>
+
+<img css={({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })} onClick={((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___nav_bar____logo_state.increment_click", ({  }), ({  })))], args, ({  }))))} src={reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.logo_src}/>
+</RadixThemesTooltip>
+  )
+}
+
+export function Img_544b3e2872f3fdafb9f22edff3b2be1f () {
+  
+  const reflex___state____state__mi_web___components___general_components___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_4601de63bb2da6dd2c92964a58538d0d = useCallback(((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___nav_bar____logo_state.increment_click", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <img css={({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" })} onClick={on_click_4601de63bb2da6dd2c92964a58538d0d} src={reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.logo_src}/>
+  )
+}
+
+const pulse = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+`
+
+
 export default function Component() {
     
 
@@ -462,6 +394,6 @@ export default function Component() {
 
 
   return (
-    <Errorboundary_78e2f9ff332e3be4c04b331560844fcf/>
+    <Errorboundary_a2a6369045f079145a34dd4b622b9aee/>
   )
 }

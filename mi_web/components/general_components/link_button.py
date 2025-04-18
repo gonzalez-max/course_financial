@@ -13,3 +13,14 @@ def link_button(url: str, image: str) -> rx.Component:
         href=url,
         target="_blank"  # Abre en una nueva pestaña
     )
+
+def link_email(image:str) -> rx.Component:
+    return rx.box(
+            rx.image(
+                src=image,  
+                width="35px",
+                height="35px",
+            ),
+            **styles.LINK_BUTTON_STYLES
+        ),
+        
