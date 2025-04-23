@@ -3,7 +3,7 @@ import reflex as rx
 def download_button() -> rx.Component:
     return rx.button(
         "Descargar CV",
-        on_click=[lambda: rx.download("/Maximiliano Gonzalez.pdf"),
+        on_click=[lambda: rx.download("/Profesional Maximiliano Gonzalez.pdf"),
             rx.toast(
                 "✔️ Cv Descargado Exitosamente",
                 position="top-right",

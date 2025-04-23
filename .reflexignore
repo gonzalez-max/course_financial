@@ -1,0 +1,28 @@
+# Carpetas grandes o de build
+node_modules/
+.web/
+.next/
+py_loco/
+venv/
+__pycache__/
+
+
+# Archivos pesados o innecesarios
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.db
+.DS_Store
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+
+# Archivos PDF u otros documentos grandes
+*.pdf
+
+# Cache y lock files
+package-lock.json
+yarn.lock

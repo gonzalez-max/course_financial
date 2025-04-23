@@ -2,12 +2,12 @@ import reflex as rx
 from mi_web.styles.styles import Size as Size
 import mi_web.styles.course_styles as c_styles
 
-def intro_gif() -> rx.Component:
+def image_intro() -> rx.Component:
     return rx.desktop_only(
                 rx.box(
                     rx.center(
                         rx.image(
-                            src=("/gif_intro.gif?refresh=1"),
+                            src=("/intro_image.jpg?refresh=1"),
                             width="600px",
                             max_width= "600px",
                             max_height="400px",
