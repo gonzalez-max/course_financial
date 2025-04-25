@@ -21,6 +21,7 @@
     "react-error-boundary": "^5.0.0",
     "react-focus-lock": "2.13.6",
     "react-medium-image-zoom": "^5.2.14",
+    "react-player": "2.16.0",
     "recharts": "2.15.1",
     "socket.io-client": "4.8.1",
     "sonner": "2.0.1",
