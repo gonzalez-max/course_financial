@@ -17,6 +17,6 @@ def next_button(next_url: str) -> rx.Component:
                     "transform": "scale(1.05)"},
         ),
         position="fixed",
-        bottom="20px",  # Siempre al final de la pantalla
+        bottom="50px",  # Siempre al final de la pantalla
         right="20px",  # Alineado a la derecha
     )

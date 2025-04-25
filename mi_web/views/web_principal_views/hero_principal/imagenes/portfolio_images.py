@@ -7,7 +7,7 @@ def image_landing_course() -> rx.Component:
     return rx.box(
         rx.image(
             height="350px",
-            src=("/landing_course.png?refresh=1"),
+            src=("/landing_course.png"),
             width="100%",
             **styles.PORTFOLIO_IMAGE_STYLES
         ),
@@ -21,7 +21,7 @@ def image_seccion_modulos() -> rx.Component:
     return rx.box(
         rx.image(
             height="350px",
-            src=("/seccion_modulos.png?refresh=1"),
+            src=("/seccion_modulos.png"),
             width="100%",
             **styles.PORTFOLIO_IMAGE_STYLES
         ),
@@ -35,7 +35,7 @@ def image_captura1_modulos() -> rx.Component:
     return rx.box(
         rx.image(
             height="350px",
-            src=("/captura1_modulos.png?refresh=1"),
+            src=("/captura1_modulos.png"),
             width="100%",
             **styles.PORTFOLIO_IMAGE_STYLES
         ),
@@ -49,7 +49,7 @@ def image_captura2_modulos() -> rx.Component:
     return rx.box(
         rx.image(
             height="350px",
-            src=("/captura2_modulos.png?refresh=1"),
+            src=("/captura2_modulos.png"),
             width="100%",
             **styles.PORTFOLIO_IMAGE_STYLES
         ),
@@ -63,7 +63,7 @@ def image_captura3_modulos() -> rx.Component:
     return rx.box(
         rx.image(
             height="350px",
-            src=("/captura3_modulos.png?refresh=1"),
+            src=("/captura3_modulos.png"),
             width="100%",
             **styles.PORTFOLIO_IMAGE_STYLES
         ),
@@ -77,7 +77,7 @@ def image_captura4_modulos() -> rx.Component:
     return rx.box(
         rx.image(
             height="350px",
-            src=("/captura4_modulos.png?refresh=1"),
+            src=("/captura4_modulos.png"),
             width="100%",
             **styles.PORTFOLIO_IMAGE_STYLES
         ),

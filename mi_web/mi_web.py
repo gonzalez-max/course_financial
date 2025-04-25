@@ -1,7 +1,7 @@
 import reflex as rx 
 from mi_web.components.general_components.nav_bar import navbar_dropdown
 from mi_web.views.web_principal_views.hero_principal.hero_section import hero_section
-from mi_web.views.web_principal_views.hero_principal.projects import projects
+#from mi_web.views.web_principal_views.hero_principal.projects import projects
 from mi_web.views.web_principal_views.hero_principal.skills import skills
 from mi_web.views.web_principal_views.hero_principal.education import education
 from mi_web.views.web_principal_views.hero_principal.education import tiny_contact
@@ -30,6 +30,7 @@ class State(rx.State):
     pass
 
 def index() -> rx.Component:
+    from mi_web.views.web_principal_views.hero_principal.projects import projects
     return rx.box(
         navbar_dropdown(),
     rx.vstack(

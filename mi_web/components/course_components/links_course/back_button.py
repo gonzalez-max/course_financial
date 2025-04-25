@@ -17,6 +17,6 @@ def back_button(previous_url: str) -> rx.Component:
                     "transform": "scale(1.05)"},# Cambio de color al pasar el mouse
         ),
         position="fixed",
-        bottom="20px",  # Siempre al final de la pantalla
+        bottom="50px",  # Siempre al final de la pantalla
         left="20px",  # Alineado a la izquierda
     )

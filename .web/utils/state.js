@@ -179,7 +179,7 @@ export const applyEvent = async (event, socket) => {
   // Handle special events
   if (event.name == "_redirect") {
     if (event.payload.external) {
-      window.open(event.payload.path, "_blank");
+      window.open(event.payload.path, "_blank", "noopener");
     } else if (event.payload.replace) {
       Router.replace(event.payload.path);
     } else {
@@ -260,11 +260,15 @@ export const applyEvent = async (event, socket) => {
     try {
       const eval_result = event.payload.function();
       if (event.payload.callback) {
-        if (!!eval_result && typeof eval_result.then === "function") {
-          event.payload.callback(await eval_result);
-        } else {
-          event.payload.callback(eval_result);
-        }
+        const final_result =
+          !!eval_result && typeof eval_result.then === "function"
+            ? await eval_result
+            : eval_result;
+        const callback =
+          typeof event.payload.callback === "string"
+            ? eval(event.payload.callback)
+            : event.payload.callback;
+        callback(final_result);
       }
     } catch (e) {
       console.log("_call_function", e);
@@ -283,11 +287,15 @@ export const applyEvent = async (event, socket) => {
           : eval(event.payload.function)();
 
       if (event.payload.callback) {
-        if (!!eval_result && typeof eval_result.then === "function") {
-          eval(event.payload.callback)(await eval_result);
-        } else {
-          eval(event.payload.callback)(eval_result);
-        }
+        const final_result =
+          !!eval_result && typeof eval_result.then === "function"
+            ? await eval_result
+            : eval_result;
+        const callback =
+          typeof event.payload.callback === "string"
+            ? eval(event.payload.callback)
+            : event.payload.callback;
+        callback(final_result);
       }
     } catch (e) {
       console.log("_call_script", e);
@@ -352,9 +360,19 @@ export const applyRestEvent = async (event, socket) => {
  * Queue events to be processed and trigger processing of queue.
  * @param events Array of events to queue.
  * @param socket The socket object to send the event on.
+ * @param prepend Whether to place the events at the beginning of the queue.
  */
-export const queueEvents = async (events, socket) => {
-  event_queue.push(...events);
+export const queueEvents = async (events, socket, prepend) => {
+  if (prepend) {
+    // Drain the existing queue and place it after the given events.
+    events = [
+      ...events,
+      ...Array.from({ length: event_queue.length }).map(() =>
+        event_queue.shift(),
+      ),
+    ];
+  }
+  event_queue.push(...events.filter((e) => e !== undefined && e !== null));
   await processEvent(socket.current);
 };
 
@@ -441,6 +459,13 @@ export const connect = async (
     }
   }
 
+  const disconnectTrigger = (event) => {
+    if (socket.current?.connected) {
+      console.log("Disconnect websocket on unload");
+      socket.current.disconnect();
+    }
+  };
+
   const pagehideHandler = (event) => {
     if (event.persisted && socket.current?.connected) {
       console.log("Disconnect backend before bfcache on navigation");
@@ -452,6 +477,8 @@ export const connect = async (
   socket.current.on("connect", () => {
     setConnectErrors([]);
     window.addEventListener("pagehide", pagehideHandler);
+    window.addEventListener("beforeunload", disconnectTrigger);
+    window.addEventListener("unload", disconnectTrigger);
   });
 
   socket.current.on("connect_error", (error) => {
@@ -461,6 +488,8 @@ export const connect = async (
   // When the socket disconnects reset the event_processing flag
   socket.current.on("disconnect", () => {
     event_processing = false;
+    window.removeEventListener("unload", disconnectTrigger);
+    window.removeEventListener("beforeunload", disconnectTrigger);
     window.removeEventListener("pagehide", pagehideHandler);
   });
 
@@ -477,7 +506,7 @@ export const connect = async (
   });
   socket.current.on("reload", async (event) => {
     event_processing = false;
-    queueEvents([...initialEvents(), event], socket);
+    queueEvents([...initialEvents(), event], socket, true);
   });
 
   document.addEventListener("visibilitychange", checkVisibility);
@@ -729,11 +758,13 @@ export const useEventLoop = (
 
   // Function to add new events to the event queue.
   const addEvents = (events, args, event_actions) => {
+    const _events = events.filter((e) => e !== undefined && e !== null);
+
     if (!(args instanceof Array)) {
       args = [args];
     }
 
-    event_actions = events.reduce(
+    event_actions = _events.reduce(
       (acc, e) => ({ ...acc, ...e.event_actions }),
       event_actions ?? {},
     );
@@ -746,7 +777,7 @@ export const useEventLoop = (
     if (event_actions?.stopPropagation && _e?.stopPropagation) {
       _e.stopPropagation();
     }
-    const combined_name = events.map((e) => e.name).join("+++");
+    const combined_name = _events.map((e) => e.name).join("+++");
     if (event_actions?.temporal) {
       if (!socket.current || !socket.current.connected) {
         return; // don't queue when the backend is not connected
@@ -762,20 +793,19 @@ export const useEventLoop = (
       // If debounce is used, queue the events after some delay
       debounce(
         combined_name,
-        () => queueEvents(events, socket),
+        () => queueEvents(_events, socket),
         event_actions.debounce,
       );
     } else {
-      queueEvents(events, socket);
+      queueEvents(_events, socket);
     }
   };
 
   const sentHydrate = useRef(false); // Avoid double-hydrate due to React strict-mode
   useEffect(() => {
     if (router.isReady && !sentHydrate.current) {
-      const events = initial_events();
-      addEvents(
-        events.map((e) => ({
+      queueEvents(
+        initial_events().map((e) => ({
           ...e,
           router_data: (({ pathname, query, asPath }) => ({
             pathname,
@@ -783,6 +813,8 @@ export const useEventLoop = (
             asPath,
           }))(router),
         })),
+        socket,
+        true,
       );
       sentHydrate.current = true;
     }
@@ -924,6 +956,15 @@ export const isTrue = (val) => {
   if (Array.isArray(val)) return val.length > 0;
   if (val === Object(val)) return Object.keys(val).length > 0;
   return Boolean(val);
+};
+
+/***
+ * Check if a value is not null or undefined.
+ * @param val The value to check.
+ * @returns True if the value is not null or undefined, false otherwise.
+ */
+export const isNotNullOrUndefined = (val) => {
+  return (val ?? undefined) !== undefined;
 };
 
 /**

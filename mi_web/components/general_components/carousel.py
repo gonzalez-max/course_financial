@@ -3,12 +3,12 @@ import reflex as rx
 class CarouselState(rx.State):
     index: int = 0
     images = [
-        "/landing_course.png?refresh=1",
-        "/seccion_modulos.png?refresh=1",
-        "/captura1_modulos.png?refresh=1",
-        "/captura2_modulos.png?refresh=1",
-        "/captura3_modulos.png?refresh=1",
-        "/captura4_modulos.png?refresh=1"
+        "/landing_course.png",
+        "/seccion_modulos.png",
+        "/captura1_modulos.png",
+        "/captura2_modulos.png",
+        "/captura3_modulos.png",
+        "/captura4_modulos.png",
     ]
 
     def next_image(self):
