@@ -1,8 +1,9 @@
 # 📈 Curso de Finanzas, Trading y Cómo Evitar Estafas
 
-Bienvenido/a al repositorio del **Curso de Finanzas, Trading y Cómo Evitar Estafas**, un proyecto educativo enfocado en enseñar los fundamentos de las inversiones responsables, el trading y brindar herramientas prácticas para reconocer y evitar fraudes financieros.
+¡Te damos la bienvenida al repo del **Curso de Finanzas, Trading y Cómo Evitar Estafas**, un curso educativo sobre cómo realizar inversiones responsables, qué es esto del trading y una serie de herramientas prácticas para identificar y alejarse de las estafas en la economía matriz de los futuros!.
 
-Este curso ha sido desarrollado utilizando **Python** y el framework **Reflex**, y está alojado en la nube de Reflex para una experiencia accesible y dinámica.
+
+Este curso ha sido construido con **Python** y framework **Reflex**, y está ejecutándose en la nube de Reflex para un buen acceso a una buena interactividad.
 
 ---
 
@@ -25,6 +26,44 @@ Este curso ha sido desarrollado utilizando **Python** y el framework **Reflex**,
 - Recursos y estrategias para inversores principiantes
 
 ---
+## 💡 Características destacadas
+
+- 📲 Diseño responsive y simple para todos los públicos
+
+- 🧠 Enfoque educativo y preventivo, ideal para principiantes
+
+- 🧩 Estructura modular, fácil de extender y mantener
+
+- 🖥️ 100% desarrollado con Python, sin necesidad de JavaScript
+
+---
+
+## 📸 Capturas del Proyecto
+
+A continuación, algunas vistas destacadas del curso interactivo:
+
+### 🏠 Página de Inicio
+La primera impresión del curso, con diseño claro y enfoque educativo.
+![Página de Inicio](https://github.com/user-attachments/assets/94e8bc2a-bba2-4f52-840e-7b684745ec14)
+
+### 📚 Navegación de Módulos
+Menú interactivo para elegir entre los distintos temas del curso.
+![Sección Módulos](https://github.com/user-attachments/assets/0081bad7-de38-41c8-9e26-3f5c29caf3c2)
+
+### 📊 Ejemplos con Gráficos Reales
+Visualizaciones prácticas para comprender los movimientos del mercado.
+![Gráficos Reales](https://github.com/user-attachments/assets/5d90606a-03fe-4e68-9674-25e5a51d445d)
+
+### 🤖 Ilustraciones Generadas con IA
+Imágenes creadas con inteligencia artificial para facilitar la comprensión visual.
+![Ilustraciones IA](https://github.com/user-attachments/assets/19718750-e5e8-415b-9e8b-6a81ec056737)
+
+### 🧩 Cuadros Informativos
+Componentes visuales hechos con Reflex y Python puro para reforzar los conceptos clave.
+![Cuadros Reflex](https://github.com/user-attachments/assets/e18268a2-8b69-419e-9e4e-769ab3e15ec7)
+
+
+---
 
 ## 🌐 Acceso al Curso Online
 
@@ -39,6 +78,4 @@ Podés escribirme por [LinkedIn](https://www.linkedin.com/in/maximiliano-gonzale
 
 ---
 
-## 📝 Licencia
 
-Este proyecto está licenciado bajo la [MIT License](LICENSE).
