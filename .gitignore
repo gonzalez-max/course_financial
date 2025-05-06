@@ -18,6 +18,5 @@ __pycache__/
 # Archivos de logs
 *.log
 py_loco
-rxconfig.py
 .states
 .vscode
