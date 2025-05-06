@@ -14,24 +14,6 @@ import NextHead from "next/head"
 
 
 
-export function Button_7326e534f87c33509c60bce09efe3948 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_335361c49b4cbb1cfd6a0646de038ff9 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_3", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    <RadixThemesButton css={({ ["backgroundColor"] : "white", ["color"] : "black", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "black", ["color"] : "white", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) })} onClick={on_click_335361c49b4cbb1cfd6a0646de038ff9}>
-
-{"Siguiente \u2192"}
-</RadixThemesButton>
-  )
-}
-
 export function Button_a76cbeaf52add5ac1464884ced9e4730 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -46,6 +28,24 @@ export function Button_a76cbeaf52add5ac1464884ced9e4730 () {
     <RadixThemesButton css={({ ["backgroundColor"] : "black", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "white", ["color"] : "black", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) })} onClick={on_click_7b069812767522a7e2790976d4ef2763}>
 
 {"\u2190 Atr\u00e1s"}
+</RadixThemesButton>
+  )
+}
+
+export function Button_7326e534f87c33509c60bce09efe3948 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_335361c49b4cbb1cfd6a0646de038ff9 = useCallback(((...args) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_3", ["external"] : false, ["replace"] : false }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    <RadixThemesButton css={({ ["backgroundColor"] : "white", ["color"] : "black", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "black", ["color"] : "white", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) })} onClick={on_click_335361c49b4cbb1cfd6a0646de038ff9}>
+
+{"Siguiente \u2192"}
 </RadixThemesButton>
   )
 }
@@ -459,9 +459,9 @@ export default function Component() {
 </RadixThemesText>
 <ol css={({ ["direction"] : "column", ["listStyleType"] : "disc", ["color"] : "white", ["marginBottom"] : "1em", ["marginLeft"] : "1.5rem" })}>
 
-<li css={({ ["marginBottom"] : "1em" })}>
+<li css={({ ["marginBottom"] : "1em", ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Plazo:"}
 </RadixThemesStrong>
@@ -482,9 +482,9 @@ export default function Component() {
 </RadixThemesStrong>
 {" (m\u00e1s de 5 a\u00f1os)."}
 </li>
-<li css={({ ["marginBottom"] : "1em" })}>
+<li css={({ ["marginBottom"] : "1em", ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Riesgo:"}
 </RadixThemesStrong>
@@ -500,17 +500,17 @@ export default function Component() {
 </RadixThemesStrong>
 {" (como acciones u opciones) pueden generar mayores ganancias, pero tambi\u00e9n mayores p\u00e9rdidas."}
 </li>
-<li css={({ ["marginBottom"] : "1em" })}>
+<li css={({ ["marginBottom"] : "1em", ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Liquidez:"}
 </RadixThemesStrong>
 {" Indica qu\u00e9 tan r\u00e1pido y f\u00e1cilmente se puede vender una inversi\u00f3n y convertirla en efectivo sin perder valor. Inversiones como acciones o FCI tienen alta liquidez, mientras que inmuebles o bonos a largo plazo suelen tener menor liquidez."}
 </li>
-<li css={({ ["marginBottom"] : "1em" })}>
+<li css={({ ["marginBottom"] : "1em", ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Rentabilidad esperada:"}
 </RadixThemesStrong>
@@ -548,7 +548,7 @@ export default function Component() {
 
 <li css={({ ["marginBottom"] : "0.5em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Plazo fijo:"}
 </RadixThemesStrong>
@@ -556,7 +556,7 @@ export default function Component() {
 </li>
 <li css={({ ["marginBottom"] : "0.5em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Bonos:"}
 </RadixThemesStrong>
@@ -564,7 +564,7 @@ export default function Component() {
 </li>
 <li css={({ ["marginBottom"] : "0.5em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Letras:"}
 </RadixThemesStrong>
@@ -583,7 +583,7 @@ export default function Component() {
 
 <li css={({ ["marginBottom"] : "0.5em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Acciones/CEDEARS:"}
 </RadixThemesStrong>
@@ -591,7 +591,7 @@ export default function Component() {
 </li>
 <li css={({ ["marginBottom"] : "0.5em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Commodities:"}
 </RadixThemesStrong>
@@ -599,7 +599,7 @@ export default function Component() {
 </li>
 <li css={({ ["marginBottom"] : "0.5em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Opciones:"}
 </RadixThemesStrong>
@@ -607,7 +607,7 @@ export default function Component() {
 </li>
 <li css={({ ["marginBottom"] : "0.5em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Criptomonedas:"}
 </RadixThemesStrong>
@@ -771,10 +771,10 @@ export default function Component() {
 {"Ideal para proteger tus ahorros frente a la inflaci\u00f3n o devaluaci\u00f3n."}
 </li>
 </ol>
-<RadixThemesHeading css={({ ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block" })}>
+<RadixThemesStrong css={({ ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block" })}>
 
 {"Puntos a tener en cuenta"}
-</RadixThemesHeading>
+</RadixThemesStrong>
 <ol css={({ ["direction"] : "column", ["listStyleType"] : "disc", ["color"] : "white", ["marginBottom"] : "1em", ["marginLeft"] : "1.5rem" })}>
 
 <li css={({ ["marginBottom"] : "0.5em" })}>
@@ -829,7 +829,7 @@ export default function Component() {
 
 <li>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Renta fija:"}
 </RadixThemesStrong>
@@ -837,7 +837,7 @@ export default function Component() {
 </li>
 <li>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Renta variable:"}
 </RadixThemesStrong>
@@ -856,7 +856,7 @@ export default function Component() {
 
 <li>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Seg\u00fan la moneda:"}
 </RadixThemesStrong>
@@ -864,7 +864,7 @@ export default function Component() {
 </li>
 <li>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Renta variable:"}
 </RadixThemesStrong>
@@ -883,7 +883,7 @@ export default function Component() {
 
 <li>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Mercado de dinero:"}
 </RadixThemesStrong>
@@ -891,7 +891,7 @@ export default function Component() {
 </li>
 <li>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Mercado de capitales:"}
 </RadixThemesStrong>
@@ -899,7 +899,7 @@ export default function Component() {
 </li>
 <li>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Mercados internacionales:"}
 </RadixThemesStrong>

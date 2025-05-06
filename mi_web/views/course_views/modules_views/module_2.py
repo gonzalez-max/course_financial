@@ -122,29 +122,33 @@ def module_2() -> rx.Component:
       
                     #lista de instumentos financieros
                     rx.list.ordered(
-                      rx.list.item(rx.text.strong("Plazo:")," Se refiere al tiempo durante el cual se mantiene una inversión "
+                      rx.list.item(rx.text.strong("Plazo:",**c_styles.TEXT_STYLE["highlight"])," Se refiere al tiempo durante el cual se mantiene una inversión "
                               "antes de obtener rendimientos o recuperar el capital. Puede ser ",rx.text.strong("corto plazo"),
                               " (hasta 1 año), ",rx.text.strong("mediano plazo")," (entre 1 y 5 años) o ",
                               rx.text.strong("largo plazo")," (más de 5 años).",
-                              margin_bottom=Size.DEFAULT.value),
+                              margin_bottom=Size.DEFAULT.value,
+                              **c_styles.TEXT_STYLE["body"]),
                     
-                    rx.list.item(rx.text.strong("Riesgo:")," Representa la posibilidad de perder dinero en una inversión. ",
+                    rx.list.item(rx.text.strong("Riesgo:", **c_styles.TEXT_STYLE["highlight"])," Representa la posibilidad de perder dinero en una inversión. ",
                               rx.text.strong("Inversiones seguras")," (como un plazo fijo o bonos gubernamentales)"
                               " ofrecen menor riesgo pero rendimientos más bajos, mientras que",
                               rx.text.strong(" inversiones más volátiles")," (como acciones u opciones) pueden generar "
                               "mayores ganancias, pero también mayores pérdidas.",
-                              margin_bottom=Size.DEFAULT.value),
+                              margin_bottom=Size.DEFAULT.value,
+                              **c_styles.TEXT_STYLE["body"]),
                     
-                    rx.list.item(rx.text.strong("Liquidez:")," Indica qué tan rápido y fácilmente se puede vender una inversión y convertirla "
+                    rx.list.item(rx.text.strong("Liquidez:", **c_styles.TEXT_STYLE["highlight"])," Indica qué tan rápido y fácilmente se puede vender una inversión y convertirla "
                               "en efectivo sin perder valor. Inversiones como acciones o FCI tienen alta liquidez, "
                               "mientras que inmuebles o bonos a largo plazo suelen tener menor liquidez.",
-                              margin_bottom=Size.DEFAULT.value),
+                              margin_bottom=Size.DEFAULT.value,
+                              **c_styles.TEXT_STYLE["body"]),
                     
-                    rx.list.item(rx.text.strong("Rentabilidad esperada:")," Es la ganancia potencial que se puede obtener de una inversión. "
+                    rx.list.item(rx.text.strong("Rentabilidad esperada:", **c_styles.TEXT_STYLE["highlight"])," Es la ganancia potencial que se puede obtener de una inversión. "
                               "A mayor riesgo, generalmente se espera una mayor rentabilidad. Por ejemplo, los plazos "
                               "fijos tienen baja rentabilidad pero son seguros, mientras que las acciones pueden generar "
                               "altos retornos pero con mayor incertidumbre.",
-                              margin_bottom=Size.DEFAULT.value),
+                              margin_bottom=Size.DEFAULT.value,
+                              **c_styles.TEXT_STYLE["body"]),
                       
                       list_style_type="disc",
                       color="white",
@@ -179,15 +183,15 @@ def module_2() -> rx.Component:
       
                     #lista de renta fija
                     rx.list.ordered(
-                      rx.list.item(rx.text.strong("Plazo fijo:")," Depósito de dinero en un banco durante un tiempo determinado,"
+                      rx.list.item(rx.text.strong("Plazo fijo:", **c_styles.TEXT_STYLE["highlight"])," Depósito de dinero en un banco durante un tiempo determinado,"
                          " a cambio de un interés fijo al finalizar el período.",
                          margin_bottom=Size.MEDIUM.value),
                       
-                      rx.list.item(rx.text.strong("Bonos:")," Instrumentos de deuda emitidos por gobiernos o empresas. Funcionan "
+                      rx.list.item(rx.text.strong("Bonos:", **c_styles.TEXT_STYLE["highlight"])," Instrumentos de deuda emitidos por gobiernos o empresas. Funcionan "
                          "como un préstamo en el que el inversionista recibe intereses periódicos hasta el vencimiento.",
                          margin_bottom=Size.MEDIUM.value),
                       
-                      rx.list.item(rx.text.strong("Letras:")," Títulos de deuda pública a corto plazo, emitidos por el Estado para "
+                      rx.list.item(rx.text.strong("Letras:", **c_styles.TEXT_STYLE["highlight"])," Títulos de deuda pública a corto plazo, emitidos por el Estado para "
                           "financiarse. Suelen ofrecer rendimientos menores que los bonos, pero con menor riesgo.",
                           margin_bottom=Size.MEDIUM.value),
                     
@@ -208,20 +212,20 @@ def module_2() -> rx.Component:
                     
                     #lista de instrmentos
                     rx.list.ordered(
-                      rx.list.item(rx.text.strong("Acciones/CEDEARS:")," Representan una parte de una empresa. Su valor varía según la oferta"
+                      rx.list.item(rx.text.strong("Acciones/CEDEARS:",**c_styles.TEXT_STYLE["highlight"])," Representan una parte de una empresa. Su valor varía según la oferta"
                           " y demanda en la bolsa, pudiendo generar ganancias por apreciación del precio o por dividendos",
                           margin_bottom=Size.MEDIUM.value),
                       
-                      rx.list.item(rx.text.strong("Commodities:")," Materias primas como oro, petróleo o soja, cuyos precios fluctúan en "
+                      rx.list.item(rx.text.strong("Commodities:", **c_styles.TEXT_STYLE["highlight"])," Materias primas como oro, petróleo o soja, cuyos precios fluctúan en "
                           "función de la oferta y demanda global.",
                           margin_bottom=Size.MEDIUM.value),
                       
-                      rx.list.item(rx.text.strong("Opciones:")," Derivados financieros que otorgan el derecho (pero no la obligación) "
+                      rx.list.item(rx.text.strong("Opciones:", **c_styles.TEXT_STYLE["highlight"])," Derivados financieros que otorgan el derecho (pero no la obligación) "
                           "de comprar o vender un activo en una fecha futura a un precio determinado. Se utilizan para especulación"
                           " o cobertura de riesgos.",
                           margin_bottom=Size.MEDIUM.value),
                       
-                      rx.list.item(rx.text.strong("Criptomonedas:")," Activos digitales descentralizados que operan en tecnología blockchain."
+                      rx.list.item(rx.text.strong("Criptomonedas:", **c_styles.TEXT_STYLE["highlight"])," Activos digitales descentralizados que operan en tecnología blockchain."
                           " Su valor es altamente volátil y depende del mercado. Mas adelante abundaremos mas sobre ellas.",
                           margin_bottom=Size.MEDIUM.value),
                       
@@ -297,7 +301,7 @@ def module_2() -> rx.Component:
                 ),
                     
                         #lista de puntos a tener en cuenta
-                        rx.heading("Puntos a tener en cuenta",
+                        rx.text.strong("Puntos a tener en cuenta",
                                **c_styles.TEXT_STYLE["body"]),
                        
                        rx.list.ordered(
@@ -349,10 +353,10 @@ def module_2() -> rx.Component:
                     
                         #lista de fci
                         rx.list.ordered(
-                        rx.list.item(rx.text.strong("Renta fija:")," Invierte en instrumentos estables "
+                        rx.list.item(rx.text.strong("Renta fija:", **c_styles.TEXT_STYLE["highlight"])," Invierte en instrumentos estables "
                                 "como bonos o plazos fijos. Bajo riesgo y menor rentabilidad."),
                         
-                        rx.list.item(rx.text.strong("Renta variable:")," Invierte en acciones u otros activos de mayor "
+                        rx.list.item(rx.text.strong("Renta variable:",**c_styles.TEXT_STYLE["highlight"])," Invierte en acciones u otros activos de mayor "
                                 "volatilidad. Mayor riesgo y potencial de ganancia."),
                         list_style_type="disc",
                         color="white",
@@ -367,8 +371,8 @@ def module_2() -> rx.Component:
                         ),
                     #lista de fci
                     rx.list.ordered(
-                        rx.list.item(rx.text.strong("Según la moneda:")," Fondos en pesos."),
-                        rx.list.item(rx.text.strong("Renta variable:")," Fondos en dólares."),
+                        rx.list.item(rx.text.strong("Según la moneda:", **c_styles.TEXT_STYLE["highlight"])," Fondos en pesos."),
+                        rx.list.item(rx.text.strong("Renta variable:", **c_styles.TEXT_STYLE["highlight"])," Fondos en dólares."),
                         list_style_type="disc",
                         color="white",
                         margin_bottom=Size.DEFAULT.value,
@@ -382,10 +386,10 @@ def module_2() -> rx.Component:
                             
                     #lista de fci
                     rx.list.ordered(
-                      rx.list.item(rx.text.strong("Mercado de dinero:")," Plazos fijos, bonos cortos, inversiones de bajo riesgo."),
-                      rx.list.item(rx.text.strong("Mercado de capitales:"),"  Acciones, bonos de largo plazo, instrumentos "
+                      rx.list.item(rx.text.strong("Mercado de dinero:", **c_styles.TEXT_STYLE["highlight"])," Plazos fijos, bonos cortos, inversiones de bajo riesgo."),
+                      rx.list.item(rx.text.strong("Mercado de capitales:", **c_styles.TEXT_STYLE["highlight"]),"  Acciones, bonos de largo plazo, instrumentos "
                         "financieros más complejos"),
-                      rx.list.item(rx.text.strong("Mercados internacionales:")," FCI que invierten en activos de otros países."
+                      rx.list.item(rx.text.strong("Mercados internacionales:", **c_styles.TEXT_STYLE["highlight"])," FCI que invierten en activos de otros países."
                        " financieros más complejos"),
                     list_style_type="disc",
                     color="white",

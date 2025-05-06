@@ -650,7 +650,7 @@ export default function Component() {
 <RadixThemesText as={"p"} css={({ ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 {"Son aquellos imprevistos que pueden generar un impacto en la econom\u00eda personal. Para estos, es recomendable contar con un "}
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"fondo de emergencia"}
 </RadixThemesStrong>
@@ -684,7 +684,7 @@ export default function Component() {
 </RadixThemesFlex>
 <RadixThemesText as={"p"} css={({ ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"importante:"}
 </RadixThemesStrong>

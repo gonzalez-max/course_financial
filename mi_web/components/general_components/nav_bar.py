@@ -8,7 +8,7 @@ class LogoState(rx.State):
     def increment_click(self):
         self.click_count += 1
         # Calcula el número de ciclos de 5 clics
-        cycle = (self.click_count // 5) % 2
+        cycle = (self.click_count // 3) % 2
         # Alterna la imagen según el ciclo
         if cycle == 1:
             self.logo_src = "/icons/orbesdmc.png"

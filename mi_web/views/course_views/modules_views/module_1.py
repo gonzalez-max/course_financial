@@ -188,7 +188,7 @@ def module_1() -> rx.Component:
                                margin_bottom=Size.MEDIUM.value),
                     
                     rx.text("Son aquellos imprevistos que pueden generar un impacto en la economía personal."
-                            " Para estos, es recomendable contar con un ", rx.text.strong("fondo de emergencia")," que permita cubrirlos,"
+                            " Para estos, es recomendable contar con un ", rx.text.strong("fondo de emergencia",**c_styles.TEXT_STYLE["highlight"])," que permita cubrirlos,"
                             " sin afectar el presupuesto mensual.", **c_styles.TEXT_STYLE["body"],margin_bottom=Size.DEFAULT.value),
                     #ejemplo
                     rx.hstack(
@@ -204,7 +204,7 @@ def module_1() -> rx.Component:
                         margin_bottom=Size.DEFAULT.value
                     ),
                     
-                    rx.text(rx.text.strong("importante:")," Llevar un registro detallado de los gastos ayuda a "
+                    rx.text(rx.text.strong("importante:", **c_styles.TEXT_STYLE["highlight"])," Llevar un registro detallado de los gastos ayuda a "
                             "identificar patrones y encontrar oportunidades de ahorro. Aplicaciones de finanzas "
                             "personales o simples hojas de cálculo pueden ser herramientas útiles para este propósito.", 
                             **c_styles.TEXT_STYLE["body"],

@@ -298,7 +298,7 @@ export default function Component() {
 <RadixThemesText as={"p"} css={({ ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 {"El "}
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"trading"}
 </RadixThemesStrong>
@@ -335,7 +335,7 @@ export default function Component() {
 
 <li css={({ ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Scalping:"}
 </RadixThemesStrong>
@@ -343,15 +343,15 @@ export default function Component() {
 </li>
 <li css={({ ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
-{"Day Trading"}
+{"Day Trading:"}
 </RadixThemesStrong>
 {" Compra y venta en el mismo d\u00eda. No se dejan operaciones abiertas de un d\u00eda para otro."}
 </li>
 <li css={({ ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Swing Trading:"}
 </RadixThemesStrong>
@@ -359,7 +359,7 @@ export default function Component() {
 </li>
 <li css={({ ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Position Trading:"}
 </RadixThemesStrong>
@@ -384,12 +384,12 @@ export default function Component() {
 <RadixThemesText as={"p"} css={({ ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 {"En el mundo del trading existen dos enfoques principales para analizar los mercados financieros: el "}
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"an\u00e1lisis fundamental"}
 </RadixThemesStrong>
 {" y "}
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"el an\u00e1lisis t\u00e9cnico."}
 </RadixThemesStrong>
@@ -412,7 +412,7 @@ export default function Component() {
 <RadixThemesText as={"p"} css={({ ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block", ["marginBottom"] : "0.5em" })}>
 
 {"El"}
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {" an\u00e1lisis fundamental"}
 </RadixThemesStrong>
@@ -439,7 +439,7 @@ export default function Component() {
 </ol>
 <RadixThemesText as={"p"} css={({ ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {" Ejemplo:"}
 </RadixThemesStrong>
@@ -447,7 +447,7 @@ export default function Component() {
 </RadixThemesText>
 <RadixThemesText as={"p"} css={({ ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {" Desventaja:"}
 </RadixThemesStrong>
@@ -460,7 +460,7 @@ export default function Component() {
 <RadixThemesText as={"p"} css={({ ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block", ["marginBottom"] : "0.5em" })}>
 
 {"El "}
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"an\u00e1lisis t\u00e9cnico"}
 </RadixThemesStrong>
@@ -474,7 +474,7 @@ export default function Component() {
 
 <li css={({ ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {" Acci\u00f3n del precio:"}
 </RadixThemesStrong>
@@ -482,7 +482,7 @@ export default function Component() {
 </li>
 <li css={({ ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {" Soportes y resistencias:"}
 </RadixThemesStrong>
@@ -490,7 +490,7 @@ export default function Component() {
 </li>
 <li css={({ ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {" Tendencias:"}
 </RadixThemesStrong>
@@ -498,7 +498,7 @@ export default function Component() {
 </li>
 <li css={({ ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {" Patrones gr\u00e1ficos y de velas japonesas:"}
 </RadixThemesStrong>
@@ -506,7 +506,7 @@ export default function Component() {
 </li>
 <li css={({ ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {" Indicadores t\u00e9cnicos:"}
 </RadixThemesStrong>
@@ -515,7 +515,7 @@ export default function Component() {
 </ol>
 <RadixThemesText as={"p"} css={({ ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Ejemplo:"}
 </RadixThemesStrong>
@@ -523,7 +523,7 @@ export default function Component() {
 </RadixThemesText>
 <RadixThemesText as={"p"} css={({ ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Ventaja:"}
 </RadixThemesStrong>
@@ -536,7 +536,7 @@ export default function Component() {
 </RadixThemesHeading>
 <RadixThemesText as={"p"} css={({ ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Las velas japonesas"}
 </RadixThemesStrong>
@@ -562,7 +562,7 @@ export default function Component() {
 </RadixThemesText>
 <RadixThemesText as={"p"} css={({ ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block", ["marginBottom"] : "0.5em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"1. Cuerpo:"}
 </RadixThemesStrong>
@@ -570,7 +570,7 @@ export default function Component() {
 </RadixThemesText>
 <RadixThemesText as={"p"} css={({ ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block", ["marginBottom"] : "0.5em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"2. Mecha o sombra:"}
 </RadixThemesStrong>
@@ -578,7 +578,7 @@ export default function Component() {
 </RadixThemesText>
 <RadixThemesText as={"p"} css={({ ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block", ["marginBottom"] : "0.5em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"3. Color:"}
 </RadixThemesStrong>
@@ -620,7 +620,7 @@ export default function Component() {
 
 <li css={({ ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {" Vela alcista:"}
 </RadixThemesStrong>
@@ -628,7 +628,7 @@ export default function Component() {
 </li>
 <li css={({ ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {" Vela bajista:"}
 </RadixThemesStrong>
@@ -636,7 +636,7 @@ export default function Component() {
 </li>
 <li css={({ ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {" Doji:"}
 </RadixThemesStrong>
@@ -644,7 +644,7 @@ export default function Component() {
 </li>
 <li css={({ ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {" Gravestone Doji:"}
 </RadixThemesStrong>
@@ -652,7 +652,7 @@ export default function Component() {
 </li>
 <li css={({ ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {" Martillo y martillo (Hammer) invertido:"}
 </RadixThemesStrong>
@@ -660,7 +660,7 @@ export default function Component() {
 </li>
 <li css={({ ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {" Estrella fugaz (shooting star) y hombre colgado:"}
 </RadixThemesStrong>
@@ -684,7 +684,7 @@ export default function Component() {
 <RadixThemesText as={"p"} css={({ ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block", ["marginBottom"] : "0.5em" })}>
 
 {"Las Velas Japonesas ayudan a entender la accion del precio en cualquier mercado, si bien, son escenciales para identificar patrones y tendencias."}
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {" deben combinarse con otros indicadores para confirmar se\u00f1ales."}
 </RadixThemesStrong>
@@ -700,12 +700,12 @@ export default function Component() {
 </RadixThemesHeading>
 <RadixThemesText as={"p"} css={({ ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"El manejo del riesgo"}
 </RadixThemesStrong>
 {" en el mercado es esencial y debe considerarse un negocio, no una apuesta. Muchos operadores caen en la trampa de intentar "}
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"PREDECIR"}
 </RadixThemesStrong>
@@ -729,7 +729,7 @@ export default function Component() {
 {"an\u00e1lisis t\u00e9cnico"}
 </RadixThemesStrong>
 {" y "}
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"desarrollar una mentalidad empresarial"}
 </RadixThemesStrong>
@@ -745,21 +745,21 @@ export default function Component() {
 </RadixThemesText>
 <ol css={({ ["direction"] : "column", ["listStyleType"] : "decimal", ["color"] : "white", ["marginBottom"] : "1em", ["marginLeft"] : "1.5rem" })}>
 
-<li css={({ ["marginBottom"] : "1em" })}>
+<li css={({ ["marginBottom"] : "1em", ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block" })}>
 
-{" Define cu\u00e1nto capital est\u00e1s dispuesto a arriesgar en cada operaci\u00f3n."}
+{"1. Define cu\u00e1nto capital est\u00e1s dispuesto a arriesgar en cada operaci\u00f3n."}
 </li>
-<li css={({ ["marginBottom"] : "1em" })}>
+<li css={({ ["marginBottom"] : "1em", ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block" })}>
 
-{" Establece un l\u00edmite de p\u00e9rdida personal, como un m\u00e1ximo del 10% de tu capital total."}
+{"2. Establece un l\u00edmite de p\u00e9rdida personal, como un m\u00e1ximo del 10% de tu capital total."}
 </li>
-<li css={({ ["marginBottom"] : "1em" })}>
+<li css={({ ["marginBottom"] : "1em", ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block" })}>
 
-{" Si acumulas m\u00e1s de 10 p\u00e9rdidas consecutivas, DETENTE y reeval\u00faa tu estrategia."}
+{"3. Si acumulas m\u00e1s de 10 p\u00e9rdidas consecutivas, DETENTE y reeval\u00faa tu estrategia."}
 </li>
-<li css={({ ["marginBottom"] : "1em" })}>
+<li css={({ ["marginBottom"] : "1em", ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block" })}>
 
-{" Si las p\u00e9rdidas potenciales de tus operaciones abiertas representan un 10% o m\u00e1s de tu capital, EVITA abrir nuevas operaciones."}
+{"4. Si las p\u00e9rdidas potenciales de tus operaciones abiertas representan un 10% o m\u00e1s de tu capital, EVITA abrir nuevas operaciones."}
 </li>
 </ol>
 <RadixThemesHeading css={({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["marginBottom"] : "0.5em" })}>
@@ -768,12 +768,12 @@ export default function Component() {
 </RadixThemesHeading>
 <RadixThemesText as={"p"} css={({ ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Uno de los errores m\u00e1s frecuentes"}
 </RadixThemesStrong>
 {" es aumentar el tama\u00f1o de una nueva orden despu\u00e9s de una p\u00e9rdida previa, lo que puede llevar a p\u00e9rdidas masivas. Para evitarlo, sigue una estrategia que limite el riesgo de tu capital en cada operaci\u00f3n. Mant\u00e9n la objetividad y evita que las emociones influyan en tus decisiones. Siempre usa un "}
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"stop-loss"}
 </RadixThemesStrong>
@@ -785,11 +785,16 @@ export default function Component() {
 </RadixThemesHeading>
 <RadixThemesText as={"p"} css={({ ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Stop-Loss:"}
 </RadixThemesStrong>
-{" Es una orden que cierra tu operaci\u00f3n autom\u00e1ticamente para limitar p\u00e9rdidas. Ejemplo: Compras a $100, stop-loss en $95, pierdes $5 si se ejecuta. Es \u00fatil para principiantes, pero cuidado: en mercados manipulados, noticias falsas pueden barrer los stop-loss y sacarte antes de que el precio suba. Algunos traders lo evitan."}
+{" Es una orden que cierra tu operaci\u00f3n autom\u00e1ticamente para limitar p\u00e9rdidas. "}
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
+
+{"Ejemplo:"}
+</RadixThemesStrong>
+{" Compr\u00e1s a $100, stop-loss en $95, pierdes $5 si se ejecuta. Es \u00fatil para principiantes, pero cuidado: en mercados manipulados, noticias falsas pueden barrer los stop-loss y sacarte antes de que el precio suba. Algunos traders lo evitan."}
 <RadixThemesStrong>
 
 {" Mas adelante durante el curso lo veremos mas a detalle."}
@@ -797,7 +802,7 @@ export default function Component() {
 </RadixThemesText>
 <RadixThemesText as={"p"} css={({ ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Relaci\u00f3n Riesgo/Beneficio:"}
 </RadixThemesStrong>
@@ -805,7 +810,7 @@ export default function Component() {
 </RadixThemesText>
 <RadixThemesText as={"p"} css={({ ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"Tama\u00f1o de posici\u00f3n:"}
 </RadixThemesStrong>
@@ -819,7 +824,7 @@ export default function Component() {
 <RadixThemesText as={"p"} css={({ ["color"] : "white", ["wordWrap"] : "break-word", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.1em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["maxWidth"] : "600px", ["fontWeight"] : "400", ["fontSize"] : "17px", ["display"] : "block", ["marginBottom"] : "1em" })}>
 
 {"El \u00e9xito en el trading no solo depende del an\u00e1lisis t\u00e9cnico, sino tambi\u00e9n de "}
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"la mentalidad del inversor."}
 </RadixThemesStrong>
@@ -848,7 +853,7 @@ export default function Component() {
 <li css={({ ["marginBottom"] : "1em" })}>
 
 {"El mercado "}
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"es incierto"}
 </RadixThemesStrong>
@@ -857,7 +862,7 @@ export default function Component() {
 <li css={({ ["marginBottom"] : "1em" })}>
 
 {"Una estrategia basada en "}
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"an\u00e1lisis t\u00e9cnico y gesti\u00f3n de capital"}
 </RadixThemesStrong>
@@ -880,21 +885,21 @@ export default function Component() {
 
 <RadixThemesHeading css={({ ["marginBottom"] : "0.5em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"\u00bf Para que invierto ?"}
 </RadixThemesStrong>
 </RadixThemesHeading>
 <RadixThemesHeading css={({ ["marginBottom"] : "0.5em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"\u00bf Cual es mi objetivo ?"}
 </RadixThemesStrong>
 </RadixThemesHeading>
 <RadixThemesHeading css={({ ["marginBottom"] : "1em" })}>
 
-<RadixThemesStrong>
+<RadixThemesStrong css={({ ["fontSize"] : "16px", ["fontWeight"] : "semibold", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica", ["color"] : "white", ["backgroundColor"] : "#c14d00", ["padding"] : "2px 5px", ["borderRadius"] : "5px" })}>
 
 {"\u00bf Cuanto estoy dispuesto a perder?"}
 </RadixThemesStrong>

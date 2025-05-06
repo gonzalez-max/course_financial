@@ -37,7 +37,7 @@ def module_3() -> rx.Component:
                                 margin_bottom=Size.DEFAULT.value
                         ),
                 
-                        rx.text("El " ,rx.text.strong("trading"), " es la compra y venta de activos financieros "
+                        rx.text("El " ,rx.text.strong("trading",**c_styles.TEXT_STYLE["highlight"]), " es la compra y venta de activos financieros "
                                 "(acciones, divisas, criptomonedas, materias primas, etc.) con el objetivo de obtener "
                                 "ganancias a partir de los movimientos del mercado. A diferencia de la inversión tradicional, "
                                 "el trading se enfoca en el corto y mediano plazo.", **c_styles.TEXT_STYLE["body"],
@@ -64,13 +64,13 @@ def module_3() -> rx.Component:
             
                         #lista de tipos de trading
                         rx.list.ordered(
-                                rx.list.item(rx.text.strong("Scalping:")," Operaciones en segundos o minutos. Buscan pequeñas ganancias rápidas."
+                                rx.list.item(rx.text.strong("Scalping:",**c_styles.TEXT_STYLE["highlight"])," Operaciones en segundos o minutos. Buscan pequeñas ganancias rápidas."
                                         , margin_bottom=Size.DEFAULT.value),
-                                rx.list.item(rx.text.strong("Day Trading")," Compra y venta en el mismo día. No se dejan operaciones abiertas de un "
+                                rx.list.item(rx.text.strong("Day Trading:",**c_styles.TEXT_STYLE["highlight"])," Compra y venta en el mismo día. No se dejan operaciones abiertas de un "
                                         "día para otro.", margin_bottom=Size.DEFAULT.value),
-                                rx.list.item(rx.text.strong("Swing Trading:")," Operaciones que duran días o semanas, siguiendo tendencias del mercado."
+                                rx.list.item(rx.text.strong("Swing Trading:",**c_styles.TEXT_STYLE["highlight"])," Operaciones que duran días o semanas, siguiendo tendencias del mercado."
                                         , margin_bottom=Size.DEFAULT.value),
-                                rx.list.item(rx.text.strong("Position Trading:")," Similar a la inversión, manteniendo activos por meses o incluso años.", margin_bottom=Size.DEFAULT.value),
+                                rx.list.item(rx.text.strong("Position Trading:", **c_styles.TEXT_STYLE["highlight"])," Similar a la inversión, manteniendo activos por meses o incluso años.", margin_bottom=Size.DEFAULT.value),
                                 list_style_type="disc",
                                 color="white",
                                 margin_bottom=Size.DEFAULT.value,
@@ -89,7 +89,8 @@ def module_3() -> rx.Component:
                                    margin_bottom=Size.MEDIUM.value),
                         
                         rx.text("En el mundo del trading existen dos enfoques principales para analizar los mercados "
-                                "financieros: el ",rx.text.strong("análisis fundamental")," y ",rx.text.strong("el análisis técnico."),
+                                "financieros: el ",rx.text.strong("análisis fundamental",**c_styles.TEXT_STYLE["highlight"])," y ",
+                                rx.text.strong("el análisis técnico.",**c_styles.TEXT_STYLE["highlight"]),
                                 " Ambos tienen sus ventajas y desventajas, pero en este curso nos enfocaremos principalmente en el "
                                 "análisis técnico.", **c_styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
                         #imagen fundamental vs tecnico
@@ -102,7 +103,7 @@ def module_3() -> rx.Component:
                                    **c_styles.TEXT_STYLE["subseccion"],
                                    margin_bottom=Size.MEDIUM.value),
                         
-                        rx.text("El",rx.text.strong(" análisis fundamental")," estudia el valor real de un activo basado en factores económicos,"
+                        rx.text("El",rx.text.strong(" análisis fundamental", **c_styles.TEXT_STYLE["highlight"])," estudia el valor real de un activo basado en factores económicos,"
                         " financieros y de mercado. Se usa principalmente en inversiones a largo plazo.",
                         **c_styles.TEXT_STYLE["body"],
                         margin_bottom=Size.MEDIUM.value),
@@ -124,11 +125,11 @@ def module_3() -> rx.Component:
                         ),
             
                         #ejemplo
-                        rx.text(rx.text.strong(" Ejemplo:")," Un inversor en acciones analiza los reportes de ganancias de una empresa para "
+                        rx.text(rx.text.strong(" Ejemplo:",**c_styles.TEXT_STYLE["highlight"])," Un inversor en acciones analiza los reportes de ganancias de una empresa para "
                                 "determinar si es una buena inversión.", **c_styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
 
                         #desventaja
-                        rx.text(rx.text.strong(" Desventaja:")," Requiere un conocimiento profundo de economía y los efectos de las noticias "
+                        rx.text(rx.text.strong(" Desventaja:",**c_styles.TEXT_STYLE["highlight"])," Requiere un conocimiento profundo de economía y los efectos de las noticias "
                                 "pueden tardar en reflejarse en el precio.", **c_styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
 
                         #subseccion analisis tecnico
@@ -136,7 +137,7 @@ def module_3() -> rx.Component:
                                    **c_styles.TEXT_STYLE["subseccion"],
                                    margin_bottom=Size.MEDIUM.value),
                         
-                        rx.text("El ",rx.text.strong("análisis técnico")," Se basa en el estudio de los gráficos de precios y patrones de "
+                        rx.text("El ",rx.text.strong("análisis técnico",**c_styles.TEXT_STYLE["highlight"])," Se basa en el estudio de los gráficos de precios y patrones de "
                                 "comportamiento del mercado. Su premisa es que “el precio lo descuenta todo” y que la historia tiende a repetirse.",
                                 **c_styles.TEXT_STYLE["body"],
                                 margin_bottom=Size.MEDIUM.value),
@@ -148,15 +149,15 @@ def module_3() -> rx.Component:
                         
                         #lista de aspectos clave
                         rx.list.ordered(
-                                rx.list.item(rx.text.strong(" Acción del precio:")," Cómo se mueve el precio en el tiempo."
+                                rx.list.item(rx.text.strong(" Acción del precio:",**c_styles.TEXT_STYLE["highlight"])," Cómo se mueve el precio en el tiempo."
                                         , margin_bottom=Size.DEFAULT.value),
-                                rx.list.item(rx.text.strong(" Soportes y resistencias:")," Zonas donde el precio tiende a frenarse."
+                                rx.list.item(rx.text.strong(" Soportes y resistencias:",**c_styles.TEXT_STYLE["highlight"])," Zonas donde el precio tiende a frenarse."
                                         , margin_bottom=Size.DEFAULT.value),
-                                rx.list.item(rx.text.strong(" Tendencias:")," Identificación de mercados alcistas, bajistas o laterales."
+                                rx.list.item(rx.text.strong(" Tendencias:",**c_styles.TEXT_STYLE["highlight"])," Identificación de mercados alcistas, bajistas o laterales."
                                         , margin_bottom=Size.DEFAULT.value),
-                                rx.list.item(rx.text.strong(" Patrones gráficos y de velas japonesas:")," Figuras que indican posibles movimientos "
+                                rx.list.item(rx.text.strong(" Patrones gráficos y de velas japonesas:",**c_styles.TEXT_STYLE["highlight"])," Figuras que indican posibles movimientos "
                                         "futuros.", margin_bottom=Size.DEFAULT.value),
-                                rx.list.item(rx.text.strong(" Indicadores técnicos:")," Herramientas como medias móviles, RSI y MACD que ayudan en "
+                                rx.list.item(rx.text.strong(" Indicadores técnicos:",**c_styles.TEXT_STYLE["highlight"])," Herramientas como medias móviles, RSI y MACD que ayudan en "
                                         "la toma de decisiones.", margin_bottom=Size.DEFAULT.value),
                                 list_style_type="disc",
                                 color="white",
@@ -165,12 +166,12 @@ def module_3() -> rx.Component:
                         
                         
                         #ejemplo 
-                        rx.text(rx.text.strong("Ejemplo:"), " Un trader observa un patrón de velas Doji en una resistencia fuerte y "
+                        rx.text(rx.text.strong("Ejemplo:",**c_styles.TEXT_STYLE["highlight"]), " Un trader observa un patrón de velas Doji en una resistencia fuerte y "
                                 "decide vender porque indica posible reversión de tendencia.",
                                 **c_styles.TEXT_STYLE["body"],
                                 margin_bottom=Size.DEFAULT.value),
                         #ventaja
-                         rx.text(rx.text.strong("Ventaja:")," Se basa en datos visuales y permite tomar decisiones rápidas para operar en el corto "
+                         rx.text(rx.text.strong("Ventaja:",**c_styles.TEXT_STYLE["highlight"])," Se basa en datos visuales y permite tomar decisiones rápidas para operar en el corto "
                                 "y mediano plazo.",
                                 **c_styles.TEXT_STYLE["body"],
                                 margin_bottom=Size.DEFAULT.value),
@@ -182,7 +183,7 @@ def module_3() -> rx.Component:
                                    **c_styles.TEXT_STYLE["subtitle"],
                                    margin_bottom=Size.MEDIUM.value),
                         
-                        rx.text(rx.text.strong("Las velas japonesas")," son una de las herramientas más utilizadas en el análisis técnico. Representan "
+                        rx.text(rx.text.strong("Las velas japonesas",**c_styles.TEXT_STYLE["highlight"])," son una de las herramientas más utilizadas en el análisis técnico. Representan "
                                 "la evolución del precio en un período determinado y ayudan a interpretar el sentimiento del mercado.", 
                                 **c_styles.TEXT_STYLE["body"],
                                 margin_bottom=Size.DEFAULT.value),
@@ -204,15 +205,15 @@ def module_3() -> rx.Component:
                                 margin_bottom=Size.MEDIUM.value
                                 ),
                         
-                        rx.text(rx.text.strong("1. Cuerpo:")," Diferencia entre el precio de apertura y cierre.",
+                        rx.text(rx.text.strong("1. Cuerpo:",**c_styles.TEXT_STYLE["highlight"])," Diferencia entre el precio de apertura y cierre.",
                                 **c_styles.TEXT_STYLE["body"], 
                                  margin_bottom=Size.MEDIUM.value),
                         
-                        rx.text(rx.text.strong("2. Mecha o sombra:")," Representa los precios máximo y mínimo alcanzados.",
+                        rx.text(rx.text.strong("2. Mecha o sombra:",**c_styles.TEXT_STYLE["highlight"])," Representa los precios máximo y mínimo alcanzados.",
                                 **c_styles.TEXT_STYLE["body"], 
                                 margin_bottom=Size.MEDIUM.value),
                         
-                        rx.text(rx.text.strong("3. Color:"), **c_styles.TEXT_STYLE["body"],
+                        rx.text(rx.text.strong("3. Color:",**c_styles.TEXT_STYLE["highlight"]), **c_styles.TEXT_STYLE["body"],
                                 margin_bottom=Size.MEDIUM.value),            
                         
                         # lista de colores
@@ -239,20 +240,20 @@ def module_3() -> rx.Component:
                         
                         #lista de tipos de velas
                         rx.list.ordered(
-                                rx.list.item(rx.text.strong(" Vela alcista:")," Cuerpo verde, con o sin sombras."
+                                rx.list.item(rx.text.strong(" Vela alcista:",**c_styles.TEXT_STYLE["highlight"])," Cuerpo verde, con o sin sombras."
                                 " Indica fuerza compradora.", margin_bottom=Size.DEFAULT.value),
-                                rx.list.item(rx.text.strong(" Vela bajista:")," Cuerpo rojo, con o sin sombras."
+                                rx.list.item(rx.text.strong(" Vela bajista:",**c_styles.TEXT_STYLE["highlight"])," Cuerpo rojo, con o sin sombras."
                                 " Indica presión vendedora.", margin_bottom=Size.DEFAULT.value),
-                                rx.list.item(rx.text.strong(" Doji:")," Representa indecisión en el mercado porque "
+                                rx.list.item(rx.text.strong(" Doji:",**c_styles.TEXT_STYLE["highlight"])," Representa indecisión en el mercado porque "
                                 "el precio de apertura y cierre son muy similares, con sombras en ambos lados o sin sombras. "
                                 "Cuerpo casi inexistente, reflejando indecisión en el mercado.", margin_bottom=Size.DEFAULT.value),
-                        rx.list.item(rx.text.strong(" Gravestone Doji:")," Tiene una sombra superior larga y"
+                        rx.list.item(rx.text.strong(" Gravestone Doji:",**c_styles.TEXT_STYLE["highlight"])," Tiene una sombra superior larga y"
                                 " casi sin cuerpo ni sombra inferior. Esto significa que los compradores "
                                 "intentaron subir el precio, pero los vendedores tomaron el control y lo "
                                 "devolvieron al nivel de apertura.", margin_bottom=Size.DEFAULT.value),
-                        rx.list.item(rx.text.strong(" Martillo y martillo (Hammer) invertido:")," Posible cambio de tendencia "
+                        rx.list.item(rx.text.strong(" Martillo y martillo (Hammer) invertido:",**c_styles.TEXT_STYLE["highlight"])," Posible cambio de tendencia "
                                 "si aparecen en zonas clave.", margin_bottom=Size.DEFAULT.value),
-                        rx.list.item(rx.text.strong(" Estrella fugaz (shooting star) y hombre colgado:")," Herramientas como medias móviles, "
+                        rx.list.item(rx.text.strong(" Estrella fugaz (shooting star) y hombre colgado:",**c_styles.TEXT_STYLE["highlight"])," Herramientas como medias móviles, "
                                  "RSI y MACD que ayudan en la toma de decisiones.", margin_bottom=Size.DEFAULT.value),
                         list_style_type="disc",
                         color="white",
@@ -270,7 +271,7 @@ def module_3() -> rx.Component:
                         
                         rx.text("Las Velas Japonesas ayudan a entender la accion del precio en cualquier mercado, si bien, "
                                 "son escenciales para identificar patrones y tendencias.",
-                                rx.text.strong(" deben combinarse con otros indicadores para confirmar señales."),
+                                rx.text.strong(" deben combinarse con otros indicadores para confirmar señales.",**c_styles.TEXT_STYLE["highlight"]),
                                 **c_styles.TEXT_STYLE["body"],
                                 margin_bottom=Size.MEDIUM.value),
             
@@ -285,8 +286,8 @@ def module_3() -> rx.Component:
                                    **c_styles.TEXT_STYLE["subtitle"],
                                    margin_bottom=Size.MEDIUM.value),
                         
-                        rx.text(rx.text.strong("El manejo del riesgo")," en el mercado es esencial y debe considerarse un negocio, no una apuesta. Muchos operadores caen "
-                                "en la trampa de intentar ",rx.text.strong("PREDECIR")," el mercado, lo que puede llevar a pérdidas significativas. ",
+                        rx.text(rx.text.strong("El manejo del riesgo",**c_styles.TEXT_STYLE["highlight"])," en el mercado es esencial y debe considerarse un negocio, no una apuesta. Muchos operadores caen "
+                                "en la trampa de intentar ",rx.text.strong("PREDECIR",**c_styles.TEXT_STYLE["highlight"])," el mercado, lo que puede llevar a pérdidas significativas. ",
                                 **c_styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
             
                         #imagen gestion del riesgo
@@ -296,7 +297,7 @@ def module_3() -> rx.Component:
                         ),
             
                         rx.text("Es fundamental centrarse en el ",rx.text.strong("análisis técnico"), " y ",
-                                rx.text.strong("desarrollar una mentalidad empresarial"),". El tamaño de las órdenes "
+                                rx.text.strong("desarrollar una mentalidad empresarial",**c_styles.TEXT_STYLE["highlight"]),". El tamaño de las órdenes "
                                 "debe determinarse cuidadosamente para preservar el capital y evitar que el dinero pase de manos "
                                 "inexpertas a operadores más experimentados. Aprender a gestionar el capital y controlar el "
                                 "riesgo es clave para el éxito en el trading.", **c_styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
@@ -312,14 +313,19 @@ def module_3() -> rx.Component:
             
                         #lista de medidas 
                         rx.list.ordered(
-                                rx.list.item(" Define cuánto capital estás dispuesto a arriesgar en cada operación.", 
-                                        margin_bottom=Size.DEFAULT.value),
-                                rx.list.item(" Establece un límite de pérdida personal, como un máximo del 10% de tu capital total.",
-                                        margin_bottom=Size.DEFAULT.value),
-                                rx.list.item(" Si acumulas más de 10 pérdidas consecutivas, DETENTE y reevalúa tu estrategia.",
-                                        margin_bottom=Size.DEFAULT.value),
-                                rx.list.item(" Si las pérdidas potenciales de tus operaciones abiertas representan un 10% o más de tu capital, EVITA abrir"
-                                        " nuevas operaciones.", margin_bottom=Size.DEFAULT.value),
+                                rx.list.item("1. Define cuánto capital estás dispuesto a arriesgar en cada operación.", 
+                                        margin_bottom=Size.DEFAULT.value,
+                                        **c_styles.TEXT_STYLE["body"]),
+                                rx.list.item("2. Establece un límite de pérdida personal, como un máximo del 10% de tu capital total.",
+                                        margin_bottom=Size.DEFAULT.value,
+                                        **c_styles.TEXT_STYLE["body"]),
+                                rx.list.item("3. Si acumulas más de 10 pérdidas consecutivas, DETENTE y reevalúa tu estrategia.",
+                                        margin_bottom=Size.DEFAULT.value,
+                                        **c_styles.TEXT_STYLE["body"]),
+                                rx.list.item("4. Si las pérdidas potenciales de tus operaciones abiertas representan un 10% o más de tu capital, EVITA abrir"
+                                        " nuevas operaciones.", 
+                                        margin_bottom=Size.DEFAULT.value,
+                                        **c_styles.TEXT_STYLE["body"]),
                         color="white",
                         margin_bottom=Size.DEFAULT.value,
                         ),
@@ -329,10 +335,10 @@ def module_3() -> rx.Component:
                                    **c_styles.TEXT_STYLE["subseccion"],
                                    margin_bottom=Size.MEDIUM.value),
                         
-                        rx.text(rx.text.strong("Uno de los errores más frecuentes")," es aumentar el tamaño de una nueva orden después de una pérdida previa,"
+                        rx.text(rx.text.strong("Uno de los errores más frecuentes",**c_styles.TEXT_STYLE["highlight"])," es aumentar el tamaño de una nueva orden después de una pérdida previa,"
                                 " lo que puede llevar a pérdidas masivas. Para evitarlo, sigue una estrategia que limite el riesgo de tu capital en cada "
                                 "operación. Mantén la objetividad y evita que las emociones influyan en tus decisiones. Siempre usa un ",
-                                rx.text.strong("stop-loss"),"y arriesga solo una pequeña parte de tu capital en cada operación.", 
+                                rx.text.strong("stop-loss",**c_styles.TEXT_STYLE["highlight"]),"y arriesga solo una pequeña parte de tu capital en cada operación.", 
                                 **c_styles.TEXT_STYLE["body"],
                                 margin_bottom=Size.DEFAULT.value),
             
@@ -341,17 +347,17 @@ def module_3() -> rx.Component:
                                    **c_styles.TEXT_STYLE["subseccion"],
                                    margin_bottom=Size.MEDIUM.value),
                         
-                        rx.text(rx.text.strong("Stop-Loss:")," Es una orden que cierra tu operación automáticamente para limitar pérdidas. "
-                                "Ejemplo: Compras a $100, stop-loss en $95, pierdes $5 si se ejecuta. Es útil para principiantes, pero cuidado: en "
+                        rx.text(rx.text.strong("Stop-Loss:",**c_styles.TEXT_STYLE["highlight"])," Es una orden que cierra tu operación automáticamente para limitar pérdidas. ",
+                                rx.text.strong("Ejemplo:",**c_styles.TEXT_STYLE["highlight"])," Comprás a $100, stop-loss en $95, pierdes $5 si se ejecuta. Es útil para principiantes, pero cuidado: en "
                                 "mercados manipulados, noticias falsas pueden barrer los stop-loss y sacarte antes de que el precio suba. Algunos traders "
-                                "lo evitan.", rx.text.strong(" Mas adelante durante el curso lo veremos mas a detalle."), **c_styles.TEXT_STYLE["body"], 
+                                "lo evitan.", rx.text.strong(" Mas adelante durante el curso lo veremos mas a detalle.",), **c_styles.TEXT_STYLE["body"], 
                                 margin_bottom=Size.DEFAULT.value),
             
-                        rx.text(rx.text.strong("Relación Riesgo/Beneficio:")," Imaginá que compras algo porque creés que subirá de precio. Decidís arriesgar "
+                        rx.text(rx.text.strong("Relación Riesgo/Beneficio:",**c_styles.TEXT_STYLE["highlight"])," Imaginá que compras algo porque creés que subirá de precio. Decidís arriesgar "
                                 "$50 si las cosas van mal, pero solo entrás si podés ganar al menos $100. Eso es una relación riesgo/beneficio de 1 a 2. La "
                                 "idea es buscar operaciones donde valga la pena el riesgo.", **c_styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
             
-                        rx.text(rx.text.strong("Tamaño de posición:")," Tenés $50.000 y querés arriesgar $500 por operación. Si una acción cuesta $100 y "
+                        rx.text(rx.text.strong("Tamaño de posición:",**c_styles.TEXT_STYLE["highlight"])," Tenés $50.000 y querés arriesgar $500 por operación. Si una acción cuesta $100 y "
                                 "pensás perder $5 por acción si baja, comprás 100 acciones ($10.000). Así, tu riesgo queda controlado aunque salgas "
                                 "manualmente.", **c_styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
             
@@ -362,7 +368,7 @@ def module_3() -> rx.Component:
                                    **c_styles.TEXT_STYLE["subtitle"],
                                    margin_bottom=Size.MEDIUM.value),
                        
-                        rx.text("El éxito en el trading no solo depende del análisis técnico, sino también de ", rx.text.strong("la mentalidad del inversor."),
+                        rx.text("El éxito en el trading no solo depende del análisis técnico, sino también de ", rx.text.strong("la mentalidad del inversor.",**c_styles.TEXT_STYLE["highlight"]),
                                 " La flexibilidad mental es crucial, y asumir la responsabilidad de cada decisión es el primer paso hacia "
                                 "una mentalidad ganadora. Evita culpar a factores externos y céntrate en mejorar tus propias estrategias.",
                                 **c_styles.TEXT_STYLE["body"], margin_bottom=Size.DEFAULT.value),
@@ -383,9 +389,9 @@ def module_3() -> rx.Component:
             
                         #mini lista
                         rx.list.ordered(
-                                rx.list.item("El mercado ", rx.text.strong("es incierto")," y no puede predecirse con certeza.", 
+                                rx.list.item("El mercado ", rx.text.strong("es incierto",**c_styles.TEXT_STYLE["highlight"])," y no puede predecirse con certeza.", 
                                         margin_bottom=Size.DEFAULT.value),
-                                rx.list.item("Una estrategia basada en ", rx.text.strong("análisis técnico y gestión de capital"),
+                                rx.list.item("Una estrategia basada en ", rx.text.strong("análisis técnico y gestión de capital",**c_styles.TEXT_STYLE["highlight"]),
                                         "aumenta las probabilidades de éxito.", margin_bottom=Size.DEFAULT.value),
                                 list_style_type="disc",
                                 color="white",
@@ -406,13 +412,16 @@ def module_3() -> rx.Component:
                                    **c_styles.TEXT_STYLE["subseccion"],
                                    margin_bottom=Size.MEDIUM.value),
                         rx.box(
-                        rx.heading(rx.text.strong("¿ Para que invierto ?"),
+                        rx.heading(rx.text.strong("¿ Para que invierto ?",
+                                                  **c_styles.TEXT_STYLE["highlight"]),
                                    margin_bottom=Size.MEDIUM.value),
                         
-                        rx.heading(rx.text.strong("¿ Cual es mi objetivo ?"),
+                        rx.heading(rx.text.strong("¿ Cual es mi objetivo ?",
+                                                  **c_styles.TEXT_STYLE["highlight"]),
                                    margin_bottom=Size.MEDIUM.value),
                         
-                        rx.heading(rx.text.strong("¿ Cuanto estoy dispuesto a perder?"),
+                        rx.heading(rx.text.strong("¿ Cuanto estoy dispuesto a perder?",
+                                                  **c_styles.TEXT_STYLE["highlight"]),
                                    margin_bottom=Size.DEFAULT.value),
                         text_align= "center",
                         align_items="center",
