@@ -72,13 +72,15 @@ def hero_section() -> rx.Component:
                                 content="Copiar email",
                             ),
                             download_button(),
-                            align_items="center"
+                            align_items="center",
+                            justify="center",
                         ),
                         margin_top=Size.MEDIUM.value,
                         align_items="center",
                         display="flex",
                         spacing="2",
-                        width="100%"
+                        #width="100%",
+                        justify_content="center"
                     ),
                     rx.text(
                         "Soy Maxi González, Programador en HTML, CSS y Python (Django framework, Reflex), "
