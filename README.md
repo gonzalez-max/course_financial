@@ -1,18 +1,18 @@
 # 📈 Curso de Finanzas, Trading y Cómo Evitar Estafas
 
-¡Te damos la bienvenida al repo del **Curso de Finanzas, Trading y Cómo Evitar Estafas**, un curso educativo sobre cómo realizar inversiones responsables, qué es esto del trading y una serie de herramientas prácticas para identificar y alejarse de las estafas en la economía matriz de los futuros!.
+¡Bienvenid@ al repositorio de este Curso de Finanzas, Trading y Cómo Evitar Estafas! Este proyecto es una plataforma educativa interactiva para aprender a realizar inversiones responsables, los puntos esenciales del trading y cómo identificar y evitar situaciones de estafas económicas. Construido 100% en Python y Reflex, el repositorio de este curso se encuentra en la nube de Reflex y permite que funcionen perfectamente las funcionalidades de este mismo curso.
 
-
-Este curso ha sido construido con **Python** y framework **Reflex**, y está ejecutándose en la nube de Reflex para un buen acceso a una buena interactividad.
+Este proyecto es la demostración de mis habilidades de desarrollador web, mostrando mi capacidad para hacer aplicaciones con todo lo que uno pueda querer (interactivas, adaptativas, con muy buena estructura, etc.), haciendo uso de tecnologías modernas. Estoy buscando trabajo de desarrollador web y este proyecto es una representación de mis habilidades para el desarrollo full-stack en Python.
 
 ---
 
 ## 🚀 Tecnologías Utilizadas
 
 - 🐍 **Python 3.10+**
-- ⚙️ **Reflex** (Framework Web basado en Python)
-- 🎨 **HTML/CSS** (generados automáticamente por Reflex)
-- ☁️ **Reflex Cloud Hosting**
+- ⚙️ **Reflex** Framework web basado en Python para crear interfaces interactivas.
+- 🎨 **CSS** Estilos y movimientos de la web.
+- ☁️ **Reflex Cloud Hosting** Despliegue en la nube para acceso.
+- 🦾​ **IA Generativa** Ilustraciones personalizadas para mejorar la experiencia visual.
 
 ---
 
