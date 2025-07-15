@@ -20,7 +20,7 @@
     "react-dom": "19.1.0",
     "react-error-boundary": "^6.0.0",
     "react-focus-lock": "2.13.6",
-    "react-medium-image-zoom": "^5.2.14",
+    "react-medium-image-zoom": "^5.3.0",
     "recharts": "2.15.3",
     "socket.io-client": "4.8.1",
     "sonner": "2.0.3",
