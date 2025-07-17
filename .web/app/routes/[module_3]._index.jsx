@@ -13,25 +13,6 @@ import { jsx } from "@emotion/react"
 
 
 
-function Button_253495660183595733168286311982217853267 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_c8c7d691c8f33dd61ca74a02b23b75e3 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_4", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesButton,
-{css:({ ["backgroundColor"] : "white", ["color"] : "black", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "black", ["color"] : "white", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_c8c7d691c8f33dd61ca74a02b23b75e3},
-"Siguiente \u2192"
-,)
-  )
-}
-
 function Button_202551544518720143979293598247937391130 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -47,6 +28,25 @@ function Button_202551544518720143979293598247937391130 () {
 RadixThemesButton,
 {css:({ ["backgroundColor"] : "black", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "white", ["color"] : "black", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_babb70248ca98812d507e961a9be1e52},
 "\u2190 Atr\u00e1s"
+,)
+  )
+}
+
+function Button_253495660183595733168286311982217853267 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_c8c7d691c8f33dd61ca74a02b23b75e3 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_4", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["backgroundColor"] : "white", ["color"] : "black", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "black", ["color"] : "white", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_c8c7d691c8f33dd61ca74a02b23b75e3},
+"Siguiente \u2192"
 ,)
   )
 }

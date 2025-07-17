@@ -1,6 +1,6 @@
 # Carpetas grandes o de build
 node_modules/
-.web/
+
 .next/
 py_loco/
 venv/

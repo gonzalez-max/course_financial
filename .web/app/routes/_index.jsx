@@ -13,22 +13,6 @@ import { jsx } from "@emotion/react"
 
 
 
-function Img_231238073412267682910896070410367668041 () {
-  
-  const reflex___state____state__mi_web___components___general_components___carousel____carousel_state2 = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___carousel____carousel_state2)
-  const reflex___state____state__mi_web___components___general_components___carousel____carousel_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___carousel____carousel_state)
-
-
-
-
-
-  
-  return (
-    jsx("img",{css:({ ["height"] : "auto", ["width"] : "100%", ["maxWidth"] : "700px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["borderRadius"] : "20px", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["alignItems"] : "center", ["justify"] : "center", ["objectFit"] : "cover", ["display"] : "block", ["margin"] : "auto", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),src:reflex___state____state__mi_web___components___general_components___carousel____carousel_state2.images_rx_state_.at(reflex___state____state__mi_web___components___general_components___carousel____carousel_state.index_rx_state_)},)
-
-  )
-}
-
 function Button_34793777933790021165915863573390125941 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -103,6 +87,22 @@ function Img_162681571901024381351400602206696998823 () {
   
   return (
     jsx("img",{css:({ ["height"] : "auto", ["width"] : "100%", ["maxWidth"] : "700px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["borderRadius"] : "20px", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["alignItems"] : "center", ["justify"] : "center", ["objectFit"] : "cover", ["display"] : "block", ["margin"] : "auto", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),src:reflex___state____state__mi_web___components___general_components___carousel____carousel_state.images_rx_state_.at(reflex___state____state__mi_web___components___general_components___carousel____carousel_state.index_rx_state_)},)
+
+  )
+}
+
+function Img_231238073412267682910896070410367668041 () {
+  
+  const reflex___state____state__mi_web___components___general_components___carousel____carousel_state2 = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___carousel____carousel_state2)
+  const reflex___state____state__mi_web___components___general_components___carousel____carousel_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___carousel____carousel_state)
+
+
+
+
+
+  
+  return (
+    jsx("img",{css:({ ["height"] : "auto", ["width"] : "100%", ["maxWidth"] : "700px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["borderRadius"] : "20px", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["alignItems"] : "center", ["justify"] : "center", ["objectFit"] : "cover", ["display"] : "block", ["margin"] : "auto", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),src:reflex___state____state__mi_web___components___general_components___carousel____carousel_state2.images_rx_state_.at(reflex___state____state__mi_web___components___general_components___carousel____carousel_state.index_rx_state_)},)
 
   )
 }
