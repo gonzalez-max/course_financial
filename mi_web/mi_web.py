@@ -77,7 +77,7 @@ app = rx.App(stylesheets=[
         "900""&display=swap"])
     
 
-app.add_page(index, route="/", title="Pagina Principal")
+app.add_page(index, route="/", title="Maximiliano Portfolio")
 app.add_page(financial_page, route="/financial_page", title="Curso Finanzas y Trading")
 app.add_page(soporte_page, route="/soporte_page", title="Soporte")
 app.add_page(choice_modules, route="/choice_modules", title="Módulos")

@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 
-import '$/styles/__reflex_global_styles.css'
+import '$/styles/styles.css'
 
 import { Fragment, StrictMode, useContext } from "react"
 import { ErrorBoundary } from "react-error-boundary"
@@ -15,13 +15,12 @@ import { DefaultOverlayComponents, MemoizedToastProvider } from "$/utils/compone
 
 import { EventLoopProvider, StateProvider, defaultColorMode } from "$/utils/context.js";
 import { ThemeProvider } from 'next-themes'
-import * as utils_state from "$/utils/state";
 import * as radix_ui_themes from "@radix-ui/themes";
-import * as utils_context from "$/utils/context";
-import * as React from "react";
 import * as next_link from "next/link";
-import * as utils_components from "$/utils/components";
 import * as emotion_react from "@emotion/react";
+import * as React from "react";
+import * as utils_context from "$/utils/context";
+import * as utils_state from "$/utils/state";
 
 
 function AppWrap({children}) {
@@ -63,13 +62,12 @@ export default function MyApp({ Component, pageProps }) {
   React.useEffect(() => {
     // Make contexts and state objects available globally for dynamic eval'd components
     let windowImports = {
-      "$/utils/state": utils_state,
       "@radix-ui/themes": radix_ui_themes,
-      "$/utils/context": utils_context,
-      "react": React,
       "next/link": next_link,
-      "$/utils/components": utils_components,
       "@emotion/react": emotion_react,
+      "react": React,
+      "$/utils/context": utils_context,
+      "$/utils/state": utils_state,
     };
     window["__reflex"] = windowImports;
   }, []);

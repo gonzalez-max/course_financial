@@ -12,6 +12,70 @@ import NextHead from "next/head"
 
 
 
+export function Tooltip_f5e6a55bca12d52bfe1a36c42a21b26c () {
+  
+  const reflex___state____state__mi_web___components___general_components___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    <RadixThemesTooltip content={"No me toques."}>
+
+<img css={({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })} onClick={((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___nav_bar____logo_state.increment_click", ({  }), ({  })))], args, ({  }))))} src={reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.logo_src}/>
+</RadixThemesTooltip>
+  )
+}
+
+export function Root_294fc5dfa0fad7da52e5a4a7e2ff249f () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+  
+    const handleSubmit_66692148c1e7dcaa84ae70f2f74b0ff5 = useCallback((ev) => {
+        const $form = ev.target
+        ev.preventDefault()
+        const form_data = {...Object.fromEntries(new FormData($form).entries()), ...({  })};
+
+        (((...args) => (addEvents([(Event("reflex___state____state.mi_web___views___web_principal_views___soporte_page____contact_form_state.handle_submit", ({ ["form_data"] : form_data }), ({  })))], args, ({  }))))(ev));
+
+        if (true) {
+            $form.reset()
+        }
+    })
+    
+
+
+
+
+  
+  return (
+    <RadixFormRoot className={"Root "} css={({ ["width"] : "100%" })} onSubmit={handleSubmit_66692148c1e7dcaa84ae70f2f74b0ff5}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center", ["justifyContent"] : "center", ["maxWidth"] : "500px", ["width"] : "100%", ["marginTop"] : "4em", ["marginBottom"] : "1em" })} direction={"column"} gap={"3"}>
+
+<RadixThemesFlex>
+
+<RadixThemesCard css={({ ["width"] : "500px", ["backgroundColor"] : "rgba(255, 255, 255, 0.3)" })} variant={"surface"}>
+
+<RadixThemesTextField.Root css={({ ["color"] : "white", ["isRequired"] : true })} name={"name"} placeholder={"Nombre"}/>
+<RadixThemesTextField.Root css={({ ["isRequired"] : true })} name={"email"} placeholder={"Correo electr\u00f3nico"}/>
+<RadixThemesTextField.Root css={({ ["isRequired"] : true })} name={"subject"} placeholder={"Asunto"}/>
+<RadixThemesTextArea css={({ ["& textarea"] : null, ["height"] : "8em", ["isRequired"] : true })} name={"message"} placeholder={"Mensaje"}/>
+<RadixThemesButton css={({ ["backgroundColor"] : "black", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "80px", ["transition"] : "all 0.3s ease-in-out", ["alignItems"] : "center", ["justifyContent"] : "center", ["cursor"] : "pointer", ["width"] : "100%", ["margin"] : "auto", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.6)", ["color"] : "black", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) })} type={"submit"}>
+
+{"Enviar"}
+</RadixThemesButton>
+</RadixThemesCard>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixFormRoot>
+  )
+}
+
 export function Dropdownmenu__item_a4b79031cd0a0aaab6615a386df7fd1f () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -77,70 +141,6 @@ export function Dropdownmenu__item_b0a6762496b52f8de3428cdb0d180c40 () {
 
 {"Contacto"}
 </RadixThemesDropdownMenu.Item>
-  )
-}
-
-export function Tooltip_f5e6a55bca12d52bfe1a36c42a21b26c () {
-  
-  const reflex___state____state__mi_web___components___general_components___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    <RadixThemesTooltip content={"No me toques."}>
-
-<img css={({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })} onClick={((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___nav_bar____logo_state.increment_click", ({  }), ({  })))], args, ({  }))))} src={reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.logo_src}/>
-</RadixThemesTooltip>
-  )
-}
-
-export function Root_294fc5dfa0fad7da52e5a4a7e2ff249f () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-  
-    const handleSubmit_66692148c1e7dcaa84ae70f2f74b0ff5 = useCallback((ev) => {
-        const $form = ev.target
-        ev.preventDefault()
-        const form_data = {...Object.fromEntries(new FormData($form).entries()), ...({  })};
-
-        (((...args) => (addEvents([(Event("reflex___state____state.mi_web___views___web_principal_views___soporte_page____contact_form_state.handle_submit", ({ ["form_data"] : form_data }), ({  })))], args, ({  }))))(ev));
-
-        if (true) {
-            $form.reset()
-        }
-    })
-    
-
-
-
-
-  
-  return (
-    <RadixFormRoot className={"Root "} css={({ ["width"] : "100%" })} onSubmit={handleSubmit_66692148c1e7dcaa84ae70f2f74b0ff5}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["alignItems"] : "center", ["justifyContent"] : "center", ["maxWidth"] : "500px", ["width"] : "100%", ["marginTop"] : "4em", ["marginBottom"] : "1em" })} direction={"column"} gap={"3"}>
-
-<RadixThemesFlex>
-
-<RadixThemesCard css={({ ["width"] : "500px", ["backgroundColor"] : "rgba(255, 255, 255, 0.3)" })} variant={"surface"}>
-
-<RadixThemesTextField.Root css={({ ["color"] : "white", ["isRequired"] : true })} name={"name"} placeholder={"Nombre"}/>
-<RadixThemesTextField.Root css={({ ["isRequired"] : true })} name={"email"} placeholder={"Correo electr\u00f3nico"}/>
-<RadixThemesTextField.Root css={({ ["isRequired"] : true })} name={"subject"} placeholder={"Asunto"}/>
-<RadixThemesTextArea css={({ ["& textarea"] : null, ["height"] : "8em", ["isRequired"] : true })} name={"message"} placeholder={"Mensaje"}/>
-<RadixThemesButton css={({ ["backgroundColor"] : "black", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "80px", ["transition"] : "all 0.3s ease-in-out", ["alignItems"] : "center", ["justifyContent"] : "center", ["cursor"] : "pointer", ["width"] : "100%", ["margin"] : "auto", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.6)", ["color"] : "black", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) })} type={"submit"}>
-
-{"Enviar"}
-</RadixThemesButton>
-</RadixThemesCard>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixFormRoot>
   )
 }
 

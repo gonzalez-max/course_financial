@@ -178,9 +178,6 @@ export const queueEventIfSocketExists = async (events, socket) => {
 export const applyEvent = async (event, socket) => {
   // Handle special events
   if (event.name == "_redirect") {
-    if ((event.payload.path ?? undefined) === undefined) {
-      return false;
-    }
     if (event.payload.external) {
       window.open(event.payload.path, "_blank", "noopener");
     } else if (event.payload.replace) {
@@ -243,14 +240,7 @@ export const applyEvent = async (event, socket) => {
   if (event.name == "_set_focus") {
     const ref =
       event.payload.ref in refs ? refs[event.payload.ref] : event.payload.ref;
-    const current = ref?.current;
-    if (current === undefined || current?.focus === undefined) {
-      console.error(
-        `No element found for ref ${event.payload.ref} in _set_focus`,
-      );
-    } else {
-      current.focus();
-    }
+    ref.current.focus();
     return false;
   }
 
@@ -270,15 +260,11 @@ export const applyEvent = async (event, socket) => {
     try {
       const eval_result = event.payload.function();
       if (event.payload.callback) {
-        const final_result =
-          !!eval_result && typeof eval_result.then === "function"
-            ? await eval_result
-            : eval_result;
-        const callback =
-          typeof event.payload.callback === "string"
-            ? eval(event.payload.callback)
-            : event.payload.callback;
-        callback(final_result);
+        if (!!eval_result && typeof eval_result.then === "function") {
+          event.payload.callback(await eval_result);
+        } else {
+          event.payload.callback(eval_result);
+        }
       }
     } catch (e) {
       console.log("_call_function", e);
@@ -297,15 +283,11 @@ export const applyEvent = async (event, socket) => {
           : eval(event.payload.function)();
 
       if (event.payload.callback) {
-        const final_result =
-          !!eval_result && typeof eval_result.then === "function"
-            ? await eval_result
-            : eval_result;
-        const callback =
-          typeof event.payload.callback === "string"
-            ? eval(event.payload.callback)
-            : event.payload.callback;
-        callback(final_result);
+        if (!!eval_result && typeof eval_result.then === "function") {
+          eval(event.payload.callback)(await eval_result);
+        } else {
+          eval(event.payload.callback)(eval_result);
+        }
       }
     } catch (e) {
       console.log("_call_script", e);
@@ -382,7 +364,7 @@ export const queueEvents = async (events, socket, prepend) => {
       ),
     ];
   }
-  event_queue.push(...events.filter((e) => e !== undefined && e !== null));
+  event_queue.push(...events);
   await processEvent(socket.current);
 };
 
@@ -768,13 +750,11 @@ export const useEventLoop = (
 
   // Function to add new events to the event queue.
   const addEvents = (events, args, event_actions) => {
-    const _events = events.filter((e) => e !== undefined && e !== null);
-
     if (!(args instanceof Array)) {
       args = [args];
     }
 
-    event_actions = _events.reduce(
+    event_actions = events.reduce(
       (acc, e) => ({ ...acc, ...e.event_actions }),
       event_actions ?? {},
     );
@@ -787,7 +767,7 @@ export const useEventLoop = (
     if (event_actions?.stopPropagation && _e?.stopPropagation) {
       _e.stopPropagation();
     }
-    const combined_name = _events.map((e) => e.name).join("+++");
+    const combined_name = events.map((e) => e.name).join("+++");
     if (event_actions?.temporal) {
       if (!socket.current || !socket.current.connected) {
         return; // don't queue when the backend is not connected
@@ -803,11 +783,11 @@ export const useEventLoop = (
       // If debounce is used, queue the events after some delay
       debounce(
         combined_name,
-        () => queueEvents(_events, socket),
+        () => queueEvents(events, socket),
         event_actions.debounce,
       );
     } else {
-      queueEvents(_events, socket);
+      queueEvents(events, socket);
     }
   };
 
@@ -966,15 +946,6 @@ export const isTrue = (val) => {
   if (Array.isArray(val)) return val.length > 0;
   if (val === Object(val)) return Object.keys(val).length > 0;
   return Boolean(val);
-};
-
-/***
- * Check if a value is not null or undefined.
- * @param val The value to check.
- * @returns True if the value is not null or undefined, false otherwise.
- */
-export const isNotNullOrUndefined = (val) => {
-  return (val ?? undefined) !== undefined;
 };
 
 /**
