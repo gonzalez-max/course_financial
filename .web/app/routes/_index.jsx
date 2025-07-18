@@ -13,69 +13,6 @@ import { jsx } from "@emotion/react"
 
 
 
-function Button_34793777933790021165915863573390125941 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_976a9c6f0dfc05e4789ccf13a814390f = useCallback(((_e) => (addEvents([(Event("_download", ({ ["url"] : "/Profesional Maximiliano Gonzalez.pdf", ["filename"] : "Profesional Maximiliano Gonzalez.pdf" }), ({  }))), (Event("_call_function", ({ ["function"] : (() => (refs['__toast']("\u2714\ufe0f Cv Descargado Exitosamente", ({ ["position"] : "top-right", ["style"] : ({ ["color"] : "white", ["fontFamily"] : "Arial", ["weight"] : "bold", ["alignItems"] : "center", ["borderRadius"] : "1px" }) })))), ["callback"] : null }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesButton,
-{css:({ ["backgroundColor"] : "#2A3C80", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "15px", ["display"] : "flex", ["cursor"] : "pointer", ["alignItem"] : "center", ["justifyContent"] : "center", ["margin"] : "1px", ["&:hover"] : ({ ["backgroundColor"] : "white", ["transition"] : "transform 0.2s ease-in-out", ["color"] : "#2A3C80", ["transform"] : "scale(1.07)" }) }),onClick:on_click_976a9c6f0dfc05e4789ccf13a814390f},
-"Descargar CV"
-,)
-  )
-}
-
-function Button_283058782470826559226656565134108488314 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_b48446425b75df925e56732f12d72355 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesButton,
-{css:({ ["width"] : "100%", ["height"] : "100px", ["spacing"] : "5px", ["borderRadius"] : "20px", ["fontSize"] : "30px", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "400px", ["backgroundColor"] : "rgba(255, 255, 255, 0.2)", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "black" }) }),onClick:on_click_b48446425b75df925e56732f12d72355,radius:"medium",size:"3",variant:"solid"},
-"Contactame"
-,)
-  )
-}
-
-function Tooltip_313036802900956549389254611943840562898 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_79a5fc91686e4844703971ca5f0f9be1 = useCallback(((_e) => (addEvents([(Event("_call_function", ({ ["function"] : (() => (navigator["clipboard"]["writeText"]("gonzalezmaxi997@gmail.com"))), ["callback"] : null }), ({  }))), (Event("_call_function", ({ ["function"] : (() => (refs['__toast']("\u2714\ufe0f Email Copiado", ({ ["closeButton"] : true, ["duration"] : 3000 })))), ["callback"] : null }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesTooltip,
-{content:"Copiar email",css:({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["borderRadius"] : "50%", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["margin"] : "1px", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "white", ["transition"] : "transform 0.2s ease-in-out", ["transform"] : "scale(1.07)" }) }),onClick:on_click_79a5fc91686e4844703971ca5f0f9be1},
-jsx(
-Fragment,
-{},
-jsx(
-RadixThemesBox,
-{css:({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["borderRadius"] : "50%", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["margin"] : "1px", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "white", ["transition"] : "transform 0.2s ease-in-out", ["transform"] : "scale(1.07)" }) })},
-jsx("img",{css:({ ["width"] : "35px", ["height"] : "35px" }),src:"/icons/email.png"},)
-,),),)
-  )
-}
-
 function Img_162681571901024381351400602206696998823 () {
   
   const reflex___state____state__mi_web___components___general_components___carousel____carousel_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___carousel____carousel_state)
@@ -104,6 +41,69 @@ function Img_231238073412267682910896070410367668041 () {
   return (
     jsx("img",{css:({ ["height"] : "auto", ["width"] : "100%", ["maxWidth"] : "700px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["borderRadius"] : "20px", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["alignItems"] : "center", ["justify"] : "center", ["objectFit"] : "cover", ["display"] : "block", ["margin"] : "auto", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),src:reflex___state____state__mi_web___components___general_components___carousel____carousel_state2.images_rx_state_.at(reflex___state____state__mi_web___components___general_components___carousel____carousel_state.index_rx_state_)},)
 
+  )
+}
+
+function Tooltip_313036802900956549389254611943840562898 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_79a5fc91686e4844703971ca5f0f9be1 = useCallback(((_e) => (addEvents([(Event("_call_function", ({ ["function"] : (() => (navigator["clipboard"]["writeText"]("gonzalezmaxi997@gmail.com"))), ["callback"] : null }), ({  }))), (Event("_call_function", ({ ["function"] : (() => (refs['__toast']("\u2714\ufe0f Email Copiado", ({ ["closeButton"] : true, ["duration"] : 3000 })))), ["callback"] : null }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesTooltip,
+{content:"Copiar email",css:({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["borderRadius"] : "50%", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["margin"] : "1px", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "white", ["transition"] : "transform 0.2s ease-in-out", ["transform"] : "scale(1.07)" }) }),onClick:on_click_79a5fc91686e4844703971ca5f0f9be1},
+jsx(
+Fragment,
+{},
+jsx(
+RadixThemesBox,
+{css:({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["borderRadius"] : "50%", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["margin"] : "1px", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "white", ["transition"] : "transform 0.2s ease-in-out", ["transform"] : "scale(1.07)" }) })},
+jsx("img",{css:({ ["width"] : "35px", ["height"] : "35px" }),src:"/icons/email.png"},)
+,),),)
+  )
+}
+
+function Button_283058782470826559226656565134108488314 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_b48446425b75df925e56732f12d72355 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["width"] : "100%", ["height"] : "100px", ["spacing"] : "5px", ["borderRadius"] : "20px", ["fontSize"] : "30px", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "400px", ["backgroundColor"] : "rgba(255, 255, 255, 0.2)", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "black" }) }),onClick:on_click_b48446425b75df925e56732f12d72355,radius:"medium",size:"3",variant:"solid"},
+"Contactame"
+,)
+  )
+}
+
+function Button_34793777933790021165915863573390125941 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_976a9c6f0dfc05e4789ccf13a814390f = useCallback(((_e) => (addEvents([(Event("_download", ({ ["url"] : "/Profesional Maximiliano Gonzalez.pdf", ["filename"] : "Profesional Maximiliano Gonzalez.pdf" }), ({  }))), (Event("_call_function", ({ ["function"] : (() => (refs['__toast']("\u2714\ufe0f Cv Descargado Exitosamente", ({ ["position"] : "top-right", ["style"] : ({ ["color"] : "white", ["fontFamily"] : "Arial", ["weight"] : "bold", ["alignItems"] : "center", ["borderRadius"] : "1px" }) })))), ["callback"] : null }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["backgroundColor"] : "#2A3C80", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "15px", ["display"] : "flex", ["cursor"] : "pointer", ["alignItem"] : "center", ["justifyContent"] : "center", ["margin"] : "1px", ["&:hover"] : ({ ["backgroundColor"] : "white", ["transition"] : "transform 0.2s ease-in-out", ["color"] : "#2A3C80", ["transform"] : "scale(1.07)" }) }),onClick:on_click_976a9c6f0dfc05e4789ccf13a814390f},
+"Descargar CV"
+,)
   )
 }
 

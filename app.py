@@ -1,4 +1,4 @@
-from mi_web import index
+from mi_web.mi_web import app
 
 if __name__ == "__main__":
-    index.app.run()
+    app.run()
