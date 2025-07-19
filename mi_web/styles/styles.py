@@ -88,7 +88,7 @@ form_button_style={
 }
 
 #____________________________CARD_STYLES_____________________________________________#
-CARD_STYLES={
+CARD_STYLES_MOBILE={
         "width" : "100%",
         "spacing":"2",
         "max_width": "400px",
@@ -107,6 +107,27 @@ CARD_STYLES={
                 
         }
 }
+
+
+CARD_STYLES_DESKTOP = {
+    "width": "800px",  # Ocupa el 100% del ancho de la pantalla
+    "spacing": "2",
+    "max_width": "100%",  # Elimina la restricción de 400px, pero permite ajuste si es necesario
+    "object_fit": "cover",  # Mantiene la proporción de las imágenes
+    "margin": "auto",  # Centra el contenido horizontalmente
+    "as_child": True,
+    "flex_wrap": "wrap",
+    "transition": "transform 0.2s ease-in-out",
+    "background_color": "rgba(255, 255, 255, 0.5)",
+    "padding": "20px",
+    "border_radius": "30px",
+    "_hover": {
+        "transform": "scale(1.08)",
+        "box_shadow": "0px 4px 15px rgba(0, 0, 0, 0.3)",
+    }
+}
+
+
 
 MINI_CARDS_STYLES={
     
@@ -135,10 +156,10 @@ TOOLTIP_STYLES={
 
 #____________________________AVATAR_STYLES___________________________________________#
 AVATAR_STYLE={
-    "size":"9",
-    "justify_content":"center",
-    "align_items":"center",
+    "width": "200px",
+    "height": "auto",
     "flex_wrap":"wrap",
+    "border_radius": "12px",
 }
 
 
@@ -314,12 +335,13 @@ text_main_page= {
     "font_style":"normal",
     "padding" : "5px",
     "letter_spacing" : "0.01px",
+    "line_height":"1.4",
     "font_family":"Roboto",
     "max_width":"400px",
     "font_weight":"300",
     "font_size": "20px",
     "text_wrap" :"normal",
-    "text_align": "center",
+    "text_align": "left",
     "width":"100%",
     "margin":"auto",
     },
