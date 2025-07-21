@@ -7,6 +7,8 @@ def link_button(url: str, image: str) -> rx.Component:
                 src=image,  
                 width="35px",
                 height="35px",
+                object_fit="contain",
+                display="block"
             ),
             **styles.LINK_BUTTON_STYLES
         ),
@@ -19,7 +21,9 @@ def link_email(image:str) -> rx.Component:
             rx.image(
                 src=image,  
                 width="35px",
-                height="35px",
+                height="40px",
+                object_fit="contain",
+                display="block"
             ),
             **styles.LINK_BUTTON_STYLES
         ),

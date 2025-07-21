@@ -31,10 +31,8 @@ def hero_section() -> rx.Component:
                 _hover={
                     "transform": "scale(1.10)",
                 },
-            ),
-            # Card visible solo en desktop
-            rx.desktop_only(
-    rx.flex(
+            ),         
+    rx.desktop_only(
         rx.card(
             rx.flex(
                 # Columna izquierda: AVATAR
@@ -44,10 +42,11 @@ def hero_section() -> rx.Component:
                         fallback="MG",
                         name="Maxi Gonzalez",
                         **styles.AVATAR_STYLE,
+                        
                     ),
-                    
-                    padding_right="3rem",
-                    margin_bottom="2rem"
+                    padding="5px",
+                    align_items="center",
+                    justify_content="center",
                 ),
 
                 # Columna derecha: ICONOS + TEXTO
@@ -80,6 +79,8 @@ def hero_section() -> rx.Component:
                         download_button(),
                         spacing="3",
                         align_items="center",
+                        width="100%",
+                        margin="auto",
                     ),
                     rx.text(
                         "Soy Maxi González, Programador en HTML, CSS y Python (Django framework, Reflex), "
@@ -89,28 +90,24 @@ def hero_section() -> rx.Component:
                         color="black",
                         margin_bottom="1rem",
                     ),
-                    align_items="flex-start",
-                    spacing="0.5rem",
                     
                     
                 ),
                 justify_content="center",
-                spacing="6",
-                margin_left="4rem",
+                spacing="4",
+                
                 
                 
             ),
-            size="3",
+            size="4",
             justify_content="space-between",
-            spacing="4rem",
+            spacing="4",
         ),
-        **styles.CARD_STYLES_DESKTOP
-    )
-),
-
-
-            # Card visible solo en móviles
-            rx.mobile_only(
+        **styles.CARD_STYLES_DESKTOP,
+         # Card visible solo en móviles
+    ),
+        
+        rx.mobile_only(
                 rx.flex(
                     rx.card(
                         rx.vstack(
@@ -123,22 +120,10 @@ def hero_section() -> rx.Component:
                             align_items="center",
                         ),
                         rx.box(
-                            rx.vstack(
-                                rx.text(
-                                    "Soy Maxi González",
-                                    font_size="1.2em",
-                                    font_weight="bold",
-                                    text_align="center",
-                                ),
-                                rx.text(
-                                    "Desarrollador Web Junior",
-                                    font_size="1em",
-                                    text_align="center",
-                                ),
-                                rx.hstack(
+                            rx.hstack(
                                     rx.tooltip(
                                         link_button(
-                                            "https://www.linkedin.com/in/maxi-gonzalez-479691323",
+                                            "https://www.linkedin.com/in/maximiliano-gonzalez-479691323",
                                             "/icons/linkedin.svg"
                                         ),
                                         content="Linkedin"
@@ -163,12 +148,22 @@ def hero_section() -> rx.Component:
                                     download_button(),
                                     spacing="2",
                                     justify="center",
+                                    align_items="center",
                                 ),
+                            rx.vstack(
                                 rx.text(
-                                    "Creador de un curso gratuito de trading para invertir en bolsa y cripto.",
-                                    font_size="0.9em",
+                                    "Desarrollador web Junior. Creador de un curso gratuito de trading "
+                                    "para invertir en bolsa y cripto y tambien de FinDash un dashboard de finanzas.",
+                                    font_style="normal",
+                                    padding="5px",
+                                    letter_spacing="0.01px",
+                                    font_family="Roboto",
+                                    color="black",
+                                    font_weight="400",
+                                    font_size="20px",
+                                    text_wrap="normal",
                                     text_align="center",
-                                    margin_top=Size.SMALL.value,
+                                    width="100%",
                                 ),
                             ),
                             align_items="center",
@@ -179,12 +174,12 @@ def hero_section() -> rx.Component:
                     ),
                     **styles.CARD_STYLES_MOBILE,
                 )
-            ),
+),
+            size="4",
             width="100%",
             border_radius="10px",
             align_items="center",
             justify_content="center",
-            size="2",
             margin_bottom=Size.MASSIVE.value
         ),
         **styles.global_styles

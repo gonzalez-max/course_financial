@@ -26,6 +26,21 @@ class Size(Enum):
     MASSIVE="10em"
     IMAGE_width="600px"
     IMAGE_height="400px"
+    
+#_____________________________BREAKPOINTS_________________________________________________________#
+rx.Config(
+    app_name="mi_web",
+    theme=rx.theme(
+        breakpoints={
+            "base": "0em",
+            "sm": "43.75em",  # 700px
+            "md": "43.75em",     # 768px
+            "lg": "64em",
+            "xl": "80em",
+        }
+    )
+)
+
 #_____________________________PORTFOLIO IMAGES_______________________________________#
 PORTFOLIO_IMAGE_STYLES={
     "width":"100%",
@@ -88,38 +103,18 @@ form_button_style={
 }
 
 #____________________________CARD_STYLES_____________________________________________#
-CARD_STYLES_MOBILE={
-        "width" : "100%",
-        "spacing":"2",
-        "max_width": "400px",
-        "object_fit":"cover",  # Evita deformaciones
-        #"display":"block",  # Asegura que el margin auto funcione
-        "margin":"auto",
-        "as_child":True,
-        "flex_wrap":"wrap",
-        "transition": "transform 0.2s ease-in-out",
-        "background_color": "rgba(255, 255, 255, 0.5)",
-        "padding":"20px",
-        "border_radius":"30px",
-        "_hover":{
-                "transform": "scale(1.08)",
-                "box-shadow": "0px 4px 15px rgba(0, 0, 0, 0.3)",
-                
-        }
-}
 
 
 CARD_STYLES_DESKTOP = {
-    "width": "800px",  # Ocupa el 100% del ancho de la pantalla
+    "width": "100%",  # Ocupa el 100% del ancho de la pantalla
     "spacing": "2",
-    "max_width": "100%",  # Elimina la restricción de 400px, pero permite ajuste si es necesario
+    "max_width": "800px",  # Elimina la restricción de 400px, pero permite ajuste si es necesario
+    "min_width": "300px",  # Asegura que el ancho mínimo sea de 300px
     "object_fit": "cover",  # Mantiene la proporción de las imágenes
-    "margin": "auto",  # Centra el contenido horizontalmente
     "as_child": True,
     "flex_wrap": "wrap",
     "transition": "transform 0.2s ease-in-out",
     "background_color": "rgba(255, 255, 255, 0.5)",
-    "padding": "20px",
     "border_radius": "30px",
     "_hover": {
         "transform": "scale(1.08)",
@@ -127,6 +122,22 @@ CARD_STYLES_DESKTOP = {
     }
 }
 
+
+CARD_STYLES_MOBILE = {
+    "width": "100%",  # Ocupa el 100% del ancho de la pantalla
+    "spacing": "2",
+    "max_width": "420px",  # Elimina la restricción de 400px, pero permite ajuste si es necesario
+    "object_fit": "cover",  # Mantiene la proporción de las imágenes
+    "as_child": True,
+    "flex_wrap": "wrap",
+    "transition": "transform 0.2s ease-in-out",
+    "background_color": "rgba(255, 255, 255, 0.5)",
+    "border_radius": "30px",
+    "_hover": {
+        "transform": "scale(1.08)",
+        "box_shadow": "0px 4px 15px rgba(0, 0, 0, 0.3)",
+    }
+}
 
 
 MINI_CARDS_STYLES={
@@ -156,10 +167,15 @@ TOOLTIP_STYLES={
 
 #____________________________AVATAR_STYLES___________________________________________#
 AVATAR_STYLE={
-    "width": "200px",
+    "width": "100%",
     "height": "auto",
     "flex_wrap":"wrap",
     "border_radius": "12px",
+    "min_width": "150px",  # Asegura que el avatar no sea demasiado pequeño
+    "max_width":"250px",  # Asegura que el avatar no sea demasiado grande
+    "align_items": "center",
+    "justify_content": "center",
+
 }
 
 
@@ -333,17 +349,17 @@ text_main_page= {
 
 "card_body":{
     "font_style":"normal",
-    "padding" : "5px",
-    "letter_spacing" : "0.01px",
-    "line_height":"1.4",
-    "font_family":"Roboto",
-    "max_width":"400px",
-    "font_weight":"300",
-    "font_size": "20px",
-    "text_wrap" :"normal",
-    "text_align": "left",
+    "text_align":"left",
+    "align_items":"center",
+    "padding":"10px",
+    "letter_spacing":"1px",
+    "text_wrap":"normal",
     "width":"100%",
     "margin":"auto",
+    "display":"block",
+    "font_size":"20px",
+    "font_weight":"300",
+    "max_width":"400px",
     },
 
 
@@ -396,3 +412,5 @@ text_main_page= {
     font-weight: 400;
 }
 """
+
+#_____________________________media queries_________________________________________________________#
