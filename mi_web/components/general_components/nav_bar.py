@@ -63,13 +63,13 @@ def navbar_dropdown() -> rx.Component:
                         rx.hover_card.content(
                             rx.vstack(
                                 rx.link(
-                                    "Curso de Finanzas, Trading y como evitar Estafas.",
-                                    href="/financial_page",
+                                    "FinDash: Dashboard Financiero",
+                                    href="https://dashboard-financial.onrender.com/",
                                     **styles.NAVBAR_FONTS_STYLES,
                                 ),
                                 rx.link(
-                                    "FinDash: Dashboard Financiero",
-                                    href="https://dashboard-financial.onrender.com/",
+                                    "Curso de Finanzas, Trading y como evitar Estafas.",
+                                    href="/financial_page",
                                     **styles.NAVBAR_FONTS_STYLES,
                                 ),
                             ),

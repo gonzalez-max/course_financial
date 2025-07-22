@@ -148,10 +148,11 @@ COURSE_NAVBAR_STYLES={
 COURSE_NAVBAR_FONTS={
     "size":"3",
     "color":"black", 
-    "weight":"regular",
-    "font_family": "Roboto, sans-serif",
+    "weight":"medium",
+    "font_family": "montserrat",
     "transition": "color 0.2s ease",
-    "font_weight": "400",
+    "text_align": "left",
+    "align_items": "center",
     "justify_content": "center",
     "width":"100%",
     "_hover":{

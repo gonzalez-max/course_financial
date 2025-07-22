@@ -175,6 +175,7 @@ AVATAR_STYLE={
     "max_width":"250px",  # Asegura que el avatar no sea demasiado grande
     "align_items": "center",
     "justify_content": "center",
+    
 
 }
 
@@ -193,17 +194,20 @@ NAVBAR_STYLES={
     "display": "flex",
     "top":"0px",
     "align_items":"center",
+    
 }
 
 NAVBAR_FONTS_STYLES={
     "size":"3",
     "color":"black", 
-    "weight":"regular",
-    "font_family": "Roboto, sans-serif",
+    "weight":"medium",
+    "font_family": "montserrat",
     "transition": "color 0.2s ease",
-    "font_weight": "400",
+    "text_align": "left",
+    "align_items": "center",
     "justify_content": "center",
     "width":"100%",
+    
     "_hover":{
         "color": "white",
          },
@@ -230,6 +234,7 @@ CONTACT_BUTTON_STYLE={
     "size": "3",
     "variant": "solid",
     "radius": "medium",
+    "max_width": "500px",  # Ajusta el ancho máximo del botón
     "width": "100%",  # Ajusta el ancho del botón
     "height": "100px",  # Ajusta la altura del botón
     "spacing" : "5px",
@@ -303,10 +308,12 @@ text_main_page= {
     "width":"100%",
     "margin":"auto",
     "display":"block",
-    "font_size":"50px",
+    "font_size":["35px", "42px", "46px", "55px"],
     "class_name":"roboto-bold",
-    "max_width":"100%",
+    "max_width":"800px",
     "transition": "transform 0.5s ease-in-out",
+    "word_wrap": "break-word",
+    
     "_hover":{
         "transform": "scale(1.10)",
     },
@@ -321,7 +328,8 @@ text_main_page= {
     "width":"100%",
     "margin":"auto",
     "display":"block",
-    "font_size":"30px",
+    "font_size": ["25px", "30px", "35px", "40px"],
+    "word_wrap": "break-word",  # 💡 Evita desbordes
     "font_family":"roboto",
     #"font_weight":"300",
     
@@ -349,7 +357,7 @@ text_main_page= {
 
 
 "card_body":{
-    "font_style":"normal",
+    "font_style":"bold",
     "text_align":"left",
     "align_items":"center",
     "padding":"10px",
@@ -358,9 +366,10 @@ text_main_page= {
     "width":"100%",
     "margin":"auto",
     "display":"block",
-    "font_size":"20px",
-    "font_weight":"300",
+    "font_size":"17px",
+    "font_weight":"400",
     "max_width":"400px",
+    "font_family":"roboto - regular",
     },
 
 
@@ -386,6 +395,7 @@ text_main_page= {
 #fuentes de google
 """
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @keyframes fadeInSlideUp {
     0% {
@@ -412,6 +422,33 @@ text_main_page= {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
-"""
+.montserrat-light {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+.montserrat-regular {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.montserrat-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.montserrat-100 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+}
+.montserrat-200 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+}
+.montserrat-300 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
 
-#_____________________________media queries_________________________________________________________#
+.montserrat-400 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+"""

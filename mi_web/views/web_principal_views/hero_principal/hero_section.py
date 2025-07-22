@@ -83,9 +83,12 @@ def hero_section() -> rx.Component:
                         margin="auto",
                     ),
                     rx.text(
-                        "Soy Maxi González, Programador en HTML, CSS y Python (Django framework, Reflex), "
-                        "Asesor financiero y agente productor, me encuentro creando un curso gratuito de trading "
-                        "donde encontrarás lo más importante para invertir en la bolsa, cripto y cómo evitar estafas.",
+                        "- Desarrollador Web Junior con "
+                        "experiencia en Python (Django y Reflex) y formación en finanzas. "
+                        "Creador de un curso gratuito de trading "
+                        "para invertir en bolsa y tambien de FinDash un dashboard de finanzas."
+                        "Me apasiona construir herramientas digitales que resuelvan problemas reales "
+                        "y acerquen el conocimiento financiero a más personas.",
                         **styles.text_main_page["card_body"],
                         color="black",
                         margin_bottom=Size.MEDIUM.value,

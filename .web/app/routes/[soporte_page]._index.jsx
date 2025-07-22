@@ -11,6 +11,42 @@ import { jsx } from "@emotion/react"
 
 
 
+function Tooltip_152635404748307709368232623922664606088 () {
+  
+  const reflex___state____state__mi_web___components___general_components___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    jsx(
+RadixThemesTooltip,
+{content:"No me toques."},
+jsx("img",{css:({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___nav_bar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))),src:reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.logo_src_rx_state_},)
+,)
+  )
+}
+
+function Img_164144592572901142842083229647882011920 () {
+  
+  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_bd1bd52eb3f49731a43de1af718afe95 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx("img",{css:({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:on_click_bd1bd52eb3f49731a43de1af718afe95,src:reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src_rx_state_},)
+
+  )
+}
+
 function Img_298512741951362708578143316570517596619 () {
   
   const reflex___state____state__mi_web___components___general_components___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state)
@@ -75,25 +111,6 @@ RadixThemesButton,
   )
 }
 
-function Tooltip_152635404748307709368232623922664606088 () {
-  
-  const reflex___state____state__mi_web___components___general_components___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    jsx(
-RadixThemesTooltip,
-{content:"No me toques."},
-jsx("img",{css:({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___nav_bar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))),src:reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.logo_src_rx_state_},)
-,)
-  )
-}
-
 function Dropdownmenu__item_128668595867871741586793206465917323006 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -110,23 +127,6 @@ RadixThemesDropdownMenu.Item,
 {onClick:on_click_39d6f18259dac0cbc8afe62358cb5867},
 "Proyectos"
 ,)
-  )
-}
-
-function Img_164144592572901142842083229647882011920 () {
-  
-  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_bd1bd52eb3f49731a43de1af718afe95 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx("img",{css:({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:on_click_bd1bd52eb3f49731a43de1af718afe95,src:reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src_rx_state_},)
-
   )
 }
 
@@ -186,7 +186,7 @@ RadixThemesTooltip,
 {content:"Inicio"},
 jsx(
 RadixThemesHeading,
-{css:({ ["color"] : "black", ["fontFamily"] : "Roboto, sans-serif", ["--default-font-family"] : "Roboto, sans-serif", ["transition"] : "color 0.2s ease", ["fontWeight"] : "400", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"regular"},
+{css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
 "Maximiliano Gonzalez"
 ,),),),),),jsx(
 RadixThemesFlex,
@@ -205,7 +205,7 @@ ReactRouterLink,
 {to:"#mis-proyectos"},
 jsx(
 RadixThemesText,
-{as:"p",css:({ ["color"] : "black", ["fontFamily"] : "Roboto, sans-serif", ["--default-font-family"] : "Roboto, sans-serif", ["transition"] : "color 0.2s ease", ["fontWeight"] : "400", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"regular"},
+{as:"p",css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
 "Proyectos"
 ,),),),),jsx(
 RadixThemesHoverCard.Content,
@@ -215,18 +215,18 @@ RadixThemesFlex,
 {align:"start",className:"rx-Stack",direction:"column",gap:"3"},
 jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "Roboto, sans-serif", ["--default-font-family"] : "Roboto, sans-serif", ["transition"] : "color 0.2s ease", ["fontWeight"] : "400", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"regular"},
-jsx(
-ReactRouterLink,
-{to:"/financial_page"},
-"Curso de Finanzas, Trading y como evitar Estafas."
-,),),jsx(
-RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "Roboto, sans-serif", ["--default-font-family"] : "Roboto, sans-serif", ["transition"] : "color 0.2s ease", ["fontWeight"] : "400", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"regular"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"https://dashboard-financial.onrender.com/"},
 "FinDash: Dashboard Financiero"
+,),),jsx(
+RadixThemesLink,
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+jsx(
+ReactRouterLink,
+{to:"/financial_page"},
+"Curso de Finanzas, Trading y como evitar Estafas."
 ,),),),),),jsx(
 RadixThemesTooltip,
 {content:"Contact\u00e1me"},
@@ -238,7 +238,7 @@ ReactRouterLink,
 {to:"/soporte_page"},
 jsx(
 RadixThemesText,
-{as:"p",css:({ ["color"] : "black", ["fontFamily"] : "Roboto, sans-serif", ["--default-font-family"] : "Roboto, sans-serif", ["transition"] : "color 0.2s ease", ["fontWeight"] : "400", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"regular"},
+{as:"p",css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
 "Contacto"
 ,),),),),),),),jsx(
 RadixThemesBox,
@@ -258,7 +258,7 @@ ReactRouterLink,
 {to:"/#"},
 jsx(
 RadixThemesHeading,
-{css:({ ["color"] : "black", ["fontFamily"] : "Roboto, sans-serif", ["--default-font-family"] : "Roboto, sans-serif", ["transition"] : "color 0.2s ease", ["fontWeight"] : "400", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"regular"},
+{css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
 "Maximiliano Gonzalez"
 ,),),),),jsx(
 RadixThemesDropdownMenu.Root,
