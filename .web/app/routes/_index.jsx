@@ -12,23 +12,6 @@ import { jsx } from "@emotion/react"
 
 
 
-function Img_298512741951362708578143316570517596619 () {
-  
-  const reflex___state____state__mi_web___components___general_components___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_0618b3905aaa9bfb829535ec4bcaeaae = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___nav_bar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx("img",{css:({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" }),onClick:on_click_0618b3905aaa9bfb829535ec4bcaeaae,src:reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.logo_src_rx_state_},)
-
-  )
-}
-
 function Button_283058782470826559226656565134108488314 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -48,10 +31,9 @@ RadixThemesButton,
   )
 }
 
-function Tooltip_152635404748307709368232623922664606088 () {
+function Img_162681571901024381351400602206696998823 () {
   
-  const reflex___state____state__mi_web___components___general_components___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
+  const reflex___state____state__mi_web___components___general_components___carousel____carousel_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___carousel____carousel_state)
 
 
 
@@ -59,11 +41,8 @@ function Tooltip_152635404748307709368232623922664606088 () {
 
   
   return (
-    jsx(
-RadixThemesTooltip,
-{content:"No me toques."},
-jsx("img",{css:({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___nav_bar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))),src:reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.logo_src_rx_state_},)
-,)
+    jsx("img",{css:({ ["height"] : "auto", ["width"] : "100%", ["maxWidth"] : "700px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["borderRadius"] : "20px", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["alignItems"] : "center", ["justify"] : "center", ["objectFit"] : "cover", ["display"] : "block", ["margin"] : "auto", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),src:reflex___state____state__mi_web___components___general_components___carousel____carousel_state.images_rx_state_.at(reflex___state____state__mi_web___components___general_components___carousel____carousel_state.index_rx_state_)},)
+
   )
 }
 
@@ -79,21 +58,6 @@ function Img_231238073412267682910896070410367668041 () {
   
   return (
     jsx("img",{css:({ ["height"] : "auto", ["width"] : "100%", ["maxWidth"] : "700px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["borderRadius"] : "20px", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["alignItems"] : "center", ["justify"] : "center", ["objectFit"] : "cover", ["display"] : "block", ["margin"] : "auto", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),src:reflex___state____state__mi_web___components___general_components___carousel____carousel_state2.images_rx_state_.at(reflex___state____state__mi_web___components___general_components___carousel____carousel_state.index_rx_state_)},)
-
-  )
-}
-
-function Img_162681571901024381351400602206696998823 () {
-  
-  const reflex___state____state__mi_web___components___general_components___carousel____carousel_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___carousel____carousel_state)
-
-
-
-
-
-  
-  return (
-    jsx("img",{css:({ ["height"] : "auto", ["width"] : "100%", ["maxWidth"] : "700px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["borderRadius"] : "20px", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["alignItems"] : "center", ["justify"] : "center", ["objectFit"] : "cover", ["display"] : "block", ["margin"] : "auto", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),src:reflex___state____state__mi_web___components___general_components___carousel____carousel_state.images_rx_state_.at(reflex___state____state__mi_web___components___general_components___carousel____carousel_state.index_rx_state_)},)
 
   )
 }
@@ -117,39 +81,39 @@ RadixThemesButton,
   )
 }
 
-function Img_164144592572901142842083229647882011920 () {
-  
-  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_bd1bd52eb3f49731a43de1af718afe95 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx("img",{css:({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:on_click_bd1bd52eb3f49731a43de1af718afe95,src:reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src_rx_state_},)
-
-  )
-}
-
-function Dropdownmenu__item_338517215627197619108720637606008039098 () {
+function Button_27253890017801574081344249171102831344 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_39d6f18259dac0cbc8afe62358cb5867 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/financial_page", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+  const on_click_4b6dced53129b0a8542562c38c94d0e4 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___carousel____carousel_state.next_image", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
 
 
 
   
   return (
     jsx(
-RadixThemesDropdownMenu.Item,
-{onClick:on_click_39d6f18259dac0cbc8afe62358cb5867},
-"Proyecto"
+RadixThemesButton,
+{css:({ ["backgroundColor"] : "rgba(255, 255, 255, 0.2)", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "80px", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.6)", ["color"] : "black", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_4b6dced53129b0a8542562c38c94d0e4},
+"\u276f"
 ,)
+  )
+}
+
+function Img_298512741951362708578143316570517596619 () {
+  
+  const reflex___state____state__mi_web___components___general_components___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_0618b3905aaa9bfb829535ec4bcaeaae = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___nav_bar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx("img",{css:({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" }),onClick:on_click_0618b3905aaa9bfb829535ec4bcaeaae,src:reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.logo_src_rx_state_},)
+
   )
 }
 
@@ -178,32 +142,6 @@ jsx("img",{css:({ ["width"] : "35px", ["height"] : "40px", ["objectFit"] : "cont
   )
 }
 
-function Flex_79648591044956947332842049083232657846 () {
-  
-  
-                useEffect(() => {
-                    ((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___carousel____carousel_state.on_load", ({  }), ({  })))], args, ({  }))))()
-                    return () => {
-                        
-                    }
-                }, []);
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    jsx(
-RadixThemesFlex,
-{align:"start",className:"rx-Stack",css:({ ["width"] : "100%" }),direction:"row",justify:"center",gap:"2"},
-jsx(Button_304930046714202752388763200906291982745,{},)
-,jsx(Button_27253890017801574081344249171102831344,{},)
-,)
-  )
-}
-
 function Dropdownmenu__item_281113508146928172296470634782203745354 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -219,6 +157,25 @@ function Dropdownmenu__item_281113508146928172296470634782203745354 () {
 RadixThemesDropdownMenu.Item,
 {onClick:on_click_b48446425b75df925e56732f12d72355},
 "Contacto"
+,)
+  )
+}
+
+function Tooltip_152635404748307709368232623922664606088 () {
+  
+  const reflex___state____state__mi_web___components___general_components___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    jsx(
+RadixThemesTooltip,
+{content:"No me toques."},
+jsx("img",{css:({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___nav_bar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))),src:reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.logo_src_rx_state_},)
 ,)
   )
 }
@@ -242,21 +199,64 @@ RadixThemesButton,
   )
 }
 
-function Button_27253890017801574081344249171102831344 () {
+function Img_164144592572901142842083229647882011920 () {
+  
+  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_bd1bd52eb3f49731a43de1af718afe95 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx("img",{css:({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:on_click_bd1bd52eb3f49731a43de1af718afe95,src:reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src_rx_state_},)
+
+  )
+}
+
+function Dropdownmenu__item_128668595867871741586793206465917323006 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_4b6dced53129b0a8542562c38c94d0e4 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___carousel____carousel_state.next_image", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
+  const on_click_39d6f18259dac0cbc8afe62358cb5867 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/financial_page", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
 
 
 
   
   return (
     jsx(
-RadixThemesButton,
-{css:({ ["backgroundColor"] : "rgba(255, 255, 255, 0.2)", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "80px", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.6)", ["color"] : "black", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_4b6dced53129b0a8542562c38c94d0e4},
-"\u276f"
+RadixThemesDropdownMenu.Item,
+{onClick:on_click_39d6f18259dac0cbc8afe62358cb5867},
+"Proyectos"
+,)
+  )
+}
+
+function Flex_79648591044956947332842049083232657846 () {
+  
+  
+                useEffect(() => {
+                    ((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___carousel____carousel_state.on_load", ({  }), ({  })))], args, ({  }))))()
+                    return () => {
+                        
+                    }
+                }, []);
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    jsx(
+RadixThemesFlex,
+{align:"start",className:"rx-Stack",css:({ ["width"] : "100%" }),direction:"row",justify:"center",gap:"2"},
+jsx(Button_304930046714202752388763200906291982745,{},)
+,jsx(Button_27253890017801574081344249171102831344,{},)
 ,)
   )
 }
@@ -333,6 +333,13 @@ jsx(
 ReactRouterLink,
 {to:"/financial_page"},
 "Curso de Finanzas, Trading y como evitar Estafas."
+,),),jsx(
+RadixThemesLink,
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "Arial", ["--default-font-family"] : "Arial", ["transition"] : "color 0.2s ease", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"regular"},
+jsx(
+ReactRouterLink,
+{to:"https://dashboard-financial.onrender.com/"},
+"FinDash: Dashboard Financiero"
 ,),),),),),jsx(
 RadixThemesTooltip,
 {content:"Contact\u00e1me"},
@@ -376,7 +383,7 @@ jsx(LucideMenu,{size:30},)
 ,),jsx(
 RadixThemesDropdownMenu.Content,
 {},
-jsx(Dropdownmenu__item_338517215627197619108720637606008039098,{},)
+jsx(Dropdownmenu__item_128668595867871741586793206465917323006,{},)
 ,jsx(Dropdownmenu__item_281113508146928172296470634782203745354,{},)
 ,),),),),),jsx(
 RadixThemesFlex,
@@ -386,7 +393,7 @@ RadixThemesBox,
 {css:({ ["textColor"] : "black", ["width"] : "100%", ["flexDirection"] : "column", ["display"] : "flex", ["flexWrap"] : "wrap", ["justifyContent"] : "center", ["gap"] : "5px", ["alignItems"] : "center", ["paddingInlineStart"] : "20px", ["paddingInlineEnd"] : "20px", ["margin"] : "0 auto" })},
 jsx(
 RadixThemesFlex,
-{align:"start",className:"rx-Stack",css:({ ["size"] : "4", ["width"] : "100%", ["borderRadius"] : "10px", ["alignItems"] : "center", ["justifyContent"] : "center", ["marginBottom"] : "10em" }),direction:"column",gap:"3"},
+{align:"start",className:"rx-Stack",css:({ ["size"] : "4", ["width"] : "100%", ["borderRadius"] : "10px", ["alignItems"] : "center", ["justifyContent"] : "center", ["marginBottom"] : "4em" }),direction:"column",gap:"3"},
 jsx(
 RadixThemesHeading,
 {css:({ ["fontStyle"] : "normal", ["alignItems"] : "center", ["padding"] : "10px", ["letterSpacing"] : "1px", ["textWrap"] : "normal", ["width"] : "100%", ["margin"] : "auto", ["display"] : "block", ["fontSize"] : "30px", ["fontFamily"] : "roboto", ["--default-font-family"] : "roboto", ["marginTop"] : "40px", ["textAlign"] : "center", ["transition"] : "transform 0.5s ease-in-out", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) })},
@@ -448,7 +455,7 @@ jsx("img",{css:({ ["width"] : "35px", ["height"] : "35px", ["objectFit"] : "cont
 ,jsx(Button_34793777933790021165915863573390125941,{},)
 ,),jsx(
 RadixThemesText,
-{as:"p",css:({ ["fontStyle"] : "normal", ["textAlign"] : "left", ["alignItems"] : "center", ["padding"] : "10px", ["letterSpacing"] : "1px", ["textWrap"] : "normal", ["width"] : "100%", ["margin"] : "auto", ["display"] : "block", ["fontSize"] : "20px", ["fontWeight"] : "300", ["maxWidth"] : "400px", ["color"] : "black", ["marginBottom"] : "1rem" })},
+{as:"p",css:({ ["fontStyle"] : "normal", ["textAlign"] : "left", ["alignItems"] : "center", ["padding"] : "10px", ["letterSpacing"] : "1px", ["textWrap"] : "normal", ["width"] : "100%", ["margin"] : "auto", ["display"] : "block", ["fontSize"] : "20px", ["fontWeight"] : "300", ["maxWidth"] : "400px", ["color"] : "black", ["marginBottom"] : "0.5em" })},
 "Soy Maxi Gonz\u00e1lez, Programador en HTML, CSS y Python (Django framework, Reflex), Asesor financiero y agente productor, me encuentro creando un curso gratuito de trading donde encontrar\u00e1s lo m\u00e1s importante para invertir en la bolsa, cripto y c\u00f3mo evitar estafas."
 ,),),),),),jsx(
 RadixThemesBox,
@@ -641,6 +648,17 @@ jsx(
 "Render"
 ,),),jsx(
 RadixThemesBox,
+{css:({ ["marginBottom"] : "1em" })},
+jsx(
+RadixThemesText,
+{as:"p",css:({ ["fontStyle"] : "normal", ["alignItems"] : "center", ["padding"] : "10px", ["letterSpacing"] : "1px", ["textWrap"] : "normal", ["width"] : "100%", ["margin"] : "auto", ["display"] : "block", ["fontSize"] : "30px", ["fontFamily"] : "roboto", ["--default-font-family"] : "roboto", ["color"] : "white" })},
+" Podes visitarnos en:"
+,),jsx(
+RadixThemesLink,
+{css:({ ["fontStyle"] : "normal", ["padding"] : "5px", ["letterSpacing"] : "0.01px", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["fontWeight"] : "300", ["fontSize"] : "20px", ["textWrap"] : "normal", ["textAlign"] : "left", ["width"] : "100%", ["color"] : "white", ["textDecoration"] : "underline", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) }),href:"#"},
+"https://dashboard-financial.onrender.com/"
+,),),jsx(
+RadixThemesBox,
 {},
 jsx(
 RadixThemesFlex,
@@ -692,6 +710,17 @@ jsx(
 "li",
 {css:({ ["fontStyle"] : "normal", ["padding"] : "5px", ["letterSpacing"] : "0.01px", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["fontWeight"] : "300", ["fontSize"] : "20px", ["textWrap"] : "normal", ["textAlign"] : "left", ["width"] : "100%" })},
 "Reflex"
+,),),jsx(
+RadixThemesBox,
+{css:({ ["marginBottom"] : "1em" })},
+jsx(
+RadixThemesText,
+{as:"p",css:({ ["fontStyle"] : "normal", ["alignItems"] : "center", ["padding"] : "10px", ["letterSpacing"] : "1px", ["textWrap"] : "normal", ["width"] : "100%", ["margin"] : "auto", ["display"] : "block", ["fontSize"] : "30px", ["fontFamily"] : "roboto", ["--default-font-family"] : "roboto", ["color"] : "white" })},
+" Podes visitarnos en:"
+,),jsx(
+RadixThemesLink,
+{css:({ ["fontStyle"] : "normal", ["padding"] : "5px", ["letterSpacing"] : "0.01px", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["fontWeight"] : "300", ["fontSize"] : "20px", ["textWrap"] : "normal", ["textAlign"] : "left", ["width"] : "100%", ["color"] : "white", ["textDecoration"] : "underline", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) }),href:"#"},
+"https://mi-web-neon-book.reflex.run/financial_page"
 ,),),jsx(
 RadixThemesBox,
 {},

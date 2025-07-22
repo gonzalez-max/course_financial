@@ -65,7 +65,20 @@ def projects() -> rx.Component:
                             color="white",
                             margin_bottom=Size.DEFAULT.value
                         ),
-                
+                    rx.box(
+                        rx.text(" Podes visitarnos en:",
+                                **styles.text_main_page["subtitle"],
+                                color="white",
+                              
+                        ),    
+                        rx.link(
+                            "https://dashboard-financial.onrender.com/",
+                            **styles.text_main_page["body"],
+                            color="white",
+                            text_decoration="underline",
+                        ),
+                        margin_bottom=Size.DEFAULT.value, 
+                    ),
                     rx.box(
                         rx.center(
                             rx.vstack(
@@ -141,7 +154,22 @@ def projects() -> rx.Component:
                             color="white",
                             margin_bottom=Size.DEFAULT.value
                         ),
-                
+
+                    rx.box(
+                        rx.text(" Podes visitarnos en:",
+                                **styles.text_main_page["subtitle"],
+                                color="white",
+                              
+                        ),    
+                        rx.link(
+                            "https://mi-web-neon-book.reflex.run/financial_page",
+                            **styles.text_main_page["body"],
+                            color="white",
+                            text_decoration="underline",
+                        ),
+                        margin_bottom=Size.DEFAULT.value, 
+                    ),
+                    
                     rx.box(
                         rx.center(
                             rx.vstack(

@@ -88,7 +88,7 @@ def hero_section() -> rx.Component:
                         "donde encontrarás lo más importante para invertir en la bolsa, cripto y cómo evitar estafas.",
                         **styles.text_main_page["card_body"],
                         color="black",
-                        margin_bottom="1rem",
+                        margin_bottom=Size.MEDIUM.value,
                     ),
                     
                     
@@ -180,7 +180,7 @@ def hero_section() -> rx.Component:
             border_radius="10px",
             align_items="center",
             justify_content="center",
-            margin_bottom=Size.MASSIVE.value
+            margin_bottom=Size.BIG.value
         ),
         **styles.global_styles
     )

@@ -7,16 +7,14 @@ class LogoState(rx.State):
 
     def increment_click(self):
         self.click_count += 1
-        # Calcula el número de ciclos de 5 clics
         cycle = (self.click_count // 3) % 2
-        # Alterna la imagen según el ciclo
-        if cycle == 1:
-            self.logo_src = "/icons/orbesdmc.png"
-        else:
-            self.logo_src = "/icons/orbesdmc-black.png"
-        
-#_______________________________________________________________________________________________________#
+        self.logo_src = (
+            "/icons/orbesdmc.png"
+            if cycle == 1
+            else "/icons/orbesdmc-black.png"
+        )
 
+# _____________________________________________________________________________________________ #
 
 def nav_bar(text: str, url: str) -> rx.Component:
     return rx.link(
@@ -32,13 +30,13 @@ def navbar_dropdown() -> rx.Component:
                 rx.hstack(
                     rx.tooltip(
                         rx.image(
-                            src=LogoState.logo_src,  # Usamos el estado para la imagen
+                            src=LogoState.logo_src,
                             width="25px",
                             height="25px",
                             border_radius="50px",
                             background_color="transparent",
                             padding="0px",
-                            on_click=LogoState.increment_click,# Vinculamos el evento on_click
+                            on_click=LogoState.increment_click,
                             cursor="pointer",
                             _hover={"transform": "scale(1.10)"},
                         ),
@@ -47,38 +45,47 @@ def navbar_dropdown() -> rx.Component:
                     rx.link(
                         rx.tooltip(
                             rx.heading(
-                            "Maximiliano Gonzalez",
-                            **styles.NAVBAR_FONTS_STYLES,
+                                "Maximiliano Gonzalez",
+                                **styles.NAVBAR_FONTS_STYLES,
+                            ),
+                            content="Inicio"
                         ),
-                    content="Inicio"
-                    ), #cierre del tooltip
-                    href="/#",
-                    style={"text_decoration": "none"}
+                        href="/#",
+                        style={"text_decoration": "none"}
                     ),
                     align_items="center",
                 ),
-                    rx.hstack(
+                rx.hstack(
                     rx.hover_card.root(
                         rx.hover_card.trigger(
-                           nav_bar("Proyectos","#mis-proyectos"),
+                            nav_bar("Proyectos", "#mis-proyectos"),
                         ),
                         rx.hover_card.content(
                             rx.vstack(
-                                rx.link("Curso de Finanzas, Trading y como evitar Estafas.",
-                                        href="/financial_page",**styles.NAVBAR_FONTS_STYLES),
+                                rx.link(
+                                    "Curso de Finanzas, Trading y como evitar Estafas.",
+                                    href="/financial_page",
+                                    **styles.NAVBAR_FONTS_STYLES,
+                                ),
+                                rx.link(
+                                    "FinDash: Dashboard Financiero",
+                                    href="https://dashboard-financial.onrender.com/",
+                                    **styles.NAVBAR_FONTS_STYLES,
+                                ),
                             ),
                             padding="2",
                             border_radius="8px",
                             border="1.5px solid transparent",
                             box_shadow="0px 4px 14px rgba(0, 0, 0, 0.3)",
-                            transition= "opacity 0.3s ease-out, transform 0.3s ease-out",
+                            transition="opacity 0.3s ease-out, transform 0.3s ease-out",
                             background="rgba(250, 250, 250, 0.4)",
-                            backdrop_filter= "blur(10px)",
-                            
+                            backdrop_filter="blur(10px)",
                         ),
                     ),
-                    rx.tooltip(nav_bar("Contacto", "/soporte_page"),
-                               content="Contactáme"),
+                    rx.tooltip(
+                        nav_bar("Contacto", "/soporte_page"),
+                        content="Contactáme"
+                    ),
                     justify="end",
                 ),
             ),
@@ -87,13 +94,13 @@ def navbar_dropdown() -> rx.Component:
             rx.hstack(
                 rx.hstack(
                     rx.image(
-                        src=LogoState.logo_src,  # Usamos el mismo estado para la versión móvil
+                        src=LogoState.logo_src,
                         width="30px",
                         height="30px",
                         border_radius="50px",
                         background_color="transparent",
                         padding="0px",
-                        on_click=LogoState.increment_click,  # Vinculamos el evento on_click
+                        on_click=LogoState.increment_click,
                     ),
                     rx.link(
                         rx.heading(
@@ -110,7 +117,7 @@ def navbar_dropdown() -> rx.Component:
                         rx.icon("menu", size=30)
                     ),
                     rx.menu.content(
-                        rx.menu.item("Proyecto", on_click=rx.redirect("/financial_page")),
+                        rx.menu.item("Proyectos", on_click=rx.redirect("/financial_page")),
                         rx.menu.item("Contacto", on_click=rx.redirect("/soporte_page")),
                     ),
                     justify="end",
