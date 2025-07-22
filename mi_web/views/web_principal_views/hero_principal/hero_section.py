@@ -32,7 +32,7 @@ def hero_section() -> rx.Component:
                     "transform": "scale(1.10)",
                 },
             ),         
-    rx.desktop_only(
+    rx.tablet_and_desktop(
         rx.card(
             rx.flex(
                 # Columna izquierda: AVATAR
