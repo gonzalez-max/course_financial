@@ -149,12 +149,14 @@ COURSE_NAVBAR_FONTS={
     "size":"3",
     "color":"black", 
     "weight":"regular",
-    "font_family": "Arial",
-    "_hover":
-        {"color": "white"},
-    "transition": "color 0.3s ease",
+    "font_family": "Roboto, sans-serif",
+    "transition": "color 0.2s ease",
+    "font_weight": "400",
     "justify_content": "center",
-    "width":"100%"
+    "width":"100%",
+    "_hover":{
+        "color": "white",
+         },
 }
 
 

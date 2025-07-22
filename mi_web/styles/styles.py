@@ -199,8 +199,9 @@ NAVBAR_FONTS_STYLES={
     "size":"3",
     "color":"black", 
     "weight":"regular",
-    "font_family": "Arial",
+    "font_family": "Roboto, sans-serif",
     "transition": "color 0.2s ease",
+    "font_weight": "400",
     "justify_content": "center",
     "width":"100%",
     "_hover":{

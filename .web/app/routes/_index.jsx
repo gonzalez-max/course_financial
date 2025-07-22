@@ -12,21 +12,28 @@ import { jsx } from "@emotion/react"
 
 
 
-function Button_283058782470826559226656565134108488314 () {
+function Flex_79648591044956947332842049083232657846 () {
   
+  
+                useEffect(() => {
+                    ((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___carousel____carousel_state.on_load", ({  }), ({  })))], args, ({  }))))()
+                    return () => {
+                        
+                    }
+                }, []);
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_b48446425b75df925e56732f12d72355 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
 
 
 
   
   return (
     jsx(
-RadixThemesButton,
-{css:({ ["width"] : "100%", ["height"] : "100px", ["spacing"] : "5px", ["borderRadius"] : "20px", ["fontSize"] : "30px", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "400px", ["backgroundColor"] : "rgba(255, 255, 255, 0.2)", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "black" }) }),onClick:on_click_b48446425b75df925e56732f12d72355,radius:"medium",size:"3",variant:"solid"},
-"Contactame"
+RadixThemesFlex,
+{align:"start",className:"rx-Stack",css:({ ["width"] : "100%" }),direction:"row",justify:"center",gap:"2"},
+jsx(Button_304930046714202752388763200906291982745,{},)
+,jsx(Button_27253890017801574081344249171102831344,{},)
 ,)
   )
 }
@@ -42,6 +49,42 @@ function Img_162681571901024381351400602206696998823 () {
   
   return (
     jsx("img",{css:({ ["height"] : "auto", ["width"] : "100%", ["maxWidth"] : "700px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["borderRadius"] : "20px", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["alignItems"] : "center", ["justify"] : "center", ["objectFit"] : "cover", ["display"] : "block", ["margin"] : "auto", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),src:reflex___state____state__mi_web___components___general_components___carousel____carousel_state.images_rx_state_.at(reflex___state____state__mi_web___components___general_components___carousel____carousel_state.index_rx_state_)},)
+
+  )
+}
+
+function Dropdownmenu__item_128668595867871741586793206465917323006 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_39d6f18259dac0cbc8afe62358cb5867 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/financial_page", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesDropdownMenu.Item,
+{onClick:on_click_39d6f18259dac0cbc8afe62358cb5867},
+"Proyectos"
+,)
+  )
+}
+
+function Img_164144592572901142842083229647882011920 () {
+  
+  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_bd1bd52eb3f49731a43de1af718afe95 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx("img",{css:({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:on_click_bd1bd52eb3f49731a43de1af718afe95,src:reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src_rx_state_},)
 
   )
 }
@@ -62,12 +105,12 @@ function Img_231238073412267682910896070410367668041 () {
   )
 }
 
-function Button_34793777933790021165915863573390125941 () {
+function Button_304930046714202752388763200906291982745 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_976a9c6f0dfc05e4789ccf13a814390f = useCallback(((_e) => (addEvents([(Event("_download", ({ ["url"] : "/Profesional Maximiliano Gonzalez.pdf", ["filename"] : "Profesional Maximiliano Gonzalez.pdf" }), ({  }))), (Event("_call_function", ({ ["function"] : (() => (refs['__toast']("\u2714\ufe0f Cv Descargado Exitosamente", ({ ["position"] : "top-right", ["style"] : ({ ["color"] : "white", ["fontFamily"] : "Arial", ["weight"] : "bold", ["alignItems"] : "center", ["borderRadius"] : "1px" }) })))), ["callback"] : null }), ({  })))], [_e], ({  })))), [addEvents, Event])
+  const on_click_89f394471e8408c781e73384db1a219d = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___carousel____carousel_state.prev_image", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
 
 
 
@@ -75,27 +118,8 @@ function Button_34793777933790021165915863573390125941 () {
   return (
     jsx(
 RadixThemesButton,
-{css:({ ["backgroundColor"] : "#2A3C80", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "15px", ["display"] : "flex", ["cursor"] : "pointer", ["alignItem"] : "center", ["justifyContent"] : "center", ["margin"] : "1px", ["&:hover"] : ({ ["backgroundColor"] : "white", ["transition"] : "transform 0.2s ease-in-out", ["color"] : "#2A3C80", ["transform"] : "scale(1.07)" }) }),onClick:on_click_976a9c6f0dfc05e4789ccf13a814390f},
-"Descargar CV"
-,)
-  )
-}
-
-function Button_27253890017801574081344249171102831344 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_4b6dced53129b0a8542562c38c94d0e4 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___carousel____carousel_state.next_image", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesButton,
-{css:({ ["backgroundColor"] : "rgba(255, 255, 255, 0.2)", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "80px", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.6)", ["color"] : "black", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_4b6dced53129b0a8542562c38c94d0e4},
-"\u276f"
+{css:({ ["backgroundColor"] : "rgba(255, 255, 255, 0.2)", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "80px", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.6)", ["color"] : "black", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_89f394471e8408c781e73384db1a219d},
+"\u276e"
 ,)
   )
 }
@@ -114,6 +138,25 @@ function Img_298512741951362708578143316570517596619 () {
   return (
     jsx("img",{css:({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" }),onClick:on_click_0618b3905aaa9bfb829535ec4bcaeaae,src:reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.logo_src_rx_state_},)
 
+  )
+}
+
+function Tooltip_152635404748307709368232623922664606088 () {
+  
+  const reflex___state____state__mi_web___components___general_components___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    jsx(
+RadixThemesTooltip,
+{content:"No me toques."},
+jsx("img",{css:({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___nav_bar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))),src:reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.logo_src_rx_state_},)
+,)
   )
 }
 
@@ -142,6 +185,25 @@ jsx("img",{css:({ ["width"] : "35px", ["height"] : "40px", ["objectFit"] : "cont
   )
 }
 
+function Button_27253890017801574081344249171102831344 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_4b6dced53129b0a8542562c38c94d0e4 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___carousel____carousel_state.next_image", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["backgroundColor"] : "rgba(255, 255, 255, 0.2)", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "80px", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.6)", ["color"] : "black", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_4b6dced53129b0a8542562c38c94d0e4},
+"\u276f"
+,)
+  )
+}
+
 function Dropdownmenu__item_281113508146928172296470634782203745354 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -161,31 +223,12 @@ RadixThemesDropdownMenu.Item,
   )
 }
 
-function Tooltip_152635404748307709368232623922664606088 () {
-  
-  const reflex___state____state__mi_web___components___general_components___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    jsx(
-RadixThemesTooltip,
-{content:"No me toques."},
-jsx("img",{css:({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___nav_bar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))),src:reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.logo_src_rx_state_},)
-,)
-  )
-}
-
-function Button_304930046714202752388763200906291982745 () {
+function Button_283058782470826559226656565134108488314 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_89f394471e8408c781e73384db1a219d = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___carousel____carousel_state.prev_image", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
+  const on_click_b48446425b75df925e56732f12d72355 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
 
 
 
@@ -193,70 +236,27 @@ function Button_304930046714202752388763200906291982745 () {
   return (
     jsx(
 RadixThemesButton,
-{css:({ ["backgroundColor"] : "rgba(255, 255, 255, 0.2)", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "80px", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.6)", ["color"] : "black", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_89f394471e8408c781e73384db1a219d},
-"\u276e"
+{css:({ ["width"] : "100%", ["height"] : "100px", ["spacing"] : "5px", ["borderRadius"] : "20px", ["fontSize"] : "30px", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "400px", ["backgroundColor"] : "rgba(255, 255, 255, 0.2)", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "black" }) }),onClick:on_click_b48446425b75df925e56732f12d72355,radius:"medium",size:"3",variant:"solid"},
+"Contactame"
 ,)
   )
 }
 
-function Img_164144592572901142842083229647882011920 () {
-  
-  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_bd1bd52eb3f49731a43de1af718afe95 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx("img",{css:({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:on_click_bd1bd52eb3f49731a43de1af718afe95,src:reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src_rx_state_},)
-
-  )
-}
-
-function Dropdownmenu__item_128668595867871741586793206465917323006 () {
+function Button_34793777933790021165915863573390125941 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_39d6f18259dac0cbc8afe62358cb5867 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/financial_page", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+  const on_click_976a9c6f0dfc05e4789ccf13a814390f = useCallback(((_e) => (addEvents([(Event("_download", ({ ["url"] : "/Profesional Maximiliano Gonzalez.pdf", ["filename"] : "Profesional Maximiliano Gonzalez.pdf" }), ({  }))), (Event("_call_function", ({ ["function"] : (() => (refs['__toast']("\u2714\ufe0f Cv Descargado Exitosamente", ({ ["position"] : "top-right", ["style"] : ({ ["color"] : "white", ["fontFamily"] : "Arial", ["weight"] : "bold", ["alignItems"] : "center", ["borderRadius"] : "1px" }) })))), ["callback"] : null }), ({  })))], [_e], ({  })))), [addEvents, Event])
 
 
 
   
   return (
     jsx(
-RadixThemesDropdownMenu.Item,
-{onClick:on_click_39d6f18259dac0cbc8afe62358cb5867},
-"Proyectos"
-,)
-  )
-}
-
-function Flex_79648591044956947332842049083232657846 () {
-  
-  
-                useEffect(() => {
-                    ((...args) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___carousel____carousel_state.on_load", ({  }), ({  })))], args, ({  }))))()
-                    return () => {
-                        
-                    }
-                }, []);
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    jsx(
-RadixThemesFlex,
-{align:"start",className:"rx-Stack",css:({ ["width"] : "100%" }),direction:"row",justify:"center",gap:"2"},
-jsx(Button_304930046714202752388763200906291982745,{},)
-,jsx(Button_27253890017801574081344249171102831344,{},)
+RadixThemesButton,
+{css:({ ["backgroundColor"] : "#2A3C80", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "15px", ["display"] : "flex", ["cursor"] : "pointer", ["alignItem"] : "center", ["justifyContent"] : "center", ["margin"] : "1px", ["&:hover"] : ({ ["backgroundColor"] : "white", ["transition"] : "transform 0.2s ease-in-out", ["color"] : "#2A3C80", ["transform"] : "scale(1.07)" }) }),onClick:on_click_976a9c6f0dfc05e4789ccf13a814390f},
+"Descargar CV"
 ,)
   )
 }
@@ -299,7 +299,7 @@ RadixThemesTooltip,
 {content:"Inicio"},
 jsx(
 RadixThemesHeading,
-{css:({ ["color"] : "black", ["fontFamily"] : "Arial", ["--default-font-family"] : "Arial", ["transition"] : "color 0.2s ease", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"regular"},
+{css:({ ["color"] : "black", ["fontFamily"] : "Roboto, sans-serif", ["--default-font-family"] : "Roboto, sans-serif", ["transition"] : "color 0.2s ease", ["fontWeight"] : "400", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"regular"},
 "Maximiliano Gonzalez"
 ,),),),),),jsx(
 RadixThemesFlex,
@@ -318,7 +318,7 @@ ReactRouterLink,
 {to:"#mis-proyectos"},
 jsx(
 RadixThemesText,
-{as:"p",css:({ ["color"] : "black", ["fontFamily"] : "Arial", ["--default-font-family"] : "Arial", ["transition"] : "color 0.2s ease", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"regular"},
+{as:"p",css:({ ["color"] : "black", ["fontFamily"] : "Roboto, sans-serif", ["--default-font-family"] : "Roboto, sans-serif", ["transition"] : "color 0.2s ease", ["fontWeight"] : "400", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"regular"},
 "Proyectos"
 ,),),),),jsx(
 RadixThemesHoverCard.Content,
@@ -328,14 +328,14 @@ RadixThemesFlex,
 {align:"start",className:"rx-Stack",direction:"column",gap:"3"},
 jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "Arial", ["--default-font-family"] : "Arial", ["transition"] : "color 0.2s ease", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"regular"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "Roboto, sans-serif", ["--default-font-family"] : "Roboto, sans-serif", ["transition"] : "color 0.2s ease", ["fontWeight"] : "400", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"regular"},
 jsx(
 ReactRouterLink,
 {to:"/financial_page"},
 "Curso de Finanzas, Trading y como evitar Estafas."
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "Arial", ["--default-font-family"] : "Arial", ["transition"] : "color 0.2s ease", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"regular"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "Roboto, sans-serif", ["--default-font-family"] : "Roboto, sans-serif", ["transition"] : "color 0.2s ease", ["fontWeight"] : "400", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"regular"},
 jsx(
 ReactRouterLink,
 {to:"https://dashboard-financial.onrender.com/"},
@@ -351,7 +351,7 @@ ReactRouterLink,
 {to:"/soporte_page"},
 jsx(
 RadixThemesText,
-{as:"p",css:({ ["color"] : "black", ["fontFamily"] : "Arial", ["--default-font-family"] : "Arial", ["transition"] : "color 0.2s ease", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"regular"},
+{as:"p",css:({ ["color"] : "black", ["fontFamily"] : "Roboto, sans-serif", ["--default-font-family"] : "Roboto, sans-serif", ["transition"] : "color 0.2s ease", ["fontWeight"] : "400", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"regular"},
 "Contacto"
 ,),),),),),),),jsx(
 RadixThemesBox,
@@ -371,7 +371,7 @@ ReactRouterLink,
 {to:"/#"},
 jsx(
 RadixThemesHeading,
-{css:({ ["color"] : "black", ["fontFamily"] : "Arial", ["--default-font-family"] : "Arial", ["transition"] : "color 0.2s ease", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"regular"},
+{css:({ ["color"] : "black", ["fontFamily"] : "Roboto, sans-serif", ["--default-font-family"] : "Roboto, sans-serif", ["transition"] : "color 0.2s ease", ["fontWeight"] : "400", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"regular"},
 "Maximiliano Gonzalez"
 ,),),),),jsx(
 RadixThemesDropdownMenu.Root,
