@@ -122,7 +122,7 @@ def navbar_course() -> rx.Component:
                             "Inicio",
                             **c_styles.COURSE_NAVBAR_FONTS,
                         ),
-                        href="/financial_page",
+                        href="/",
                         style={"text_decoration": "none"},
                     ),
                     align_items="center",
