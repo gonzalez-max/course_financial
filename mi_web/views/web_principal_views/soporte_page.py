@@ -7,45 +7,24 @@ import mi_web.styles.course_styles as c_styles
 
 def soporte_page() -> rx.Component:
     return rx.box(
-        navbar_course(),
-    rx.vstack(
-        rx.heading("¡¡ Contactáme !!",
-                   font_size="50px",
-                   margin_top=Size.REGULAR.value),
-        contact_form(),
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            width="100%",
-            border_radius="10px",
-            align_items="center",
-            justify_content="center",
-            size="2",   
-            max_width="800px",
+            navbar_course(),
+            rx.vstack(
+                    rx.heading("¡¡ Contactáme !!",
+                        **c_styles.TEXT_STYLE["title"],
+                        margin_top=Size.REGULAR.value),
+
+                    rx.tablet_and_desktop(contact_form()),
+                    rx.mobile_only(contact_form_mobile()),
+                width="100%",
+                border_radius="10px",
+                align_items="center",
+                justify_content="center",
+                size="2",   
+            ),
+            footer(),
+            **c_styles.global_styles,
+            background="radial-gradient(circle,rgba(117, 55, 153, 1) 0%, rgba(80, 98, 163, 1) 51%, rgba(28, 115, 166, 1) 100%)"
     ),
-    footer(),
-    **c_styles.global_styles,
-    background="radial-gradient(circle,rgba(117, 55, 153, 1) 0%, rgba(80, 98, 163, 1) 51%, rgba(28, 115, 166, 1) 100%)"
-    )
-
-
 
 
 
@@ -97,6 +76,36 @@ class ContactFormState(rx.State):
             return rx.toast("⚠️ Error al enviar el mensaje")
 
 def contact_form():
+    return rx.tablet_and_desktop(
+    rx.vstack(
+        rx.form(
+            rx.vstack(
+                rx.flex(
+                    rx.card(
+                        rx.input(placeholder="Nombre", name="name", color="white", is_required=True),
+                        rx.input(placeholder="Correo electrónico", name="email", is_required=True),
+                        rx.input(placeholder="Asunto", name="subject", is_required=True),
+                        rx.text_area(placeholder="Mensaje", name="message", height="8em", is_required=True),
+                        rx.button("Enviar", type="submit", **c_styles.form_button_style),
+                        width="600px",
+                        background_color="rgba(255, 255, 255, 0.3)",
+                        variant="surface"
+                    ),
+                ),
+                align_items="center",
+                justify_content="center",
+                max_width="600px",
+                width="100%",
+                margin_top=Size.BIG.value,
+                margin_bottom=Size.DEFAULT.value
+            ),
+            on_submit=ContactFormState.handle_submit,
+            reset_on_submit=True,
+        ),
+    )
+    )
+
+def contact_form_mobile():
     return rx.vstack(
         rx.form(
             rx.vstack(
@@ -107,14 +116,14 @@ def contact_form():
                         rx.input(placeholder="Asunto", name="subject", is_required=True),
                         rx.text_area(placeholder="Mensaje", name="message", height="8em", is_required=True),
                         rx.button("Enviar", type="submit", **c_styles.form_button_style),
-                        width="500px",
+                        width="300px",
                         background_color="rgba(255, 255, 255, 0.3)",
                         variant="surface"
                     ),
                 ),
                 align_items="center",
                 justify_content="center",
-                max_width="500px",
+                max_width="450px",
                 width="100%",
                 margin_top=Size.BIG.value,
                 margin_bottom=Size.DEFAULT.value

@@ -38,4 +38,5 @@ def footer() -> rx.Component:
         display= "flex",
         flex_wrap= "wrap",
         gap= "10px",
+        max_width="100%",
         )

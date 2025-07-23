@@ -2,6 +2,7 @@ import reflex as rx
 import mi_web.styles.course_styles as c_styles
 from mi_web.components.general_components.zoom_images import zoomed_image
 from mi_web.views.course_views.financial_body.intro_video import gif_intro
+from mi_web.views.course_views.financial_body.intro_video import gif_intro_mobile
 from mi_web.styles.course_styles import Size as Size
 
 
@@ -27,6 +28,8 @@ def financial_body() -> rx.Component:
                                                 justify_content="center",
                                                 line_height= "1.1"
                                         ),
+                                        gif_intro_mobile(),
+                                        
                                         rx.link(
                                                 rx.button("Comenzar con el curso",
                                                         on_click=lambda: rx.redirect("/choice_modules"), 
@@ -42,7 +45,6 @@ def financial_body() -> rx.Component:
                                 align_items="center",
                                 justify_content="right",             
                         ),
-                
                 max_width="100%",
                 width="100%",
                 padding="20px",

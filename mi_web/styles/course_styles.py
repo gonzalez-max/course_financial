@@ -65,8 +65,8 @@ COURSE_STYLES = {
 STYLES_CHOICE_MODULES={
    "text_color" : "black",
     "width":"100%",
-    "max_width":"100%",
     "background" : "linear-gradient(180deg, rgba(2,4,45,1) 0%, rgba(136,75,111,1) 100%)",
+    "max_width":"100%",
     "display": "flex",
     "flex_direction": "column",
     "min_height":"100vh",
@@ -311,7 +311,7 @@ IMAGE_STYLES={
 #__________________Diccionario de estilos para textos en Reflex_________________#
 TEXT_STYLE = {
     "title": {  # Para títulos principales
-        "font_size": "clamp(28px, 5vw, 50px)",  # Se adapta dinámicamente al tamaño de pantalla
+        "font_size": ["35px", "42px", "46px", "55px"],  # Se adapta dinámicamente al tamaño de pantalla
         "font_weight": "600",
         "color": "white",
         "text_align": "center",
@@ -402,15 +402,18 @@ TEXT_STYLE = {
 global_styles = {
     "text_color" : "black",
     "width":"100%",
-    "flex_direction": "column",
+    "max_width":"100%",
     "display": "flex",
+    "flex_direction": "column",
+    "min_height":"100vh",
+    #"justify_content": "space-between",
     "flex_wrap": "wrap",
     "justify_content": "center", 
-    "gap": "5px" ,
+    "gap": "10px" ,
     "align_items":"center",
     "padding_x": "20px",
-    "margin": "0 auto",
-    #"min_height":"100vh",
+    "margin": "0 auto"
+   
 
 }
 

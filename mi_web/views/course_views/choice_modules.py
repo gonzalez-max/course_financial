@@ -21,6 +21,7 @@ def choice_modules() -> rx.Component:
         ),
         footer(),
         **c_styles.STYLES_CHOICE_MODULES,
+        
     ),
 
 
