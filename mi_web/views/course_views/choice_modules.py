@@ -1,9 +1,8 @@
 import reflex as rx
 import mi_web.styles.course_styles as c_styles
-import mi_web.styles.styles as styles
-from mi_web.components.course_components.links_course.links_modules import links_modules
-from mi_web.styles.styles import Size as Size
-from mi_web.components.course_components.links_course.course_navbar import navbar_course
+from mi_web.components.general_components.links_modules import links_modules
+from mi_web.styles.course_styles import Size as Size
+from mi_web.components.general_components.course_navbar import navbar_course
 from mi_web.components.general_components.footer import footer
 
 

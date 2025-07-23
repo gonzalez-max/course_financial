@@ -1,13 +1,13 @@
 import reflex as rx 
-from mi_web.components.general_components.nav_bar import navbar_dropdown
+from mi_web.components.general_components.course_navbar import navbar_course
 from mi_web.components.general_components.footer import footer
-from mi_web.styles.styles import Size as Size
-import mi_web.styles.styles as styles
+from mi_web.styles.course_styles import Size as Size
+import mi_web.styles.course_styles as c_styles
 
 
 def soporte_page() -> rx.Component:
     return rx.box(
-        navbar_dropdown(),
+        navbar_course(),
     rx.vstack(
         rx.heading("¡¡ Contactáme !!",
                    font_size="50px",
@@ -41,7 +41,7 @@ def soporte_page() -> rx.Component:
             max_width="800px",
     ),
     footer(),
-    **styles.global_styles,
+    **c_styles.global_styles,
     background="radial-gradient(circle,rgba(117, 55, 153, 1) 0%, rgba(80, 98, 163, 1) 51%, rgba(28, 115, 166, 1) 100%)"
     )
 
@@ -106,7 +106,7 @@ def contact_form():
                         rx.input(placeholder="Correo electrónico", name="email", is_required=True),
                         rx.input(placeholder="Asunto", name="subject", is_required=True),
                         rx.text_area(placeholder="Mensaje", name="message", height="8em", is_required=True),
-                        rx.button("Enviar", type="submit", **styles.form_button_style),
+                        rx.button("Enviar", type="submit", **c_styles.form_button_style),
                         width="500px",
                         background_color="rgba(255, 255, 255, 0.3)",
                         variant="surface"
@@ -124,13 +124,3 @@ def contact_form():
         ),
     )
 
-def index():
-    return rx.container(
-        contact_form(),
-        max_width="600px",
-        margin="0 auto",
-        padding="0",
-    )
-
-app = rx.App()
-app.add_page(index)

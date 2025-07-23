@@ -1,5 +1,5 @@
 import reflex as rx
-from mi_web.styles.styles import Size as Size
+from mi_web.styles.course_styles import Size as Size
 import mi_web.styles.course_styles as c_styles
 
 def gif_intro() -> rx.Component:

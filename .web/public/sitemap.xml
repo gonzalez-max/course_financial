@@ -4,9 +4,6 @@
     <loc>http://localhost:3000/</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/financial_page</loc>
-  </url>
-  <url>
     <loc>http://localhost:3000/soporte_page</loc>
   </url>
   <url>

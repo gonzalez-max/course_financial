@@ -1,3 +1,48 @@
+
+import reflex as rx
+from enum import Enum
+
+#constantes
+MAX_WIDTH="600px"
+#tamaños para paginas
+MAX_WIDTH_PAGES="1200px"
+MAX_HEIGHT_PAGES="44px"
+#sizes
+class Size(Enum):
+    NONE="0em"
+    MICRO="0.02em"
+    TINY="0.05em"
+    SMALL="0.1em"
+    EXTRA_SMALL="0.25em"
+    MEDIUM="0.5em"
+    SLIGHTLY_SMALL="0.75em"
+    DEFAULT="1em"
+    MEDIUM_DEFAULT="1.5em"
+    REGULAR="2em"
+    LARGE="3em"
+    BIG="4em"
+    EXTRA_BIG="5em"
+    ULTRA="6em"
+    HUGE="8em"
+    MASSIVE="10em"
+    IMAGE_width="600px"
+    IMAGE_height="400px"
+    
+#_____________________________BREAKPOINTS_________________________________________________________#
+rx.Config(
+    app_name="mi_web",
+    theme=rx.theme(
+        breakpoints={
+            "base": "0em",
+            "sm": "43.75em",  # 700px
+            "md": "43.75em",     # 768px
+            "lg": "64em",
+            "xl": "80em",
+        }
+    )
+)
+
+
 #____________________________________CURSO__STYLES______________________________________________________________________-#
 
 COURSE_STYLES = {
@@ -63,12 +108,13 @@ BUTTON_STYLE = {
     "justify_content": "center",  # Centrar horizontalmente el contenido
     "transition": "all 0.3s ease-in-out", #animacion
     "cursor":"pointer",
+    "text_decoration": "none",  # Elimina el subrayado del texto
     "_hover": {
         "background_color":"white",  
         "border_color": "black",  # Bordes visibles en hover
         "transform": "scale(1.10)",
         "color":"black",
-        
+        "text_decoration": "none",  # Elimina el subrayado del texto
     },
 }
 
@@ -100,11 +146,13 @@ BUTTON_COURSES_STYLES={
     "overflow":"hidden",
     "transition": "all 0.3s ease-in-out", #animacion
     "cursor":"pointer",
+    "text_decoration": "none",  # Elimina el subrayado del texto
     "_hover": {
         "background_color":"rgba(255, 255, 255, 0.3)",  # Azul más oscuro en hover
         "border_color": "white",  # Bordes visibles en hover
         "transform": "scale(1.10)",
         "color":"white",
+        "text_decoration": "none",  # Elimina el subrayado del texto
         
     },
      # Estilos responsivos (no se si funcionan)
@@ -350,6 +398,43 @@ TEXT_STYLE = {
 }
 
 
+#global styles
+global_styles = {
+    "text_color" : "black",
+    "width":"100%",
+    "flex_direction": "column",
+    "display": "flex",
+    "flex_wrap": "wrap",
+    "justify_content": "center", 
+    "gap": "5px" ,
+    "align_items":"center",
+    "padding_x": "20px",
+    "margin": "0 auto",
+    #"min_height":"100vh",
+
+}
+
+#____________________________________boton soporte____________-_________________________#
+form_button_style={
+    "background_color":"black",
+    "color":"white",
+    "padding":"10px 20px",
+    "border_radius":"80px",
+    "transition":"all 0.3s ease-in-out",
+    "align_items":"center",
+    "justify_content":"center",
+    "cursor":"pointer",
+    "width":"100%",
+    "margin":"auto",
+    #border= "2px solid #e28cac",# Cambio de color al pasar el mouse
+    "_hover":{
+        "background_color": "rgba(255, 255, 255, 0.6)",
+        "color":"black",
+        "box_shadow":"0px 4px 10px rgba(0, 0, 0, 1)",
+        "transform": "scale(1.05)"
+    },
+    
+}
 
 
 

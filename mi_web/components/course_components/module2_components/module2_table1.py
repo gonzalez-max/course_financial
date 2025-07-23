@@ -1,5 +1,4 @@
 import reflex as rx
-import mi_web.styles.styles as styles
 import mi_web.styles.course_styles as c_styles
 
 def module2_table1() -> rx.Component:

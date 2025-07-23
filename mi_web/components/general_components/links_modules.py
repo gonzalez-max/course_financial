@@ -1,6 +1,6 @@
 import reflex as rx
 import mi_web.styles.course_styles as c_styles
-from mi_web.styles.styles import Size as Size
+from mi_web.styles.course_styles import Size as Size
 
 #aca creamos BOTONES que cumplen la funcion de links
 def links_modules() -> rx.Component:

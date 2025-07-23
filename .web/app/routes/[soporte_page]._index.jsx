@@ -1,7 +1,7 @@
 
 
 import { Fragment, useCallback, useContext, useEffect } from "react"
-import { Box as RadixThemesBox, Button as RadixThemesButton, Card as RadixThemesCard, DropdownMenu as RadixThemesDropdownMenu, Flex as RadixThemesFlex, Heading as RadixThemesHeading, HoverCard as RadixThemesHoverCard, Link as RadixThemesLink, Text as RadixThemesText, TextArea as RadixThemesTextArea, TextField as RadixThemesTextField, Tooltip as RadixThemesTooltip } from "@radix-ui/themes"
+import { Box as RadixThemesBox, Button as RadixThemesButton, Card as RadixThemesCard, DropdownMenu as RadixThemesDropdownMenu, Flex as RadixThemesFlex, Heading as RadixThemesHeading, HoverCard as RadixThemesHoverCard, Link as RadixThemesLink, Strong as RadixThemesStrong, Text as RadixThemesText, TextArea as RadixThemesTextArea, TextField as RadixThemesTextField, Tooltip as RadixThemesTooltip } from "@radix-ui/themes"
 import { EventLoopContext, StateContexts } from "$/utils/context"
 import { Event, getRefValue, getRefValues } from "$/utils/state"
 import { Link as ReactRouterLink } from "react-router"
@@ -11,43 +11,24 @@ import { jsx } from "@emotion/react"
 
 
 
-function Img_298512741951362708578143316570517596619 () {
+function Img_44193794075118247882912592078120564270 () {
   
-  const reflex___state____state__mi_web___components___general_components___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state)
+  const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_0618b3905aaa9bfb829535ec4bcaeaae = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___nav_bar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
+  const on_click_fa1b729bdabd98dbf80c7f3f665e4707 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
 
 
 
   
   return (
-    jsx("img",{css:({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" }),onClick:on_click_0618b3905aaa9bfb829535ec4bcaeaae,src:reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.logo_src_rx_state_},)
+    jsx("img",{css:({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" }),onClick:on_click_fa1b729bdabd98dbf80c7f3f665e4707,src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
 
   )
 }
 
-function Tooltip_152635404748307709368232623922664606088 () {
-  
-  const reflex___state____state__mi_web___components___general_components___nav_bar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    jsx(
-RadixThemesTooltip,
-{content:"No me toques."},
-jsx("img",{css:({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___nav_bar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))),src:reflex___state____state__mi_web___components___general_components___nav_bar____logo_state.logo_src_rx_state_},)
-,)
-  )
-}
-
-function Dropdownmenu__item_281113508146928172296470634782203745354 () {
+function Dropdownmenu__item_219216628386599214634898977905934367657 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
@@ -61,8 +42,44 @@ function Dropdownmenu__item_281113508146928172296470634782203745354 () {
     jsx(
 RadixThemesDropdownMenu.Item,
 {onClick:on_click_b48446425b75df925e56732f12d72355},
-"Contacto"
+"Contactos"
 ,)
+  )
+}
+
+function Tooltip_107787178243800509720440254496591202213 () {
+  
+  const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    jsx(
+RadixThemesTooltip,
+{content:"No me toques."},
+jsx("img",{css:({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))),src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
+,)
+  )
+}
+
+function Img_164144592572901142842083229647882011920 () {
+  
+  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_bd1bd52eb3f49731a43de1af718afe95 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx("img",{css:({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:on_click_bd1bd52eb3f49731a43de1af718afe95,src:reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src_rx_state_},)
+
   )
 }
 
@@ -113,29 +130,12 @@ RadixThemesButton,
   )
 }
 
-function Img_164144592572901142842083229647882011920 () {
-  
-  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_bd1bd52eb3f49731a43de1af718afe95 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx("img",{css:({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:on_click_bd1bd52eb3f49731a43de1af718afe95,src:reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src_rx_state_},)
-
-  )
-}
-
-function Dropdownmenu__item_128668595867871741586793206465917323006 () {
+function Dropdownmenu__item_287075228212589713390829397942124902700 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_39d6f18259dac0cbc8afe62358cb5867 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/financial_page", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+  const on_click_5f3f71c76c6fe2931e3440026bbf646f = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/choice_modules", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
 
 
 
@@ -143,8 +143,8 @@ function Dropdownmenu__item_128668595867871741586793206465917323006 () {
   return (
     jsx(
 RadixThemesDropdownMenu.Item,
-{onClick:on_click_39d6f18259dac0cbc8afe62358cb5867},
-"Proyectos"
+{onClick:on_click_5f3f71c76c6fe2931e3440026bbf646f},
+"Curso"
 ,)
   )
 }
@@ -164,17 +164,17 @@ RadixThemesBox,
 {css:({ ["textColor"] : "black", ["width"] : "100%", ["flexDirection"] : "column", ["display"] : "flex", ["flexWrap"] : "wrap", ["justifyContent"] : "center", ["gap"] : "5px", ["alignItems"] : "center", ["paddingInlineStart"] : "20px", ["paddingInlineEnd"] : "20px", ["margin"] : "0 auto", ["background"] : "radial-gradient(circle,rgba(117, 55, 153, 1) 0%, rgba(80, 98, 163, 1) 51%, rgba(28, 115, 166, 1) 100%)" })},
 jsx(
 RadixThemesBox,
-{css:({ ["width"] : "100%", ["height"] : "40px", ["backgroundColor"] : "rgba(255, 255, 255, 0.5)", ["padding"] : "1em", ["zIndex"] : "1000", ["position"] : "fixed", ["boxShadow"] : "0 1px 3px rgba(0, 0, 0, 0.1)", ["backdropFilter"] : "blur(10px)", ["justifyContent"] : "center", ["display"] : "flex", ["top"] : "0px", ["alignItems"] : "center" })},
+{css:({ ["width"] : "100%", ["height"] : "40px", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.5)", ["padding"] : "1em", ["zIndex"] : "1000", ["position"] : "fixed", ["boxShadow"] : "0 1px 3px rgba(0, 0, 0, 0.1)", ["backdropFilter"] : "blur(10px)", ["justifyContent"] : "center", ["display"] : "flex", ["top"] : "0px", ["alignItems"] : "center" })},
 jsx(
 RadixThemesBox,
 {css:({ ["@media screen and (min-width: 0)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 30em)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 48em)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 62em)"] : ({ ["display"] : "block" }) })},
 jsx(
 RadixThemesFlex,
-{align:"start",className:"rx-Stack",direction:"row",gap:"3"},
+{align:"start",className:"rx-Stack",css:({ ["alignItems"] : "center" }),direction:"row",gap:"3"},
 jsx(
 RadixThemesFlex,
 {align:"start",className:"rx-Stack",css:({ ["alignItems"] : "center" }),direction:"row",gap:"3"},
-jsx(Tooltip_152635404748307709368232623922664606088,{},)
+jsx(Tooltip_107787178243800509720440254496591202213,{},)
 ,jsx(
 RadixThemesLink,
 {asChild:true,css:({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })},
@@ -183,11 +183,11 @@ ReactRouterLink,
 {to:"/#"},
 jsx(
 RadixThemesTooltip,
-{content:"Inicio"},
+{content:"Pagina Principal"},
 jsx(
 RadixThemesHeading,
 {css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
-"Maximiliano Gonzalez"
+"Inicio"
 ,),),),),),jsx(
 RadixThemesFlex,
 {align:"start",className:"rx-Stack",direction:"row",justify:"end",gap:"3"},
@@ -202,31 +202,131 @@ RadixThemesLink,
 {asChild:true,css:({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })},
 jsx(
 ReactRouterLink,
-{to:"#mis-proyectos"},
+{to:"/choice_modules"},
 jsx(
 RadixThemesText,
 {as:"p",css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
-"Proyectos"
+"Curso"
 ,),),),),jsx(
 RadixThemesHoverCard.Content,
-{css:({ ["padding"] : "2", ["borderRadius"] : "8px", ["border"] : "1.5px solid transparent", ["boxShadow"] : "0px 4px 14px rgba(0, 0, 0, 0.3)", ["transition"] : "opacity 0.3s ease-out, transform 0.3s ease-out", ["background"] : "rgba(250, 250, 250, 0.4)", ["backdropFilter"] : "blur(10px)" })},
+{css:({ ["padding"] : "2", ["borderRadius"] : "8px", ["border"] : "1.5px solid transparent", ["boxShadow"] : "0px 4px 14px rgba(0, 0, 0, 0.3)", ["transition"] : "transform 0.2s ease-in-out", ["background"] : "rgba(250, 250, 250, 0.4)", ["backdropFilter"] : "blur(10px)" })},
 jsx(
 RadixThemesFlex,
-{align:"start",className:"rx-Stack",direction:"column",gap:"3"},
+{align:"start",className:"rx-Stack",direction:"column",gap:"2"},
 jsx(
+RadixThemesText,
+{as:"p",css:({ ["color"] : "#ffd284", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica" }),size:"5",weight:"bold"},
+"M\u00f3dulos del curso "
+,),jsx(
 RadixThemesLink,
 {asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
-{to:"https://dashboard-financial.onrender.com/"},
-"FinDash: Dashboard Financiero"
+{to:"/module_1"},
+jsx(
+RadixThemesStrong,
+{},
+"M\u00f3dulo 1:"
+,)," Fundamentos de Finanzas Personales y el Mercado "
 ,),),jsx(
 RadixThemesLink,
 {asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
-{to:"/financial_page"},
-"Curso de Finanzas, Trading y como evitar Estafas."
+{to:"/module_2"},
+jsx(
+RadixThemesStrong,
+{},
+"M\u00f3dulo 2:"
+,)," Inversores y tipos de Instrumentos"
+,),),jsx(
+RadixThemesLink,
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+jsx(
+ReactRouterLink,
+{to:"/module_3"},
+jsx(
+RadixThemesStrong,
+{},
+"M\u00f3dulo 3:"
+,)," Introducci\u00f3n al Trading"
+,),),jsx(
+RadixThemesLink,
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+jsx(
+ReactRouterLink,
+{to:"/module_4"},
+jsx(
+RadixThemesStrong,
+{},
+"M\u00f3dulo 4:"
+,)," Fundamentos del An\u00e1lisis T\u00e9cnico y Patrones"
+,),),jsx(
+RadixThemesLink,
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+jsx(
+ReactRouterLink,
+{to:"/module_5"},
+jsx(
+RadixThemesStrong,
+{},
+"M\u00f3dulo 5:"
+,)," Dominando Soportes, Resistencias y Rangos"
+,),),jsx(
+RadixThemesLink,
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+jsx(
+ReactRouterLink,
+{to:"/module_6"},
+jsx(
+RadixThemesStrong,
+{},
+"M\u00f3dulo 6:"
+,)," Tendencias y como identificarlas"
+,),),jsx(
+RadixThemesLink,
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+jsx(
+ReactRouterLink,
+{to:"/module_7"},
+jsx(
+RadixThemesStrong,
+{},
+"M\u00f3dulo 7:"
+,)," Indicadores y Entradas Exitosas"
+,),),jsx(
+RadixThemesLink,
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+jsx(
+ReactRouterLink,
+{to:"/module_8"},
+jsx(
+RadixThemesStrong,
+{},
+"M\u00f3dulo 8:"
+,)," Hablemos de Criptomonedas"
+,),),jsx(
+RadixThemesLink,
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+jsx(
+ReactRouterLink,
+{to:"/module_9"},
+jsx(
+RadixThemesStrong,
+{},
+"M\u00f3dulo 9:"
+,)," Las Estafas en el Trading y las Inversiones"
+,),),jsx(
+RadixThemesLink,
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+jsx(
+ReactRouterLink,
+{to:"/module_10"},
+jsx(
+RadixThemesStrong,
+{},
+"M\u00f3dulo 10:"
+,)," Plataformas de Trading y Final del Curso"
 ,),),),),),jsx(
 RadixThemesTooltip,
 {content:"Contact\u00e1me"},
@@ -249,17 +349,17 @@ RadixThemesFlex,
 jsx(
 RadixThemesFlex,
 {align:"start",className:"rx-Stack",css:({ ["alignItems"] : "center" }),direction:"row",gap:"3"},
-jsx(Img_298512741951362708578143316570517596619,{},)
+jsx(Img_44193794075118247882912592078120564270,{},)
 ,jsx(
 RadixThemesLink,
 {asChild:true,css:({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })},
 jsx(
 ReactRouterLink,
-{to:"/#"},
+{to:"/financial_page"},
 jsx(
 RadixThemesHeading,
 {css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
-"Maximiliano Gonzalez"
+"Inicio"
 ,),),),),jsx(
 RadixThemesDropdownMenu.Root,
 {css:({ ["justify"] : "end" })},
@@ -270,8 +370,8 @@ jsx(LucideMenu,{size:30},)
 ,),jsx(
 RadixThemesDropdownMenu.Content,
 {},
-jsx(Dropdownmenu__item_128668595867871741586793206465917323006,{},)
-,jsx(Dropdownmenu__item_281113508146928172296470634782203745354,{},)
+jsx(Dropdownmenu__item_287075228212589713390829397942124902700,{},)
+,jsx(Dropdownmenu__item_219216628386599214634898977905934367657,{},)
 ,),),),),),jsx(
 RadixThemesFlex,
 {align:"start",className:"rx-Stack",css:({ ["width"] : "100%", ["borderRadius"] : "10px", ["alignItems"] : "center", ["justifyContent"] : "center", ["size"] : "2", ["maxWidth"] : "800px" }),direction:"column",gap:"3"},

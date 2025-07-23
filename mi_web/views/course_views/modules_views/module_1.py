@@ -1,17 +1,17 @@
 import reflex as rx 
-from mi_web.components.course_components.links_course.course_navbar import navbar_course
+from mi_web.components.general_components.course_navbar import navbar_course
 from mi_web.components.general_components.footer import footer
-from mi_web.styles.styles import Size as Size
+from mi_web.styles.course_styles import Size as Size
 import mi_web.styles.course_styles as c_styles
-import mi_web.styles.styles as styles
+import mi_web.styles.course_styles as styles
 from mi_web.components.course_components.module1_components.saving_bar import saving_bar
 from mi_web.components.course_components.module1_components.imagenes.modulo1_imagenes  import gif_que_son_finanzas
 from mi_web.components.course_components.module1_components.table1_module1 import table1_module1
 from mi_web.components.course_components.module1_components.table1_module1 import mobile_table1_module1
 from mi_web.components.course_components.module1_components.table2_module1 import mobile_table2_module1
 from mi_web.components.course_components.module1_components.table2_module1 import table2_module1
-from mi_web.components.course_components.links_course.next_button import next_button
-from mi_web.components.course_components.links_course.back_button import back_button
+from mi_web.components.general_components.next_button import next_button
+from mi_web.components.general_components.back_button import back_button
 from mi_web.components.general_components.zoom_images import zoomed_image
 
 def module_1() -> rx.Component:

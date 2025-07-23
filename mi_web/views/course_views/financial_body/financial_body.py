@@ -1,9 +1,8 @@
 import reflex as rx
 import mi_web.styles.course_styles as c_styles
-import mi_web.styles.styles as styles
 from mi_web.components.general_components.zoom_images import zoomed_image
-from mi_web.views.course_views.financial_body.body_images.intro_video import gif_intro
-from mi_web.styles.styles import Size as Size
+from mi_web.views.course_views.financial_body.intro_video import gif_intro
+from mi_web.styles.course_styles import Size as Size
 
 
 

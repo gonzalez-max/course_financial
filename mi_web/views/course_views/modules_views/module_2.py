@@ -1,13 +1,13 @@
 import reflex as rx 
-from mi_web.components.course_components.links_course.course_navbar import navbar_course
+from mi_web.components.general_components.course_navbar import navbar_course
 from mi_web.components.general_components.footer import footer
-from mi_web.styles.styles import Size as Size
-import mi_web.styles.styles as styles
+from mi_web.styles.course_styles import Size as Size
+import mi_web.styles.course_styles as styles
 import mi_web.styles.course_styles as c_styles
 from mi_web.components.course_components.module2_components.module2_table1 import module2_table1
 from mi_web.components.course_components.module2_components.module2_table2 import module2_table2
-from mi_web.components.course_components.links_course.next_button import next_button
-from mi_web.components.course_components.links_course.back_button import back_button
+from mi_web.components.general_components.next_button import next_button
+from mi_web.components.general_components.back_button import back_button
 from mi_web.components.general_components.zoom_images import zoomed_image
 
 

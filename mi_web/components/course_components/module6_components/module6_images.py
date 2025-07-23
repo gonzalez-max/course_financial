@@ -2,11 +2,11 @@ import reflex as rx
 from mi_web.styles.course_styles import Size as Size
 import mi_web.styles.course_styles as styles
 
-def image_lineas_de_tendencia() -> rx.Component:
+def image_enemigo_tendencias() -> rx.Component:
     return rx.box(
         rx.image(
             height="350px",
-            src=("/lineas_de_tendencia.png?refresh=1"),
+            src=("/enemigo_tendencias.png?refresh=1"),
             width="100%",
             **styles.IMAGE_STYLES
         ),
@@ -14,11 +14,11 @@ def image_lineas_de_tendencia() -> rx.Component:
         justify_content="center"
     )
 
-def image_negociar_rangos() -> rx.Component:
+def image_falsa_ruptura() -> rx.Component:
     return rx.box(
         rx.image(
             height="350px",
-            src=("/negociar_rangos.png?refresh=1"),
+            src=("/falsa_ruptura.png?refresh=1"),
             width="100%",
             **styles.IMAGE_STYLES
         ),
@@ -26,23 +26,11 @@ def image_negociar_rangos() -> rx.Component:
         justify_content="center"
     )
 
-def image_otras_ideas() -> rx.Component:
+def image_ruptura_patron_tecnico() -> rx.Component:
     return rx.box(
         rx.image(
             height="350px",
-            src=("/otras_ideas.png?refresh=1"),
-            width="100%",
-            **styles.IMAGE_STYLES
-        ),
-        align_items="center",
-        justify_content="center"
-    )
-    
-def image_rangos_acumulacion_distribucion() -> rx.Component:
-    return rx.box(
-        rx.image(
-            height="350px",
-            src=("/rangos_acumulacion_distribucion.png?refresh=1"),
+            src=("/ruptura_patron_tecnico.png?refresh=1"),
             width="100%",
             **styles.IMAGE_STYLES
         ),
@@ -50,11 +38,11 @@ def image_rangos_acumulacion_distribucion() -> rx.Component:
         justify_content="center"
     )
 
-def image_riesgo_ganancias_lineas() -> rx.Component:
+def image_ruptura_resistencia() -> rx.Component:
     return rx.box(
         rx.image(
             height="350px",
-            src=("/riesgo_ganancias_lineas.png?refresh=1"),
+            src=("/ruptura_resistencia.png?refresh=1"),
             width="100%",
             **styles.IMAGE_STYLES
         ),
@@ -62,11 +50,11 @@ def image_riesgo_ganancias_lineas() -> rx.Component:
         justify_content="center"
     )
 
-def image1_importancia_lineas() -> rx.Component:
+def image_ruptura_soporte() -> rx.Component:
     return rx.box(
         rx.image(
             height="350px",
-            src=("/importancia_lineas_1.png.png?refresh=1"),
+            src=("/ruptura_soporte.png?refresh=1"),
             width="100%",
             **styles.IMAGE_STYLES
         ),
@@ -74,11 +62,35 @@ def image1_importancia_lineas() -> rx.Component:
         justify_content="center"
     )
 
-def image2_soporte_resistencia() -> rx.Component:
+def image_stop_loss() -> rx.Component:
     return rx.box(
         rx.image(
             height="350px",
-            src=("/importancia_lineas_2.png?refresh=1"),
+            src=("/stop-loss.png?refresh=1"),
+            width="100%",
+            **styles.IMAGE_STYLES
+        ),
+        align_items="center",
+        justify_content="center"
+    )
+
+def image_tendencia_alcista_bajista() -> rx.Component:
+    return rx.box(
+        rx.image(
+            height="350px",
+            src=("/tendencia_alcista_bajista.png?refresh=1"),
+            width="100%",
+            **styles.IMAGE_STYLES
+        ),
+        align_items="center",
+        justify_content="center"
+    )
+
+def image_velocidad_de_las_tendencias() -> rx.Component:
+    return rx.box(
+        rx.image(
+            height="350px",
+            src=("/velocidad_de_las_tendencias.png?refresh=1"),
             width="100%",
             **styles.IMAGE_STYLES
         ),

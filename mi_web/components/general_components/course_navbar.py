@@ -49,7 +49,7 @@ def navbar_course() -> rx.Component:
                             ),
                             content="Pagina Principal",
                         ),
-                        href="/financial_page",
+                        href="/#",
                         style={"text_decoration": "none"},
                     ),
                     align_items="center",

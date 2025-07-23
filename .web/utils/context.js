@@ -2,7 +2,7 @@ import { createContext, useContext, useMemo, useReducer, useState, createElement
 import { applyDelta, Event, hydrateClientStorage, useEventLoop, refs } from "$/utils/state"
 import { jsx } from "@emotion/react";
 
-export const initialState = {"reflex___state____state": {"is_hydrated_rx_state_": false, "router_rx_state_": {"session": {"client_token": "", "client_ip": "", "session_id": ""}, "headers": {"host": "", "origin": "", "upgrade": "", "connection": "", "cookie": "", "pragma": "", "cache_control": "", "user_agent": "", "sec_websocket_version": "", "sec_websocket_key": "", "sec_websocket_extensions": "", "accept_encoding": "", "accept_language": "", "raw_headers": {}}, "page": {"host": "", "path": "", "raw_path": "", "full_path": "", "full_raw_path": "", "params": {}}, "url": "", "route_id": ""}}, "reflex___state____state.mi_web___components___course_components___links_course___course_navbar____logo_state": {"click_count_rx_state_": 0, "logo_src_rx_state_": "/icons/orbesdmc-black.png"}, "reflex___state____state.mi_web___components___general_components___carousel____carousel_state": {"images_rx_state_": ["/landing_course.png", "/seccion_modulos.png", "/captura1_modulos.png", "/captura2_modulos.png", "/captura3_modulos.png", "/captura4_modulos.png"], "index_rx_state_": 0}, "reflex___state____state.mi_web___components___general_components___carousel____carousel_state2": {"images_rx_state_": ["findash_captura_1.PNG", "findash_captura_2.PNG", "findash_captura_3.PNG", "findash_captura_4.PNG", "findash_captura_5.PNG"], "index_rx_state_": 0}, "reflex___state____state.mi_web___components___general_components___footer____logo_state": {"click_count_rx_state_": 0, "logo_src_rx_state_": "/icons/orbesdmc-black.png"}, "reflex___state____state.mi_web___components___general_components___nav_bar____logo_state": {"click_count_rx_state_": 0, "logo_src_rx_state_": "/icons/orbesdmc-black.png"}, "reflex___state____state.mi_web___mi_web____state": {}, "reflex___state____state.mi_web___views___web_principal_views___soporte_page____contact_form_state": {}, "reflex___state____state.reflex___state____frontend_event_exception_state": {}, "reflex___state____state.reflex___state____on_load_internal_state": {}, "reflex___state____state.reflex___state____update_vars_internal_state": {}}
+export const initialState = {"reflex___state____state": {"is_hydrated_rx_state_": false, "router_rx_state_": {"session": {"client_token": "", "client_ip": "", "session_id": ""}, "headers": {"host": "", "origin": "", "upgrade": "", "connection": "", "cookie": "", "pragma": "", "cache_control": "", "user_agent": "", "sec_websocket_version": "", "sec_websocket_key": "", "sec_websocket_extensions": "", "accept_encoding": "", "accept_language": "", "raw_headers": {}}, "page": {"host": "", "path": "", "raw_path": "", "full_path": "", "full_raw_path": "", "params": {}}, "url": "", "route_id": ""}}, "reflex___state____state.mi_web___components___general_components___course_navbar____logo_state": {"click_count_rx_state_": 0, "logo_src_rx_state_": "/icons/orbesdmc-black.png"}, "reflex___state____state.mi_web___components___general_components___footer____logo_state": {"click_count_rx_state_": 0, "logo_src_rx_state_": "/icons/orbesdmc-black.png"}, "reflex___state____state.mi_web___mi_web____state": {}, "reflex___state____state.mi_web___views___web_principal_views___soporte_page____contact_form_state": {}, "reflex___state____state.reflex___state____frontend_event_exception_state": {}, "reflex___state____state.reflex___state____on_load_internal_state": {}, "reflex___state____state.reflex___state____update_vars_internal_state": {}}
 
 export const defaultColorMode = "system"
 export const ColorModeContext = createContext(null);
@@ -10,11 +10,8 @@ export const UploadFilesContext = createContext(null);
 export const DispatchContext = createContext(null);
 export const StateContexts = {
   reflex___state____state: createContext(null),
-  reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state: createContext(null),
-  reflex___state____state__mi_web___components___general_components___carousel____carousel_state: createContext(null),
-  reflex___state____state__mi_web___components___general_components___carousel____carousel_state2: createContext(null),
+  reflex___state____state__mi_web___components___general_components___course_navbar____logo_state: createContext(null),
   reflex___state____state__mi_web___components___general_components___footer____logo_state: createContext(null),
-  reflex___state____state__mi_web___components___general_components___nav_bar____logo_state: createContext(null),
   reflex___state____state__mi_web___mi_web____state: createContext(null),
   reflex___state____state__mi_web___views___web_principal_views___soporte_page____contact_form_state: createContext(null),
   reflex___state____state__reflex___state____frontend_event_exception_state: createContext(null),
@@ -99,11 +96,8 @@ export function EventLoopProvider({ children }) {
 
 export function StateProvider({ children }) {
   const [reflex___state____state, dispatch_reflex___state____state] = useReducer(applyDelta, initialState["reflex___state____state"])
-  const [reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state, dispatch_reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state] = useReducer(applyDelta, initialState["reflex___state____state.mi_web___components___course_components___links_course___course_navbar____logo_state"])
-  const [reflex___state____state__mi_web___components___general_components___carousel____carousel_state, dispatch_reflex___state____state__mi_web___components___general_components___carousel____carousel_state] = useReducer(applyDelta, initialState["reflex___state____state.mi_web___components___general_components___carousel____carousel_state"])
-  const [reflex___state____state__mi_web___components___general_components___carousel____carousel_state2, dispatch_reflex___state____state__mi_web___components___general_components___carousel____carousel_state2] = useReducer(applyDelta, initialState["reflex___state____state.mi_web___components___general_components___carousel____carousel_state2"])
+  const [reflex___state____state__mi_web___components___general_components___course_navbar____logo_state, dispatch_reflex___state____state__mi_web___components___general_components___course_navbar____logo_state] = useReducer(applyDelta, initialState["reflex___state____state.mi_web___components___general_components___course_navbar____logo_state"])
   const [reflex___state____state__mi_web___components___general_components___footer____logo_state, dispatch_reflex___state____state__mi_web___components___general_components___footer____logo_state] = useReducer(applyDelta, initialState["reflex___state____state.mi_web___components___general_components___footer____logo_state"])
-  const [reflex___state____state__mi_web___components___general_components___nav_bar____logo_state, dispatch_reflex___state____state__mi_web___components___general_components___nav_bar____logo_state] = useReducer(applyDelta, initialState["reflex___state____state.mi_web___components___general_components___nav_bar____logo_state"])
   const [reflex___state____state__mi_web___mi_web____state, dispatch_reflex___state____state__mi_web___mi_web____state] = useReducer(applyDelta, initialState["reflex___state____state.mi_web___mi_web____state"])
   const [reflex___state____state__mi_web___views___web_principal_views___soporte_page____contact_form_state, dispatch_reflex___state____state__mi_web___views___web_principal_views___soporte_page____contact_form_state] = useReducer(applyDelta, initialState["reflex___state____state.mi_web___views___web_principal_views___soporte_page____contact_form_state"])
   const [reflex___state____state__reflex___state____frontend_event_exception_state, dispatch_reflex___state____state__reflex___state____frontend_event_exception_state] = useReducer(applyDelta, initialState["reflex___state____state.reflex___state____frontend_event_exception_state"])
@@ -112,11 +106,8 @@ export function StateProvider({ children }) {
   const dispatchers = useMemo(() => {
     return {
       "reflex___state____state": dispatch_reflex___state____state,
-      "reflex___state____state.mi_web___components___course_components___links_course___course_navbar____logo_state": dispatch_reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state,
-      "reflex___state____state.mi_web___components___general_components___carousel____carousel_state": dispatch_reflex___state____state__mi_web___components___general_components___carousel____carousel_state,
-      "reflex___state____state.mi_web___components___general_components___carousel____carousel_state2": dispatch_reflex___state____state__mi_web___components___general_components___carousel____carousel_state2,
+      "reflex___state____state.mi_web___components___general_components___course_navbar____logo_state": dispatch_reflex___state____state__mi_web___components___general_components___course_navbar____logo_state,
       "reflex___state____state.mi_web___components___general_components___footer____logo_state": dispatch_reflex___state____state__mi_web___components___general_components___footer____logo_state,
-      "reflex___state____state.mi_web___components___general_components___nav_bar____logo_state": dispatch_reflex___state____state__mi_web___components___general_components___nav_bar____logo_state,
       "reflex___state____state.mi_web___mi_web____state": dispatch_reflex___state____state__mi_web___mi_web____state,
       "reflex___state____state.mi_web___views___web_principal_views___soporte_page____contact_form_state": dispatch_reflex___state____state__mi_web___views___web_principal_views___soporte_page____contact_form_state,
       "reflex___state____state.reflex___state____frontend_event_exception_state": dispatch_reflex___state____state__reflex___state____frontend_event_exception_state,
@@ -127,16 +118,13 @@ export function StateProvider({ children }) {
 
   return (
     createElement(StateContexts.reflex___state____state,{value: reflex___state____state},
-    createElement(StateContexts.reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state,{value: reflex___state____state__mi_web___components___course_components___links_course___course_navbar____logo_state},
-    createElement(StateContexts.reflex___state____state__mi_web___components___general_components___carousel____carousel_state,{value: reflex___state____state__mi_web___components___general_components___carousel____carousel_state},
-    createElement(StateContexts.reflex___state____state__mi_web___components___general_components___carousel____carousel_state2,{value: reflex___state____state__mi_web___components___general_components___carousel____carousel_state2},
+    createElement(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state,{value: reflex___state____state__mi_web___components___general_components___course_navbar____logo_state},
     createElement(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state,{value: reflex___state____state__mi_web___components___general_components___footer____logo_state},
-    createElement(StateContexts.reflex___state____state__mi_web___components___general_components___nav_bar____logo_state,{value: reflex___state____state__mi_web___components___general_components___nav_bar____logo_state},
     createElement(StateContexts.reflex___state____state__mi_web___mi_web____state,{value: reflex___state____state__mi_web___mi_web____state},
     createElement(StateContexts.reflex___state____state__mi_web___views___web_principal_views___soporte_page____contact_form_state,{value: reflex___state____state__mi_web___views___web_principal_views___soporte_page____contact_form_state},
     createElement(StateContexts.reflex___state____state__reflex___state____frontend_event_exception_state,{value: reflex___state____state__reflex___state____frontend_event_exception_state},
     createElement(StateContexts.reflex___state____state__reflex___state____on_load_internal_state,{value: reflex___state____state__reflex___state____on_load_internal_state},
     createElement(StateContexts.reflex___state____state__reflex___state____update_vars_internal_state,{value: reflex___state____state__reflex___state____update_vars_internal_state},
     createElement(DispatchContext, {value: dispatchers}, children)
-)))))))))))  )
+))))))))  )
 }

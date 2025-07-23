@@ -1,6 +1,6 @@
 import reflex as rx
-from mi_web.styles.styles import Size as Size
-import mi_web.styles.styles as styles
+from mi_web.styles.course_styles import Size as Size
+import mi_web.styles.course_styles as styles
 import mi_web.styles.course_styles as c_styles
 
 
