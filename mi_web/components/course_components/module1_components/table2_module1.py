@@ -85,7 +85,7 @@ def mobile_table2_module1() -> rx.Component:
                         font_size="10px",
                         variant="surface",
                         size="2",
-                        max_width="400px",
+                        max_width="300px",
                         **c_styles.TABLES_STYLES
                     ),
     )
