@@ -2,7 +2,7 @@ import reflex as rx
 import mi_web.styles.course_styles as c_styles
 
 def table1_module1() -> rx.Component:
-    return rx.desktop_only(
+    return rx.tablet_and_desktop(
             rx.table.root(
                         rx.table.header(
                             rx.table.row(
@@ -45,7 +45,7 @@ def table1_module1() -> rx.Component:
                     ),
 )
 def mobile_table1_module1() -> rx.Component:
-    return rx.mobile_and_tablet(
+    return rx.mobile_only(
             rx.table.root(
                         rx.table.header(
                             rx.table.row(

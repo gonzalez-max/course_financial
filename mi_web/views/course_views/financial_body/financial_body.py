@@ -32,8 +32,7 @@ def financial_body() -> rx.Component:
                                         
                                         rx.link(
                                                 rx.button("Comenzar con el curso",
-                                                        on_click=lambda: rx.redirect("/choice_modules"), 
-                                                        is_external=False,
+                                                       on_click=rx.redirect("/choice_modules"),
                                                         **c_styles.BUTTON_STYLE,
                                                         margin_top=Size.DEFAULT.value
                                                 ),

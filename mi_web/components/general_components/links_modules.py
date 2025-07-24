@@ -8,7 +8,7 @@ def links_modules() -> rx.Component:
         rx.center(
                 rx.grid(
                         rx.button(" Módulo numero 1: Fundamentos de Finanzas personales y el Mercado.", 
-                                on_click=lambda: rx.redirect("/module_1"), is_external=False,**c_styles.BUTTON_COURSES_STYLES,
+                                on_click=rx.redirect("/module_1"),**c_styles.BUTTON_COURSES_STYLES,
                         ),
                         rx.button(" Módulo numero 2: Inversores y Tipos de Instrumentos.", 
                                 on_click=lambda: rx.redirect("/module_2"), is_external=False,**c_styles.BUTTON_COURSES_STYLES,

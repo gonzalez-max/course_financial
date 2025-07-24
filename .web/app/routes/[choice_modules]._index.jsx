@@ -10,25 +10,6 @@ import { jsx } from "@emotion/react"
 
 
 
-function Tooltip_107787178243800509720440254496591202213 () {
-  
-  const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    jsx(
-RadixThemesTooltip,
-{content:"No me toques."},
-jsx("img",{css:({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))),src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
-,)
-  )
-}
-
 function Img_44193794075118247882912592078120564270 () {
   
   const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
@@ -65,43 +46,7 @@ RadixThemesDropdownMenu.Item,
   )
 }
 
-function Dropdownmenu__item_219216628386599214634898977905934367657 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_b48446425b75df925e56732f12d72355 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesDropdownMenu.Item,
-{onClick:on_click_b48446425b75df925e56732f12d72355},
-"Contactos"
-,)
-  )
-}
-
-function Img_164144592572901142842083229647882011920 () {
-  
-  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_bd1bd52eb3f49731a43de1af718afe95 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx("img",{css:({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:on_click_bd1bd52eb3f49731a43de1af718afe95,src:reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src_rx_state_},)
-
-  )
-}
-
-function Link_4394461083363464743139731351839818069 () {
+function Link_193367978553559349980883156815892661590 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
@@ -122,7 +67,7 @@ RadixThemesGrid,
 {columns:"2",css:({ ["maxWidth"] : "600px", ["alignItems"] : "center", ["justifyItems"] : "center" }),gap:"5"},
 jsx(
 RadixThemesButton,
-{css:({ ["isExternal"] : false, ["width"] : "100%", ["minHeigth"] : "auto", ["height"] : "100px", ["padding"] : "10px", ["spacing"] : "5px", ["borderRadius"] : "15px", ["marginBottom"] : "10px", ["fontSize"] : "1rem", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.1)", ["border"] : "1.5px solid white", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["overflow"] : "hidden", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.3)", ["borderColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "white", ["textDecoration"] : "none" }), ["&:media"] : ({ ["(max-width: 768px)"] : ({ ["width"] : "100%", ["fontSize"] : "1rem", ["padding"] : "10px", ["size"] : "1" }), ["(max-width: 430px)"] : ({ ["fontSize"] : "5px", ["padding"] : "8px", ["minHeight"] : "60px", ["size"] : "2rem" }) }) }),onClick:((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_1", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))),radius:"medium",size:"1",variant:"solid"},
+{css:({ ["width"] : "100%", ["minHeigth"] : "auto", ["height"] : "100px", ["padding"] : "10px", ["spacing"] : "5px", ["borderRadius"] : "15px", ["marginBottom"] : "10px", ["fontSize"] : "1rem", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.1)", ["border"] : "1.5px solid white", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["overflow"] : "hidden", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.3)", ["borderColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "white", ["textDecoration"] : "none" }), ["&:media"] : ({ ["(max-width: 768px)"] : ({ ["width"] : "100%", ["fontSize"] : "1rem", ["padding"] : "10px", ["size"] : "1" }), ["(max-width: 430px)"] : ({ ["fontSize"] : "5px", ["padding"] : "8px", ["minHeight"] : "60px", ["size"] : "2rem" }) }) }),onClick:((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_1", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))),radius:"medium",size:"1",variant:"solid"},
 " M\u00f3dulo numero 1: Fundamentos de Finanzas personales y el Mercado."
 ,),jsx(
 RadixThemesButton,
@@ -161,6 +106,61 @@ RadixThemesButton,
 {css:({ ["isExternal"] : false, ["width"] : "100%", ["minHeigth"] : "auto", ["height"] : "100px", ["padding"] : "10px", ["spacing"] : "5px", ["borderRadius"] : "15px", ["marginBottom"] : "10px", ["fontSize"] : "1rem", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.1)", ["border"] : "1.5px solid white", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["overflow"] : "hidden", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.3)", ["borderColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "white", ["textDecoration"] : "none" }), ["&:media"] : ({ ["(max-width: 768px)"] : ({ ["width"] : "100%", ["fontSize"] : "1rem", ["padding"] : "10px", ["size"] : "1" }), ["(max-width: 430px)"] : ({ ["fontSize"] : "5px", ["padding"] : "8px", ["minHeight"] : "60px", ["size"] : "2rem" }) }) }),onClick:((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_10", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))),radius:"medium",size:"1",variant:"solid"},
 " M\u00f3dulo numero 10: Plataformas de Trading y Final del Curso"
 ,),),),)
+  )
+}
+
+function Img_164144592572901142842083229647882011920 () {
+  
+  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_bd1bd52eb3f49731a43de1af718afe95 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx("img",{css:({ ["width"] : "50px", ["height"] : "50px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:on_click_bd1bd52eb3f49731a43de1af718afe95,src:reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src_rx_state_},)
+
+  )
+}
+
+function Dropdownmenu__item_219216628386599214634898977905934367657 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_b48446425b75df925e56732f12d72355 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesDropdownMenu.Item,
+{onClick:on_click_b48446425b75df925e56732f12d72355},
+"Contactos"
+,)
+  )
+}
+
+function Tooltip_107787178243800509720440254496591202213 () {
+  
+  const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    jsx(
+RadixThemesTooltip,
+{content:"No me toques."},
+jsx("img",{css:({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))),src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
+,)
   )
 }
 
@@ -400,7 +400,7 @@ jsx(
 RadixThemesHeading,
 {css:({ ["@media screen and (min-width: 0)"] : ({ ["fontSize"] : "35px" }), ["@media screen and (min-width: 30em)"] : ({ ["fontSize"] : "42px" }), ["@media screen and (min-width: 48em)"] : ({ ["fontSize"] : "46px" }), ["@media screen and (min-width: 62em)"] : ({ ["fontSize"] : "55px" }), ["fontWeight"] : "600", ["color"] : "white", ["textAlign"] : "center", ["alignItems"] : "center", ["padding"] : "17px", ["letterSpacing"] : "0.07em", ["width"] : "100%", ["maxWidth"] : "600px", ["margin"] : "auto", ["lineHeight"] : "1.1", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["textWrap"] : "balance", ["marginTop"] : "1em" })},
 "Secci\u00f3n de M\u00f3dulos"
-,),jsx(Link_4394461083363464743139731351839818069,{},)
+,),jsx(Link_193367978553559349980883156815892661590,{},)
 ,),),jsx(
 RadixThemesFlex,
 {align:"start",className:"rx-Stack",css:({ ["alignItems"] : "center", ["width"] : "100%", ["justifyContent"] : "center", ["backgroundColor"] : "transparent", ["display"] : "flex", ["flexWrap"] : "wrap", ["gap"] : "10px", ["maxWidth"] : "100%" }),direction:"column",gap:"3"},

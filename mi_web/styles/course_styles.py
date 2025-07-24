@@ -46,19 +46,20 @@ rx.Config(
 #____________________________________CURSO__STYLES______________________________________________________________________-#
 
 COURSE_STYLES = {
+    "background" : "linear-gradient(180deg, rgba(74,34,98,1) 0%, rgba(71,85,139,1) 52%, rgba(11,103,93,1) 100%)",
     "text_color" : "black",
     "width":"100%",
-    "background" : "linear-gradient(180deg, rgba(74,34,98,1) 0%, rgba(71,85,139,1) 52%, rgba(11,103,93,1) 100%)",
+    "max_width":"100%",
+    "display": "flex",
     "flex_direction": "column",
     "min_height":"100vh",
-    "display": "flex",
+    #"justify_content": "space-between",
     "flex_wrap": "wrap",
     "justify_content": "center", 
-    "gap": "5px" ,
+    "gap": "10px" ,
     "align_items":"center",
     "padding_x": "20px",
-    "margin": "0 auto",
-    "max_width" :"100%"
+    "margin": "0 auto"
     
 }
 #______________________CHOICE_MODULES_STYLE______________________________________________#
@@ -79,46 +80,6 @@ STYLES_CHOICE_MODULES={
     "margin": "0 auto"
 }
 
-
-
-
-#_____________________BUTTONS_STYLES________________________________________________________#
-#estilos de botones
-BUTTON_STYLE = { 
-    "size": "3",
-    "variant": "solid",
-    "radius": "medium",
-    "width": "100%",  # Ajusta el ancho del botón
-    "height": "100px",  # Ajusta la altura del botón
-    "padding" : "30px", # Ajusta el padding interno
-    "spacing" : "5px",
-    "border_radius":"50px",
-    "font_size": "20px",
-    "text_transform": "capitalize", #tipo de texto 
-    "letter_spacing" : "1px", #espacio sutil entre letras 
-    "color": "white", #color fuente
-    "white_space": "normal",  # Permite que el texto se divida en varias líneas
-    "text_align": "center",   # Asegura que el texto esté centrado dentro del botón
-    "max_width": "400px",     # Ajusta el ancho máximo del botón para evitar que sea demasiado ancho
-    "background_color":"rgba(0,0,0,0.9)",#color de fondo 
-    "border": "1.5px solid black",     #bordes 
-    "word_wrap": "break-word",  # Ajuste del texto dentro del botón
-    "display": "flex",  # Permitir centrado interno
-    "align_items": "center",  # Centrar verticalmente el contenido
-    "justify_content": "center",  # Centrar horizontalmente el contenido
-    "transition": "all 0.3s ease-in-out", #animacion
-    "cursor":"pointer",
-    "text_decoration": "none",  # Elimina el subrayado del texto
-    "_hover": {
-        "background_color":"white",  
-        "border_color": "black",  # Bordes visibles en hover
-        "transform": "scale(1.10)",
-        "color":"black",
-        "text_decoration": "none",  # Elimina el subrayado del texto
-    },
-}
-
-#botones de la seccion choice_modules o links modules
 BUTTON_COURSES_STYLES={ 
     "size": "1",
     "variant": "solid",
@@ -174,6 +135,41 @@ BUTTON_COURSES_STYLES={
 
 
 
+#_____________________BUTTONS_STYLES________________________________________________________#
+#estilos de botones
+BUTTON_STYLE = { 
+    "size": "3",
+    "variant": "solid",
+    "radius": "medium",
+    "width": "100%",  # Ajusta el ancho del botón
+    "height": "100px",  # Ajusta la altura del botón
+    "padding" : "30px", # Ajusta el padding interno
+    "spacing" : "5px",
+    "border_radius":"50px",
+    "font_size": "20px",
+    "text_transform": "capitalize", #tipo de texto 
+    "letter_spacing" : "1px", #espacio sutil entre letras 
+    "color": "white", #color fuente
+    "white_space": "normal",  # Permite que el texto se divida en varias líneas
+    "text_align": "center",   # Asegura que el texto esté centrado dentro del botón
+    "max_width": "400px",     # Ajusta el ancho máximo del botón para evitar que sea demasiado ancho
+    "background_color":"rgba(0,0,0,0.9)",#color de fondo 
+    "border": "1.5px solid black",     #bordes 
+    "word_wrap": "break-word",  # Ajuste del texto dentro del botón
+    "display": "flex",  # Permitir centrado interno
+    "align_items": "center",  # Centrar verticalmente el contenido
+    "justify_content": "center",  # Centrar horizontalmente el contenido
+    "transition": "all 0.3s ease-in-out", #animacion
+    "cursor":"pointer",
+    "text_decoration": "none",  # Elimina el subrayado del texto
+    "_hover": {
+        "background_color":"white",  
+        "border_color": "black",  # Bordes visibles en hover
+        "transform": "scale(1.10)",
+        "color":"black",
+        "text_decoration": "none",  # Elimina el subrayado del texto
+    },
+}
 
 
 #________________________ NAV BAR STYLES_________________________________________________________#
@@ -287,10 +283,9 @@ TABLES_STYLES={
 IMAGE_STYLES={
     "width":"100%",
     "max_width":"600px",
-    "max_height":"400px",
+    #"max_height":"400px",
     "background_color": "#99003d",
     "color": "#333333",
-    "border": "1px solid white", #color de bordes normales
     "border_radius": "20px", #forma de los bordes
     "cursor": "pointer",  # Indica que la imagen es clickeable
     "transition": "transform 0.2s ease-in-out",  # Suaviza el efecto
@@ -299,6 +294,7 @@ IMAGE_STYLES={
     "object_fit":"cover",  # Evita deformaciones
     "display":"block",  # Asegura que el margin auto funcione
     "margin":"auto",
+    "box_sizing": "border-box",
     "_hover": {
         "background_color": "#800080",  # Azul más oscuro en hover
         "border_color": "#6366F1",  # Bordes visibles en hover
@@ -358,7 +354,7 @@ TEXT_STYLE = {
         "font_family": "Roboto",
         "max_width":"600px",
         "font_weight":"400",
-        "font_size": "17px",
+        "font_size": "clamp(14px, 2vw, 18px)",
         "display": "block",
         
     },
