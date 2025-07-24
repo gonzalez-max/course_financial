@@ -27,12 +27,12 @@ function Img_44193794075118247882912592078120564270 () {
   )
 }
 
-function Dropdownmenu__item_287075228212589713390829397942124902700 () {
+function Dropdownmenu__item_219216628386599214634898977905934367657 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_5f3f71c76c6fe2931e3440026bbf646f = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/choice_modules", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+  const on_click_b48446425b75df925e56732f12d72355 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
 
 
 
@@ -40,14 +40,53 @@ function Dropdownmenu__item_287075228212589713390829397942124902700 () {
   return (
     jsx(
 RadixThemesDropdownMenu.Item,
-{onClick:on_click_5f3f71c76c6fe2931e3440026bbf646f},
-"Curso"
+{onClick:on_click_b48446425b75df925e56732f12d72355},
+"Contactos"
 ,)
   )
 }
 
-function Link_193367978553559349980883156815892661590 () {
+function Button_157604055228157808167019606969243274599 () {
   
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_3f068d1be5cea8a42f0fb8ce08873c71 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_6", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["isExternal"] : false, ["width"] : "100%", ["minHeight"] : "auto", ["height"] : "100px", ["padding"] : "10px", ["spacing"] : "5px", ["borderRadius"] : "15px", ["marginBottom"] : "10px", ["fontSize"] : "1rem", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.1)", ["border"] : "1.5px solid white", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["overflow"] : "hidden", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.3)", ["borderColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "white", ["textDecoration"] : "none" }) }),onClick:on_click_3f068d1be5cea8a42f0fb8ce08873c71,radius:"medium",size:"1",variant:"solid"},
+" M\u00f3dulo numero 6: Tendencias y como identificarlas."
+,)
+  )
+}
+
+function Button_131188562616038043529214984279314035248 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_babb70248ca98812d507e961a9be1e52 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_2", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["isExternal"] : false, ["width"] : "100%", ["minHeight"] : "auto", ["height"] : "100px", ["padding"] : "10px", ["spacing"] : "5px", ["borderRadius"] : "15px", ["marginBottom"] : "10px", ["fontSize"] : "1rem", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.1)", ["border"] : "1.5px solid white", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["overflow"] : "hidden", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.3)", ["borderColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "white", ["textDecoration"] : "none" }) }),onClick:on_click_babb70248ca98812d507e961a9be1e52,radius:"medium",size:"1",variant:"solid"},
+" M\u00f3dulo numero 2: Inversores y Tipos de Instrumentos."
+,)
+  )
+}
+
+function Tooltip_107787178243800509720440254496591202213 () {
+  
+  const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
@@ -57,55 +96,48 @@ function Link_193367978553559349980883156815892661590 () {
   
   return (
     jsx(
-RadixThemesLink,
-{css:({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) }),href:"#"},
-jsx(
-RadixThemesFlex,
-{css:({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["marginBottom"] : "4em" })},
-jsx(
-RadixThemesGrid,
-{columns:"2",css:({ ["maxWidth"] : "600px", ["alignItems"] : "center", ["justifyItems"] : "center" }),gap:"5"},
-jsx(
+RadixThemesTooltip,
+{content:"No me toques."},
+jsx("img",{css:({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))),src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
+,)
+  )
+}
+
+function Button_38651761676760313400843908096941736611 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_e9e65047ace9869199663e14ec6fd7f2 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_10", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
 RadixThemesButton,
-{css:({ ["width"] : "100%", ["minHeigth"] : "auto", ["height"] : "100px", ["padding"] : "10px", ["spacing"] : "5px", ["borderRadius"] : "15px", ["marginBottom"] : "10px", ["fontSize"] : "1rem", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.1)", ["border"] : "1.5px solid white", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["overflow"] : "hidden", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.3)", ["borderColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "white", ["textDecoration"] : "none" }), ["&:media"] : ({ ["(max-width: 768px)"] : ({ ["width"] : "100%", ["fontSize"] : "1rem", ["padding"] : "10px", ["size"] : "1" }), ["(max-width: 430px)"] : ({ ["fontSize"] : "5px", ["padding"] : "8px", ["minHeight"] : "60px", ["size"] : "2rem" }) }) }),onClick:((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_1", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))),radius:"medium",size:"1",variant:"solid"},
-" M\u00f3dulo numero 1: Fundamentos de Finanzas personales y el Mercado."
-,),jsx(
-RadixThemesButton,
-{css:({ ["isExternal"] : false, ["width"] : "100%", ["minHeigth"] : "auto", ["height"] : "100px", ["padding"] : "10px", ["spacing"] : "5px", ["borderRadius"] : "15px", ["marginBottom"] : "10px", ["fontSize"] : "1rem", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.1)", ["border"] : "1.5px solid white", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["overflow"] : "hidden", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.3)", ["borderColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "white", ["textDecoration"] : "none" }), ["&:media"] : ({ ["(max-width: 768px)"] : ({ ["width"] : "100%", ["fontSize"] : "1rem", ["padding"] : "10px", ["size"] : "1" }), ["(max-width: 430px)"] : ({ ["fontSize"] : "5px", ["padding"] : "8px", ["minHeight"] : "60px", ["size"] : "2rem" }) }) }),onClick:((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_2", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))),radius:"medium",size:"1",variant:"solid"},
-" M\u00f3dulo numero 2: Inversores y Tipos de Instrumentos."
-,),jsx(
-RadixThemesButton,
-{css:({ ["isExternal"] : false, ["width"] : "100%", ["minHeigth"] : "auto", ["height"] : "100px", ["padding"] : "10px", ["spacing"] : "5px", ["borderRadius"] : "15px", ["marginBottom"] : "10px", ["fontSize"] : "1rem", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.1)", ["border"] : "1.5px solid white", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["overflow"] : "hidden", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.3)", ["borderColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "white", ["textDecoration"] : "none" }), ["&:media"] : ({ ["(max-width: 768px)"] : ({ ["width"] : "100%", ["fontSize"] : "1rem", ["padding"] : "10px", ["size"] : "1" }), ["(max-width: 430px)"] : ({ ["fontSize"] : "5px", ["padding"] : "8px", ["minHeight"] : "60px", ["size"] : "2rem" }) }) }),onClick:((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_3", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))),radius:"medium",size:"1",variant:"solid"},
-" M\u00f3dulo numero 3: Introduccion al Trading."
-,),jsx(
-RadixThemesButton,
-{css:({ ["isExternal"] : false, ["width"] : "100%", ["minHeigth"] : "auto", ["height"] : "100px", ["padding"] : "10px", ["spacing"] : "5px", ["borderRadius"] : "15px", ["marginBottom"] : "10px", ["fontSize"] : "1rem", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.1)", ["border"] : "1.5px solid white", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["overflow"] : "hidden", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.3)", ["borderColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "white", ["textDecoration"] : "none" }), ["&:media"] : ({ ["(max-width: 768px)"] : ({ ["width"] : "100%", ["fontSize"] : "1rem", ["padding"] : "10px", ["size"] : "1" }), ["(max-width: 430px)"] : ({ ["fontSize"] : "5px", ["padding"] : "8px", ["minHeight"] : "60px", ["size"] : "2rem" }) }) }),onClick:((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_4", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))),radius:"medium",size:"1",variant:"solid"},
-" M\u00f3dulo numero 4: Fundamentos del An\u00e1lisis T\u00e9cnico y Patrones."
-,),jsx(
-RadixThemesButton,
-{css:({ ["isExternal"] : false, ["width"] : "100%", ["minHeigth"] : "auto", ["height"] : "100px", ["padding"] : "10px", ["spacing"] : "5px", ["borderRadius"] : "15px", ["marginBottom"] : "10px", ["fontSize"] : "1rem", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.1)", ["border"] : "1.5px solid white", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["overflow"] : "hidden", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.3)", ["borderColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "white", ["textDecoration"] : "none" }), ["&:media"] : ({ ["(max-width: 768px)"] : ({ ["width"] : "100%", ["fontSize"] : "1rem", ["padding"] : "10px", ["size"] : "1" }), ["(max-width: 430px)"] : ({ ["fontSize"] : "5px", ["padding"] : "8px", ["minHeight"] : "60px", ["size"] : "2rem" }) }) }),onClick:((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_5", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))),radius:"medium",size:"1",variant:"solid"},
-" M\u00f3dulo numero 5: Dominando Soportes, Resistencias y Rangos."
-,),jsx(
-RadixThemesButton,
-{css:({ ["isExternal"] : false, ["width"] : "100%", ["minHeigth"] : "auto", ["height"] : "100px", ["padding"] : "10px", ["spacing"] : "5px", ["borderRadius"] : "15px", ["marginBottom"] : "10px", ["fontSize"] : "1rem", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.1)", ["border"] : "1.5px solid white", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["overflow"] : "hidden", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.3)", ["borderColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "white", ["textDecoration"] : "none" }), ["&:media"] : ({ ["(max-width: 768px)"] : ({ ["width"] : "100%", ["fontSize"] : "1rem", ["padding"] : "10px", ["size"] : "1" }), ["(max-width: 430px)"] : ({ ["fontSize"] : "5px", ["padding"] : "8px", ["minHeight"] : "60px", ["size"] : "2rem" }) }) }),onClick:((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_6", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))),radius:"medium",size:"1",variant:"solid"},
-" M\u00f3dulo numero 6: Tendencias y como identificarlas."
-,),jsx(
-RadixThemesButton,
-{css:({ ["isExternal"] : false, ["width"] : "100%", ["minHeigth"] : "auto", ["height"] : "100px", ["padding"] : "10px", ["spacing"] : "5px", ["borderRadius"] : "15px", ["marginBottom"] : "10px", ["fontSize"] : "1rem", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.1)", ["border"] : "1.5px solid white", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["overflow"] : "hidden", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.3)", ["borderColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "white", ["textDecoration"] : "none" }), ["&:media"] : ({ ["(max-width: 768px)"] : ({ ["width"] : "100%", ["fontSize"] : "1rem", ["padding"] : "10px", ["size"] : "1" }), ["(max-width: 430px)"] : ({ ["fontSize"] : "5px", ["padding"] : "8px", ["minHeight"] : "60px", ["size"] : "2rem" }) }) }),onClick:((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_7", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))),radius:"medium",size:"1",variant:"solid"},
-" M\u00f3dulo numero 7: Indicadores y Entradas Exitosas"
-,),jsx(
-RadixThemesButton,
-{css:({ ["isExternal"] : false, ["width"] : "100%", ["minHeigth"] : "auto", ["height"] : "100px", ["padding"] : "10px", ["spacing"] : "5px", ["borderRadius"] : "15px", ["marginBottom"] : "10px", ["fontSize"] : "1rem", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.1)", ["border"] : "1.5px solid white", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["overflow"] : "hidden", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.3)", ["borderColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "white", ["textDecoration"] : "none" }), ["&:media"] : ({ ["(max-width: 768px)"] : ({ ["width"] : "100%", ["fontSize"] : "1rem", ["padding"] : "10px", ["size"] : "1" }), ["(max-width: 430px)"] : ({ ["fontSize"] : "5px", ["padding"] : "8px", ["minHeight"] : "60px", ["size"] : "2rem" }) }) }),onClick:((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_8", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))),radius:"medium",size:"1",variant:"solid"},
-" M\u00f3dulo numero 8: Hablemos de Criptomonedas."
-,),jsx(
-RadixThemesButton,
-{css:({ ["isExternal"] : false, ["width"] : "100%", ["minHeigth"] : "auto", ["height"] : "100px", ["padding"] : "10px", ["spacing"] : "5px", ["borderRadius"] : "15px", ["marginBottom"] : "10px", ["fontSize"] : "1rem", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.1)", ["border"] : "1.5px solid white", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["overflow"] : "hidden", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.3)", ["borderColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "white", ["textDecoration"] : "none" }), ["&:media"] : ({ ["(max-width: 768px)"] : ({ ["width"] : "100%", ["fontSize"] : "1rem", ["padding"] : "10px", ["size"] : "1" }), ["(max-width: 430px)"] : ({ ["fontSize"] : "5px", ["padding"] : "8px", ["minHeight"] : "60px", ["size"] : "2rem" }) }) }),onClick:((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_9", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))),radius:"medium",size:"1",variant:"solid"},
-" M\u00f3dulo numero 9: Las Estafas en el Trading y las Inversiones"
-,),jsx(
-RadixThemesButton,
-{css:({ ["isExternal"] : false, ["width"] : "100%", ["minHeigth"] : "auto", ["height"] : "100px", ["padding"] : "10px", ["spacing"] : "5px", ["borderRadius"] : "15px", ["marginBottom"] : "10px", ["fontSize"] : "1rem", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.1)", ["border"] : "1.5px solid white", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["overflow"] : "hidden", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.3)", ["borderColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "white", ["textDecoration"] : "none" }), ["&:media"] : ({ ["(max-width: 768px)"] : ({ ["width"] : "100%", ["fontSize"] : "1rem", ["padding"] : "10px", ["size"] : "1" }), ["(max-width: 430px)"] : ({ ["fontSize"] : "5px", ["padding"] : "8px", ["minHeight"] : "60px", ["size"] : "2rem" }) }) }),onClick:((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_10", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))),radius:"medium",size:"1",variant:"solid"},
+{css:({ ["isExternal"] : false, ["width"] : "100%", ["minHeight"] : "auto", ["height"] : "100px", ["padding"] : "10px", ["spacing"] : "5px", ["borderRadius"] : "15px", ["marginBottom"] : "10px", ["fontSize"] : "1rem", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.1)", ["border"] : "1.5px solid white", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["overflow"] : "hidden", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.3)", ["borderColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "white", ["textDecoration"] : "none" }) }),onClick:on_click_e9e65047ace9869199663e14ec6fd7f2,radius:"medium",size:"1",variant:"solid"},
 " M\u00f3dulo numero 10: Plataformas de Trading y Final del Curso"
-,),),),)
+,)
+  )
+}
+
+function Button_88479625805181608105183451424514901480 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_6b1cf88ef590349c6ba2bc1f01e89ab9 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_3", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["isExternal"] : false, ["width"] : "100%", ["minHeight"] : "auto", ["height"] : "100px", ["padding"] : "10px", ["spacing"] : "5px", ["borderRadius"] : "15px", ["marginBottom"] : "10px", ["fontSize"] : "1rem", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.1)", ["border"] : "1.5px solid white", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["overflow"] : "hidden", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.3)", ["borderColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "white", ["textDecoration"] : "none" }) }),onClick:on_click_6b1cf88ef590349c6ba2bc1f01e89ab9,radius:"medium",size:"1",variant:"solid"},
+" M\u00f3dulo numero 3: Introduccion al Trading."
+,)
   )
 }
 
@@ -126,12 +158,50 @@ function Img_164144592572901142842083229647882011920 () {
   )
 }
 
-function Dropdownmenu__item_219216628386599214634898977905934367657 () {
+function Button_302955380434517787591185687841298071731 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_b48446425b75df925e56732f12d72355 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+  const on_click_e68f8e4f14916518ccacb453de5dba9a = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_7", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["isExternal"] : false, ["width"] : "100%", ["minHeight"] : "auto", ["height"] : "100px", ["padding"] : "10px", ["spacing"] : "5px", ["borderRadius"] : "15px", ["marginBottom"] : "10px", ["fontSize"] : "1rem", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.1)", ["border"] : "1.5px solid white", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["overflow"] : "hidden", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.3)", ["borderColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "white", ["textDecoration"] : "none" }) }),onClick:on_click_e68f8e4f14916518ccacb453de5dba9a,radius:"medium",size:"1",variant:"solid"},
+" M\u00f3dulo numero 7: Indicadores y Entradas Exitosas"
+,)
+  )
+}
+
+function Button_252590390430987507175330712168615570701 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_c8c7d691c8f33dd61ca74a02b23b75e3 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_4", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["isExternal"] : false, ["width"] : "100%", ["minHeight"] : "auto", ["height"] : "100px", ["padding"] : "10px", ["spacing"] : "5px", ["borderRadius"] : "15px", ["marginBottom"] : "10px", ["fontSize"] : "1rem", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.1)", ["border"] : "1.5px solid white", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["overflow"] : "hidden", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.3)", ["borderColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "white", ["textDecoration"] : "none" }) }),onClick:on_click_c8c7d691c8f33dd61ca74a02b23b75e3,radius:"medium",size:"1",variant:"solid"},
+" M\u00f3dulo numero 4: Fundamentos del An\u00e1lisis T\u00e9cnico y Patrones."
+,)
+  )
+}
+
+function Dropdownmenu__item_287075228212589713390829397942124902700 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_5f3f71c76c6fe2931e3440026bbf646f = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/choice_modules", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
 
 
 
@@ -139,27 +209,84 @@ function Dropdownmenu__item_219216628386599214634898977905934367657 () {
   return (
     jsx(
 RadixThemesDropdownMenu.Item,
-{onClick:on_click_b48446425b75df925e56732f12d72355},
-"Contactos"
+{onClick:on_click_5f3f71c76c6fe2931e3440026bbf646f},
+"Curso"
 ,)
   )
 }
 
-function Tooltip_107787178243800509720440254496591202213 () {
+function Button_99270429265467868849555825517093398966 () {
   
-  const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
+  const on_click_e5fe15f70779907a10fd0195f5dfbd80 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_1", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
 
 
 
   
   return (
     jsx(
-RadixThemesTooltip,
-{content:"No me toques."},
-jsx("img",{css:({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))),src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
+RadixThemesButton,
+{css:({ ["width"] : "100%", ["minHeight"] : "auto", ["height"] : "100px", ["padding"] : "10px", ["spacing"] : "5px", ["borderRadius"] : "15px", ["marginBottom"] : "10px", ["fontSize"] : "1rem", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.1)", ["border"] : "1.5px solid white", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["overflow"] : "hidden", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.3)", ["borderColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "white", ["textDecoration"] : "none" }) }),onClick:on_click_e5fe15f70779907a10fd0195f5dfbd80,radius:"medium",size:"1",variant:"solid"},
+" M\u00f3dulo numero 1: Fundamentos de Finanzas personales y el Mercado."
+,)
+  )
+}
+
+function Button_247967100211362041749125909759751422027 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_db3aef611d081b17bf8c41489ddd3e74 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_9", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["isExternal"] : false, ["width"] : "100%", ["minHeight"] : "auto", ["height"] : "100px", ["padding"] : "10px", ["spacing"] : "5px", ["borderRadius"] : "15px", ["marginBottom"] : "10px", ["fontSize"] : "1rem", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.1)", ["border"] : "1.5px solid white", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["overflow"] : "hidden", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.3)", ["borderColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "white", ["textDecoration"] : "none" }) }),onClick:on_click_db3aef611d081b17bf8c41489ddd3e74,radius:"medium",size:"1",variant:"solid"},
+" M\u00f3dulo numero 9: Las Estafas en el Trading y las Inversiones"
+,)
+  )
+}
+
+function Button_38412357013234983565809529380493117563 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_c3d78afcb2924bc931e125e55670ec97 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_8", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["isExternal"] : false, ["width"] : "100%", ["minHeight"] : "auto", ["height"] : "100px", ["padding"] : "10px", ["spacing"] : "5px", ["borderRadius"] : "15px", ["marginBottom"] : "10px", ["fontSize"] : "1rem", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.1)", ["border"] : "1.5px solid white", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["overflow"] : "hidden", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.3)", ["borderColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "white", ["textDecoration"] : "none" }) }),onClick:on_click_c3d78afcb2924bc931e125e55670ec97,radius:"medium",size:"1",variant:"solid"},
+" M\u00f3dulo numero 8: Hablemos de Criptomonedas."
+,)
+  )
+}
+
+function Button_68356853729823193692908991866279270531 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_0b4cd557b67ca668b1cb5a4ef2e4bdc5 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_5", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["isExternal"] : false, ["width"] : "100%", ["minHeight"] : "auto", ["height"] : "100px", ["padding"] : "10px", ["spacing"] : "5px", ["borderRadius"] : "15px", ["marginBottom"] : "10px", ["fontSize"] : "1rem", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.1)", ["border"] : "1.5px solid white", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["overflow"] : "hidden", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "rgba(255, 255, 255, 0.3)", ["borderColor"] : "white", ["transform"] : "scale(1.10)", ["color"] : "white", ["textDecoration"] : "none" }) }),onClick:on_click_0b4cd557b67ca668b1cb5a4ef2e4bdc5,radius:"medium",size:"1",variant:"solid"},
+" M\u00f3dulo numero 5: Dominando Soportes, Resistencias y Rangos."
 ,)
   )
 }
@@ -400,8 +527,26 @@ jsx(
 RadixThemesHeading,
 {css:({ ["@media screen and (min-width: 0)"] : ({ ["fontSize"] : "35px" }), ["@media screen and (min-width: 30em)"] : ({ ["fontSize"] : "42px" }), ["@media screen and (min-width: 48em)"] : ({ ["fontSize"] : "46px" }), ["@media screen and (min-width: 62em)"] : ({ ["fontSize"] : "55px" }), ["fontWeight"] : "600", ["color"] : "white", ["textAlign"] : "center", ["alignItems"] : "center", ["padding"] : "17px", ["letterSpacing"] : "0.07em", ["width"] : "100%", ["maxWidth"] : "600px", ["margin"] : "auto", ["lineHeight"] : "1.1", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["textWrap"] : "balance", ["marginTop"] : "1em" })},
 "Secci\u00f3n de M\u00f3dulos"
-,),jsx(Link_193367978553559349980883156815892661590,{},)
-,),),jsx(
+,),jsx(
+Fragment,
+{},
+jsx(
+RadixThemesFlex,
+{css:({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["marginBottom"] : "4em" })},
+jsx(
+RadixThemesGrid,
+{columns:"2",css:({ ["maxWidth"] : "600px", ["alignItems"] : "center", ["justifyItems"] : "center" }),gap:"5"},
+jsx(Button_99270429265467868849555825517093398966,{},)
+,jsx(Button_131188562616038043529214984279314035248,{},)
+,jsx(Button_88479625805181608105183451424514901480,{},)
+,jsx(Button_252590390430987507175330712168615570701,{},)
+,jsx(Button_68356853729823193692908991866279270531,{},)
+,jsx(Button_157604055228157808167019606969243274599,{},)
+,jsx(Button_302955380434517787591185687841298071731,{},)
+,jsx(Button_38412357013234983565809529380493117563,{},)
+,jsx(Button_247967100211362041749125909759751422027,{},)
+,jsx(Button_38651761676760313400843908096941736611,{},)
+,),),),),),jsx(
 RadixThemesFlex,
 {align:"start",className:"rx-Stack",css:({ ["alignItems"] : "center", ["width"] : "100%", ["justifyContent"] : "center", ["backgroundColor"] : "transparent", ["display"] : "flex", ["flexWrap"] : "wrap", ["gap"] : "10px", ["maxWidth"] : "100%" }),direction:"column",gap:"3"},
 jsx(Img_164144592572901142842083229647882011920,{},)

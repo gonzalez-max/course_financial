@@ -4,8 +4,7 @@ from mi_web.styles.course_styles import Size as Size
 
 #aca creamos BOTONES que cumplen la funcion de links
 def links_modules() -> rx.Component:
-    return rx.link(
-        rx.center(
+    return rx.center(
                 rx.grid(
                         rx.button(" Módulo numero 1: Fundamentos de Finanzas personales y el Mercado.", 
                                 on_click=rx.redirect("/module_1"),**c_styles.BUTTON_COURSES_STYLES,
@@ -46,5 +45,5 @@ def links_modules() -> rx.Component:
                 spacing="5"
                 ),
         margin_bottom=Size.BIG.value),
-)
+
 

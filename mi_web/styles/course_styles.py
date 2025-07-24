@@ -85,7 +85,7 @@ BUTTON_COURSES_STYLES={
     "variant": "solid",
     "radius": "medium",
     "width": "100%", 
-    "min_heigth":"auto",# Ajusta el ancho del botón
+    "min_height":"auto",# Ajusta el ancho del botón
     "height": "100px",  # Ajusta la altura del botón
     "padding" : "10px", # Ajusta el padding interno
     "spacing" : "5px",
@@ -116,21 +116,9 @@ BUTTON_COURSES_STYLES={
         "text_decoration": "none",  # Elimina el subrayado del texto
         
     },
-     # Estilos responsivos (no se si funcionan)
-    "_media": {
-        "(max-width: 768px)": {  # Para tablets y móviles
-            "width": "100%",  # Usa todo el ancho disponible
-            "font_size": "1rem",  # Reduce un poco el tamaño de la fuente
-            "padding": "10px",
-            "size":"1",  # Menos padding en móviles
-        },
-        "(max-width: 430px)": {  # Para móviles pequeños
-            "font_size": "5px",
-            "padding": "8px",
-            "min_height": "60px",
-            "size":"2rem"
-        }
-    }
+    
+        
+    
 }
 
 
