@@ -12,22 +12,56 @@ import { jsx } from "@emotion/react"
 
 
 
-function Button_289379737737876758684702757549221383768 () {
+function Img_44193794075118247882912592078120564270 () {
+  
+  const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_fa1b729bdabd98dbf80c7f3f665e4707 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx("img",{css:({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" }),onClick:on_click_fa1b729bdabd98dbf80c7f3f665e4707,src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
+
+  )
+}
+
+function Dropdownmenu__item_219216628386599214634898977905934367657 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_0b4cd557b67ca668b1cb5a4ef2e4bdc5 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_5", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+  const on_click_b48446425b75df925e56732f12d72355 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
 
 
 
   
   return (
     jsx(
-RadixThemesButton,
-{css:({ ["backgroundColor"] : "white", ["color"] : "black", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "black", ["color"] : "white", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_0b4cd557b67ca668b1cb5a4ef2e4bdc5},
-"Siguiente \u2192"
+RadixThemesDropdownMenu.Item,
+{onClick:on_click_b48446425b75df925e56732f12d72355},
+"Contactos"
 ,)
+  )
+}
+
+function Img_299474052678682706390452813831564012767 () {
+  
+  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_bd1bd52eb3f49731a43de1af718afe95 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx("img",{css:({ ["width"] : "40px", ["height"] : "40px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:on_click_bd1bd52eb3f49731a43de1af718afe95,src:reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src_rx_state_},)
+
   )
 }
 
@@ -88,56 +122,22 @@ RadixThemesButton,
   )
 }
 
-function Img_299474052678682706390452813831564012767 () {
-  
-  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_bd1bd52eb3f49731a43de1af718afe95 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx("img",{css:({ ["width"] : "40px", ["height"] : "40px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:on_click_bd1bd52eb3f49731a43de1af718afe95,src:reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src_rx_state_},)
-
-  )
-}
-
-function Dropdownmenu__item_219216628386599214634898977905934367657 () {
+function Button_289379737737876758684702757549221383768 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_b48446425b75df925e56732f12d72355 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+  const on_click_0b4cd557b67ca668b1cb5a4ef2e4bdc5 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_5", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
 
 
 
   
   return (
     jsx(
-RadixThemesDropdownMenu.Item,
-{onClick:on_click_b48446425b75df925e56732f12d72355},
-"Contactos"
+RadixThemesButton,
+{css:({ ["backgroundColor"] : "white", ["color"] : "black", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "black", ["color"] : "white", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_0b4cd557b67ca668b1cb5a4ef2e4bdc5},
+"Siguiente \u2192"
 ,)
-  )
-}
-
-function Img_44193794075118247882912592078120564270 () {
-  
-  const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_fa1b729bdabd98dbf80c7f3f665e4707 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx("img",{css:({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" }),onClick:on_click_fa1b729bdabd98dbf80c7f3f665e4707,src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
-
   )
 }
 
@@ -153,7 +153,7 @@ Fragment,
 {},
 jsx(
 RadixThemesBox,
-{css:({ ["background"] : "linear-gradient(180deg, rgba(74,34,98,1) 0%, rgba(71,85,139,1) 52%, rgba(11,103,93,1) 100%)", ["textColor"] : "black", ["width"] : "100%", ["maxWidth"] : "100%", ["display"] : "flex", ["flexDirection"] : "column", ["minHeight"] : "100vh", ["flexWrap"] : "wrap", ["justifyContent"] : "center", ["gap"] : "10px", ["alignItems"] : "center", ["paddingInlineStart"] : "20px", ["paddingInlineEnd"] : "20px", ["margin"] : "0 auto" })},
+{css:({ ["background"] : "linear-gradient(180deg, rgba(74,34,98,1) 0%, rgba(71,85,139,1) 52%, rgba(11,103,93,1) 100%)", ["textColor"] : "black", ["width"] : "100%", ["maxWidth"] : "100%", ["display"] : "flex", ["flexDirection"] : "column", ["minHeight"] : "100vh", ["flexWrap"] : "wrap", ["justifyContent"] : "center", ["gap"] : "10px", ["alignItems"] : "center", ["margin"] : "0 auto" })},
 jsx(
 RadixThemesBox,
 {css:({ ["width"] : "100%", ["height"] : "40px", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.5)", ["padding"] : "1em", ["zIndex"] : "1000", ["position"] : "fixed", ["boxShadow"] : "0 1px 3px rgba(0, 0, 0, 0.1)", ["backdropFilter"] : "blur(10px)", ["justifyContent"] : "center", ["display"] : "flex", ["top"] : "0px", ["alignItems"] : "center" })},
@@ -710,6 +710,10 @@ RadixThemesText,
 RadixThemesText,
 {as:"p"},
 "\u00bfQuer\u00e9s ver informaci\u00f3n sobre tus empresas favoritas? "
+,),jsx(
+RadixThemesText,
+{as:"p"},
+"Conoc\u00e9 FinDash ->"
 ,jsx(
 RadixThemesLink,
 {asChild:true,css:({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })},

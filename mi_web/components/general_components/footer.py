@@ -24,7 +24,9 @@ def footer() -> rx.Component:
     return rx.vstack(
         rx.text("© 2025 Maximiliano Gonzalez. Todos los derechos reservados."),
         rx.text(
-            "¿Querés ver información sobre tus empresas favoritas? ",
+            "¿Querés ver información sobre tus empresas favoritas? "),
+        rx.text(
+            "Conocé FinDash ->", 
             rx.link(
                 "https://dashboard-financial.onrender.com",
                 href="https://dashboard-financial.onrender.com",

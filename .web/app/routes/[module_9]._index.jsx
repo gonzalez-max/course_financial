@@ -12,6 +12,80 @@ import { jsx } from "@emotion/react"
 
 
 
+function Img_44193794075118247882912592078120564270 () {
+  
+  const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_fa1b729bdabd98dbf80c7f3f665e4707 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx("img",{css:({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" }),onClick:on_click_fa1b729bdabd98dbf80c7f3f665e4707,src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
+
+  )
+}
+
+function Dropdownmenu__item_219216628386599214634898977905934367657 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_b48446425b75df925e56732f12d72355 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesDropdownMenu.Item,
+{onClick:on_click_b48446425b75df925e56732f12d72355},
+"Contactos"
+,)
+  )
+}
+
+function Button_119026519752376536987810239075444867041 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_c3d78afcb2924bc931e125e55670ec97 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_8", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["backgroundColor"] : "black", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "white", ["color"] : "black", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_c3d78afcb2924bc931e125e55670ec97},
+"\u2190 Atr\u00e1s"
+,)
+  )
+}
+
+function Button_255999174793897167275335840093291417038 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_e9e65047ace9869199663e14ec6fd7f2 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_10", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["backgroundColor"] : "white", ["color"] : "black", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "black", ["color"] : "white", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_e9e65047ace9869199663e14ec6fd7f2},
+"Siguiente \u2192"
+,)
+  )
+}
+
 function Tooltip_107787178243800509720440254496591202213 () {
   
   const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
@@ -50,25 +124,6 @@ RadixThemesDropdownMenu.Item,
   )
 }
 
-function Button_119026519752376536987810239075444867041 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_c3d78afcb2924bc931e125e55670ec97 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_8", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesButton,
-{css:({ ["backgroundColor"] : "black", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "white", ["color"] : "black", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_c3d78afcb2924bc931e125e55670ec97},
-"\u2190 Atr\u00e1s"
-,)
-  )
-}
-
 function Img_299474052678682706390452813831564012767 () {
   
   const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
@@ -86,61 +141,6 @@ function Img_299474052678682706390452813831564012767 () {
   )
 }
 
-function Dropdownmenu__item_219216628386599214634898977905934367657 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_b48446425b75df925e56732f12d72355 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesDropdownMenu.Item,
-{onClick:on_click_b48446425b75df925e56732f12d72355},
-"Contactos"
-,)
-  )
-}
-
-function Button_255999174793897167275335840093291417038 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_e9e65047ace9869199663e14ec6fd7f2 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_10", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesButton,
-{css:({ ["backgroundColor"] : "white", ["color"] : "black", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "black", ["color"] : "white", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_e9e65047ace9869199663e14ec6fd7f2},
-"Siguiente \u2192"
-,)
-  )
-}
-
-function Img_44193794075118247882912592078120564270 () {
-  
-  const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_fa1b729bdabd98dbf80c7f3f665e4707 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx("img",{css:({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" }),onClick:on_click_fa1b729bdabd98dbf80c7f3f665e4707,src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
-
-  )
-}
-
 export default function Component() {
     
 
@@ -153,7 +153,7 @@ Fragment,
 {},
 jsx(
 RadixThemesBox,
-{css:({ ["background"] : "linear-gradient(180deg, rgba(74,34,98,1) 0%, rgba(71,85,139,1) 52%, rgba(11,103,93,1) 100%)", ["textColor"] : "black", ["width"] : "100%", ["maxWidth"] : "100%", ["display"] : "flex", ["flexDirection"] : "column", ["minHeight"] : "100vh", ["flexWrap"] : "wrap", ["justifyContent"] : "center", ["gap"] : "10px", ["alignItems"] : "center", ["paddingInlineStart"] : "20px", ["paddingInlineEnd"] : "20px", ["margin"] : "0 auto" })},
+{css:({ ["background"] : "linear-gradient(180deg, rgba(74,34,98,1) 0%, rgba(71,85,139,1) 52%, rgba(11,103,93,1) 100%)", ["textColor"] : "black", ["width"] : "100%", ["maxWidth"] : "100%", ["display"] : "flex", ["flexDirection"] : "column", ["minHeight"] : "100vh", ["flexWrap"] : "wrap", ["justifyContent"] : "center", ["gap"] : "10px", ["alignItems"] : "center", ["margin"] : "0 auto" })},
 jsx(
 RadixThemesBox,
 {css:({ ["width"] : "100%", ["height"] : "40px", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.5)", ["padding"] : "1em", ["zIndex"] : "1000", ["position"] : "fixed", ["boxShadow"] : "0 1px 3px rgba(0, 0, 0, 0.1)", ["backdropFilter"] : "blur(10px)", ["justifyContent"] : "center", ["display"] : "flex", ["top"] : "0px", ["alignItems"] : "center" })},
@@ -890,6 +890,10 @@ RadixThemesText,
 RadixThemesText,
 {as:"p"},
 "\u00bfQuer\u00e9s ver informaci\u00f3n sobre tus empresas favoritas? "
+,),jsx(
+RadixThemesText,
+{as:"p"},
+"Conoc\u00e9 FinDash ->"
 ,jsx(
 RadixThemesLink,
 {asChild:true,css:({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })},

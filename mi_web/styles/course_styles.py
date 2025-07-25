@@ -58,7 +58,6 @@ COURSE_STYLES = {
     "justify_content": "center", 
     "gap": "10px" ,
     "align_items":"center",
-    "padding_x": "20px",
     "margin": "0 auto"
     
 }
@@ -394,7 +393,6 @@ global_styles = {
     "justify_content": "center", 
     "gap": "10px" ,
     "align_items":"center",
-    "padding_x": "20px",
     "margin": "0 auto"
    
 

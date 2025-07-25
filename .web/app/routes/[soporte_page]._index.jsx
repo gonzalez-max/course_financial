@@ -11,57 +11,19 @@ import { jsx } from "@emotion/react"
 
 
 
-function Tooltip_107787178243800509720440254496591202213 () {
+function Img_44193794075118247882912592078120564270 () {
   
   const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
+  const on_click_fa1b729bdabd98dbf80c7f3f665e4707 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
 
 
 
   
   return (
-    jsx(
-RadixThemesTooltip,
-{content:"No me toques."},
-jsx("img",{css:({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))),src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
-,)
-  )
-}
-
-function Dropdownmenu__item_287075228212589713390829397942124902700 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_5f3f71c76c6fe2931e3440026bbf646f = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/choice_modules", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesDropdownMenu.Item,
-{onClick:on_click_5f3f71c76c6fe2931e3440026bbf646f},
-"Curso"
-,)
-  )
-}
-
-function Img_299474052678682706390452813831564012767 () {
-  
-  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_bd1bd52eb3f49731a43de1af718afe95 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx("img",{css:({ ["width"] : "40px", ["height"] : "40px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:on_click_bd1bd52eb3f49731a43de1af718afe95,src:reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src_rx_state_},)
+    jsx("img",{css:({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" }),onClick:on_click_fa1b729bdabd98dbf80c7f3f665e4707,src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
 
   )
 }
@@ -132,23 +94,6 @@ RadixThemesButton,
   )
 }
 
-function Img_44193794075118247882912592078120564270 () {
-  
-  const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_fa1b729bdabd98dbf80c7f3f665e4707 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx("img",{css:({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" }),onClick:on_click_fa1b729bdabd98dbf80c7f3f665e4707,src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
-
-  )
-}
-
 function Root_42735043550020550548740925070180780910 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -196,6 +141,61 @@ RadixThemesButton,
   )
 }
 
+function Tooltip_107787178243800509720440254496591202213 () {
+  
+  const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    jsx(
+RadixThemesTooltip,
+{content:"No me toques."},
+jsx("img",{css:({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))),src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
+,)
+  )
+}
+
+function Dropdownmenu__item_287075228212589713390829397942124902700 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_5f3f71c76c6fe2931e3440026bbf646f = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/choice_modules", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesDropdownMenu.Item,
+{onClick:on_click_5f3f71c76c6fe2931e3440026bbf646f},
+"Curso"
+,)
+  )
+}
+
+function Img_299474052678682706390452813831564012767 () {
+  
+  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_bd1bd52eb3f49731a43de1af718afe95 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx("img",{css:({ ["width"] : "40px", ["height"] : "40px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:on_click_bd1bd52eb3f49731a43de1af718afe95,src:reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src_rx_state_},)
+
+  )
+}
+
 export default function Component() {
     
 
@@ -211,7 +211,7 @@ Fragment,
 {},
 jsx(
 RadixThemesBox,
-{css:({ ["textColor"] : "black", ["width"] : "100%", ["maxWidth"] : "100%", ["display"] : "flex", ["flexDirection"] : "column", ["minHeight"] : "100vh", ["flexWrap"] : "wrap", ["justifyContent"] : "center", ["gap"] : "10px", ["alignItems"] : "center", ["paddingInlineStart"] : "20px", ["paddingInlineEnd"] : "20px", ["margin"] : "0 auto", ["background"] : "radial-gradient(circle,rgba(117, 55, 153, 1) 0%, rgba(80, 98, 163, 1) 51%, rgba(28, 115, 166, 1) 100%)" })},
+{css:({ ["textColor"] : "black", ["width"] : "100%", ["maxWidth"] : "100%", ["display"] : "flex", ["flexDirection"] : "column", ["minHeight"] : "100vh", ["flexWrap"] : "wrap", ["justifyContent"] : "center", ["gap"] : "10px", ["alignItems"] : "center", ["margin"] : "0 auto", ["background"] : "radial-gradient(circle,rgba(117, 55, 153, 1) 0%, rgba(80, 98, 163, 1) 51%, rgba(28, 115, 166, 1) 100%)" })},
 jsx(
 RadixThemesBox,
 {css:({ ["width"] : "100%", ["height"] : "40px", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.5)", ["padding"] : "1em", ["zIndex"] : "1000", ["position"] : "fixed", ["boxShadow"] : "0 1px 3px rgba(0, 0, 0, 0.1)", ["backdropFilter"] : "blur(10px)", ["justifyContent"] : "center", ["display"] : "flex", ["top"] : "0px", ["alignItems"] : "center" })},
@@ -457,6 +457,10 @@ RadixThemesText,
 RadixThemesText,
 {as:"p"},
 "\u00bfQuer\u00e9s ver informaci\u00f3n sobre tus empresas favoritas? "
+,),jsx(
+RadixThemesText,
+{as:"p"},
+"Conoc\u00e9 FinDash ->"
 ,jsx(
 RadixThemesLink,
 {asChild:true,css:({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })},
