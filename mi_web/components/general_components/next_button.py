@@ -10,6 +10,7 @@ def next_button(next_url: str) -> rx.Component:
             padding="10px 20px",
             border_radius="50px",
             transition="all 0.3s ease-in-out",
+            cursor="pointer",
             #border= "2px solid #e28cac",# Cambio de color al pasar el mouse
             _hover={"background_color": "black",
                     "color":"white",

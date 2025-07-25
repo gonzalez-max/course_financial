@@ -1,4 +1,6 @@
 import reflex as rx
+import mi_web.styles.course_styles as c_styles
+
 
 class LogoState(rx.State):
     click_count: int = 0

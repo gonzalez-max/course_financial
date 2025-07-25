@@ -31,6 +31,82 @@ RadixThemesDropdownMenu.Item,
   )
 }
 
+function Dropdownmenu__item_287075228212589713390829397942124902700 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_5f3f71c76c6fe2931e3440026bbf646f = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/choice_modules", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesDropdownMenu.Item,
+{onClick:on_click_5f3f71c76c6fe2931e3440026bbf646f},
+"Curso"
+,)
+  )
+}
+
+function Button_314836693745327543913534570259844711470 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_6b1cf88ef590349c6ba2bc1f01e89ab9 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_3", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["backgroundColor"] : "white", ["color"] : "black", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "black", ["color"] : "white", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_6b1cf88ef590349c6ba2bc1f01e89ab9},
+"Siguiente \u2192"
+,)
+  )
+}
+
+function Button_286385845557237361834268876467602678510 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_e5fe15f70779907a10fd0195f5dfbd80 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_1", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["backgroundColor"] : "black", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "white", ["color"] : "black", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_e5fe15f70779907a10fd0195f5dfbd80},
+"\u2190 Atr\u00e1s"
+,)
+  )
+}
+
+function Tooltip_107787178243800509720440254496591202213 () {
+  
+  const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    jsx(
+RadixThemesTooltip,
+{content:"No me toques."},
+jsx("img",{css:({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))),src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
+,)
+  )
+}
+
 function Img_164144592572901142842083229647882011920 () {
   
   const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
@@ -62,82 +138,6 @@ function Img_44193794075118247882912592078120564270 () {
   return (
     jsx("img",{css:({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" }),onClick:on_click_fa1b729bdabd98dbf80c7f3f665e4707,src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
 
-  )
-}
-
-function Button_67557510853656413435808366953385563877 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_6b1cf88ef590349c6ba2bc1f01e89ab9 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_3", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesButton,
-{css:({ ["backgroundColor"] : "white", ["color"] : "black", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "black", ["color"] : "white", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_6b1cf88ef590349c6ba2bc1f01e89ab9},
-"Siguiente \u2192"
-,)
-  )
-}
-
-function Button_321254683990531036296743993884549814701 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_e5fe15f70779907a10fd0195f5dfbd80 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_1", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesButton,
-{css:({ ["backgroundColor"] : "black", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["&:hover"] : ({ ["backgroundColor"] : "white", ["color"] : "black", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_e5fe15f70779907a10fd0195f5dfbd80},
-"\u2190 Atr\u00e1s"
-,)
-  )
-}
-
-function Tooltip_107787178243800509720440254496591202213 () {
-  
-  const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    jsx(
-RadixThemesTooltip,
-{content:"No me toques."},
-jsx("img",{css:({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))),src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
-,)
-  )
-}
-
-function Dropdownmenu__item_287075228212589713390829397942124902700 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_5f3f71c76c6fe2931e3440026bbf646f = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/choice_modules", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesDropdownMenu.Item,
-{onClick:on_click_5f3f71c76c6fe2931e3440026bbf646f},
-"Curso"
-,)
   )
 }
 
@@ -422,6 +422,9 @@ jsx(
 Fragment,
 {},
 jsx(
+RadixThemesBox,
+{css:({ ["@media screen and (min-width: 0)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 30em)"] : ({ ["display"] : "block" }), ["@media screen and (min-width: 48em)"] : ({ ["display"] : "block" }), ["@media screen and (min-width: 62em)"] : ({ ["display"] : "block" }) })},
+jsx(
 RadixThemesTable.Root,
 {css:({ ["width"] : "100%", ["padding"] : "5px", ["fontSize"] : "10px", ["backgroundColor"] : "#002961", ["overflowX"] : "auto", ["boxSizing"] : "border-box", ["color"] : "#3d5c5c", ["border"] : "1px solid #ffffff" }),size:"2",variant:"surface"},
 jsx(
@@ -500,6 +503,90 @@ RadixThemesTable.Cell,
 {},
 "Acciones de crecimiento, criptomonedas, opciones, trading."
 ,),),),),),),jsx(
+Fragment,
+{},
+jsx(
+RadixThemesBox,
+{css:({ ["@media screen and (min-width: 0)"] : ({ ["display"] : "block" }), ["@media screen and (min-width: 30em)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 48em)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 62em)"] : ({ ["display"] : "none" }) })},
+jsx(
+RadixThemesTable.Root,
+{css:({ ["width"] : "100%", ["padding"] : "5px", ["fontSize"] : "10px", ["maxWidth"] : "350px", ["backgroundColor"] : "#002961", ["overflowX"] : "auto", ["boxSizing"] : "border-box", ["color"] : "#3d5c5c", ["border"] : "1px solid #ffffff" }),size:"2",variant:"surface"},
+jsx(
+RadixThemesTable.Header,
+{},
+jsx(
+RadixThemesTable.Row,
+{css:({ ["backgroundColor"] : "#2d5986" })},
+jsx(
+RadixThemesTable.ColumnHeaderCell,
+{},
+"Perfil"
+,),jsx(
+RadixThemesTable.ColumnHeaderCell,
+{},
+"Caracter\u00edsticas"
+,),jsx(
+RadixThemesTable.ColumnHeaderCell,
+{},
+"Tipos de inversi\u00f3n recomendados"
+,),),),jsx(
+RadixThemesTable.Body,
+{},
+jsx(
+RadixThemesTable.Row,
+{css:({ ["color"] : "white" })},
+jsx(
+RadixThemesTable.RowHeaderCell,
+{},
+jsx(
+RadixThemesStrong,
+{},
+"Conservador"
+,),),jsx(
+RadixThemesTable.Cell,
+{},
+"Busca seguridad y estabilidad. Prioriza preservar el capital."
+,),jsx(
+RadixThemesTable.Cell,
+{},
+"Plazos fijos, bonos de bajo riesgo, FCI de renta fija."
+,),),jsx(
+RadixThemesTable.Row,
+{css:({ ["color"] : "white" })},
+jsx(
+RadixThemesTable.RowHeaderCell,
+{},
+jsx(
+RadixThemesStrong,
+{},
+"Moderado"
+,),),jsx(
+RadixThemesTable.Cell,
+{},
+"Acepta un riesgo medio para obtener mejor rentabilidad. Diversifica entre activos seguros y de riesgo."
+,),jsx(
+RadixThemesTable.Cell,
+{},
+"Bonos, acciones de empresas consolidadas, FCI mixtos."
+,),),jsx(
+RadixThemesTable.Row,
+{css:({ ["color"] : "white" })},
+jsx(
+RadixThemesTable.RowHeaderCell,
+{},
+jsx(
+RadixThemesStrong,
+{},
+"Agresivo"
+,),),jsx(
+RadixThemesTable.Cell,
+{},
+"Est\u00e1 dispuesto a asumir altos riesgos para maximizar ganancias."
+,),jsx(
+RadixThemesTable.Cell,
+{},
+"Acciones de crecimiento, criptomonedas, opciones, trading."
+,),),),),),),),jsx(
 RadixThemesHeading,
 {css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["marginBottom"] : "0.5em" })},
 "\u00bfC\u00f3mo saber qu\u00e9 tipo de inversor eres?"
@@ -717,6 +804,9 @@ jsx(
 Fragment,
 {},
 jsx(
+RadixThemesBox,
+{css:({ ["@media screen and (min-width: 0)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 30em)"] : ({ ["display"] : "block" }), ["@media screen and (min-width: 48em)"] : ({ ["display"] : "block" }), ["@media screen and (min-width: 62em)"] : ({ ["display"] : "block" }) })},
+jsx(
 RadixThemesTable.Root,
 {css:({ ["width"] : "100%", ["padding"] : "5px", ["fontSize"] : "10px", ["backgroundColor"] : "#002961", ["overflowX"] : "auto", ["boxSizing"] : "border-box", ["color"] : "#3d5c5c", ["border"] : "1px solid #ffffff" }),size:"2",variant:"surface"},
 jsx(
@@ -812,7 +902,109 @@ RadixThemesTable.Cell,
 RadixThemesTable.Cell,
 {},
 "Depende del mercado"
-,),),),),),),jsx(RadixThemesSeparator,{css:({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" }),size:"4"},)
+,),),),),),),jsx(
+Fragment,
+{},
+jsx(
+RadixThemesBox,
+{css:({ ["@media screen and (min-width: 0)"] : ({ ["display"] : "block" }), ["@media screen and (min-width: 30em)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 48em)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 62em)"] : ({ ["display"] : "none" }) })},
+jsx(
+RadixThemesTable.Root,
+{css:({ ["width"] : "100%", ["padding"] : "5px", ["fontSize"] : "10px", ["maxWidth"] : "350px", ["backgroundColor"] : "#002961", ["overflowX"] : "auto", ["boxSizing"] : "border-box", ["color"] : "#3d5c5c", ["border"] : "1px solid #ffffff" }),size:"2",variant:"surface"},
+jsx(
+RadixThemesTable.Header,
+{},
+jsx(
+RadixThemesTable.Row,
+{css:({ ["backgroundColor"] : "#2d5986" })},
+jsx(
+RadixThemesTable.ColumnHeaderCell,
+{},
+"Caracteristica"
+,),jsx(
+RadixThemesTable.ColumnHeaderCell,
+{},
+"Renta Fija"
+,),jsx(
+RadixThemesTable.ColumnHeaderCell,
+{},
+"Renta Variable"
+,),),),jsx(
+RadixThemesTable.Body,
+{},
+jsx(
+RadixThemesTable.Row,
+{css:({ ["color"] : "white" })},
+jsx(
+RadixThemesTable.RowHeaderCell,
+{},
+jsx(
+RadixThemesStrong,
+{},
+"Riesgo"
+,),),jsx(
+RadixThemesTable.Cell,
+{},
+"Bajo"
+,),jsx(
+RadixThemesTable.Cell,
+{},
+"Alto"
+,),),jsx(
+RadixThemesTable.Row,
+{css:({ ["color"] : "white" })},
+jsx(
+RadixThemesTable.RowHeaderCell,
+{},
+jsx(
+RadixThemesStrong,
+{},
+"Rentabilidad"
+,),),jsx(
+RadixThemesTable.Cell,
+{},
+"Predecible y estable"
+,),jsx(
+RadixThemesTable.Cell,
+{},
+"Variable y no asegurada"
+,),),jsx(
+RadixThemesTable.Row,
+{css:({ ["color"] : "white" })},
+jsx(
+RadixThemesTable.RowHeaderCell,
+{},
+jsx(
+RadixThemesStrong,
+{},
+"Ejemplos"
+,),),jsx(
+RadixThemesTable.Cell,
+{},
+"Plazo fijo, bonos, letras"
+,),jsx(
+RadixThemesTable.Cell,
+{},
+"Acciones, commodities, opciones, criptos"
+,),),jsx(
+RadixThemesTable.Row,
+{css:({ ["color"] : "white" })},
+jsx(
+RadixThemesTable.RowHeaderCell,
+{},
+jsx(
+RadixThemesStrong,
+{},
+"Liquidez"
+,),),jsx(
+RadixThemesTable.Cell,
+{},
+"Depende del tipo de inversi\u00f3n"
+,),jsx(
+RadixThemesTable.Cell,
+{},
+"Depende del mercado"
+,),),),),),),),jsx(RadixThemesSeparator,{css:({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" }),size:"4"},)
 ,jsx(
 RadixThemesHeading,
 {css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#ffa824", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["marginBottom"] : "0.5em" })},
@@ -1037,11 +1229,11 @@ RadixThemesStrong,
 ,),),),),),jsx(
 RadixThemesBox,
 {css:({ ["position"] : "fixed", ["bottom"] : "50px", ["right"] : "20px" })},
-jsx(Button_67557510853656413435808366953385563877,{},)
+jsx(Button_314836693745327543913534570259844711470,{},)
 ,),jsx(
 RadixThemesBox,
 {css:({ ["position"] : "fixed", ["bottom"] : "50px", ["left"] : "20px" })},
-jsx(Button_321254683990531036296743993884549814701,{},)
+jsx(Button_286385845557237361834268876467602678510,{},)
 ,),jsx(
 RadixThemesFlex,
 {align:"start",className:"rx-Stack",css:({ ["alignItems"] : "center", ["width"] : "100%", ["justifyContent"] : "center", ["backgroundColor"] : "transparent", ["display"] : "flex", ["flexWrap"] : "wrap", ["gap"] : "10px", ["maxWidth"] : "100%" }),direction:"column",gap:"3"},

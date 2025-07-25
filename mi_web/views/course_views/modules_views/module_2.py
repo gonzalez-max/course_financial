@@ -6,6 +6,8 @@ import mi_web.styles.course_styles as styles
 import mi_web.styles.course_styles as c_styles
 from mi_web.components.course_components.module2_components.module2_table1 import module2_table1
 from mi_web.components.course_components.module2_components.module2_table2 import module2_table2
+from mi_web.components.course_components.module2_components.module2_table1 import mobile_module2_table1
+from mi_web.components.course_components.module2_components.module2_table2 import mobile_module2_table2
 from mi_web.components.general_components.next_button import next_button
 from mi_web.components.general_components.back_button import back_button
 from mi_web.components.general_components.zoom_images import zoomed_image
@@ -65,6 +67,7 @@ def module_2() -> rx.Component:
                     #tabla de inversores
                     rx.vstack(
                         module2_table1(),
+                        mobile_module2_table1(),
                         margin_bottom=Size.DEFAULT.value
                     ),
                     
@@ -235,7 +238,9 @@ def module_2() -> rx.Component:
                     ),
       
                     #cuadro comparativo renta fija vs renta variable
-                    rx.vstack(module2_table2(),
+                    rx.vstack(
+                        module2_table2(),
+                        mobile_module2_table2(),      
                     margin_bottom=Size.DEFAULT.value),
                 
                 rx.divider(border_color="gray", border_width="1px", margin_y=Size.SMALL.value, margin_bottom=Size.DEFAULT.value),

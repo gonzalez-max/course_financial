@@ -10,6 +10,7 @@ def back_button(previous_url: str) -> rx.Component:
             padding="10px 20px",
             border_radius="50px",
             transition="all 0.3s ease-in-out",
+            cursor="pointer",
             #border_color= "#6366F1",
             _hover={"background_color": "white",
                     "color":"black",

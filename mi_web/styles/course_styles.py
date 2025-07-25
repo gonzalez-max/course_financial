@@ -191,8 +191,23 @@ COURSE_NAVBAR_FONTS={
         "color": "white",
          },
 }
-
-
+#________________________FOOTER STYLES_________________________________________________________#
+FOOTER_STYLES={
+    "align_items": "center",
+    "justify_content": "center",
+    "background_color":"rgba(255, 255, 255, 0.2)",  # más claro que 'none'
+    "flex_wrap": "wrap",
+    "gap": "1rem",  # mejor unidad relativa para responsividad
+    "box_shadow": "0 1px 5px rgba(0, 0, 0, 0.1)",
+    "flex_direction": "column",
+    "padding": "1rem 0.5rem",  # espacio interno
+    "margin_top": "2rem",  # separación desde el contenido anterior
+    "text_align": "center",
+    "width": "100%",
+    "font_size": ["0.9rem", "1rem"],  # ejemplo de responsividad si Reflex lo permite
+    "margin": "0 auto",
+    "max_width": "100%",  # Limita el ancho máximo del footer
+}
 #__________________drawer styles________________________#
 DRAWER_BUTTON_STYLE = {
     "size": "3",
