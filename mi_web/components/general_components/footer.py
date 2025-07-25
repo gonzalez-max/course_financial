@@ -1,5 +1,6 @@
 import reflex as rx
 import mi_web.styles.course_styles as c_styles
+from mi_web.styles.course_styles import Size as Size
 
 
 class LogoState(rx.State):
@@ -21,24 +22,31 @@ class LogoState(rx.State):
 
 def footer() -> rx.Component:
     return rx.vstack(
-        rx.image(src=LogoState.logo_src,
-                    width="50px",
-                    height="50px",
-                    background_color="transparent",
-                    on_click=LogoState.increment_click,# Vinculamos el evento on_click
-                    cursor="pointer",
-                     _hover={"transform": "scale(1.10)"}
-                ),
-        
-        rx.text("since 1999 copyright registered.",
-                color="white"),
-        
+        rx.text("© 2025 Maximiliano Gonzalez. Todos los derechos reservados."),
+        rx.text(
+            "¿Querés ver información sobre tus empresas favoritas? ",
+            rx.link(
+                "https://dashboard-financial.onrender.com",
+                href="https://dashboard-financial.onrender.com",
+                is_external=True
+            ),
+        ),
+        rx.image(
+            src=LogoState.logo_src,
+            width="40px",
+            height="40px",
+            background_color="transparent",
+            on_click=LogoState.increment_click,
+            cursor="pointer",
+            _hover={"transform": "scale(1.10)"}
+        ),
         align_items="center",
-        width="100%",
         justify_content="center",
-        background_color="transparent",
-        display= "flex",
-        flex_wrap= "wrap",
-        gap= "10px",
-        max_width="100%",
-        )
+        width="100%",  # 100% del viewport
+        min_width="100%",  # Evita que se contraiga
+        margin="0",  # Elimina márgenes externos
+        padding="20px",
+        background_color="#333",
+        color="white",
+        position="relative",  # Controla el posicionamiento
+    )

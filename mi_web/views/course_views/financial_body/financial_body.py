@@ -47,14 +47,14 @@ def financial_body() -> rx.Component:
                 max_width="100%",
                 width="100%",
                 padding="20px",
-                margin_top=Size.REGULAR.value,
+                margin_top=Size.LARGE.value,
                 margin_bottom=Size.BIG.value,
                 ),
                 
                 
                 rx.heading("Introduccion",
                         **c_styles.TEXT_STYLE["subtitle"],
-                        margin_top=Size.MEDIUM.value,
+                        margin_top=Size.DEFAULT.value,
                 ),
             
                 rx.text("Te damos la bienvenida al curso de Inversiones Trading y como evitar estafas"
