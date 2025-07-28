@@ -2,6 +2,7 @@ import reflex as rx
 from mi_web.components.general_components.course_navbar import navbar_course
 from mi_web.components.general_components.footer import footer
 from mi_web.views.course_views.financial_body.financial_body import financial_body
+from mi_web.views.course_views.financial_body.financial_body import financial_body_mobile
 import mi_web.styles.course_styles as c_styles
 from mi_web.styles.course_styles import Size as Size
 #____________________________CURSO IMPORTS_____________________________________________#
@@ -28,6 +29,7 @@ def index() -> rx.Component:
         rx.center(
             rx.vstack(
                 financial_body(),
+                financial_body_mobile(),
             ),
             width="100%",
             border_radius="10px",

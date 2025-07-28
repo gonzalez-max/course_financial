@@ -66,7 +66,6 @@ STYLES_CHOICE_MODULES={
    "text_color" : "black",
     "width":"100%",
     "background" : "linear-gradient(180deg, rgba(2,4,45,1) 0%, rgba(136,75,111,1) 100%)",
-    "max_width":"100%",
     "display": "flex",
     "flex_direction": "column",
     "min_height":"100vh",
@@ -75,7 +74,9 @@ STYLES_CHOICE_MODULES={
     "justify_content": "center", 
     "gap": "10px" ,
     "align_items":"center",
-    "margin": "0 auto"
+    "margin": "0 auto",
+    "overflow-x": "hidden",
+    "overflow-y": "auto"
 }
 
 BUTTON_COURSES_STYLES={ 
@@ -139,7 +140,7 @@ BUTTON_STYLE = {
     "white_space": "normal",  # Permite que el texto se divida en varias líneas
     "text_align": "center",   # Asegura que el texto esté centrado dentro del botón
     "max_width": "400px",     # Ajusta el ancho máximo del botón para evitar que sea demasiado ancho
-    "background_color":"rgba(0,0,0,0.9)",#color de fondo 
+    "background_color":"rgba(0,0,0,1)",#color de fondo 
     "border": "1.5px solid black",     #bordes 
     "word_wrap": "break-word",  # Ajuste del texto dentro del botón
     "display": "flex",  # Permitir centrado interno
@@ -294,18 +295,18 @@ IMAGE_STYLES={
 TEXT_STYLE = {
     "title": {  # Para títulos principales
         "font_size": ["35px", "42px", "46px", "55px"],  # Se adapta dinámicamente al tamaño de pantalla
-        "font_weight": "600",
+        "font_weight": "700",
         "color": "white",
         "text_align": "center",
         "align_items":"center",
         "padding": "17px",
-        "letter_spacing": "0.07em",  # Ajuste fino para mejor legibilidad
+        "letter_spacing": "0.05em",  # Ajuste fino para mejor legibilidad
         "width": "100%",
-        "max_width":"600px",
         "margin": "auto",  # Centra el título dentro de su contenedor
-        "line_height": "1.1",  # Mejora la legibilidad en varias líneas
+        "line_height": "1.2",  # Mejora la legibilidad en varias líneas
         "font_family":"Roboto",
-        "text_wrap":"balance"
+        "text_wrap":"balance",
+        "max_width": "900px"
     },
     "subtitle": {  # Para subtítulos o encabezados secundarios
         "font_size": "30px",
@@ -318,6 +319,7 @@ TEXT_STYLE = {
         "width":"100%",
         "margin": "auto",  # Centra el título dentro de su contenedor
         "line_height": "1.1", 
+        "padding": "10px",
     },
     
     "subseccion": {  # Para subtítulos o encabezados secundarios
@@ -328,7 +330,7 @@ TEXT_STYLE = {
         "line_height": "1.3",
         "letter_spacing": "0.03em",
         "font_family": "Roboto",
-        
+        "padding": "10px",
     },
     
     "body": {  # Para párrafos o contenido de texto
@@ -342,6 +344,7 @@ TEXT_STYLE = {
         "font_weight":"400",
         "font_size": "clamp(14px, 2vw, 18px)",
         "display": "block",
+        "padding": "10px",
         
     },
     
