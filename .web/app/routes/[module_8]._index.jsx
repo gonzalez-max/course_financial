@@ -12,59 +12,6 @@ import { jsx } from "@emotion/react"
 
 
 
-function Tooltip_107787178243800509720440254496591202213 () {
-  
-  const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    jsx(
-RadixThemesTooltip,
-{content:"No me toques."},
-jsx("img",{css:({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))),src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
-,)
-  )
-}
-
-function Img_299474052678682706390452813831564012767 () {
-  
-  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_bd1bd52eb3f49731a43de1af718afe95 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx("img",{css:({ ["width"] : "40px", ["height"] : "40px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:on_click_bd1bd52eb3f49731a43de1af718afe95,src:reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src_rx_state_},)
-
-  )
-}
-
-function Img_44193794075118247882912592078120564270 () {
-  
-  const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_fa1b729bdabd98dbf80c7f3f665e4707 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx("img",{css:({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" }),onClick:on_click_fa1b729bdabd98dbf80c7f3f665e4707,src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
-
-  )
-}
-
 function Button_74443495540174869781310087633826640187 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -80,44 +27,6 @@ function Button_74443495540174869781310087633826640187 () {
 RadixThemesButton,
 {css:({ ["backgroundColor"] : "white", ["color"] : "black", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "black", ["color"] : "white", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_db3aef611d081b17bf8c41489ddd3e74},
 "Siguiente \u2192"
-,)
-  )
-}
-
-function Button_42013120070755842199661413863407461771 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_e68f8e4f14916518ccacb453de5dba9a = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_7", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesButton,
-{css:({ ["backgroundColor"] : "black", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "white", ["color"] : "black", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_e68f8e4f14916518ccacb453de5dba9a},
-"\u2190 Atr\u00e1s"
-,)
-  )
-}
-
-function Dropdownmenu__item_219216628386599214634898977905934367657 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_b48446425b75df925e56732f12d72355 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesDropdownMenu.Item,
-{onClick:on_click_b48446425b75df925e56732f12d72355},
-"Contactos"
 ,)
   )
 }
@@ -141,6 +50,97 @@ RadixThemesDropdownMenu.Item,
   )
 }
 
+function Tooltip_107787178243800509720440254496591202213 () {
+  
+  const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    jsx(
+RadixThemesTooltip,
+{content:"No me toques."},
+jsx("img",{css:({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))),src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
+,)
+  )
+}
+
+function Dropdownmenu__item_219216628386599214634898977905934367657 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_b48446425b75df925e56732f12d72355 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/soporte_page", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesDropdownMenu.Item,
+{onClick:on_click_b48446425b75df925e56732f12d72355},
+"Contactos"
+,)
+  )
+}
+
+function Img_44193794075118247882912592078120564270 () {
+  
+  const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_fa1b729bdabd98dbf80c7f3f665e4707 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx("img",{css:({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" }),onClick:on_click_fa1b729bdabd98dbf80c7f3f665e4707,src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
+
+  )
+}
+
+function Img_299474052678682706390452813831564012767 () {
+  
+  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_bd1bd52eb3f49731a43de1af718afe95 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx("img",{css:({ ["width"] : "40px", ["height"] : "40px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:on_click_bd1bd52eb3f49731a43de1af718afe95,src:reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src_rx_state_},)
+
+  )
+}
+
+function Button_42013120070755842199661413863407461771 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_e68f8e4f14916518ccacb453de5dba9a = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_7", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["backgroundColor"] : "black", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "white", ["color"] : "black", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_e68f8e4f14916518ccacb453de5dba9a},
+"\u2190 Atr\u00e1s"
+,)
+  )
+}
+
 export default function Component() {
     
 
@@ -153,10 +153,10 @@ Fragment,
 {},
 jsx(
 RadixThemesBox,
-{css:({ ["background"] : "linear-gradient(180deg, rgba(74,34,98,1) 0%, rgba(71,85,139,1) 52%, rgba(11,103,93,1) 100%)", ["textColor"] : "black", ["width"] : "100%", ["maxWidth"] : "100%", ["display"] : "flex", ["flexDirection"] : "column", ["minHeight"] : "100vh", ["flexWrap"] : "wrap", ["justifyContent"] : "center", ["gap"] : "10px", ["alignItems"] : "center", ["margin"] : "0 auto" })},
+{css:({ ["background"] : "linear-gradient(180deg, #0d1117 0%, #1c1f26 100%)", ["width"] : "100%", ["maxWidth"] : "100%", ["display"] : "flex", ["flexDirection"] : "column", ["minHeight"] : "100vh", ["flexWrap"] : "wrap", ["justifyContent"] : "center", ["gap"] : "10px", ["alignItems"] : "center", ["margin"] : "0 auto" })},
 jsx(
 RadixThemesBox,
-{css:({ ["width"] : "100%", ["height"] : "40px", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.5)", ["padding"] : "1em", ["zIndex"] : "1000", ["position"] : "fixed", ["boxShadow"] : "0 1px 3px rgba(0, 0, 0, 0.1)", ["backdropFilter"] : "blur(10px)", ["justifyContent"] : "center", ["display"] : "flex", ["top"] : "0px", ["alignItems"] : "center" })},
+{css:({ ["width"] : "100%", ["height"] : "40px", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.5)", ["padding"] : "1em", ["zIndex"] : "1000", ["position"] : "fixed", ["boxShadow"] : "0 1px 3px rgba(0, 0, 0, 0.1)", ["backdropFilter"] : "blur(10px)", ["justifyContent"] : "center", ["display"] : "flex", ["top"] : "0px", ["alignItems"] : "center", ["borderBottom"] : "1px solid rgba(255, 255, 255, 0.2)" })},
 jsx(
 RadixThemesBox,
 {css:({ ["@media screen and (min-width: 0)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 30em)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 48em)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 62em)"] : ({ ["display"] : "block" }) })},
@@ -178,7 +178,7 @@ RadixThemesTooltip,
 {content:"Pagina Principal"},
 jsx(
 RadixThemesHeading,
-{css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 "Inicio"
 ,),),),),),jsx(
 RadixThemesFlex,
@@ -197,21 +197,21 @@ ReactRouterLink,
 {to:"/choice_modules"},
 jsx(
 RadixThemesText,
-{as:"p",css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{as:"p",css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 "Curso"
 ,),),),),jsx(
 RadixThemesHoverCard.Content,
-{css:({ ["padding"] : "2", ["borderRadius"] : "8px", ["border"] : "1.5px solid transparent", ["boxShadow"] : "0px 4px 14px rgba(0, 0, 0, 0.3)", ["transition"] : "transform 0.2s ease-in-out", ["background"] : "rgba(250, 250, 250, 0.4)", ["backdropFilter"] : "blur(10px)" })},
+{css:({ ["padding"] : "2", ["borderRadius"] : "8px", ["border"] : "1.5px solid transparent", ["boxShadow"] : "0px 4px 14px rgba(0, 0, 0, 0.3)", ["transition"] : "transform 0.3s ease-in-out", ["background"] : "rgba(250, 250, 250, 0.4)", ["backdropFilter"] : "blur(10px)" })},
 jsx(
 RadixThemesFlex,
 {align:"start",className:"rx-Stack",direction:"column",gap:"2"},
 jsx(
 RadixThemesText,
-{as:"p",css:({ ["color"] : "#ffd284", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica" }),size:"5",weight:"bold"},
+{as:"p",css:({ ["color"] : "#006dfc", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica" }),size:"5",weight:"bold"},
 "M\u00f3dulos del curso "
 ,),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_1"},
@@ -222,7 +222,7 @@ RadixThemesStrong,
 ,)," Fundamentos de Finanzas Personales y el Mercado "
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_2"},
@@ -233,7 +233,7 @@ RadixThemesStrong,
 ,)," Inversores y tipos de Instrumentos"
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_3"},
@@ -244,7 +244,7 @@ RadixThemesStrong,
 ,)," Introducci\u00f3n al Trading"
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_4"},
@@ -255,7 +255,7 @@ RadixThemesStrong,
 ,)," Fundamentos del An\u00e1lisis T\u00e9cnico y Patrones"
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_5"},
@@ -266,7 +266,7 @@ RadixThemesStrong,
 ,)," Dominando Soportes, Resistencias y Rangos"
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_6"},
@@ -277,7 +277,7 @@ RadixThemesStrong,
 ,)," Tendencias y como identificarlas"
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_7"},
@@ -288,7 +288,7 @@ RadixThemesStrong,
 ,)," Indicadores y Entradas Exitosas"
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_8"},
@@ -299,7 +299,7 @@ RadixThemesStrong,
 ,)," Hablemos de Criptomonedas"
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_9"},
@@ -310,7 +310,7 @@ RadixThemesStrong,
 ,)," Las Estafas en el Trading y las Inversiones"
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_10"},
@@ -330,7 +330,7 @@ ReactRouterLink,
 {to:"/soporte_page"},
 jsx(
 RadixThemesText,
-{as:"p",css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{as:"p",css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 "Contacto"
 ,),),),),),),),jsx(
 RadixThemesBox,
@@ -350,7 +350,7 @@ ReactRouterLink,
 {to:"/"},
 jsx(
 RadixThemesHeading,
-{css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 "Inicio"
 ,),),),),jsx(
 RadixThemesDropdownMenu.Root,
@@ -379,7 +379,7 @@ RadixThemesHeading,
 "M\u00f3dulo 8: Hablemos de Criptomonedas"
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#ffa824", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#c6ceda", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "1. \u00bfQu\u00e9 son las criptomonedas?"
 ,),jsx(
 RadixThemesBox,
@@ -399,7 +399,7 @@ RadixThemesText,
 ,),jsx(RadixThemesSeparator,{css:({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" }),size:"4"},)
 ,jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#ffa824", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#c6ceda", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "2. Principales criptomonedas"
 ,),jsx(
 RadixThemesText,
@@ -413,7 +413,7 @@ RadixThemesFlex,
 {align:"start",className:"rx-Stack",direction:"column",gap:"3"},
 jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
 "1. Bitcoin (BTC) \u2013 La pionera"
 ,),jsx(
 RadixThemesBox,
@@ -442,7 +442,7 @@ jsx(
 "Es la m\u00e1s utilizada y aceptada como reserva de valor."
 ,),),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
 "2. Ethereum (ETH) \u2013 La base de los contratos inteligentes"
 ,),jsx(
 RadixThemesBox,
@@ -471,7 +471,7 @@ jsx(
 "Base de muchas otras criptomonedas y proyectos en el mundo cripto."
 ,),),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
 "3. Binance Coin (BNB) \u2013 La moneda del ecosistema Binance"
 ,),jsx(
 RadixThemesBox,
@@ -496,7 +496,7 @@ jsx(
 "Se usa para pagar comisiones en la plataforma y participar en proyectos dentro del ecosistema."
 ,),),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
 "4. Cardano (ADA) \u2013 Un enfoque cient\u00edfico"
 ,),jsx(
 RadixThemesBox,
@@ -521,7 +521,7 @@ jsx(
 "Destaca por su metodolog\u00eda basada en investigaci\u00f3n cient\u00edfica y su algoritmo de consenso Proof-of-Stake (PoS)."
 ,),),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
 "5. Solana (SOL) \u2013 R\u00e1pida y escalable"
 ,),jsx(
 RadixThemesBox,
@@ -546,7 +546,7 @@ jsx(
 "Soporta contratos inteligentes y NFTs, compitiendo con Ethereum en ese \u00e1mbito."
 ,),),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
 "\u26a0\ufe0f\u00a1\u00a1importante!!\u26a0\ufe0f"
 ,),jsx(
 RadixThemesText,
@@ -561,7 +561,7 @@ RadixThemesFlex,
 {align:"start",className:"rx-Stack",direction:"column",gap:"3"},
 jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#ffa824", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px" })},
+{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#c6ceda", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px" })},
 "3. Blockchain: \u00bfQu\u00e9 es y c\u00f3mo funciona?"
 ,),jsx(
 RadixThemesBox,
@@ -583,7 +583,7 @@ RadixThemesText,
 "Este sistema es clave en el mundo de las criptomonedas, ya que permite registrar y verificar transacciones sin necesidad de intermediarios."
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
 "\u00bfC\u00f3mo funciona un blockchain?"
 ,),jsx(
 "ol",
@@ -630,7 +630,7 @@ RadixThemesStrong,
 ,)," Una vez a\u00f1adido a la cadena, el bloque no puede modificarse, lo que hace al blockchain seguro y transparente."
 ,),),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
 "En conclusi\u00f3n..."
 ,),jsx(
 RadixThemesText,
@@ -639,7 +639,7 @@ RadixThemesText,
 ,),),),jsx(RadixThemesSeparator,{css:({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" }),size:"4"},)
 ,jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#ffa824", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#c6ceda", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "4. \u00bfC\u00f3mo se consiguen criptomonedas?"
 ,),jsx(
 RadixThemesText,
@@ -653,7 +653,7 @@ RadixThemesFlex,
 {align:"start",className:"rx-Stack",direction:"column",gap:"3"},
 jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
 "Compra en Exchanges"
 ,),jsx(
 RadixThemesText,
@@ -680,7 +680,7 @@ jsx(
 "La almacenas en una wallet (billetera digital)."
 ,),),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
 "Miner\u00eda de Criptomonedas"
 ,),jsx(
 RadixThemesText,
@@ -711,7 +711,7 @@ RadixThemesText,
 "\u26a0\ufe0f La miner\u00eda puede ser costosa por el consumo de energ\u00eda y la necesidad de equipos avanzados."
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
 "Staking y Yield Farming"
 ,),jsx(
 RadixThemesText,
@@ -738,7 +738,7 @@ RadixThemesStrong,
 ,)," Depositas criptos en plataformas DeFi para generar intereses o recompensas."
 ,),),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
 "Recibir pagos en Criptomonedas"
 ,),jsx(
 RadixThemesText,
@@ -747,7 +747,7 @@ RadixThemesText,
 ,),),),jsx(RadixThemesSeparator,{css:({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" }),size:"4"},)
 ,jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#ffa824", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#c6ceda", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "5. Carteras y exchanges: diferencias y tipos"
 ,),jsx(
 RadixThemesText,
@@ -761,7 +761,7 @@ RadixThemesFlex,
 {align:"start",className:"rx-Stack",direction:"column",gap:"3"},
 jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
 "\u00bfQu\u00e9 es una cartera (wallet)?"
 ,),jsx(
 RadixThemesText,
@@ -839,7 +839,7 @@ jsx(
 " Seguras si se guardan bien, pero f\u00e1ciles de perder."
 ,),),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
 "\u00bfQu\u00e9 es un exchange?"
 ,),jsx(
 RadixThemesText,
@@ -900,7 +900,7 @@ jsx(
 " Desventaja: Pueden ser m\u00e1s complejos de usar y con menor liquidez.(pueden ser hackeados)."
 ,),),),),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "1em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "1em" })},
 "Tabla comparativa"
 ,),jsx(
 RadixThemesBox,
@@ -1111,7 +1111,7 @@ RadixThemesTable.Cell,
 "\ud83d\udcca Trading y compra/venta de criptos"
 ,),),),),),),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
 "Conclusi\u00f3n:"
 ,),jsx(
 RadixThemesText,
@@ -1120,7 +1120,7 @@ RadixThemesText,
 ,),jsx(RadixThemesSeparator,{css:({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" }),size:"4"},)
 ,jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#ffa824", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#c6ceda", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "6. Riesgos y beneficios de las criptomonedas"
 ,),jsx(
 RadixThemesBox,
@@ -1144,7 +1144,7 @@ RadixThemesFlex,
 {align:"start",className:"rx-Stack",direction:"column",gap:"3"},
 jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
 "Beneficios de las criptomonedas"
 ,),jsx(
 RadixThemesStrong,
@@ -1188,7 +1188,7 @@ RadixThemesText,
 "Aunque las transacciones son p\u00fablicas en la blockchain, los usuarios pueden operar sin revelar su identidad personal, lo que protege su privacidad."
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px" })},
 "Beneficios de las criptomonedas"
 ,),jsx(
 RadixThemesStrong,
@@ -1232,7 +1232,7 @@ RadixThemesText,
 "Debido a su anonimato, las criptomonedas han sido utilizadas en actividades ilegales, lo que ha generado regulaciones m\u00e1s estrictas y restricciones en ciertos lugares"
 ,),),),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "En resumen..."
 ,),jsx(
 RadixThemesText,
@@ -1241,7 +1241,7 @@ RadixThemesText,
 ,),jsx(RadixThemesSeparator,{css:({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" }),size:"4"},)
 ,jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#ffa824", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "1em" })},
+{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#c6ceda", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "1em" })},
 "Conclusi\u00f3n del M\u00f3dulo 8:"
 ,),jsx(
 "ol",
@@ -1280,7 +1280,7 @@ RadixThemesBox,
 jsx(Button_74443495540174869781310087633826640187,{},)
 ,),jsx(
 RadixThemesFlex,
-{align:"start",className:"rx-Stack",css:({ ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["minWidth"] : "100%", ["margin"] : "0", ["padding"] : "20px", ["backgroundColor"] : "#333", ["color"] : "white", ["position"] : "relative" }),direction:"column",gap:"3"},
+{align:"start",className:"rx-Stack",css:({ ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["minWidth"] : "100%", ["margin"] : "0", ["padding"] : "20px", ["backgroundColor"] : "#2d3038", ["color"] : "white", ["position"] : "relative", ["borderTop"] : "1px solid rgba(255, 255, 255, 0.4)" }),direction:"column",gap:"3"},
 jsx(
 RadixThemesText,
 {as:"p"},

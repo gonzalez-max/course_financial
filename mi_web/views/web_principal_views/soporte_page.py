@@ -23,7 +23,7 @@ def soporte_page() -> rx.Component:
             ),
             footer(),
             **c_styles.global_styles,
-            background="radial-gradient(circle,rgba(117, 55, 153, 1) 0%, rgba(80, 98, 163, 1) 51%, rgba(28, 115, 166, 1) 100%)"
+            background="linear-gradient(180deg, #0d1117 0%, #1c1f26 100%)"
     ),
 
 
@@ -88,6 +88,7 @@ def contact_form():
                         rx.text_area(placeholder="Mensaje", name="message", height="8em", is_required=True),
                         rx.button("Enviar", type="submit", **c_styles.form_button_style),
                         width="600px",
+                        border_radius="25px",
                         background_color="rgba(255, 255, 255, 0.3)",
                         variant="surface"
                     ),

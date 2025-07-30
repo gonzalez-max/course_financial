@@ -12,6 +12,25 @@ import { jsx } from "@emotion/react"
 
 
 
+function Dropdownmenu__item_287075228212589713390829397942124902700 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_5f3f71c76c6fe2931e3440026bbf646f = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/choice_modules", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesDropdownMenu.Item,
+{onClick:on_click_5f3f71c76c6fe2931e3440026bbf646f},
+"Curso"
+,)
+  )
+}
+
 function Tooltip_107787178243800509720440254496591202213 () {
   
   const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
@@ -27,78 +46,6 @@ function Tooltip_107787178243800509720440254496591202213 () {
 RadixThemesTooltip,
 {content:"No me toques."},
 jsx("img",{css:({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))),src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
-,)
-  )
-}
-
-function Button_257889233494721812659980547444226602750 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_babb70248ca98812d507e961a9be1e52 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_2", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesButton,
-{css:({ ["backgroundColor"] : "black", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "white", ["color"] : "black", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_babb70248ca98812d507e961a9be1e52},
-"\u2190 Atr\u00e1s"
-,)
-  )
-}
-
-function Img_299474052678682706390452813831564012767 () {
-  
-  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_bd1bd52eb3f49731a43de1af718afe95 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx("img",{css:({ ["width"] : "40px", ["height"] : "40px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:on_click_bd1bd52eb3f49731a43de1af718afe95,src:reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src_rx_state_},)
-
-  )
-}
-
-function Img_44193794075118247882912592078120564270 () {
-  
-  const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_fa1b729bdabd98dbf80c7f3f665e4707 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx("img",{css:({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" }),onClick:on_click_fa1b729bdabd98dbf80c7f3f665e4707,src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
-
-  )
-}
-
-function Button_60829640520251924791121735878190566678 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_c8c7d691c8f33dd61ca74a02b23b75e3 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_4", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesButton,
-{css:({ ["backgroundColor"] : "white", ["color"] : "black", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "black", ["color"] : "white", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_c8c7d691c8f33dd61ca74a02b23b75e3},
-"Siguiente \u2192"
 ,)
   )
 }
@@ -122,21 +69,74 @@ RadixThemesDropdownMenu.Item,
   )
 }
 
-function Dropdownmenu__item_287075228212589713390829397942124902700 () {
+function Button_257889233494721812659980547444226602750 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_5f3f71c76c6fe2931e3440026bbf646f = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/choice_modules", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+  const on_click_babb70248ca98812d507e961a9be1e52 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_2", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
 
 
 
   
   return (
     jsx(
-RadixThemesDropdownMenu.Item,
-{onClick:on_click_5f3f71c76c6fe2931e3440026bbf646f},
-"Curso"
+RadixThemesButton,
+{css:({ ["backgroundColor"] : "black", ["color"] : "white", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "white", ["color"] : "black", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_babb70248ca98812d507e961a9be1e52},
+"\u2190 Atr\u00e1s"
+,)
+  )
+}
+
+function Img_44193794075118247882912592078120564270 () {
+  
+  const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_fa1b729bdabd98dbf80c7f3f665e4707 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx("img",{css:({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" }),onClick:on_click_fa1b729bdabd98dbf80c7f3f665e4707,src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
+
+  )
+}
+
+function Img_299474052678682706390452813831564012767 () {
+  
+  const reflex___state____state__mi_web___components___general_components___footer____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___footer____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_bd1bd52eb3f49731a43de1af718afe95 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___footer____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx("img",{css:({ ["width"] : "40px", ["height"] : "40px", ["backgroundColor"] : "transparent", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:on_click_bd1bd52eb3f49731a43de1af718afe95,src:reflex___state____state__mi_web___components___general_components___footer____logo_state.logo_src_rx_state_},)
+
+  )
+}
+
+function Button_60829640520251924791121735878190566678 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_c8c7d691c8f33dd61ca74a02b23b75e3 = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/module_4", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["backgroundColor"] : "white", ["color"] : "black", ["padding"] : "10px 20px", ["borderRadius"] : "50px", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["&:hover"] : ({ ["backgroundColor"] : "black", ["color"] : "white", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),onClick:on_click_c8c7d691c8f33dd61ca74a02b23b75e3},
+"Siguiente \u2192"
 ,)
   )
 }
@@ -153,10 +153,10 @@ Fragment,
 {},
 jsx(
 RadixThemesBox,
-{css:({ ["background"] : "linear-gradient(180deg, rgba(74,34,98,1) 0%, rgba(71,85,139,1) 52%, rgba(11,103,93,1) 100%)", ["textColor"] : "black", ["width"] : "100%", ["maxWidth"] : "100%", ["display"] : "flex", ["flexDirection"] : "column", ["minHeight"] : "100vh", ["flexWrap"] : "wrap", ["justifyContent"] : "center", ["gap"] : "10px", ["alignItems"] : "center", ["margin"] : "0 auto" })},
+{css:({ ["background"] : "linear-gradient(180deg, #0d1117 0%, #1c1f26 100%)", ["width"] : "100%", ["maxWidth"] : "100%", ["display"] : "flex", ["flexDirection"] : "column", ["minHeight"] : "100vh", ["flexWrap"] : "wrap", ["justifyContent"] : "center", ["gap"] : "10px", ["alignItems"] : "center", ["margin"] : "0 auto" })},
 jsx(
 RadixThemesBox,
-{css:({ ["width"] : "100%", ["height"] : "40px", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.5)", ["padding"] : "1em", ["zIndex"] : "1000", ["position"] : "fixed", ["boxShadow"] : "0 1px 3px rgba(0, 0, 0, 0.1)", ["backdropFilter"] : "blur(10px)", ["justifyContent"] : "center", ["display"] : "flex", ["top"] : "0px", ["alignItems"] : "center" })},
+{css:({ ["width"] : "100%", ["height"] : "40px", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.5)", ["padding"] : "1em", ["zIndex"] : "1000", ["position"] : "fixed", ["boxShadow"] : "0 1px 3px rgba(0, 0, 0, 0.1)", ["backdropFilter"] : "blur(10px)", ["justifyContent"] : "center", ["display"] : "flex", ["top"] : "0px", ["alignItems"] : "center", ["borderBottom"] : "1px solid rgba(255, 255, 255, 0.2)" })},
 jsx(
 RadixThemesBox,
 {css:({ ["@media screen and (min-width: 0)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 30em)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 48em)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 62em)"] : ({ ["display"] : "block" }) })},
@@ -178,7 +178,7 @@ RadixThemesTooltip,
 {content:"Pagina Principal"},
 jsx(
 RadixThemesHeading,
-{css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 "Inicio"
 ,),),),),),jsx(
 RadixThemesFlex,
@@ -197,21 +197,21 @@ ReactRouterLink,
 {to:"/choice_modules"},
 jsx(
 RadixThemesText,
-{as:"p",css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{as:"p",css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 "Curso"
 ,),),),),jsx(
 RadixThemesHoverCard.Content,
-{css:({ ["padding"] : "2", ["borderRadius"] : "8px", ["border"] : "1.5px solid transparent", ["boxShadow"] : "0px 4px 14px rgba(0, 0, 0, 0.3)", ["transition"] : "transform 0.2s ease-in-out", ["background"] : "rgba(250, 250, 250, 0.4)", ["backdropFilter"] : "blur(10px)" })},
+{css:({ ["padding"] : "2", ["borderRadius"] : "8px", ["border"] : "1.5px solid transparent", ["boxShadow"] : "0px 4px 14px rgba(0, 0, 0, 0.3)", ["transition"] : "transform 0.3s ease-in-out", ["background"] : "rgba(250, 250, 250, 0.4)", ["backdropFilter"] : "blur(10px)" })},
 jsx(
 RadixThemesFlex,
 {align:"start",className:"rx-Stack",direction:"column",gap:"2"},
 jsx(
 RadixThemesText,
-{as:"p",css:({ ["color"] : "#ffd284", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica" }),size:"5",weight:"bold"},
+{as:"p",css:({ ["color"] : "#006dfc", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica" }),size:"5",weight:"bold"},
 "M\u00f3dulos del curso "
 ,),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_1"},
@@ -222,7 +222,7 @@ RadixThemesStrong,
 ,)," Fundamentos de Finanzas Personales y el Mercado "
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_2"},
@@ -233,7 +233,7 @@ RadixThemesStrong,
 ,)," Inversores y tipos de Instrumentos"
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_3"},
@@ -244,7 +244,7 @@ RadixThemesStrong,
 ,)," Introducci\u00f3n al Trading"
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_4"},
@@ -255,7 +255,7 @@ RadixThemesStrong,
 ,)," Fundamentos del An\u00e1lisis T\u00e9cnico y Patrones"
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_5"},
@@ -266,7 +266,7 @@ RadixThemesStrong,
 ,)," Dominando Soportes, Resistencias y Rangos"
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_6"},
@@ -277,7 +277,7 @@ RadixThemesStrong,
 ,)," Tendencias y como identificarlas"
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_7"},
@@ -288,7 +288,7 @@ RadixThemesStrong,
 ,)," Indicadores y Entradas Exitosas"
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_8"},
@@ -299,7 +299,7 @@ RadixThemesStrong,
 ,)," Hablemos de Criptomonedas"
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_9"},
@@ -310,7 +310,7 @@ RadixThemesStrong,
 ,)," Las Estafas en el Trading y las Inversiones"
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_10"},
@@ -330,7 +330,7 @@ ReactRouterLink,
 {to:"/soporte_page"},
 jsx(
 RadixThemesText,
-{as:"p",css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{as:"p",css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 "Contacto"
 ,),),),),),),),jsx(
 RadixThemesBox,
@@ -350,7 +350,7 @@ ReactRouterLink,
 {to:"/"},
 jsx(
 RadixThemesHeading,
-{css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 "Inicio"
 ,),),),),jsx(
 RadixThemesDropdownMenu.Root,
@@ -379,7 +379,7 @@ RadixThemesHeading,
 "M\u00f3dulo 3: Introducci\u00f3n al Trading"
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#ffa824", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#c6ceda", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "1. \u00bfQu\u00e9 es el trading? "
 ,),jsx(
 RadixThemesFlex,
@@ -402,7 +402,7 @@ RadixThemesStrong,
 ,)," es la compra y venta de activos financieros (acciones, divisas, criptomonedas, materias primas, etc.) con el objetivo de obtener ganancias a partir de los movimientos del mercado. A diferencia de la inversi\u00f3n tradicional, el trading se enfoca en el corto y mediano plazo."
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "Caracter\u00edsticas del trading:"
 ,),jsx(
 "ol",
@@ -425,7 +425,7 @@ jsx(
 "Tiene distintos niveles de riesgo y estrategias seg\u00fan el plazo."
 ,),),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "Tipos de trading m\u00e1s comunes:"
 ,),jsx(
 "ol",
@@ -475,7 +475,7 @@ jsx("img",{css:({ ["height"] : "auto", ["width"] : "100%", ["maxWidth"] : "600px
 ,),),),jsx(RadixThemesSeparator,{css:({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" }),size:"4"},)
 ,jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#ffa824", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#c6ceda", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "2. Tipos de an\u00e1lisis en Trading"
 ,),jsx(
 RadixThemesText,
@@ -503,7 +503,7 @@ Zoom,
 jsx("img",{css:({ ["height"] : "auto", ["width"] : "100%", ["maxWidth"] : "600px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["borderRadius"] : "20px", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["alignItems"] : "center", ["justify"] : "center", ["objectFit"] : "cover", ["display"] : "block", ["margin"] : "auto", ["boxSizing"] : "border-box", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),src:"/fundamental_vs_tecnico.jpg?refresh=1"},)
 ,),),),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "An\u00e1lisis Fundamental"
 ,),jsx(
 RadixThemesText,
@@ -516,7 +516,7 @@ RadixThemesStrong,
 ,)," estudia el valor real de un activo basado en factores econ\u00f3micos, financieros y de mercado. Se usa principalmente en inversiones a largo plazo."
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "Aspectos clave:"
 ,),jsx(
 "ol",
@@ -551,7 +551,7 @@ RadixThemesStrong,
 ,)," Requiere un conocimiento profundo de econom\u00eda y los efectos de las noticias pueden tardar en reflejarse en el precio."
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "An\u00e1lisis T\u00e9cnico (Enfoque de este curso)"
 ,),jsx(
 RadixThemesText,
@@ -564,7 +564,7 @@ RadixThemesStrong,
 ,)," Se basa en el estudio de los gr\u00e1ficos de precios y patrones de comportamiento del mercado. Su premisa es que \u201cel precio lo descuenta todo\u201d y que la historia tiende a repetirse."
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "Aspectos clave:"
 ,),jsx(
 "ol",
@@ -628,7 +628,7 @@ RadixThemesStrong,
 ,),jsx(RadixThemesSeparator,{css:({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" }),size:"4"},)
 ,jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#ffa824", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#c6ceda", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "3. Introducci\u00f3n a las Velas Japonesas"
 ,),jsx(
 RadixThemesText,
@@ -650,7 +650,7 @@ Zoom,
 jsx("img",{css:({ ["height"] : "auto", ["width"] : "100%", ["maxWidth"] : "600px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["borderRadius"] : "20px", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["alignItems"] : "center", ["justify"] : "center", ["objectFit"] : "cover", ["display"] : "block", ["margin"] : "auto", ["boxSizing"] : "border-box", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),src:"/vela_verde_contra_roja.jpg?refresh=1"},)
 ,),),),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "Estructura de una vela japonesa"
 ,),jsx(
 RadixThemesText,
@@ -710,7 +710,7 @@ Zoom,
 jsx("img",{css:({ ["height"] : "auto", ["width"] : "100%", ["maxWidth"] : "600px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["borderRadius"] : "20px", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["alignItems"] : "center", ["justify"] : "center", ["objectFit"] : "cover", ["display"] : "block", ["margin"] : "auto", ["boxSizing"] : "border-box", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),src:"/velas-japonesas.png?refresh=1"},)
 ,),),),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "Tipos de velas m\u00e1s comunes"
 ,),jsx(
 "ol",
@@ -775,7 +775,7 @@ Zoom,
 jsx("img",{css:({ ["height"] : "auto", ["width"] : "100%", ["maxWidth"] : "600px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["borderRadius"] : "20px", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["alignItems"] : "center", ["justify"] : "center", ["objectFit"] : "cover", ["display"] : "block", ["margin"] : "auto", ["boxSizing"] : "border-box", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),src:"/fuerza_velas.png?refresh=1"},)
 ,),),),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "\u26a0\ufe0f\u00a1\u00a1importante!!\u26a0\ufe0f"
 ,),jsx(
 RadixThemesText,
@@ -792,7 +792,7 @@ RadixThemesText,
 ,),jsx(RadixThemesSeparator,{css:({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" }),size:"4"},)
 ,jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#ffa824", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#c6ceda", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "4. Gesti\u00f3n del Riesgo "
 ,),jsx(
 RadixThemesText,
@@ -833,7 +833,7 @@ RadixThemesStrong,
 ,),". El tama\u00f1o de las \u00f3rdenes debe determinarse cuidadosamente para preservar el capital y evitar que el dinero pase de manos inexpertas a operadores m\u00e1s experimentados. Aprender a gestionar el capital y controlar el riesgo es clave para el \u00e9xito en el trading."
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "Medidas Simples para el Manejo del Riesgo"
 ,),jsx(
 RadixThemesText,
@@ -860,7 +860,7 @@ jsx(
 "4. Si las p\u00e9rdidas potenciales de tus operaciones abiertas representan un 10% o m\u00e1s de tu capital, EVITA abrir nuevas operaciones."
 ,),),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "Errores Comunes en el Manejo del Riesgo"
 ,),jsx(
 RadixThemesText,
@@ -877,7 +877,7 @@ RadixThemesStrong,
 ,),"y arriesga solo una peque\u00f1a parte de tu capital en cada operaci\u00f3n."
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "Herramientas de gesti\u00f3n de riesgo"
 ,),jsx(
 RadixThemesText,
@@ -915,7 +915,7 @@ RadixThemesStrong,
 ,),jsx(RadixThemesSeparator,{css:({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" }),size:"4"},)
 ,jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#ffa824", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#c6ceda", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "5. Psicolog\u00eda Del Trading"
 ,),jsx(
 RadixThemesText,
@@ -938,7 +938,7 @@ Zoom,
 jsx("img",{css:({ ["height"] : "auto", ["width"] : "100%", ["maxWidth"] : "600px", ["backgroundColor"] : "#99003d", ["color"] : "#333333", ["borderRadius"] : "20px", ["cursor"] : "pointer", ["transition"] : "transform 0.2s ease-in-out", ["alignItems"] : "center", ["justify"] : "center", ["objectFit"] : "cover", ["display"] : "block", ["margin"] : "auto", ["boxSizing"] : "border-box", ["&:hover"] : ({ ["backgroundColor"] : "#800080", ["borderColor"] : "#6366F1", ["boxShadow"] : "0px 4px 10px rgba(0, 0, 0, 1)", ["transform"] : "scale(1.05)" }) }),src:"/psicologia_trading.jpg?refresh=1"},)
 ,),),),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "El Proceso Neurol\u00f3gico"
 ,),jsx(
 RadixThemesText,
@@ -967,7 +967,7 @@ RadixThemesStrong,
 ,),"aumenta las probabilidades de \u00e9xito."
 ,),),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "Mentalidad del Inversor"
 ,),jsx(
 RadixThemesText,
@@ -975,7 +975,7 @@ RadixThemesText,
 "Adaptar tu mentalidad es clave para operar con \u00e9xito. La disciplina y la paciencia son esenciales para que, a largo plazo, las operaciones ganadoras superen a las perdedoras. Cambiar creencias err\u00f3neas y desarrollar confianza en tu sistema de trading marcar\u00e1 la diferencia entre el \u00e9xito y el fracaso."
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginBottom"] : "0.5em" })},
 "Antes de comprar una accion o meterte en una inversion preguntate: "
 ,),jsx(
 RadixThemesBox,
@@ -1004,7 +1004,7 @@ RadixThemesStrong,
 ,),),),jsx(RadixThemesSeparator,{css:({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" }),size:"4"},)
 ,jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#ffa824", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "1em" })},
+{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#c6ceda", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "1em" })},
 "Tips a tener en cuenta"
 ,),jsx(
 RadixThemesFlex,
@@ -1133,7 +1133,7 @@ RadixThemesTable.Cell,
 ,),),),),),),jsx(RadixThemesSeparator,{css:({ ["borderColor"] : "gray", ["borderWidth"] : "1px", ["marginTop"] : "0.1em", ["marginBottom"] : "1em" }),size:"4"},)
 ,jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#ffa824", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "1em" })},
+{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#c6ceda", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginBottom"] : "1em" })},
 "Conclusi\u00f3n del M\u00f3dulo 3: "
 ,),jsx(
 "ol",
@@ -1173,7 +1173,7 @@ RadixThemesBox,
 jsx(Button_257889233494721812659980547444226602750,{},)
 ,),jsx(
 RadixThemesFlex,
-{align:"start",className:"rx-Stack",css:({ ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["minWidth"] : "100%", ["margin"] : "0", ["padding"] : "20px", ["backgroundColor"] : "#333", ["color"] : "white", ["position"] : "relative" }),direction:"column",gap:"3"},
+{align:"start",className:"rx-Stack",css:({ ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["minWidth"] : "100%", ["margin"] : "0", ["padding"] : "20px", ["backgroundColor"] : "#2d3038", ["color"] : "white", ["position"] : "relative", ["borderTop"] : "1px solid rgba(255, 255, 255, 0.4)" }),direction:"column",gap:"3"},
 jsx(
 RadixThemesText,
 {as:"p"},

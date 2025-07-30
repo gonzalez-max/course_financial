@@ -39,17 +39,23 @@ rx.box(
                 min_height="100vh",
                 padding="20px",
                 margin_top="40px",
-                margin_bottom=Size.BIG.value,
+                margin_bottom=Size.REGULAR.value,
                 background_image="url('/financial_background.jpg')",
                 background_position="center",    
                 background_repeat="no-repeat",   
-                background_size="cover",  
+                background_size="cover", 
+                border_bottom="1px solid rgba(255, 255, 255, 0.4)", 
                 ),
                 
               
+                rx.heading("Bienvenido/a al curso",
+                        **c_styles.TEXT_STYLE["title"],
+                        margin_bottom=Size.MEDIUM.value,
+                ),
+              
                 rx.heading("Introduccion",
                         **c_styles.TEXT_STYLE["subtitle"],
-                        margin_top=Size.SMALL.value,
+                        margin_top=Size.DEFAULT.value,
                 ),
             
                 rx.text("Te damos la bienvenida al curso de Inversiones Trading y como evitar estafas"
@@ -157,7 +163,7 @@ rx.box(
                                    ),
                     ),
                 ),
-                rx.heading("Muchos Exitos con tu aprendisaje... comencemos 🚀📈",
+                rx.heading("Muchos Exitos con tu aprendizaje... comencemos 🚀📈",
                            **c_styles.TEXT_STYLE["title"],
                             margin_top=Size.MEDIUM.value),
                 rx.link(
@@ -217,6 +223,11 @@ def financial_body_mobile() -> rx.Component:
                 background_size="cover", 
                 ),
                 
+                
+                rx.heading("Bienvenido/a al curso",
+                        **c_styles.TEXT_STYLE["title"],
+                        margin_bottom=Size.MEDIUM.value,
+                ),
                 
                 rx.heading("Introduccion",
                         **c_styles.TEXT_STYLE["subtitle"],
@@ -328,7 +339,7 @@ def financial_body_mobile() -> rx.Component:
                                    ),
                     ),
                 ),
-                rx.heading("Muchos Exitos con tu aprendisaje... comencemos 🚀📈",
+                rx.heading("Muchos Exitos con tu aprendizaje... comencemos 🚀📈",
                            **c_styles.TEXT_STYLE["title"],
                             margin_top=Size.MEDIUM.value),
                 rx.link(

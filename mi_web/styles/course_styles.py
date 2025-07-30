@@ -46,8 +46,7 @@ rx.Config(
 #____________________________________CURSO__STYLES______________________________________________________________________-#
 
 COURSE_STYLES = {
-    "background" : "linear-gradient(180deg, rgba(74,34,98,1) 0%, rgba(71,85,139,1) 52%, rgba(11,103,93,1) 100%)",
-    "text_color" : "black",
+    "background" : "linear-gradient(180deg, #0d1117 0%, #1c1f26 100%)",
     "width":"100%",
     "max_width":"100%",
     "display": "flex",
@@ -65,7 +64,7 @@ COURSE_STYLES = {
 STYLES_CHOICE_MODULES={
    "text_color" : "black",
     "width":"100%",
-    "background" : "linear-gradient(180deg, rgba(2,4,45,1) 0%, rgba(136,75,111,1) 100%)",
+    "background" : "linear-gradient(180deg, #0d1117 0%, #1c1f26 100%)",
     "display": "flex",
     "flex_direction": "column",
     "min_height":"100vh",
@@ -174,6 +173,7 @@ COURSE_NAVBAR_STYLES={
     "display": "flex",
     "top":"0px",
     "align_items":"center",
+    "border_bottom":"1px solid rgba(255, 255, 255, 0.2)"
 }
 
 COURSE_NAVBAR_FONTS={
@@ -181,13 +181,14 @@ COURSE_NAVBAR_FONTS={
     "color":"black", 
     "weight":"medium",
     "font_family": "montserrat",
-    "transition": "color 0.2s ease",
+    "transition": "color 0.3s ease",
     "text_align": "left",
     "align_items": "center",
     "justify_content": "center",
     "width":"100%",
     "_hover":{
         "color": "white",
+        "transform": "scale(1.05)"
          },
 }
 #________________________FOOTER STYLES_________________________________________________________#
@@ -311,7 +312,7 @@ TEXT_STYLE = {
     "subtitle": {  # Para subtítulos o encabezados secundarios
         "font_size": "30px",
         "font_weight": "500",
-        "color": "#ffa824",
+        "color": "#c6ceda",
         "text_align": "left",
         "font_family": "Roboto",
         "letter_spacing": "0.05em",  # Ajuste fino para mejor legibilidad
@@ -324,8 +325,8 @@ TEXT_STYLE = {
     
     "subseccion": {  # Para subtítulos o encabezados secundarios
         "font_size": "25px",
-        "font_weight": "500",
-        "color": "#8ad3ff",
+        "font_weight": "400",
+        "color": "#4493f8",
         "text_align": "left",
         "line_height": "1.3",
         "letter_spacing": "0.03em",

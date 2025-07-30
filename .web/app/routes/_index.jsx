@@ -10,46 +10,6 @@ import { jsx } from "@emotion/react"
 
 
 
-function Tooltip_107787178243800509720440254496591202213 () {
-  
-  const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    jsx(
-RadixThemesTooltip,
-{content:"No me toques."},
-jsx("img",{css:({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))),src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
-,)
-  )
-}
-
-function Link_55467223364215175522289453147854771246 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-
-
-  
-  return (
-    jsx(
-RadixThemesLink,
-{css:({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) }),href:"#"},
-jsx(
-RadixThemesButton,
-{css:({ ["width"] : "100%", ["height"] : "100px", ["padding"] : "30px", ["spacing"] : "5px", ["borderRadius"] : "50px", ["fontSize"] : "20px", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "400px", ["backgroundColor"] : "rgba(0,0,0,1)", ["border"] : "1.5px solid black", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "white", ["borderColor"] : "black", ["transform"] : "scale(1.10)", ["color"] : "black", ["textDecoration"] : "none" }), ["marginTop"] : "1em" }),onClick:((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/choice_modules", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))),radius:"medium",size:"3",variant:"solid"},
-"Comenzar con el curso"
-,),)
-  )
-}
-
 function Link_49149495207899390339577974416985833977 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -88,20 +48,41 @@ function Img_299474052678682706390452813831564012767 () {
   )
 }
 
-function Img_44193794075118247882912592078120564270 () {
+function Dropdownmenu__item_287075228212589713390829397942124902700 () {
   
-  const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_fa1b729bdabd98dbf80c7f3f665e4707 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
+  const on_click_5f3f71c76c6fe2931e3440026bbf646f = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/choice_modules", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
 
 
 
   
   return (
-    jsx("img",{css:({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" }),onClick:on_click_fa1b729bdabd98dbf80c7f3f665e4707,src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
+    jsx(
+RadixThemesDropdownMenu.Item,
+{onClick:on_click_5f3f71c76c6fe2931e3440026bbf646f},
+"Curso"
+,)
+  )
+}
 
+function Tooltip_107787178243800509720440254496591202213 () {
+  
+  const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    jsx(
+RadixThemesTooltip,
+{content:"No me toques."},
+jsx("img",{css:({ ["width"] : "25px", ["height"] : "25px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px", ["cursor"] : "pointer", ["&:hover"] : ({ ["transform"] : "scale(1.10)" }) }),onClick:((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))),src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
+,)
   )
 }
 
@@ -124,22 +105,41 @@ RadixThemesDropdownMenu.Item,
   )
 }
 
-function Dropdownmenu__item_287075228212589713390829397942124902700 () {
+function Img_44193794075118247882912592078120564270 () {
+  
+  const reflex___state____state__mi_web___components___general_components___course_navbar____logo_state = useContext(StateContexts.reflex___state____state__mi_web___components___general_components___course_navbar____logo_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_fa1b729bdabd98dbf80c7f3f665e4707 = useCallback(((_e) => (addEvents([(Event("reflex___state____state.mi_web___components___general_components___course_navbar____logo_state.increment_click", ({  }), ({  })))], [_e], ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx("img",{css:({ ["width"] : "30px", ["height"] : "30px", ["borderRadius"] : "50px", ["backgroundColor"] : "transparent", ["padding"] : "0px" }),onClick:on_click_fa1b729bdabd98dbf80c7f3f665e4707,src:reflex___state____state__mi_web___components___general_components___course_navbar____logo_state.logo_src_rx_state_},)
+
+  )
+}
+
+function Link_55467223364215175522289453147854771246 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_5f3f71c76c6fe2931e3440026bbf646f = useCallback(((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/choice_modules", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))), [addEvents, Event])
 
 
 
   
   return (
     jsx(
-RadixThemesDropdownMenu.Item,
-{onClick:on_click_5f3f71c76c6fe2931e3440026bbf646f},
-"Curso"
-,)
+RadixThemesLink,
+{css:({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) }),href:"#"},
+jsx(
+RadixThemesButton,
+{css:({ ["width"] : "100%", ["height"] : "100px", ["padding"] : "30px", ["spacing"] : "5px", ["borderRadius"] : "50px", ["fontSize"] : "20px", ["textTransform"] : "capitalize", ["letterSpacing"] : "1px", ["color"] : "white", ["whiteSpace"] : "normal", ["textAlign"] : "center", ["maxWidth"] : "400px", ["backgroundColor"] : "rgba(0,0,0,1)", ["border"] : "1.5px solid black", ["wordWrap"] : "break-word", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["transition"] : "all 0.3s ease-in-out", ["cursor"] : "pointer", ["textDecoration"] : "none", ["&:hover"] : ({ ["backgroundColor"] : "white", ["borderColor"] : "black", ["transform"] : "scale(1.10)", ["color"] : "black", ["textDecoration"] : "none" }), ["marginTop"] : "1em" }),onClick:((_e) => (addEvents([(Event("_redirect", ({ ["path"] : "/choice_modules", ["external"] : false, ["replace"] : false }), ({  })))], [_e], ({  })))),radius:"medium",size:"3",variant:"solid"},
+"Comenzar con el curso"
+,),)
   )
 }
 
@@ -155,10 +155,10 @@ Fragment,
 {},
 jsx(
 RadixThemesBox,
-{css:({ ["textColor"] : "black", ["width"] : "100%", ["background"] : "linear-gradient(180deg, rgba(2,4,45,1) 0%, rgba(136,75,111,1) 100%)", ["display"] : "flex", ["flexDirection"] : "column", ["minHeight"] : "100vh", ["flexWrap"] : "wrap", ["justifyContent"] : "center", ["gap"] : "10px", ["alignItems"] : "center", ["margin"] : "0 auto", ["overflowX"] : "hidden", ["overflowY"] : "auto" })},
+{css:({ ["textColor"] : "black", ["width"] : "100%", ["background"] : "linear-gradient(180deg, #0d1117 0%, #1c1f26 100%)", ["display"] : "flex", ["flexDirection"] : "column", ["minHeight"] : "100vh", ["flexWrap"] : "wrap", ["justifyContent"] : "center", ["gap"] : "10px", ["alignItems"] : "center", ["margin"] : "0 auto", ["overflowX"] : "hidden", ["overflowY"] : "auto" })},
 jsx(
 RadixThemesBox,
-{css:({ ["width"] : "100%", ["height"] : "40px", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.5)", ["padding"] : "1em", ["zIndex"] : "1000", ["position"] : "fixed", ["boxShadow"] : "0 1px 3px rgba(0, 0, 0, 0.1)", ["backdropFilter"] : "blur(10px)", ["justifyContent"] : "center", ["display"] : "flex", ["top"] : "0px", ["alignItems"] : "center" })},
+{css:({ ["width"] : "100%", ["height"] : "40px", ["maxWidth"] : "100%", ["backgroundColor"] : "rgba(255, 255, 255, 0.5)", ["padding"] : "1em", ["zIndex"] : "1000", ["position"] : "fixed", ["boxShadow"] : "0 1px 3px rgba(0, 0, 0, 0.1)", ["backdropFilter"] : "blur(10px)", ["justifyContent"] : "center", ["display"] : "flex", ["top"] : "0px", ["alignItems"] : "center", ["borderBottom"] : "1px solid rgba(255, 255, 255, 0.2)" })},
 jsx(
 RadixThemesBox,
 {css:({ ["@media screen and (min-width: 0)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 30em)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 48em)"] : ({ ["display"] : "none" }), ["@media screen and (min-width: 62em)"] : ({ ["display"] : "block" }) })},
@@ -180,7 +180,7 @@ RadixThemesTooltip,
 {content:"Pagina Principal"},
 jsx(
 RadixThemesHeading,
-{css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 "Inicio"
 ,),),),),),jsx(
 RadixThemesFlex,
@@ -199,21 +199,21 @@ ReactRouterLink,
 {to:"/choice_modules"},
 jsx(
 RadixThemesText,
-{as:"p",css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{as:"p",css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 "Curso"
 ,),),),),jsx(
 RadixThemesHoverCard.Content,
-{css:({ ["padding"] : "2", ["borderRadius"] : "8px", ["border"] : "1.5px solid transparent", ["boxShadow"] : "0px 4px 14px rgba(0, 0, 0, 0.3)", ["transition"] : "transform 0.2s ease-in-out", ["background"] : "rgba(250, 250, 250, 0.4)", ["backdropFilter"] : "blur(10px)" })},
+{css:({ ["padding"] : "2", ["borderRadius"] : "8px", ["border"] : "1.5px solid transparent", ["boxShadow"] : "0px 4px 14px rgba(0, 0, 0, 0.3)", ["transition"] : "transform 0.3s ease-in-out", ["background"] : "rgba(250, 250, 250, 0.4)", ["backdropFilter"] : "blur(10px)" })},
 jsx(
 RadixThemesFlex,
 {align:"start",className:"rx-Stack",direction:"column",gap:"2"},
 jsx(
 RadixThemesText,
-{as:"p",css:({ ["color"] : "#ffd284", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica" }),size:"5",weight:"bold"},
+{as:"p",css:({ ["color"] : "#006dfc", ["fontFamily"] : "Helvetica", ["--default-font-family"] : "Helvetica" }),size:"5",weight:"bold"},
 "M\u00f3dulos del curso "
 ,),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_1"},
@@ -224,7 +224,7 @@ RadixThemesStrong,
 ,)," Fundamentos de Finanzas Personales y el Mercado "
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_2"},
@@ -235,7 +235,7 @@ RadixThemesStrong,
 ,)," Inversores y tipos de Instrumentos"
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_3"},
@@ -246,7 +246,7 @@ RadixThemesStrong,
 ,)," Introducci\u00f3n al Trading"
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_4"},
@@ -257,7 +257,7 @@ RadixThemesStrong,
 ,)," Fundamentos del An\u00e1lisis T\u00e9cnico y Patrones"
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_5"},
@@ -268,7 +268,7 @@ RadixThemesStrong,
 ,)," Dominando Soportes, Resistencias y Rangos"
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_6"},
@@ -279,7 +279,7 @@ RadixThemesStrong,
 ,)," Tendencias y como identificarlas"
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_7"},
@@ -290,7 +290,7 @@ RadixThemesStrong,
 ,)," Indicadores y Entradas Exitosas"
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_8"},
@@ -301,7 +301,7 @@ RadixThemesStrong,
 ,)," Hablemos de Criptomonedas"
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_9"},
@@ -312,7 +312,7 @@ RadixThemesStrong,
 ,)," Las Estafas en el Trading y las Inversiones"
 ,),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{asChild:true,css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 jsx(
 ReactRouterLink,
 {to:"/module_10"},
@@ -332,7 +332,7 @@ ReactRouterLink,
 {to:"/soporte_page"},
 jsx(
 RadixThemesText,
-{as:"p",css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{as:"p",css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 "Contacto"
 ,),),),),),),),jsx(
 RadixThemesBox,
@@ -352,7 +352,7 @@ ReactRouterLink,
 {to:"/"},
 jsx(
 RadixThemesHeading,
-{css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.2s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white" }) }),size:"3",weight:"medium"},
+{css:({ ["color"] : "black", ["fontFamily"] : "montserrat", ["--default-font-family"] : "montserrat", ["transition"] : "color 0.3s ease", ["textAlign"] : "left", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["&:hover"] : ({ ["color"] : "white", ["transform"] : "scale(1.05)" }) }),size:"3",weight:"medium"},
 "Inicio"
 ,),),),),jsx(
 RadixThemesDropdownMenu.Root,
@@ -386,7 +386,7 @@ RadixThemesFlex,
 {align:"start",className:"rx-Stack",css:({ ["width"] : "100%", ["borderRadius"] : "10px", ["alignItems"] : "center" }),direction:"column",gap:"3"},
 jsx(
 RadixThemesBox,
-{css:({ ["width"] : "100vw", ["height"] : "100vh", ["minHeight"] : "100vh", ["padding"] : "20px", ["marginTop"] : "40px", ["marginBottom"] : "4em", ["backgroundImage"] : "url('/financial_background.jpg')", ["backgroundPosition"] : "center", ["backgroundRepeat"] : "no-repeat", ["backgroundSize"] : "cover" })},
+{css:({ ["width"] : "100vw", ["height"] : "100vh", ["minHeight"] : "100vh", ["padding"] : "20px", ["marginTop"] : "40px", ["marginBottom"] : "2em", ["backgroundImage"] : "url('/financial_background.jpg')", ["backgroundPosition"] : "center", ["backgroundRepeat"] : "no-repeat", ["backgroundSize"] : "cover", ["borderBottom"] : "1px solid rgba(255, 255, 255, 0.4)" })},
 jsx(
 RadixThemesFlex,
 {align:"start",className:"rx-Stack",css:({ ["marginTop"] : "100px", ["alignItems"] : "center", ["justifyContent"] : "center", ["padding"] : "20px" }),direction:"row",gap:"3"},
@@ -400,7 +400,11 @@ RadixThemesHeading,
 ,),jsx(Link_55467223364215175522289453147854771246,{},)
 ,),),),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#ffa824", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginTop"] : "0.1em" })},
+{css:({ ["@media screen and (min-width: 0)"] : ({ ["fontSize"] : "35px" }), ["@media screen and (min-width: 30em)"] : ({ ["fontSize"] : "42px" }), ["@media screen and (min-width: 48em)"] : ({ ["fontSize"] : "46px" }), ["@media screen and (min-width: 62em)"] : ({ ["fontSize"] : "55px" }), ["fontWeight"] : "700", ["color"] : "white", ["textAlign"] : "center", ["alignItems"] : "center", ["padding"] : "17px", ["letterSpacing"] : "0.05em", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.2", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["textWrap"] : "balance", ["maxWidth"] : "900px", ["marginBottom"] : "0.5em" })},
+"Bienvenido/a al curso"
+,),jsx(
+RadixThemesHeading,
+{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#c6ceda", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginTop"] : "1em" })},
 "Introduccion"
 ,),jsx(
 RadixThemesText,
@@ -408,7 +412,7 @@ RadixThemesText,
 "Te damos la bienvenida al curso de Inversiones Trading y como evitar estafas, dise\u00f1ado para brindarte un conocimiento s\u00f3lido y pr\u00e1ctico sobre el mundo financiero. A lo largo de este curso, aprender\u00e1s desde los conceptos m\u00e1s b\u00e1sicos hasta estrategias avanzadas de inversi\u00f3n, con un enfoque especial en c\u00f3mo reconocer y evitar fraudes financieros."
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#ffa824", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
+{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#c6ceda", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
 "\u00bfQu\u00e9 aprender\u00e1s en este curso?"
 ,),jsx(
 "ol",
@@ -431,7 +435,7 @@ jsx(
 " Herramientas y estrategias para proteger tu capital y tomar decisiones informadas."
 ,),),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#ffa824", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
+{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#c6ceda", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
 "\u00bfPor qu\u00e9 tomar este curso?"
 ,),jsx(
 RadixThemesText,
@@ -439,7 +443,7 @@ RadixThemesText,
 "En un mundo donde las oportunidades financieras crecen, tambi\u00e9n lo hacen los riesgos. Este curso te proporcionar\u00e1 conocimientos pr\u00e1cticos y casos reales para que puedas invertir con confianza y seguridad."
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#ffa824", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
+{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#c6ceda", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
 "Seis Puntos a tener en cuenta"
 ,),jsx(
 RadixThemesBox,
@@ -449,7 +453,7 @@ RadixThemesFlex,
 {align:"start",className:"rx-Stack",direction:"column",gap:"3"},
 jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
 "1. Organiza tu tiempo"
 ,),jsx(
 RadixThemesText,
@@ -457,7 +461,7 @@ RadixThemesText,
 "El curso est\u00e1 dise\u00f1ado para darte conocimientos desde lo b\u00e1sico hasta lo avanzado, por lo que es importante que asignes tiempo cada semana para aprender, practicar y repasar los contenidos."
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
 "2. Ten una libreta de apuntes"
 ,),jsx(
 RadixThemesText,
@@ -465,7 +469,7 @@ RadixThemesText,
 "Aunque sea un curso digital, es fundamental tomar notas de los conceptos clave. Esto te ayudar\u00e1 a recordar informaci\u00f3n importante y a estructurar mejor tu aprendizaje."
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
 "3. S\u00e9 cr\u00edtico con la informaci\u00f3n"
 ,),jsx(
 RadixThemesText,
@@ -473,7 +477,7 @@ RadixThemesText,
 "En internet hay mucha informaci\u00f3n falsa sobre trading y finanzas. Aseg\u00farate de analizar la fuente de cada dato y aplicar un pensamiento cr\u00edtico antes de tomar decisiones financieras."
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
 "4. Mant\u00e9n una mentalidad realista y disciplinada"
 ,),jsx(
 RadixThemesText,
@@ -481,7 +485,7 @@ RadixThemesText,
 "El trading y las finanzas no son un esquema para hacerse rico r\u00e1pidamente. Aqu\u00ed aprender\u00e1s c\u00f3mo tomar decisiones informadas y minimizar riesgos, pero necesitar\u00e1s paciencia, disciplina y pr\u00e1ctica constante."
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
 "5. Prepar\u00e1te para aprender de tus errores"
 ,),jsx(
 RadixThemesText,
@@ -489,7 +493,7 @@ RadixThemesText,
 "En el mundo financiero, cometer errores es parte del proceso. No te frustres si algo no sale bien al principio, lo importante es aprender y mejorar con la experiencia."
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
 "6. Disfruta el proceso y participa activamente"
 ,),jsx(
 RadixThemesText,
@@ -498,7 +502,7 @@ RadixThemesText,
 ,),),),jsx(
 RadixThemesHeading,
 {css:({ ["@media screen and (min-width: 0)"] : ({ ["fontSize"] : "35px" }), ["@media screen and (min-width: 30em)"] : ({ ["fontSize"] : "42px" }), ["@media screen and (min-width: 48em)"] : ({ ["fontSize"] : "46px" }), ["@media screen and (min-width: 62em)"] : ({ ["fontSize"] : "55px" }), ["fontWeight"] : "700", ["color"] : "white", ["textAlign"] : "center", ["alignItems"] : "center", ["padding"] : "17px", ["letterSpacing"] : "0.05em", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.2", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["textWrap"] : "balance", ["maxWidth"] : "900px", ["marginTop"] : "0.5em" })},
-"Muchos Exitos con tu aprendisaje... comencemos \ud83d\ude80\ud83d\udcc8"
+"Muchos Exitos con tu aprendizaje... comencemos \ud83d\ude80\ud83d\udcc8"
 ,),jsx(Link_49149495207899390339577974416985833977,{},)
 ,),),),),jsx(
 RadixThemesBox,
@@ -528,7 +532,11 @@ RadixThemesHeading,
 ,),jsx(Link_55467223364215175522289453147854771246,{},)
 ,),),),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#ffa824", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginTop"] : "1em" })},
+{css:({ ["@media screen and (min-width: 0)"] : ({ ["fontSize"] : "35px" }), ["@media screen and (min-width: 30em)"] : ({ ["fontSize"] : "42px" }), ["@media screen and (min-width: 48em)"] : ({ ["fontSize"] : "46px" }), ["@media screen and (min-width: 62em)"] : ({ ["fontSize"] : "55px" }), ["fontWeight"] : "700", ["color"] : "white", ["textAlign"] : "center", ["alignItems"] : "center", ["padding"] : "17px", ["letterSpacing"] : "0.05em", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.2", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["textWrap"] : "balance", ["maxWidth"] : "900px", ["marginBottom"] : "0.5em" })},
+"Bienvenido/a al curso"
+,),jsx(
+RadixThemesHeading,
+{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#c6ceda", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginTop"] : "1em" })},
 "Introduccion"
 ,),jsx(
 RadixThemesText,
@@ -536,7 +544,7 @@ RadixThemesText,
 "Te damos la bienvenida al curso de Inversiones Trading y como evitar estafas, dise\u00f1ado para brindarte un conocimiento s\u00f3lido y pr\u00e1ctico sobre el mundo financiero. A lo largo de este curso, aprender\u00e1s desde los conceptos m\u00e1s b\u00e1sicos hasta estrategias avanzadas de inversi\u00f3n, con un enfoque especial en c\u00f3mo reconocer y evitar fraudes financieros."
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#ffa824", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
+{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#c6ceda", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
 "\u00bfQu\u00e9 aprender\u00e1s en este curso?"
 ,),jsx(
 "ol",
@@ -559,7 +567,7 @@ jsx(
 " Herramientas y estrategias para proteger tu capital y tomar decisiones informadas."
 ,),),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#ffa824", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
+{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#c6ceda", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
 "\u00bfPor qu\u00e9 tomar este curso?"
 ,),jsx(
 RadixThemesText,
@@ -567,7 +575,7 @@ RadixThemesText,
 "En un mundo donde las oportunidades financieras crecen, tambi\u00e9n lo hacen los riesgos. Este curso te proporcionar\u00e1 conocimientos pr\u00e1cticos y casos reales para que puedas invertir con confianza y seguridad."
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#ffa824", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
+{css:({ ["fontSize"] : "30px", ["fontWeight"] : "500", ["color"] : "#c6ceda", ["textAlign"] : "left", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["letterSpacing"] : "0.05em", ["maxWidth"] : "600px", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.1", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
 "Seis Puntos a tener en cuenta"
 ,),jsx(
 RadixThemesBox,
@@ -577,7 +585,7 @@ RadixThemesFlex,
 {align:"start",className:"rx-Stack",direction:"column",gap:"3"},
 jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
 "1. Organiza tu tiempo"
 ,),jsx(
 RadixThemesText,
@@ -585,7 +593,7 @@ RadixThemesText,
 "El curso est\u00e1 dise\u00f1ado para darte conocimientos desde lo b\u00e1sico hasta lo avanzado, por lo que es importante que asignes tiempo cada semana para aprender, practicar y repasar los contenidos."
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
 "2. Ten una libreta de apuntes"
 ,),jsx(
 RadixThemesText,
@@ -593,7 +601,7 @@ RadixThemesText,
 "Aunque sea un curso digital, es fundamental tomar notas de los conceptos clave. Esto te ayudar\u00e1 a recordar informaci\u00f3n importante y a estructurar mejor tu aprendizaje."
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
 "3. S\u00e9 cr\u00edtico con la informaci\u00f3n"
 ,),jsx(
 RadixThemesText,
@@ -601,7 +609,7 @@ RadixThemesText,
 "En internet hay mucha informaci\u00f3n falsa sobre trading y finanzas. Aseg\u00farate de analizar la fuente de cada dato y aplicar un pensamiento cr\u00edtico antes de tomar decisiones financieras."
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
 "4. Mant\u00e9n una mentalidad realista y disciplinada"
 ,),jsx(
 RadixThemesText,
@@ -609,7 +617,7 @@ RadixThemesText,
 "El trading y las finanzas no son un esquema para hacerse rico r\u00e1pidamente. Aqu\u00ed aprender\u00e1s c\u00f3mo tomar decisiones informadas y minimizar riesgos, pero necesitar\u00e1s paciencia, disciplina y pr\u00e1ctica constante."
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
 "5. Prepar\u00e1te para aprender de tus errores"
 ,),jsx(
 RadixThemesText,
@@ -617,7 +625,7 @@ RadixThemesText,
 "En el mundo financiero, cometer errores es parte del proceso. No te frustres si algo no sale bien al principio, lo importante es aprender y mejorar con la experiencia."
 ,),jsx(
 RadixThemesHeading,
-{css:({ ["fontSize"] : "25px", ["fontWeight"] : "500", ["color"] : "#8ad3ff", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
+{css:({ ["fontSize"] : "25px", ["fontWeight"] : "400", ["color"] : "#4493f8", ["textAlign"] : "left", ["lineHeight"] : "1.3", ["letterSpacing"] : "0.03em", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["padding"] : "10px", ["marginTop"] : "0.5em" })},
 "6. Disfruta el proceso y participa activamente"
 ,),jsx(
 RadixThemesText,
@@ -626,11 +634,11 @@ RadixThemesText,
 ,),),),jsx(
 RadixThemesHeading,
 {css:({ ["@media screen and (min-width: 0)"] : ({ ["fontSize"] : "35px" }), ["@media screen and (min-width: 30em)"] : ({ ["fontSize"] : "42px" }), ["@media screen and (min-width: 48em)"] : ({ ["fontSize"] : "46px" }), ["@media screen and (min-width: 62em)"] : ({ ["fontSize"] : "55px" }), ["fontWeight"] : "700", ["color"] : "white", ["textAlign"] : "center", ["alignItems"] : "center", ["padding"] : "17px", ["letterSpacing"] : "0.05em", ["width"] : "100%", ["margin"] : "auto", ["lineHeight"] : "1.2", ["fontFamily"] : "Roboto", ["--default-font-family"] : "Roboto", ["textWrap"] : "balance", ["maxWidth"] : "900px", ["marginTop"] : "0.5em" })},
-"Muchos Exitos con tu aprendisaje... comencemos \ud83d\ude80\ud83d\udcc8"
+"Muchos Exitos con tu aprendizaje... comencemos \ud83d\ude80\ud83d\udcc8"
 ,),jsx(Link_49149495207899390339577974416985833977,{},)
 ,),),),),),),jsx(
 RadixThemesFlex,
-{align:"start",className:"rx-Stack",css:({ ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["minWidth"] : "100%", ["margin"] : "0", ["padding"] : "20px", ["backgroundColor"] : "#333", ["color"] : "white", ["position"] : "relative" }),direction:"column",gap:"3"},
+{align:"start",className:"rx-Stack",css:({ ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%", ["minWidth"] : "100%", ["margin"] : "0", ["padding"] : "20px", ["backgroundColor"] : "#2d3038", ["color"] : "white", ["position"] : "relative", ["borderTop"] : "1px solid rgba(255, 255, 255, 0.4)" }),direction:"column",gap:"3"},
 jsx(
 RadixThemesText,
 {as:"p"},

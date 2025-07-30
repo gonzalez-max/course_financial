@@ -62,7 +62,7 @@ def navbar_course() -> rx.Component:
                         rx.hover_card.content(
                             rx.vstack(
                                 rx.text("Módulos del curso ",
-                                        color="#ffd284", 
+                                        color="#006dfc", 
                                         font_family="Helvetica",
                                         weight="bold",
                                         size="5"),
@@ -93,7 +93,7 @@ def navbar_course() -> rx.Component:
                             border_radius="8px",
                             border="1.5px solid transparent",
                             box_shadow="0px 4px 14px rgba(0, 0, 0, 0.3)",
-                            transition= "transform 0.2s ease-in-out",
+                            transition= "transform 0.3s ease-in-out",
                             background="rgba(250, 250, 250, 0.4)",
                             backdrop_filter= "blur(10px)",
                         ),

@@ -48,7 +48,8 @@ def footer() -> rx.Component:
         min_width="100%",  # Evita que se contraiga
         margin="0",  # Elimina márgenes externos
         padding="20px",
-        background_color="#333",
+        background_color="#2d3038",
         color="white",
         position="relative",  # Controla el posicionamiento
+        border_top="1px solid rgba(255, 255, 255, 0.4)",
     )
